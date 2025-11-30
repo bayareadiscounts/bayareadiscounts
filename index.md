@@ -36,7 +36,7 @@ Some programs are available only in specific cities, while others apply to the e
 
 - [Food](#food)
 - [Recreation](#recreation)
-- [Transit](#transit)
+- [Transportation](#transportation)
 - [Public Transit](#public-transit)
 - [Utilities](#utilities)
 - [Health](#health)
