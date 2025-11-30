@@ -233,3 +233,7 @@ Our public libraries often offer more than books — including access to news, d
 
 _Last updated: November 2025_  
 Contribute a listing by opening an issue on GitHub.
+
+### Support This Project
+If this guide helps you save, consider supporting it here:  
+[☕ Support Bay Area Discounts](https://buymeacoffee.com/bayareadiscounts)
