@@ -102,3 +102,7 @@ All contributions that support those goals are welcome!
 
 This project is open and public.  
 You are welcome to share, reuse, and adapt with credit.
+
+### Support This Project
+If this guide helps you save, consider supporting it here:  
+[☕ Support Bay Area Discounts](https://buymeacoffee.com/bayareadiscounts)
