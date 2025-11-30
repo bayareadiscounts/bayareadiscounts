@@ -2,7 +2,9 @@
 
 Stretch your budget and explore more of your community.
 
-This guide highlights free and low-cost services and programs across the Bay Area for seniors, youth, college students, veterans, families, and anyone looking to save on everyday expenses.
+This guide highlights free and low-cost services and programs within the core counties commonly recognized as the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties) for seniors, youth, college students, veterans, families, and anyone looking to save on everyday expenses.
+
+Some programs are available only in specific cities, while others apply to the entire Northern California region or statewide. Each listing includes a city/area label to clarify availability.
 
 ---
 
@@ -57,7 +59,7 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 ## Recreation
 
-| Program or Location | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |---------------------|------|-------------|---------|---------------|-----------|------|
 | Museums for All | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for families | Show EBT + ID | Ongoing | https://museums4all.org |
 | Aquarium of the Bay | San Francisco | 💳 | $3 or reduced admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.aquariumofthebay.org |
@@ -148,10 +150,10 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 Our public libraries often offer more than books — including access to news, digital media, museum passes, and more. Always check your local library’s website for current offerings.
 
-| Program / Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+| Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
 | Discover & Go Museum Passes | Bay Area (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | https://discoverandgo.org |
-| NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | [example: SFPL access](https://sfpl.org/research/research-database/6193) |
+| NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | https://www.library.ca.gov/services/to-libraries/nyt/ |
 
 ---
 
