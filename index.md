@@ -48,8 +48,8 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| CalFresh Online | California | 💳 🌎 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | https://www.cdss.ca.gov/ebt-online |
 | Market Match | Bay Area | 💳 🌎 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | https://www.marketmatch.org |
-| CalFresh Online | California | 💳 🌎 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | https://www.cdss.ca.gov/calfresh-food/food/online |
 
 ---
 
@@ -77,11 +77,10 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Clipper START | Bay Area | 💳 🌎 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
-| Senior Clipper Card | Bay Area | 👵 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com |
-| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://www.clippercard.com |
-| Youth Transit Discounts | Bay Area | 🧒 | Lower youth fares | Show ID if required | Ongoing | Transit provider websites |
-| College Student Transit Discounts | Bay Area | 🎓 | Discounted fares via campus partnerships | Campus transportation office | Ongoing (varies) | Campus websites |
+| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
+| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://511.org/transit/rtc-card/eligibility |
+| Senior Clipper Card | Bay Area | 👵 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
+| Youth Clipper Card | Bay Area | 🧒 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
 
 ---
 
@@ -124,8 +123,8 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
-| YMCA & Community Centers | Bay Area | 👨‍👩‍👧 🧒 | Lower-cost programs | Ongoing | Local center websites |
 | Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | https://www.va.gov/find-locations |
+| YMCA & Community Centers | Bay Area | 👨‍👩‍👧 🧒 | Lower-cost programs | Ongoing | Local center websites |
 
 ---
 
@@ -135,8 +134,8 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program / Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
-| NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | [example: SFPL access](https://sfpl.org/research/research-database/6193) |
 | Discover & Go Museum Passes | Bay Area (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | https://discoverandgo.org |
+| NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | [example: SFPL access](https://sfpl.org/research/research-database/6193) |
 
 ---
 
