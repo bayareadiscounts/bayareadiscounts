@@ -235,6 +235,5 @@ _Last updated: November 2025_
 Contribute a listing by opening an issue on GitHub.
 
 ### Support This Project
-If this guide helps you save, consider supporting it here:  
-[☕ Support Bay Area Discounts](https://buymeacoffee.com/bayareadiscounts)
+If this guide helps you save, [consider supporting us here]https://buymeacoffee.com/bayareadiscounts):
 <a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
