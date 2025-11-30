@@ -36,10 +36,10 @@ Resources and support for nonprofit organizations, including free meeting spaces
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
 | TechSoup | US/Global | 501(c)(3) Nonprofits | Donated and deeply discounted software, hardware, and cloud services from major tech companies (Microsoft, Adobe, Cisco, etc.) | Create free account; verify nonprofit status; browse catalog | Ongoing | [TechSoup](https://www.techsoup.org/) |
-| Microsoft Nonprofits | US/Global | 501(c)(3) Nonprofits | Free/discounted Microsoft 365, Office, Azure cloud credits ($3,500/year), and other software | Apply through Microsoft for Nonprofits portal | Ongoing | [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits) |
-| Google for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Google Workspace, $10,000/month Google Ads grants, YouTube nonprofit features, Google Earth tools | Apply through Google for Nonprofits | Ongoing | [Google for Nonprofits](https://www.google.com/nonprofits/) |
-| Slack for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Standard Plan (workspaces <250 members); 85% discount for larger workspaces and Plus Plan | Apply through Slack for Nonprofits program | Ongoing | [Slack for Nonprofits](https://slack.com/help/articles/204368833-Slack-for-Nonprofits-program) |
 | Canva for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Canva Pro account for design tools | Apply through Canva for Nonprofits | Ongoing | [Canva for Nonprofits](https://www.canva.com/canva-for-nonprofits/) |
+| Google for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Google Workspace, $10,000/month Google Ads grants, YouTube nonprofit features, Google Earth tools | Apply through Google for Nonprofits | Ongoing | [Google for Nonprofits](https://www.google.com/nonprofits/) |
+| Microsoft Nonprofits | US/Global | 501(c)(3) Nonprofits | Free/discounted Microsoft 365, Office, Azure cloud credits, and other software | Apply through Microsoft for Nonprofits portal | Ongoing | [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits) |
+| Slack for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Standard Plan (workspaces <250 members); 85% discount for larger workspaces and Plus Plan | Apply through Slack for Nonprofits program | Ongoing | [Slack for Nonprofits](https://slack.com/help/articles/204368833-Slack-for-Nonprofits-program) |
 
 ---
 
