@@ -50,6 +50,8 @@ This guide highlights free and low-cost services and programs across the Bay Are
 |--------|------|-------------|---------|---------------|-----------|------|
 | CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | https://www.cdss.ca.gov/ebt-online |
 | Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | https://www.marketmatch.org |
+| Rainbow Grocery | San Francisco | 💳 👵 🌎 | 10% discount for shoppers 60+ and EBT card holders | Show EBT card or proof of age at checkout | Ongoing | https://www.rainbow.coop |
+
 
 ---
 
@@ -77,7 +79,12 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | https://www.lyft.com/bikes/bay-wheels/bikeshare-for-all |
 | Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
+| Free Muni for Youth | SF | 🧒 | Free Muni for eligible youth (typically ages 5–18) | Apply or confirm eligibility through SFMTA | Ongoing | https://www.sfmta.com |
+| Lime Access | SF | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | https://www.li.me |
+| Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | https://www.mylowcostauto.com |
+| Muni Lifeline Pass | SF | 💳 🌎 | About 50% off monthly adult Muni pass for income-eligible residents | Apply via SFMTA | Ongoing | https://www.sfmta.com |
 | RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://511.org/transit/rtc-card/eligibility |
 | Senior Clipper Card | Bay Area | 👵 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
 | Youth Clipper Card | Bay Area | 🧒 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
@@ -88,8 +95,12 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | https://www.californialifeline.com |
 | CARE & FERA | California | 💳 🌎 | Discounted utilities | Apply on provider site | Ongoing | Provider websites |
 | LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | https://www.csd.ca.gov/energybills |
+| PG&E Bill Relief Programs | California | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | https://www.cleanpowersf.org |
+| Recology Discount Programs | SF | 💳 🌎 | Discounted refuse/recycling bills for eligible customers | Contact Recology SF for discount programs | Ongoing | https://www.recology.com |
+| SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | https://www.sfpuc.org |
 
 ---
 
@@ -107,6 +118,10 @@ This guide highlights free and low-cost services and programs across the Bay Are
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
 | Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Ongoing | https://www.courts.ca.gov/forms.htm |
+| DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | https://www.dmv.ca.gov |
+| Free Immigration Legal Help | SF | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | https://immigrants.sfgov.org |
+| SF Financial Justice Project | SF | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program offerings and apply where relevant | Ongoing | https://sfgov.org/financialjustice |
+| USCIS I-912 Fee Waiver | US | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | https://www.uscis.gov/i-912 |
 
 ---
 
@@ -123,6 +138,7 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
+| San Francisco Diaper Bank | SF | 💳 👨‍👩‍👧 🧒 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | https://www.sfhsa.org |
 | Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | https://www.va.gov/find-locations |
 | YMCA & Community Centers | Bay Area | 👨‍👩‍👧 🧒 | Lower-cost programs | Ongoing | Local center websites |
 
