@@ -84,7 +84,6 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-
 | Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
 | RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://511.org/transit/rtc-card/eligibility |
 | Senior Clipper Card | Bay Area | 👵 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
