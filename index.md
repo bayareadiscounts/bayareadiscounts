@@ -99,7 +99,6 @@ Some programs are available only in specific cities, while others apply to the e
 | Senior Clipper Card | Bay Area | 👵 | Discounted fares for 65+ | Apply with proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
 | Youth Clipper Card | Bay Area | 🧒 | Discounted fares for youth | Apply with proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
 | AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | https://www.alamedactc.org/programs-projects/studentpass |
-| AC Transit | Bay Area | 💼 🏘 | EasyPass: discounted unlimited rides for employer/college/residential groups | Group enrollment required | Ongoing | https://www.actransit.org/easypass |
 | BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | https://www.bart.gov/tickets/discounts |
 | BART + Muni | San Francisco | 🌎 | “A” Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | https://www.bart.gov/tickets/discounts |
 | City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | https://citycoach.com/fares/ |
