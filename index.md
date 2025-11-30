@@ -246,11 +246,11 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| AT&T Access | Bay Area | 💳 SNAP/SSI | $5–$10/mo home internet with free installation | [AT&T Access](https://www.att.com/internet/access/) |
+| AT&T Access | Nationwide | 💳 SNAP/SSI | $5–$10/mo home internet with free installation | Apply online or call | Ongoing | [AT&T Access](https://www.att.com/internet/access/) |
 | California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | [California LifeLine](https://www.californialifeline.com) |
 | CleanPowerSF | San Francisco | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | [CleanPowerSF](https://www.cleanpowersf.org) |
 | EBMUD Customer Assistance Program | East Bay (EBMUD service area) | 💳 🌎 | 35-50% discount on water and wastewater bills for income-eligible customers | Apply through EBMUD | Ongoing | [EBMUD Assistance](https://www.ebmud.com/customers/account/assistance-programs/) |
-| Internet Essentials by Xfinity | Bay Area | 💳 Low-Income | $10–$15/mo home internet + Wi-Fi modem | [Internet Essentials](https://www.xfinity.com/learn/internet-service/internet-essentials) |
+| Internet Essentials by Xfinity | Nationwide | 💳 Low-Income | $10–$15/mo home internet + Wi-Fi modem | Apply online or call | Ongoing | [Internet Essentials](https://www.xfinity.com/learn/internet-service/internet-essentials) |
 | LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | [LIHEAP](https://www.csd.ca.gov/energybills) |
 Medical Baseline Allowance | California (all utilities) | 🧑‍🦽 | Extra low-cost energy allowance for customers with qualifying medical conditions requiring additional electricity or gas | Apply through your utility provider (PG&E, etc.) | Ongoing | [Medical Baseline](https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline) |
 | PG&E CARE & FERA | Northern California (PG&E service area) | 💳 🌎 | 20-35% discount on electric and gas bills for income-eligible customers | Apply online or call PG&E | Ongoing | [PG&E CARE](https://www.pge.com/care) |
