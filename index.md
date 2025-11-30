@@ -151,6 +151,7 @@ Some programs are available only in specific cities, while others apply to the e
 | Service | Eligibility | Benefit | Timeframe | Link |
 |--------|-------------|---------|-----------|------|
 | Amazon Prime Access | 💳 | Discounted membership | Ongoing | https://www.amazon.com/primeaccess |
+| Kanopy | 🎓 | Free streaming for students through participating campus libraries | Ongoing | https://www.kanopy.com/signup/find/university |
 | Walmart+ Assist | 💳 | Discounted membership | Ongoing | https://www.walmart.com/plus/assist |
 
 ---
@@ -172,6 +173,7 @@ Our public libraries often offer more than books — including access to news, d
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
 | Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | https://discoverandgo.org |
+| Kanopy | Bay Area Libraries | 🎓 🧒 🌎 | Free streaming of films and documentaries for library cardholders | Log in with library card; limited monthly credits | Ongoing | https://www.kanopy.com/signup/find/publiclibrary |
 | NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | https://www.library.ca.gov/services/to-libraries/nyt/ |
 
 ---
