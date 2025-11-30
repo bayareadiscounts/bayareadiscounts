@@ -21,11 +21,11 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Icon | Meaning |
 |------|---------|
-| 💳 | Requires benefit card (EBT, Medi-Cal, CalFresh, WIC, SSI, etc.) |
+| 💳 | Requires benefit card or residency (Library card, driver's license, EBT, Medi-Cal, etc.) |
 | 🧒 | Youth (children & teens — age or school ID may be required) |
 | 🎓 | College Students |
 | 🎖️ | Military / Veterans |
-| 👵 | Seniors |
+| 👵 | Seniors (65+) |
 | 🧑‍🦽 | People with Disabilities |
 | 👨‍👩‍👧 | Families & Caregivers |
 | 🌎 | Everyone |
@@ -139,9 +139,9 @@ Some programs are available only in specific cities, while others apply to the e
 |--------|------|-------------|---------|---------------|-----------|------|
 | Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail or through local court self-help center | Ongoing | [Court Fee Waivers](https://selfhelp.courts.ca.gov/fee-waiver) |
 | San Francisco Immigrant Support | San Francisco | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | [SF Immigrant Resources](https://immigrants.sfgov.org) |
-| SF DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | [SFHSA Services](https://www.sfhsa.org/free-and-discounted-services-hsa-program-recipients) |
+| SF DMV Reduced-Fee ID Card | San Francisco | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | [SFHSA Services](https://www.sfhsa.org/free-and-discounted-services-hsa-program-recipients) |
 | SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | [Financial Justice Project](https://sfgov.org/financialjustice) |
-| USCIS I-912 Fee Waiver | US | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | [USCIS I-912](https://www.uscis.gov/i-912) |
+| USCIS I-912 Fee Waiver | Nationwide | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | [USCIS I-912](https://www.uscis.gov/i-912) |
 
 ### Tax Preparation
 
@@ -165,7 +165,8 @@ Our public libraries often offer more than books — including access to news, d
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
 | Berkeley Tool Lending Library | Berkeley | 🌎 | Borrow tools (power tools, lawn care equipment, etc.) free with library card | Check out from library location; return within loan period | Ongoing | [Berkeley Tool Lending Library](https://www.berkeleypubliclibrary.org/locations/tool-lending-library) |
-| CA State Parks Library Pass | California (1,100+ libraries) | 🌎 | Free vehicle day-use entry to 200+ participating state parks (1 vehicle up to 9 people or 1 motorcycle). Not valid for camping, museums within parks, or special events. | Check out pass from local public library with library card; loan period varies by library | Ongoing (funded through 2026) | [CA Parks Pass](https://www.library.ca.gov/services/to-libraries/parks-pass/) |
+| California State Parks Adventure Pass | California | 🧒 | Free day-use passes for fourth graders attending a public school in California and their families to 54 participating state parks. | Apply online | Ongoing (funded through 2026) | [CA Adventure Pass](https://www.reservecalifornia.com/) |
+| California State Parks Library Pass | California (1,100+ libraries) | 🌎 | Free vehicle day-use entry to 200+ participating state parks (1 vehicle up to 9 people or 1 motorcycle). Not valid for camping, museums within parks, or special events. | Check out pass from local public library with library card; loan period varies by library | Ongoing (funded through 2026) | [CA Parks Pass](https://www.library.ca.gov/services/to-libraries/parks-pass/) |
 | Calm Meditation App | San Mateo County | 🌎 | Free Calm subscription with guided meditations, courses, stories, music, and stress management tools via web and mobile app | Request subscription using library card (cards starting with "29041," "29731" or "29735"); allow 3-4 business days for access | Ongoing | [Calm via SM County Libraries](https://smcl.org/get-calm) |
 | Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | [Discover & Go](https://discoverandgo.org) |
 | Hoopla Digital | Varies (CA libraries) | 🌎 | Free ebooks, audiobooks, music, movies, and TV shows | Sign up with library card; borrow instantly (limits vary by library) | Ongoing | [Hoopla](https://www.hoopladigital.com) |
