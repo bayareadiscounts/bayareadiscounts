@@ -11,13 +11,6 @@ The goal: **Help Bay Area residents explore more while spending less.**
 
 ---
 
-## 🔗 Live Website
-
-Visit here:  
-**https://bayareadiscounts.github.io**  
-
----
-
 ## 🧭 What’s Included
 
 Current categories:
