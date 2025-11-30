@@ -43,10 +43,10 @@ Some programs are available only in specific cities, while others apply to the e
 - [Legal](#legal)
 - - [Tax Preparation](#tax-preparation)
 - [Library Resources](#library-resources)
-- [Public Transit](#public-transit)
 - [Recreation](#recreation)
 - - [Museums](#museums)
 - [Transportation](#transportation)
+- - [Public Transit](#public-transit)
 - [Utilities](#utilities)
 
 ---
@@ -164,31 +164,6 @@ Our public libraries often offer more than books — including access to news, d
 
 ---
 
-## Public Transit
-
-| Transit Agency | Area | Eligibility | Summary of Benefit | How to Access | Notes / Duration | Link |
-|---|---|---|---|---|---|---|
-| AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | [AC Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
-| BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | [BART Discounts](https://www.bart.gov/tickets/discounts) |
-| BART + Muni | San Francisco | 🌎 | "A" Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | [BART A Pass](https://www.bart.gov/tickets/discounts) |
-| City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | [City Coach](https://citycoach.com/fares/) |
-| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | [Clipper START](https://www.clipperstartcard.com) |
-| Marin Transit | Marin County | 🎓 | Free rides for College of Marin students | Show student ID | School-year durations apply | [Marin Transit](https://marintransit.org/COM) |
-| Muni | San Francisco | 🧒 🎖️ 🧑‍🦽 💳 ⚽ | Free Muni for youth (excludes cable cars), income-eligible seniors/people with disabilities, Access Pass, Lifeline Pass, free with Chase Center event ticket | Online enrollment or show ticket/ID | Ongoing; some seasonal | [Muni Fares](https://www.sfmta.com/fares) |
-| Petaluma Transit | Petaluma | 🌎 | All local buses free to ride | Just board | Ongoing | [Petaluma Transit](https://transit.cityofpetaluma.net/fares/) |
-| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares for riders with disabilities | Apply with proof of disability | Ongoing | [RTC Card](https://511.org/transit/rtc-card/eligibility) |
-| SamTrans | San Mateo County | 🧒 | Summer Youth Pass: unlimited local bus rides June–August | Buy pass before summer | Seasonal | [SamTrans](https://www.samtrans.com/fares/fare-types) |
-| Santa Rosa CityBus | Santa Rosa | 🧒 🎓 🎖️ 🌎 | Free rides for youth, children, veterans, SRJC students, some city/county workers | Show valid qualifying ID | Ongoing | [Santa Rosa CityBus](https://srcitybus.org/fares-and-passes/discount-programs/) |
-| Senior Clipper Card | Bay Area | 👵 | Discounted fares for 65+ | Apply with proof of age | Ongoing | [Senior Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
-| SolTrans / SolanoExpress | Solano County | 🧒 🎓 🎖️ 🌎 | Free rides for Solano College students, seniors 80+, young children | Show student ID or age ID | Ongoing | [SolTrans](https://www.soltrans.org/fares/fare-table) |
-| Sonoma County Transit | Sonoma County | 🎓 🎖️ | Free rides for veterans and college students | Show valid ID | Ongoing | [Sonoma County Transit](https://sctransit.com/fares/discount-categories/) |
-| Union City Transit | Union City | 🧒 🏫 | Free rides for eligible Alameda Co. students (STPP) | Apply through program | Ongoing | [Union City Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
-| VTA | Santa Clara County | 🧒 | Summer Youth Pass: unlimited bus/light rail | Buy pass before summer | Seasonal | [VTA Summer Youth Pass](https://www.vta.org/go/fares/summer-youth-pass) |
-| Wheels (LAVTA) | Tri-Valley: Livermore/Dublin/Pleasanton | 🌎 🧒 💼 | East Bay Value Pass, Hacienda Eco Pass, free rides for eligible 6–12 grade students | Based on employer/school eligibility or pass | Ongoing | [Wheels](https://www.wheelsbus.com/fares/) |
-| Youth Clipper Card | Bay Area | 🧒 | Discounted fares for youth | Apply with proof of age | Ongoing | [Youth Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
-
----
-
 ## Recreation
 
 ### Museums
@@ -218,6 +193,29 @@ Our public libraries often offer more than books — including access to news, d
 | Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | [Bike Share for All](https://www.lyft.com/bikes/bay-wheels/bike-share-for-all) |
 | Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | [Lime Access](https://www.li.me/why/community/lime-access) |
 | Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | [Low Cost Auto Insurance](https://www.mylowcostauto.com) |
+
+### Public Transit
+
+| Transit Agency | Area | Eligibility | Summary of Benefit | How to Access | Notes / Duration | Link |
+|---|---|---|---|---|---|---|
+| AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | [AC Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
+| BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | [BART Discounts](https://www.bart.gov/tickets/discounts) |
+| BART + Muni | San Francisco | 🌎 | "A" Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | [BART A Pass](https://www.bart.gov/tickets/discounts) |
+| City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | [City Coach](https://citycoach.com/fares/) |
+| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | [Clipper START](https://www.clipperstartcard.com) |
+| Marin Transit | Marin County | 🎓 | Free rides for College of Marin students | Show student ID | School-year durations apply | [Marin Transit](https://marintransit.org/COM) |
+| Muni | San Francisco | 🧒 🎖️ 🧑‍🦽 💳 ⚽ | Free Muni for youth (excludes cable cars), income-eligible seniors/people with disabilities, Access Pass, Lifeline Pass, free with Chase Center event ticket | Online enrollment or show ticket/ID | Ongoing; some seasonal | [Muni Fares](https://www.sfmta.com/fares) |
+| Petaluma Transit | Petaluma | 🌎 | All local buses free to ride | Just board | Ongoing | [Petaluma Transit](https://transit.cityofpetaluma.net/fares/) |
+| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares for riders with disabilities | Apply with proof of disability | Ongoing | [RTC Card](https://511.org/transit/rtc-card/eligibility) |
+| SamTrans | San Mateo County | 🧒 | Summer Youth Pass: unlimited local bus rides June–August | Buy pass before summer | Seasonal | [SamTrans](https://www.samtrans.com/fares/fare-types) |
+| Santa Rosa CityBus | Santa Rosa | 🧒 🎓 🎖️ 🌎 | Free rides for youth, children, veterans, SRJC students, some city/county workers | Show valid qualifying ID | Ongoing | [Santa Rosa CityBus](https://srcitybus.org/fares-and-passes/discount-programs/) |
+| Senior Clipper Card | Bay Area | 👵 | Discounted fares for 65+ | Apply with proof of age | Ongoing | [Senior Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
+| SolTrans / SolanoExpress | Solano County | 🧒 🎓 🎖️ 🌎 | Free rides for Solano College students, seniors 80+, young children | Show student ID or age ID | Ongoing | [SolTrans](https://www.soltrans.org/fares/fare-table) |
+| Sonoma County Transit | Sonoma County | 🎓 🎖️ | Free rides for veterans and college students | Show valid ID | Ongoing | [Sonoma County Transit](https://sctransit.com/fares/discount-categories/) |
+| Union City Transit | Union City | 🧒 🏫 | Free rides for eligible Alameda Co. students (STPP) | Apply through program | Ongoing | [Union City Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
+| VTA | Santa Clara County | 🧒 | Summer Youth Pass: unlimited bus/light rail | Buy pass before summer | Seasonal | [VTA Summer Youth Pass](https://www.vta.org/go/fares/summer-youth-pass) |
+| Wheels (LAVTA) | Tri-Valley: Livermore/Dublin/Pleasanton | 🌎 🧒 💼 | East Bay Value Pass, Hacienda Eco Pass, free rides for eligible 6–12 grade students | Based on employer/school eligibility or pass | Ongoing | [Wheels](https://www.wheelsbus.com/fares/) |
+| Youth Clipper Card | Bay Area | 🧒 | Discounted fares for youth | Apply with proof of age | Ongoing | [Youth Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
 
 ---
 
