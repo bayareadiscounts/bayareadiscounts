@@ -51,18 +51,26 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| Alameda County Community Food Bank | Alameda County | 💳 🌎 | Free food pantries and distributions throughout county | Call (510) 635-3663 or visit FoodNow.net | Ongoing | [Alameda County Food Bank](https://www.accfb.org/) |
 | Alameda Meals on Wheels | Alameda (city) | 👵 🧑‍🦽 | Home-delivered meals for homebound adults | Call (510) 865-6131 to arrange delivery | Ongoing | [Alameda Meals on Wheels](https://alamedamealsonwheels.org/) |
+| Bernal Heights Neighborhood Center - Brown Bag Program | San Francisco | 👵 💳 🌎 | Free supplemental groceries for SF residents 60+ (Thursday) and weekly food pantry for all residents | Visit Thursday for Brown Bag; call (415) 206-2140 for pantry schedule | Ongoing | [BHNC](https://bhnc.org/) |
 | CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | [CalFresh Online](https://www.cdss.ca.gov/ebt-online) |
+| Food Bank of Contra Costa & Solano | Contra Costa & Solano Counties | 💳 🌎 | Free groceries at mobile pantries and distribution sites | Call (855) 309-FOOD (3663) or visit website | Ongoing | [Food Bank CCS](https://www.foodbankccs.org/) |
 | J-Sei Meals on Wheels | Berkeley | 👵 | Japanese-style meals for seniors 60+ who have difficulty leaving home | Call (510) 654-4000 ext. 105 | Ongoing | [J-Sei](http://www.j-sei.org) |
 | Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | [Market Match](https://www.marketmatch.org) |
 | Meals on Wheels Contra Costa | Contra Costa County | 👵 🧑‍🦽 | Home-delivered meals for homebound seniors | Contact for application | Ongoing | [MOW Contra Costa](https://mowcontracosta.org/) |
 | Meals on Wheels Diablo Region | Contra Costa (Diablo Region) | 👵 🧑‍🦽 | Home-delivered meals for vulnerable seniors | Contact for enrollment | Ongoing | [MOW Diablo Region](https://www.mowdiabloregion.org/) |
 | Meals on Wheels San Francisco | San Francisco | 👵 🧑‍🦽 | Home-delivered meals for homebound seniors 60+ and adults with disabilities | Call to apply and arrange delivery | Ongoing | [Meals on Wheels SF](https://www.mowsf.org/) |
 | Meals on Wheels San Mateo County (Peninsula Volunteers) | San Mateo County | 👵 🧑‍🦽 | Home-delivered meals for adults 60+ who are primarily homebound; suggested donation $5.25/meal but never denied | Call (650) 272-5041 to apply | Ongoing | [Peninsula Volunteers MOW](https://1pvi.org/mealsonwheels/) |
+| Project Open Hand | San Francisco & Oakland (Alameda County) | 💳 👵 🧑‍🦽 🌎 | Medically-tailored meals and groceries for people with critical illnesses; congregate meals for seniors; home delivery available | SF: (415) 447-2326; Oakland: (510) 622-0221 | Ongoing | [Project Open Hand](https://www.openhand.org/) |
 | Rainbow Grocery | San Francisco | 💳 👵 🌎 | 10% discount for shoppers 60+ and EBT card holders | Show EBT card or proof of age at checkout | Ongoing | [Rainbow Grocery](https://www.rainbow.coop) |
+| Second Harvest of Silicon Valley | Santa Clara & San Mateo Counties | 💳 🌎 | Free food resources, groceries, and fresh produce | Call (800) 984-3663 or text "GETFOOD" to (408) 455-5181 | Ongoing | [Second Harvest](https://www.shfb.org/) |
+| SF-Marin Food Bank | San Francisco & Marin | 💳 👵 🌎 | Free food pantries, home delivery for seniors/disabled, supplemental food program for seniors 60+ | Use food locator tool or call 211 | Ongoing | [SF-Marin Food Bank](https://www.sfmfoodbank.org/) |
 | SOS Meals on Wheels | Alameda County (Castro Valley, Hayward, Oakland, San Leandro, San Lorenzo, Fremont, Newark, Union City) | 👵 🧑‍🦽 | Daily home-delivered meals for homebound seniors 60+ | Call (510) 582-1263 to apply | Ongoing | [SOS Meals on Wheels](https://www.sosmow.org/) |
 | Sourcewise Meals on Wheels | Santa Clara County | 👵 🧑‍🦽 | Two daily meals meeting 2/3 of nutritional requirements; suggested contribution $3/day but never denied | Call (408) 350-3200 option 1 to apply | Ongoing | [Sourcewise MOW](https://mysourcewise.com/programs-services/meals/) |
 | Spectrum Community Services Meals on Wheels | Tri-Valley (Livermore, Dublin, Pleasanton, Sunol) | 👵 🧑‍🦽 | Home-delivered meals for seniors 60+ unable to prepare food | Livermore: (925) 421-4657; Pleasanton area: (925) 931-5385 | Ongoing | [Spectrum MOW](https://www.spectrumcs.org/senior-services/meals-on-wheels) |
+| St. Anthony's Dining Room | San Francisco | 🌎 | Free dine-in or to-go meals daily | Visit dining room 10am-1:30pm at 121 Golden Gate Ave | Ongoing | [St. Anthony's](https://www.stanthonysf.org/) |
+| YMCA Food Pantries | San Francisco, San Mateo, Marin Counties | 💳 👨‍👩‍👧 🌎 | Free groceries and essentials at 17 locations serving 6,900+ people weekly | Visit distribution locations listed on website | Ongoing | [YMCA Food Assistance](https://www.ymcasf.org/program/food-assistance/) |
 
 ---
 
@@ -152,6 +160,19 @@ Some programs are available only in specific cities, while others apply to the e
 | SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | [Financial Justice Project](https://sfgov.org/financialjustice) |
 | USCIS I-912 Fee Waiver | US | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | [USCIS I-912](https://www.uscis.gov/i-912) |
 
+### Tax Preparation
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Alameda County Social Services Agency VITA | Alameda County | 💳 🌎 | Free tax preparation; help with EITC and CalEITC credits | Make appointment through online scheduler starting late January | January-April | [Alameda County VITA](https://www.alamedacountysocialservices.org/our-services/Work-and-Money/Other-Support/tax-services) |
+| Community Gatepath (formerly CCRC) VITA | Santa Clara County | 💳 🌎 | Free tax preparation for low-income individuals and families | Check website for current information | Seasonal | [CCRC Tax Services](https://www.ccscc.org/tax-ez-program) |
+| CSU East Bay VITA | Hayward/East Bay | 💳 🎓 🌎 | Free virtual tax prep via Zoom for income $84,000 or less | Schedule appointment online | February-April (Fridays & Saturdays) | [CSUEB VITA](https://www.csueastbay.edu/acct-fin/vita.html) |
+| EBALDC VITA | East Bay | 💳 🌎 | Free tax preparation; secured over $1.8M in refunds in 2023 | Email sparkpoint@ebaldc.org or check website for 2025 schedule | Seasonal (check website) | [EBALDC VITA](https://ebaldc.org/vita/) |
+| Samaritan House VITA | San Mateo County | 💳 🌎 | Free tax preparation with drop-off service | Call (650) 523-0804 for tax questions or (650) 347-3648 for general info | February-April | [Samaritan House](https://samaritanhousesanmateo.org/article/free-tax-preparation/) |
+| SF State VITA | San Francisco | 💳 🎓 🌎 | Free tax preparation by accounting students | Check SF State website for schedule and location | February-April | [SF State VITA](https://cob.sfsu.edu/VITA) |
+| SparkPoint Fremont VITA | Fremont, Union City, Newark (Tri-City) | 💳 🌎 | Free current year and back tax preparation for low-to-moderate income families | Contact Fremont Family Resource Center | February-April for current year; year-round for back taxes | [SparkPoint Fremont](https://www.fremont.gov/government/departments/human-services/human-services-in-the-community/sparkpoint/free-tax-preparation) |
+| United Way Bay Area - Free Tax Help | Bay Area | 💳 🌎 | Free IRS-certified tax preparation for households earning under $56,000-$84,000 (varies by site); help with EITC, CalEITC, and other credits | Find location at website or call sites directly | February-April annually | [Earn It Keep It Save It](https://earnitkeepitsaveit.org/) |
+
 ---
 
 ## Online
@@ -168,9 +189,29 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
-| San Francisco Diaper Bank | SF | 💳 👨‍👩‍👧 🧒 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | [SFHSA](https://www.sfhsa.org) |
 | VA Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
 | YMCA & Community Centers | Bay Area | 👨‍👩‍👧 🧒 | Lower-cost programs | Ongoing | Local center websites |
+
+### Childcare Assistance
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Alternative Payment Programs | Bay Area counties | 💳 👨‍👩‍👧 🧒 | Vouchers for free/subsidized child care based on income and need | Contact local agency: BANANAS (Alameda), 4Cs (other counties) | Ongoing (waitlists may apply) | [My Child Care Plan](https://mychildcareplan.org/) |
+| Bay Area Crisis Nursery - Emergency Childcare | Contra Costa County | 💳 👨‍👩‍👧 🧒 | FREE emergency childcare for children birth-6; up to 30 days per 6 months, 60 days per year | Call to schedule (available 24/7) | Ongoing | [Bay Area Crisis Nursery](https://bayareacrisisnursery.org/programs/emergency-childcare/) |
+| California State Preschool Program | California | 💳 👨‍👩‍👧 🧒 | Free part-day preschool for income-eligible families with children 3-5 | Apply through local preschool providers | Ongoing | [My Child Care Plan](https://mychildcareplan.org/resource/child-care-subsidy-programs/) |
+| CalWORKs Child Care | California | 💳 👨‍👩‍👧 🧒 | Free or subsidized child care for CalWORKs participants (3 stages) | Apply through county CalWORKs office | Ongoing | [CDSS CalWORKs](https://www.cdss.ca.gov/inforesources/calworks-child-care) |
+| Children's Council San Francisco | San Francisco | 💳 👨‍👩‍👧 🧒 | FREE early care and education (SF Dept of Early Childhood covers family fees for state subsidies) | Call (415) 276-2900 or use online eligibility calculator | Ongoing | [Children's Council](https://www.childrenscouncil.org/families/help-paying-for-child-care/) |
+| Choices for Children | Santa Clara County | 💳 👨‍👩‍👧 🧒 | Subsidized child care for income-eligible families | Apply through program | Ongoing (based on funding availability) | [Choices for Children](https://www.cfcscc.org/our-programs/) |
+| Head Start | Bay Area | 💳 👨‍👩‍👧 🧒 | Free preschool for low-income families with children 3-4 | Apply through local Head Start programs | Ongoing | [My Child Care Plan](https://mychildcareplan.org/resource/child-care-subsidy-programs/) |
+
+### Clothing Assistance
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Bay Area Crisis Nursery - BACN Boutique | Contra Costa County | 💳 👨‍👩‍👧 🧒 🌎 | Free clothing, shoes, books, toys, baby equipment for families; includes maternity and parent items | Visit nursery lobby during open hours | Ongoing | [BACN Boutique](https://bayareacrisisnursery.org/programs/bacn-boutique/) |
+| Bay Area Crisis Nursery - Food Pantry & Diaper Bank | Contra Costa County | 💳 👨‍👩‍👧 🧒 | Free food and diapers for families in need | Order online from website before visiting boutique | Ongoing | [Bay Area Crisis Nursery](https://bayareacrisisnursery.org/) |
+| St. Anthony's Free Clothing Program | San Francisco | 💳 👨‍👩‍👧 🧒 🌎 | Free clothing for men, women, and children; SF's largest free clothing program serving 3,000+ people monthly | Visit during open hours at 121 Golden Gate Ave (check website for schedule) | Ongoing | [St. Anthony's Clothing](https://www.stanthonysf.org/services/clothing/) |
+| San Francisco Diaper Bank | SF | 💳 👨‍👩‍👧 🧒 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | [SFHSA](https://www.sfhsa.org) |
 
 ---
 
