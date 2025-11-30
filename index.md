@@ -129,7 +129,7 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Medi-Cal | California | 💳  | Free or low-cost care | Apply online or county | Ongoing | [Medi-Cal](https://dhcs.ca.gov/services/medi-cal) |
+| Medi-Cal | California | 💳  | Free or low-cost care | Apply online or county | Ongoing | [Medi-Cal](https://www.dhcs.ca.gov/Medi-Cal/Pages/home.aspx) |
 | VA Health Benefits | Nationwide | 🎖️ | Health support for veterans | Apply online | Ongoing | [VA Health Care](https://www.va.gov/health-care) |
 
 ---
