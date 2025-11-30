@@ -137,11 +137,11 @@ Some programs are available only in specific cities, while others apply to the e
 ## Legal
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
-|--------|------|-------------|---------|-----------|------|
-| Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail | Ongoing | https://selfhelp.courts.ca.gov/fee-waiver |
-| DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | https://www.dmv.ca.gov |
-| Free Immigration Legal Help | SF | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | https://immigrants.sfgov.org |
-| SF Financial Justice Project | SF | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program offerings and apply where relevant | Ongoing | https://sfgov.org/financialjustice |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail or through local court self-help center | Ongoing | https://selfhelp.courts.ca.gov/fee-waiver |
+| SF DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | https://www.sfhsa.org/free-and-discounted-services-hsa-program-recipients |
+| San Francisco Immigrant Support | San Francisco | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | https://immigrants.sfgov.org |
+| SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | https://sfgov.org/financialjustice |
 | USCIS I-912 Fee Waiver | US | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | https://www.uscis.gov/i-912 |
 
 ---
