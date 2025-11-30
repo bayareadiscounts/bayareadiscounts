@@ -118,7 +118,6 @@ Some programs are available only in specific cities, while others apply to the e
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
 | California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | https://www.californialifeline.com |
-| CARE & FERA | California | 💳 🌎 | Discounted utilities | Apply on provider site | Ongoing | Provider websites |
 | LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | https://www.csd.ca.gov/energybills |
 | PG&E Bill Relief Programs | California | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | https://www.cleanpowersf.org |
 | Recology Discount Programs | SF | 💳 🌎 | Discounted refuse/recycling bills for eligible customers | Contact Recology SF for discount programs | Ongoing | https://www.recology.com |
