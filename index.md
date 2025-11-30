@@ -26,7 +26,7 @@ Some programs are available only in specific cities, while others apply to the e
 | 🎓 | College Students |
 | 🎖️ | Military / Veterans |
 | 👵 | Seniors |
-| 🧑‍🦽 | Disability Community |
+| 🧑‍🦽 | People with Disabilities |
 | 👨‍👩‍👧 | Families & Caregivers |
 | 🌎 | Everyone |
 
@@ -51,9 +51,9 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | https://www.cdss.ca.gov/ebt-online |
-| Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | https://www.marketmatch.org |
-| Rainbow Grocery | San Francisco | 💳 👵 🌎 | 10% discount for shoppers 60+ and EBT card holders | Show EBT card or proof of age at checkout | Ongoing | https://www.rainbow.coop |
+| CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | [CalFresh Online](https://www.cdss.ca.gov/ebt-online) |
+| Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | [Market Match](https://www.marketmatch.org) |
+| Rainbow Grocery | San Francisco | 💳 👵 🌎 | 10% discount for shoppers 60+ and EBT card holders | Show EBT card or proof of age at checkout | Ongoing | [Rainbow Grocery](https://www.rainbow.coop) |
 
 
 ---
@@ -66,17 +66,17 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Museum / Program | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |------------------|-----------|-------------|---------|---------------|-----------|------|
-| Museums for All (program) | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for up to 4 people at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | https://museums4all.org |
-| Aquarium of the Bay | San Francisco | 💳 🎖️ 👨‍👩‍👧 🌎 | Locals, military, and other discounts, plus occasional benefit card offers | Bring Bay Area ID, military ID, or benefits card as listed on their site | Ongoing | https://www.aquariumofthebay.org |
-| Asian Art Museum | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free days, Museums for All admission, and discounts for students, seniors, and military | Check free-day calendar and bring EBT, student, senior, or military ID as applicable | Ongoing | https://about.asianart.org/plan-your-visit/ |
-| Cartoon Art Museum | San Francisco | 💳 🎓 👵 🎖️ 🧒 👨‍👩‍👧 🌎 | Free or reduced admission for EBT/SNAP/Medi-Cal cardholders and discounted tickets for students, seniors, and military | Show benefits card or valid ID; see site for pay-what-you-wish days | Ongoing | https://www.cartoonart.org/visit |
-| Children’s Creativity Museum | San Francisco | 💳 🧒 👨‍👩‍👧 | Museums for All admission for families plus regular paid admission | Present physical benefits card with matching photo ID; at least one child in the group | Ongoing | https://creativity.org/hours-admission/ |
-| Fine Arts Museums of San Francisco (de Young Museum and Legion of Honor) | San Francisco | 💳 🎓 👵 🎖️ 🧑‍🦽 👨‍👩‍👧 🌎 | Free Saturdays for Bay Area residents, free first Tuesdays, youth free, Museums for All, military and other discounts | Bring Bay Area ID, EBT or Medi-Cal card, military ID, or other proof listed on their discounts page | Ongoing | https://www.famsf.org/ |
-| Gardens of Golden Gate Park (Conservatory of Flowers, Japanese Tea Garden, SF Botanical Garden) | San Francisco | 💳 🎖️ 🌎 | Free or reduced admission for SF residents, veterans, and Museums for All visitors; select free times for everyone | Show SF proof of residency, benefits card, or military ID; visit during posted free hours for general free admission | Ongoing; scheduled free days/hours | https://gggp.org |
-| MoAD (Museum of the African Diaspora) | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Museums for All admission, student and senior discounts, some free or community days, and free for active duty military | Bring EBT card, student or senior ID, or military ID as applicable | Ongoing | https://www.moadsf.org/tickets |
-| Museum of Craft and Design | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free first Thursdays, discounted tickets for students and seniors, free admission for some military, first responders, and benefit cardholders | Visit on a free day or show student, senior, military, or benefits documentation | Ongoing | https://sfmcd.org/visit/ |
-| San Francisco Museum of Modern Art (SFMOMA) | San Francisco | 💳 🎓 🎖️ 🧒 👨‍👩‍👧 🌎 | Free for youth, free days for the public, Museums for All admission for SF residents with benefits cards, military and veteran discounts, and Discover & Go passes | Reserve tickets for free days, bring benefits card and SF proof, military ID, or library Discover & Go voucher | Ongoing | https://www.sfmoma.org/deals-discounts/ |
-| Walt Disney Family Museum | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Free general admission for US military and dependents, Museums for All admission for SF EBT/CalFresh/Medi-Cal holders (cardholder plus guests), and student/senior discounts | Show military or dependent ID, or present SF benefits card and proof of residency; see site for student and senior rates | Ongoing | https://www.waltdisney.org/visit/admission |
+| Museums for All (program) | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for up to 4 people at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | [Museums for All](https://museums4all.org) |
+| Aquarium of the Bay | San Francisco | 💳 🎖️ 👨‍👩‍👧 🌎 | Locals, military, and other discounts, plus occasional benefit card offers | Bring Bay Area ID, military ID, or benefits card as listed on their site | Ongoing | [Aquarium of the Bay](https://www.aquariumofthebay.org) |
+| Asian Art Museum | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free days, Museums for All admission, and discounts for students, seniors, and military | Check free-day calendar and bring EBT, student, senior, or military ID as applicable | Ongoing | [Asian Art Museum](https://about.asianart.org/plan-your-visit/) |
+| Cartoon Art Museum | San Francisco | 💳 🎓 👵 🎖️ 🧒 👨‍👩‍👧 🌎 | Free or reduced admission for EBT/SNAP/Medi-Cal cardholders and discounted tickets for students, seniors, and military | Show benefits card or valid ID; see site for pay-what-you-wish days | Ongoing | [Cartoon Art Museum](https://www.cartoonart.org/visit) |
+| Children's Creativity Museum | San Francisco | 💳 🧒 👨‍👩‍👧 | Museums for All admission for families plus regular paid admission | Present physical benefits card with matching photo ID; at least one child in the group | Ongoing | [Children's Creativity Museum](https://creativity.org/hours-admission/) |
+| Fine Arts Museums of San Francisco (de Young Museum and Legion of Honor) | San Francisco | 💳 🎓 👵 🎖️ 🧑‍🦽 👨‍👩‍👧 🌎 | Free Saturdays for Bay Area residents, free first Tuesdays, youth free, Museums for All, military and other discounts | Bring Bay Area ID, EBT or Medi-Cal card, military ID, or other proof listed on their discounts page | Ongoing | [Fine Arts Museums of SF](https://www.famsf.org/) |
+| Gardens of Golden Gate Park (Conservatory of Flowers, Japanese Tea Garden, SF Botanical Garden) | San Francisco | 💳 🎖️ 🌎 | Free or reduced admission for SF residents, veterans, and Museums for All visitors; select free times for everyone | Show SF proof of residency, benefits card, or military ID; visit during posted free hours for general free admission | Ongoing; scheduled free days/hours | [Gardens of Golden Gate Park](https://gggp.org) |
+| MoAD (Museum of the African Diaspora) | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Museums for All admission, student and senior discounts, some free or community days, and free for active duty military | Bring EBT card, student or senior ID, or military ID as applicable | Ongoing | [MoAD](https://www.moadsf.org/tickets) |
+| Museum of Craft and Design | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free first Thursdays, discounted tickets for students and seniors, free admission for some military, first responders, and benefit cardholders | Visit on a free day or show student, senior, military, or benefits documentation | Ongoing | [Museum of Craft and Design](https://sfmcd.org/visit/) |
+| San Francisco Museum of Modern Art (SFMOMA) | San Francisco | 💳 🎓 🎖️ 🧒 👨‍👩‍👧 🌎 | Free for youth, free days for the public, Museums for All admission for SF residents with benefits cards, military and veteran discounts, and Discover & Go passes | Reserve tickets for free days, bring benefits card and SF proof, military ID, or library Discover & Go voucher | Ongoing | [SFMOMA](https://www.sfmoma.org/deals-discounts/) |
+| Walt Disney Family Museum | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Free general admission for US military and dependents, Museums for All admission for SF EBT/CalFresh/Medi-Cal holders (cardholder plus guests), and student/senior discounts | Show military or dependent ID, or present SF benefits card and proof of residency; see site for student and senior rates | Ongoing | [Walt Disney Family Museum](https://www.waltdisney.org/visit/admission) |
 
 ---
 
@@ -84,9 +84,9 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | https://www.lyft.com/bikes/bay-wheels/bike-share-for-all |
-| Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | https://www.li.me/why/community/lime-access |
-| Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | https://www.mylowcostauto.com |
+| Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | [Bike Share for All](https://www.lyft.com/bikes/bay-wheels/bike-share-for-all) |
+| Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | [Lime Access](https://www.li.me/why/community/lime-access) |
+| Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | [Low Cost Auto Insurance](https://www.mylowcostauto.com) |
 
 ---
 
@@ -94,34 +94,34 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Transit Agency | Area | Eligibility | Summary of Benefit | How to Access | Notes / Duration | Link |
 |---|---|---|---|---|---|---|
-| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
-| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares for riders with disabilities | Apply with proof of disability | Ongoing | https://511.org/transit/rtc-card/eligibility |
-| Senior Clipper Card | Bay Area | 👵 | Discounted fares for 65+ | Apply with proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
-| Youth Clipper Card | Bay Area | 🧒 | Discounted fares for youth | Apply with proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
-| AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | https://www.alamedactc.org/programs-projects/studentpass |
-| BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | https://www.bart.gov/tickets/discounts |
-| BART + Muni | San Francisco | 🌎 | “A” Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | https://www.bart.gov/tickets/discounts |
-| City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | https://citycoach.com/fares/ |
-| Marin Transit | Marin County | 🎓 | Free rides for College of Marin students | Show student ID | School-year durations apply | https://marintransit.org/COM |
-| Muni | San Francisco | 🧒 🎖️ 🧑‍🦽 💳 ⚽ | Free Muni for youth (excludes cable cars), income-eligible seniors/people with disabilities, Access Pass, Lifeline Pass, free with Chase Center event ticket | Online enrollment or show ticket/ID | Ongoing; some seasonal | https://www.sfmta.com/fares |
-| Petaluma Transit | Petaluma | 🌎 | All local buses free to ride | Just board | Ongoing | https://transit.cityofpetaluma.net/fares/ |
-| SamTrans | San Mateo County | 🧒 | Summer Youth Pass: unlimited local bus rides June–August | Buy pass before summer | Seasonal | https://www.samtrans.com/fares/fare-types |
-| Santa Rosa CityBus | Santa Rosa | 🧒 🎓 🎖️ 🌎 | Free rides for youth, children, veterans, SRJC students, some city/county workers | Show valid qualifying ID | Ongoing | https://srcitybus.org/fares-and-passes/discount-programs/ |
-| SolTrans / SolanoExpress | Solano County | 🧒 🎓 🎖️ 🌎 | Free rides for Solano College students, seniors 80+, young children | Show student ID or age ID | Ongoing | https://www.soltrans.org/fares/fare-table |
-| Sonoma County Transit | Sonoma County | 🎓 🎖️ | Free rides for veterans and college students | Show valid ID | Ongoing | https://sctransit.com/fares/discount-categories/ |
-| Union City Transit | Union City | 🧒 🏫 | Free rides for eligible Alameda Co. students (STPP) | Apply through program | Ongoing | https://www.alamedactc.org/programs-projects/studentpass |
-| VTA | Santa Clara County | 🧒 | Summer Youth Pass: unlimited bus/light rail | Buy pass before summer | Seasonal | https://www.vta.org/go/fares/summer-youth-pass |
-| Wheels (LAVTA) | Tri-Valley: Livermore/Dublin/Pleasanton | 🌎 🧒 💼 | East Bay Value Pass, Hacienda Eco Pass, free rides for eligible 6–12 grade students | Based on employer/school eligibility or pass | Ongoing | https://www.wheelsbus.com/fares/ |
+| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | [Clipper START](https://www.clipperstartcard.com) |
+| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares for riders with disabilities | Apply with proof of disability | Ongoing | [RTC Card](https://511.org/transit/rtc-card/eligibility) |
+| Senior Clipper Card | Bay Area | 👵 | Discounted fares for 65+ | Apply with proof of age | Ongoing | [Senior Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
+| Youth Clipper Card | Bay Area | 🧒 | Discounted fares for youth | Apply with proof of age | Ongoing | [Youth Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
+| AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | [AC Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
+| BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | [BART Discounts](https://www.bart.gov/tickets/discounts) |
+| BART + Muni | San Francisco | 🌎 | "A" Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | [BART A Pass](https://www.bart.gov/tickets/discounts) |
+| City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | [City Coach](https://citycoach.com/fares/) |
+| Marin Transit | Marin County | 🎓 | Free rides for College of Marin students | Show student ID | School-year durations apply | [Marin Transit](https://marintransit.org/COM) |
+| Muni | San Francisco | 🧒 🎖️ 🧑‍🦽 💳 ⚽ | Free Muni for youth (excludes cable cars), income-eligible seniors/people with disabilities, Access Pass, Lifeline Pass, free with Chase Center event ticket | Online enrollment or show ticket/ID | Ongoing; some seasonal | [Muni Fares](https://www.sfmta.com/fares) |
+| Petaluma Transit | Petaluma | 🌎 | All local buses free to ride | Just board | Ongoing | [Petaluma Transit](https://transit.cityofpetaluma.net/fares/) |
+| SamTrans | San Mateo County | 🧒 | Summer Youth Pass: unlimited local bus rides June–August | Buy pass before summer | Seasonal | [SamTrans](https://www.samtrans.com/fares/fare-types) |
+| Santa Rosa CityBus | Santa Rosa | 🧒 🎓 🎖️ 🌎 | Free rides for youth, children, veterans, SRJC students, some city/county workers | Show valid qualifying ID | Ongoing | [Santa Rosa CityBus](https://srcitybus.org/fares-and-passes/discount-programs/) |
+| SolTrans / SolanoExpress | Solano County | 🧒 🎓 🎖️ 🌎 | Free rides for Solano College students, seniors 80+, young children | Show student ID or age ID | Ongoing | [SolTrans](https://www.soltrans.org/fares/fare-table) |
+| Sonoma County Transit | Sonoma County | 🎓 🎖️ | Free rides for veterans and college students | Show valid ID | Ongoing | [Sonoma County Transit](https://sctransit.com/fares/discount-categories/) |
+| Union City Transit | Union City | 🧒 🏫 | Free rides for eligible Alameda Co. students (STPP) | Apply through program | Ongoing | [Union City Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
+| VTA | Santa Clara County | 🧒 | Summer Youth Pass: unlimited bus/light rail | Buy pass before summer | Seasonal | [VTA Summer Youth Pass](https://www.vta.org/go/fares/summer-youth-pass) |
+| Wheels (LAVTA) | Tri-Valley: Livermore/Dublin/Pleasanton | 🌎 🧒 💼 | East Bay Value Pass, Hacienda Eco Pass, free rides for eligible 6–12 grade students | Based on employer/school eligibility or pass | Ongoing | [Wheels](https://www.wheelsbus.com/fares/) |
 
 ## Utilities
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | https://www.californialifeline.com |
-| LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | https://www.csd.ca.gov/energybills |
-| PG&E Bill Relief Programs | California | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | https://www.cleanpowersf.org |
-| Recology Discount Programs | SF | 💳 🌎 | Discounted refuse/recycling bills for eligible customers | Contact Recology SF for discount programs | Ongoing | https://www.recology.com |
-| SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | https://www.sfpuc.org |
+| California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | [California LifeLine](https://www.californialifeline.com) |
+| LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | [LIHEAP](https://www.csd.ca.gov/energybills) |
+| PG&E Bill Relief Programs | California | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | [CleanPowerSF](https://www.cleanpowersf.org) |
+| Recology Discount Programs | SF | 💳 🌎 | Discounted refuse/recycling bills for eligible customers | Contact Recology SF for discount programs | Ongoing | [Recology](https://www.recology.com) |
+| SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
 ---
 
@@ -129,8 +129,8 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Medi-Cal | California | 💳  | Free or low-cost care | Apply online or county | Ongoing | https://dhcs.ca.gov/services/medi-cal |
-| VA Health Benefits | Nationwide | 🎖️ | Health support for veterans | Apply online | Ongoing | https://www.va.gov/health-care |
+| Medi-Cal | California | 💳  | Free or low-cost care | Apply online or county | Ongoing | [Medi-Cal](https://dhcs.ca.gov/services/medi-cal) |
+| VA Health Benefits | Nationwide | 🎖️ | Health support for veterans | Apply online | Ongoing | [VA Health Care](https://www.va.gov/health-care) |
 
 ---
 
@@ -138,11 +138,11 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail or through local court self-help center | Ongoing | https://selfhelp.courts.ca.gov/fee-waiver |
-| SF DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | https://www.sfhsa.org/free-and-discounted-services-hsa-program-recipients |
-| San Francisco Immigrant Support | San Francisco | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | https://immigrants.sfgov.org |
-| SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | https://sfgov.org/financialjustice |
-| USCIS I-912 Fee Waiver | US | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | https://www.uscis.gov/i-912 |
+| Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail or through local court self-help center | Ongoing | [Court Fee Waivers](https://selfhelp.courts.ca.gov/fee-waiver) |
+| SF DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | [SFHSA Services](https://www.sfhsa.org/free-and-discounted-services-hsa-program-recipients) |
+| San Francisco Immigrant Support | San Francisco | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | [SF Immigrant Resources](https://immigrants.sfgov.org) |
+| SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | [Financial Justice Project](https://sfgov.org/financialjustice) |
+| USCIS I-912 Fee Waiver | US | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | [USCIS I-912](https://www.uscis.gov/i-912) |
 
 ---
 
@@ -150,9 +150,9 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Service | Eligibility | Benefit | Timeframe | Link |
 |--------|-------------|---------|-----------|------|
-| Amazon Prime Access | 💳 | Discounted membership | Ongoing | https://www.amazon.com/primeaccess |
-| Kanopy | 🎓 | Free streaming for students through participating campus libraries | Ongoing | https://www.kanopy.com/signup/find/university |
-| Walmart+ Assist | 💳 | Discounted membership | Ongoing | https://www.walmart.com/plus/assist |
+| Amazon Prime Access | 💳 | Discounted membership | Ongoing | [Amazon Prime Access](https://www.amazon.com/primeaccess) |
+| Kanopy | 🎓 | Free streaming for students through participating campus libraries | Ongoing | [Kanopy for Students](https://www.kanopy.com/signup/find/university) |
+| Walmart+ Assist | 💳 | Discounted membership | Ongoing | [Walmart+ Assist](https://www.walmart.com/plus/assist) |
 
 ---
 
@@ -160,21 +160,21 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
-| San Francisco Diaper Bank | SF | 💳 👨‍👩‍👧 🧒 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | https://www.sfhsa.org |
-| Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | https://www.va.gov/find-locations |
+| San Francisco Diaper Bank | SF | 💳 👨‍👩‍👧 🧒 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | [SFHSA](https://www.sfhsa.org) |
+| VA Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
 | YMCA & Community Centers | Bay Area | 👨‍👩‍👧 🧒 | Lower-cost programs | Ongoing | Local center websites |
 
 ---
 
 ## Libraries
 
-Our public libraries often offer more than books — including access to news, digital media, museum passes, and more. Always check your local library’s website for current offerings.
+Our public libraries often offer more than books — including access to news, digital media, museum passes, and more. Always check your local library's website for current offerings.
 
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
-| Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | https://discoverandgo.org |
-| Kanopy | Bay Area Libraries | 🎓 🧒 🌎 | Free streaming of films and documentaries for library cardholders | Log in with library card; limited monthly credits | Ongoing | https://www.kanopy.com/signup/find/publiclibrary |
-| NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | https://www.library.ca.gov/services/to-libraries/nyt/ |
+| Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | [Discover & Go](https://discoverandgo.org) |
+| Kanopy | Bay Area Libraries | 🎓 🧒 🌎 | Free streaming of films and documentaries for library cardholders | Log in with library card; limited monthly credits | Ongoing | [Kanopy for Libraries](https://www.kanopy.com/signup/find/publiclibrary) |
+| NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | [NYT Library Access](https://www.library.ca.gov/services/to-libraries/nyt/) |
 
 ---
 
