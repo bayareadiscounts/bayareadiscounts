@@ -55,8 +55,10 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
+| 2-1-1 Bay Area | Bay Area | 🌎 Everyone | Free 24/7 referral to food, housing, legal help, health care, and more | Ongoing | [211BayArea.org](https://211bayarea.org) |
+| Season of Sharing Fund | Bay Area | 💳 Low-Income Families | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season fo Sharing Fund](https://seasonofsharing.org) |
 | VA Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
-| YMCA & Community Centers | Bay Area | 👨‍👩‍👧 🧒 | Lower-cost programs | Ongoing | Local center websites |
+| YMCA | Bay Area | 👨‍👩‍👧 🧒 | Most locations offer sliding-scale membership rates | Ongoing | [YMCA.org](https://www.ymca.org/get-involved/join) |
 
 ### Childcare Assistance
 
@@ -99,6 +101,7 @@ Some programs are available only in specific cities, while others apply to the e
 | Alameda Meals on Wheels | Alameda (city) | 👵 🧑‍🦽 | Home-delivered meals for homebound adults | Call (510) 865-6131 to arrange delivery | Ongoing | [Alameda Meals on Wheels](https://alamedamealsonwheels.org/) |
 | Bernal Heights Neighborhood Center - Brown Bag Program | San Francisco | 👵 💳 🌎 | Free supplemental groceries for SF residents 60+ (Thursday) and weekly food pantry for all residents | Visit Thursday for Brown Bag; call (415) 206-2140 for pantry schedule | Ongoing | [BHNC](https://bhnc.org/) |
 | CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | [CalFresh Online](https://www.cdss.ca.gov/ebt-online) |
+| CalFresh Restaurant Meals Program (RMP) | Bay Area counties (Alameda, Contra Costa, Marin, San Francisco, San Mateo, Santa Clara, Solano, Sonoma) | 💳 👵 🧑‍🦽 🌎 | Use CalFresh EBT to buy prepared meals at participating restaurants (must be 60+, disabled, or homeless) | Call (855) 355-5757 to get EBT card coded for restaurant use; look for RMP signs at restaurants | Ongoing | [CalFresh RMP](https://www.cdss.ca.gov/rmp) |
 | Food Bank of Contra Costa & Solano | Contra Costa & Solano Counties | 💳 🌎 | Free groceries at mobile pantries and distribution sites | Call (855) 309-FOOD (3663) or visit website | Ongoing | [Food Bank CCS](https://www.foodbankccs.org/) |
 | J-Sei Meals on Wheels | Berkeley | 👵 | Japanese-style meals for seniors 60+ who have difficulty leaving home | Call (510) 654-4000 ext. 105 | Ongoing | [J-Sei](http://www.j-sei.org) |
 | Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | [Market Match](https://www.marketmatch.org) |
@@ -114,6 +117,8 @@ Some programs are available only in specific cities, while others apply to the e
 | Sourcewise Meals on Wheels | Santa Clara County | 👵 🧑‍🦽 | Two daily meals meeting 2/3 of nutritional requirements; suggested contribution $3/day but never denied | Call (408) 350-3200 option 1 to apply | Ongoing | [Sourcewise MOW](https://mysourcewise.com/programs-services/meals/) |
 | Spectrum Community Services Meals on Wheels | Tri-Valley (Livermore, Dublin, Pleasanton, Sunol) | 👵 🧑‍🦽 | Home-delivered meals for seniors 60+ unable to prepare food | Livermore: (925) 421-4657; Pleasanton area: (925) 931-5385 | Ongoing | [Spectrum MOW](https://www.spectrumcs.org/senior-services/meals-on-wheels) |
 | St. Anthony's Dining Room | San Francisco | 🌎 | Free dine-in or to-go meals daily | Visit dining room 10am-1:30pm at 121 Golden Gate Ave | Ongoing | [St. Anthony's](https://www.stanthonysf.org/) |
+| Universal School Meals | California | 🧒 🌎 | Free breakfast and lunch daily at all public schools (TK-12), regardless of income | Available to all students at school each day | Ongoing (school year) | [CA Universal Meals](https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp) |
+| WIC – Women, Infants & Children | California | 💳 👨‍👩‍👧 🧒 | Free healthy foods, nutrition education, breastfeeding support for income eligible pregnant/postpartum women, infants, and children under 5 | Apply at local WIC office; bring proof of income or Medi-Cal card | Ongoing | [California WIC](https://myfamily.wic.ca.gov/) |
 | YMCA Food Pantries | San Francisco, San Mateo, Marin Counties | 💳 👨‍👩‍👧 🌎 | Free groceries and essentials at 17 locations serving 6,900+ people weekly | Visit distribution locations listed on website | Ongoing | [YMCA Food Assistance](https://www.ymcasf.org/program/food-assistance/) |
 
 ---
@@ -122,7 +127,8 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Medi-Cal | California | 💳  | Free or low-cost care | Apply online or county | Ongoing | [Medi-Cal](https://dhcs.ca.gov/services/medi-cal) |
+| Berkeley Free Clinic | Berkeley (Alameda County) | 🌎 | Free limited health, dental, and STI services | Walk-in or by appointment | Ongoing | [Berkeley Free Clinic](https://www.berkeleyfreeclinic.org) |
+| Medi-Cal (Medicaid) | California | 💳  | Free/low-cost health insurance to income-eligible residents | Apply online | Ongoing | [Medi-Cal](https://dhcs.ca.gov/services/medi-cal) |
 | VA Health Benefits | Nationwide | 🎖️ | Health support for veterans | Apply online | Ongoing | [VA Health Care](https://www.va.gov/health-care) |
 
 ---
@@ -158,8 +164,11 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
-| Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | [Discover & Go](https://discoverandgo.org) |
+| Berkeley Tool Lending Library | Berkeley | 🌎 | Borrow tools (power tools, lawn care equipment, etc.) free with library card | Check out from library location; return within loan period | Ongoing | [Berkeley Tool Lending Library](https://www.berkeleypubliclibrary.org/locations/tool-lending-library) |
+| CA State Parks Library Pass | California (1,100+ libraries) | 🌎 | Free vehicle day-use entry to 200+ participating state parks (1 vehicle up to 9 people or 1 motorcycle). Not valid for camping, museums within parks, or special events. | Check out pass from local public library with library card; loan period varies by library | Ongoing (funded through 2026) | [CA Parks Pass](https://www.library.ca.gov/services/to-libraries/parks-pass/) |
 | Calm Meditation App | San Mateo County | 🌎 | Free Calm subscription with guided meditations, courses, stories, music, and stress management tools via web and mobile app | Request subscription using library card (cards starting with "29041," "29731" or "29735"); allow 3-4 business days for access | Ongoing | [Calm via SM County Libraries](https://smcl.org/get-calm) |
+| Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | [Discover & Go](https://discoverandgo.org) |
+| Hoopla Digital | Varies (CA libraries) | 🌎 | Free ebooks, audiobooks, music, movies, and TV shows | Sign up with library card; borrow instantly (limits vary by library) | Ongoing | [Hoopla](https://www.hoopladigital.com) |
 | Kanopy | Varies (CA libraries) | 🌎 | Free streaming of films and documentaries for library cardholders | Log in with library card; limited monthly credits | Ongoing | [Kanopy for Library Patrons](https://www.kanopy.com/signup/find/publiclibrary) |
 | New York Times Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | [NYT Library Access](https://www.library.ca.gov/services/to-libraries/nyt/) |
 
@@ -167,22 +176,31 @@ Our public libraries often offer more than books — including access to news, d
 
 ## Recreation
 
-### Museums
-
-> Always check the museum website for the most current prices, free days, and eligibility details.
+> Always check the program website for the most current prices, free days, and eligibility details.
 
 | Museum / Program | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |------------------|-----------|-------------|---------|---------------|-----------|------|
 | Aquarium of the Bay | San Francisco | 💳 🎖️ 👨‍👩‍👧 🌎 | Locals, military, and other discounts, plus occasional benefit card offers | Bring Bay Area ID, military ID, or benefits card as listed on their site | Ongoing | [Aquarium of the Bay](https://www.aquariumofthebay.org) |
 | Asian Art Museum | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free days, Museums for All admission, and discounts for students, seniors, and military | Check free-day calendar and bring EBT, student, senior, or military ID as applicable | Ongoing | [Asian Art Museum](https://about.asianart.org/plan-your-visit/) |
+| Bay Area Discovery Museum | Sausalito | 💳 👨‍👩‍👧 🧒 🌎 | $5 admission for EBT/WIC cardholders; pay-what-you-can days | Show EBT or WIC card at admission; check website for PWYC days | Ongoing | [Bay Area Discovery Museum](https://bayareadiscoverymuseum.org/visit/) |
+| California Academy of Sciences | San Francisco | 💳 🌎 | Museums for All admission ($3 per person); free neighborhood days for SF residents | Bring EBT card and photo ID; check website for free neighborhood day schedule | Ongoing | [Cal Academy](https://www.calacademy.org/visit) |
+| Chabot Space & Science Center | Oakland | 💳 🌎 | $5 admission with EBT card; free telescope viewing nights | Show EBT card at admission; check website for free telescope nights | Ongoing | [Chabot Space Center](https://chabotspace.org/visit/) |
 | Cartoon Art Museum | San Francisco | 💳 🎓 👵 🎖️ 🧒 👨‍👩‍👧 🌎 | Free or reduced admission for EBT/SNAP/Medi-Cal cardholders and discounted tickets for students, seniors, and military | Show benefits card or valid ID; see site for pay-what-you-wish days | Ongoing | [Cartoon Art Museum](https://www.cartoonart.org/visit) |
 | Children's Creativity Museum | San Francisco | 💳 🧒 👨‍👩‍👧 | Museums for All admission for families plus regular paid admission | Present physical benefits card with matching photo ID; at least one child in the group | Ongoing | [Children's Creativity Museum](https://creativity.org/hours-admission/) |
+| Children's Discovery Museum | San Jose | 💳 👨‍👩‍👧 🧒 | $1 admission with EBT card | Show EBT card at admission | Ongoing | [CDM San Jose](https://www.cdm.org/plan-your-visit/) |
+| Children's Fairyland | Oakland | 💳 👨‍👩‍👧 🧒 | $5 admission with EBT or WIC card | Show EBT or WIC card at admission | Ongoing | [Children's Fairyland](https://fairyland.org/visit/) |
+| Exploratorium | San Francisco | 💳 🌎 | $3-$5 admission with EBT; free community days | Show EBT card at admission; check website for free days | Ongoing | [Exploratorium](https://www.exploratorium.edu/visit/community-days) |
 | Fine Arts Museums of San Francisco (de Young Museum and Legion of Honor) | San Francisco | 💳 🎓 👵 🎖️ 🧑‍🦽 👨‍👩‍👧 🌎 | Free Saturdays for Bay Area residents, free first Tuesdays, youth free, Museums for All, military and other discounts | Bring Bay Area ID, EBT or Medi-Cal card, military ID, or other proof listed on their discounts page | Ongoing | [Fine Arts Museums of SF](https://www.famsf.org/) |
 | Gardens of Golden Gate Park (Conservatory of Flowers, Japanese Tea Garden, SF Botanical Garden) | San Francisco | 💳 🎖️ 🌎 | Free or reduced admission for SF residents, veterans, and Museums for All visitors; select free times for everyone | Show SF proof of residency, benefits card, or military ID; visit during posted free hours for general free admission | Ongoing; scheduled free days/hours | [Gardens of Golden Gate Park](https://gggp.org) |
-| MoAD (Museum of the African Diaspora) | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Museums for All admission, student and senior discounts, some free or community days, and free for active duty military | Bring EBT card, student or senior ID, or military ID as applicable | Ongoing | [MoAD](https://www.moadsf.org/tickets) |
+| Lawrence Hall of Science | Berkeley | 💳 👨‍👩‍👧 🧒 🌎 | $1 admission with EBT card; free Cal Day | Show EBT card at admission | Ongoing; Cal Day annual | [Lawrence Hall](https://lawrencehallofscience.org) |
+| Museum of the African Diaspora (MoAD) | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Museums for All admission, student and senior discounts, some free or community days, and free for active duty military | Bring EBT card, student or senior ID, or military ID as applicable | Ongoing | [MoAD](https://www.moadsf.org/tickets) |
 | Museum of Craft and Design | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free first Thursdays, discounted tickets for students and seniors, free admission for some military, first responders, and benefit cardholders | Visit on a free day or show student, senior, military, or benefits documentation | Ongoing | [Museum of Craft and Design](https://sfmcd.org/visit/) |
-| Museums for All (program) | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for up to 4 people at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | [Museums for All](https://museums4all.org) |
+**| Museums for All (program) | Nationwide | 💳 👨‍👩‍👧 | Free or low-cost admission for up to 4 people at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | [Museums for All](https://museums4all.org) |**
+| Oakland Museum of California | Oakland | 💳 🌎 | $1 admission with EBT card; free first Sundays | Show EBT card at admission | Ongoing; 1st Sunday monthly | [Oakland Museum](https://museumca.org/visit) |
+| Oakland Zoo – Bay to Zoo | Oakland | 💳 👨‍👩‍👧 🧒 | $5 admission for low-income families | Purchase tickets online or at gate with qualifying documentation | Ongoing | [Oakland Zoo](https://www.oaklandzoo.org/tickets) |
 | San Francisco Museum of Modern Art (SFMOMA) | San Francisco | 💳 🎓 🎖️ 🧒 👨‍👩‍👧 🌎 | Free for youth, free days for the public, Museums for All admission for SF residents with benefits cards, military and veteran discounts, and Discover & Go passes | Reserve tickets for free days, bring benefits card and SF proof, military ID, or library Discover & Go voucher | Ongoing | [SFMOMA](https://www.sfmoma.org/deals-discounts/) |
+| San Jose Museum of Art | San Jose | 💳 🌎 | Free admission with EBT card | Show EBT card at admission | Ongoing | [SJ Museum of Art](https://sjmusart.org/visit) |
+| The Tech Interactive | San Jose | 💳 🌎 | $5 admission with EBT card | Show EBT card at admission | Ongoing | [The Tech](https://www.thetech.org/visit) |
 | Walt Disney Family Museum | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Free general admission for US military and dependents, Museums for All admission for SF EBT/CalFresh/Medi-Cal holders (cardholder plus guests), and student/senior discounts | Show military or dependent ID, or present SF benefits card and proof of residency; see site for student and senior rates | Ongoing | [Walt Disney Family Museum](https://www.waltdisney.org/visit/admission) |
 
 ---
@@ -202,8 +220,10 @@ Our public libraries often offer more than books — including access to news, d
 | AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | [AC Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
 | BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | [BART Discounts](https://www.bart.gov/tickets/discounts) |
 | BART + Muni | San Francisco | 🌎 | "A" Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | [BART A Pass](https://www.bart.gov/tickets/discounts) |
+| Caltrain Dollar Fares for Youth | San Francisco, San Mateo, and Santa Clara Counties | 🧒 | $1 One-Way, $2 Day Pass for youth 18 and under | Show valid ID or Clipper Youth card | Ongoing | [Caltrain](https://www.caltrain.com/dollarfares) |
 | City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | [City Coach](https://citycoach.com/fares/) |
 | Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | [Clipper START](https://www.clipperstartcard.com) |
+| Emery Go-Round | Emeryville | 🌎 | Free shuttle service throughout Emeryville | Just board at any stop | Ongoing | [Emery Go-Round](https://emerygoround.com) |
 | Marin Transit | Marin County | 🎓 | Free rides for College of Marin students | Show student ID | School-year durations apply | [Marin Transit](https://marintransit.org/COM) |
 | Muni | San Francisco | 🧒 🎖️ 🧑‍🦽 💳 ⚽ | Free Muni for youth (excludes cable cars), income-eligible seniors/people with disabilities, Access Pass, Lifeline Pass, free with Chase Center event ticket | Online enrollment or show ticket/ID | Ongoing; some seasonal | [Muni Fares](https://www.sfmta.com/fares) |
 | Petaluma Transit | Petaluma | 🌎 | All local buses free to ride | Just board | Ongoing | [Petaluma Transit](https://transit.cityofpetaluma.net/fares/) |
@@ -211,8 +231,10 @@ Our public libraries often offer more than books — including access to news, d
 | SamTrans | San Mateo County | 🧒 | Summer Youth Pass: unlimited local bus rides June–August | Buy pass before summer | Seasonal | [SamTrans](https://www.samtrans.com/fares/fare-types) |
 | Santa Rosa CityBus | Santa Rosa | 🧒 🎓 🎖️ 🌎 | Free rides for youth, children, veterans, SRJC students, some city/county workers | Show valid qualifying ID | Ongoing | [Santa Rosa CityBus](https://srcitybus.org/fares-and-passes/discount-programs/) |
 | Senior Clipper Card | Bay Area | 👵 | Discounted fares for 65+ | Apply with proof of age | Ongoing | [Senior Clipper](https://www.clippercard.com/ClipperWeb/discounts.html) |
+| SMART | Marin & Sonoma Counties | 🧒 | Free SMART train rides for youth 18 and under | Show valid ID when boarding | Ongoing | [SMART](https://sonomamarintrain.org/fares) |
 | SolTrans / SolanoExpress | Solano County | 🧒 🎓 🎖️ 🌎 | Free rides for Solano College students, seniors 80+, young children | Show student ID or age ID | Ongoing | [SolTrans](https://www.soltrans.org/fares/fare-table) |
 | Sonoma County Transit | Sonoma County | 🎓 🎖️ | Free rides for veterans and college students | Show valid ID | Ongoing | [Sonoma County Transit](https://sctransit.com/fares/discount-categories/) |
+| Stanford Marguerite Shuttle | Palo Alto | 🌎 | Free public shuttle routes connecting Stanford, Palo Alto, and surrounding areas | Just board at designated stops | Ongoing | [Marguerite](https://transportation.stanford.edu/getting-stanford/marguerite) |
 | Union City Transit | Union City | 🧒 🏫 | Free rides for eligible Alameda Co. students (STPP) | Apply through program | Ongoing | [Union City Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
 | VTA | Santa Clara County | 🧒 | Summer Youth Pass: unlimited bus/light rail | Buy pass before summer | Seasonal | [VTA Summer Youth Pass](https://www.vta.org/go/fares/summer-youth-pass) |
 | Wheels (LAVTA) | Tri-Valley: Livermore/Dublin/Pleasanton | 🌎 🧒 💼 | East Bay Value Pass, Hacienda Eco Pass, free rides for eligible 6–12 grade students | Based on employer/school eligibility or pass | Ongoing | [Wheels](https://www.wheelsbus.com/fares/) |
@@ -224,10 +246,15 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| AT&T Access | Bay Area | 💳 SNAP/SSI | $5–$10/mo home internet with free installation | [AT&T Access](https://www.att.com/internet/access/) |
 | California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | [California LifeLine](https://www.californialifeline.com) |
+| CleanPowerSF | San Francisco | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | [CleanPowerSF](https://www.cleanpowersf.org) |
+| EBMUD Customer Assistance Program | East Bay (EBMUD service area) | 💳 🌎 | 35-50% discount on water and wastewater bills for income-eligible customers | Apply through EBMUD | Ongoing | [EBMUD Assistance](https://www.ebmud.com/customers/account/assistance-programs/) |
+| Internet Essentials by Xfinity | Bay Area | 💳 Low-Income | $10–$15/mo home internet + Wi-Fi modem | [Internet Essentials](https://www.xfinity.com/learn/internet-service/internet-essentials) |
 | LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | [LIHEAP](https://www.csd.ca.gov/energybills) |
-| PG&E Bill Relief Programs | California | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | [CleanPowerSF](https://www.cleanpowersf.org) |
-| Recology Discount Programs | SF | 💳 🌎 | Discounted refuse/recycling bills for eligible customers | Contact Recology SF for discount programs | Ongoing | [Recology](https://www.recology.com) |
+Medical Baseline Allowance | California (all utilities) | 🧑‍🦽 | Extra low-cost energy allowance for customers with qualifying medical conditions requiring additional electricity or gas | Apply through your utility provider (PG&E, etc.) | Ongoing | [Medical Baseline](https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline) |
+| PG&E CARE & FERA | Northern California (PG&E service area) | 💳 🌎 | 20-35% discount on electric and gas bills for income-eligible customers | Apply online or call PG&E | Ongoing | [PG&E CARE](https://www.pge.com/care) |
+| Recology Lifeline | San Francisco | 💳 🌎 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [Recology Lifeline](https://www.recology.com/recology-san-francisco/lifeline-rate/) |
 | SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
 ### Support This Project
