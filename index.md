@@ -159,7 +159,8 @@ Our public libraries often offer more than books — including access to news, d
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
 | Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | [Discover & Go](https://discoverandgo.org) |
-| Kanopy | Varies (CA libraries) | 🎓 🧒 🌎 | Free streaming of films and documentaries for library cardholders | Log in with library card; limited monthly credits | Ongoing | [Kanopy for Library Patrons](https://www.kanopy.com/signup/find/publiclibrary) |
+| Calm Meditation App | San Mateo County | 🌎 | Free Calm subscription with guided meditations, courses, stories, music, and stress management tools via web and mobile app | Request subscription using library card (cards starting with "29041," "29731" or "29735"); allow 3-4 business days for access | Ongoing | [Calm via SM County Libraries](https://smcl.org/get-calm) |
+| Kanopy | Varies (CA libraries) | 🌎 | Free streaming of films and documentaries for library cardholders | Log in with library card; limited monthly credits | Ongoing | [Kanopy for Library Patrons](https://www.kanopy.com/signup/find/publiclibrary) |
 | New York Times Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | [NYT Library Access](https://www.library.ca.gov/services/to-libraries/nyt/) |
 
 ---
