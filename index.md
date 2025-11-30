@@ -37,7 +37,7 @@ Some programs are available only in specific cities, while others apply to the e
 - [Food](#food)
 - [Recreation](#recreation)
 - [Transit](#transit)
-- [Public Transit](#publictransit)
+- [Public Transit](#public-transit)
 - [Utilities](#utilities)
 - [Health](#health)
 - [Legal](#legal)
@@ -85,6 +85,10 @@ Some programs are available only in specific cities, while others apply to the e
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
 
+| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
+| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://511.org/transit/rtc-card/eligibility |
+| Senior Clipper Card | Bay Area | 👵 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
+| Youth Clipper Card | Bay Area | 🧒 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
 | Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | https://www.lyft.com/bikes/bay-wheels/bike-share-for-all |
 | Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | https://www.li.me/why/community/lime-access |
 | Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | https://www.mylowcostauto.com |
@@ -92,12 +96,6 @@ Some programs are available only in specific cities, while others apply to the e
 ---
 
 ## Public Transit
-
-| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
-| Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
-| RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://511.org/transit/rtc-card/eligibility |
-| Senior Clipper Card | Bay Area | 👵 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
-| Youth Clipper Card | Bay Area | 🧒 | Discounted fares | Apply w/ proof of age | Ongoing | https://www.clippercard.com/ClipperWeb/discounts.html |
 
 | Transit Agency | Area | Eligibility | Summary of Benefit | How to Access | Notes / Duration | Link |
 |---|---|---|---|---|---|---|
