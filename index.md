@@ -48,8 +48,8 @@ This guide highlights free and low-cost services and programs across the Bay Are
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| CalFresh Online | California | 💳 🌎 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | https://www.cdss.ca.gov/ebt-online |
-| Market Match | Bay Area | 💳 🌎 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | https://www.marketmatch.org |
+| CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | https://www.cdss.ca.gov/ebt-online |
+| Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | https://www.marketmatch.org |
 
 ---
 
@@ -58,18 +58,18 @@ This guide highlights free and low-cost services and programs across the Bay Are
 | Program or Location | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |---------------------|------|-------------|---------|---------------|-----------|------|
 | Museums for All | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for families | Show EBT + ID | Ongoing | https://museums4all.org |
-| Aquarium of the Bay | San Francisco | 💳 🌎 | $3 or reduced admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.aquariumofthebay.org |
-| Asian Art Museum | San Francisco | 💳 🌎 | Free or discounted admission | Show benefit card + SF proof at entry | Ongoing | https://www.asianart.org |
-| Cartoon Art Museum | San Francisco | 💳 🌎 | Free or discounted admission | Show benefit card + SF proof | Ongoing | https://www.cartoonart.org |
+| Aquarium of the Bay | San Francisco | 💳 | $3 or reduced admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.aquariumofthebay.org |
+| Asian Art Museum | San Francisco | 💳 | Free or discounted admission | Show benefit card + SF proof at entry | Ongoing | https://www.asianart.org |
+| Cartoon Art Museum | San Francisco | 💳 | Free or discounted admission | Show benefit card + SF proof | Ongoing | https://www.cartoonart.org |
 | Children’s Creativity Museum | San Francisco | 💳 🧒 👨‍👩‍👧 | Discount for kids & families | Reserves may be needed; bring benefit card + SF proof | Ongoing | https://creativity.org |
-| Conservatory of Flowers | San Francisco | 💳 🌎 | Reduced admission | Show benefit card + SF proof | Ongoing | https://conservatoryofflowers.org |
-| de Young Museum | San Francisco | 💳 🌎 | Discounted admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.famsf.org/visit/de-young-museum |
-| Legion of Honor | San Francisco | 💳 🌎 | Discounted admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.famsf.org/visit/legion-of-honor |
-| MoAD — Museum of the African Diaspora | San Francisco | 💳 🌎 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.moadsf.org |
-| Museum of Craft and Design | San Francisco | 💳 🌎 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://sfmcd.org |
-| San Francisco Botanical Garden | San Francisco | 💳 🌎 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.sfbg.org |
-| SFMOMA — Museum of Modern Art | San Francisco | 💳 🌎 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.sfmoma.org |
-| Walt Disney Family Museum | San Francisco | 💳 🌎 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.waltdisney.org |
+| Conservatory of Flowers | San Francisco | 💳 | Reduced admission | Show benefit card + SF proof | Ongoing | https://conservatoryofflowers.org |
+| de Young Museum | San Francisco | 💳 | Discounted admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.famsf.org/visit/de-young-museum |
+| Legion of Honor | San Francisco | 💳 | Discounted admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.famsf.org/visit/legion-of-honor |
+| MoAD — Museum of the African Diaspora | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.moadsf.org |
+| Museum of Craft and Design | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://sfmcd.org |
+| San Francisco Botanical Garden | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.sfbg.org |
+| SFMOMA — Museum of Modern Art | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.sfmoma.org |
+| Walt Disney Family Museum | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.waltdisney.org |
 
 ---
 
