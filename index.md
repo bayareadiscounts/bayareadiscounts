@@ -51,10 +51,18 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| Alameda Meals on Wheels | Alameda (city) | 👵 🧑‍🦽 | Home-delivered meals for homebound adults | Call (510) 865-6131 to arrange delivery | Ongoing | [Alameda Meals on Wheels](https://alamedamealsonwheels.org/) |
 | CalFresh Online | California | 💳 | Use EBT online at select stores | Choose EBT at checkout | Ongoing | [CalFresh Online](https://www.cdss.ca.gov/ebt-online) |
+| J-Sei Meals on Wheels | Berkeley | 👵 | Japanese-style meals for seniors 60+ who have difficulty leaving home | Call (510) 654-4000 ext. 105 | Ongoing | [J-Sei](http://www.j-sei.org) |
 | Market Match | Bay Area | 💳 | Extra dollars for fruits & veggies at farmers markets | Bring EBT to info booth | Ongoing | [Market Match](https://www.marketmatch.org) |
+| Meals on Wheels Contra Costa | Contra Costa County | 👵 🧑‍🦽 | Home-delivered meals for homebound seniors | Contact for application | Ongoing | [MOW Contra Costa](https://mowcontracosta.org/) |
+| Meals on Wheels Diablo Region | Contra Costa (Diablo Region) | 👵 🧑‍🦽 | Home-delivered meals for vulnerable seniors | Contact for enrollment | Ongoing | [MOW Diablo Region](https://www.mowdiabloregion.org/) |
+| Meals on Wheels San Francisco | San Francisco | 👵 🧑‍🦽 | Home-delivered meals for homebound seniors 60+ and adults with disabilities | Call to apply and arrange delivery | Ongoing | [Meals on Wheels SF](https://www.mowsf.org/) |
+| Meals on Wheels San Mateo County (Peninsula Volunteers) | San Mateo County | 👵 🧑‍🦽 | Home-delivered meals for adults 60+ who are primarily homebound; suggested donation $5.25/meal but never denied | Call (650) 272-5041 to apply | Ongoing | [Peninsula Volunteers MOW](https://1pvi.org/mealsonwheels/) |
 | Rainbow Grocery | San Francisco | 💳 👵 🌎 | 10% discount for shoppers 60+ and EBT card holders | Show EBT card or proof of age at checkout | Ongoing | [Rainbow Grocery](https://www.rainbow.coop) |
-
+| SOS Meals on Wheels | Alameda County (Castro Valley, Hayward, Oakland, San Leandro, San Lorenzo, Fremont, Newark, Union City) | 👵 🧑‍🦽 | Daily home-delivered meals for homebound seniors 60+ | Call (510) 582-1263 to apply | Ongoing | [SOS Meals on Wheels](https://www.sosmow.org/) |
+| Sourcewise Meals on Wheels | Santa Clara County | 👵 🧑‍🦽 | Two daily meals meeting 2/3 of nutritional requirements; suggested contribution $3/day but never denied | Call (408) 350-3200 option 1 to apply | Ongoing | [Sourcewise MOW](https://mysourcewise.com/programs-services/meals/) |
+| Spectrum Community Services Meals on Wheels | Tri-Valley (Livermore, Dublin, Pleasanton, Sunol) | 👵 🧑‍🦽 | Home-delivered meals for seniors 60+ unable to prepare food | Livermore: (925) 421-4657; Pleasanton area: (925) 931-5385 | Ongoing | [Spectrum MOW](https://www.spectrumcs.org/senior-services/meals-on-wheels) |
 
 ---
 
