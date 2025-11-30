@@ -154,7 +154,7 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
-| Discover & Go Museum Passes | Bay Area (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | https://discoverandgo.org |
+| Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | https://discoverandgo.org |
 | NYT Digital Access | Varies (CA libraries) | 💳 🌎 | Complimentary 72-hour digital access to The New York Times online (articles, cooking, games, archives) | Redeem with library-card number & PIN — create or log in to NYTimes.com account | 72-hour passes, renewable | https://www.library.ca.gov/services/to-libraries/nyt/ |
 
 ---
