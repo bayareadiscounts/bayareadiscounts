@@ -21,7 +21,7 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Icon | Meaning |
 |------|---------|
-| 💳 | Requires benefit card or residency (Library card, driver's license, EBT, Medi-Cal, etc.) |
+| 💳 | Requires benefit card or residency (Library card, driver's license, EBT/SNAP, Medi-Cal, etc.) |
 | 🧒 | Youth (children & teens — age or school ID may be required) |
 | 🎓 | College Students |
 | 🎖️ | Military / Veterans |
@@ -48,6 +48,9 @@ Some programs are available only in specific cities, while others apply to the e
 - [Transportation](#transportation)
 - - [Public Transit](#public-transit)
 - [Utilities](#utilities)
+  
+- [Nonprofit Resources](#nonprofit-resources)
+
 
 ---
 
@@ -165,7 +168,6 @@ Our public libraries often offer more than books — including access to news, d
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
 | Berkeley Tool Lending Library | Berkeley | 🌎 | Borrow tools (power tools, lawn care equipment, etc.) free with library card | Check out from library location; return within loan period | Ongoing | [Berkeley Tool Lending Library](https://www.berkeleypubliclibrary.org/locations/tool-lending-library) |
-| California State Parks Adventure Pass | California | 🧒 | Free day-use passes for fourth graders attending a public school in California and their families to 54 participating state parks. | Apply online | Ongoing (funded through 2026) | [CA Adventure Pass](https://www.reservecalifornia.com/) |
 | California State Parks Library Pass | California (1,100+ libraries) | 🌎 | Free vehicle day-use entry to 200+ participating state parks (1 vehicle up to 9 people or 1 motorcycle). Not valid for camping, museums within parks, or special events. | Check out pass from local public library with library card; loan period varies by library | Ongoing (funded through 2026) | [CA Parks Pass](https://www.library.ca.gov/services/to-libraries/parks-pass/) |
 | Calm Meditation App | San Mateo County | 🌎 | Free Calm subscription with guided meditations, courses, stories, music, and stress management tools via web and mobile app | Request subscription using library card (cards starting with "29041," "29731" or "29735"); allow 3-4 business days for access | Ongoing | [Calm via SM County Libraries](https://smcl.org/get-calm) |
 | Discover & Go Museum Passes | California (many library systems) | 🌎 | Free/discounted museum tickets and passes via library-partner access | Reserve online using library card or e-account | Pass release cycles vary | [Discover & Go](https://discoverandgo.org) |
@@ -177,11 +179,22 @@ Our public libraries often offer more than books — including access to news, d
 
 ## Recreation
 
+### Programs
+
+> Always check the program website for the most current eligibility details.
+
+| Program | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|------------------|-------------|---------|---------------|-----------|------|
+| California State Parks Adventure Pass | 🧒 | Free day-use passes for fourth graders attending a public school in California and their families to 54 participating state parks. | Apply online | Ongoing (funded through 2026) | [CA Adventure Pass](https://www.reservecalifornia.com/) |
+| Golden Bear Pass | 💳 | CalWORKs families can receive a free annual vehicle day-use pass to over 200 participating state parks and beaches operated by State Parks. | Apply online | Ongoing | [Golden Bear Pass](https://www.parks.ca.gov/?page_id=30960) |
+| Museums for All | 💳 👨‍👩‍👧 | Free or low-cost admission for EBT cardholders with up to 4 guests at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | [Museums for All](https://museums4all.org) |
+
+### Museums
+
 > Always check the program website for the most current prices, free days, and eligibility details.
 
 | Museum / Program | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |------------------|-----------|-------------|---------|---------------|-----------|------|
-| Museums for All (program) | Nationwide | 💳 👨‍👩‍👧 | Free or low-cost admission for up to 4 people at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | [Museums for All](https://museums4all.org) |
 | Aquarium of the Bay | San Francisco | 💳 🎖️ 👨‍👩‍👧 🌎 | Locals, military, and other discounts, plus occasional benefit card offers | Bring Bay Area ID, military ID, or benefits card as listed on their site | Ongoing | [Aquarium of the Bay](https://www.aquariumofthebay.org) |
 | Asian Art Museum | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free days, Museums for All admission, and discounts for students, seniors, and military | Check free-day calendar and bring EBT, student, senior, or military ID as applicable | Ongoing | [Asian Art Museum](https://about.asianart.org/plan-your-visit/) |
 | Bay Area Discovery Museum | Sausalito | 💳 👨‍👩‍👧 🧒 🌎 | $5 admission for EBT/WIC cardholders; pay-what-you-can days | Show EBT or WIC card at admission; check website for PWYC days | Ongoing | [Bay Area Discovery Museum](https://bayareadiscoverymuseum.org/visit/) |
@@ -258,11 +271,11 @@ Medical Baseline Allowance | California (all utilities) | 🧑‍🦽 | Extra lo
 | Recology Lifeline | San Francisco | 💳 🌎 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [Recology Lifeline](https://www.recology.com/recology-san-francisco/lifeline-rate/) |
 | SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
+---
+
 ### Support This Project
 If this guide helps you save, consider supporting us here:
 <a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
-
----
 
 _Last updated: November 2025_  
 Contribute a listing by opening an issue on GitHub.
