@@ -1,0 +1,51 @@
+# Nonprofit Resources
+
+Resources and support for nonprofit organizations, including free meeting spaces, technology donations and discounts, and professional services.
+
+## Computers & Equipment
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| A Greener Source | Bay Area | Nonprofits | Zero-cost office furniture donations including desks, chairs, filing cabinets, and other office furnishings | Request furniture through website; schedule pickup or delivery | Ongoing | [A Greener Source](https://www.agreenersource.com/non-profits/) |
+| Building Resources | San Francisco | General Public & Nonprofits | Salvaged and reusable building materials, residential/commercial construction materials, landscaping supplies at reduced cost | Shop at store; some materials available for nonprofit projects | Ongoing | [Building Resources](https://buildingresources.org/) |
+| Good360 | National | 501(c)(3) Nonprofits | Donated technology including laptops, monitors, tablets (availability varies by donor shipments) | Become Good360 member; request available items | Ongoing | [Good360](https://good360.org/) |
+| San Francisco Virtual Warehouse | Bay Area | Nonprofits & Public Schools | Free surplus office furniture, supplies, and equipment from the City & County of San Francisco | Request an account with nonprofit verification; once approved, users may browse and submit requests for available items via Rheaply | Ongoing | [SF Virtual Warehouse](https://www.sfenvironment.org/virtual-warehouse-instructions-non-profits-and-schools) |
+| SCRAP (Scroungers' Center for Re-usable Art Parts) | San Francisco | Teachers & Community Groups | Low-cost/donated arts and crafts materials, fabric, sewing notions, paper crafts, and educational supplies | Shop at physical location or inquire about donations for educational programs | Ongoing | [SCRAP SF](https://www.scrap-sf.org/) |
+| Surplus Property Program  | San Mateo County | Nonprofits & Public Schools | Free surplus office furniture, supplies, and equipment from the County of San Mateo | Request an account with nonprofit verification; once approved, users may browse and submit requests for available items via GovDeals | Ongoing | [Program Enrollment Instructions (PDF)](https://www.smcsustainability.org/wp-content/uploads/2024_03_07-Govdeals.com-Customer-Registration-Instructions-Community-Tier_Final.pdf) |
+| Tech Exchange | Bay Area | Nonprofits & Community Orgs | Refurbished computers and technology equipment; also provides digital training and tech support | Contact for equipment requests; also accepts donations | Ongoing | [Tech Exchange](https://www.techexchange.org/lowcostcomputers) |
+| World Computer Exchange | Palo Alto | Nonprofits & Schools | Donated computers and equipment for educational use; 15 Bay Area drop-off locations | Donate or request equipment through website | Ongoing | [World Computer Exchange](https://worldcomputerexchange.org/get-computers/) |
+
+## Meeting & Event Spaces
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Google Community Space | San Francisco | Nonprofits | Free event spaces (up to 150 people), coworking areas, meeting rooms; includes A/V equipment, kitchen, Chromebooks, VR equipment; one event per quarter | Apply for membership online (Bay Area 501(c)(3)s); book events 90 days in advance | Ongoing | [Google Community Space](https://communityspace.withgoogle.com/) |
+| Sobrato Nonprofit Centers - Conference Space | Milpitas, San Jose, Redwood City | Nonprofits | Free meeting space for 3-200 people in multiple rooms; state-of-the-art A/V equipment, hospitality areas, on-site café | Request space through Sobrato centers; varies by location | Ongoing | [Sobrato Conference Space](https://www.sobrato.com/sobrato-philanthropies/what-we-do/non-profit-sustainability/conference-space-nonprofit-centers/) |
+
+## Pro Bono Legal Services for Nonprofits
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Bar Association of SF - Community Organization Representation Project (CORP) | San Francisco | Nonprofits serving low-income/underserved | Free legal assistance with incorporation, 501(c)(3) applications, governance, contracts, and other transactional matters | Apply through CORP online | Ongoing | [BASF CORP](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
+| Justice & Diversity Center (JDC) | San Francisco | Nonprofits serving low-income residents | Pro bono legal services and free MCLE-accredited training; volunteer attorneys for various nonprofit legal needs | Contact JDC for assistance | Ongoing | [JDC](https://www.probono.net/sf/) |
+| Bay Area Legal Aid - Pro Bono Program | Bay Area | Nonprofits serving vulnerable populations | Pro bono attorney matching, training, mentorship for legal projects | Contact Pro Bono Director at probono@baylegal.org | Ongoing | [BayLegal Pro Bono](https://baylegal.org/get-involved-2/pro-bono-volunteer/) |
+| REP (Racial Equity Project) | California (Bay Area focus) | Black-led organizations | Pro bono legal support for Black-led nonprofits; partnership with East Bay Community Foundation | Apply through REP program | Ongoing | [REP via BASF](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
+
+## Technology
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| TechSoup | US/Global | 501(c)(3) Nonprofits | Donated and deeply discounted software, hardware, and cloud services from major tech companies (Microsoft, Adobe, Cisco, etc.) | Create free account; verify nonprofit status; browse catalog | Ongoing | [TechSoup](https://www.techsoup.org/) |
+| Microsoft Nonprofits | US/Global | 501(c)(3) Nonprofits | Free/discounted Microsoft 365, Office, Azure cloud credits ($3,500/year), and other software | Apply through Microsoft for Nonprofits portal | Ongoing | [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits) |
+| Google for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Google Workspace, $10,000/month Google Ads grants, YouTube nonprofit features, Google Earth tools | Apply through Google for Nonprofits | Ongoing | [Google for Nonprofits](https://www.google.com/nonprofits/) |
+| Slack for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Standard Plan (workspaces <250 members); 85% discount for larger workspaces and Plus Plan | Apply through Slack for Nonprofits program | Ongoing | [Slack for Nonprofits](https://slack.com/help/articles/204368833-Slack-for-Nonprofits-program) |
+| Canva for Nonprofits | US/Global | 501(c)(3) Nonprofits | Free Canva Pro account for design tools | Apply through Canva for Nonprofits | Ongoing | [Canva for Nonprofits](https://www.canva.com/canva-for-nonprofits/) |
+
+---
+
+### Support This Project
+If this guide helps you save, consider supporting us here:
+<a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
+_Last updated: November 2025_  
+Contribute a listing by opening an issue on GitHub.
