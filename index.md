@@ -59,21 +59,26 @@ Some programs are available only in specific cities, while others apply to the e
 
 ## Recreation
 
-| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
-|---------------------|------|-------------|---------|---------------|-----------|------|
-| Museums for All | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for families | Show EBT + ID | Ongoing | https://museums4all.org |
-| Aquarium of the Bay | San Francisco | 💳 | $3 or reduced admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.aquariumofthebay.org |
-| Asian Art Museum | San Francisco | 💳 | Free or discounted admission | Show benefit card + SF proof at entry | Ongoing | https://www.asianart.org |
-| Cartoon Art Museum | San Francisco | 💳 | Free or discounted admission | Show benefit card + SF proof | Ongoing | https://www.cartoonart.org |
-| Children’s Creativity Museum | San Francisco | 💳 🧒 👨‍👩‍👧 | Discount for kids & families | Reserves may be needed; bring benefit card + SF proof | Ongoing | https://creativity.org |
-| Conservatory of Flowers | San Francisco | 💳 | Reduced admission | Show benefit card + SF proof | Ongoing | https://conservatoryofflowers.org |
-| de Young Museum | San Francisco | 💳 | Discounted admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.famsf.org/visit/de-young-museum |
-| Legion of Honor | San Francisco | 💳 | Discounted admission | Show benefit card + SF proof at ticket desk | Ongoing | https://www.famsf.org/visit/legion-of-honor |
-| MoAD — Museum of the African Diaspora | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.moadsf.org |
-| Museum of Craft and Design | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://sfmcd.org |
-| San Francisco Botanical Garden | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.sfbg.org |
-| SFMOMA — Museum of Modern Art | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.sfmoma.org |
-| Walt Disney Family Museum | San Francisco | 💳 | Free/discounted admission | Show benefit card + SF proof | Ongoing | https://www.waltdisney.org |
+### Museums with benefit card and other public discounts
+
+> Always check the museum website for the most current prices, free days, and eligibility details.
+
+| Museum / Program | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|------------------|-----------|-------------|---------|---------------|-----------|------|
+| Museums for All (program) | Bay Area + US | 💳 👨‍👩‍👧 | Free or low-cost admission for up to 4 people at participating museums | Bring EBT or other qualifying benefits card and photo ID | Ongoing | https://museums4all.org |
+| Aquarium of the Bay | San Francisco | 💳 🎖️ 👨‍👩‍👧 🌎 | Locals, military, and other discounts, plus occasional benefit card offers | Bring Bay Area ID, military ID, or benefits card as listed on their site | Ongoing | [https://www.aquariumofthebay.org](https://www.aquariumofthebay.org/locals-discount/) |
+| Asian Art Museum | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free days, Museums for All admission, and discounts for students, seniors, and military | Check free-day calendar and bring EBT, student, senior, or military ID as applicable | Ongoing | https://about.asianart.org |
+| Cartoon Art Museum | San Francisco | 💳 🎓 👵 🎖️ 🧒 👨‍👩‍👧 🌎 | Free or reduced admission for EBT/SNAP/Medi-Cal cardholders and discounted tickets for students, seniors, and military | Show benefits card or valid ID; see site for pay-what-you-wish days | Ongoing | https://www.cartoonart.org |
+| Children’s Creativity Museum | San Francisco | 💳 🧒 👨‍👩‍👧 | Museums for All admission for families plus regular paid admission | Present physical benefits card with matching photo ID; at least one child in the group | Ongoing | https://creativity.org/hours-admission/ |
+| Conservatory of Flowers | San Francisco | 💳 🎖️ 🌎 | Free or reduced admission for SF residents, veterans, and Museums for All participants, plus some free days | Show SF proof of residency, EBT card, or military ID as listed | Ongoing | https://conservatoryofflowers.org |
+| Japanese Tea Garden | San Francisco | 💳 🎖️ 🌎 | Free or reduced admission for SF residents, veterans, and Museums for All visitors, plus free morning hours | Show SF proof of residency, EBT card, or military ID, or arrive during posted free times | Ongoing | https://gggp.org/japanese-tea-garden |
+| San Francisco Botanical Garden | San Francisco | 💳 🎖️ 🌎 | Free or reduced admission for SF residents, veterans, and Museums for All visitors, plus early free hours and some free days | Show SF proof of residency, EBT card, or military ID, or visit during posted free times | Ongoing | https://www.sfbg.org |
+| de Young Museum (Fine Arts Museums of SF) | San Francisco | 💳 🎓 👵 🎖️ 🧑‍🦽 👨‍👩‍👧 🌎 | Free Saturdays for Bay Area residents, free first Tuesdays, youth free, Museums for All, military and other discounts | Bring Bay Area ID, EBT or Medi-Cal card, military ID, or other proof listed on their discounts page | Ongoing | https://www.famsf.org/visit/de-young-museum |
+| Legion of Honor (Fine Arts Museums of SF) | San Francisco | 💳 🎓 👵 🎖️ 🧑‍🦽 👨‍👩‍👧 🌎 | Same free and reduced admission programs as de Young | Use the same documentation as de Young; see site for details | Ongoing | https://www.famsf.org/visit/legion-of-honor |
+| MoAD (Museum of the African Diaspora) | San Francisco | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Museums for All admission, student and senior discounts, some free or community days, and free for active duty military | Bring EBT card, student or senior ID, or military ID as applicable | Ongoing | https://www.moadsf.org/tickets |
+| Museum of Craft and Design | San Francisco | 💳 🎓 👵 🎖️ 👨‍👩‍👧 🌎 | Free first Thursdays, discounted tickets for students and seniors, free admission for some military, first responders, and benefit cardholders | Visit on a free day or show student, senior, military, or benefits documentation | Ongoing | https://sfmcd.org/visit/ |
+| SFMOMA (Museum of Modern Art) | San Francisco | 💳 🎓 🎖️ 🧒 👨‍👩‍👧 🌎 | Free for youth, free days for the public, Museums for All admission for SF residents with benefits cards, military and veteran discounts, and Discover & Go passes | Reserve tickets for free days, bring benefits card and SF proof, military ID, or library Discover & Go voucher | Ongoing | https://www.sfmoma.org/deals-discounts/ |
+| Walt Disney Family Museum | San Francisco (Presidio) | 💳 🎓 🎖️ 👨‍👩‍👧 🌎 | Free general admission for US military and dependents, Museums for All admission for SF EBT/CalFresh/Medi-Cal holders (cardholder plus guests), and student/senior discounts | Show military or dependent ID, or present SF benefits card and proof of residency; see site for student and senior rates | Ongoing | https://www.waltdisney.org/visit/admission |
 
 ---
 
@@ -81,10 +86,10 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | https://www.lyft.com/bikes/bay-wheels/bikeshare-for-all |
+| Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | https://www.lyft.com/bikes/bay-wheels/bike-share-for-all |
 | Clipper START | Bay Area | 💳 | Reduced transit fares | Apply online | Ongoing | https://www.clipperstartcard.com |
 | Free Muni for Youth | SF | 🧒 | Free Muni for eligible youth (typically ages 5–18) | Apply or confirm eligibility through SFMTA | Ongoing | https://www.sfmta.com |
-| Lime Access | SF | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | https://www.li.me |
+| Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | https://www.li.me/why/community/lime-access |
 | Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | https://www.mylowcostauto.com |
 | Muni Lifeline Pass | SF | 💳 🌎 | About 50% off monthly adult Muni pass for income-eligible residents | Apply via SFMTA | Ongoing | https://www.sfmta.com |
 | RTC Clipper Card | Bay Area | 🧑‍🦽 | Reduced fares | Apply w/ disability proof | Ongoing | https://511.org/transit/rtc-card/eligibility |
