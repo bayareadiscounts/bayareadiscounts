@@ -229,11 +229,11 @@ Our public libraries often offer more than books — including access to news, d
 | Recology Discount Programs | SF | 💳 🌎 | Discounted refuse/recycling bills for eligible customers | Contact Recology SF for discount programs | Ongoing | [Recology](https://www.recology.com) |
 | SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
+# Support This Project
+If this guide helps you save, consider supporting us here:
+<a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 ---
 
 _Last updated: November 2025_  
 Contribute a listing by opening an issue on GitHub.
-
-### Support This Project
-If this guide helps you save, consider supporting us here:
-<a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
