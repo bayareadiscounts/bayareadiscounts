@@ -136,9 +136,9 @@ Some programs are available only in specific cities, while others apply to the e
 
 ## Legal
 
-| Program | Area | Eligibility | Benefit | Timeframe | Link |
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
-| Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Ongoing | https://www.courts.ca.gov/forms.htm |
+| Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail | Ongoing | https://selfhelp.courts.ca.gov/fee-waiver |
 | DMV Reduced-Fee ID Card | California / SF | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | https://www.dmv.ca.gov |
 | Free Immigration Legal Help | SF | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | https://immigrants.sfgov.org |
 | SF Financial Justice Project | SF | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program offerings and apply where relevant | Ongoing | https://sfgov.org/financialjustice |
