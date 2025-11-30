@@ -15,7 +15,6 @@ The goal: **Help Bay Area residents explore more while spending less.**
 
 Visit here:  
 **https://bayareadiscounts.github.io**  
-(or **bayareadiscounts.com** if mapped)
 
 ---
 
