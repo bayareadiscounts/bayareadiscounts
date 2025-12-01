@@ -67,7 +67,6 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Alternative Payment Programs | Bay Area counties | 💳 👨‍👩‍👧 🧒 | Vouchers for free/subsidized child care based on income and need | Contact local agency: BANANAS (Alameda), 4Cs (other counties) | Ongoing (waitlists may apply) | [My Child Care Plan](https://mychildcareplan.org/) |
 | Bay Area Crisis Nursery - Emergency Childcare | Contra Costa County | 💳 👨‍👩‍👧 🧒 | FREE emergency childcare for children birth-6; up to 30 days per 6 months, 60 days per year | Call to schedule (available 24/7) | Ongoing | [Bay Area Crisis Nursery](https://bayareacrisisnursery.org/programs/emergency-childcare/) |
 | California State Preschool Program | California | 💳 👨‍👩‍👧 🧒 | Free part-day preschool for income-eligible families with children 3-5 | Apply through local preschool providers | Ongoing | [My Child Care Plan](https://mychildcareplan.org/resource/child-care-subsidy-programs/) |
 | CalWORKs Child Care | California | 💳 👨‍👩‍👧 🧒 | Free or subsidized child care for CalWORKs participants (3 stages) | Apply through county CalWORKs office | Ongoing | [CDSS CalWORKs](https://www.cdss.ca.gov/inforesources/calworks-child-care) |
