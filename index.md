@@ -268,7 +268,7 @@ Our public libraries often offer more than books — including access to news, d
 | LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | [LIHEAP](https://www.csd.ca.gov/energybills) |
 Medical Baseline Allowance | California (all utilities) | 🧑‍🦽 | Extra low-cost energy allowance for customers with qualifying medical conditions requiring additional electricity or gas | Apply through your utility provider (PG&E, etc.) | Ongoing | [Medical Baseline](https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline) |
 | PG&E CARE & FERA | Northern California (PG&E service area) | 💳 🌎 | 20-35% discount on electric and gas bills for income-eligible customers | Apply online or call PG&E | Ongoing | [PG&E CARE](https://www.pge.com/care) |
-| Recology Lifeline | San Francisco | 💳 🌎 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [Recology Lifeline](https://www.recology.com/recology-san-francisco/lifeline-rate/) |
+| Recology 25% Low-Income Discount Program | San Francisco | 💳 🌎 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [SF.gov](https://www.sf.gov/additional-refuse-ratepayer-resources) |
 | SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
 ---
