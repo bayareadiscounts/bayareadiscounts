@@ -1,6 +1,6 @@
 # Bay Area Discounts
 
-Bay Area Discounts is a community resource that lists free and low-cost programs across the San Francisco Bay Area — including benefits for youth, seniors, families, veterans, college students, nonprofit organizations, and anyone looking to save on everyday costs.
+[BayAreaDiscounts.com](https://bayareadiscounts.com) is a community resource that lists free and low-cost programs across the San Francisco Bay Area — including benefits for youth, seniors, families, veterans, college students, nonprofit organizations, and anyone looking to save on everyday costs.
 
 This project focuses on **verifiable**, **publicly accessible** discounts and services — especially those supported by:
 - Benefit cards (EBT, Medi-Cal, CalFresh, WIC, etc.)
