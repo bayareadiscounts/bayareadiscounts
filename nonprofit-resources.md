@@ -15,6 +15,15 @@ Resources and support for nonprofit organizations, including free meeting spaces
 | Tech Exchange | Bay Area | Nonprofits & Community Orgs | Refurbished computers and technology equipment; also provides digital training and tech support | Contact for equipment requests; also accepts donations | Ongoing | [Tech Exchange](https://www.techexchange.org/lowcostcomputers) |
 | World Computer Exchange | Worldwide | Nonprofits & Schools | Donated computers and equipment for educational use; 15 Bay Area drop-off locations | Donate or request equipment through website | Ongoing | [World Computer Exchange](https://worldcomputerexchange.org/get-computers/) |
 
+## Legal Services
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| Bar Association of SF - Community Organization Representation Project (CORP) | San Francisco | Nonprofits serving low-income/underserved | Free legal assistance with incorporation, 501(c)(3) applications, governance, contracts, and other transactional matters | Apply through CORP online | Ongoing | [BASF CORP](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
+| Justice & Diversity Center (JDC) | San Francisco | Nonprofits serving low-income residents | Pro bono legal services and free MCLE-accredited training; volunteer attorneys for various nonprofit legal needs | Contact JDC for assistance | Ongoing | [JDC](https://www.probono.net/sf/) |
+| Bay Area Legal Aid - Pro Bono Program | Bay Area | Nonprofits serving vulnerable populations | Pro bono attorney matching, training, mentorship for legal projects | Contact Pro Bono Director at probono@baylegal.org | Ongoing | [BayLegal Pro Bono](https://baylegal.org/get-involved-2/pro-bono-volunteer/) |
+| REP (Racial Equity Project) | California (Bay Area focus) | Black-led organizations | Pro bono legal support for Black-led nonprofits; partnership with East Bay Community Foundation | Apply through REP program | Ongoing | [REP via SFBAR](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
+
 ## Meeting & Event Spaces
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
@@ -25,15 +34,6 @@ Resources and support for nonprofit organizations, including free meeting spaces
 | Salesforce 'Ohana Floor | San Francisco | Nonprofits focused on humanitarian/social/educational/environmental causes | 61st floor event space with 360° Bay Area views, capacity up to 250 guests; includes A/V equipment, event team support; organizations can host once every 12 months | Submit event request online; book up to 6 months in advance | Weeknights M-F 5:30-8pm | ['Ohana Floor - Salesforce](https://www.salesforce.com/company/ohana-floors-san-francisco/) |
 | Sobrato Nonprofit Centers - Conference Space | Milpitas, San Jose, Redwood City | Nonprofits | Free meeting space for 3-200 people in multiple rooms; state-of-the-art A/V equipment, hospitality areas, on-site café | Request space through Sobrato centers; varies by location | Ongoing | [Sobrato Conference Space](https://www.sobrato.com/sobrato-philanthropies/what-we-do/non-profit-sustainability/conference-space-nonprofit-centers/) |
 | Tides Converge | San Francisco | Nonprofits & Social Enterprises | Meeting and event spaces for various sizes; 150,000 sq ft campus with 2 art galleries, organic café; also offers coworking memberships ($225-300/month) and affordable office leases | Contact [email protected] or 415-561-6300 for meeting space rental; apply online for coworking membership | Ongoing | [Tides Office & Meeting Space](https://www.tides.org/social-purpose-real-estate/office-space/) |
-
-## Pro Bono Legal Services for Nonprofits
-
-| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
-|--------|------|-------------|---------|---------------|-----------|------|
-| Bar Association of SF - Community Organization Representation Project (CORP) | San Francisco | Nonprofits serving low-income/underserved | Free legal assistance with incorporation, 501(c)(3) applications, governance, contracts, and other transactional matters | Apply through CORP online | Ongoing | [BASF CORP](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
-| Justice & Diversity Center (JDC) | San Francisco | Nonprofits serving low-income residents | Pro bono legal services and free MCLE-accredited training; volunteer attorneys for various nonprofit legal needs | Contact JDC for assistance | Ongoing | [JDC](https://www.probono.net/sf/) |
-| Bay Area Legal Aid - Pro Bono Program | Bay Area | Nonprofits serving vulnerable populations | Pro bono attorney matching, training, mentorship for legal projects | Contact Pro Bono Director at probono@baylegal.org | Ongoing | [BayLegal Pro Bono](https://baylegal.org/get-involved-2/pro-bono-volunteer/) |
-| REP (Racial Equity Project) | California (Bay Area focus) | Black-led organizations | Pro bono legal support for Black-led nonprofits; partnership with East Bay Community Foundation | Apply through REP program | Ongoing | [REP via BASF](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
 
 ---
 
