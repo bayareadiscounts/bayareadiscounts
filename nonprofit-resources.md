@@ -19,10 +19,10 @@ Resources and support for nonprofit organizations, including free meeting spaces
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Bar Association of SF - Community Organization Representation Project (CORP) | San Francisco | Nonprofits serving low-income/underserved | Free legal assistance with incorporation, 501(c)(3) applications, governance, contracts, and other transactional matters | Apply through CORP online | Ongoing | [BASF CORP](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
+| Community Organization Representation Project (CORP) | San Francisco | Nonprofits serving low-income/underserved | Free legal assistance with incorporation, 501(c)(3) applications, governance, contracts, and other transactional matters | Apply through CORP online | Ongoing | [SFBAR CORP](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
 | Justice & Diversity Center (JDC) | San Francisco | Nonprofits serving low-income residents | Pro bono legal services and free MCLE-accredited training; volunteer attorneys for various nonprofit legal needs | Contact JDC for assistance | Ongoing | [JDC](https://www.probono.net/sf/) |
 | Bay Area Legal Aid - Pro Bono Program | Bay Area | Nonprofits serving vulnerable populations | Pro bono attorney matching, training, mentorship for legal projects | Contact Pro Bono Director at probono@baylegal.org | Ongoing | [BayLegal Pro Bono](https://baylegal.org/get-involved-2/pro-bono-volunteer/) |
-| REP (Racial Equity Project) | California (Bay Area focus) | Black-led organizations | Pro bono legal support for Black-led nonprofits; partnership with East Bay Community Foundation | Apply through REP program | Ongoing | [REP via SFBAR](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
+| Racial Equity Project (REP) | California (Bay Area focus) | Black-led organizations | Pro bono legal support for Black-led nonprofits; partnership with East Bay Community Foundation | Apply through REP program | Ongoing | [REP via SFBAR](https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/) |
 
 ## Meeting & Event Spaces
 
