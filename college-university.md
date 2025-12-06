@@ -13,7 +13,7 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 ## SparkPoint
 
-[SparkPoint Centers by United Ways Bay Area (UWBA)](https://uwba.org/what-we-do/sparkpoint-program/) provides free, confidential, and judgement-free one-on-one support to help student families build lasting financial stability and access public benefits. Their centers offer coaching and connections across four key areas (services provided may vary by center):
+[SparkPoint Centers by United Ways Bay Area (UWBA)](https://uwba.org/what-we-do/sparkpoint-program/) provides free, confidential, and judgement-free support to help student families build lasting financial stability and access public benefits. Their centers offer coaching and connections across four key areas (services provided may vary by center):
 
 1. Financial stability: Coaching, budgeting, credit repair, and tax help.
 2. Employment & education: Job search, skills training, and career growth.
