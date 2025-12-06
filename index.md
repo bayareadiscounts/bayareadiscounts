@@ -2,7 +2,7 @@
 
 Stretch your budget and explore more of your community.
 
-This guide highlights free and low-cost services and programs within the core counties commonly recognized as the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties) for seniors, youth, college students, veterans, families, and anyone looking to save on everyday expenses.
+This guide highlights free and low-cost services and programs within the core counties commonly recognized as the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties) for public benefit recipients, seniors, youth, college students, veterans, families, and anyone looking to save on everyday expenses.
 
 Some programs are available only in specific cities or regions, while others apply to all of California or nationwide. Always check the program or resource website for the most current eligibility details.
 
