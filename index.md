@@ -157,7 +157,6 @@ Some programs are available only in specific cities, while others apply to the e
 |--------|------|-------------|---------|---------------|-----------|------|
 | Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail or through local court self-help center | Ongoing | [Court Fee Waivers](https://selfhelp.courts.ca.gov/fee-waiver) |
 | San Francisco Immigrant Support | San Francisco | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | [SF Immigrant Resources](https://immigrants.sfgov.org) |
-| DMV Reduced-Fee ID Card | California | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 | Request DL 937 from your [county's Public Assistance Agency](https://www.cdss.ca.gov/county-offices); submit to DMV | Ongoing | [DMV](https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240) |
 | SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | [Financial Justice Project](https://sfgov.org/financialjustice) |
 | USCIS I-912 Fee Waiver | Nationwide | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | [USCIS I-912](https://www.uscis.gov/i-912) |
 
@@ -241,6 +240,7 @@ Our public libraries often offer more than books — including access to news, d
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
 | Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | [Bike Share for All](https://www.lyft.com/bikes/bay-wheels/bike-share-for-all) |
+| DMV Reduced-Fee ID Card | California | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 | Request DL 937 from your [county's Public Assistance Agency](https://www.cdss.ca.gov/county-offices); submit to DMV | Ongoing | [DMV](https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240) |
 | Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | [Lime Access](https://www.li.me/why/community/lime-access) |
 | Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | [Low Cost Auto Insurance](https://www.mylowcostauto.com) |
 
