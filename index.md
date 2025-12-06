@@ -58,8 +58,8 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
-| 2-1-1 Bay Area | Bay Area | 🌎 Everyone | Free 24/7 referral to food, housing, legal help, health care, and more | Ongoing | [211BayArea.org](https://211bayarea.org) |
-| Season of Sharing Fund | Bay Area | 💳 Low-Income Families | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season fo Sharing Fund](https://seasonofsharing.org) |
+| 2-1-1 Bay Area | Bay Area | 🌎 | Free 24/7 referral to food, housing, legal help, health care, and more | Ongoing | [211BayArea.org](https://211bayarea.org) |
+| Season of Sharing Fund | Bay Area | 💳 | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season fo Sharing Fund](https://seasonofsharing.org) |
 | VA Vet Centers | Bay Area | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
 | YMCA | Bay Area | 👨‍👩‍👧 🧒 | Most locations offer sliding-scale membership rates | Ongoing | [YMCA.org](https://www.ymca.org/get-involved/join) |
 
