@@ -295,4 +295,4 @@ If this guide helps you save, consider supporting us here:
 <a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
 _Last updated: Dec. 6 2025_  
-Contribute a listing by opening an issue on GitHub.
+Contribute a listing by [opening an issue on GitHub](https://github.com/bayareadiscounts/bayareadiscounts/issues/new).
