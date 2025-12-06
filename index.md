@@ -38,6 +38,7 @@ Some programs are available only in specific cities, while others apply to the e
 - - [Childcare Assistance](#childcare-assistance)
 - - [Clothing Assistance](#clothing-assistance)
 - [Digital Services](#digital-services)
+- [Education](#education)
 - [Food](#food)
 - [Health](#health)
 - [Legal](#legal)
@@ -81,7 +82,7 @@ Some programs are available only in specific cities, while others apply to the e
 | Bay Area Crisis Nursery - BACN Boutique | Contra Costa County | 💳 👨‍👩‍👧 🧒 🌎 | Free clothing, shoes, books, toys, baby equipment for families; includes maternity and parent items | Visit nursery lobby during open hours | Ongoing | [BACN Boutique](https://bayareacrisisnursery.org/programs/bacn-boutique/) |
 | Bay Area Crisis Nursery - Food Pantry & Diaper Bank | Contra Costa County | 💳 👨‍👩‍👧 🧒 | Free food and diapers for families in need | Order online from website before visiting boutique | Ongoing | [Bay Area Crisis Nursery](https://bayareacrisisnursery.org/) |
 | San Francisco Diaper Bank | SF | 💳 👨‍👩‍👧 🧒 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | [SFHSA](https://www.sfhsa.org) |
-| St. Anthony's Free Clothing Program | San Francisco | 💳 👨‍👩‍👧 🧒 🌎 | Free clothing for men, women, and children; SF's largest free clothing program serving 3,000+ people monthly | Visit during open hours at 121 Golden Gate Ave (check website for schedule) | Ongoing | [St. Anthony's Clothing](https://www.stanthonysf.org/services/clothing/) |
+| St. Anthony's Free Clothing Program | San Francisco | 🌎 | Free clothing for men, women, and children; SF's largest free clothing program serving 3,000+ people monthly | Appointment required (visit in-person to sign up) | Ongoing | [St. Anthony's Clothing](https://www.stanthonysf.org/services/clothing/shop-for-clothes/) |
 
 ---
 
@@ -90,8 +91,17 @@ Some programs are available only in specific cities, while others apply to the e
 | Service | Eligibility | Benefit | Timeframe | Link |
 |--------|-------------|---------|-----------|------|
 | Amazon Prime Access | 💳 | Discounted membership | Ongoing | [Amazon Prime Access](https://www.amazon.com/primeaccess) |
-| Kanopy for Students | 🎓 | Free streaming for students through participating campus libraries | Ongoing | [Kanopy for Students](https://www.kanopy.com/signup/find/university) |
+| Instacart EBT SNAP | 💳 | 50% off Instacart+ membership for one year; skip delivery/pickup fees wiht participating stores; new customers get $0 delivery on first 3 orders | Ongoing | [Instacart](https://www.instacart.com/ebt-snap) |
+| Kanopy for Students | 🎓 | Free streaming for college students through participating campus libraries | Ongoing | [Kanopy for Students](https://www.kanopy.com/signup/find/university) |
 | Walmart+ Assist | 💳 | Discounted membership | Ongoing | [Walmart+ Assist](https://www.walmart.com/plus/assist) |
+
+---
+
+## Education
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| SAT Fee Waivers | US/Bay Area | 💳 | Income eligible high school juniors and seniors receive two free SAT tests; unlimited score reports; waived college app fees via participating colleges; free CSS Profile; waived regional, late, and cancellation fees | Request through your high school counselor or apply online t | Ongoing | [SAT Fee Waivers](https://satsuite.collegeboard.org/sat/registration/fee-waivers) |
 
 ---
 
