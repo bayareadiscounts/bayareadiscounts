@@ -387,12 +387,12 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 ### University of San Francisco
 
-| Program | College/University | Benefit | How to Use It | Timeframe | Link |
-|--------|-------------|---------|---------------|-----------|------|
-| Koret Health & Recreation Center | USF | 50-meter pool, weight room, group fitness classes at no additional cost | Access with student ID | Academic year | [Koret](https://www.usfca.edu/koret/) |
-| Student Laptop Program | USF | Technology access through Basic Needs Program | Apply through Basic Needs | Academic year | [Student Services](https://www.usfca.edu/downtown/student-services) |
-| Unlimited Muni Pass | USF | Free access to all SF Muni buses, streetcars, and metro through MuniMobile (worth ~$324+/semester) | Activate through MuniMobile | Academic year | [Muni Pass](https://myusf.usfca.edu/public-safety-transportation/transportation/munimobile) |
-| USF Food Pantry | USF | Addresses food insecurity affecting ~30% of students | Visit Gleeson Library pantry | Academic year | [Food Pantry](https://myusf.usfca.edu/food-pantry/) |
+| Program | Benefit | How to Use It | Timeframe | Link |
+|--------|---------|---------------|-----------|------|
+| Koret Health & Recreation Center | 50-meter pool, weight room, group fitness classes at no additional cost | Access with student ID | Academic year | [Koret](https://www.usfca.edu/koret/) |
+| Student Laptop Program | Technology access through Basic Needs Program | Apply through Basic Needs | Academic year | [Student Services](https://www.usfca.edu/downtown/student-services) |
+| Unlimited Muni Pass | Free access to all SF Muni buses, streetcars, and metro through MuniMobile (worth ~$324+/semester) | Activate through MuniMobile | Academic year | [Muni Pass](https://myusf.usfca.edu/public-safety-transportation/transportation/munimobile) |
+| USF Food Pantry | Addresses food insecurity affecting ~30% of students | Visit Gleeson Library pantry | Academic year | [Food Pantry](https://myusf.usfca.edu/food-pantry/) |
 
 ---
 
