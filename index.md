@@ -61,7 +61,7 @@ Some programs are available only in specific cities or regions, while others app
 |--------|------|-------------|---------|-----------|------|
 | 2-1-1 Bay Area | Bay Area | 🌎 | Free 24/7 referral to food, housing, legal help, health care, and more | Ongoing | [211BayArea.org](https://211bayarea.org) |
 | Dolly Parton Imagination Library | California | 🧒 | Free book mailed monthly to child's home for kids (up to age 5); high-quality, age-appropriate books selected by experts; builds home library of up to 60 books by kindergarten | Ongoing (monthly until age 5) | [CA Imagination Library](https://www.library.ca.gov/services/to-public/imagination-library/) |
-| Season of Sharing Fund | Bay Area | 💳 | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season fo Sharing Fund](https://seasonofsharing.org) |
+| Season of Sharing Fund | Bay Area | 💳 | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season of Sharing Fund](https://seasonofsharing.org) |
 | VA Vet Centers | Nationwide | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
 | YMCA | Nationwide | 👨‍👩‍👧 🧒 | Most locations offer sliding-scale membership rates | Ongoing | [YMCA.org](https://www.ymca.org/get-involved/join) |
 
@@ -92,7 +92,7 @@ Some programs are available only in specific cities or regions, while others app
 | Service | Eligibility | Benefit | Timeframe | Link |
 |--------|-------------|---------|-----------|------|
 | Amazon Prime Access | 💳 | Prime membership for $6.99/month for eligible government assistance recipients or income verified customers; new customers start with a free 30-day trial | Ongoing | [Amazon Prime Access](https://www.amazon.com/primeaccess) |
-| Instacart EBT SNAP | 💳 | 50% off Instacart+ membership for one year; skip delivery/pickup fees wiht participating stores; new customers get $0 delivery on first 3 orders | Ongoing | [Instacart](https://www.instacart.com/ebt-snap) |
+| Instacart EBT SNAP | 💳 | 50% off Instacart+ membership for one year; skip delivery/pickup fees with participating stores; new customers get $0 delivery on first 3 orders | Ongoing | [Instacart](https://www.instacart.com/ebt-snap) |
 | Kanopy for Students | 🎓 | Free streaming for college students through participating campus libraries | Ongoing | [Kanopy for Students](https://www.kanopy.com/signup/find/university) |
 | Walmart+ Assist | 💳 | Eligible government assistance recipients receive [Walmart+](https://www.walmart.com/plus/) at 50% off ($6.47/mo. or $49/yr.); new customers start with a free 30-day trial | Ongoing | [Walmart+ Assist](https://www.walmart.com/plus/assist) |
 
@@ -106,7 +106,7 @@ Some programs are available only in specific cities or regions, while others app
 | AP Exam Fee Reductions | Nationwide | 💳 | $37 College Board fee reduction per exam (schools forgo $9 rebate); final cost typically $53-62 per exam (down from $99); some CA districts provide additional funding bringing cost to $0 | Talk to your school's AP coordinator | Ongoing | [AP Exam Fee Reductions](https://apstudents.collegeboard.org/exam-policies-guidelines/exam-fees) |
 | California College Promise Grant (CCPG) | California | 💳 | Waives enrollment fees ($46/unit) at all California Community Colleges for entire academic year | Complete CCCApply or contact your college's Financial Aid office; must maintain at least a 2.0 GPA and 50% course completion rate | Ongoing | [California Community Colleges](https://www.cccapply.org/us/money/california-college-promise-grant) |
 | Common App Fee Waiver | Nationwide | 💳 | Waived application fees at participating colleges through Common App | Apply through Common App | Ongoing | [Common App Fee Waiver (PDF)](https://www.commonapp.org/static/d8d4fe3bc09d9b0a67d715d9bb6b20f9/FY-Apply-College-Application-Fees-Waivers.pdf) |
-| SAT Fee Waivers | Nationwide | 💳 | Receive two free SAT tests; unlimited score reports; waived college app fees via participating colleges; free CSS Profile; waived regional, late, and cancellation fees | Request through your high school counselor or apply online t | Ongoing | [SAT Fee Waivers](https://satsuite.collegeboard.org/sat/registration/fee-waivers) |
+| SAT Fee Waivers | Nationwide | 💳 | Receive two free SAT tests; unlimited score reports; waived college app fees via participating colleges; free CSS Profile; waived regional, late, and cancellation fees | Request through your high school counselor or apply online | Ongoing | [SAT Fee Waivers](https://satsuite.collegeboard.org/sat/registration/fee-waivers) |
 | T-Mobile Project 10Million | Nationwide | 💳 | Free mobile hotspot device with 200GB high-speed data per year for 5 years; optional $10/10GB data pass available when data limit is reached; free Web Guard content filtering | Apply online | Ongoing | [T-Mobile Project 10Million](https://www.t-mobile.com/brand/project-10-million) |
 
 ---
