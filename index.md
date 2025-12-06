@@ -165,13 +165,13 @@ Some programs are available only in specific cities, while others apply to the e
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
 | Alameda County Social Services Agency VITA | Alameda County | 💳 🌎 | Free tax preparation; help with EITC and CalEITC credits | Make appointment through online scheduler starting late January | January-April | [Alameda County VITA](https://www.alamedacountysocialservices.org/our-services/Work-and-Money/Other-Support/tax-services) |
-| Community Gatepath (formerly CCRC) VITA | Santa Clara County | 💳 🌎 | Free tax preparation for low-income individuals and families | Check website for current information | Seasonal | [CCRC Tax Services](https://www.ccscc.org/tax-ez-program) |
-| CSU East Bay VITA | Hayward/East Bay | 💳 🎓 🌎 | Free virtual tax prep via Zoom for income $84,000 or less | Schedule appointment online | February-April (Fridays & Saturdays) | [CSUEB VITA](https://www.csueastbay.edu/acct-fin/vita.html) |
-| EBALDC VITA | East Bay | 💳 🌎 | Free tax preparation; secured over $1.8M in refunds in 2023 | Email sparkpoint@ebaldc.org or check website for 2025 schedule | Seasonal (check website) | [EBALDC VITA](https://ebaldc.org/vita/) |
+| Community Gatepath (formerly CCRC) VITA | Santa Clara County | 💳 | Free tax preparation for low-income individuals and families | Check website for current information | Seasonal | [CCRC Tax Services](https://www.ccscc.org/tax-ez-program) |
+| CSU East Bay VITA | Hayward/East Bay | 💳 | Free virtual tax prep via Zoom for income $84,000 or less | Schedule appointment online | February-April (Fridays & Saturdays) | [CSUEB VITA](https://www.csueastbay.edu/acct-fin/vita.html) |
+| EBALDC VITA | East Bay | 💳 🌎 | Free tax preparation| Email sparkpoint@ebaldc.org or check website for 2025 schedule | Seasonal (check website) | [EBALDC VITA](https://ebaldc.org/vita/) |
 | Samaritan House VITA | San Mateo County | 💳 🌎 | Free tax preparation with drop-off service | Call (650) 523-0804 for tax questions or (650) 347-3648 for general info | February-April | [Samaritan House](https://samaritanhousesanmateo.org/article/free-tax-preparation/) |
 | SF State VITA | San Francisco | 💳 🎓 🌎 | Free tax preparation by accounting students | Check SF State website for schedule and location | February-April | [SF State VITA](https://cob.sfsu.edu/VITA) |
 | SparkPoint Fremont VITA | Fremont, Union City, Newark (Tri-City) | 💳 🌎 | Free current year and back tax preparation for low-to-moderate income families | Contact Fremont Family Resource Center | February-April for current year; year-round for back taxes | [SparkPoint Fremont](https://www.fremont.gov/government/departments/human-services/human-services-in-the-community/sparkpoint/free-tax-preparation) |
-| United Way Bay Area - Free Tax Help | Bay Area | 💳 🌎 | Free IRS-certified tax preparation for households earning under $56,000-$84,000 (varies by site); help with EITC, CalEITC, and other credits | Find location at website or call sites directly | February-April annually | [Earn It Keep It Save It](https://earnitkeepitsaveit.org/) |
+| United Way Bay Area | Bay Area | 💳 | Free, secure, high-quality tax help for low- and middle-income residents across the Bay Area | Find location at website or call sites directly | January-April | [UWBA](https://uwba.org/what-we-do/free-tax-help/) |
 
 ---
 
