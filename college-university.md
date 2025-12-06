@@ -3,10 +3,35 @@
 Comprehensive guide to free and discounted benefits available to students enrolled at Bay Area colleges and universities. Benefits include transit passes, food assistance, emergency grants, recreation access, and more. _Always verify benefits and eligibility with your college or university as programs and requirements may change._
 
 **Quick Navigation:**
+- [SparkPoint](#sparkpoint)
 - [Community Colleges](#community-colleges)
 - [California State Universities](#california-state-universities-csu)
 - [University of California](#university-of-california-uc)
 - [Private Universities](#private-universities)
+
+---
+
+## SparkPoint
+
+[SparkPoint Centers by United Ways Bay Area (UWBA)](https://uwba.org/what-we-do/sparkpoint-program/) provides free, confidential, and judgement-free one-on-one support to help student families build lasting financial stability and access public benefits. Their centers offer coaching and connections across four key areas (services provided may vary by center):
+
+1. Financial stability: Coaching, budgeting, credit repair, and tax help.
+2. Employment & education: Job search, skills training, and career growth.
+3. Food & housing security: Access to food, rental support, transit, and benefits enrollment.
+4. Long-term goals: Increase income, improve credit, grow savings, and reduce debt.
+
+| College/University | City | Link |
+|-------------|---------|------|
+| Cañada College | Redwood City |[Cañada College](https://canadacollege.edu/sparkpoint/index.php) |
+| Chabot College | Hayward | [Chabot College](https://www.chabotcollege.edu/student-services/student-equity/sparkpoint/index.php) |
+| City College of San Francisco (CCSF) | San Francisco | [CCSF](www.ccsf.edu/basicneeds) |
+| College of San Mateo |San Mateo | [CSM](https://collegeofsanmateo.edu/sparkpoint/)|
+| Contra Costa College | San Mateo | [CSM](https://www.contracosta.edu/pay-for-college/sparkpoint/) |
+| Diablo Valley College | Oakland | [DVC](https://www.dvc.edu/student-services/basic-needs-services/financial-coaching) |
+| Laney College | Pleasant Hill | [Laney College](https://laney.edu/restoringourcommunities) |
+| San Francisco State University (SFSU) | San Francisco | [SFSU](https://basicneeds.sfsu.edu/sparkpoint) |
+| Skyline College | San Bruno | [Skyline College](https://skylinecollege.edu/sparkpoint/) |
+| Solano Community College | Fairfield | [SparkPoint Solano](https://www.childnet.org/solano-sparkpoint) |
 
 ---
 
@@ -32,24 +57,24 @@ Comprehensive guide to free and discounted benefits available to students enroll
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
 |--------|-------------|---------|---------------|-----------|------|
 | Emergency Grants | Chabot, Las Positas | Up to $500 for books, supplies, food, and transportation | Apply through Basic Needs office | Academic year | [Chabot Basic Needs](https://www.chabotcollege.edu/students/basic-needs.php) |
-| Food Pantry | Chabot | FRESH Market: student-led pantry with groceries and CalFresh assistance | Visit pantry with student ID | Academic year | [FRESH Market](https://www.chabotcollege.edu/student-services/fresh-market/) |
-| Food Pantry | Las Positas | Mini-Market: campus pantry (8,000+ visits annually) | Visit pantry with student ID | Academic year | [LPC Basic Needs](https://www.laspositascollege.edu/studentservices/basicneeds/) |
-| Promise Program | Chabot, Las Positas | 2 years free tuition for first-time full-time students, no income requirement | Apply as incoming student | First-time students | [College Promise](https://www.chabotcollege.edu/finaid/free-tuition/index.php) |
+| Food Pantry | Chabot | FRESH Market: student-led pantry with groceries, clothing, hygiene products, other basic necessities, and CalFresh assistance | Visit pantry with student ID | Academic year | [FRESH Market](https://www.chabotcollege.edu/student-services/fresh-market/) |
+| Food Resources | Las Positas | List of available food resources for students | Visit resource guide | Ongoing | [Food Resources](https://www.laspositascollege.edu/resourceguide/community_food.php) |
+| Promise Program | Chabot, Las Positas | 2 years free tuition for first-time full-time students, no income requirement | Apply as incoming student | First-time college students | [College Promise](https://www.chabotcollege.edu/finaid/free-tuition/index.php) |
 
 ### City College of San Francisco
 
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
 |--------|-------------|---------|---------------|-----------|------|
 | Free City Grant | CCSF | Full tuition waiver for San Francisco residents | Enroll at CCSF and apply | Academic year | [Free City](https://www.ccsf.edu/free-city) |
-| Library Technology Lending | CCSF | Free laptop and WiFi hotspot loans (one of each per student, semester-long) | Check out from library | Academic year | [Library Technology](https://library.ccsf.edu/use/technology) |
-| SparkPoint Basic Needs | CCSF | Food pantry, CalFresh assistance, financial coaching | Visit SparkPoint center | Academic year | [SparkPoint](https://www.ccsf.edu/about-ccsf/administration/student-affairs/student-equity/sparkpoint-ccsf-basic-needs-center) |
+| Library Technology Lending | CCSF | Free laptop/chromebook, WiFi hotspot, and calculator loans (one of each per student, semester-long) | Check out from library | Academic year | [Library Technology](https://library.ccsf.edu/use/technology) |
 
 ### College of Marin
 
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
 |--------|-------------|---------|---------------|-----------|------|
-| COM Cupboard | College of Marin | Weekly produce from SF-Marin Food Bank | Visit cupboard | Academic year | [Student Services](https://www.marin.edu/student-services) |
-| Emergency Grants | College of Marin | Centennial Endowment fund: emergency grants, childcare vouchers, technology loans | Apply through Student Services | Academic year | [Financial Aid](https://www.marin.edu/financial-aid) |
+| Basic Needs | College of Marin | Support with everyday necessities, including financial support, food, health services, housing, technology, and transportation | Apply through Student Services | Academic year | [Financial Aid](https://www.marin.edu/financial-aid) |
+| COM Cupboard | College of Marin | Weekly produce from SF-Marin Food Bank | Visit cupboard | Academic year | [Student Services](https://ss.marin.edu/food) |
+| Emergency Ride Home | College of Marin | Receive a reimbursement for eligible emergency rides home and normally commute by any means other than driving alone (up to $125/ride; capped at $500/year) | Apply for reimbursement online | Ongoing | [Marin Transit](https://marincommutes.org/erh/) |
 | Free Marin Transit | College of Marin | Free unlimited rides on all Marin Transit routes with student ID | Show student ID when boarding | Academic year | [Marin Transit](https://marintransit.org/COM) |
 
 ### Contra Costa Community College District
@@ -59,9 +84,7 @@ Comprehensive guide to free and discounted benefits available to students enroll
 |--------|-------------|---------|---------------|-----------|------|
 | 511 Emergency Rides | CCC, DVC, LMC | 6 free emergency Lyft/Uber rides annually | Register through 511 Contra Costa | Academic year | [511 Contra Costa](https://511contracosta.org/guaranteed-ride-home/) |
 | 511 Transit Incentives | CCC, DVC, LMC | Free $25 Clipper card for taking transit pledge | Complete transit pledge online | Academic year | [511 Contra Costa](https://511contracosta.org/transit/transit-offer/) |
-| 24/7 Food Lockers | CCC, DVC | Refrigerated food lockers accessible anytime via OrderAhead system | Order through student portal | Academic year | [DVC Food Resources](https://www.dvc.edu/student-services/basic-needs-services/food) |
 | Full-Time Free Tuition | CCC, DVC, LMC | Automatic fee waivers for 2 years (~$1,104/year), no income requirement | Submit FAFSA or CA Dream Act and enroll full-time | 2 years | [4CD Free Tuition](https://www.4cd.edu/insite/full-time-free-tuition-program/) |
-| SparkPoint Services | CCC, DVC | Free legal help for student loans, bankruptcy, collections; financial coaching | Schedule appointment | Academic year | [SparkPoint](https://www.4cd.edu/sparkpoint) |
 | Technology Loans | DVC | Free semester-long Chromebook, Wi-Fi hotspot, and calculator rentals | Check out from library | Academic semester | [DVC Technology](https://www.dvc.edu/academics/library-technology/information-technology-services/technology-loans) |
 | TimelyCare | CCC, DVC, LMC | Free 24/7 telehealth for medical and mental health | Access through student portal | Academic year | [TimelyCare](https://www.dvc.edu/student-services/basic-needs-services/free-24-7-telehealth) |
 | Wrap-Around Emergency Fund | CCC | Up to $500 emergency grants disbursed within one week, no immigration status requirements | Apply through Basic Needs | Academic year | [CCC Basic Needs](https://www.contracosta.edu/student-services/student-equity/basic-needs/) |
@@ -124,12 +147,10 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
 |--------|-------------|---------|---------------|-----------|------|
-| Campus Dining Card | Cañada, CSM, Skyline | $100/month dining card for food-insecure students | Apply through SparkPoint | Academic year | [SparkPoint](https://smccd.edu/sparkpoint/) |
+| Campus Dining Card | Cañada, CSM, Skyline | $100/month dining card for food-insecure students | Apply through SparkPoint | Academic year | [SMCCD Dining Card Application](https://smccd-czqfp.formstack.com/forms/food_support_grant?sso=689cde904dfb0) |
 | Finish Line Fund | Cañada, CSM, Skyline | Foundation emergency grants averaging $1,000/student; over $2 million distributed annually | Apply through Financial Aid | Academic year | [Foundation](https://smccd.edu/foundation/) |
 | Promise Scholars Program | Cañada, CSM, Skyline | Up to 3 years coverage: tuition + $750/year book vouchers + priority enrollment + dedicated counseling | Apply for Promise Scholars | Up to 3 years | [Promise Scholars](https://smccd.edu/promise/) |
-| SamTrans Way2Go Pass | Cañada, CSM, Skyline | FREE unlimited bus pass (5,000 distributed annually); Level 2 students receive $50/month transit support | Apply for pass | Academic year | [SamTrans](https://www.samtrans.com/fares) |
-| SparkPoint Food Pantries | Cañada, CSM, Skyline | Weekly pantries at all three campuses | Visit pantry | Academic year | [SparkPoint](https://smccd.edu/sparkpoint/) |
-| Technology Credit | Cañada, CSM, Skyline | Level 2: $500 one-time bookstore credit for technology purchases | Apply for Level 2 support | One-time | [Promise Scholars](https://smccd.edu/promise/) |
+| SamTrans Way2Go Pass | Cañada, CSM, Skyline | FREE unlimited bus pass (5,000 distributed annually); Level 2 students receive $50/month transit support | Apply for pass | Academic year | [SamTrans](https://skylinecollege.edu/sparkpoint/services/transportation.php) |
 
 ### Santa Rosa Junior College
 
@@ -186,7 +207,7 @@ Comprehensive guide to free and discounted benefits available to students enroll
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
 |--------|-------------|---------|---------------|-----------|------|
 | AS Food Pantry | SF State | Free groceries serving 700-800 students weekly, no proof of financial need required | Walk in with student ID | Academic year | [Gator Groceries](https://basicneeds.sfsu.edu) |
-| Free Adobe Creative Cloud | SF State | Free Creative Cloud for all matriculated students (Adobe Creative Campus) regardless of major | Download via student portal | Academic year | [Academic Technology](https://atcentral.sfsu.edu/) |
+| Free Adobe Creative Cloud | SF State | Free Creative Cloud for all matriculated students (Adobe Creative Campus) regardless of major | Download via student portal | Academic year | [SFSU Academic Technology](https://atcentral.sfsu.edu/) |
 | Gator Grub Alert | SF State | App notifications about free food events on campus | Download app | Academic year | [Basic Needs](https://basicneeds.sfsu.edu) |
 | Gator Pass | SF State | $130/semester for unlimited rides on all 22 Bay Area transit agencies (Muni, BART, Caltrain, ferries, VTA, etc.) | Auto-loaded on student One Card | Fall/Spring semesters | [Gator Pass](https://transportation.sfsu.edu/gator-pass) |
 | Immigrant Legal Defense | SF State | Free immigration legal services: DACA renewals, family petitions | Schedule appointment | Academic year | [Legal Services](https://drc.sfsu.edu/Legal-Services) |
@@ -237,7 +258,7 @@ Comprehensive guide to free and discounted benefits available to students enroll
 | CHAOS Outdoor Gear | UC Berkeley | Camping gear rentals for $10 annual membership (student-run club serving since 1870) | Join CHAOS and rent equipment | Academic year | [CHAOS](https://www.chaosberkeley.org/) |
 | Free Museums & Gardens | UC Berkeley | Free admission to Lawrence Hall of Science, UC Botanical Garden, Hearst Museum of Anthropology | Show student ID | Academic year | [Campus Life](https://life.berkeley.edu/) |
 | Free Printing | UC Berkeley | 200 free pages per semester from Open Computing Facility (20/day limit) | Use OCF printers | Per semester | [Student Tech](https://studenttech.berkeley.edu/printing) |
-| Free Software | UC Berkeley | Free Adobe Creative Cloud, Microsoft 365, MATLAB, SPSS, Stata, LinkedIn Learning | Download via software.berkeley.edu | Academic year | [Software](https://software.berkeley.edu/) |
+| Free Software | UC Berkeley | Free Adobe Creative Cloud, Microsoft 365, MATLAB, SPSS, Stata | Download/login online | Academic year | [UCB Software](https://software.berkeley.edu/) |
 | Recreation Facilities | UC Berkeley | Nearly 20 facilities including 41-foot climbing wall with free equipment and instruction | Access with student ID | Academic year | [RecWell](https://recwell.berkeley.edu/) |
 | Student Legal Services | UC Berkeley | Free legal guidance on tenant rights, contracts, consumer matters | Schedule appointment online | Academic year | [SLS](https://sls.berkeley.edu) |
 | UC Aquatic Center | UC Berkeley | Free kayak and stand-up paddleboard rentals (up to 2.5 hours) at Berkeley Marina | Reserve online with student ID | Academic year | [Adventures](https://recwell.berkeley.edu/wellness-offerings/adventures/) |
