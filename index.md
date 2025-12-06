@@ -51,7 +51,7 @@ Some programs are available only in specific cities or regions, while others app
 - [Utilities](#utilities)
   
 ### [Nonprofit Resources](nonprofit-resources.md)
-### [Student Resources](#college-university.md)
+### [Student Resources](college-university.md)
 
 ---
 
