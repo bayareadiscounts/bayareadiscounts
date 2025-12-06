@@ -12,6 +12,20 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 ## Community Colleges
 
+**Jump to:**
+- [Chabot-Las Positas Community College District](#chabot-las-positas-community-college-district)
+- [City College of San Francisco](#city-college-of-san-francisco)
+- [College of Marin](#college-of-marin)
+- [Contra Costa Community College District](#contra-costa-community-college-district)
+- [Foothill-De Anza Community College District](#foothill-de-anza-community-college-district)
+- [Napa Valley College](#napa-valley-college)
+- [Ohlone Community College District](#ohlone-community-college-district)
+- [Peralta Community College District](#peralta-community-college-district)
+- [San Jose-Evergreen Community College District](#san-jose-evergreen-community-college-district)
+- [San Mateo County Community College District](#san-mateo-county-community-college-district)
+- [Santa Rosa Junior College](#santa-rosa-junior-college)
+- [West Valley-Mission Community College District](#west-valley-mission-community-college-district)
+
 ### Chabot-Las Positas Community College District
 *Colleges: Chabot College (Hayward), Las Positas College (Livermore)*
 
@@ -43,12 +57,12 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
 |--------|-------------|---------|---------------|-----------|------|
-| 511 Emergency Rides | CCC, DVC, LMC | 6 free emergency Lyft/Uber rides annually | Register through 511 Contra Costa | Academic year | [511 Programs](https://www.4cd.edu) |
-| 511 Transit Incentives | CCC, DVC, LMC | Free $20 Clipper card for taking transit pledge | Complete transit pledge online | Academic year | [511 Programs](https://www.4cd.edu) |
+| 511 Emergency Rides | CCC, DVC, LMC | 6 free emergency Lyft/Uber rides annually | Register through 511 Contra Costa | Academic year | [511 Contra Costa](https://511contracosta.org/guaranteed-ride-home/) |
+| 511 Transit Incentives | CCC, DVC, LMC | Free $25 Clipper card for taking transit pledge | Complete transit pledge online | Academic year | [511 Contra Costa](https://511contracosta.org/transit/transit-offer/) |
 | 24/7 Food Lockers | CCC, DVC | Refrigerated food lockers accessible anytime via OrderAhead system | Order through student portal | Academic year | [DVC Food Resources](https://www.dvc.edu/student-services/basic-needs-services/food) |
 | Full-Time Free Tuition | CCC, DVC, LMC | Automatic fee waivers for 2 years (~$1,104/year), no income requirement | Submit FAFSA or CA Dream Act and enroll full-time | 2 years | [4CD Free Tuition](https://www.4cd.edu/insite/full-time-free-tuition-program/) |
 | SparkPoint Services | CCC, DVC | Free legal help for student loans, bankruptcy, collections; financial coaching | Schedule appointment | Academic year | [SparkPoint](https://www.4cd.edu/sparkpoint) |
-| Technology Loans | DVC | Free semester-long Chromebook, Wi-Fi hotspot, and calculator rentals | Check out from library | Academic semester | [DVC Technology](https://www.dvc.edu/student-services/library/) |
+| Technology Loans | DVC | Free semester-long Chromebook, Wi-Fi hotspot, and calculator rentals | Check out from library | Academic semester | [DVC Technology](https://www.dvc.edu/academics/library-technology/information-technology-services/technology-loans) |
 | TimelyCare | CCC, DVC, LMC | Free 24/7 telehealth for medical and mental health | Access through student portal | Academic year | [TimelyCare](https://www.dvc.edu/student-services/basic-needs-services/free-24-7-telehealth) |
 | Wrap-Around Emergency Fund | CCC | Up to $500 emergency grants disbursed within one week, no immigration status requirements | Apply through Basic Needs | Academic year | [CCC Basic Needs](https://www.contracosta.edu/student-services/student-equity/basic-needs/) |
 
@@ -143,6 +157,13 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 ## California State Universities (CSU)
 
+**Jump to:**
+- [CSU East Bay](#csu-east-bay)
+- [CSU Maritime Academy](#csu-maritime-academy)
+- [San Francisco State University](#san-francisco-state-university)
+- [San Jose State University](#san-jose-state-university)
+- [Sonoma State University](#sonoma-state-university)
+
 ### CSU East Bay
 
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
@@ -198,6 +219,11 @@ Comprehensive guide to free and discounted benefits available to students enroll
 
 ## University of California (UC)
 
+**Jump to:**
+- [UC Berkeley](#uc-berkeley)
+- [UC College of the Law, San Francisco](#uc-college-of-the-law-san-francisco)
+- [UC San Francisco](#uc-san-francisco)
+
 ### UC Berkeley
 
 | Program | College/University | Benefit | How to Use It | Timeframe | Link |
@@ -245,6 +271,17 @@ Comprehensive guide to free and discounted benefits available to students enroll
 ---
 
 ## Private Universities
+
+**Jump to:**
+- [Academy of Art University](#academy-of-art-university)
+- [California College of the Arts](#california-college-of-the-arts)
+- [Dominican University of California](#dominican-university-of-california)
+- [Golden Gate University](#golden-gate-university)
+- [Saint Mary's College of California](#saint-marys-college-of-california)
+- [Samuel Merritt University](#samuel-merritt-university)
+- [Santa Clara University](#santa-clara-university)
+- [Stanford University](#stanford-university)
+- [University of San Francisco](#university-of-san-francisco)
 
 ### Academy of Art University
 
