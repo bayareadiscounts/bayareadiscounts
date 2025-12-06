@@ -26,7 +26,7 @@ Comprehensive guide to free and discounted benefits available to students enroll
 | Chabot College | Hayward | [Chabot College](https://www.chabotcollege.edu/student-services/student-equity/sparkpoint/index.php) |
 | City College of San Francisco (CCSF) | San Francisco | [CCSF](www.ccsf.edu/basicneeds) |
 | College of San Mateo |San Mateo | [CSM](https://collegeofsanmateo.edu/sparkpoint/)|
-| Contra Costa College | San Mateo | [CSM](https://www.contracosta.edu/pay-for-college/sparkpoint/) |
+| Contra Costa College | San Pablo | [CCC](https://www.contracosta.edu/pay-for-college/sparkpoint/) |
 | Diablo Valley College | Oakland | [DVC](https://www.dvc.edu/student-services/basic-needs-services/financial-coaching) |
 | Laney College | Pleasant Hill | [Laney College](https://laney.edu/restoringourcommunities) |
 | San Francisco State University (SFSU) | San Francisco | [SFSU](https://basicneeds.sfsu.edu/sparkpoint) |
