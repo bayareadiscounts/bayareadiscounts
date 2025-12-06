@@ -39,6 +39,7 @@ Some programs are available only in specific cities or regions, while others app
 - - [Clothing Assistance](#clothing-assistance)
 - [Digital Services](#digital-services)
 - [Education](#education)
+- - [Local Colleges & Universities](#local-colleges--universities)
 - [Food](#food)
 - [Health](#health)
 - [Legal](#legal)
@@ -51,7 +52,6 @@ Some programs are available only in specific cities or regions, while others app
 - [Utilities](#utilities)
   
 ### [Nonprofit Resources](nonprofit-resources.md)
-
 
 ---
 
@@ -113,13 +113,20 @@ Some programs are available only in specific cities or regions, while others app
 
 ### Local Colleges & Universities
 
-#### Transit Benefits
+- [Emergency Support](#emergency-support)
+- [Food Security](#food-security)
+- [Legal Services](#legal-services)
+- [Recreation & Fitness](#recreation--fitness)
+- [Scholarships & Financial Aid](#scholarships--financial-aid)
+- [Transit Benefits](#transit-benefits)
 
-| Program | College/University | Eligibility | Benefit | How to Use It | Timeframe | Link |
+#### Emergency Support
+
+| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| VTA SmartPass | De Anza, Foothill | 🎓 | $7.75/quarter for unlimited VTA bus and light rail (students enrolled in 12+ units) | Purchase through student portal | Academic quarters | [VTA SmartPass](https://www.vta.org/go/passes/college-university) |
-| Gator Pass | SF State | 🎓 | $130/semester for unlimited rides on all 22 Bay Area transit agencies (Muni, BART, Caltrain, ferries, VTA, etc.) | Auto-loaded on student One Card | Fall/Spring semesters | [Gator Pass](https://transportation.sfsu.edu/gator-pass) |
-| BayPass | UC Berkeley | 🎓 | $229/semester for unlimited rides on all 24 Bay Area transit agencies (BART, Caltrain, Muni, AC Transit, VTA, ferries) | Auto-loaded on student Clipper card | Fall/Spring semesters | [BayPass](https://pt.berkeley.edu/around/transit/BayPass) |
+| De Anza Emergency Grants | De Anza | 🎓 | One-time cash grants up to $750 for students facing financial hardship or urgent expenses that may interfere with education | Submit a completed PDF app | Academic year | [Emergency Grants](https://www.deanza.edu/resources/hub/emergency-grants.html) |
+| SFSU Zen Den | SF State | 🎓 | Safe sleep space for housing-insecure students, plus Basic Needs Lounges for extreme commuters | Contact Basic Needs office | Academic year | [Basic Needs](https://basicneeds.sfsu.edu) |
+| SJSU Emergency Housing | San Jose State | 🎓 | Up to 28 days emergency housing through Bill Wilson Center partnership, plus crisis grants | Contact SJSU Cares case manager | As needed | [SJSU Cares](https://www.sjsu.edu/sjsucares) |
 
 #### Food Security
 
@@ -146,14 +153,6 @@ Some programs are available only in specific cities or regions, while others app
 | SJSU Spartan Rec Center | San Jose State | 🎓 | 128,000 sq ft facility with two 50-meter pools, climbing wall, indoor track included in fees | Access with Tower Card | Academic year | [SRAC](https://www.sjsu.edu/recreation/) |
 | UC Berkeley Aquatic Center | UC Berkeley | 🎓 | Free kayak and SUP rentals (up to 2.5 hours) at Berkeley Marina | Reserve online with student ID | Academic year | [Adventures](https://recwell.berkeley.edu/wellness-offerings/adventures/) |
 
-#### Emergency Support
-
-| Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
-|--------|------|-------------|---------|---------------|-----------|------|
-| De Anza Emergency Grants | De Anza | 🎓 | One-time cash grants up to $750 for students facing financial hardship or urgent expenses that may interfere with education | Submit a completed PDF app | Academic year | [Emergency Grants](https://www.deanza.edu/resources/hub/emergency-grants.html) |
-| SFSU Zen Den | SF State | 🎓 | Safe sleep space for housing-insecure students, plus Basic Needs Lounges for extreme commuters | Contact Basic Needs office | Academic year | [Basic Needs](https://basicneeds.sfsu.edu) |
-| SJSU Emergency Housing | San Jose State | 🎓 | Up to 28 days emergency housing through Bill Wilson Center partnership, plus crisis grants | Contact SJSU Cares case manager | As needed | [SJSU Cares](https://www.sjsu.edu/sjsucares) |
-
 #### Scholarships & Financial Aid
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
@@ -161,6 +160,14 @@ Some programs are available only in specific cities or regions, while others app
 | CCSF Free City Grant | City College SF | 🎓 | Full tuition waiver for San Francisco residents | Enroll at CCSF and apply | Academic year | [CCSF Free City](https://www.ccsf.edu/free-city) |
 | De Anza Promise | De Anza | 🎓 | Two years free tuition and fees | Apply as incoming student | First-time students | [De Anza Promise](https://www.deanza.edu/financialaid/types/) |
 | Ohlone Promise Scholarship | Ohlone College | 🎓 🧒 | Full tuition, books, and fees for two years (up to 60 units) for Tri-City area high school seniors maintaining 2.0 GPA | Apply as graduating senior | High school seniors | [Ohlone Promise](https://www.ohlone.edu/foundation/ohlonepromisescholarship) |
+
+#### Transit Benefits
+
+| Program | College/University | Eligibility | Benefit | How to Use It | Timeframe | Link |
+|--------|------|-------------|---------|---------------|-----------|------|
+| BayPass | UC Berkeley | 🎓 | $229/semester for unlimited rides on all 24 Bay Area transit agencies (BART, Caltrain, Muni, AC Transit, VTA, ferries) | Auto-loaded on student Clipper card | Fall/Spring semesters | [BayPass](https://pt.berkeley.edu/around/transit/BayPass) |
+| Gator Pass | SF State | 🎓 | $130/semester for unlimited rides on all 22 Bay Area transit agencies (Muni, BART, Caltrain, ferries, VTA, etc.) | Auto-loaded on student One Card | Fall/Spring semesters | [Gator Pass](https://transportation.sfsu.edu/gator-pass) |
+| VTA SmartPass | De Anza, Foothill | 🎓 | $7.75/quarter for unlimited VTA bus and light rail (students enrolled in 12+ units) | Purchase through student portal | Academic quarters | [VTA SmartPass](https://www.vta.org/go/passes/college-university) |
 
 ---
 
