@@ -21,7 +21,7 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Icon | Meaning |
 |------|---------|
-| 💳 | Requires benefit card, proof of income, or residency (Library card, driver's license, EBT/SNAP, Medi-Cal, etc.) |
+| 💳 | Requires benefit card, proof of income, or residency |
 | 🧒 | Youth (children & teens — age or school ID may be required) |
 | 🎓 | College Students |
 | 🎖️ | Military / Veterans |
