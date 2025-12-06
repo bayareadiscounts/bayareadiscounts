@@ -150,7 +150,7 @@ Some programs are available only in specific cities or regions, while others app
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| De Anza Emergency Grants | De Anza | 🎓 | One-time cash grants up to $750 for students facing financial hardship or urgent expenses that may interfere with education | Download application, complete, and email as PDF to [dabasicneeds@deanza.edu(mailto:dabasicneeds@deanza.edu) | Academic year | [Emergency Grants](https://www.deanza.edu/resources/hub/emergency-grants.html) |
+| De Anza Emergency Grants | De Anza | 🎓 | One-time cash grants up to $750 for students facing financial hardship or urgent expenses that may interfere with education | Submit a completed PDF app | Academic year | [Emergency Grants](https://www.deanza.edu/resources/hub/emergency-grants.html) |
 | SFSU Zen Den | SF State | 🎓 | Safe sleep space for housing-insecure students, plus Basic Needs Lounges for extreme commuters | Contact Basic Needs office | Academic year | [Basic Needs](https://basicneeds.sfsu.edu) |
 | SJSU Emergency Housing | San Jose State | 🎓 | Up to 28 days emergency housing through Bill Wilson Center partnership, plus crisis grants | Contact SJSU Cares case manager | As needed | [SJSU Cares](https://www.sjsu.edu/sjsucares) |
 
