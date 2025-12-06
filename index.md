@@ -60,6 +60,7 @@ Some programs are available only in specific cities, while others apply to the e
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
 | 2-1-1 Bay Area | Bay Area | 🌎 | Free 24/7 referral to food, housing, legal help, health care, and more | Ongoing | [211BayArea.org](https://211bayarea.org) |
+| Dolly Parton Imagination Library | California | 🧒 | Free book mailed monthly to child's home for kids (up to age 5); high-quality, age-appropriate books selected by experts; builds home library of up to 60 books by kindergarten | Register online | Ongoing (monthly until age 5) | [CA Imagination Library](https://www.library.ca.gov/services/to-public/imagination-library/) |
 | Season of Sharing Fund | Bay Area | 💳 | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season fo Sharing Fund](https://seasonofsharing.org) |
 | VA Vet Centers | Nationwide | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
 | YMCA | Nationwide | 👨‍👩‍👧 🧒 | Most locations offer sliding-scale membership rates | Ongoing | [YMCA.org](https://www.ymca.org/get-involved/join) |
@@ -156,7 +157,7 @@ Some programs are available only in specific cities, while others apply to the e
 |--------|------|-------------|---------|---------------|-----------|------|
 | Court Fee Waivers | California | 💳 🌎 | Filing fees waived | Apply by mail or through local court self-help center | Ongoing | [Court Fee Waivers](https://selfhelp.courts.ca.gov/fee-waiver) |
 | San Francisco Immigrant Support | San Francisco | 💳 🌎 | Free or low-cost immigration legal help (citizenship, green cards, DACA, etc.) | Find a provider through SF immigrant resources | Ongoing | [SF Immigrant Resources](https://immigrants.sfgov.org) |
-| SF DMV Reduced-Fee ID Card | San Francisco | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 from SFHSA | Request DL 937 at SFHSA office; submit to DMV | Ongoing | [SFHSA Services](https://www.sfhsa.org/free-and-discounted-services-hsa-program-recipients) |
+| DMV Reduced-Fee ID Card | California | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 | Request DL 937 from your [county's Public Assistance Agency](https://www.cdss.ca.gov/county-offices); submit to DMV | Ongoing | [DMV](https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240) |
 | SF Financial Justice Project | San Francisco | 💳 🌎 | Helps reduce or eliminate certain city fines and fees (parking, towing, etc.) for eligible residents | Check program selections and apply as relevant | Ongoing | [Financial Justice Project](https://sfgov.org/financialjustice) |
 | USCIS I-912 Fee Waiver | Nationwide | 💳 🌎 | Waiver of filing fees for certain immigration forms based on income/benefits | Submit I-912 with eligible USCIS applications | Case-by-case | [USCIS I-912](https://www.uscis.gov/i-912) |
 
@@ -164,9 +165,11 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
+| AARP Foundation Tax-Aide | Nationwide | 👵 🌎 | Free tax preparation with special attention to those 50+; no age requirement; help with all income levels; available at libraries, community centers, and senior centers | Use online locator to find nearest site; most locations require appointments | January-April (varies by site) | [AARP Tax-Aide](https://www.aarp.org/money/taxes/aarp-taxaide/) |
 | Alameda County Social Services Agency VITA | Alameda County | 💳 🌎 | Free tax preparation; help with EITC and CalEITC credits | Make appointment through online scheduler starting late January | January-April | [Alameda County VITA](https://www.alamedacountysocialservices.org/our-services/Work-and-Money/Other-Support/tax-services) |
 | Community Gatepath (formerly CCRC) VITA | Santa Clara County | 💳 | Free tax preparation for low-income individuals and families | Check website for current information | Seasonal | [CCRC Tax Services](https://www.ccscc.org/tax-ez-program) |
 | CSU East Bay VITA | Hayward/East Bay | 💳 | Free virtual tax prep via Zoom for income $84,000 or less | Schedule appointment online | February-April (Fridays & Saturdays) | [CSUEB VITA](https://www.csueastbay.edu/acct-fin/vita.html) |
+| IRS VITA Site Locator | Nationwide | 💳 🌎 | Free tax preparation for individuals and families earning $67,000 or less; help with EITC, Child Tax Credit, and other credits; available in multiple languages | Use online locator tool to find nearest VITA site; make appointment as required by individual location | January-April (varies by site) | [IRS VITA Locator](https://freetaxassistance.for.irs.gov/s/sitelocator) |
 | EBALDC VITA | East Bay | 💳 🌎 | Free tax preparation| Email sparkpoint@ebaldc.org or check website for 2025 schedule | Seasonal (check website) | [EBALDC VITA](https://ebaldc.org/vita/) |
 | Samaritan House VITA | San Mateo County | 💳 🌎 | Free tax preparation with drop-off service | Call (650) 523-0804 for tax questions or (650) 347-3648 for general info | February-April | [Samaritan House](https://samaritanhousesanmateo.org/article/free-tax-preparation/) |
 | SF State VITA | San Francisco | 💳 🎓 🌎 | Free tax preparation by accounting students | Check SF State website for schedule and location | February-April | [SF State VITA](https://cob.sfsu.edu/VITA) |
