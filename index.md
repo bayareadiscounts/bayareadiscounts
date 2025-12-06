@@ -90,10 +90,10 @@ Some programs are available only in specific cities, while others apply to the e
 
 | Service | Eligibility | Benefit | Timeframe | Link |
 |--------|-------------|---------|-----------|------|
-| Amazon Prime Access | 💳 | Discounted membership | Ongoing | [Amazon Prime Access](https://www.amazon.com/primeaccess) |
+| Amazon Prime Access | 💳 | Prime membership for $6.99/month for eligible government assistance recipients or income verified customers; new customers start with a free 30-day trial | Ongoing | [Amazon Prime Access](https://www.amazon.com/primeaccess) |
 | Instacart EBT SNAP | 💳 | 50% off Instacart+ membership for one year; skip delivery/pickup fees wiht participating stores; new customers get $0 delivery on first 3 orders | Ongoing | [Instacart](https://www.instacart.com/ebt-snap) |
 | Kanopy for Students | 🎓 | Free streaming for college students through participating campus libraries | Ongoing | [Kanopy for Students](https://www.kanopy.com/signup/find/university) |
-| Walmart+ Assist | 💳 | Discounted membership | Ongoing | [Walmart+ Assist](https://www.walmart.com/plus/assist) |
+| Walmart+ Assist | 💳 | Eligible government assistance recipients receive [Walmart+](https://www.walmart.com/plus/) at 50% off ($6.47/mo. or $49/yr.); new customers start with a free 30-day trial | Ongoing | [Walmart+ Assist](https://www.walmart.com/plus/assist) |
 
 ---
 
