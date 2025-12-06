@@ -60,7 +60,7 @@ Some programs are available only in specific cities or regions, while others app
 | Program | Area | Eligibility | Benefit | Timeframe | Link |
 |--------|------|-------------|---------|-----------|------|
 | 2-1-1 Bay Area | Bay Area | 🌎 | Free 24/7 referral to food, housing, legal help, health care, and more | Ongoing | [211BayArea.org](https://211bayarea.org) |
-| Dolly Parton Imagination Library | California | 🧒 | Free book mailed monthly to child's home for kids (up to age 5); high-quality, age-appropriate books selected by experts; builds home library of up to 60 books by kindergarten | Register online | Ongoing (monthly until age 5) | [CA Imagination Library](https://www.library.ca.gov/services/to-public/imagination-library/) |
+| Dolly Parton Imagination Library | California | 🧒 | Free book mailed monthly to child's home for kids (up to age 5); high-quality, age-appropriate books selected by experts; builds home library of up to 60 books by kindergarten | Ongoing (monthly until age 5) | [CA Imagination Library](https://www.library.ca.gov/services/to-public/imagination-library/) |
 | Season of Sharing Fund | Bay Area | 💳 | Emergency rental and basic needs assistance to prevent homelessness | Ongoing | [Season fo Sharing Fund](https://seasonofsharing.org) |
 | VA Vet Centers | Nationwide | 🎖️ | Community & mental health support | Ongoing | [VA Vet Centers](https://www.va.gov/find-locations) |
 | YMCA | Nationwide | 👨‍👩‍👧 🧒 | Most locations offer sliding-scale membership rates | Ongoing | [YMCA.org](https://www.ymca.org/get-involved/join) |
