@@ -4,7 +4,7 @@ Stretch your budget and explore more of your community.
 
 This guide highlights free and low-cost services and programs within the core counties commonly recognized as the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties) for seniors, youth, college students, veterans, families, and anyone looking to save on everyday expenses.
 
-Some programs are available only in specific cities, while others apply to the entire Northern California region or statewide. Each listing includes a city/area label to clarify availability.
+Some programs are available only in specific cities or regions, while others apply to all of California or nationwide. Always check the program or resource website for the most current eligibility details.
 
 ---
 
@@ -179,7 +179,7 @@ Some programs are available only in specific cities, while others apply to the e
 
 ## Library Resources
 
-Our public libraries often offer more than books — including access to news, digital media, museum passes, and more. Always check your local library's website for current offerings.
+Public libraries often offer more than books — including access to news, digital media, museum passes, and more. Always check your local library's website for current offerings.
 
 | Program/Resource | City/Area | Eligibility | Benefit | How to Use It | Timeframe | Resource Link |
 |-------------------|-----------|-------------|---------|----------------|-----------|------|
@@ -239,10 +239,10 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| Bike Share for All (Bay Wheels) | Bay Area | 💳 🌎 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | [Bike Share for All](https://www.lyft.com/bikes/bay-wheels/bike-share-for-all) |
-| DMV Reduced-Fee ID Card | California | 💳 🌎 | Reduced-fee state ID for eligible residents using form DL 937 | Request DL 937 from your [county's Public Assistance Agency](https://www.cdss.ca.gov/county-offices); submit to DMV | Ongoing | [DMV](https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240) |
-| Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 🌎 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | [Lime Access](https://www.li.me/why/community/lime-access) |
-| Low Cost Auto Insurance | California | 💳 🌎 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | [Low Cost Auto Insurance](https://www.mylowcostauto.com) |
+| Bike Share for All (Bay Wheels) | Bay Area | 💳 | Discounted bike share membership for income-eligible riders | Apply through provider; show proof of eligibility | Ongoing | [Bike Share for All](https://www.lyft.com/bikes/bay-wheels/bike-share-for-all) |
+| DMV Reduced-Fee ID Card | California | 💳 | Reduced-fee state ID for eligible residents using form DL 937 | Request DL 937 from your [county's Public Assistance Agency](https://www.cdss.ca.gov/county-offices); submit to DMV | Ongoing | [DMV](https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240) |
+| Lime Access | Berkeley, Oakland, San Francisco, San Jose | 💳 | Discounted or free Lime scooter rides (up to a set time per ride) for eligible riders | Apply for Lime Access; link account | Ongoing | [Lime Access](https://www.li.me/why/community/lime-access) |
+| Low Cost Auto Insurance | California | 💳 | State-sponsored low-cost liability insurance for income-eligible drivers | Check eligibility and enroll online or by phone | Ongoing | [Low Cost Auto Insurance](https://www.mylowcostauto.com) |
 
 ### Public Transit
 
@@ -277,16 +277,16 @@ Our public libraries often offer more than books — including access to news, d
 
 | Program | Area | Eligibility | Benefit | How to Use It | Timeframe | Link |
 |--------|------|-------------|---------|---------------|-----------|------|
-| AT&T Access | Nationwide | 💳 SNAP/SSI | Affordable internet with free installation | Apply online or call | Ongoing | [AT&T Access](https://www.att.com/internet/access/) |
-| California LifeLine Program | California | 💳 🌎 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | [California LifeLine](https://www.californialifeline.com) |
-| CleanPowerSF | San Francisco | 💳 🌎 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | [CleanPowerSF](https://www.cleanpowersf.org) |
-| EBMUD Customer Assistance Program | East Bay (EBMUD service area) | 💳 🌎 | 35-50% discount on water and wastewater bills for income-eligible customers | Apply through EBMUD | Ongoing | [EBMUD Assistance](https://www.ebmud.com/customers/account/assistance-programs/) |
+| AT&T Access | Nationwide | 💳 | Affordable internet with free installation | Apply online or call | Ongoing | [AT&T Access](https://www.att.com/internet/access/) |
+| California LifeLine Program | California | 💳 | Discounted or free phone and wireless service | Apply through a participating provider | Ongoing | [California LifeLine](https://www.californialifeline.com) |
+| CleanPowerSF | San Francisco | 💳 | Additional bill-relief options for qualifying customers | Check PG&E or local power provider programs | Limited funding | [CleanPowerSF](https://www.cleanpowersf.org) |
+| EBMUD Customer Assistance Program | East Bay (EBMUD service area) | 💳 | 35-50% discount on water and wastewater bills for income-eligible customers | Apply through EBMUD | Ongoing | [EBMUD Assistance](https://www.ebmud.com/customers/account/assistance-programs/) |
 | Internet Essentials by Xfinity | Nationwide | 💳 Low-Income | Affordable home internet + Wi-Fi modem | Apply online or call | Ongoing | [Internet Essentials](https://www.xfinity.com/learn/internet-service/internet-essentials) |
-| LIHEAP | California | 💳 🌎 | Help paying energy bills | Apply via local agency | Funding cycles | [LIHEAP](https://www.csd.ca.gov/energybills) |
+| LIHEAP | California | 💳 | Help paying energy bills | Apply via local agency | Funding cycles | [LIHEAP](https://www.csd.ca.gov/energybills) |
 Medical Baseline Allowance | California (all utilities) | 🧑‍🦽 | Extra low-cost energy allowance for customers with qualifying medical conditions requiring additional electricity or gas | Apply through your utility provider (PG&E, etc.) | Ongoing | [Medical Baseline](https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline) |
-| PG&E CARE & FERA | Northern California (PG&E service area) | 💳 🌎 | 20-35% discount on electric and gas bills for income-eligible customers | Apply online or call PG&E | Ongoing | [PG&E CARE](https://www.pge.com/care) |
-| Recology 25% Low-Income Discount Program | San Francisco | 💳 🌎 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [SF.gov](https://www.sf.gov/additional-refuse-ratepayer-resources) |
-| SFPUC Customer Assistance Program (CAP) | SF | 💳 🌎 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
+| PG&E CARE & FERA | Northern California (PG&E service area) | 💳 | 20-35% discount on electric and gas bills for income-eligible customers | Apply online or call PG&E | Ongoing | [PG&E CARE](https://www.pge.com/care) |
+| Recology 25% Low-Income Discount Program | San Francisco | 💳 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [SF.gov](https://www.sf.gov/additional-refuse-ratepayer-resources) |
+| SFPUC Customer Assistance Program (CAP) | SF | 💳 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
 ---
 
