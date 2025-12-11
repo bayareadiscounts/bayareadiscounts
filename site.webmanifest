@@ -1,21 +1,48 @@
 {
   "name": "Bay Area Discounts",
-  "short_name": "Bay Area Discounts",
+  "short_name": "BA Discounts",
+  "description": "Community-maintained guide to free and discounted benefits across the San Francisco Bay Area",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00acc1",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "categories": ["finance", "lifestyle", "utilities", "reference"],
+  "shortcuts": [
+    {
+      "name": "Main Guide",
+      "short_name": "Guide",
+      "description": "View the main benefits guide",
+      "url": "/",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "College Student Resources",
+      "short_name": "College",
+      "description": "Benefits for college students",
+      "url": "/college-university.html",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Nonprofit Resources",
+      "short_name": "Nonprofits",
+      "description": "Resources for nonprofit organizations",
+      "url": "/nonprofit_resources_section.html",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
 }

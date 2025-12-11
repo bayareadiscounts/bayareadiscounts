@@ -1,0 +1,14 @@
+<div id="ios-install-banner" style="display: none; background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); padding: 15px 20px; border-radius: 10px; margin: 20px 0; text-align: center; box-shadow: 0 2px 6px rgba(0, 172, 193, 0.15);">
+  <p style="margin: 0 0 10px 0; font-weight: 600; color: #00838f;">📱 Add to Home Screen</p>
+  <p style="margin: 0; font-size: 0.9em; color: #24292e;">Tap <span style="font-weight: 600;">Share</span> → <span style="font-weight: 600;">Add to Home Screen</span> for quick access!</p>
+</div>
+
+<script>
+// Show iOS install banner
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+const isStandalone = window.navigator.standalone === true;
+
+if (isIOS && !isStandalone) {
+  document.getElementById('ios-install-banner').style.display = 'block';
+}
+</script>

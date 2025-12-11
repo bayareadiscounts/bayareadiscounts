@@ -15,6 +15,11 @@
   <meta name="apple-mobile-web-app-title" content="Bay Area Discounts" />
   <link rel="manifest" href="/site.webmanifest" />
   
+  <!-- PWA Theme Color -->
+  <meta name="theme-color" content="#00acc1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
   <style>
     /* CSS Variables for theming */
     :root {
@@ -579,6 +584,8 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   
   <main id="main-content" role="main">
+    {% include install-banner.html %}
+    
     {{ content }}
   </main>
 
@@ -712,6 +719,78 @@
           const visibleRows = Array.from(this.nextElementSibling.nextElementSibling.querySelectorAll('tbody tr')).filter(row => row.style.display !== 'none').length;
           announcement.textContent = `${visibleRows} result${visibleRows !== 1 ? 's' : ''} found`;
         });
+      });
+      
+      // ============== PWA FUNCTIONALITY ==============
+      
+      // Register Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registered:', registration);
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed:', err);
+            });
+        });
+      }
+
+      // PWA Install Prompt
+      let deferredPrompt;
+      const installButton = document.createElement('button');
+      installButton.id = 'install-button';
+      installButton.innerHTML = '📱 Install App';
+      installButton.style.cssText = `
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 172, 193, 0.4);
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      `;
+      document.body.appendChild(installButton);
+
+      installButton.addEventListener('mouseenter', () => {
+        installButton.style.transform = 'translateY(-3px)';
+        installButton.style.boxShadow = '0 6px 16px rgba(0, 172, 193, 0.5)';
+      });
+
+      installButton.addEventListener('mouseleave', () => {
+        installButton.style.transform = 'translateY(0)';
+        installButton.style.boxShadow = '0 4px 12px rgba(0, 172, 193, 0.4)';
+      });
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installButton.style.display = 'block';
+      });
+
+      installButton.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+          return;
+        }
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response: ${outcome}`);
+        deferredPrompt = null;
+        installButton.style.display = 'none';
+      });
+
+      window.addEventListener('appinstalled', () => {
+        console.log('PWA installed');
+        installButton.style.display = 'none';
+        deferredPrompt = null;
       });
     });
   </script>
