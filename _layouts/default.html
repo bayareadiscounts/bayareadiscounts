@@ -874,12 +874,13 @@
             totalCount++;
             const text = row.textContent.toLowerCase();
             const firstCell = row.querySelector('td:first-child');
-            const eligibilityIcons = firstCell ? firstCell.textContent : '';
+            const eligibilityIcons = firstCell ? firstCell.textContent.trim() : '';
             
             // Apply filter
             let matchesFilter = true;
             if (activeFilter !== 'all') {
-              matchesFilter = eligibilityIcons.includes(activeFilter);
+              // More lenient matching - check if the emoji exists anywhere in the cell
+              matchesFilter = eligibilityIcons.indexOf(activeFilter) !== -1;
             }
             
             // Apply search
@@ -901,7 +902,7 @@
         }
         
         // Open sections that have visible results
-        if (filter) {
+        if (filter || activeFilter !== 'all') {
           document.querySelectorAll('.section-content').forEach(content => {
             const visibleRows = content.querySelectorAll('tbody tr:not([style*="display: none"])').length;
             if (visibleRows > 0) {
