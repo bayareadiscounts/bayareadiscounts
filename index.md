@@ -91,7 +91,7 @@ This is a community-maintained resource—if you notice outdated information or 
 |--------|------|-------------|---------|---------------|-----------|------|
 | Bay Area Crisis Nursery - BACN Boutique | Contra Costa County | 💳 👨‍👩‍👧 🧒 🌎 | Free clothing, shoes, books, toys, baby equipment for families; includes maternity and parent items | Visit nursery lobby during open hours | Ongoing | [BACN Boutique](https://bayareacrisisnursery.org/programs/bacn-boutique/) |
 | Bay Area Crisis Nursery - Food Pantry & Diaper Bank | Contra Costa County | 💳 👨‍👩‍👧 🧒 | Free food and diapers for families in need | Order online from website before visiting boutique | Ongoing | [Bay Area Crisis Nursery](https://bayareacrisisnursery.org/) |
-| San Francisco Diaper Bank | SF | 💳 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | [SFHSA](https://www.sfhsa.org) |
+| San Francisco Diaper Bank | San Francisco | 💳 | Free diapers for CalFresh, Medi-Cal, and CalWORKs households with children under age two (up to two cases per child/month) | Enroll through SFHSA; pick up at designated sites | Ongoing | [SFHSA](https://www.sfhsa.org) |
 | St. Anthony's Free Clothing Program | San Francisco | 🌎 | Free clothing for men, women, and children; SF's largest free clothing program serving 3,000+ people monthly | Appointment required (visit in-person to sign up) | Ongoing | [St. Anthony's Clothing](https://www.stanthonysf.org/services/clothing/shop-for-clothes/) |
 
 ---
@@ -300,7 +300,7 @@ Public libraries often offer more than books — including access to news, digit
 | Transit Agency | Area | Eligibility | Summary of Benefit | How to Access | Notes / Duration | Link |
 |---|---|---|---|---|---|---|
 | AC Transit | Alameda County | 🧒 🏫 | Student Transit Pass Program: free unlimited rides for eligible middle and high school students | Apply through eligible schools | Ongoing | [AC Transit STPP](https://www.alamedactc.org/programs-projects/studentpass) |
-| BART | SF Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | [BART Discounts](https://www.bart.gov/tickets/discounts) |
+| BART | Bay Area | 🌎 | High-Value Discount: ~6.25% off when using Autoload | Set Autoload in Clipper | Ongoing | [BART Discounts](https://www.bart.gov/tickets/discounts) |
 | BART + Muni | San Francisco | 🌎 | "A" Fast Pass: Unlimited Muni + BART rides within SF | Buy discounted pass from Clipper | Monthly | [BART A Pass](https://www.bart.gov/tickets/discounts) |
 | Caltrain Dollar Fares for Youth | San Francisco, San Mateo, and Santa Clara Counties | 🧒 | $1 One-Way, $2 Day Pass for youth 18 and under | Show valid ID or Clipper Youth card | Ongoing | [Caltrain](https://www.caltrain.com/dollarfares) |
 | City Coach | Vacaville | 🎓 | Free rides for Solano College students (within Solano Co.) | Show student ID | Ongoing | [City Coach](https://citycoach.com/fares/) |
@@ -337,6 +337,6 @@ Public libraries often offer more than books — including access to news, digit
 Medical Baseline Allowance | California (all utilities) | 🧑‍🦽 | Extra low-cost energy allowance for customers with qualifying medical conditions requiring additional electricity or gas | Apply through your utility provider (PG&E, etc.) | Ongoing | [Medical Baseline](https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline) |
 | PG&E CARE & FERA | Northern California (PG&E service area) | 💳 | 20-35% discount on electric and gas bills for income-eligible customers | Apply online or call PG&E | Ongoing | [PG&E CARE](https://www.pge.com/care) |
 | Recology 25% Low-Income Discount Program | San Francisco | 💳 | 25% discount on garbage collection bills for qualifying customers | Apply through Recology San Francisco | Ongoing | [SF.gov](https://www.sf.gov/additional-refuse-ratepayer-resources) |
-| SFPUC Customer Assistance Program (CAP) | SF | 💳 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
+| SFPUC Customer Assistance Program (CAP) | San Francisco | 💳 | Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants | Enroll through SFPUC; show eligibility | Ongoing | [SFPUC CAP](https://www.sfpuc.org) |
 
 ---
