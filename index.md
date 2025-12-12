@@ -79,7 +79,7 @@ This is a community-maintained resource—if you notice outdated information or 
 ## Digital Services
 
 <div class="programs-container">
-{% for program in site.data.programs.digital-services %}
+{% for program in site.data.programs.digital_services %}
   {% include program-card.html program=program %}
 {% endfor %}
 </div>
@@ -129,7 +129,7 @@ This is a community-maintained resource—if you notice outdated information or 
 ## Library Resources
 
 <div class="programs-container">
-{% for program in site.data.programs.library-resources %}
+{% for program in site.data.programs.library_resources %}
   {% include program-card.html program=program %}
 {% endfor %}
 </div>
@@ -139,7 +139,7 @@ This is a community-maintained resource—if you notice outdated information or 
 ## Pet Resources
 
 <div class="programs-container">
-{% for program in site.data.programs.pet-resources %}
+{% for program in site.data.programs.pet_resources %}
   {% include program-card.html program=program %}
 {% endfor %}
 </div>
