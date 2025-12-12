@@ -29,7 +29,7 @@ layout: default
 <h1 style="display:none">Bay Area Discounts</h1>
 
 <a href="https://bayareadiscounts.com" class="site-logo">
-  <img src="https://raw.githubusercontent.com/bayareadiscounts/bayareadiscounts/refs/heads/main/logo.png" 
+  <img src="/assets/images/logo.png" 
        alt="Bay Area Discounts logo">
 </a>
 
