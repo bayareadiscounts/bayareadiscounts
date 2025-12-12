@@ -35,6 +35,10 @@ layout: default
   .program-card p {
     color: #c9d1d9;
   }
+
+  .filter-section-title {
+    color: #c9d1d9;
+  }
 }
 </style>
 <h1 style="display:none">Bay Area Discounts</h1>
@@ -62,6 +66,8 @@ This is a community-maintained resource—if you notice outdated information or 
 - Always confirm details before using or visiting
 
 ---
+
+<br>
 
 {% include search-filter-ui.html %}
 
