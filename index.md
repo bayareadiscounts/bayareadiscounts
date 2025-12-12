@@ -23,118 +23,15 @@ This is a community-maintained resource—if you notice outdated information or 
 - Always confirm details before using or visiting
 
 ---
-<br>
 
 {% include search-filter-ui.html %}
 
-<div id="search-results">
+<div id="search-results" class="programs-container">
 
-## Community
-
-<div class="programs-container">
-{% for program in site.data.programs.community %}
-  {% include program-card.html program=program %}
+{% for category in site.data.programs %}
+  {% for program in category[1] %}
+    {% include program-card.html program=program %}
+  {% endfor %}
 {% endfor %}
+
 </div>
-
----
-
-## Digital Services
-
-<div class="programs-container">
-{% for program in site.data.programs.digital_services %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Education
-
-<div class="programs-container">
-{% for program in site.data.programs.education %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Food
-
-<div class="programs-container">
-{% for program in site.data.programs.food %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Health
-
-<div class="programs-container">
-{% for program in site.data.programs.health %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Legal
-
-<div class="programs-container">
-{% for program in site.data.programs.legal %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Library Resources
-
-<div class="programs-container">
-{% for program in site.data.programs.library_resources %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Pet Resources
-
-<div class="programs-container">
-{% for program in site.data.programs.pet_resources %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Recreation
-
-<div class="programs-container">
-{% for program in site.data.programs.recreation %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Transportation
-
-<div class="programs-container">
-{% for program in site.data.programs.transportation %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
-
-## Utilities
-
-<div class="programs-container">
-{% for program in site.data.programs.utilities %}
-  {% include program-card.html program=program %}
-{% endfor %}
-</div>
-
----
