@@ -29,11 +29,9 @@ This is a community-maintained resource—if you notice outdated information or 
 
 <div id="search-results">
 
----
-
 ## Community
 
-<div class="program-container">
+<div class="programs-container">
 {% for program in site.data.programs.community %}
   {% include program-card.html program=program %}
 {% endfor %}
