@@ -612,6 +612,14 @@ input:focus,
     color: #c9d1d9;
   }
 
+  .eligibility-badge:hover {
+    background: #404040;
+  }
+
+  .filter-section-title {
+    color: #c9d1d9;
+  }
+
   .program-card h3 {
     color: #e8eef5;
   }
