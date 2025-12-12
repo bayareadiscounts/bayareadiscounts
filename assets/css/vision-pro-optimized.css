@@ -567,7 +567,7 @@ input:focus,
   }
 }
 
-/* Dark mode support (optional) */
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #0d1117;
@@ -576,18 +576,22 @@ input:focus,
 
   .program-card,
   .search-panel {
-    background: #161b22;
+    background: #1c2128;
     border-color: #30363d;
   }
 
   .program-card:hover {
-    background: #1c2128;
+    background: #262c36;
   }
 
   #search-input {
     background: #0d1117;
     color: #e8eef5;
     border-color: #30363d;
+  }
+
+  #search-input::placeholder {
+    color: #8b949e;
   }
 
   .filter-btn {
@@ -605,7 +609,15 @@ input:focus,
   .program-timeframe,
   .eligibility-badge {
     background: #30363d;
+    color: #c9d1d9;
+  }
+
+  .program-card h3 {
     color: #e8eef5;
+  }
+
+  .program-card p {
+    color: #c9d1d9;
   }
 
   a:visited {
