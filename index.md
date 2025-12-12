@@ -1,3 +1,31 @@
+---
+layout: default
+---
+
+<style>
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #58c4d9;
+  }
+
+  p {
+    color: #c9d1d9;
+  }
+
+  a {
+    color: #58c4d9;
+  }
+
+  a:visited {
+    color: #79d8eb;
+  }
+
+  .program-card p {
+    color: #c9d1d9;
+  }
+}
+</style>
+
 <h1 style="display:none">Bay Area Discounts</h1>
 
 <a href="https://bayareadiscounts.com" class="site-logo">
