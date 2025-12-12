@@ -224,3 +224,9 @@ document.addEventListener('DOMContentLoaded', () => {
     resultsSelector: '#search-results'
   });
 });
+// Auto-initialize on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', searchFilter.init);
+} else {
+  searchFilter.init();
+}

@@ -122,13 +122,15 @@
       color: var(--text-link-hover);
       text-decoration: underline;
     }
+    
     a:visited {
-        color: var(--text-link);
-      }
+      color: var(--text-link);
+    }
 
     a:visited:hover {
-        color: var(--text-link-hover);
-      }
+      color: var(--text-link-hover);
+    }
+    
     table {
       width: 100%;
       border-collapse: collapse;
@@ -335,6 +337,11 @@
         installButton.style.display = 'none';
         deferredPrompt = null;
       });
+
+      // Initialize search/filter after page loads
+      if (typeof searchFilter !== 'undefined' && searchFilter.buildIndex) {
+        searchFilter.buildIndex();
+      }
     });
   </script>
 </body>
