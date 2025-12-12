@@ -22,13 +22,18 @@ This is a community-maintained resource—if you notice outdated information or 
 - Check **Timeframe** for seasonal or limited offers
 - Always confirm details before using or visiting
 
+---
 <br>
 
 {% include search-filter-ui.html %}
 
+<div id="search-results">
+
+---
+
 ## Community
 
-<div id="search-results">
+<div class="program-container">
 {% for program in site.data.programs.community %}
   {% include program-card.html program=program %}
 {% endfor %}
