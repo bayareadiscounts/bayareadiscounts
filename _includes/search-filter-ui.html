@@ -1,0 +1,136 @@
+<section class="search-panel active" aria-label="Search and filter programs">
+  <div class="search-container">
+    
+    <!-- Search Input -->
+    <div class="search-field">
+      <label for="search-input" class="sr-only">Search programs</label>
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search (food, museums, transit, seniors...)"
+        aria-label="Search programs"
+      >
+      <span class="results-count" aria-live="polite" aria-atomic="true"></span>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filters-section">
+      
+      <!-- Eligibility Filters -->
+      <div class="filter-group">
+        <label class="filter-group-label">Who it helps</label>
+        <div class="filter-buttons">
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="💳">
+            💳 Benefit Card
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="👵">
+            👵 Seniors
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="🧒">
+            🧒 Youth
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="🎓">
+            🎓 College Students
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="🎖️">
+            🎖️ Veterans
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="👨‍👩‍👧">
+            👨‍👩‍👧 Families
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="🧑‍🦽">
+            🧑‍🦽 Disability
+          </button>
+          <button class="filter-btn" data-filter-type="eligibility" data-filter-value="🌎">
+            🌎 Everyone
+          </button>
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-group">
+        <label class="filter-group-label">Category</label>
+        <div class="filter-buttons">
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Community Services">
+            Community Services
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Food">
+            Food
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Transportation">
+            Transportation
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Recreation">
+            Recreation
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Health">
+            Health
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Education">
+            Education
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Utilities">
+            Utilities
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Legal">
+            Legal
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Library Resources">
+            Library Resources
+          </button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="Pet Resources">
+            Pet Resources
+          </button>
+        </div>
+      </div>
+
+      <!-- Area/County Filters -->
+      <div class="filter-group">
+        <label class="filter-group-label">Area / County</label>
+        <div class="filter-buttons">
+          <button class="filter-btn" data-filter-type="area" data-filter-value="San Francisco">
+            San Francisco
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Alameda County">
+            Alameda County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Contra Costa County">
+            Contra Costa County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="San Mateo County">
+            San Mateo County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Santa Clara County">
+            Santa Clara County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Marin County">
+            Marin County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Napa County">
+            Napa County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Solano County">
+            Solano County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Sonoma County">
+            Sonoma County
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Bay Area">
+            Bay Area-wide
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="California">
+            California
+          </button>
+          <button class="filter-btn" data-filter-type="area" data-filter-value="Nationwide">
+            Nationwide
+          </button>
+        </div>
+      </div>
+
+      <!-- Reset button -->
+      <button class="reset-btn" onclick="searchFilter.resetFilters()">
+        Clear All Filters
+      </button>
+    </div>
+  </div>
+</section>

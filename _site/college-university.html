@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bay Area Discounts</title>
+  <meta name="description" content="Free and low-cost resources across the San Francisco Bay Area">
+  <meta name="color-scheme" content="light dark">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Bay Area Discounts" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- PWA Theme Color -->
+  <meta name="theme-color" content="#00acc1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Vision Pro Optimized CSS -->
+  <link rel="stylesheet" href="/assets/css/vision-pro-optimized.css">
+  
+  <style>
+    /* CSS Variables for theming */
+    :root {
+      --primary-teal: #00acc1;
+      --primary-teal-dark: #00838f;
+      --primary-teal-darker: #006064;
+      --accent-orange: #ff6f00;
+      --accent-orange-light: #ff8f00;
+      --light-cyan: #e0f7fa;
+      --lighter-cyan: #b2ebf2;
+      
+      --bg-body: linear-gradient(135deg, #e0f7fa15 0%, #b2ebf215 100%);
+      --bg-main: white;
+      --bg-table-hover: #e0f7fa;
+      --bg-footer: white;
+      --text-primary: #24292e;
+      --text-heading: #00838f;
+      --text-link: #00838f;
+      --text-link-hover: #006064;
+      --border-color: #e1e4e8;
+      --border-light: #b2ebf2;
+      --shadow: rgba(0,0,0,0.07);
+      --shadow-light: rgba(0,0,0,0.06);
+    }
+    
+    /* Dark mode variables */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d2626a15 100%);
+        --bg-main: #0d1117;
+        --bg-table-hover: #1b3a3a;
+        --bg-footer: #010409;
+        --text-primary: #c9d1d9;
+        --text-heading: #58c4d9;
+        --text-link: #58c4d9;
+        --text-link-hover: #79d8eb;
+        --border-color: #30363d;
+        --border-light: #1b3a3a;
+        --shadow: rgba(0,0,0,0.3);
+        --shadow-light: rgba(0,0,0,0.2);
+      }
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    main {
+      flex: 1;
+      background: var(--bg-main);
+      padding: 2rem 1rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-heading);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    a {
+      color: var(--text-link);
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: var(--text-link-hover);
+      text-decoration: underline;
+    }
+    a:visited {
+        color: var(--text-link);
+      }
+
+    a:visited:hover {
+        color: var(--text-link-hover);
+      }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    thead {
+      background: var(--light-cyan);
+      color: var(--text-heading);
+    }
+    
+    tbody tr {
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    tbody tr:hover {
+      background: var(--bg-table-hover);
+    }
+    
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+    
+    th {
+      font-weight: 600;
+    }
+
+    /* Search functionality */
+    .table-search {
+      margin: 1rem 0;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    footer {
+      background: var(--bg-footer);
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--text-primary);
+      margin-top: auto;
+    }
+    
+    footer a {
+      color: var(--text-link);
+    }
+    
+    footer a:hover {
+      color: var(--text-link-hover);
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      main { padding: 1rem 0.5rem; }
+      table { margin: 1rem 0; }
+      th, td { padding: 0.75rem 0.5rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <main id="main-content" role="main">
+    <div class="container">
+      <h1 style="display:none">Bay Area Discounts</h1>
+
+<p><a href="https://bayareadiscounts.com" class="site-logo">
+  <img src="https://raw.githubusercontent.com/bayareadiscounts/bayareadiscounts/refs/heads/main/logo.png" alt="Bay Area Discounts logo" />
+</a></p>
+<h1 id="college--university-student-resources">College &amp; University Student Resources</h1>
+
+<p>Comprehensive guide to free and discounted benefits available exclusively to students enrolled at Bay Area colleges and universities. Benefits include transit passes, food assistance, emergency grants, recreation access, and more. <em>Always verify benefits and eligibility with your college or university as programs and requirements may change.</em></p>
+
+<p><strong>Quick Navigation:</strong></p>
+<ul>
+  <li><a href="#discount-platforms-and-verification-services">Discount Platforms</a></li>
+  <li><a href="#sparkpoint">SparkPoint</a></li>
+  <li><a href="#community-colleges">Community Colleges</a></li>
+  <li><a href="#california-state-universities-csu">California State Universities</a></li>
+  <li><a href="#university-of-california-uc">University of California</a></li>
+  <li><a href="#private-universities">Private Universities</a></li>
+</ul>
+
+<hr />
+
+<h2 id="discount-platforms">Discount Platforms</h2>
+
+<p>These platforms verify student status and connect you with discounts from many different brands. Offers change often, so always confirm details on each site before purchasing.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Student Beans</td>
+      <td>Free student verification and access to promo codes and special pricing at hundreds of brands including clothing, tech, and food delivery</td>
+      <td>Create a free account, verify enrollment with your school email or documentation, then browse offers and use the codes or links at participating stores</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.studentbeans.com/us">Student Beans</a></td>
+    </tr>
+    <tr>
+      <td>UNiDAYS</td>
+      <td>Central hub for student discounts and limited-time offers from major brands such as Apple, Adidas, Costco promos, and more</td>
+      <td>Sign up for a free account, verify student status, then use in-app codes online or show your UNiDAYS ID in participating stores</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.myunidays.com">UNiDAYS</a></td>
+    </tr>
+    <tr>
+      <td>ID.me Student</td>
+      <td>Single login that verifies student status and unlocks student pricing at many retailers and services that use ID.me</td>
+      <td>Create a free ID.me account, complete student verification, then look for “Verify with ID.me” buttons at partner websites and follow the prompts</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.id.me/individuals/group-discounts/students">ID.me Student</a></td>
+    </tr>
+    <tr>
+      <td>SheerID</td>
+      <td>Verification gateway used by many brands for student-only deals on streaming, clothing, software, and more</td>
+      <td>When a brand uses SheerID, complete the short verification form with your school details or upload documentation, then redeem the offer on the brand’s site</td>
+      <td>Ongoing</td>
+      <td><a href="https://shop.sheerid.com/">SheerID Student Deals</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="sparkpoint">SparkPoint</h2>
+
+<p><a href="https://uwba.org/what-we-do/sparkpoint-program/">SparkPoint Centers by United Ways Bay Area (UWBA)</a> provides free, confidential, and judgement-free support to help student families build lasting financial stability and access public benefits. Their centers offer coaching and connections across four key areas (services provided may vary by center):</p>
+
+<ol>
+  <li>Financial stability: Coaching, budgeting, credit repair, and tax help.</li>
+  <li>Employment &amp; education: Job search, skills training, and career growth.</li>
+  <li>Food &amp; housing security: Access to food, rental support, transit, and benefits enrollment.</li>
+  <li>Long-term goals: Increase income, improve credit, grow savings, and reduce debt.</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>College/University</th>
+      <th>City</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cañada College</td>
+      <td>Redwood City</td>
+      <td><a href="https://canadacollege.edu/sparkpoint/index.php">Cañada College</a></td>
+    </tr>
+    <tr>
+      <td>Chabot College</td>
+      <td>Hayward</td>
+      <td><a href="https://www.chabotcollege.edu/student-services/student-equity/sparkpoint/index.php">Chabot College</a></td>
+    </tr>
+    <tr>
+      <td>City College of San Francisco (CCSF)</td>
+      <td>San Francisco</td>
+      <td><a href="www.ccsf.edu/basicneeds">CCSF</a></td>
+    </tr>
+    <tr>
+      <td>College of San Mateo</td>
+      <td>San Mateo</td>
+      <td><a href="https://collegeofsanmateo.edu/sparkpoint/">CSM</a></td>
+    </tr>
+    <tr>
+      <td>Contra Costa College</td>
+      <td>San Pablo</td>
+      <td><a href="https://www.contracosta.edu/pay-for-college/sparkpoint/">CCC</a></td>
+    </tr>
+    <tr>
+      <td>Diablo Valley College</td>
+      <td>Oakland</td>
+      <td><a href="https://www.dvc.edu/student-services/basic-needs-services/financial-coaching">DVC</a></td>
+    </tr>
+    <tr>
+      <td>Laney College</td>
+      <td>Pleasant Hill</td>
+      <td><a href="https://laney.edu/restoringourcommunities">Laney College</a></td>
+    </tr>
+    <tr>
+      <td>San Francisco State University (SFSU)</td>
+      <td>San Francisco</td>
+      <td><a href="https://basicneeds.sfsu.edu/sparkpoint">SFSU</a></td>
+    </tr>
+    <tr>
+      <td>Skyline College</td>
+      <td>San Bruno</td>
+      <td><a href="https://skylinecollege.edu/sparkpoint/">Skyline College</a></td>
+    </tr>
+    <tr>
+      <td>Solano Community College</td>
+      <td>Fairfield</td>
+      <td><a href="https://www.childnet.org/solano-sparkpoint">SparkPoint Solano</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="community-colleges">Community Colleges</h2>
+
+<p><strong>Jump to:</strong></p>
+<ul>
+  <li><a href="#chabot-las-positas-community-college-district">Chabot-Las Positas Community College District</a></li>
+  <li><a href="#city-college-of-san-francisco">City College of San Francisco</a></li>
+  <li><a href="#college-of-marin">College of Marin</a></li>
+  <li><a href="#contra-costa-community-college-district">Contra Costa Community College District</a></li>
+  <li><a href="#foothill-de-anza-community-college-district">Foothill-De Anza Community College District</a></li>
+  <li><a href="#napa-valley-college">Napa Valley College</a></li>
+  <li><a href="#ohlone-community-college-district">Ohlone Community College District</a></li>
+  <li><a href="#peralta-community-college-district">Peralta Community College District</a></li>
+  <li><a href="#san-jose-evergreen-community-college-district">San Jose-Evergreen Community College District</a></li>
+  <li><a href="#san-mateo-county-community-college-district">San Mateo County Community College District</a></li>
+  <li><a href="#santa-rosa-junior-college">Santa Rosa Junior College</a></li>
+  <li><a href="#west-valley-mission-community-college-district">West Valley-Mission Community College District</a></li>
+</ul>
+
+<h3 id="chabot-las-positas-community-college-district">Chabot-Las Positas Community College District</h3>
+<p><em>Colleges: Chabot College (Hayward), Las Positas College (Livermore)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emergency Grants</td>
+      <td>Chabot, Las Positas</td>
+      <td>Up to $500 for books, supplies, food, and transportation</td>
+      <td>Apply through Basic Needs office</td>
+      <td>Academic year</td>
+      <td><a href="https://www.chabotcollege.edu/students/basic-needs.php">Chabot Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Food Pantry</td>
+      <td>Chabot</td>
+      <td>FRESH Market: student-led pantry with groceries, clothing, hygiene products, other basic necessities, and CalFresh assistance</td>
+      <td>Visit pantry with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.chabotcollege.edu/student-services/fresh-market/">FRESH Market</a></td>
+    </tr>
+    <tr>
+      <td>Food Resources</td>
+      <td>Las Positas</td>
+      <td>List of available food resources for students</td>
+      <td>Visit resource guide</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.laspositascollege.edu/resourceguide/community_food.php">Food Resources</a></td>
+    </tr>
+    <tr>
+      <td>Promise Program</td>
+      <td>Chabot, Las Positas</td>
+      <td>2 years free tuition for first-time full-time students, no income requirement</td>
+      <td>Apply as incoming student</td>
+      <td>First-time college students</td>
+      <td><a href="https://www.chabotcollege.edu/finaid/free-tuition/index.php">College Promise</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="city-college-of-san-francisco">City College of San Francisco</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Free City Grant</td>
+      <td>CCSF</td>
+      <td>Full tuition waiver for San Francisco residents</td>
+      <td>Enroll at CCSF and apply</td>
+      <td>Academic year</td>
+      <td><a href="https://www.ccsf.edu/free-city">Free City</a></td>
+    </tr>
+    <tr>
+      <td>Library Technology Lending</td>
+      <td>CCSF</td>
+      <td>Free laptop/chromebook, WiFi hotspot, and calculator loans (one of each per student, semester-long)</td>
+      <td>Check out from library</td>
+      <td>Academic year</td>
+      <td><a href="https://library.ccsf.edu/use/technology">Library Technology</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="college-of-marin">College of Marin</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basic Needs</td>
+      <td>College of Marin</td>
+      <td>Support with everyday necessities, including financial support, food, health services, housing, technology, and transportation</td>
+      <td>Apply through Student Services</td>
+      <td>Academic year</td>
+      <td><a href="https://www.marin.edu/financial-aid">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>COM Cupboard</td>
+      <td>College of Marin</td>
+      <td>Weekly produce from SF-Marin Food Bank</td>
+      <td>Visit cupboard</td>
+      <td>Academic year</td>
+      <td><a href="https://ss.marin.edu/food">Student Services</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Ride Home</td>
+      <td>College of Marin</td>
+      <td>Receive a reimbursement for eligible emergency rides home who normally commute by any means other than driving alone (up to $125/ride; capped at $500/year)</td>
+      <td>Apply for reimbursement online</td>
+      <td>Ongoing</td>
+      <td><a href="https://marincommutes.org/erh/">Marin Transit</a></td>
+    </tr>
+    <tr>
+      <td>Free Marin Transit</td>
+      <td>College of Marin</td>
+      <td>Free unlimited rides on all Marin Transit routes with student ID</td>
+      <td>Show student ID when boarding</td>
+      <td>Academic year</td>
+      <td><a href="https://marintransit.org/COM">Marin Transit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="contra-costa-community-college-district">Contra Costa Community College District</h3>
+<p><em>Colleges: Contra Costa College (San Pablo), Diablo Valley College (Pleasant Hill), Los Medanos College (Pittsburg)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>511 Emergency Rides</td>
+      <td>CCC, DVC, LMC</td>
+      <td>6 free emergency Lyft/Uber rides annually</td>
+      <td>Register through 511 Contra Costa</td>
+      <td>Academic year</td>
+      <td><a href="https://511contracosta.org/guaranteed-ride-home/">511 Contra Costa</a></td>
+    </tr>
+    <tr>
+      <td>511 Transit Incentives</td>
+      <td>CCC, DVC, LMC</td>
+      <td>Free $25 Clipper card for taking transit pledge</td>
+      <td>Complete transit pledge online</td>
+      <td>Academic year</td>
+      <td><a href="https://511contracosta.org/transit/transit-offer/">511 Contra Costa</a></td>
+    </tr>
+    <tr>
+      <td>Full-Time Free Tuition</td>
+      <td>CCC, DVC, LMC</td>
+      <td>Automatic fee waivers for 2 years (~$1,104/year), no income requirement</td>
+      <td>Submit FAFSA or CA Dream Act and enroll full-time</td>
+      <td>2 years</td>
+      <td><a href="https://www.4cd.edu/insite/full-time-free-tuition-program/">4CD Free Tuition</a></td>
+    </tr>
+    <tr>
+      <td>Technology Loans</td>
+      <td>DVC</td>
+      <td>Free semester-long Chromebook, Wi-Fi hotspot, and calculator rentals</td>
+      <td>Check out from library</td>
+      <td>Academic semester</td>
+      <td><a href="https://www.dvc.edu/academics/library-technology/information-technology-services/technology-loans">DVC Technology</a></td>
+    </tr>
+    <tr>
+      <td>TimelyCare</td>
+      <td>CCC, DVC, LMC</td>
+      <td>Free 24/7 telehealth for medical and mental health</td>
+      <td>Access through student portal</td>
+      <td>Academic year</td>
+      <td><a href="https://www.dvc.edu/student-services/basic-needs-services/free-24-7-telehealth">TimelyCare</a></td>
+    </tr>
+    <tr>
+      <td>Wrap-Around Emergency Fund</td>
+      <td>CCC</td>
+      <td>Up to $500 emergency grants disbursed within one week, no immigration status requirements</td>
+      <td>Apply through Basic Needs</td>
+      <td>Academic year</td>
+      <td><a href="https://www.contracosta.edu/student-services/student-equity/basic-needs/">CCC Basic Needs</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="foothill-de-anza-community-college-district">Foothill-De Anza Community College District</h3>
+<p><em>Colleges: De Anza College (Cupertino), Foothill College (Los Altos Hills)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dental Hygiene Clinic</td>
+      <td>Foothill</td>
+      <td>Free teeth cleaning and X-rays for students who paid student body fees (worth hundreds of dollars)</td>
+      <td>Schedule appointment with clinic</td>
+      <td>Academic year</td>
+      <td><a href="https://foothill.edu/bio/programs/dentalh/">Dental Hygiene</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Grants</td>
+      <td>De Anza</td>
+      <td>One-time cash grants up to $750 for students facing financial hardship or urgent expenses</td>
+      <td>Submit completed PDF application to dabasicneeds@deanza.edu</td>
+      <td>Academic year</td>
+      <td><a href="https://www.deanza.edu/resources/hub/emergency-grants.html">Emergency Grants</a></td>
+    </tr>
+    <tr>
+      <td>Free Bicycle Rentals</td>
+      <td>De Anza</td>
+      <td>Free bicycle rentals for students 18+ with DASG ID cards, renewable quarterly</td>
+      <td>Apply for DASG bike program</td>
+      <td>Academic quarters</td>
+      <td><a href="https://www.deanza.edu/collegelife/dasgbikeprogram.html">DASG Bike Program</a></td>
+    </tr>
+    <tr>
+      <td>Free Legal Advice</td>
+      <td>De Anza</td>
+      <td>Free 30-minute legal consultations via Zoom for DASG cardholders</td>
+      <td>Complete online appointment request form</td>
+      <td>Academic quarters</td>
+      <td><a href="https://www.deanza.edu/collegelife/legaladvice.html">Legal Advice</a></td>
+    </tr>
+    <tr>
+      <td>Owls Nest</td>
+      <td>Foothill</td>
+      <td>Free $50 Walmart e-Gift Cards for registered students, free snacks, weekly groceries, hygiene products</td>
+      <td>Visit Owls Nest</td>
+      <td>Academic year</td>
+      <td><a href="https://foothill.edu/owls-nest/">Owls Nest</a></td>
+    </tr>
+    <tr>
+      <td>Promise Programs</td>
+      <td>De Anza, Foothill</td>
+      <td>Two years free tuition and fees for first-time students</td>
+      <td>Apply as incoming student</td>
+      <td>First-time students</td>
+      <td><a href="https://www.deanza.edu/financialaid/types/">De Anza Promise</a></td>
+    </tr>
+    <tr>
+      <td>Roary’s Market</td>
+      <td>De Anza</td>
+      <td>Free groceries, meat, produce, hot meals (Wednesdays), clothing, Crumbl cookies while supplies last</td>
+      <td>Visit with DASG student card</td>
+      <td>Academic year</td>
+      <td><a href="https://www.deanza.edu/resources/hub/roarys-market/index.html">Roary’s Market</a></td>
+    </tr>
+    <tr>
+      <td>VTA SmartPass</td>
+      <td>De Anza, Foothill</td>
+      <td>$7.75/quarter for unlimited VTA bus and light rail (students enrolled in 12+ units)</td>
+      <td>Purchase through student portal</td>
+      <td>Academic quarters</td>
+      <td><a href="https://www.vta.org/go/passes/college-university">VTA SmartPass</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="napa-valley-college">Napa Valley College</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basic Needs Center</td>
+      <td>Napa Valley College</td>
+      <td>2-3 bags of groceries monthly</td>
+      <td>Visit Basic Needs Center</td>
+      <td>Academic year</td>
+      <td><a href="https://www.napavalley.edu/basicneeds">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Grants</td>
+      <td>Napa Valley College</td>
+      <td>Up to $1,500 (Spring) and $1,000 (Summer), no FAFSA required</td>
+      <td>Apply through Financial Aid</td>
+      <td>Spring/Summer</td>
+      <td><a href="https://www.napavalley.edu/admissions-and-aid/financial-aid/">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>Promise Scholarship</td>
+      <td>Napa Valley College</td>
+      <td>Covers enrollment fees, lab fees, material fees, reduced-cost parking permits</td>
+      <td>Apply for Promise Scholarship</td>
+      <td>Academic year</td>
+      <td><a href="https://www.napavalley.edu/admissions-and-aid/financial-aid/payment-info.html">NVC Promise</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ohlone-community-college-district">Ohlone Community College District</h3>
+<p><em>College: Ohlone College (Fremont/Newark)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Food Pantry</td>
+      <td>Ohlone</td>
+      <td>Pop-up food pantries (served ~529 students/week), CalFresh assistance provides up to $281/month</td>
+      <td>Visit pantry</td>
+      <td>Academic year</td>
+      <td><a href="https://www.ohlone.edu/basicneeds/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Ohlone Promise Scholarship</td>
+      <td>Ohlone</td>
+      <td>Full tuition, books, and fees for two years (up to 60 units) for Tri-City area high school seniors maintaining 2.0 GPA</td>
+      <td>Apply as graduating senior</td>
+      <td>High school seniors</td>
+      <td><a href="https://www.ohlone.edu/foundation/ohlonepromisescholarship">Ohlone Promise</a></td>
+    </tr>
+    <tr>
+      <td>Tutoring Centers</td>
+      <td>Ohlone</td>
+      <td>Biology &amp; Chemistry Learning Center, ASL/Deaf Studies Lab with specialized drop-in tutoring</td>
+      <td>Drop in during center hours</td>
+      <td>Academic year</td>
+      <td><a href="https://www.ohlone.edu/tutoring">Tutoring</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="peralta-community-college-district">Peralta Community College District</h3>
+<p><em>Colleges: College of Alameda, Berkeley City College (Berkeley), Laney College (Oakland), Merritt College (Oakland)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AC Transit EasyPass</td>
+      <td>College of Alameda, BCC, Laney, Merritt</td>
+      <td>Unlimited bus rides on all AC Transit routes for $47.32/semester (~$700+ annual value); 6+ units required</td>
+      <td>Purchase through college</td>
+      <td>Academic semester</td>
+      <td><a href="https://web.peralta.edu/transportation/">Peralta Transit</a></td>
+    </tr>
+    <tr>
+      <td>College of Alameda Promise</td>
+      <td>College of Alameda</td>
+      <td>2 years free tuition + book stipends for first-time full-time students</td>
+      <td>Apply as incoming student</td>
+      <td>First-time students</td>
+      <td><a href="https://alameda.peralta.edu/promise/">COA Promise</a></td>
+    </tr>
+    <tr>
+      <td>District Health Clinic</td>
+      <td>Laney College</td>
+      <td>Free primary care and mental health for all district students paying $18 health fee</td>
+      <td>Visit clinic with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://laney.edu/healthcenter/">Health Services</a></td>
+    </tr>
+    <tr>
+      <td>East Bay Community Law Center</td>
+      <td>All Peralta colleges</td>
+      <td>Free immigration, housing, eviction defense through UCRC partnerships</td>
+      <td>Schedule appointment</td>
+      <td>Academic year</td>
+      <td><a href="https://peralta.edu/legal">Legal Services</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Grants</td>
+      <td>College of Alameda</td>
+      <td>$300 Safeway gift cards, $100 gas/Clipper cards; multiple grants available per semester</td>
+      <td>Apply through Basic Needs</td>
+      <td>Academic year</td>
+      <td><a href="https://alameda.peralta.edu/basic-needs/">COA Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Food Pantries</td>
+      <td>College of Alameda, BCC, Laney, Merritt</td>
+      <td>Campus food pantries at all four colleges</td>
+      <td>Visit pantry with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://web.peralta.edu/de/basic-needs/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Free Daily Meals</td>
+      <td>College of Alameda</td>
+      <td>Free daily breakfast and lunch</td>
+      <td>Visit cafeteria</td>
+      <td>Academic year</td>
+      <td><a href="https://alameda.peralta.edu/basic-needs/">COA Food</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="san-jose-evergreen-community-college-district">San Jose-Evergreen Community College District</h3>
+<p><em>Colleges: Evergreen Valley College (San Jose), San Jose City College</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASG Emergency Grants</td>
+      <td>EVC, SJCC</td>
+      <td>Emergency funding for financial/housing crises, once per calendar year</td>
+      <td>Apply through Associated Students</td>
+      <td>Academic year</td>
+      <td><a href="https://www.evc.edu">Student Services</a></td>
+    </tr>
+    <tr>
+      <td>First 2 Free Promise</td>
+      <td>EVC, SJCC</td>
+      <td>Covers enrollment fees ($690/semester for 15 units) plus $500 Books and Supplies Grant</td>
+      <td>Apply for Promise program</td>
+      <td>First 2 years</td>
+      <td><a href="https://www.evc.edu/first2free">First 2 Free</a></td>
+    </tr>
+    <tr>
+      <td>F.R.E.S.H. Market</td>
+      <td>EVC, SJCC</td>
+      <td>Campus pantry and bi-monthly drive-through distributions (1st and 3rd Fridays) with Second Harvest</td>
+      <td>Visit pantry or attend distribution</td>
+      <td>Academic year</td>
+      <td><a href="https://www.evc.edu/resources/basic-needs">Basic Needs</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="san-mateo-county-community-college-district">San Mateo County Community College District</h3>
+<p><em>Colleges: Cañada College (Redwood City), College of San Mateo, Skyline College (San Bruno)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Campus Dining Card</td>
+      <td>Cañada, CSM, Skyline</td>
+      <td>$100/month dining card for food-insecure students</td>
+      <td>Apply through SparkPoint</td>
+      <td>Academic year</td>
+      <td><a href="https://smccd-czqfp.formstack.com/forms/food_support_grant?sso=689cde904dfb0">SMCCD Dining Card Application</a></td>
+    </tr>
+    <tr>
+      <td>Finish Line Fund</td>
+      <td>Cañada, CSM, Skyline</td>
+      <td>Foundation emergency grants averaging $1,000/student; over $2 million distributed annually</td>
+      <td>Apply through Financial Aid</td>
+      <td>Academic year</td>
+      <td><a href="https://smccd.edu/foundation/">Foundation</a></td>
+    </tr>
+    <tr>
+      <td>Promise Scholars Program</td>
+      <td>Cañada, CSM, Skyline</td>
+      <td>Up to 3 years coverage: tuition + $750/year book vouchers + priority enrollment + dedicated counseling</td>
+      <td>Apply for Promise Scholars</td>
+      <td>Up to 3 years</td>
+      <td><a href="https://smccd.edu/promise/">Promise Scholars</a></td>
+    </tr>
+    <tr>
+      <td>SamTrans Way2Go Pass</td>
+      <td>Cañada, CSM, Skyline</td>
+      <td>FREE unlimited bus pass (5,000 distributed annually); Level 2 students receive $50/month transit support</td>
+      <td>Apply for pass</td>
+      <td>Academic year</td>
+      <td><a href="https://skylinecollege.edu/sparkpoint/services/transportation.php">SamTrans</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="santa-rosa-junior-college">Santa Rosa Junior College</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bear Cub Basics</td>
+      <td>SRJC</td>
+      <td>$15 meal vouchers (4 per semester)</td>
+      <td>Request through Basic Needs</td>
+      <td>Per semester</td>
+      <td><a href="https://basicneeds.santarosa.edu/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Clipper BayPass (Pilot)</td>
+      <td>SRJC</td>
+      <td>Unlimited rides on ALL 24 Bay Area transit agencies (BART, Muni, Caltrain, SMART, ferries)</td>
+      <td>Register for pilot program</td>
+      <td>Through June 2025</td>
+      <td><a href="https://maps.santarosa.edu/clipper-baypass-faq">BayPass FAQ</a></td>
+    </tr>
+    <tr>
+      <td>Free Transit</td>
+      <td>SRJC</td>
+      <td>Free Sonoma County Transit, Santa Rosa CityBus, and Petaluma Transit year-round with CubCard</td>
+      <td>Show CubCard when boarding</td>
+      <td>Academic year</td>
+      <td><a href="https://transportation.santarosa.edu/">Transportation</a></td>
+    </tr>
+    <tr>
+      <td>SRJC for Free</td>
+      <td>SRJC</td>
+      <td>$600-850/semester for students taking 12+ units</td>
+      <td>Apply for program</td>
+      <td>Academic year</td>
+      <td><a href="https://srjcforfree.santarosa.edu/">SRJC for Free</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="west-valley-mission-community-college-district">West Valley-Mission Community College District</h3>
+<p><em>Colleges: Mission College (Santa Clara), West Valley College (Saratoga)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>College/University</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AB 3158 Free Tuition</td>
+      <td>Mission, West Valley</td>
+      <td>100% free tuition for ALL district residents—no income requirement, no complicated forms</td>
+      <td>Be a district resident and enroll</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.wvm.edu/free-community-college/">Free Community College</a></td>
+    </tr>
+    <tr>
+      <td>Free Cafeteria Meals</td>
+      <td>Mission, West Valley</td>
+      <td>$10.8 million program providing free cafeteria meals to students taking 6+ in-person units</td>
+      <td>Visit cafeteria with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://missioncollege.edu/news/free-college-bill-signed-into-law.html">Mission News</a></td>
+    </tr>
+    <tr>
+      <td>Free Parking &amp; Services</td>
+      <td>Mission, West Valley</td>
+      <td>Free parking, free health services, free technology loans</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.wvm.edu">Student Services</a></td>
+    </tr>
+    <tr>
+      <td>Mission Promise</td>
+      <td>Mission</td>
+      <td>Up to 3 years free tuition + books with counseling support</td>
+      <td>Apply for Mission Promise</td>
+      <td>Up to 3 years</td>
+      <td><a href="https://missioncollege.edu/financial-aid/free.html">Mission Promise</a></td>
+    </tr>
+    <tr>
+      <td>Office of Student Needs</td>
+      <td>West Valley</td>
+      <td>Free clothing, haircuts, lactation rooms</td>
+      <td>Visit Office of Student Needs</td>
+      <td>Academic year</td>
+      <td><a href="https://www.westvalley.edu/services/student-needs/">Student Needs</a></td>
+    </tr>
+    <tr>
+      <td>VTA Transit Cards</td>
+      <td>Mission, West Valley</td>
+      <td>Free VTA Clipper cards and Lyft vouchers</td>
+      <td>Request through Student Services</td>
+      <td>Academic year</td>
+      <td><a href="https://www.wvm.edu">Transportation</a></td>
+    </tr>
+    <tr>
+      <td>WVC Community Grant</td>
+      <td>West Valley</td>
+      <td>Up to $3,000/year for textbooks, transportation, and expenses</td>
+      <td>Apply for Community Grant</td>
+      <td>Academic year</td>
+      <td><a href="https://www.westvalley.edu/financialaid">Financial Aid</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="california-state-universities-csu">California State Universities (CSU)</h2>
+
+<p><strong>Jump to:</strong></p>
+<ul>
+  <li><a href="#csu-east-bay">CSU East Bay</a></li>
+  <li><a href="#csu-maritime-academy">CSU Maritime Academy</a></li>
+  <li><a href="#san-francisco-state-university">San Francisco State University</a></li>
+  <li><a href="#san-jose-state-university">San Jose State University</a></li>
+  <li><a href="#sonoma-state-university">Sonoma State University</a></li>
+</ul>
+
+<h3 id="csu-east-bay">CSU East Bay</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AC Transit EasyPass</td>
+      <td>Unlimited rides on all AC Transit routes with personalized photo Clipper card</td>
+      <td>Receive at orientation</td>
+      <td>Academic year (launched Fall 2025)</td>
+      <td><a href="https://www.csueastbay.edu/parking/alt-trans/easy-pass.html">EasyPass</a></td>
+    </tr>
+    <tr>
+      <td>Free Equipment Rentals</td>
+      <td>Free same-day sports and fitness equipment checkout at RAW Center</td>
+      <td>Present Bay Card at rental counter</td>
+      <td>Academic year</td>
+      <td><a href="https://www.csueastbay.edu/raw/">RAW Center</a></td>
+    </tr>
+    <tr>
+      <td>Pioneers for H.O.P.E.</td>
+      <td>Comprehensive emergency assistance: temporary housing, bill payment help, food pantry with fresh produce, meat, and snacks</td>
+      <td>Visit H.O.P.E. office</td>
+      <td>Academic year</td>
+      <td><a href="https://www.csueastbay.edu/hope/">H.O.P.E.</a></td>
+    </tr>
+    <tr>
+      <td>Recreation &amp; Wellness Center</td>
+      <td>54,000 sq ft facility with two-story fitness center, elevated jogging track, and group fitness classes (worth $500+ per year vs commercial gyms)</td>
+      <td>Access with Bay Card</td>
+      <td>Academic year</td>
+      <td><a href="https://www.csueastbay.edu/raw/">RAW Center</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="csu-maritime-academy">CSU Maritime Academy</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coast Guard Licenses</td>
+      <td>Third Mate or Third Assistant Engineer licenses (internationally recognized credentials) for applicable programs</td>
+      <td>Complete required program</td>
+      <td>Upon graduation</td>
+      <td><a href="https://maritime.calpoly.edu/academics/">Academics</a></td>
+    </tr>
+    <tr>
+      <td>Recreation &amp; Aquatic Center</td>
+      <td>NCAA-competition gymnasium and 50-meter pool with wave machine that simulates storm conditions, available for recreation</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://maritime.calpoly.edu/campus-life/">PEAC</a></td>
+    </tr>
+    <tr>
+      <td>Western Undergraduate Exchange (WUE)</td>
+      <td>Tuition at 150 percent of in-state rates for students from 15 western states (saves thousands vs out-of-state tuition)</td>
+      <td>Apply as WUE-eligible student</td>
+      <td>Academic year</td>
+      <td><a href="https://maritime.calpoly.edu/admissions/tuition/">WUE</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="san-francisco-state-university">San Francisco State University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AS Food Pantry</td>
+      <td>Free groceries serving 700 to 800 students weekly, no proof of financial need required</td>
+      <td>Walk in with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.sfsu.edu">Gator Groceries</a></td>
+    </tr>
+    <tr>
+      <td>Free Adobe Creative Cloud</td>
+      <td>Free Creative Cloud for all matriculated students (Adobe Creative Campus) regardless of major</td>
+      <td>Download via student portal</td>
+      <td>Academic year</td>
+      <td><a href="https://atcentral.sfsu.edu/">SFSU Academic Technology</a></td>
+    </tr>
+    <tr>
+      <td>Gator Grub Alert</td>
+      <td>App notifications about free food events on campus</td>
+      <td>Download app</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.sfsu.edu">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Gator Pass</td>
+      <td>$130 per semester for unlimited rides on all 22 Bay Area transit agencies (Muni, BART, Caltrain, ferries, VTA, and more)</td>
+      <td>Auto-loaded on student One Card</td>
+      <td>Fall and Spring semesters</td>
+      <td><a href="https://transportation.sfsu.edu/gator-pass">Gator Pass</a></td>
+    </tr>
+    <tr>
+      <td>Immigrant Legal Defense</td>
+      <td>Free immigration legal services, including DACA renewals and family petitions</td>
+      <td>Schedule appointment</td>
+      <td>Academic year</td>
+      <td><a href="https://drc.sfsu.edu/Legal-Services">Legal Services</a></td>
+    </tr>
+    <tr>
+      <td>Mashouf Wellness Center</td>
+      <td>41-foot climbing wall, pools, hot tub, sauna, unlimited group fitness ($178 per semester in fees)</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://sfsu.edu/recreation">Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Zen Den</td>
+      <td>Safe sleep space for housing-insecure students plus Basic Needs Lounges for extreme commuters and car-sleepers</td>
+      <td>Contact Basic Needs office</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.sfsu.edu">Basic Needs</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="san-jose-state-university">San Jose State University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emergency Housing</td>
+      <td>Up to 28 days of emergency housing through Bill Wilson Center partnership, plus crisis grants</td>
+      <td>Contact SJSU Cares case manager</td>
+      <td>As needed</td>
+      <td><a href="https://www.sjsu.edu/sjsucares">SJSU Cares</a></td>
+    </tr>
+    <tr>
+      <td>Free Professional Clothing</td>
+      <td>Free career clothing through Office of Sustainability partnership</td>
+      <td>Visit clothing resource</td>
+      <td>Academic year</td>
+      <td><a href="https://www.sjsu.edu/sjsucares">SJSU Cares</a></td>
+    </tr>
+    <tr>
+      <td>Spartan Food Pantry</td>
+      <td>Free groceries with more than 33,000 visits annually, no appointment or income proof required</td>
+      <td>Walk in with Tower Card</td>
+      <td>Academic year</td>
+      <td><a href="https://www.sjsu.edu/sjsucares">Spartan Food Pantry</a></td>
+    </tr>
+    <tr>
+      <td>Spartan Recreation Center</td>
+      <td>128,000 sq ft facility with two 50-meter pools, climbing wall, and indoor track included in student fees</td>
+      <td>Access with Tower Card</td>
+      <td>Academic year</td>
+      <td><a href="https://www.sjsu.edu/recreation/">SRAC</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sonoma-state-university">Sonoma State University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CalFresh Support</td>
+      <td>Application assistance for up to $292 per month in grocery benefits</td>
+      <td>Visit Noma Cares Central</td>
+      <td>Academic year</td>
+      <td><a href="https://studentaffairs.sonoma.edu/noma-cares-central/basic-needs">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Career Closet</td>
+      <td>Free professional attire for interviews</td>
+      <td>Visit career services</td>
+      <td>Academic year</td>
+      <td><a href="https://studentaffairs.sonoma.edu/noma-cares-central/basic-needs">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Basic Needs Grants</td>
+      <td>Grants for students facing unforeseen crises</td>
+      <td>Apply through Noma Cares Central</td>
+      <td>Academic year</td>
+      <td><a href="https://studentaffairs.sonoma.edu/student-resources/noma-cares-central/student-emergency-basic-needs-intervention-bni-program">BNI Program</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Temporary Housing</td>
+      <td>Free short-term on-campus housing up to 30 days for students experiencing homelessness</td>
+      <td>Contact Housing Resources</td>
+      <td>As needed</td>
+      <td><a href="https://studentaffairs.sonoma.edu/housing-resources">Housing Resources</a></td>
+    </tr>
+    <tr>
+      <td>Lobo’s Pantry</td>
+      <td>Free groceries and hygiene products including diapers and menstrual products</td>
+      <td>Visit pantry</td>
+      <td>Academic year</td>
+      <td><a href="https://studentaffairs.sonoma.edu/noma-cares-central/basic-needs">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Outdoor Resource Center</td>
+      <td>Camping and outdoor equipment loans</td>
+      <td>Check out equipment</td>
+      <td>Academic year</td>
+      <td><a href="https://campusrec.sonoma.edu/">Campus Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Recreation Center</td>
+      <td>Heated 10-lane pool, climbing wall, fitness equipment, and Seawolf Cyclery for free bike repairs</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://campusrec.sonoma.edu/">Campus Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Student-Parent Resources</td>
+      <td>Diapers, formula, and parenting supplies for student parents</td>
+      <td>Visit Basic Needs</td>
+      <td>Academic year</td>
+      <td><a href="https://as.sonoma.edu/basic-needs/student-parent-resources">Student-Parent Resources</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="university-of-california-uc">University of California (UC)</h2>
+
+<p><strong>Jump to:</strong></p>
+<ul>
+  <li><a href="#uc-berkeley">UC Berkeley</a></li>
+  <li><a href="#uc-college-of-the-law-san-francisco">UC College of the Law, San Francisco</a></li>
+  <li><a href="#uc-san-francisco-ucsf">UC San Francisco (UCSF)</a></li>
+</ul>
+
+<h3 id="uc-berkeley">UC Berkeley</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AC Transit Free Pass</td>
+      <td>Free unlimited East Bay transit on AC Transit</td>
+      <td>Receive bus pass</td>
+      <td>Academic year</td>
+      <td><a href="https://pt.berkeley.edu/">Transportation</a></td>
+    </tr>
+    <tr>
+      <td>ASUC Tax Services</td>
+      <td>Free tax preparation for students earning $67,000 or less, including international students (F-1 and J-1)</td>
+      <td>Schedule appointment through ASUC Legal Clinic</td>
+      <td>Tax season</td>
+      <td><a href="https://www.asucslcberkeley.org/tax-services">Tax Services</a></td>
+    </tr>
+    <tr>
+      <td>BAMPFA Free Admission</td>
+      <td>Free admission to Berkeley Art Museum and Pacific Film Archive with one guest</td>
+      <td>Show student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://life.berkeley.edu/museum-visit-bampfa/">BAMPFA</a></td>
+    </tr>
+    <tr>
+      <td>Basic Needs Food Pantry</td>
+      <td>Free groceries with weekly visits allowed, no questions asked</td>
+      <td>Visit pantry with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.berkeley.edu">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>BayPass</td>
+      <td>$229 per semester for unlimited rides on all 24 Bay Area transit agencies (BART, Caltrain, Muni, AC Transit, VTA, ferries, and more)</td>
+      <td>Auto-loaded on student Clipper card</td>
+      <td>Fall and Spring semesters</td>
+      <td><a href="https://pt.berkeley.edu/around/transit/BayPass">BayPass</a></td>
+    </tr>
+    <tr>
+      <td>CAPS Mental Health</td>
+      <td>Free mental health counseling including Lets Talk drop-in sessions and 15-minute massage chair appointments</td>
+      <td>Schedule through CAPS</td>
+      <td>Academic year</td>
+      <td><a href="https://uhs.berkeley.edu/caps">CAPS</a></td>
+    </tr>
+    <tr>
+      <td>CHAOS Outdoor Gear</td>
+      <td>Camping gear rentals for $10 annual membership through student-run club operating since 1870</td>
+      <td>Join CHAOS and rent equipment</td>
+      <td>Academic year</td>
+      <td><a href="https://www.chaosberkeley.org/">CHAOS</a></td>
+    </tr>
+    <tr>
+      <td>Free Museums &amp; Gardens</td>
+      <td>Free admission to Lawrence Hall of Science, UC Botanical Garden, and Hearst Museum of Anthropology</td>
+      <td>Show student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://life.berkeley.edu/">Campus Life</a></td>
+    </tr>
+    <tr>
+      <td>Free Printing</td>
+      <td>200 free pages per semester from Open Computing Facility (20 pages per day limit)</td>
+      <td>Use OCF printers</td>
+      <td>Per semester</td>
+      <td><a href="https://studenttech.berkeley.edu/printing">Student Tech</a></td>
+    </tr>
+    <tr>
+      <td>Free Software</td>
+      <td>Free Adobe Creative Cloud, Microsoft 365, MATLAB, SPSS, Stata, and more</td>
+      <td>Download or log in online</td>
+      <td>Academic year</td>
+      <td><a href="https://software.berkeley.edu/">UCB Software</a></td>
+    </tr>
+    <tr>
+      <td>Recreation Facilities</td>
+      <td>Nearly 20 facilities including 41-foot climbing wall with free equipment and instruction</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://recwell.berkeley.edu/">RecWell</a></td>
+    </tr>
+    <tr>
+      <td>Student Legal Services</td>
+      <td>Free legal guidance on tenant rights, contracts, consumer matters, and more</td>
+      <td>Schedule appointment online</td>
+      <td>Academic year</td>
+      <td><a href="https://sls.berkeley.edu">SLS</a></td>
+    </tr>
+    <tr>
+      <td>UC Aquatic Center</td>
+      <td>Free kayak and stand-up paddleboard rentals (up to 2.5 hours) at Berkeley Marina</td>
+      <td>Reserve online with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://recwell.berkeley.edu/wellness-offerings/adventures/">Adventures</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="uc-college-of-the-law-san-francisco">UC College of the Law, San Francisco</h3>
+<p><em>(formerly UC Hastings)</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Free Legal Clinics</td>
+      <td>More than 15 legal clinics including Workers Rights, Immigrants Rights, and Startup Legal Garage</td>
+      <td>Enroll in clinic courses</td>
+      <td>Academic year</td>
+      <td><a href="https://www.uclawsf.edu/clinical-programs/">Clinical Programs</a></td>
+    </tr>
+    <tr>
+      <td>Guaranteed Student Housing</td>
+      <td>Guaranteed furnished housing at Academe at 198 building with below-market San Francisco rates</td>
+      <td>Apply for housing</td>
+      <td>Academic year</td>
+      <td><a href="https://www.uclawsf.edu/students/housing/">Housing</a></td>
+    </tr>
+    <tr>
+      <td>Merit Scholarships</td>
+      <td>About 80 percent of admitted students receive merit-based scholarships or need-based grants</td>
+      <td>Apply for admission</td>
+      <td>Upon admission</td>
+      <td><a href="https://www.uclawsf.edu/admissions/financial-aid/">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>Public Interest Career Assistance</td>
+      <td>PICAP supports graduates in public interest careers with loan repayment for up to 10 years</td>
+      <td>Apply upon graduation</td>
+      <td>Up to 10 years post graduation</td>
+      <td><a href="https://www.uclawsf.edu/careers/public-interest/">PICAP</a></td>
+    </tr>
+    <tr>
+      <td>UC Recreation Access</td>
+      <td>Access to UCSFs fitness centers as UC students</td>
+      <td>Show student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://policies.ucsf.edu/policy/150-25">Fitness</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="uc-san-francisco-ucsf">UC San Francisco (UCSF)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bakar &amp; Millberry Fitness Centers</td>
+      <td>Discounted access to rooftop pool at Mission Bay, gymnasium, and three-story climbing wall</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://campuslifeservices.ucsf.edu/fitnessrecreation">Fitness Centers</a></td>
+    </tr>
+    <tr>
+      <td>CalFresh &amp; Benefits Support</td>
+      <td>Application assistance for income-eligible food assistance and other public benefits</td>
+      <td>Contact Basic Needs office</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.ucsf.edu/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Childcare Reimbursement</td>
+      <td>Eligible Academic Student Employee (ASE) and/or Graduate Student Researcher (GSR) students can receive up to $1,400 per quarter in childcare reimbursement; all students receive 10 days of free Bright Horizons back-up care annually</td>
+      <td>Apply through student services</td>
+      <td>Academic year</td>
+      <td><a href="https://graduate.ucsf.edu/childcare">UCSF Childcare Reimbursement Program</a></td>
+    </tr>
+    <tr>
+      <td>Clipper BayPass</td>
+      <td>Unlimited rides on all 24 Bay Area transit agencies for a $272 per year fee that is automatically charged (worth more than $2,000 annually)</td>
+      <td>Receive Clipper card</td>
+      <td>Academic year</td>
+      <td><a href="https://campuslifeserviceshome.ucsf.edu/transportation/student-transit-pass">Campus Life Services</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Loans &amp; Rapid Rehousing</td>
+      <td>Emergency funding for students with a financial hardship due to unexpected events (up to $2K)</td>
+      <td>Apply through Financial Aid</td>
+      <td>As needed</td>
+      <td><a href="https://finaid.ucsf.edu/types-of-aid/emergency-funding">Emergency Funding</a></td>
+    </tr>
+    <tr>
+      <td>Food 4 UCSF Alerts</td>
+      <td>Text alerts when free food is available after catered campus events</td>
+      <td>Download app</td>
+      <td>Academic year</td>
+      <td><a href="https://saa.ucsf.edu/food">Food 4 UCSF (MyAccess login required)</a></td>
+    </tr>
+    <tr>
+      <td>Free Campus Shuttles</td>
+      <td>Free shuttles connecting Parnassus, Mission Bay, and Zuckerberg San Francisco General</td>
+      <td>Board with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://campuslifeserviceshome.ucsf.edu/node/59/plan-your-shuttle-trip">Campus Life Services</a></td>
+    </tr>
+    <tr>
+      <td>Late Night Lyft Program</td>
+      <td>UCSF covers first $10 of Lyft rides home between 8 PM and 1 AM, up to 15 rides per month (up to $150 monthly value)</td>
+      <td>Use Lyft with UCSF email account</td>
+      <td>Academic year</td>
+      <td><a href="https://campuslifeserviceshome.ucsf.edu/node/59/student-late-night-lyft">Campus Life Services</a></td>
+    </tr>
+    <tr>
+      <td>Student Food Market</td>
+      <td>Free fresh produce from SF Marin Food Bank every Thursday at both campuses</td>
+      <td>Visit market</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.ucsf.edu/food">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>The Pantry</td>
+      <td>24/7 emergency food access for students</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://basicneeds.ucsf.edu/food">Basic Needs</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="private-universities">Private Universities</h2>
+
+<p><strong>Jump to:</strong></p>
+<ul>
+  <li><a href="#academy-of-art-university">Academy of Art University</a></li>
+  <li><a href="#california-college-of-the-arts">California College of the Arts</a></li>
+  <li><a href="#dominican-university-of-california">Dominican University of California</a></li>
+  <li><a href="#golden-gate-university">Golden Gate University</a></li>
+  <li><a href="#saint-marys-college-of-california">Saint Mary’s College of California</a></li>
+  <li><a href="#samuel-merritt-university">Samuel Merritt University</a></li>
+  <li><a href="#santa-clara-university">Santa Clara University</a></li>
+  <li><a href="#stanford-university">Stanford University</a></li>
+  <li><a href="#university-of-san-francisco">University of San Francisco</a></li>
+</ul>
+
+<h3 id="academy-of-art-university">Academy of Art University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Free Campus Shuttles</td>
+      <td>Free shuttles connecting all university buildings across San Francisco</td>
+      <td>Board with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.academyart.edu/campus/student-resources/">Transportation</a></td>
+    </tr>
+    <tr>
+      <td>Gym Facilities</td>
+      <td>Free access to basketball courts and skateboard ramp</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://my.academyart.edu/fitness-recreation/">Fitness &amp; Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Transfer Scholarships</td>
+      <td>Up to $10,000 over 8 semesters</td>
+      <td>Apply as transfer student</td>
+      <td>8 semesters</td>
+      <td><a href="https://www.academyart.edu/finances/scholarships/">Scholarships</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="california-college-of-the-arts">California College of the Arts</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CAPS Counseling</td>
+      <td>Up to 11 free therapy sessions per semester plus 24/7 crisis hotline</td>
+      <td>Schedule through CAPS</td>
+      <td>Per semester</td>
+      <td><a href="https://portal.cca.edu/thriving/caps/">CAPS</a></td>
+    </tr>
+    <tr>
+      <td>CCA Pass</td>
+      <td>Unlimited Muni access for $155 per semester. Shuttle connects to BART</td>
+      <td>Purchase pass</td>
+      <td>Academic semester</td>
+      <td><a href="https://portal.cca.edu/essentials/transportation/cca-pass/">CCA Pass</a></td>
+    </tr>
+    <tr>
+      <td>Student Emergency Fund</td>
+      <td>Financial support for hardship including grocery and art supplies</td>
+      <td>Apply through Student Services</td>
+      <td>Academic year</td>
+      <td><a href="https://www.cca.edu/admissions/financial-aid/">Emergency Fund</a></td>
+    </tr>
+    <tr>
+      <td>Visionary Practice Scholarship</td>
+      <td>Full tuition scholarship</td>
+      <td>Apply for scholarship</td>
+      <td>Academic year</td>
+      <td><a href="https://www.cca.edu/admissions/financial-aid/">Financial Aid</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dominican-university-of-california">Dominican University of California</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Close The Gap Scholarship</td>
+      <td>Helps reduce out of pocket college costs</td>
+      <td>Apply for admission</td>
+      <td>Academic year</td>
+      <td><a href="https://www.dominican.edu/admissions/tuition-and-financial-aid">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>Conlan Center</td>
+      <td>Free access to fitness center</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.dominican.edu/campus-life/health-and-wellness">Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Rec Sports</td>
+      <td>Free club sports and outdoor recreation opportunities</td>
+      <td>Join activities</td>
+      <td>Academic year</td>
+      <td><a href="https://www.dominican.edu/campus-life/health-and-wellness">Recreation</a></td>
+    </tr>
+    <tr>
+      <td>TimelyCare</td>
+      <td>Free 24/7 virtual medical and mental health services</td>
+      <td>Access through student portal</td>
+      <td>Academic year</td>
+      <td><a href="https://www.dominican.edu/campus-life/health-and-wellness">TimelyCare</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="golden-gate-university">Golden Gate University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Community Tuition Assistance</td>
+      <td>Tuition benefits for employees and families</td>
+      <td>Apply through HR</td>
+      <td>Academic year</td>
+      <td><a href="https://ggu.edu/admissions/tuition-and-fees/">Tuition Assistance</a></td>
+    </tr>
+    <tr>
+      <td>Free Tutoring</td>
+      <td>Tutoring for math, writing, finance, accounting and more</td>
+      <td>Schedule tutoring session</td>
+      <td>Academic year</td>
+      <td><a href="https://ggu.edu/student-services/">Student Services</a></td>
+    </tr>
+    <tr>
+      <td>International Student Scholarships</td>
+      <td>Scholarships up to $15,000 for international students</td>
+      <td>Apply as international student</td>
+      <td>Academic year</td>
+      <td><a href="https://ggu.edu/admissions/scholarships/">Scholarships</a></td>
+    </tr>
+    <tr>
+      <td>TimelyCare</td>
+      <td>24/7 healthcare access including urgent care and counseling</td>
+      <td>Access through student portal</td>
+      <td>Academic year</td>
+      <td><a href="https://ggu.edu/student-services/">Student Services</a></td>
+    </tr>
+    <tr>
+      <td>Yellow Ribbon Program</td>
+      <td>Education benefits for eligible veterans</td>
+      <td>Apply as eligible veteran</td>
+      <td>Academic year</td>
+      <td><a href="https://military.ggu.edu">Military Benefits</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="saint-marys-college-of-california">Saint Marys College of California</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Essential Needs Program</td>
+      <td>Financial and food support. Housing assistance for all students</td>
+      <td>Contact Community Life</td>
+      <td>Academic year</td>
+      <td><a href="https://www.stmarys-ca.edu/offices-services/community-life/essential-needs-program">Essential Needs</a></td>
+    </tr>
+    <tr>
+      <td>GaelPantry</td>
+      <td>Points based pantry for groceries</td>
+      <td>Visit GaelPantry</td>
+      <td>Academic year</td>
+      <td><a href="https://www.stmarys-ca.edu/offices-services/mission-ministry-center/gaelpantry">GaelPantry</a></td>
+    </tr>
+    <tr>
+      <td>Joseph L Alioto Recreation Center</td>
+      <td>Pool and climbing wall access included with enrollment</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.stmarys-ca.edu/offices-services/joseph-l-alioto-recreation-center">JARC</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="samuel-merritt-university">Samuel Merritt University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Academic Support</td>
+      <td>Free 24/7 Brainfuse tutoring and academic coaching</td>
+      <td>Access through student portal</td>
+      <td>Ongoing</td>
+      <td><a href="https://samuelmerritt.instructure.com/courses/1096301/pages/brainfuse-online-writing-tutoring">Academic Support</a></td>
+    </tr>
+    <tr>
+      <td>Alumni Scholarship</td>
+      <td>20% tuition discount for returning alumni</td>
+      <td>Apply as returning alumnus</td>
+      <td>Academic year</td>
+      <td><a href="https://www.samuelmerritt.edu/financialaidandscholarships">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>Canopy Learn Medical Spanish</td>
+      <td>Free online clinical Spanish courses</td>
+      <td>Access through library</td>
+      <td>Ongoing</td>
+      <td><a href="https://canopylearn.io/#/signup/?access_code=SMU2020">Library Services</a></td>
+    </tr>
+    <tr>
+      <td>Emergency Assistance Fund</td>
+      <td>Emergency funding for rent, food, transportation and more</td>
+      <td>Complete the Emergency Scholarships form by clicking on “CL Scholarship Applications” in your MySMU portal</td>
+      <td>As needed</td>
+      <td><a href="https://mysmu.samuelmerritt.edu/">Student Affairs</a></td>
+    </tr>
+    <tr>
+      <td>SMU Cares Food Pantries</td>
+      <td>Food support at all campus locations</td>
+      <td>Visit pantry with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.samuelmerritt.edu/student-affairs">Student Affairs</a></td>
+    </tr>
+    <tr>
+      <td>Sutter Health Employee Scholarship</td>
+      <td>20% tuition discount for Sutter Health employees enrolled in College of Nursing programs</td>
+      <td>Email a copy of your Sutter employee ID to your financial aid counselor</td>
+      <td>Academic year</td>
+      <td><a href="https://www.samuelmerritt.edu/financialaidandscholarships">Financial Aid</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="santa-clara-university">Santa Clara University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bronco Food Pantry</td>
+      <td>Trust-based system—all requests honored without documentation of financial need; fresh produce from SCU’s Forge Garden plus donated gift cards and dining points</td>
+      <td>Visit pantry</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/dso/basicneeds/bronco-food-pantry/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Clipper START Support</td>
+      <td>Transportation support helps students apply for Clipper START (50% discount on BART, Muni, Caltrain)</td>
+      <td>Contact transportation services</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/dso/basicneeds/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Ivancovich Family Student Life Fund</td>
+      <td>One-time grants for unexpected emergencies</td>
+      <td>Apply through Student Life</td>
+      <td>As needed</td>
+      <td><a href="https://www.scu.edu/dso/basicneeds/">Basic Needs</a></td>
+    </tr>
+    <tr>
+      <td>Pat Malley Fitness Center</td>
+      <td>45,000 sq ft fitness center and Sullivan Aquatic Center: 20+ free group fitness classes weekly; summer fee waivers for Pell Grant recipients</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/recreation/">Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Presidential at Entry Scholarship</td>
+      <td>Full tuition scholarship</td>
+      <td>Apply for admission</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/financialaid/">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>SCU California Promise</td>
+      <td>Promise program scholarship</td>
+      <td>Apply for admission</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/financialaid/">Financial Aid</a></td>
+    </tr>
+    <tr>
+      <td>Therapists in Residence</td>
+      <td>Embedded therapists directly in residence halls making mental health support more accessible; includes CAPS services + 24/7 crisis support</td>
+      <td>Contact therapist in residence</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/bewell/">BeWell</a></td>
+    </tr>
+    <tr>
+      <td>Third-Child Grant</td>
+      <td>50% tuition when three family members enrolled simultaneously</td>
+      <td>Apply with enrollment verification</td>
+      <td>Academic year</td>
+      <td><a href="https://www.scu.edu/financialaid/">Financial Aid</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="stanford-university">Stanford University</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASSU Legal Counseling</td>
+      <td>Free legal advice for students, spouses, partners on landlord/tenant, identity theft, contracts, small claims</td>
+      <td>Schedule appointment</td>
+      <td>Academic year</td>
+      <td><a href="https://www.assu.stanford.edu/services/legal-counsel-office">ASSU Legal Counsel Office</a></td>
+    </tr>
+    <tr>
+      <td>CAPS Mental Health</td>
+      <td>Free mental health counseling supplemented by TimelyCare (24/7 virtual care + 12 scheduled therapy sessions annually)</td>
+      <td>Access through CAPS or TimelyCare</td>
+      <td>Academic year</td>
+      <td><a href="https://vaden.stanford.edu/caps">CAPS</a></td>
+    </tr>
+    <tr>
+      <td>Hub Tech Desk Lending</td>
+      <td>Loans laptops, iPads, cameras, recording equipment to students with SUID cards</td>
+      <td>Check out from Hub</td>
+      <td>Academic year</td>
+      <td><a href="https://thehub.stanford.edu/">The Hub</a></td>
+    </tr>
+    <tr>
+      <td>Makerspace (create:space)</td>
+      <td>3D printing and crafting equipment</td>
+      <td>Visit makerspace</td>
+      <td>Academic year</td>
+      <td><a href="https://thehub.stanford.edu/">The Hub</a></td>
+    </tr>
+    <tr>
+      <td>Recreation Facilities</td>
+      <td>Nearly 20 facilities: three recreation centers, aquatic center, largest collegiate climbing walls (free belay classes, $2 shoe rentals)</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://rec.stanford.edu/">Recreation</a></td>
+    </tr>
+    <tr>
+      <td>Second Harvest Pop-Ups</td>
+      <td>Free produce, dairy, and proteins distributed monthly</td>
+      <td>Attend pop-up distribution</td>
+      <td>Monthly</td>
+      <td><a href="https://studentservices.stanford.edu/resources-and-support">Student Resources</a></td>
+    </tr>
+    <tr>
+      <td>Stanford Outdoor Center (AOERC)</td>
+      <td>Equipment rentals at reduced rates: tents, backpacks, sleeping bags, kayaks, surfboards, climbing gear, ski equipment</td>
+      <td>Rent equipment</td>
+      <td>Academic year</td>
+      <td><a href="https://rec.stanford.edu/gear-rentals/">Equipment Rentals</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="university-of-san-francisco">University of San Francisco</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Koret Health &amp; Recreation Center</td>
+      <td>50-meter pool, weight room, group fitness classes at no additional cost</td>
+      <td>Access with student ID</td>
+      <td>Academic year</td>
+      <td><a href="https://www.usfca.edu/koret/">Koret</a></td>
+    </tr>
+    <tr>
+      <td>Student Laptop Program</td>
+      <td>Technology access through Basic Needs Program</td>
+      <td>Apply through Basic Needs</td>
+      <td>Academic year</td>
+      <td><a href="https://www.usfca.edu/downtown/student-services">Student Services</a></td>
+    </tr>
+    <tr>
+      <td>Unlimited Muni Pass</td>
+      <td>Free access to all SF Muni buses, streetcars, and metro through MuniMobile (worth ~$324+/semester)</td>
+      <td>Activate through MuniMobile</td>
+      <td>Academic year</td>
+      <td><a href="https://myusf.usfca.edu/public-safety-transportation/transportation/munimobile">Muni Pass</a></td>
+    </tr>
+    <tr>
+      <td>USF Food Pantry</td>
+      <td>Addresses food insecurity affecting ~30% of students</td>
+      <td>Visit Gleeson Library pantry</td>
+      <td>Academic year</td>
+      <td><a href="https://myusf.usfca.edu/food-pantry/">Food Pantry</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><em>Always verify benefits and eligibility with the service provider or your college/university as programs and requirements may change.</em></p>
+
+    </div>
+  </main>
+
+  <footer style="margin-top: 60px; padding-top: 20px; border-top: 2px solid #eaecef; color: #666; font-size: 0.9em;">
+  <div style="margin-bottom: 30px;">
+    <h3 style="color: #333; font-size: 1.1em; margin-bottom: 10px;">💡 Support This Project</h3>
+    <p>If this guide helps you save, consider supporting us here:</p>
+    <a href="https://www.buymeacoffee.com/bayareadiscounts" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me a Coffee" />
+    </a>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+    <div>
+      <strong>Bay Area Discounts</strong>
+      <p>Community-maintained • Open Source • Free Forever</p>
+      <p><em>Last Updated: December 12, 2025</em></p>
+    </div>
+    <div>
+      <strong>Quick Links</strong>
+      <p>
+        <a href="https://github.com/bayareadiscounts/bayareadiscounts">GitHub Repository</a><br>
+        <a href="https://github.com/bayareadiscounts/bayareadiscounts/issues">Report Issue</a><br>
+        <a href="https://github.com/bayareadiscounts/bayareadiscounts/blob/main/README.md">Contributing Guide</a>
+      </p>
+    </div>
+    <div>
+      <strong>Resources</strong>
+      <p>
+        <a href="/">Main Guide</a><br>
+        <a href="/college-university.html">College Students</a><br>
+        <a href="/nonprofit-resources.html">For Nonprofits</a><br>
+      </p>
+    </div>
+  </div>
+  
+  <p style="margin-top: 20px; text-align: center;">Built with 💚 by the Bay Area community</p>
+</footer>
+
+
+  <!-- Search/Filter JavaScript -->
+  <script src="/assets/js/search-filter.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // ============== GLOBAL SEARCH FUNCTIONALITY ==============
+      
+      const globalSearch = document.querySelector('input[type="search"]#global-search');
+      
+      if (globalSearch) {
+        globalSearch.addEventListener('input', function() {
+          const query = this.value.toLowerCase();
+          const tables = document.querySelectorAll('table');
+          
+          tables.forEach(table => {
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+              const text = row.textContent.toLowerCase();
+              row.style.display = text.includes(query) ? '' : 'none';
+            });
+          });
+        });
+      }
+      
+      // Keyboard shortcut (Ctrl/Cmd + K) to focus global search
+      document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+          e.preventDefault();
+          if (globalSearch) globalSearch.focus();
+        }
+      });
+      
+      // Announce search results to screen readers
+      const searchBoxes = document.querySelectorAll('.table-search');
+      searchBoxes.forEach(box => {
+        const announcement = document.createElement('div');
+        announcement.setAttribute('role', 'status');
+        announcement.setAttribute('aria-live', 'polite');
+        announcement.className = 'sr-only';
+        announcement.style.cssText = 'position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;';
+        box.parentNode.insertBefore(announcement, box.nextSibling);
+        
+        box.addEventListener('keyup', function() {
+          const visibleRows = Array.from(this.nextElementSibling.nextElementSibling.querySelectorAll('tbody tr')).filter(row => row.style.display !== 'none').length;
+          announcement.textContent = `${visibleRows} result${visibleRows !== 1 ? 's' : ''} found`;
+        });
+      });
+      
+      // ============== PWA FUNCTIONALITY ==============
+      
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registered:', registration);
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed:', err);
+            });
+        });
+      }
+
+      let deferredPrompt;
+      const installButton = document.createElement('button');
+      installButton.id = 'install-button';
+      installButton.innerHTML = '📱 Install App';
+      installButton.style.cssText = `
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 172, 193, 0.4);
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      `;
+      document.body.appendChild(installButton);
+
+      installButton.addEventListener('mouseenter', () => {
+        installButton.style.transform = 'translateY(-3px)';
+        installButton.style.boxShadow = '0 6px 16px rgba(0, 172, 193, 0.5)';
+      });
+
+      installButton.addEventListener('mouseleave', () => {
+        installButton.style.transform = 'translateY(0)';
+        installButton.style.boxShadow = '0 4px 12px rgba(0, 172, 193, 0.4)';
+      });
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installButton.style.display = 'block';
+      });
+
+      installButton.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+          return;
+        }
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response: ${outcome}`);
+        deferredPrompt = null;
+        installButton.style.display = 'none';
+      });
+
+      window.addEventListener('appinstalled', () => {
+        console.log('PWA installed');
+        installButton.style.display = 'none';
+        deferredPrompt = null;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -20,6 +20,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
+  <!-- Vision Pro Optimized CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/vision-pro-optimized.css' | relative_url }}">
+  
   <style>
     /* CSS Variables for theming */
     :root {
@@ -48,918 +51,202 @@
     /* Dark mode variables */
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg-body: #0d1117;
-        --bg-main: #161b22;
-        --bg-table-hover: #1c2128;
-        --bg-footer: #161b22;
+        --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d2626a15 100%);
+        --bg-main: #0d1117;
+        --bg-table-hover: #1b3a3a;
+        --bg-footer: #010409;
         --text-primary: #c9d1d9;
-        --text-heading: #58a6ff;
-        --text-link: #58a6ff;
-        --text-link-hover: #79c0ff;
+        --text-heading: #58c4d9;
+        --text-link: #58c4d9;
+        --text-link-hover: #79d8eb;
         --border-color: #30363d;
-        --border-light: #21262d;
+        --border-light: #1b3a3a;
         --shadow: rgba(0,0,0,0.3);
         --shadow-light: rgba(0,0,0,0.2);
-        --light-cyan: #1c2128;
-        --lighter-cyan: #21262d;
-      }
-      
-      /* Adjust gradients for dark mode */
-      th {
-        background: linear-gradient(135deg, #0d6d7a 0%, #0a5a66 100%) !important;
-      }
-      
-      h1 {
-        background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
-      }
-      
-      code, pre {
-        background: #1c2128 !important;
-      }
-      
-      blockquote {
-        background: #1c2128 !important;
-      }
-      
-      .categories-section {
-        background: linear-gradient(135deg, #1c2128 0%, #21262d 100%) !important;
-      }
-      
-      .categories-section li {
-        background: #0d1117 !important;
-      }
-      
-      .categories-section li:hover {
-        background: #161b22 !important;
-      }
-      
-      .categories-section ul ul li {
-        background: rgba(22, 27, 34, 0.7) !important;
       }
     }
     
-    /* Base styles with logo-inspired colors */
     * {
       box-sizing: border-box;
     }
     
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+    }
+    
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    main {
+      flex: 1;
+      background: var(--bg-main);
+      padding: 2rem 1rem;
+    }
+    
+    .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
-      color: var(--text-primary);
-      background: var(--bg-body);
-      min-height: 100vh;
-      font-size: 16px;
+      padding: 0 1rem;
     }
     
-    /* Support for user font size preferences */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-heading);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
     }
     
-    /* Content wrapper with card effect */
-    main {
-      background: var(--bg-main);
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px var(--shadow), 0 1px 3px var(--shadow-light);
-      margin-bottom: 40px;
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
     }
     
-    /* Enhanced table styling with logo colors */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      background: var(--bg-main);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px var(--shadow);
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--border-light);
+      padding-bottom: 0.5rem;
     }
     
-    th {
-      background: linear-gradient(135deg, var(--primary-teal) 0%, #00bcd4 100%);
-      color: white;
-      font-weight: 600;
-      padding: 16px;
-      text-align: left;
-      text-transform: uppercase;
-      font-size: 0.85em;
-      letter-spacing: 0.5px;
-    }
-    
-    td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      vertical-align: top;
-    }
-    
-    tr:last-child td {
-      border-bottom: none;
-    }
-    
-    tbody tr {
-      transition: background-color 0.2s ease;
-    }
-    
-    tbody tr:hover {
-      background-color: var(--bg-table-hover);
-    }
-    
-    /* Link styling with hover effects */
     a {
       color: var(--text-link);
       text-decoration: none;
-      transition: all 0.2s ease;
-      position: relative;
     }
     
     a:hover {
       color: var(--text-link-hover);
+      text-decoration: underline;
     }
-    
-    a:focus {
-      outline: 2px solid var(--accent-orange);
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-    
-    a:not(.no-underline):hover::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: var(--primary-teal);
-    }
-    
-    /* Header styling with logo gradient */
-    h1 {
-      font-size: 2.5em;
-      background: linear-gradient(135deg, var(--primary-teal) 0%, #00bcd4 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      border-bottom: 3px solid var(--primary-teal);
-      padding-bottom: 0.3em;
-      margin-bottom: 24px;
-      font-weight: 700;
-    }
-    
-    h2 {
-      font-size: 1.8em;
-      color: var(--text-heading);
-      border-bottom: 2px solid var(--border-light);
-      padding-bottom: 0.3em;
-      margin-top: 48px;
-      margin-bottom: 24px;
-      font-weight: 600;
-    }
-    
-    h3 {
-      font-size: 1.3em;
-      color: var(--primary-teal);
-      margin-top: 32px;
-      margin-bottom: 16px;
-      font-weight: 600;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-      line-height: 1.25;
-    }
-    
-    /* Categories section styling */
-    .categories-section {
-      background: linear-gradient(135deg, var(--light-cyan) 0%, var(--lighter-cyan) 100%);
-      padding: 25px 30px;
-      border-radius: 10px;
-      margin: 30px 0;
-      box-shadow: 0 2px 6px rgba(0, 172, 193, 0.15);
-    }
-    
-    .categories-section h2 {
-      color: var(--text-heading);
-      border-bottom: 2px solid var(--primary-teal);
-      margin-top: 0;
-      padding-bottom: 15px;
-    }
-    
-    .categories-section ul {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 12px;
-    }
-    
-    .categories-section li {
-      margin: 0;
-      background: var(--bg-main);
-      border-radius: 6px;
-      transition: all 0.2s ease;
-      box-shadow: 0 1px 3px var(--shadow);
-    }
-    
-    .categories-section li:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 172, 193, 0.2);
-    }
-    
-    .categories-section li a {
-      display: block;
-      padding: 12px 16px;
-      color: var(--text-link);
-      font-weight: 500;
-    }
-    
-    .categories-section li a::after {
-      display: none;
-    }
-    
-    .categories-section li a:hover {
-      color: var(--text-link-hover);
-      text-decoration: none;
-      background: rgba(0, 188, 212, 0.05);
-      border-radius: 6px;
-    }
-    
-    /* Nested subcategories */
-    .categories-section ul ul {
-      grid-template-columns: 1fr;
-      margin: 8px 0 0 20px;
-      gap: 6px;
-    }
-    
-    .categories-section ul ul li {
-      background: rgba(255, 255, 255, 0.7);
-      font-size: 0.95em;
-    }
-    
-    @media (prefers-color-scheme: dark) {
-      .categories-section ul ul li {
-        background: rgba(22, 27, 34, 0.7);
+    a:visited {
+        color: var(--text-link);
       }
-    }
-    
-    .categories-section ul ul li a {
-      padding: 8px 12px;
-    }
-    
-    /* Icon/emoji styling */
-    td:first-child {
-      font-size: 1.2em;
-      text-align: center;
-      width: 80px;
-    }
-    
-    /* Paragraph spacing */
-    p {
-      margin: 16px 0;
-    }
-    
-    /* List styling */
-    ul, ol {
-      margin: 16px 0;
-      padding-left: 30px;
-    }
-    
-    li {
-      margin: 8px 0;
-    }
-    
-    /* Blockquote styling */
-    blockquote {
-      margin: 20px 0;
-      padding: 15px 20px;
-      background: var(--light-cyan);
-      border-left: 4px solid var(--primary-teal);
-      border-radius: 4px;
-    }
-    
-    /* Code styling */
-    code {
-      background: var(--light-cyan);
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.9em;
-    }
-    
-    pre {
-      background: var(--light-cyan);
-      padding: 16px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-    
-    pre code {
-      padding: 0;
-      background: none;
-    }
-    
-    /* Back to top button - ORANGE ACCENT */
-    #back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      padding: 12px 18px;
-      background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-light) 100%);
-      color: white;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      display: none;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(255, 111, 0, 0.4);
-      font-weight: 600;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
-    
-    #back-to-top:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(255, 111, 0, 0.5);
-      background: linear-gradient(135deg, var(--accent-orange-light) 0%, var(--accent-orange) 100%);
-    }
-    
-    #back-to-top:focus {
-      outline: 3px solid var(--accent-orange);
-      outline-offset: 3px;
-    }
-    
-    /* Table search box - ORANGE ACCENT when active */
-    .table-search {
+
+    a:visited:hover {
+        color: var(--text-link-hover);
+      }
+    table {
       width: 100%;
-      padding: 12px 16px;
-      margin-bottom: 15px;
-      border: 2px solid var(--border-light);
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px var(--shadow);
       border-radius: 8px;
-      font-size: 16px; /* Prevents zoom on iOS */
-      transition: border-color 0.2s ease;
-      box-sizing: border-box;
-      background: var(--bg-main);
-      color: var(--text-primary);
+      overflow: hidden;
     }
     
-    .table-search:focus {
-      outline: none;
-      border-color: var(--accent-orange);
-      box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.1);
+    thead {
+      background: var(--light-cyan);
+      color: var(--text-heading);
     }
     
-    .table-search.has-results {
-      border-color: var(--accent-orange);
+    tbody tr {
+      border-bottom: 1px solid var(--border-color);
     }
     
-    .table-search.no-results {
-      border-color: #d73a49;
+    tbody tr:hover {
+      background: var(--bg-table-hover);
     }
     
-    /* Footer styling */
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+    
+    th {
+      font-weight: 600;
+    }
+
+    /* Search functionality */
+    .table-search {
+      margin: 1rem 0;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
     footer {
       background: var(--bg-footer);
-      border-radius: 12px;
-      box-shadow: 0 4px 6px var(--shadow), 0 1px 3px var(--shadow-light);
-      padding: 40px 50px;
-    }
-    
-    /* Support section in footer - ORANGE ACCENT */
-    footer h3 {
-      color: var(--accent-orange);
-    }
-
-    /* Global Search Bar */
-    .global-search-container {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: var(--bg-main);
-      padding: 20px 0;
-      margin: -40px -40px 30px -40px;
-      padding-left: 40px;
-      padding-right: 40px;
-      border-bottom: 2px solid var(--border-light);
-      box-shadow: 0 2px 8px var(--shadow);
-    }
-
-    .global-search-container input {
-      width: 100%;
-      padding: 15px 20px;
-      font-size: 18px;
-      border: 3px solid var(--border-light);
-      border-radius: 12px;
-      background: var(--bg-main);
-      color: var(--text-primary);
-      transition: all 0.3s ease;
-    }
-
-    .global-search-container input:focus {
-      outline: none;
-      border-color: var(--accent-orange);
-      box-shadow: 0 0 0 4px rgba(255, 111, 0, 0.1);
-    }
-
-    /* Search Results Counter */
-    .search-results-info {
-      margin: 15px 0 0 0;
-      padding: 12px 20px;
-      background: var(--light-cyan);
-      border-radius: 8px;
-      display: none;
-      font-weight: 500;
-      color: var(--text-primary);
-    }
-
-    .search-results-info.show {
-      display: block;
-    }
-
-    /* Collapsible sections */
-    .collapsible-section {
-      margin: 30px 0;
-    }
-
-    .section-toggle {
-      background: linear-gradient(135deg, var(--light-cyan) 0%, var(--lighter-cyan) 100%);
-      border: none;
-      width: 100%;
-      text-align: left;
-      padding: 20px 25px;
-      font-size: 1.5em;
-      font-weight: 600;
-      color: var(--text-heading);
-      cursor: pointer;
-      border-radius: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 4px var(--shadow);
-    }
-
-    .section-toggle:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 172, 193, 0.2);
-    }
-
-    .section-toggle:focus {
-      outline: 2px solid var(--accent-orange);
-      outline-offset: 2px;
-    }
-
-    .section-toggle::after {
-      content: '▼';
-      font-size: 0.8em;
-      transition: transform 0.3s ease;
-    }
-
-    .section-toggle.active::after {
-      transform: rotate(-180deg);
-    }
-
-    .section-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
-
-    .section-content.active {
-      max-height: 10000px;
-      transition: max-height 0.5s ease;
-    }
-
-    /* Logo styling */
-    .site-logo {
-      display: block;
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1rem;
       text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .site-logo img {
-      max-width: 100%;
-      height: auto;
-      width: 600px;
-      display: block;
-      margin: 0 auto;
-      border-radius: 8px;
+      color: var(--text-primary);
+      margin-top: auto;
     }
     
-    /* Skip to main content link for accessibility */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: var(--accent-orange);
-      color: white;
-      padding: 8px 16px;
-      text-decoration: none;
-      border-radius: 0 0 4px 0;
-      z-index: 100;
+    footer a {
+      color: var(--text-link);
     }
     
-    .skip-link:focus {
-      top: 0;
+    footer a:hover {
+      color: var(--text-link-hover);
     }
     
-    /* Responsive design */
     @media (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-      
-      main {
-        padding: 20px;
-        border-radius: 8px;
-      }
-      
-      footer {
-        padding: 20px;
-      }
-      
-      .global-search-container {
-        margin: -20px -20px 20px -20px;
-        padding: 15px 20px;
-      }
-      
-      .global-search-container input {
-        font-size: 16px;
-        padding: 12px 16px;
-      }
-      
-      .section-toggle {
-        padding: 15px 20px;
-        font-size: 1.3em;
-      }
-      
-      .site-logo img {
-        width: 100%;
-        max-width: 300px;
-      }
-      
-      h1 {
-        font-size: 1.8em;
-      }
-      
-      h2 {
-        font-size: 1.4em;
-      }
-      
-      .categories-section {
-        padding: 20px;
-      }
-      
-      .categories-section ul {
-        grid-template-columns: 1fr;
-      }
-      
-      table {
-        font-size: 0.85em;
-        display: block;
-        overflow-x: auto;
-      }
-      
-      th, td {
-        padding: 10px;
-      }
-      
-      td:first-child {
-        width: 50px;
-        font-size: 1em;
-      }
-      
-      #back-to-top {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 15px;
-        font-size: 12px;
-      }
-    }
-    
-    /* High contrast mode support */
-    @media (prefers-contrast: high) {
-      body {
-        background: white;
-      }
-      
-      main, footer {
-        border: 2px solid var(--text-primary);
-      }
-      
-      a {
-        text-decoration: underline;
-      }
-    }
-    
-    /* Print styles */
-    @media print {
-      body {
-        background: white;
-      }
-      
-      main, footer {
-        box-shadow: none;
-      }
-      
-      #back-to-top {
-        display: none !important;
-      }
-      
-      .table-search {
-        display: none !important;
-      }
-      
-      .skip-link {
-        display: none !important;
-      }
-      
-      a {
-        text-decoration: underline;
-      }
-      
-      a[href^="http"]::after {
-        content: " (" attr(href) ")";
-        font-size: 0.8em;
-        color: #666;
-      }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      main { padding: 1rem 0.5rem; }
+      table { margin: 1rem 0; }
+      th, td { padding: 0.75rem 0.5rem; font-size: 0.9rem; }
     }
   </style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
   <main id="main-content" role="main">
-    {{ content }}
+    <div class="container">
+      {{ content }}
+    </div>
   </main>
 
   {% include footer.html %}
 
+  <!-- Search/Filter JavaScript -->
+  <script src="{{ '/assets/js/search-filter.js' | relative_url }}"></script>
+
   <script>
-    // Open external links in new tab
     document.addEventListener('DOMContentLoaded', function() {
-      const links = document.querySelectorAll('a[href]');
+      // ============== GLOBAL SEARCH FUNCTIONALITY ==============
       
-      links.forEach(link => {
-        const href = link.getAttribute('href');
-        
-        if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
-          if (!href.includes('bayareadiscounts.com') && !href.includes(window.location.hostname)) {
-            link.setAttribute('target', '_blank');
-            link.setAttribute('rel', 'noopener noreferrer');
-          }
-        }
-      });
+      const globalSearch = document.querySelector('input[type="search"]#global-search');
       
-      // Add smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+      if (globalSearch) {
+        globalSearch.addEventListener('input', function() {
+          const query = this.value.toLowerCase();
+          const tables = document.querySelectorAll('table');
+          
+          tables.forEach(table => {
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+              const text = row.textContent.toLowerCase();
+              row.style.display = text.includes(query) ? '' : 'none';
             });
-          }
-        });
-      });
-      
-      // Add "back to top" button
-      const backToTop = document.createElement('button');
-      backToTop.id = 'back-to-top';
-      backToTop.innerHTML = '↑ Top';
-      backToTop.setAttribute('aria-label', 'Back to top');
-      document.body.appendChild(backToTop);
-      
-      window.addEventListener('scroll', () => {
-        backToTop.style.display = window.pageYOffset > 300 ? 'block' : 'none';
-      });
-      
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-      
-      // ============== GLOBAL SEARCH (NO FILTERS) ==============
-      
-      // Create global search bar
-      const mainContent = document.querySelector('main');
-      const searchContainer = document.createElement('div');
-      searchContainer.className = 'global-search-container';
-      searchContainer.innerHTML = `
-        <input type="text" 
-               id="global-search" 
-               placeholder="🔍 Search all benefits..." 
-               aria-label="Search all benefits"
-               autocomplete="off">
-        <div class="search-results-info" id="search-results-info"></div>
-      `;
-      
-      // Insert at the very beginning of main content
-      const firstChild = mainContent.firstChild;
-      mainContent.insertBefore(searchContainer, firstChild);
-      
-      const globalSearch = document.getElementById('global-search');
-      const resultsInfo = document.getElementById('search-results-info');
-      
-      let searchTerm = '';
-      
-      // Global search function
-      function performGlobalSearch() {
-        const filter = searchTerm.toLowerCase();
-        let visibleCount = 0;
-        let totalCount = 0;
-        
-        // Search through all tables
-        document.querySelectorAll('main table').forEach(table => {
-          // Skip eligibility icons table and footer tables
-          if (table.closest('footer')) return;
-          
-          let prevElement = table.previousElementSibling;
-          let skipTable = false;
-          for (let i = 0; i < 3 && prevElement; i++) {
-            if (prevElement.tagName && prevElement.tagName.match(/^H[1-6]$/) &&
-                prevElement.textContent.includes('Eligibility Icons')) {
-              skipTable = true;
-              break;
-            }
-            prevElement = prevElement.previousElementSibling;
-          }
-          if (skipTable) return;
-          
-          const rows = table.querySelectorAll('tbody tr');
-          rows.forEach(row => {
-            totalCount++;
-            const text = row.textContent.toLowerCase();
-            
-            // Apply search
-            const matchesSearch = !filter || text.includes(filter);
-            
-            row.style.display = matchesSearch ? '' : 'none';
-            
-            if (matchesSearch) visibleCount++;
           });
         });
-        
-        // Show results info
-        if (filter) {
-          resultsInfo.textContent = `Showing ${visibleCount} of ${totalCount} programs`;
-          resultsInfo.classList.add('show');
-          
-          // Open sections that have visible results
-          document.querySelectorAll('.section-content').forEach(content => {
-            const visibleRows = content.querySelectorAll('tbody tr:not([style*="display: none"])').length;
-            if (visibleRows > 0) {
-              content.classList.add('active');
-              const button = content.previousElementSibling;
-              if (button) {
-                button.classList.add('active');
-                button.setAttribute('aria-expanded', 'true');
-              }
-            }
-          });
-        } else {
-          resultsInfo.classList.remove('show');
-        }
       }
-      
-      // Global search event
-      globalSearch.addEventListener('input', function() {
-        searchTerm = this.value;
-        performGlobalSearch();
-      });
-      
-      // ============== ACCORDION SECTIONS ==============
-      
-      // Find all h2 elements (section headers)
-      const h2Elements = document.querySelectorAll('main h2');
-      
-      h2Elements.forEach((h2, index) => {
-        // Skip the first h2 (main title) and Categories section
-        if (index === 0 || h2.textContent.includes('Categories')) return;
-        
-        // Create wrapper
-        const wrapper = document.createElement('div');
-        wrapper.className = 'collapsible-section';
-        
-        // Create toggle button
-        const button = document.createElement('button');
-        button.className = 'section-toggle';
-        button.textContent = h2.textContent;
-        button.setAttribute('aria-expanded', 'false');
-        
-        // Create content wrapper
-        const content = document.createElement('div');
-        content.className = 'section-content';
-        
-        // Move all content between this h2 and next h2 into content wrapper
-        let nextElement = h2.nextElementSibling;
-        while (nextElement && nextElement.tagName !== 'H2') {
-          const elementToMove = nextElement;
-          nextElement = nextElement.nextElementSibling;
-          content.appendChild(elementToMove);
-        }
-        
-        // Replace h2 with collapsible structure
-        h2.parentNode.insertBefore(wrapper, h2);
-        wrapper.appendChild(button);
-        wrapper.appendChild(content);
-        h2.remove();
-        
-        // Add click handler
-        button.addEventListener('click', function() {
-          const isActive = content.classList.contains('active');
-          
-          // Toggle this section
-          if (isActive) {
-            content.classList.remove('active');
-            button.classList.remove('active');
-            button.setAttribute('aria-expanded', 'false');
-          } else {
-            content.classList.add('active');
-            button.classList.add('active');
-            button.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-      
-      // Open first section by default
-      const firstSection = document.querySelector('.section-content');
-      const firstButton = document.querySelector('.section-toggle');
-      if (firstSection && firstButton) {
-        firstSection.classList.add('active');
-        firstButton.classList.add('active');
-        firstButton.setAttribute('aria-expanded', 'true');
-      }
-      
-      // ============== TABLE SEARCH (KEEP EXISTING) ==============
-      
-      const tables = document.querySelectorAll('table');
-      tables.forEach(table => {
-        if (table.closest('footer')) return;
-        
-        let currentElement = table.previousElementSibling;
-        let shouldSkip = false;
-        
-        for (let i = 0; i < 3 && currentElement; i++) {
-          if (currentElement.tagName && currentElement.tagName.match(/^H[1-6]$/)) {
-            if (currentElement.textContent.includes('Eligibility Icons')) {
-              shouldSkip = true;
-              break;
-            }
-          }
-          currentElement = currentElement.previousElementSibling;
-        }
-        
-        if (shouldSkip) return;
-        
-        const searchBox = document.createElement('input');
-        searchBox.type = 'text';
-        searchBox.className = 'table-search';
-        searchBox.placeholder = '🔍 Search this section...';
-        searchBox.setAttribute('aria-label', 'Search table');
-        searchBox.setAttribute('autocomplete', 'off');
-        
-        table.parentNode.insertBefore(searchBox, table);
-        
-        searchBox.addEventListener('keyup', function() {
-          const filter = this.value.toLowerCase();
-          const rows = table.querySelectorAll('tbody tr');
-          let visibleCount = 0;
-          
-          rows.forEach(row => {
-            const text = row.textContent.toLowerCase();
-            const isVisible = text.includes(filter);
-            row.style.display = isVisible ? '' : 'none';
-            if (isVisible) visibleCount++;
-          });
-          
-          this.classList.remove('has-results', 'no-results');
-          if (this.value) {
-            if (visibleCount === 0) {
-              this.classList.add('no-results');
-            } else {
-              this.classList.add('has-results');
-            }
-          }
-        });
-      });
       
       // Keyboard shortcut (Ctrl/Cmd + K) to focus global search
       document.addEventListener('keydown', function(e) {
         if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
           e.preventDefault();
-          globalSearch.focus();
+          if (globalSearch) globalSearch.focus();
         }
       });
       

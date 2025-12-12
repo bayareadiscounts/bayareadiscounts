@@ -1,0 +1,641 @@
+/**
+ * Bay Area Discounts - Vision Pro & Responsive Design
+ * Optimized for spatial computing and all screen sizes
+ */
+
+:root {
+  /* Spacing for Vision Pro interaction */
+  --touch-target-min: 60px;
+  --interaction-padding: 1.25rem;
+  
+  /* Colors */
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-900: #111827;
+
+  /* Typography for legibility across distances */
+  --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  
+  /* Responsive typography */
+  --text-xs: clamp(0.75rem, 2vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 2.5vw, 1rem);
+  --text-base: clamp(1rem, 3vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 3.5vw, 1.375rem);
+  --text-xl: clamp(1.25rem, 4vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 5vw, 2rem);
+
+  /* Shadow for depth in spatial UI */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--neutral-900);
+  background-color: #ffffff;
+  
+  /* Improve readability for all distances */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Better contrast for Vision Pro viewing */
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+h1 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--neutral-900);
+}
+
+h2 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  color: var(--neutral-900);
+  
+  /* Better spacing for spatial layout */
+  padding-top: 0.5rem;
+  border-top: 2px solid var(--neutral-100);
+}
+
+h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--neutral-800);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--neutral-700);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  /* Better accessibility for interaction */
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Remove underline on visited links for cleaner UI */
+a:visited {
+  color: var(--primary);
+}
+
+/* ============================================================
+   SEARCH & FILTER UI
+   ============================================================ */
+
+.search-panel {
+  background: var(--neutral-50);
+  border-bottom: 1px solid var(--neutral-200);
+  padding: var(--interaction-padding);
+  margin-bottom: 2rem;
+  border-radius: var(--radius-lg);
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+#search-input {
+  width: 100%;
+  padding: var(--interaction-padding);
+  font-size: var(--text-base);
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  
+  /* Vision Pro: larger, easier to interact with */
+  min-height: var(--touch-target-min);
+  
+  /* Better contrast */
+  background: white;
+  color: var(--neutral-900);
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+#search-input::placeholder {
+  color: var(--neutral-400);
+}
+
+/* Filter buttons group */
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-group-label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--neutral-700);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.25rem;
+  min-height: var(--touch-target-min);
+  
+  /* Vision Pro friendly spacing */
+  min-width: 140px;
+  text-align: center;
+  
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--neutral-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  /* Better touch targets */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.reset-btn {
+  padding: 0.75rem 1.5rem;
+  min-height: var(--touch-target-min);
+  font-size: var(--text-sm);
+  background: var(--neutral-200);
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--neutral-900);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  background: var(--neutral-300);
+}
+
+/* ============================================================
+   PROGRAM CARDS (replacing dense tables)
+   ============================================================ */
+
+.programs-container,
+#search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.program-card {
+  background: white;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-lg);
+  padding: var(--interaction-padding);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  
+  /* Better depth perception in spatial UI */
+  box-shadow: var(--shadow-sm);
+  
+  /* Touch-friendly minimum size */
+  min-height: 280px;
+}
+
+.program-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.program-card-header {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.program-name {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--neutral-900);
+  word-break: break-word;
+}
+
+.program-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--neutral-600);
+}
+
+.program-area,
+.program-category {
+  background: var(--neutral-100);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Eligibility icons and badges */
+.eligibility-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.eligibility-badge {
+  width: auto;
+  padding: 0.5rem;
+  
+  /* Better touch targets for emoji */
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: var(--radius-sm);
+  background: var(--neutral-50);
+  cursor: help;
+  transition: background 0.2s ease;
+}
+
+.eligibility-badge:hover {
+  background: var(--neutral-100);
+}
+
+.program-benefit {
+  flex: 1;
+  font-size: var(--text-base);
+  color: var(--neutral-700);
+  line-height: 1.6;
+  margin: 1rem 0;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.program-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--neutral-100);
+}
+
+.program-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  min-height: var(--touch-target-min);
+  
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.program-link:hover {
+  background: var(--primary-dark);
+  text-decoration: none;
+}
+
+.program-link::after {
+  content: ' →';
+  margin-left: 0.5rem;
+}
+
+/* Timeframe badge */
+.program-timeframe {
+  font-size: var(--text-sm);
+  color: var(--neutral-600);
+  padding: 0.5rem 0.75rem;
+  background: var(--neutral-100);
+  border-radius: var(--radius-sm);
+  align-self: flex-start;
+}
+
+/* ============================================================
+   SEARCH RESULTS
+   ============================================================ */
+
+.results-count {
+  font-size: var(--text-base);
+  color: var(--neutral-600);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem var(--interaction-padding);
+  color: var(--neutral-600);
+}
+
+.no-results p {
+  margin-bottom: 1.5rem;
+  font-size: var(--text-lg);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+/* Tablet and small screens */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .programs-container,
+  #search-results {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Vision Pro optimizations - narrow windows */
+@media (max-width: 600px) {
+  :root {
+    --interaction-padding: 1rem;
+  }
+
+  body {
+    font-size: var(--text-base);
+  }
+
+  .programs-container,
+  #search-results {
+    gap: 1rem;
+  }
+
+  .program-card {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .filter-btn {
+    padding: 0.625rem 1rem;
+  }
+
+  #search-input {
+    padding: 0.875rem;
+  }
+}
+
+/* Very narrow Vision Pro windows */
+@media (max-width: 400px) {
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .program-card {
+    padding: 0.875rem;
+  }
+
+  .eligibility-badges {
+    gap: 0.25rem;
+  }
+
+  .eligibility-badge {
+    min-height: 40px;
+    min-width: 40px;
+    font-size: 1.125rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+  .programs-container,
+  #search-results {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  .program-card {
+    min-height: 320px;
+  }
+}
+
+/* ============================================================
+   ACCESSIBILITY & PRINT
+   ============================================================ */
+
+/* Improve focus visibility for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+.filter-btn:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  body {
+    color: var(--neutral-900);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .program-card {
+    border-width: 2px;
+  }
+
+  .filter-btn {
+    border-width: 2px;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+  }
+
+  .program-card,
+  .search-panel {
+    background: #2a2a2a;
+    border-color: #404040;
+  }
+
+  .program-card:hover {
+    background: #333333;
+  }
+
+  #search-input {
+    background: #2a2a2a;
+    color: #f5f5f5;
+    border-color: #404040;
+  }
+
+  .filter-btn {
+    background: #2a2a2a;
+    color: #f5f5f5;
+    border-color: #404040;
+  }
+
+  .program-area,
+  .program-category,
+  .program-timeframe,
+  .eligibility-badge {
+    background: #404040;
+    color: #f5f5f5;
+  }
+}
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}

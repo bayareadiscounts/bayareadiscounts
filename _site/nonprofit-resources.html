@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bay Area Discounts</title>
+  <meta name="description" content="Free and low-cost resources across the San Francisco Bay Area">
+  <meta name="color-scheme" content="light dark">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Bay Area Discounts" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- PWA Theme Color -->
+  <meta name="theme-color" content="#00acc1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Vision Pro Optimized CSS -->
+  <link rel="stylesheet" href="/assets/css/vision-pro-optimized.css">
+  
+  <style>
+    /* CSS Variables for theming */
+    :root {
+      --primary-teal: #00acc1;
+      --primary-teal-dark: #00838f;
+      --primary-teal-darker: #006064;
+      --accent-orange: #ff6f00;
+      --accent-orange-light: #ff8f00;
+      --light-cyan: #e0f7fa;
+      --lighter-cyan: #b2ebf2;
+      
+      --bg-body: linear-gradient(135deg, #e0f7fa15 0%, #b2ebf215 100%);
+      --bg-main: white;
+      --bg-table-hover: #e0f7fa;
+      --bg-footer: white;
+      --text-primary: #24292e;
+      --text-heading: #00838f;
+      --text-link: #00838f;
+      --text-link-hover: #006064;
+      --border-color: #e1e4e8;
+      --border-light: #b2ebf2;
+      --shadow: rgba(0,0,0,0.07);
+      --shadow-light: rgba(0,0,0,0.06);
+    }
+    
+    /* Dark mode variables */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d2626a15 100%);
+        --bg-main: #0d1117;
+        --bg-table-hover: #1b3a3a;
+        --bg-footer: #010409;
+        --text-primary: #c9d1d9;
+        --text-heading: #58c4d9;
+        --text-link: #58c4d9;
+        --text-link-hover: #79d8eb;
+        --border-color: #30363d;
+        --border-light: #1b3a3a;
+        --shadow: rgba(0,0,0,0.3);
+        --shadow-light: rgba(0,0,0,0.2);
+      }
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    main {
+      flex: 1;
+      background: var(--bg-main);
+      padding: 2rem 1rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-heading);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    a {
+      color: var(--text-link);
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: var(--text-link-hover);
+      text-decoration: underline;
+    }
+    a:visited {
+        color: var(--text-link);
+      }
+
+    a:visited:hover {
+        color: var(--text-link-hover);
+      }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    thead {
+      background: var(--light-cyan);
+      color: var(--text-heading);
+    }
+    
+    tbody tr {
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    tbody tr:hover {
+      background: var(--bg-table-hover);
+    }
+    
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+    
+    th {
+      font-weight: 600;
+    }
+
+    /* Search functionality */
+    .table-search {
+      margin: 1rem 0;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    footer {
+      background: var(--bg-footer);
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--text-primary);
+      margin-top: auto;
+    }
+    
+    footer a {
+      color: var(--text-link);
+    }
+    
+    footer a:hover {
+      color: var(--text-link-hover);
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      main { padding: 1rem 0.5rem; }
+      table { margin: 1rem 0; }
+      th, td { padding: 0.75rem 0.5rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <main id="main-content" role="main">
+    <div class="container">
+      <h1 style="display:none">Bay Area Discounts</h1>
+
+<p><a href="https://bayareadiscounts.com" class="site-logo">
+  <img src="https://raw.githubusercontent.com/bayareadiscounts/bayareadiscounts/refs/heads/main/logo.png" alt="Bay Area Discounts logo" />
+</a></p>
+<h1 id="resources-for-nonprofit-organizations">Resources for Nonprofit Organizations</h1>
+
+<p>Resources and support for nonprofit organizations, including free meeting spaces, technology donations and discounts, and professional services.</p>
+
+<h2 id="computers--equipment">Computers &amp; Equipment</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Area</th>
+      <th>Eligibility</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A Greener Source</td>
+      <td>Bay Area</td>
+      <td>Nonprofits</td>
+      <td>Zero-cost office furniture donations including desks, chairs, filing cabinets, and other office furnishings</td>
+      <td>Request furniture through website; schedule pickup or delivery</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.agreenersource.com/non-profits/">A Greener Source</a></td>
+    </tr>
+    <tr>
+      <td>Building Resources</td>
+      <td>San Francisco</td>
+      <td>General Public &amp; Nonprofits</td>
+      <td>Salvaged and reusable building materials, residential/commercial construction materials, landscaping supplies at reduced cost</td>
+      <td>Shop at store; some materials available for nonprofit projects</td>
+      <td>Ongoing</td>
+      <td><a href="https://buildingresources.org/">Building Resources</a></td>
+    </tr>
+    <tr>
+      <td>Good360</td>
+      <td>National</td>
+      <td>501(c)(3) Nonprofits</td>
+      <td>Donated technology including laptops, monitors, tablets (availability varies by donor shipments)</td>
+      <td>Become Good360 member; request available items</td>
+      <td>Ongoing</td>
+      <td><a href="https://good360.org/">Good360</a></td>
+    </tr>
+    <tr>
+      <td>San Francisco Virtual Warehouse</td>
+      <td>Bay Area</td>
+      <td>Nonprofits &amp; Public Schools</td>
+      <td>Free surplus office furniture, supplies, and equipment from the City &amp; County of San Francisco</td>
+      <td>Request an account with nonprofit verification; once approved, users may browse and submit requests for available items via Rheaply</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.sfenvironment.org/virtual-warehouse-instructions-non-profits-and-schools">SF Virtual Warehouse</a></td>
+    </tr>
+    <tr>
+      <td>SCRAP (Scroungers’ Center for Re-usable Art Parts)</td>
+      <td>San Francisco</td>
+      <td>Teachers &amp; Community Groups</td>
+      <td>Low-cost/donated arts and crafts materials, fabric, sewing notions, paper crafts, and educational supplies</td>
+      <td>Shop at physical location or inquire about donations for educational programs</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.scrap-sf.org/">SCRAP SF</a></td>
+    </tr>
+    <tr>
+      <td>Surplus Property Program</td>
+      <td>San Mateo County</td>
+      <td>Nonprofits &amp; Public Schools</td>
+      <td>Free surplus office furniture, supplies, and equipment for San Mateo County-based nonprofits and schools</td>
+      <td>Request an account with nonprofit verification; once approved, users may browse and submit requests for available items via GovDeals</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.smcsustainability.org/wp-content/uploads/2024_03_07-Govdeals.com-Customer-Registration-Instructions-Community-Tier_Final.pdf">Program Enrollment Instructions (PDF)</a></td>
+    </tr>
+    <tr>
+      <td>Tech Exchange</td>
+      <td>Bay Area</td>
+      <td>Nonprofits &amp; Community Orgs</td>
+      <td>Refurbished computers and technology equipment; also provides digital training and tech support</td>
+      <td>Contact for equipment requests; also accepts donations</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.techexchange.org/lowcostcomputers">Tech Exchange</a></td>
+    </tr>
+    <tr>
+      <td>World Computer Exchange</td>
+      <td>Worldwide</td>
+      <td>Nonprofits &amp; Schools</td>
+      <td>Donated computers and equipment for educational use; 15 Bay Area drop-off locations</td>
+      <td>Donate or request equipment through website</td>
+      <td>Ongoing</td>
+      <td><a href="https://worldcomputerexchange.org/get-computers/">World Computer Exchange</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="legal-services">Legal Services</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Area</th>
+      <th>Eligibility</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Community Organization Representation Project (CORP)</td>
+      <td>San Francisco</td>
+      <td>Nonprofits serving low-income/underserved</td>
+      <td>Free legal assistance with incorporation, 501(c)(3) applications, governance, contracts, and other transactional matters</td>
+      <td>Apply through CORP online</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/">SFBAR CORP</a></td>
+    </tr>
+    <tr>
+      <td>Justice &amp; Diversity Center (JDC)</td>
+      <td>San Francisco</td>
+      <td>Nonprofits serving low-income residents</td>
+      <td>Pro bono legal services and free MCLE-accredited training; volunteer attorneys for various nonprofit legal needs</td>
+      <td>Contact JDC for assistance</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.probono.net/sf/">JDC</a></td>
+    </tr>
+    <tr>
+      <td>Bay Area Legal Aid - Pro Bono Program</td>
+      <td>Bay Area</td>
+      <td>Nonprofits serving vulnerable populations</td>
+      <td>Pro bono attorney matching, training, mentorship for legal projects</td>
+      <td>Contact Pro Bono Director at probono@baylegal.org</td>
+      <td>Ongoing</td>
+      <td><a href="https://baylegal.org/get-involved-2/pro-bono-volunteer/">BayLegal Pro Bono</a></td>
+    </tr>
+    <tr>
+      <td>Racial Equity Project (REP)</td>
+      <td>California (Bay Area focus)</td>
+      <td>Black-led organizations</td>
+      <td>Pro bono legal support for Black-led nonprofits; partnership with East Bay Community Foundation</td>
+      <td>Apply through REP program</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/">REP via SFBAR</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="meeting--event-spaces">Meeting &amp; Event Spaces</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Area</th>
+      <th>Eligibility</th>
+      <th>Benefit</th>
+      <th>How to Use It</th>
+      <th>Timeframe</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CZI Community Space</td>
+      <td>San Mateo County</td>
+      <td>Nonprofits</td>
+      <td>Free event spaces (up to 150 people), coworking areas, meeting rooms; includes A/V equipment and kitchen for nonprofits that work or serve San Mateo County</td>
+      <td>Apply for membership online (501(c)(3)s); once approved, book events in advance</td>
+      <td>Ongoing</td>
+      <td><a href="https://chanzuckerberg.com/communityspace/">CZI</a></td>
+    </tr>
+    <tr>
+      <td>Generation Thrive</td>
+      <td>Oakland &amp; San Francisco</td>
+      <td>Bay Area Nonprofits (priority to Warriors/Kaiser grantees)</td>
+      <td>Free meeting and event spaces; Oakland: 2 rooms (10-40 people), coworking, wellness room; SF: 2 rooms (40 people each); includes high-speed wifi, A/V equipment, free printing</td>
+      <td>Submit requests online; first preference to Warriors Community Foundation and Kaiser Permanente grantees</td>
+      <td>Ongoing</td>
+      <td><a href="https://community.warriors.com/generation-thrive/spaces/">Generation Thrive Spaces</a></td>
+    </tr>
+    <tr>
+      <td>Google Community Space</td>
+      <td>San Francisco</td>
+      <td>Nonprofits</td>
+      <td>Free event spaces (up to 150 people), coworking areas, meeting rooms; includes A/V equipment, kitchen, Chromebooks, VR equipment; one event per quarter</td>
+      <td>Apply for membership online (Bay Area 501(c)(3)s); book events 90 days in advance</td>
+      <td>Ongoing</td>
+      <td><a href="https://communityspace.withgoogle.com/">Google Community Space</a></td>
+    </tr>
+    <tr>
+      <td>Salesforce ‘Ohana Floor</td>
+      <td>San Francisco</td>
+      <td>Local nonprofits focused on humanitarian, social, educational, or environmental causes</td>
+      <td>61st floor event space with 360° Bay Area views, capacity up to 250 guests; includes A/V equipment, event team support; organizations can host once every 12 months</td>
+      <td>Submit event request online; book up to 6 months in advance</td>
+      <td>Weeknights M-F 5:30-8pm</td>
+      <td><a href="https://www.salesforce.com/company/ohana-floors-san-francisco/">‘Ohana Floor - Salesforce</a></td>
+    </tr>
+    <tr>
+      <td>Sobrato Nonprofit Centers - Conference Space</td>
+      <td>Milpitas, San Jose, Redwood City</td>
+      <td>Nonprofits</td>
+      <td>Free meeting space for 3-200 people in multiple rooms; state-of-the-art A/V equipment, hospitality areas, on-site café</td>
+      <td>Request space through Sobrato centers; varies by location</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.sobrato.com/sobrato-philanthropies/what-we-do/non-profit-sustainability/conference-space-nonprofit-centers/">Sobrato Conference Space</a></td>
+    </tr>
+    <tr>
+      <td>Tides Converge</td>
+      <td>San Francisco</td>
+      <td>Nonprofits &amp; Social Enterprises</td>
+      <td>Meeting and event spaces for various sizes; 150,000 sq ft campus with 2 art galleries, organic café; also offers affordable coworking memberships and office leases</td>
+      <td>Contact for meeting space rental; apply online for coworking membership</td>
+      <td>Ongoing</td>
+      <td><a href="https://www.tides.org/social-purpose-real-estate/office-space/">Tides - Office &amp; Meeting Space</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="support-this-project">Support This Project</h3>
+<p>If this guide helps you save, consider supporting us here:
+<a href="https://www.buymeacoffee.com/bayareadiscounts"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=bayareadiscounts&amp;button_colour=40DCA5&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00" /></a></p>
+
+<p><em>Last updated: November 2025</em><br />
+Contribute a listing by opening an issue on GitHub.</p>
+
+    </div>
+  </main>
+
+  <footer style="margin-top: 60px; padding-top: 20px; border-top: 2px solid #eaecef; color: #666; font-size: 0.9em;">
+  <div style="margin-bottom: 30px;">
+    <h3 style="color: #333; font-size: 1.1em; margin-bottom: 10px;">💡 Support This Project</h3>
+    <p>If this guide helps you save, consider supporting us here:</p>
+    <a href="https://www.buymeacoffee.com/bayareadiscounts" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bayareadiscounts&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me a Coffee" />
+    </a>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+    <div>
+      <strong>Bay Area Discounts</strong>
+      <p>Community-maintained • Open Source • Free Forever</p>
+      <p><em>Last Updated: December 12, 2025</em></p>
+    </div>
+    <div>
+      <strong>Quick Links</strong>
+      <p>
+        <a href="https://github.com/bayareadiscounts/bayareadiscounts">GitHub Repository</a><br>
+        <a href="https://github.com/bayareadiscounts/bayareadiscounts/issues">Report Issue</a><br>
+        <a href="https://github.com/bayareadiscounts/bayareadiscounts/blob/main/README.md">Contributing Guide</a>
+      </p>
+    </div>
+    <div>
+      <strong>Resources</strong>
+      <p>
+        <a href="/">Main Guide</a><br>
+        <a href="/college-university.html">College Students</a><br>
+        <a href="/nonprofit-resources.html">For Nonprofits</a><br>
+      </p>
+    </div>
+  </div>
+  
+  <p style="margin-top: 20px; text-align: center;">Built with 💚 by the Bay Area community</p>
+</footer>
+
+
+  <!-- Search/Filter JavaScript -->
+  <script src="/assets/js/search-filter.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // ============== GLOBAL SEARCH FUNCTIONALITY ==============
+      
+      const globalSearch = document.querySelector('input[type="search"]#global-search');
+      
+      if (globalSearch) {
+        globalSearch.addEventListener('input', function() {
+          const query = this.value.toLowerCase();
+          const tables = document.querySelectorAll('table');
+          
+          tables.forEach(table => {
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+              const text = row.textContent.toLowerCase();
+              row.style.display = text.includes(query) ? '' : 'none';
+            });
+          });
+        });
+      }
+      
+      // Keyboard shortcut (Ctrl/Cmd + K) to focus global search
+      document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+          e.preventDefault();
+          if (globalSearch) globalSearch.focus();
+        }
+      });
+      
+      // Announce search results to screen readers
+      const searchBoxes = document.querySelectorAll('.table-search');
+      searchBoxes.forEach(box => {
+        const announcement = document.createElement('div');
+        announcement.setAttribute('role', 'status');
+        announcement.setAttribute('aria-live', 'polite');
+        announcement.className = 'sr-only';
+        announcement.style.cssText = 'position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;';
+        box.parentNode.insertBefore(announcement, box.nextSibling);
+        
+        box.addEventListener('keyup', function() {
+          const visibleRows = Array.from(this.nextElementSibling.nextElementSibling.querySelectorAll('tbody tr')).filter(row => row.style.display !== 'none').length;
+          announcement.textContent = `${visibleRows} result${visibleRows !== 1 ? 's' : ''} found`;
+        });
+      });
+      
+      // ============== PWA FUNCTIONALITY ==============
+      
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registered:', registration);
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed:', err);
+            });
+        });
+      }
+
+      let deferredPrompt;
+      const installButton = document.createElement('button');
+      installButton.id = 'install-button';
+      installButton.innerHTML = '📱 Install App';
+      installButton.style.cssText = `
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 172, 193, 0.4);
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      `;
+      document.body.appendChild(installButton);
+
+      installButton.addEventListener('mouseenter', () => {
+        installButton.style.transform = 'translateY(-3px)';
+        installButton.style.boxShadow = '0 6px 16px rgba(0, 172, 193, 0.5)';
+      });
+
+      installButton.addEventListener('mouseleave', () => {
+        installButton.style.transform = 'translateY(0)';
+        installButton.style.boxShadow = '0 4px 12px rgba(0, 172, 193, 0.4)';
+      });
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installButton.style.display = 'block';
+      });
+
+      installButton.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+          return;
+        }
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response: ${outcome}`);
+        deferredPrompt = null;
+        installButton.style.display = 'none';
+      });
+
+      window.addEventListener('appinstalled', () => {
+        console.log('PWA installed');
+        installButton.style.display = 'none';
+        deferredPrompt = null;
+      });
+    });
+  </script>
+</body>
+</html>
