@@ -10,8 +10,8 @@
   timeframe: "Ongoing"
   link: "https://www.7-eleven.com/lp/goldpass"
   link_text: "Learn More"
-  
-  - id: "amazon-prime-access"
+
+- id: "amazon-prime-access"
   name: "Amazon Prime Access"
   category: "Digital Services"
   area: "Nationwide"
