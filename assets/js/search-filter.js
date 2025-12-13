@@ -131,10 +131,13 @@ class DiscountSearchFilter {
         match = match && activeFilters.category.includes(program.category);
       }
 
-      // Check area filters
-      if (activeFilters.area.length > 0) {
-        match = match && activeFilters.area.includes(program.area);
-      }
+        // Check area filters
+        if (activeFilters.area.length > 0) {
+          const hasArea = activeFilters.area.some(area =>
+            program.area.includes(area)
+          );
+          match = match && hasArea;
+        }
 
       return match;
     });
