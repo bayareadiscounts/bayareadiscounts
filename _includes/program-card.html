@@ -4,13 +4,19 @@
   data-program-id="{{ include.program.id }}"
   data-program-name="{{ include.program.name }}"
   data-category="{{ include.program.category }}"
-  data-area="{{ include.program.area }}"
+  data-area="{% if include.program.area is an array %}{{ include.program.area | join: ' ' }}{% else %}{{ include.program.area }}{% endif %}"
   data-eligibility="{{ include.program.eligibility | join: ' ' }}"
 >
   <div class="program-card-header">
     <h3 class="program-name">{{ include.program.name }}</h3>
     <div class="program-meta">
-      <span class="program-area">{{ include.program.area }}</span>
+      {% if include.program.area is an array %}
+        {% for area in include.program.area %}
+          <span class="program-area">{{ area }}</span>
+        {% endfor %}
+      {% else %}
+        <span class="program-area">{{ include.program.area }}</span>
+      {% endif %}
       <span class="program-category">{{ include.program.category }}</span>
     </div>
   </div>
@@ -26,7 +32,7 @@
   {% endif %}
 
   <p class="program-benefit" data-benefit="{{ include.program.benefit }}">
-    {{ include.program.benefit }}
+    {{ program.benefit }}
   </p>
 
   <div class="program-footer">
