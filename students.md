@@ -2,7 +2,7 @@
 layout: default
 title: College & University Student Resources
 description: Free and discounted benefits for Bay Area college and university students
-permalink: /college-university.html
+permalink: /students.html
 ---
 
 <h1 style="display:none">College & University Student Resources</h1>
@@ -357,11 +357,11 @@ document.addEventListener('DOMContentLoaded', function() {
     tag: ''
   };
 
-  // Fetch programs from multiple Jekyll data files and combine them
-  const ccPrograms = {{ site.data.college-programs-cc.programs | jsonify }};
-  const csuPrograms = {{ site.data.college-programs-csu.programs | jsonify }};
-  const ucPrograms = {{ site.data.college-programs-uc.programs | jsonify }};
-  const privatePrograms = {{ site.data.college-programs-private.programs | jsonify }};
+  // Fetch programs from multiple Jekyll data files in college-university subfolder and combine them
+  const ccPrograms = {{ site.data.college-university.college-programs-cc.programs | jsonify }};
+  const csuPrograms = {{ site.data.college-university.college-programs-csu.programs | jsonify }};
+  const ucPrograms = {{ site.data.college-university.college-programs-uc.programs | jsonify }};
+  const privatePrograms = {{ site.data.college-university.college-programs-private.programs | jsonify }};
   allPrograms = [...ccPrograms, ...csuPrograms, ...ucPrograms, ...privatePrograms];
 
   console.log('Loaded', allPrograms.length, 'total programs (CC: 56, CSU: 26, UC: 28, Private: 44)');
