@@ -1,9 +1,67 @@
+---
+layout: default
+---
+<style>
+.site-logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.site-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .site-logo img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #79d8eb;
+  }
+
+  p {
+    color: #c9d1d9;
+  }
+
+  a {
+    color: #79d8eb;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #79d8eb;
+  }
+
+  a:hover {
+    color: #a8e6f1;
+  }
+
+  .program-card p {
+    color: #c9d1d9;
+  }
+
+  .filter-section-title {
+    color: #c9d1d9;
+  }
+}
+</style>
+
 <h1 style="display:none">Bay Area Discounts</h1>
 
 <a href="https://bayareadiscounts.com" class="site-logo">
-  <img src="https://raw.githubusercontent.com/bayareadiscounts/bayareadiscounts/refs/heads/main/logo.png" 
+  <img src="/assets/images/logo/banner.svg" 
        alt="Bay Area Discounts logo">
 </a>
+
 # Resources for Nonprofit Organizations
 
 Resources and support for nonprofit organizations, including free meeting spaces, technology donations and discounts, and professional services.

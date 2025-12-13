@@ -6,10 +6,18 @@ permalink: /students.html
 ---
 
 <style>
+.site-logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
 .site-logo img {
   max-width: 100%;
   height: auto;
   display: block;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
