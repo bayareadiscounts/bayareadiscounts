@@ -49,7 +49,7 @@ layout: default
 <h1 style="display:none">Bay Area Discounts</h1>
 
 <a href="https://bayareadiscounts.com" class="site-logo">
-  <img src="/assets/images/logo.png" 
+  <img src="/assets/images/logo/banner.svg" 
        alt="Bay Area Discounts logo">
 </a>
 
