@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     programCards.forEach(card => {
       let shouldShow = true;
-      const cardTitle = card.dataset.title.toLowerCase();
+      const cardTitle = (card.dataset.title || '').toLowerCase();
       const cardBenefit = (card.dataset.benefit || '').toLowerCase();
       const cardTags = (card.dataset.tags || '').split(',').map(t => t.trim().toLowerCase());
       const cardInstitution = (card.dataset.institution || '').toLowerCase();
@@ -151,7 +151,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Institution type filter
       if (shouldShow && activeFilters['institution-type']) {
-        if (!activeFilters['institution-type'].includes(cardInstitution)) {
+        const cardType = (card.dataset.type || '').toLowerCase();
+        if (!activeFilters['institution-type'].includes(cardType)) {
           shouldShow = false;
         }
       }
