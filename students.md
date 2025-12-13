@@ -5,339 +5,500 @@ description: Free and discounted benefits for Bay Area college and university st
 permalink: /students.html
 ---
 
-<h1 style="display:none">College & University Student Resources</h1>
+<style>
+.site-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .site-logo img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #79d8eb;
+  }
+
+  p {
+    color: #c9d1d9;
+  }
+
+  a {
+    color: #79d8eb;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #79d8eb;
+  }
+
+  a:hover {
+    color: #a8e6f1;
+  }
+
+  .program-card p {
+    color: #c9d1d9;
+  }
+
+  .filter-section-title {
+    color: #c9d1d9;
+  }
+}
+</style>
+
+<h1 style="display:none">Bay Area Discounts</h1>
 
 <a href="https://bayareadiscounts.com" class="site-logo">
-  <img src="https://raw.githubusercontent.com/bayareadiscounts/bayareadiscounts/refs/heads/main/logo.png" 
+  <img src="/assets/images/logo.png" 
        alt="Bay Area Discounts logo">
 </a>
 
 # College & University Student Resources
 
-Comprehensive guide to 150+ free and discounted benefits available exclusively to students enrolled at Bay Area colleges and universities.
+Stretch your budget and find free and discounted benefits available to Bay Area college and university students.
 
-_Always verify benefits and eligibility with your college or university as programs and requirements may change._
+This guide highlights 150+ free and low-cost programs, services, and benefits available exclusively to students enrolled at Bay Area colleges and universities across all institution types—community colleges, California State Universities (CSU), University of California (UC), and private universities.
+
+Programs span across the Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, and Sonoma counties) with some available online or statewide.
+
+Always verify eligibility and current details directly with your college or university, as programs and requirements may change.
+
+This is a community-maintained resource—if you notice outdated information or know of programs that should be included, please contribute via our [GitHub repository](https://github.com/bayareadiscounts/bayareadiscounts).
+
+## How to Use This Guide
+
+- Use the search bar to find specific programs by name, school, or benefit type
+- Filter by institution type, location, or program category
+- Check **Timeframe** for seasonal or limited offers
+- Click **Learn More** to visit the program website
 
 ---
 
+<br>
+
 <div id="app">
-  <div class="filters-container">
-    <input type="text" id="search" placeholder="Search by program name, school, or benefit type..." class="search-input">
-    
-    <div class="filter-group">
-      <label>Institution Type:</label>
-      <div class="filter-buttons">
-        <button data-filter="type" data-value="">All</button>
-        <button data-filter="type" data-value="community-college">Community Colleges</button>
-        <button data-filter="type" data-value="csu">CSU</button>
-        <button data-filter="type" data-value="uc">UC</button>
-        <button data-filter="type" data-value="private">Private</button>
-      </div>
-    </div>
+  <div class="search-panel">
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search by program name, school, or benefit type..." class="search-input">
+      
+      <div class="filters-section">
+        <div class="filter-group">
+          <div class="filter-group-label">Institution Type</div>
+          <div class="filter-buttons">
+            <button class="filter-btn" data-filter="type" data-value="">All</button>
+            <button class="filter-btn" data-filter="type" data-value="community-college">Community Colleges</button>
+            <button class="filter-btn" data-filter="type" data-value="csu">CSU</button>
+            <button class="filter-btn" data-filter="type" data-value="uc">UC</button>
+            <button class="filter-btn" data-filter="type" data-value="private">Private</button>
+          </div>
+        </div>
 
-    <div class="filter-group">
-      <label>Location:</label>
-      <div class="filter-buttons">
-        <button data-filter="location" data-value="">All</button>
-        <button data-filter="location" data-value="san-francisco">San Francisco</button>
-        <button data-filter="location" data-value="east-bay">East Bay</button>
-        <button data-filter="location" data-value="peninsula">Peninsula</button>
-        <button data-filter="location" data-value="south-bay">South Bay</button>
-        <button data-filter="location" data-value="north-bay">North Bay</button>
-        <button data-filter="location" data-value="marin">Marin</button>
-      </div>
-    </div>
+        <div class="filter-group">
+          <div class="filter-group-label">Location</div>
+          <div class="filter-buttons">
+            <button class="filter-btn" data-filter="location" data-value="">All</button>
+            <button class="filter-btn" data-filter="location" data-value="san-francisco">San Francisco</button>
+            <button class="filter-btn" data-filter="location" data-value="east-bay">East Bay</button>
+            <button class="filter-btn" data-filter="location" data-value="peninsula">Peninsula</button>
+            <button class="filter-btn" data-filter="location" data-value="south-bay">South Bay</button>
+            <button class="filter-btn" data-filter="location" data-value="north-bay">North Bay</button>
+            <button class="filter-btn" data-filter="location" data-value="marin">Marin</button>
+          </div>
+        </div>
 
-    <div class="filter-group">
-      <label>Program Type:</label>
-      <div class="filter-buttons">
-        <button data-filter="tag" data-value="">All</button>
-        <button data-filter="tag" data-value="food">Food</button>
-        <button data-filter="tag" data-value="transit">Transit</button>
-        <button data-filter="tag" data-value="housing">Housing</button>
-        <button data-filter="tag" data-value="financial">Financial</button>
-        <button data-filter="tag" data-value="technology">Technology</button>
-        <button data-filter="tag" data-value="wellness">Wellness</button>
-        <button data-filter="tag" data-value="emergency">Emergency</button>
+        <div class="filter-group">
+          <div class="filter-group-label">Program Type</div>
+          <div class="filter-buttons">
+            <button class="filter-btn" data-filter="tag" data-value="">All</button>
+            <button class="filter-btn" data-filter="tag" data-value="food">Food</button>
+            <button class="filter-btn" data-filter="tag" data-value="transit">Transit</button>
+            <button class="filter-btn" data-filter="tag" data-value="housing">Housing</button>
+            <button class="filter-btn" data-filter="tag" data-value="financial">Financial</button>
+            <button class="filter-btn" data-filter="tag" data-value="technology">Technology</button>
+            <button class="filter-btn" data-filter="tag" data-value="wellness">Wellness</button>
+            <button class="filter-btn" data-filter="tag" data-value="emergency">Emergency</button>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="result-count">
-      Showing <span id="count">0</span> programs
     </div>
   </div>
 
-  <div id="results" class="results-grid"></div>
+  <div class="results-count">
+    Showing <span id="count">0</span> programs
+  </div>
+
+  <div id="results" class="programs-container"></div>
 </div>
 
 <style>
+:root {
+  /* Spacing for Vision Pro interaction */
+  --touch-target-min: 60px;
+  --interaction-padding: 1.25rem;
+  
+  /* Colors */
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-900: #111827;
+
+  /* Typography */
+  --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  
+  /* Responsive typography */
+  --text-sm: clamp(0.875rem, 2.5vw, 1rem);
+  --text-base: clamp(1rem, 3vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 3.5vw, 1.375rem);
+
+  /* Shadow for depth */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
 #app {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.filters-container {
-  background: #f6f8fa;
-  padding: 1.5rem;
-  border-radius: 8px;
+.search-panel {
+  background: var(--neutral-50);
+  border: 1px solid var(--neutral-200);
+  padding: var(--interaction-padding);
   margin-bottom: 2rem;
-  border: 1px solid #d0d7de;
+  border-radius: var(--radius-lg);
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#search {
+  width: 100%;
+  padding: var(--interaction-padding);
+  font-size: var(--text-base);
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  min-height: var(--touch-target-min);
+  background: white;
+  color: var(--neutral-900);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#search:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.filters-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .filter-group {
-  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.filter-group label {
-  display: block;
+.filter-group-label {
+  font-size: var(--text-sm);
   font-weight: 600;
-  margin-bottom: 0.75rem;
-  font-size: 0.9rem;
-}
-
-.search-input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #d0d7de;
-  border-radius: 6px;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  box-sizing: border-box;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #0969da;
-  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+  color: var(--neutral-700);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
-.filter-buttons button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #d0d7de;
+.filter-btn {
+  padding: 0.75rem 1.25rem;
+  min-height: var(--touch-target-min);
+  min-width: 140px;
+  text-align: center;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--radius-md);
   background: white;
-  border-radius: 6px;
+  color: var(--neutral-700);
   cursor: pointer;
-  font-size: 0.875rem;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.filter-buttons button:hover {
-  border-color: #0969da;
-  background-color: #f0f7ff;
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(37, 99, 235, 0.05);
 }
 
-.filter-buttons button.active {
-  background-color: #0969da;
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
   color: white;
-  border-color: #0969da;
 }
 
-.result-count {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #57606a;
+.results-count {
+  font-size: var(--text-base);
+  color: var(--neutral-600);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
-.results-grid {
+.programs-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .program-card {
   background: white;
-  border: 1px solid #d0d7de;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: all 0.2s;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-lg);
+  padding: var(--interaction-padding);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  min-height: 280px;
 }
 
 .program-card:hover {
-  border-color: #0969da;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .program-card h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
   margin: 0 0 0.75rem 0;
-  font-size: 1.1rem;
-  color: #24292f;
+  color: var(--neutral-900);
+  word-break: break-word;
 }
 
 .program-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
   margin-bottom: 1rem;
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
+  color: var(--neutral-600);
 }
 
-.program-college {
-  background: #eaeef2;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-weight: 600;
-  color: #24292f;
-}
-
+.program-college,
 .program-location {
-  color: #57606a;
-  font-size: 0.85rem;
+  background: var(--neutral-100);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
 }
 
 .program-benefit {
-  margin: 1rem 0;
-  font-size: 0.95rem;
-  color: #424a53;
+  flex: 1;
+  font-size: var(--text-base);
+  color: var(--neutral-700);
   line-height: 1.6;
+  margin: 1rem 0;
 }
 
 .program-footer {
-  border-top: 1px solid #eaeef2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
   padding-top: 1rem;
-  margin-top: 1rem;
+  border-top: 1px solid var(--neutral-100);
 }
 
 .how-to-use {
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   margin-bottom: 0.75rem;
 }
 
 .how-to-use strong {
   display: block;
   margin-bottom: 0.25rem;
-  color: #24292f;
+  color: var(--neutral-900);
 }
 
 .how-to-use p {
   margin: 0;
-  color: #57606a;
+  color: var(--neutral-600);
 }
 
 .program-timeframe {
-  display: block;
-  font-size: 0.8rem;
-  color: #8c959f;
-  font-style: italic;
-  margin-bottom: 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--neutral-600);
+  padding: 0.5rem 0.75rem;
+  background: var(--neutral-100);
+  border-radius: var(--radius-sm);
+  align-self: flex-start;
 }
 
 .program-link {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #0969da;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  min-height: var(--touch-target-min);
+  background: var(--primary);
   color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
+  border-radius: var(--radius-md);
   font-weight: 600;
-  transition: background-color 0.2s;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .program-link:hover {
-  background-color: #0860ca;
+  background: var(--primary-dark);
+  text-decoration: none;
+}
+
+.program-link::after {
+  content: ' →';
+  margin-left: 0.5rem;
 }
 
 .hidden {
   display: none !important;
 }
 
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem var(--interaction-padding);
+  color: var(--neutral-600);
+}
+
 @media (max-width: 768px) {
-  .results-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .filter-buttons {
     flex-direction: column;
   }
-  
-  .filter-buttons button {
+
+  .filter-btn {
     width: 100%;
+    min-width: auto;
+  }
+
+  .programs-container {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .filters-container {
+  :root {
+    --neutral-50: #f9fafb;
+    --neutral-100: #1c2128;
+    --neutral-200: #30363d;
+    --neutral-600: #79d8eb;
+    --neutral-700: #c9d1d9;
+    --neutral-900: #e8eef5;
+  }
+
+  body {
+    background-color: #0d1117;
+    color: #e8eef5;
+  }
+
+  .search-panel {
+    background: #1c2128;
+    border-color: #30363d;
+  }
+
+  #search {
     background: #0d1117;
+    color: #e8eef5;
     border-color: #30363d;
   }
 
-  .search-input {
-    background: #0d1117;
-    border-color: #30363d;
-    color: #c9d1d9;
-  }
-
-  .filter-group label {
-    color: #c9d1d9;
-  }
-
-  .filter-buttons button {
-    background: #161b22;
-    border-color: #30363d;
-    color: #c9d1d9;
-  }
-
-  .filter-buttons button:hover {
-    background-color: #1f6feb;
-    border-color: #58a6ff;
-  }
-
-  .filter-buttons button.active {
-    background-color: #1f6feb;
-    border-color: #1f6feb;
-  }
-
-  .result-count {
+  #search::placeholder {
     color: #8b949e;
   }
 
+  .filter-group-label {
+    color: #79d8eb;
+  }
+
+  .filter-btn {
+    background: #21262d;
+    color: #e8eef5;
+    border-color: #30363d;
+  }
+
+  .filter-btn:hover {
+    background: #30363d;
+  }
+
+  .filter-btn.active {
+    background: var(--primary);
+  }
+
   .program-card {
-    background: #0d1117;
+    background: #1c2128;
     border-color: #30363d;
   }
 
   .program-card:hover {
-    border-color: #58a6ff;
+    background: #262c36;
   }
 
   .program-card h3 {
-    color: #e6edf3;
+    color: #e8eef5;
   }
 
-  .program-college {
+  .program-meta {
+    color: #79d8eb;
+  }
+
+  .program-college,
+  .program-location,
+  .program-timeframe {
     background: #30363d;
-    color: #e6edf3;
-  }
-
-  .program-location {
-    color: #8b949e;
+    color: #c9d1d9;
   }
 
   .program-benefit {
     color: #c9d1d9;
   }
 
-  .program-footer {
-    border-color: #21262d;
-  }
-
   .how-to-use strong {
-    color: #e6edf3;
+    color: #e8eef5;
   }
 
   .how-to-use p {
     color: #8b949e;
   }
 
-  .program-timeframe {
-    color: #6e7681;
+  .results-count {
+    color: #79d8eb;
   }
 }
 </style>
