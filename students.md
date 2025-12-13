@@ -107,7 +107,6 @@ This is a community-maintained resource—if you notice outdated information or 
             <button class="filter-btn" data-filter="location" data-value="peninsula">Peninsula</button>
             <button class="filter-btn" data-filter="location" data-value="south-bay">South Bay</button>
             <button class="filter-btn" data-filter="location" data-value="north-bay">North Bay</button>
-            <button class="filter-btn" data-filter="location" data-value="marin">Marin</button>
           </div>
         </div>
 
@@ -507,7 +506,6 @@ This is a community-maintained resource—if you notice outdated information or 
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('search');
   const resultsContainer = document.getElementById('results');
-  const countSpan = document.getElementById('count');
   const filterButtons = document.querySelectorAll('.filter-buttons button');
   
   let allPrograms = [];
@@ -532,6 +530,19 @@ document.addEventListener('DOMContentLoaded', function() {
     activeFilters.search = e.target.value.toLowerCase();
     render();
   });
+
+  // Helper function to format location names
+  function formatLocation(location) {
+    const locationMap = {
+      'san-francisco': 'San Francisco',
+      'east-bay': 'East Bay',
+      'peninsula': 'Peninsula',
+      'south-bay': 'South Bay',
+      'north-bay': 'North Bay',
+      'marin': 'Marin'
+    };
+    return locationMap[location] || location;
+  }
 
   // Handle filter buttons
   filterButtons.forEach(btn => {
@@ -596,7 +607,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <h3>${program.title}</h3>
         <div class="program-meta">
           <span class="program-college">${program.institution}</span>
-          <span class="program-location">${program.location}</span>
+          <span class="program-location">${formatLocation(program.location)}</span>
         </div>
         <p class="program-benefit">${program.benefit}</p>
         <div class="program-footer">
@@ -611,8 +622,9 @@ document.addEventListener('DOMContentLoaded', function() {
       resultsContainer.appendChild(card);
     });
 
-    // Update count
-    countSpan.textContent = filtered.length;
+    // Update count - show "0 results" or proper count
+    const resultText = filtered.length === 1 ? '1 program' : `${filtered.length} programs`;
+    document.querySelector('.results-count').textContent = `Showing ${resultText}`;
   }
 
   // Initial render
