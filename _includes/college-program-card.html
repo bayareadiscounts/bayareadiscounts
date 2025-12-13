@@ -5,12 +5,12 @@
 <div
   class="program-card"
   data-program-card="true"
-  data-title="{{ program.title | downcase }}"
-  data-institution="{{ program.institution | downcase }}"
-  data-location="{{ program.location | downcase }}"
-  data-tags="{{ program.tags | downcase }}"
-  data-type="{{ program.type | downcase }}"
-  data-benefit="{{ program.benefit | downcase }}"
+  data-title="{{ program.title }}"
+  data-institution="{{ program.institution }}"
+  data-location="{{ program.location }}"
+  data-tags="{{ program.tags }}"
+  data-type="{{ program.type }}"
+  data-benefit="{{ program.benefit }}"
   role="article"
   aria-label="Program: {{ program.title }}"
 >
@@ -49,55 +49,3 @@
     {% endif %}
   </div>
 </div>
-
-<style>
-  /* Program card additional styling specific to college programs */
-  .program-college {
-    background: var(--neutral-100);
-    padding: 0.25rem 0.75rem;
-    border-radius: var(--radius-sm);
-    font-size: var(--text-sm);
-    font-weight: 600;
-  }
-
-  .program-location {
-    color: var(--neutral-600);
-    font-size: var(--text-sm);
-  }
-
-  .program-details {
-    margin: 0.75rem 0;
-  }
-
-  .program-details strong {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--neutral-900);
-  }
-
-  .program-details p {
-    font-size: var(--text-sm);
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  /* Dark mode */
-  @media (prefers-color-scheme: dark) {
-    .program-college {
-      background: #30363d;
-      color: #c9d1d9;
-    }
-
-    .program-location {
-      color: #8b949e;
-    }
-
-    .program-details strong {
-      color: #e8eef5;
-    }
-
-    .program-details p {
-      color: #c9d1d9;
-    }
-  }
-</style>
