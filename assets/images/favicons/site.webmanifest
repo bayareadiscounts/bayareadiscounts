@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "/assets/images/favicons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/assets/images/favicons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -28,21 +28,21 @@
       "short_name": "Discounts",
       "description": "View the main discount guide",
       "url": "/",
-      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/assets/images/favicons/favicon-96x96.png", "sizes": "96x96" }]
     },
     {
       "name": "College Student Resources",
       "short_name": "Students",
       "description": "Resources for college students",
-      "url": "/college-university.html",
-      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+      "url": "/students.html",
+      "icons": [{ "src": "/assets/images/favicons/favicon-96x96.png", "sizes": "96x96" }]
     },
     {
       "name": "Nonprofit Resources",
       "short_name": "Nonprofits",
       "description": "Resources for nonprofit organizations",
       "url": "/nonprofit_resources_section.html",
-      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/assets/images/favicons/favicon-96x96.png", "sizes": "96x96" }]
     }
   ]
 }

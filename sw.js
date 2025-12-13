@@ -1,11 +1,13 @@
 const CACHE_NAME = 'bay-area-benefits-v1';
 const urlsToCache = [
   '/',
-  '/college-university.html',
+  '/students.html',
   '/nonprofit_resources_section.html',
-  '/favicon-96x96.png',
-  '/favicon.svg',
-  '/apple-touch-icon.png'
+  '/assets/images/favicons/favicon-96x96.png',
+  '/assets/images/favicons/favicon.svg',
+  '/assets/images/favicons/apple-touch-icon.png',
+  '/assets/images/logo/banner.svg',
+  '/assets/images/logo/logo.svg'
 ];
 
 // Install service worker and cache resources
