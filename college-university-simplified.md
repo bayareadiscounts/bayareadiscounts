@@ -31,45 +31,8 @@ _Always verify benefits and eligibility with your college or university as progr
 {% include college-filter-ui.html %}
 
 <div id="search-results" class="programs-container">
-  <!-- Community Colleges Programs -->
-  {% for college_key in site.data.college-programs.community_colleges %}
-    {% assign college = college_key[1] %}
-    {% for program in college.programs %}
-      {% assign location = college_key[0] | downcase | replace: '_', '-' %}
-      {% include college-program-card.html program=program institution='Community College' location=location %}
-    {% endfor %}
-  {% endfor %}
-
-  <!-- Discount Platforms -->
-  {% for platform in site.data.college-programs.discount_platforms.student_verification %}
-    {% include college-program-card.html program=platform institution='Discount Platform' location='online' %}
-  {% endfor %}
-
-  <!-- CSU Universities Programs -->
-  {% for csu_key in site.data.college-programs.csu_universities %}
-    {% assign csu = csu_key[1] %}
-    {% for program in csu.programs %}
-      {% assign location = csu.location | downcase | replace: ' ', '-' | replace: '/', '-' %}
-      {% include college-program-card.html program=program institution='CSU' location=location %}
-    {% endfor %}
-  {% endfor %}
-
-  <!-- UC Universities Programs -->
-  {% for uc_key in site.data.college-programs.uc_universities %}
-    {% assign uc = uc_key[1] %}
-    {% for program in uc.programs %}
-      {% assign location = uc.location | downcase | replace: ' ', '-' | replace: '/', '-' %}
-      {% include college-program-card.html program=program institution='UC' location=location %}
-    {% endfor %}
-  {% endfor %}
-
-  <!-- Private Universities Programs -->
-  {% for uni_key in site.data.college-programs.private_universities %}
-    {% assign uni = uni_key[1] %}
-    {% for program in uni.programs %}
-      {% assign location = uni.location | downcase | replace: ' ', '-' | replace: '/', '-' %}
-      {% include college-program-card.html program=program institution='Private University' location=location %}
-    {% endfor %}
+  {% for program in site.data.college-programs.programs %}
+    {% include college-program-card.html program=program %}
   {% endfor %}
 </div>
 
@@ -113,7 +76,7 @@ UC campuses offer comprehensive student support including free/reduced transit (
 **Featured:**
 - UC Berkeley - Free AC Transit pass, BayPass, food pantry, CHAOS gear rentals
 - UC San Francisco - BayPass, late-night Lyft support (up to $150/month), food market
-- UC College of the Law, San Francisco - Free legal clinics, merit scholarships
+- UC College of the Law, San Francisco - Free legal clinics (open to community), merit scholarships
 
 [View all UC programs →](#search)
 

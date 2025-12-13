@@ -1,0 +1,13 @@
+<!-- College Program Card Component -->
+<!-- Minimal HTML to avoid Jekyll nesting issues -->
+
+<div class="program-card" data-program-card="true" data-title="{{ program.title }}" data-institution="{{ program.institution | downcase }}" data-location="{{ program.location | downcase }}" data-tags="{{ program.tags | downcase }}" role="article">
+  <h3 class="program-name">{{ program.title }}</h3>
+  {% if program.institution %}<p class="program-meta"><span class="program-college">{{ program.institution }}</span><span class="program-location">{{ program.location }}</span></p>{% endif %}
+  {% if program.benefit %}<p class="program-benefit">{{ program.benefit }}</p>{% endif %}
+  <div class="program-footer">
+    {% if program.how_to_use %}<div class="program-details"><strong>How to Use:</strong> <p>{{ program.how_to_use }}</p></div>{% endif %}
+    {% if program.timeframe %}<span class="program-timeframe">{{ program.timeframe }}</span>{% endif %}
+    {% if program.link %}<a href="{{ program.link }}" class="program-link" target="_blank" rel="noopener noreferrer">Learn More</a>{% endif %}
+  </div>
+</div>
