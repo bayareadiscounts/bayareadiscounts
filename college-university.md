@@ -28,7 +28,32 @@ _Always verify benefits and eligibility with your college or university as progr
 
 <div id="search-results" class="programs-container">
   {% for program in site.data.college-programs.programs %}
-    {% include college-program-card.html program=program %}
+    <div 
+      class="program-card"
+      data-program-card="true"
+      data-title="{{ program.title }}"
+      data-institution="{{ program.institution }}"
+      data-location="{{ program.location }}"
+      data-tags="{{ program.tags }}"
+      data-type="{{ program.type }}"
+      data-benefit="{{ program.benefit }}"
+      role="article"
+    >
+      <h3 class="program-name">{{ program.title }}</h3>
+      <p class="program-meta">
+        <span class="program-college">{{ program.institution }}</span>
+        <span class="program-location">{{ program.location }}</span>
+      </p>
+      <p class="program-benefit">{{ program.benefit }}</p>
+      <div class="program-footer">
+        <div class="program-details">
+          <strong>How to Use:</strong>
+          <p>{{ program.how_to_use }}</p>
+        </div>
+        <span class="program-timeframe">{{ program.timeframe }}</span>
+        <a href="{{ program.link }}" class="program-link" target="_blank" rel="noopener noreferrer">Learn More</a>
+      </div>
+    </div>
   {% endfor %}
 </div>
 
