@@ -50,7 +50,7 @@
     - "💳"
   benefit: "Free/low-cost health insurance to income-eligible residents"
   timeframe: "Ongoing"
-  link: "https://dhcs.ca.gov/services/medi-cal"
+  link: "https://www.dhcs.ca.gov/Medi-Cal/Pages/apply.aspx"
   link_text: "Apply"
 
 - id: "needymeds"
@@ -84,7 +84,7 @@
     - "💳"
   benefit: "Free comprehensive care for people living with HIV/AIDS"
   timeframe: "Ongoing"
-  link: "https://hab.hrsa.gov/"
+  link: "https://findhivcare.hrsa.gov/index.html"
   link_text: "Find Provider"
 
 - id: "samhsa-helpline"
@@ -107,7 +107,7 @@
   benefit: "Comprehensive health support for veterans"
   timeframe: "Ongoing"
   link: "https://www.va.gov/health-care"
-  link_text: "Apply"
+  link_text: "Learn More"
 
 - id: "wic-health"
   name: "WIC (Women, Infants, Children)"
