@@ -3,9 +3,10 @@ layout: default
 title: College & University Student Resources
 description: Free and discounted benefits for Bay Area college and university students including food assistance, transit passes, emergency grants, recreation access, and more.
 permalink: /college-university.html
+extra_css:
+  - /assets/css/college-filter-styles.css
+  - /assets/css/college-card-styles.css
 ---
-
-<link rel="stylesheet" href="/assets/css/college-filter-styles.css">
 
 <h1 style="display:none">College & University Student Resources</h1>
 
