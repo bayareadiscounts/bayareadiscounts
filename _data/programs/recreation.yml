@@ -10,7 +10,7 @@
   benefit: "Covers entrance and day-use fees at federal recreation lands (National Parks, Fish & Wildlife, Forest Service, BLM, Bureau of Reclamation, Army Corps)."
   how_to_use: "Purchase online or at federal recreation sites; may cover one vehicle or up to 4 people"
   timeframe: "Ongoing"
-  link:"https://www.nps.gov/planyourvisit/passes.htm#america-the-beautiful-passes"
+  link: "https://www.nps.gov/planyourvisit/passes.htm#america-the-beautiful-passes"
   link_text: "Get Pass"
   
   - id: "ca-state-parks-adventure-pass"
