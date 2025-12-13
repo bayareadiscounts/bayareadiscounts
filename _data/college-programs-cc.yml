@@ -74,7 +74,7 @@ programs:
   # COLLEGE OF MARIN
   - title: "Basic Needs Support"
     institution: "College of Marin"
-    location: "marin"
+    location: "north-bay"
     benefit: "Financial support, food, health services, housing, technology, and transportation"
     how_to_use: "Apply through Student Services"
     timeframe: "Academic year"
@@ -84,7 +84,7 @@ programs:
 
   - title: "COM Cupboard"
     institution: "College of Marin"
-    location: "marin"
+    location: "north-bay"
     benefit: "Weekly produce from SF-Marin Food Bank"
     how_to_use: "Visit cupboard"
     timeframe: "Academic year"
@@ -94,7 +94,7 @@ programs:
 
   - title: "Free Marin Transit"
     institution: "College of Marin"
-    location: "marin"
+    location: "north-bay"
     benefit: "Free unlimited rides on all Marin Transit routes with student ID"
     how_to_use: "Show student ID when boarding"
     timeframe: "Academic year"
@@ -104,7 +104,7 @@ programs:
 
   - title: "Emergency Ride Home"
     institution: "College of Marin"
-    location: "marin"
+    location: "north-bay"
     benefit: "Reimbursement for eligible emergency rides home (up to $125/ride, capped at $500/year)"
     how_to_use: "Apply for reimbursement online"
     timeframe: "Ongoing"
