@@ -262,6 +262,7 @@ This is a community-maintained resource—if you notice outdated information or 
   background: var(--primary);
   border-color: var(--primary);
   color: white;
+  font-weight: 600;
 }
 
 .results-count {
@@ -452,12 +453,10 @@ This is a community-maintained resource—if you notice outdated information or 
     border-color: #30363d;
   }
 
-  .filter-btn:hover {
-    background: #30363d;
-  }
-
   .filter-btn.active {
     background: var(--primary);
+    border-color: var(--primary);
+    color: white;
   }
 
   .program-card {
@@ -622,9 +621,12 @@ document.addEventListener('DOMContentLoaded', function() {
       resultsContainer.appendChild(card);
     });
 
-    // Update count - show "0 results" or proper count
+    // Update count - always update after filtering
     const resultText = filtered.length === 1 ? '1 program' : `${filtered.length} programs`;
-    document.querySelector('.results-count').textContent = `Showing ${resultText}`;
+    const countElement = document.querySelector('.results-count');
+    if (countElement) {
+      countElement.textContent = `Showing ${resultText}`;
+    }
   }
 
   // Initial render
