@@ -505,7 +505,7 @@ This is a community-maintained resource—if you notice outdated information or 
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('search');
   const resultsContainer = document.getElementById('results');
-  const filterButtons = document.querySelectorAll('.filter-buttons button');
+  const filterButtons = document.querySelectorAll('.filter-btn');
   
   let allPrograms = [];
   let activeFilters = {
@@ -549,8 +549,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const filterType = this.dataset.filter;
       const filterValue = this.dataset.value;
 
-      // Remove active class from siblings
-      document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(b => {
+      // Remove active class from all buttons with this filter type
+      document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => {
         b.classList.remove('active');
       });
 
