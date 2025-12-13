@@ -13,7 +13,7 @@
         aria-label="Search programs"
       />
       <span class="results-count" aria-live="polite" aria-atomic="true">
-        <span class="result-number">0</span> programs
+        <span class="result-number">Loading</span> programs
       </span>
     </div>
 
@@ -21,32 +21,29 @@
     <div class="filters-section">
       <!-- Institution Type Filter -->
       <div class="filter-group">
-        <label class="filter-group-label">Institution Type</label>
+        <label class="filter-group-label" for="institution-type-filter">Institution Type</label>
         <div class="filter-buttons" role="group" aria-label="Filter by institution type">
-          <button class="filter-btn active" data-filter="type" data-value="all" aria-pressed="true">
+          <button class="filter-btn active" data-filter="institution-type" data-value="all" aria-pressed="true">
             All
           </button>
-          <button class="filter-btn" data-filter="type" data-value="community-college" aria-pressed="false">
+          <button class="filter-btn" data-filter="institution-type" data-value="community-college" aria-pressed="false">
             Community Colleges
           </button>
-          <button class="filter-btn" data-filter="type" data-value="csu" aria-pressed="false">
+          <button class="filter-btn" data-filter="institution-type" data-value="csu" aria-pressed="false">
             CSU
           </button>
-          <button class="filter-btn" data-filter="type" data-value="uc" aria-pressed="false">
+          <button class="filter-btn" data-filter="institution-type" data-value="uc" aria-pressed="false">
             UC
           </button>
-          <button class="filter-btn" data-filter="type" data-value="private" aria-pressed="false">
+          <button class="filter-btn" data-filter="institution-type" data-value="private" aria-pressed="false">
             Private
-          </button>
-          <button class="filter-btn" data-filter="type" data-value="discount-platform" aria-pressed="false">
-            Discount Platforms
           </button>
         </div>
       </div>
 
       <!-- Program Category Filter -->
       <div class="filter-group">
-        <label class="filter-group-label">Program Type</label>
+        <label class="filter-group-label" for="program-type-filter">Program Type</label>
         <div class="filter-buttons" role="group" aria-label="Filter by program type">
           <button class="filter-btn active" data-filter="program-type" data-value="all" aria-pressed="true">
             All Programs
@@ -72,15 +69,12 @@
           <button class="filter-btn" data-filter="program-type" data-value="emergency" aria-pressed="false">
             🆘 Emergency
           </button>
-          <button class="filter-btn" data-filter="program-type" data-value="discounts" aria-pressed="false">
-            🎟️ Discounts
-          </button>
         </div>
       </div>
 
       <!-- Location Filter -->
       <div class="filter-group">
-        <label class="filter-group-label">Location</label>
+        <label class="filter-group-label" for="location-filter">Location</label>
         <div class="filter-buttons" role="group" aria-label="Filter by location">
           <button class="filter-btn active" data-filter="location" data-value="all" aria-pressed="true">
             All Locations
@@ -100,12 +94,6 @@
           <button class="filter-btn" data-filter="location" data-value="north-bay" aria-pressed="false">
             North Bay
           </button>
-          <button class="filter-btn" data-filter="location" data-value="marin" aria-pressed="false">
-            Marin
-          </button>
-          <button class="filter-btn" data-filter="location" data-value="online" aria-pressed="false">
-            Online
-          </button>
         </div>
       </div>
 
@@ -124,9 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const filterButtons = document.querySelectorAll('[data-filter]');
   const resetButton = document.getElementById('reset-filters');
   const resultCount = document.querySelector('.result-number');
-  const programCards = document.querySelectorAll('[data-program-card="true"]');
-
-  console.log('Found ' + programCards.length + ' program cards');
+  const programCards = document.querySelectorAll('[data-program-card]');
 
   // Function to filter programs
   function filterPrograms() {
@@ -146,31 +132,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     programCards.forEach(card => {
       let shouldShow = true;
-      const cardTitle = (card.dataset.title || '').toLowerCase();
+      const cardTitle = card.dataset.title.toLowerCase();
+      const cardBenefit = (card.dataset.benefit || '').toLowerCase();
       const cardTags = (card.dataset.tags || '').split(',').map(t => t.trim().toLowerCase());
-      const cardType = (card.dataset.type || '').toLowerCase();
+      const cardInstitution = (card.dataset.institution || '').toLowerCase();
       const cardLocation = (card.dataset.location || '').toLowerCase();
-      const cardBenefit = (card.textContent || '').toLowerCase();
 
-      // Search filter - checks title, tags, type, location, and visible text
+      // Search filter
       if (searchTerm) {
         const matchesSearch =
           cardTitle.includes(searchTerm) ||
+          cardBenefit.includes(searchTerm) ||
           cardTags.some(tag => tag.includes(searchTerm)) ||
-          cardType.includes(searchTerm) ||
-          cardLocation.includes(searchTerm) ||
-          cardBenefit.includes(searchTerm);
+          cardInstitution.includes(searchTerm) ||
+          cardLocation.includes(searchTerm);
         if (!matchesSearch) shouldShow = false;
       }
 
-      // Institution type filter (using data-type)
-      if (shouldShow && activeFilters['type']) {
-        if (!activeFilters['type'].includes(cardType)) {
+      // Institution type filter
+      if (shouldShow && activeFilters['institution-type']) {
+        if (!activeFilters['institution-type'].includes(cardInstitution)) {
           shouldShow = false;
         }
       }
 
-      // Program type filter (using tags)
+      // Program type filter
       if (shouldShow && activeFilters['program-type']) {
         const hasMatchingTag = activeFilters['program-type'].some(filter =>
           cardTags.includes(filter)
