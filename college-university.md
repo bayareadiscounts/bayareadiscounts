@@ -22,7 +22,7 @@ _Always verify benefits and eligibility with your college or university as progr
 
 <div id="app">
   <div class="filters-container">
-    <input type="text" id="search" placeholder="Search programs (e.g., food, transit, berkeley)..." class="search-input">
+    <input type="text" id="search" placeholder="Search by program name, school, or benefit type..." class="search-input">
     
     <div class="filter-group">
       <label>Institution Type:</label>
@@ -357,11 +357,16 @@ document.addEventListener('DOMContentLoaded', function() {
     tag: ''
   };
 
-  // Fetch programs from Jekyll data
-  const programsData = {{ site.data.college-programs.programs | jsonify }};
-  allPrograms = programsData;
+  // Fetch programs from multiple Jekyll data files and combine them
+  const ccPrograms = {{ site.data.college-programs-cc.programs | jsonify }};
+  const csuPrograms = {{ site.data.college-programs-csu.programs | jsonify }};
+  const ucPrograms = {{ site.data.college-programs-uc.programs | jsonify }};
+  const privatePrograms = {{ site.data.college-programs-private.programs | jsonify }};
+  allPrograms = [...ccPrograms, ...csuPrograms, ...ucPrograms, ...privatePrograms];
 
-  // Handle search
+  console.log('Loaded', allPrograms.length, 'total programs (CC: 56, CSU: 26, UC: 28, Private: 44)');
+
+  // Handle search - supports multiple search terms
   searchInput.addEventListener('input', (e) => {
     activeFilters.search = e.target.value.toLowerCase();
     render();
@@ -389,17 +394,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function render() {
     const filtered = allPrograms.filter(program => {
-      // Search filter
-      const searchTerm = activeFilters.search;
-      if (searchTerm) {
-        const matchesSearch = 
-          program.title.toLowerCase().includes(searchTerm) ||
-          program.benefit.toLowerCase().includes(searchTerm) ||
-          program.institution.toLowerCase().includes(searchTerm) ||
-          program.tags.toLowerCase().includes(searchTerm) ||
-          program.location.toLowerCase().includes(searchTerm);
+      // Search filter - split by spaces to search for multiple terms
+      const searchTerms = activeFilters.search.split(/\s+/).filter(s => s.length > 0);
+      
+      if (searchTerms.length > 0) {
+        const searchableText = `${program.title} ${program.benefit} ${program.institution} ${program.tags} ${program.location}`.toLowerCase();
         
-        if (!matchesSearch) return false;
+        // All search terms must match somewhere in the program
+        const allTermsMatch = searchTerms.every(term => searchableText.includes(term));
+        
+        if (!allTermsMatch) return false;
       }
 
       // Type filter
