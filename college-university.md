@@ -5,6 +5,8 @@ description: Free and discounted benefits for Bay Area college and university st
 permalink: /college-university.html
 ---
 
+<link rel="stylesheet" href="/assets/css/college-filter-styles.css">
+
 <h1 style="display:none">College & University Student Resources</h1>
 
 <a href="https://bayareadiscounts.com" class="site-logo">
@@ -34,3 +36,5 @@ _Always verify benefits and eligibility with your college or university as progr
 
 _Last updated: December 12, 2025_  
 _This is a community-maintained resource. [Contribute on GitHub](https://github.com/bayareadiscounts/bayareadiscounts)_
+
+<script src="/assets/js/college-filter-script.js"></script>
