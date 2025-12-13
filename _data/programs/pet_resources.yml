@@ -21,17 +21,6 @@
   link: "https://berkeleyhumane.org/spay-the-bay/"
   link_text: "Schedule"
 
-- id: "dog-breed-assistance"
-  name: "Dog Breed-Specific Assistance Programs"
-  category: "Pet Resources"
-  area: "Nationwide"
-  eligibility:
-    - "🌎"
-  benefit: "Financial assistance for veterinary care for specific breeds (Dobermans, Labradors)"
-  timeframe: "Ongoing"
-  link: "https://doberman911.org"
-  link_text: "Find Program"
-
 - id: "hssv-pet-pantry"
   name: "HSSV Pet Pantry"
   category: "Pet Resources"

@@ -163,7 +163,6 @@
   eligibility:
     - "💳"
     - "👵"
-    - "🌎"
   benefit: "10% discount for shoppers 60+ and EBT card holders"
   timeframe: "Ongoing"
   link: "https://www.rainbow.coop"
@@ -172,13 +171,15 @@
 - id: "second-harvest-silicon-valley"
   name: "Second Harvest of Silicon Valley"
   category: "Food"
-  area: "Santa Clara County"
+  area:
+    - "Santa Clara County"
+    - "San Mateo County"
   eligibility:
     - "💳"
     - "🌎"
   benefit: "Free food resources, groceries, and fresh produce"
   timeframe: "Ongoing"
-  link: "https://www.shfb.org/"
+  link: "https://www.shfb.org/get-food/#tool"
   link_text: "Find Location"
 
 - id: "sf-marin-food-bank"
