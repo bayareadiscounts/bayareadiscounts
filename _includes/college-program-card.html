@@ -1,24 +1,27 @@
 <!-- College Program Card Component -->
 <!-- Place in _includes/college-program-card.html -->
-<!-- Usage: {% include college-program-card.html program=program %} -->
+<!-- Usage: {% include college-program-card.html program=program institution='Value' location='value' %} -->
+
+{% assign title = program.title | downcase | replace: ' ', '-' %}
+{% assign tags = program.tags | join: ',' | downcase %}
 
 <div
   class="program-card"
-  data-program-card
+  data-program-card="true"
   data-title="{{ program.title }}"
-  data-institution="{{ program.institution }}"
-  data-location="{{ program.location }}"
-  data-tags="{{ program.tags | join: ',' }}"
+  data-institution="{{ institution | downcase }}"
+  data-location="{{ location | downcase }}"
+  data-tags="{{ tags }}"
   role="article"
   aria-label="Program: {{ program.title }}"
 >
   <div class="program-card-header">
     <h3 class="program-name">{{ program.title }}</h3>
-    {% if program.institution %}
+    {% if institution %}
       <p class="program-meta">
-        <span class="program-college">{{ program.institution }}</span>
-        {% if program.location %}
-          <span class="program-location">{{ program.location }}</span>
+        <span class="program-college">{{ institution }}</span>
+        {% if location %}
+          <span class="program-location">{{ location }}</span>
         {% endif %}
       </p>
     {% endif %}

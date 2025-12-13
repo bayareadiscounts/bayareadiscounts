@@ -31,57 +31,44 @@ _Always verify benefits and eligibility with your college or university as progr
 {% include college-filter-ui.html %}
 
 <div id="search-results" class="programs-container">
-  <!-- Community Colleges -->
-  {% for college in site.data.college-programs.community_colleges %}
+  <!-- Community Colleges Programs -->
+  {% for college_key in site.data.college-programs.community_colleges %}
+    {% assign college = college_key[1] %}
     {% for program in college.programs %}
-      {% assign location = college.name | downcase | replace: ' ', '-' %}
-      {% include college-program-card.html 
-        program=program 
-        institution="Community College"
-        location=location
-      %}
+      {% assign location = college_key[0] | downcase | replace: '_', '-' %}
+      {% include college-program-card.html program=program institution='Community College' location=location %}
     {% endfor %}
   {% endfor %}
 
   <!-- Discount Platforms -->
   {% for platform in site.data.college-programs.discount_platforms.student_verification %}
-    {% include college-program-card.html 
-      program=platform 
-      institution="Discount Platform"
-      location="online"
-    %}
+    {% include college-program-card.html program=platform institution='Discount Platform' location='online' %}
   {% endfor %}
 
-  <!-- CSU Universities -->
-  {% for csu in site.data.college-programs.csu_universities %}
+  <!-- CSU Universities Programs -->
+  {% for csu_key in site.data.college-programs.csu_universities %}
+    {% assign csu = csu_key[1] %}
     {% for program in csu.programs %}
-      {% include college-program-card.html 
-        program=program 
-        institution="CSU"
-        location=csu.location | downcase | replace: ' ', '-'
-      %}
+      {% assign location = csu.location | downcase | replace: ' ', '-' | replace: '/', '-' %}
+      {% include college-program-card.html program=program institution='CSU' location=location %}
     {% endfor %}
   {% endfor %}
 
-  <!-- UC Universities -->
-  {% for uc in site.data.college-programs.uc_universities %}
+  <!-- UC Universities Programs -->
+  {% for uc_key in site.data.college-programs.uc_universities %}
+    {% assign uc = uc_key[1] %}
     {% for program in uc.programs %}
-      {% include college-program-card.html 
-        program=program 
-        institution="UC"
-        location=uc.location | downcase | replace: ' ', '-'
-      %}
+      {% assign location = uc.location | downcase | replace: ' ', '-' | replace: '/', '-' %}
+      {% include college-program-card.html program=program institution='UC' location=location %}
     {% endfor %}
   {% endfor %}
 
-  <!-- Private Universities -->
-  {% for uni in site.data.college-programs.private_universities %}
+  <!-- Private Universities Programs -->
+  {% for uni_key in site.data.college-programs.private_universities %}
+    {% assign uni = uni_key[1] %}
     {% for program in uni.programs %}
-      {% include college-program-card.html 
-        program=program 
-        institution="Private University"
-        location=uni.location | downcase | replace: ' ', '-'
-      %}
+      {% assign location = uni.location | downcase | replace: ' ', '-' | replace: '/', '-' %}
+      {% include college-program-card.html program=program institution='Private University' location=location %}
     {% endfor %}
   {% endfor %}
 </div>
