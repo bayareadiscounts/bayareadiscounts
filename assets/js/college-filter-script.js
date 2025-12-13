@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Search filter
       if (searchTerm && searchTerm.length > 0) {
-        const matchesSearch =
-          cardTitle.includes(searchTerm) ||
+        const matchesSearch = 
+          cardTitle.includes(searchTerm) || 
           cardBenefit.includes(searchTerm) ||
           cardTags.some(tag => tag.includes(searchTerm)) ||
           cardInstitution.includes(searchTerm) ||
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Program type filter (tags on card)
       if (shouldShow && activeFilters['program-type'] && activeFilters['program-type'].length > 0) {
-        const hasMatchingTag = activeFilters['program-type'].some(filter =>
+        const hasMatchingTag = activeFilters['program-type'].some(filter => 
           cardTags.includes(filter)
         );
         if (!hasMatchingTag) {
