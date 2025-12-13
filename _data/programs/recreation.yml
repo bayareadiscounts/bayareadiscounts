@@ -4,15 +4,15 @@
   category: "Recreation"
   area: "Nationwide"
   eligibility:
-    - "👵"  # Seniors
-    - "🎖️"  # Military/Veterans
-    - "🧑‍🦽"  # Disability
+    - "👵"
+    - "🎖️"
+    - "🧑‍🦽"
   benefit: "Covers entrance and day-use fees at federal recreation lands (National Parks, Fish & Wildlife, Forest Service, BLM, Bureau of Reclamation, Army Corps)."
   how_to_use: "Purchase online or at federal recreation sites; may cover one vehicle or up to 4 people"
   timeframe: "Ongoing"
   link: "https://www.nps.gov/planyourvisit/passes.htm#america-the-beautiful-passes"
   link_text: "Get Pass"
-  
+
 - id: "ca-state-parks-adventure-pass"
   name: "California State Parks Adventure Pass"
   category: "Recreation"
@@ -24,8 +24,8 @@
   timeframe: "Ongoing (funded through 2026)"
   link: "https://www.reservecalifornia.com/"
   link_text: "Apply"
-  
-  - id: "ca-state-parks-disabled-discount"
+
+- id: "ca-state-parks-disabled-discount"
   name: "California State Parks Disabled Discount Pass"
   category: "Recreation"
   area: "Statewide"
@@ -73,9 +73,8 @@
   timeframe: "Annual (calendar year)"
   link: "https://www.parks.ca.gov/?page_id=1049"
   link_text: "Purchase"
-  
-  # Museums
 
+# Museums
 - id: "museums-for-all"
   name: "Museums for All"
   category: "Museums"
