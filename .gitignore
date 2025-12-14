@@ -1,0 +1,27 @@
+# Jekyll build output
+_site/
+
+# Jekyll caches
+.jekyll-cache/
+.jekyll-metadata
+
+# Sass cache
+.sass-cache/
+
+# Bundler vendor/bundle
+vendor/
+
+# Node modules if present
+node_modules/
+
+# OS & editor files
+.DS_Store
+*.swp
+*~
+
+# Ruby version files
+.ruby-version
+
+# Temporary files
+*.tmp
+*.bak
