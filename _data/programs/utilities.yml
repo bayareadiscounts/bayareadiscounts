@@ -21,8 +21,8 @@
   timeframe: "Ongoing"
   link: "https://www.californialifeline.com"
   link_text: "Apply"
-  
-  - id: "cid-borrow-battery"
+
+- id: "cid-borrow-battery"
   name: "CID Borrow a Backup Battery"
   category: "Utilities"
   area: "San Mateo County"
@@ -435,7 +435,7 @@
   how_to_use: "Apply through Bureau of Automotive Repair"
   timeframe: "Ongoing"
   link: "https://www.bar.ca.gov/cap/retirement"
-  link_text: "Check Eligbility"
+  link_text: "Check Eligibility"
 
 - id: "dcap-clean-cars"
   name: "Driving Clean Assistance Program: Clean Cars 4 All"
@@ -447,7 +447,7 @@
   how_to_use: "Apply BEFORE trading in car"
   timeframe: "Ongoing"
   link: "https://drivingcleanca.org/about-us/dcap-eligibility/"
-  link_text: "Check Eligibilty"
+  link_text: "Check Eligibility"
 
 - id: "federal-ev-charger-credit"
   name: "Home EV Charger Federal Tax Credit"
@@ -594,6 +594,18 @@
   link: "https://www.quitcarbon.com/blog/quitcarbonrebate"
   link_text: "Learn More"
 
+- id: "recology-discount"
+  name: "Recology 25% Low-Income Discount Program"
+  category: "Utilities"
+  area: "San Francisco"
+  eligibility:
+    - "💳"
+  benefit: "25% discount on garbage collection bills for qualifying customers"
+  how_to_use: "Apply through Recology San Francisco"
+  timeframe: "Ongoing"
+  link: "https://www.sf.gov/additional-refuse-ratepayer-resources"
+  link_text: "Apply"
+
 - id: "redwood-city-electrification"
   name: "Building Electrification Rebate Program"
   category: "Utilities"
@@ -640,7 +652,7 @@
   benefit: "$500 rebate for city residents to install solar; can combine with federal tax credits"
   how_to_use: "Apply through City of Redwood City"
   timeframe: "Ongoing"
-  link: "hhttps://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates"
+  link: "https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates"
   link_text: "Apply"
 
 - id: "rising-sun-green-house"
@@ -654,6 +666,18 @@
   timeframe: "While funds last"
   link: "https://risingsunopp.org/programs/ghc/"
   link_text: "Complete the Survey"
+
+- id: "sfpuc-cap"
+  name: "SFPUC Customer Assistance Program (CAP)"
+  category: "Utilities"
+  area: "San Francisco"
+  eligibility:
+    - "💳"
+  benefit: "Increased 40% discount on water and sewer bills; protections from shutoffs/late fees for CAP participants"
+  how_to_use: "Enroll through SFPUC; show eligibility"
+  timeframe: "Ongoing"
+  link: "https://www.sfpuc.org"
+  link_text: "Apply"
 
 - id: "thermostat-care-mercury"
   name: "Mercury Thermostat Recycling Rebate"
