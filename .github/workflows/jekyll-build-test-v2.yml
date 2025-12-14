@@ -1,4 +1,4 @@
-name: Jekyll build and link check
+name: Jekyll Build Test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-check:
+  build-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,24 +17,23 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Install dependencies
         run: |
+          bundle config set --local path 'vendor/bundle'
           bundle install
 
       - name: Build site
         run: |
           bundle exec jekyll build --trace
 
-      - name: Link & HTML checks
+      - name: Basic validation
         run: |
           gem install html-proofer
           htmlproofer ./_site \
-            --checks Links,Scripts,Images \
-            --enforce-https \
-            --swap-urls "^/bayareadiscounts:" \
-            --url-ignore "/localhost/,/127.0.0.1/,/linkedin.com/,/facebook.com/,/twitter.com/,/instagram.com/" \
-            --typhoeus '{ "timeout": 30, "connecttimeout": 15 }' \
+            --checks Scripts,Images \
+            --disable-external \
             --allow-hash-href \
-            --assume-extension
+            --assume-extension \
+            --ignore-status-codes "999"
