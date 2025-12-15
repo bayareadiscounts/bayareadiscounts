@@ -90,15 +90,27 @@ This is a community-maintained resource—if you notice outdated information or 
 <br>
 
 <div id="app">
-  <div class="search-panel">
+  <div class="search-panel active" aria-label="Search and filter programs">
     <div class="search-container">
-      <input type="text" id="search" placeholder="Search by program name, school, or benefit type..." class="search-input">
+      <!-- Search Input -->
+      <div class="search-field">
+        <label for="search" class="sr-only">Search programs</label>
+        <input 
+          type="search" 
+          id="search" 
+          placeholder="Search by program name, school, or benefit type..." 
+          aria-label="Search programs"
+          class="search-input">
+        <span class="results-count" aria-live="polite" aria-atomic="true"></span>
+      </div>
       
+      <!-- Filter Section -->
       <div class="filters-section">
+        <!-- Institution Type Filters -->
         <div class="filter-group">
-          <div class="filter-group-label">Institution Type</div>
+          <h3 class="filter-group-label">Institution Type</h3>
           <div class="filter-buttons">
-            <button class="filter-btn" data-filter="type" data-value="">All</button>
+            <button class="filter-btn active" data-filter="type" data-value="">All</button>
             <button class="filter-btn" data-filter="type" data-value="community-college">Community Colleges</button>
             <button class="filter-btn" data-filter="type" data-value="csu">CSU</button>
             <button class="filter-btn" data-filter="type" data-value="uc">UC</button>
@@ -106,10 +118,11 @@ This is a community-maintained resource—if you notice outdated information or 
           </div>
         </div>
 
+        <!-- Location Filters -->
         <div class="filter-group">
-          <div class="filter-group-label">Location</div>
+          <h3 class="filter-group-label">Location</h3>
           <div class="filter-buttons">
-            <button class="filter-btn" data-filter="location" data-value="">All</button>
+            <button class="filter-btn active" data-filter="location" data-value="">All</button>
             <button class="filter-btn" data-filter="location" data-value="san-francisco">San Francisco</button>
             <button class="filter-btn" data-filter="location" data-value="east-bay">East Bay</button>
             <button class="filter-btn" data-filter="location" data-value="peninsula">Peninsula</button>
@@ -118,10 +131,11 @@ This is a community-maintained resource—if you notice outdated information or 
           </div>
         </div>
 
+        <!-- Program Type Filters -->
         <div class="filter-group">
-          <div class="filter-group-label">Program Type</div>
+          <h3 class="filter-group-label">Program Type</h3>
           <div class="filter-buttons">
-            <button class="filter-btn" data-filter="tag" data-value="">All</button>
+            <button class="filter-btn active" data-filter="tag" data-value="">All</button>
             <button class="filter-btn" data-filter="tag" data-value="food">Food</button>
             <button class="filter-btn" data-filter="tag" data-value="transit">Transit</button>
             <button class="filter-btn" data-filter="tag" data-value="housing">Housing</button>
@@ -133,10 +147,6 @@ This is a community-maintained resource—if you notice outdated information or 
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="results-count">
-    Showing <span id="count">0</span> programs
   </div>
 
   <div id="results" class="programs-container"></div>
@@ -178,6 +188,19 @@ This is a community-maintained resource—if you notice outdated information or 
   --radius-lg: 0.75rem;
 }
 
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 #app {
   max-width: 1200px;
   margin: 2rem auto;
@@ -196,6 +219,10 @@ This is a community-maintained resource—if you notice outdated information or 
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.search-field {
+  position: relative;
 }
 
 #search {
@@ -234,6 +261,7 @@ This is a community-maintained resource—if you notice outdated information or 
   color: var(--neutral-700);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
 .filter-buttons {
@@ -276,8 +304,9 @@ This is a community-maintained resource—if you notice outdated information or 
 .results-count {
   font-size: var(--text-base);
   color: var(--neutral-600);
-  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
   font-weight: 500;
+  display: block;
 }
 
 .programs-container {
@@ -423,7 +452,7 @@ This is a community-maintained resource—if you notice outdated information or 
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --neutral-50: #f9fafb;
+    --neutral-50: #1c2128;
     --neutral-100: #1c2128;
     --neutral-200: #30363d;
     --neutral-600: #79d8eb;
@@ -459,6 +488,12 @@ This is a community-maintained resource—if you notice outdated information or 
     background: #21262d;
     color: #e8eef5;
     border-color: #30363d;
+  }
+
+  .filter-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.1);
   }
 
   .filter-btn.active {
@@ -514,6 +549,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('search');
   const resultsContainer = document.getElementById('results');
   const filterButtons = document.querySelectorAll('.filter-btn');
+  const resultsCount = document.querySelector('.results-count');
   
   let allPrograms = [];
   let activeFilters = {
@@ -530,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const privatePrograms = {{ site.data.college-university.college-programs-private.programs | jsonify }};
   allPrograms = [...ccPrograms, ...csuPrograms, ...ucPrograms, ...privatePrograms];
 
-  console.log('Loaded', allPrograms.length, 'total programs (CC: 56, CSU: 26, UC: 28, Private: 44)');
+  console.log('Loaded', allPrograms.length, 'total programs');
 
   // Handle search - supports multiple search terms
   searchInput.addEventListener('input', (e) => {
@@ -603,8 +639,17 @@ document.addEventListener('DOMContentLoaded', function() {
       return true;
     });
 
+    // Update count
+    resultsCount.textContent = `Showing ${filtered.length} ${filtered.length === 1 ? 'program' : 'programs'}`;
+
     // Clear results
     resultsContainer.innerHTML = '';
+
+    // Show "no results" message if needed
+    if (filtered.length === 0) {
+      resultsContainer.innerHTML = '<div class="no-results">No programs match your search. Try different filters or search terms.</div>';
+      return;
+    }
 
     // Render filtered programs
     filtered.forEach(program => {
@@ -628,13 +673,6 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       resultsContainer.appendChild(card);
     });
-
-    // Update count - always update after filtering
-    const resultText = filtered.length === 1 ? '1 program' : `${filtered.length} programs`;
-    const countElement = document.querySelector('.results-count');
-    if (countElement) {
-      countElement.textContent = `Showing ${resultText}`;
-    }
   }
 
   // Initial render
@@ -643,6 +681,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 ---
-
-_Last updated: December 12, 2025_  
-_This is a community-maintained resource. [Contribute on GitHub](https://github.com/bayareadiscounts/bayareadiscounts)_
