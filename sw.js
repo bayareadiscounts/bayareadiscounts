@@ -2,7 +2,6 @@ const CACHE_NAME = 'bay-area-benefits-v2';
 const urlsToCache = [
   '/',
   '/students.html',
-  '/nonprofit-resources.html',
   '/assets/css/vision-pro-optimized.css',
   '/assets/css/accessibility-toolbar.css',
   '/assets/css/read-more.css',
