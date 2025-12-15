@@ -1,7 +1,7 @@
 /**
  * Bay Area Discounts - Search & Filter System
  * Provides client-side full-text search and dynamic filtering
- * Optimized for responsive design
+ * Optimized for Vision Pro and responsive design
  */
 
 class DiscountSearchFilter {
