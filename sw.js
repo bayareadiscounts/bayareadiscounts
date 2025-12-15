@@ -1,8 +1,14 @@
-const CACHE_NAME = 'bay-area-benefits-v1';
+const CACHE_NAME = 'bay-area-benefits-v2';
 const urlsToCache = [
   '/',
   '/students.html',
-  '/nonprofit_resources_section.html',
+  '/nonprofit-resources.html',
+  '/assets/css/vision-pro-optimized.css',
+  '/assets/css/accessibility-toolbar.css',
+  '/assets/css/read-more.css',
+  '/assets/js/search-filter.js',
+  '/assets/js/accessibility-toolbar.js',
+  '/assets/js/read-more.js',
   '/assets/images/favicons/favicon-96x96.png',
   '/assets/images/favicons/favicon.svg',
   '/assets/images/favicons/apple-touch-icon.png',
@@ -17,6 +23,9 @@ self.addEventListener('install', event => {
       .then(cache => {
         console.log('Opened cache');
         return cache.addAll(urlsToCache);
+      })
+      .catch(err => {
+        console.error('Cache installation failed:', err);
       })
   );
 });

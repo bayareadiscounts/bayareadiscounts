@@ -68,7 +68,7 @@
       
       <div class="a11y-control-group">
         <label for="font-size-control">Text Size</label>
-        <div class="a11y-buttons">
+        <div class="a11y-buttons" id="font-size-control" role="group" aria-label="Text size controls">
           <button class="a11y-btn" id="decrease-font" aria-label="Decrease text size">A-</button>
           <span class="a11y-value" id="font-size-display" aria-live="polite">${settings.fontSize}%</span>
           <button class="a11y-btn" id="increase-font" aria-label="Increase text size">A+</button>
@@ -81,7 +81,7 @@
           <div class="toggle-switch ${settings.highContrast ? 'active' : ''}" 
                role="switch" 
                aria-checked="${settings.highContrast}"
-               aria-label="Toggle high contrast mode"
+               aria-labelledby="high-contrast-label"
                tabindex="0"
                id="high-contrast-toggle"></div>
         </div>
@@ -91,7 +91,7 @@
           <div class="toggle-switch ${settings.dyslexiaFont ? 'active' : ''}" 
                role="switch" 
                aria-checked="${settings.dyslexiaFont}"
-               aria-label="Toggle dyslexia-friendly font"
+               aria-labelledby="dyslexia-font-label"
                tabindex="0"
                id="dyslexia-font-toggle"></div>
         </div>
@@ -101,7 +101,7 @@
           <div class="toggle-switch ${settings.focusMode ? 'active' : ''}" 
                role="switch" 
                aria-checked="${settings.focusMode}"
-               aria-label="Toggle enhanced focus indicators"
+               aria-labelledby="focus-mode-label"
                tabindex="0"
                id="focus-mode-toggle"></div>
         </div>
@@ -111,7 +111,7 @@
           <div class="toggle-switch ${settings.keyboardNavHelper ? 'active' : ''}" 
                role="switch" 
                aria-checked="${settings.keyboardNavHelper}"
-               aria-label="Toggle keyboard navigation helper"
+               aria-labelledby="keyboard-nav-label"
                tabindex="0"
                id="keyboard-nav-toggle"></div>
         </div>
