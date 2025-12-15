@@ -67,8 +67,8 @@
       <h3 id="a11y-title">♿ Accessibility Options</h3>
       
       <div class="a11y-control-group">
-        <label for="font-size-control">Text Size</label>
-        <div class="a11y-buttons" id="font-size-control" role="group" aria-label="Text size controls">
+        <span id="font-size-label">Text Size</span>
+        <div class="a11y-buttons" id="font-size-control" role="group" aria-labelledby="font-size-label">
           <button class="a11y-btn" id="decrease-font" aria-label="Decrease text size">A-</button>
           <span class="a11y-value" id="font-size-display" aria-live="polite">${settings.fontSize}%</span>
           <button class="a11y-btn" id="increase-font" aria-label="Increase text size">A+</button>
