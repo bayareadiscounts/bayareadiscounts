@@ -69,6 +69,12 @@ As a community driven project, we work to keep information current. However, ava
 
 <br>
 
+<!-- Action buttons -->
+<div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+  {% include share-button.html %}
+  {% include print-button.html %}
+</div>
+
 <div id="app">
   <div class="search-panel active" aria-label="Search and filter programs">
     <div class="search-container">
@@ -132,6 +138,10 @@ As a community driven project, we work to keep information current. However, ava
   <div id="results" class="programs-container"></div>
 </div>
 
+{% include mobile-filter-drawer.html %}
+{% include back-to-top.html %}
+
+<!-- Load CSS -->
 <style>
 :root {
   /* Spacing for Vision Pro interaction */
@@ -524,6 +534,12 @@ As a community driven project, we work to keep information current. However, ava
 }
 </style>
 
+<!-- Load JavaScript -->
+<script src="/assets/js/url-sharing.js"></script>
+<script src="/assets/js/keyboard-shortcuts.js"></script>
+<script src="/assets/js/simple-analytics.js"></script>
+
+<!-- Student page JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('search');
@@ -547,11 +563,28 @@ document.addEventListener('DOMContentLoaded', function() {
   allPrograms = [...ccPrograms, ...csuPrograms, ...ucPrograms, ...privatePrograms];
 
   console.log('Loaded', allPrograms.length, 'total programs');
+  
+  // URL sharing integration
+  const urlSharing = new URLSharing();
+  const initialState = urlSharing.getInitialState();
+  
+  // Apply initial search from URL
+  if (initialState.search) {
+    searchInput.value = initialState.search;
+    activeFilters.search = initialState.search.toLowerCase();
+  }
 
   // Handle search - supports multiple search terms
+  let searchTimeout;
   searchInput.addEventListener('input', (e) => {
     activeFilters.search = e.target.value.toLowerCase();
     render();
+    
+    // Update URL after typing stops
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      updateURL();
+    }, 500);
   });
 
   // Helper function to format location names
@@ -584,8 +617,34 @@ document.addEventListener('DOMContentLoaded', function() {
       // Update filter
       activeFilters[filterType] = filterValue;
       render();
+      updateURL();
     });
   });
+  
+  // Update URL with current filters
+  function updateURL() {
+    const filters = {
+      search: searchInput.value,
+      type: activeFilters.type,
+      location: activeFilters.location,
+      tag: activeFilters.tag
+    };
+    urlSharing.updateURL(filters);
+  }
+  
+  // Apply initial filters from URL
+  if (initialState.type) {
+    const typeBtn = document.querySelector(`[data-filter="type"][data-value="${initialState.type}"]`);
+    if (typeBtn) typeBtn.click();
+  }
+  if (initialState.location) {
+    const locBtn = document.querySelector(`[data-filter="location"][data-value="${initialState.location}"]`);
+    if (locBtn) locBtn.click();
+  }
+  if (initialState.tag) {
+    const tagBtn = document.querySelector(`[data-filter="tag"][data-value="${initialState.tag}"]`);
+    if (tagBtn) tagBtn.click();
+  }
 
   function render() {
     const filtered = allPrograms.filter(program => {
@@ -659,5 +718,3 @@ document.addEventListener('DOMContentLoaded', function() {
   render();
 });
 </script>
-
----

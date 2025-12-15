@@ -1,0 +1,65 @@
+<button class="lang-switch" id="lang-switch" aria-label="Cambiar idioma / Switch language">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" y1="12" x2="22" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+  </svg>
+  <span id="lang-switch-text">ES</span>
+</button>
+
+<style>
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 48px;
+}
+
+.lang-switch:hover {
+  background: #f9fafb;
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.lang-switch:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.lang-switch svg {
+  flex-shrink: 0;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .lang-switch {
+    background: #21262d;
+    border-color: #30363d;
+    color: #e8eef5;
+  }
+  
+  .lang-switch:hover {
+    background: #30363d;
+    border-color: #2563eb;
+    color: #79d8eb;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .lang-switch {
+    width: 100%;
+    justify-content: center;
+  }
+}
+</style>

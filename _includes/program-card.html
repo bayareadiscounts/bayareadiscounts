@@ -8,16 +8,39 @@
   data-eligibility="{{ include.program.eligibility | join: ' ' }}"
 >
   <div class="program-card-header">
-    <h3 class="program-name">{{ include.program.name }}</h3>
-    <div class="program-meta">
-        {% if include.program.area[0] %}
-          {% for area in include.program.area %}
-            <span class="program-area">{{ area }}</span>
-          {% endfor %}
-        {% else %}
-          <span class="program-area">{{ include.program.area }}</span>
+    <div style="flex: 1;">
+      <h3 class="program-name">{{ include.program.name }}</h3>
+      <div class="program-meta">
+          {% if include.program.area[0] %}
+            {% for area in include.program.area %}
+              <span class="program-area">{{ area }}</span>
+            {% endfor %}
+          {% else %}
+            <span class="program-area">{{ include.program.area }}</span>
+          {% endif %}
+        <span class="program-category">{{ include.program.category }}</span>
+      </div>
+    </div>
+    
+    <!-- Badges for new/verified programs -->
+    <div class="program-badges">
+      {% if include.program.added_date %}
+        {% assign added_date = include.program.added_date | date: "%s" %}
+        {% assign current_date = "now" | date: "%s" %}
+        {% assign days_diff = current_date | minus: added_date | divided_by: 86400 %}
+        {% if days_diff <= 30 %}
+          <span class="program-badge program-badge-new">New</span>
         {% endif %}
-      <span class="program-category">{{ include.program.category }}</span>
+      {% endif %}
+      
+      {% if include.program.verified_date %}
+        <span class="program-verified" title="Last verified {{ include.program.verified_date }}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          {{ include.program.verified_date | date: "%b %Y" }}
+        </span>
+      {% endif %}
     </div>
   </div>
 
@@ -32,7 +55,7 @@
   {% endif %}
 
   <p class="program-benefit" data-benefit="{{ include.program.benefit }}">
-    {{ program.benefit }}
+    {{ include.program.benefit }}
   </p>
 
   <div class="program-footer">
@@ -42,3 +65,99 @@
     </a>
   </div>
 </article>
+
+<style>
+/* Badge styles */
+.program-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.program-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.program-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.program-badge-new {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.program-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  color: #059669;
+  padding: 0.25rem 0.625rem;
+  background: #d1fae5;
+  border-radius: 0.375rem;
+  font-weight: 500;
+}
+
+.program-verified svg {
+  flex-shrink: 0;
+}
+
+/* Warning for old dates (>6 months) */
+.program-verified.stale {
+  color: #d97706;
+  background: #fef3c7;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .program-badge-new {
+    background: #1e3a8a;
+    color: #93c5fd;
+  }
+  
+  .program-verified {
+    background: #064e3b;
+    color: #6ee7b7;
+  }
+  
+  .program-verified.stale {
+    background: #78350f;
+    color: #fcd34d;
+  }
+}
+</style>
+
+<script>
+// Check if verification date is stale (>6 months old) - runs once on page load
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.program-verified').forEach(badge => {
+    const verifiedText = badge.textContent.trim();
+    const match = verifiedText.match(/(\w+)\s+(\d{4})/);
+    
+    if (match) {
+      const monthYear = `${match[1]} 1, ${match[2]}`;
+      const verifiedDate = new Date(monthYear);
+      const now = new Date();
+      const monthsDiff = (now - verifiedDate) / (1000 * 60 * 60 * 24 * 30);
+      
+      if (monthsDiff > 6) {
+        badge.classList.add('stale');
+        badge.title = `Last verified ${match[1]} ${match[2]} - information may be outdated`;
+      }
+    }
+  });
+});
+</script>
