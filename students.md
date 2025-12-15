@@ -70,10 +70,7 @@ As a community driven project, we work to keep information current. However, ava
 <br>
 
 <!-- Action buttons -->
-<div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
-  {% include share-button.html %}
-  {% include print-button.html %}
-</div>
+{% include share-button.html %}
 
 <div id="app">
   <div class="search-panel active" aria-label="Search and filter programs">

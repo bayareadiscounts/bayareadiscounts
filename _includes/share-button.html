@@ -1,18 +1,21 @@
-<button id="share-search" class="share-btn" aria-label="Share current search" title="Share this search">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="18" cy="5" r="3"></circle>
-    <circle cx="6" cy="12" r="3"></circle>
-    <circle cx="18" cy="19" r="3"></circle>
-    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-  </svg>
-  <span>Share Search</span>
-</button>
+<!-- Share button - simplified and working -->
+<div class="action-buttons" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+  <button id="share-search" class="action-btn" aria-label="Share current search" title="Share this search">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="5" r="3"></circle>
+      <circle cx="6" cy="12" r="3"></circle>
+      <circle cx="18" cy="19" r="3"></circle>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+    </svg>
+    <span>Share Search</span>
+  </button>
+</div>
 
 <div id="share-tooltip" class="share-tooltip" role="status" aria-live="polite"></div>
 
 <style>
-.share-btn {
+.action-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -28,19 +31,19 @@
   min-height: 48px;
 }
 
-.share-btn:hover {
+.action-btn:hover {
   background: #f9fafb;
   border-color: #2563eb;
   color: #2563eb;
 }
 
-.share-btn:focus {
+.action-btn:focus {
   outline: none;
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-.share-btn svg {
+.action-btn svg {
   flex-shrink: 0;
 }
 
@@ -68,7 +71,11 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .share-btn {
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-btn {
     width: 100%;
     justify-content: center;
   }
@@ -76,16 +83,23 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  .share-btn {
+  .action-btn {
     background: #21262d;
     border-color: #30363d;
     color: #e8eef5;
   }
   
-  .share-btn:hover {
+  .action-btn:hover {
     background: #30363d;
     border-color: #2563eb;
     color: #79d8eb;
+  }
+}
+
+/* Hide in print */
+@media print {
+  .action-buttons {
+    display: none !important;
   }
 }
 </style>
