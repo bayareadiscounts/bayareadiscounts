@@ -1,0 +1,176 @@
+<header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Bay Area Discounts - Home">
+      <img src="/assets/images/logo/banner.svg"
+           alt="Bay Area Discounts">
+    </a>
+    
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">All Programs</a></li>
+        <li><a href="/students.html" class="nav-link">Student Resources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-logo {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.site-logo img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.2s ease;
+}
+
+.site-logo:hover img {
+  opacity: 0.85;
+}
+
+.site-nav {
+  width: 100%;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  min-height: 48px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.nav-link:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Active page styling */
+.nav-link[aria-current="page"] {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link[aria-current="page"]:hover {
+  background: #1e40af;
+  color: white;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .site-logo img {
+    max-width: 280px;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  
+  .nav-link {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .site-logo img {
+    max-width: 350px;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .site-header {
+    background: rgba(28, 33, 40, 0.95);
+    border-bottom-color: #30363d;
+  }
+  
+  .nav-link {
+    color: #c9d1d9;
+  }
+  
+  .nav-link:hover {
+    background: #30363d;
+    color: #79d8eb;
+  }
+  
+  .nav-link[aria-current="page"] {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .nav-link[aria-current="page"]:hover {
+    background: #1e40af;
+  }
+}
+
+/* Hidden h1 for SEO */
+h1.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+</style>
+
+<h1 class="sr-only">Bay Area Discounts</h1>
