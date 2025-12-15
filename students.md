@@ -15,12 +15,45 @@ permalink: /students.html
     
     navLinks.forEach(link => {
       const linkPath = new URL(link.href).pathname;
-      if (linkPath === currentPath || (currentPath === '/' && linkPath === '/')) {
+      if (linkPath === currentPath || linkPath + '.html' === currentPath) {
         link.setAttribute('aria-current', 'page');
       }
     });
   });
 </script>
+
+<style>
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #79d8eb;
+  }
+
+  p {
+    color: #c9d1d9;
+  }
+
+  a {
+    color: #79d8eb;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #79d8eb;
+  }
+
+  a:hover {
+    color: #a8e6f1;
+  }
+
+  .program-card p {
+    color: #c9d1d9;
+  }
+
+  .filter-section-title {
+    color: #c9d1d9;
+  }
+}
+</style>
 
 ## College & University Student Resources
 
@@ -615,7 +648,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>${program.how_to_use}</p>
           </div>
           <span class="program-timeframe">${program.timeframe}</span>
-          <a href="${program.link}" class="program-link" target="_blank" rel="noopener noreferrer">Learn More</a>
+          <a href="${program.link}" class="program-link" target="_blank" rel="noopener noreferrer">${program.link_text || 'Learn More'}</a>
         </div>
       `;
       resultsContainer.appendChild(card);
@@ -626,3 +659,5 @@ document.addEventListener('DOMContentLoaded', function() {
   render();
 });
 </script>
+
+---
