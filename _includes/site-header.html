@@ -1,14 +1,26 @@
 <header class="site-header">
   <div class="header-container">
-    <a href="/" class="site-logo" aria-label="Bay Area Discounts - Home">
-      <img src="/assets/images/logo/banner.svg"
+    <a href="{{ site.baseurl | default: '' }}/" class="site-logo" aria-label="Bay Area Discounts - Home">
+      <img src="{{ site.baseurl | default: '' }}/assets/images/logo/banner.svg"
            alt="Bay Area Discounts">
     </a>
     
     <nav class="site-nav" aria-label="Main navigation">
       <ul class="nav-menu">
-        <li><a href="/" class="nav-link">All Programs</a></li>
-        <li><a href="/students.html" class="nav-link">Student Resources</a></li>
+        <li>
+          <a href="{{ site.baseurl | default: '' }}/"
+             class="nav-link"
+             {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>
+            All Programs
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl | default: '' }}/students.html"
+             class="nav-link"
+             {% if page.url == '/students.html' %}aria-current="page"{% endif %}>
+            Student Resources
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
