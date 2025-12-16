@@ -30,6 +30,8 @@ As a community driven project, we work to keep information current. However, ava
 
 ---
 
+</div>
+
 <br>
 
 {% include search-filter-ui.html %}

@@ -8,7 +8,7 @@ permalink: /favorites.html
 
 {% include site-header.html %}
 
-<div class="container">
+<div class="container heading-dark-adjust">
   <h1>My Saved Programs</h1>
   <p>Saved programs stay on this device. To keep them elsewhere, save or share the program links.</p>
 

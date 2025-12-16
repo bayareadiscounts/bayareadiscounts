@@ -37,6 +37,8 @@ As a community driven project, we work to keep information current. However, ava
 
 ---
 
+</div>
+
 <br>
 
 <!-- Action buttons are rendered by layout via actions: true -->
