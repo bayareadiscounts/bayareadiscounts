@@ -69,7 +69,7 @@ As a community driven project, we work to keep information current. However, ava
   {% include search-filter-ui.html %}
 </div>
 
-<div id="search-results" class="programs-container">
+<div id="search-results" class="programs-container" role="region" aria-live="polite" aria-label="Search results">
 {% for category in site.data.programs %}
   {% for program in category[1] %}
     {% include program-card.html program=program %}

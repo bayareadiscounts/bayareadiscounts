@@ -135,7 +135,7 @@ As a community driven project, we work to keep information current. However, ava
     </div>
   </div>
 
-  <div id="results" class="programs-container"></div>
+  <div id="results" class="programs-container" role="region" aria-live="polite" aria-label="Search results"></div>
 </div>
 
 {% include mobile-filter-drawer.html %}
