@@ -99,6 +99,10 @@ As a community driven project, we work to keep information current. However, ava
             <button type="button" class="filter-btn" data-filter="tag" data-value="emergency">Emergency</button>
           </div>
         </div>
+
+        <button type="button" class="reset-btn" id="students-reset">
+          Clear All Filters
+        </button>
       </div>
     </div>
   </div>
@@ -257,6 +261,30 @@ As a community driven project, we work to keep information current. However, ava
   border-color: var(--primary);
   color: white;
   font-weight: 600;
+}
+
+.reset-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.25rem;
+  min-height: var(--touch-target-min);
+  background: var(--neutral-900);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.reset-btn:hover {
+  background: var(--primary);
+  transform: translateY(-1px);
+}
+
+.reset-btn:active {
+  transform: translateY(0);
 }
 
 .results-count {
@@ -460,6 +488,15 @@ As a community driven project, we work to keep information current. However, ava
     color: white;
   }
 
+  .reset-btn {
+    background: #30363d;
+    color: #e8eef5;
+  }
+
+  .reset-btn:hover {
+    background: var(--primary);
+  }
+
   .program-card {
     background: #1c2128;
     border-color: #30363d;
@@ -515,6 +552,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const resultsContainer = document.getElementById('results');
   const filterButtons = document.querySelectorAll('.filter-btn');
   const resultsCount = document.querySelector('.results-count');
+  const resetButton = document.getElementById('students-reset');
   
   let allPrograms = [];
   let activeFilters = {
@@ -589,6 +627,34 @@ document.addEventListener('DOMContentLoaded', function() {
       updateURL();
     });
   });
+
+  function resetAllFilters() {
+    ['type', 'location', 'tag'].forEach(filterType => {
+      document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      const allBtn = document.querySelector(`.filter-btn[data-filter="${filterType}"][data-value=""]`);
+      if (allBtn) {
+        allBtn.classList.add('active');
+      }
+    });
+
+    activeFilters = {
+      search: '',
+      type: '',
+      location: '',
+      tag: ''
+    };
+
+    searchInput.value = '';
+    render();
+    updateURL();
+  }
+
+  if (resetButton) {
+    resetButton.addEventListener('click', resetAllFilters);
+  }
   
   // Update URL with current filters
   function updateURL() {

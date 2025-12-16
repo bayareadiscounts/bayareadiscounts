@@ -111,24 +111,29 @@ class DiscountSearchFilter {
   handleFilter(event, btn) {
     const filterType = btn.getAttribute('data-filter-type');
     const filterValue = btn.getAttribute('data-filter-value');
+    const isAllButton = btn.getAttribute('data-all') === 'true';
 
-    // Toggle active state
-    btn.classList.toggle('active');
+    // Handle "All" buttons as exclusive per type
+    if (isAllButton) {
+      document.querySelectorAll(`[data-filter-type="${filterType}"]`).forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    } else {
+      const allBtn = document.querySelector(`[data-filter-type="${filterType}"][data-all="true"]`);
+      if (allBtn) {
+        allBtn.classList.remove('active');
+      }
 
-    // Get all active filters
-    const activeFilters = {
-      eligibility: Array.from(document.querySelectorAll('[data-filter-type="eligibility"].active'))
-        .map(b => b.getAttribute('data-filter-value')),
-      category: Array.from(document.querySelectorAll('[data-filter-type="category"].active'))
-        .map(b => b.getAttribute('data-filter-value')),
-      area: Array.from(document.querySelectorAll('[data-filter-type="area"].active'))
-        .map(b => b.getAttribute('data-filter-value'))
-    };
+      btn.classList.toggle('active');
 
-    // Check if ANY filters are active
-    const hasActiveFilters = activeFilters.eligibility.length > 0 ||
-                             activeFilters.category.length > 0 ||
-                             activeFilters.area.length > 0;
+      // If nothing remains active for this type, restore the "All" state
+      const remainingActive = document.querySelectorAll(`[data-filter-type="${filterType}"].active:not([data-all="true"])`);
+      if (remainingActive.length === 0 && allBtn) {
+        allBtn.classList.add('active');
+      }
+    }
+
+    const activeFilters = this.getActiveFilters();
+    const hasActiveFilters = Object.values(activeFilters).some(list => list.length > 0);
 
     // If no filters are active, show everything
     if (!hasActiveFilters) {
@@ -225,6 +230,11 @@ class DiscountSearchFilter {
       btn.classList.remove('active');
     });
 
+    // Reactivate each "All" button to show defaults
+    document.querySelectorAll(`${this.options.filterButtonsSelector}[data-all="true"]`).forEach(btn => {
+      btn.classList.add('active');
+    });
+
     // Clear search input
     if (this.searchInput) {
       this.searchInput.value = '';
@@ -238,6 +248,36 @@ class DiscountSearchFilter {
     this.updateResultsCount();
   }
 
+  /**
+   * Get active filters grouped by type (excludes "All" buttons)
+   */
+  getActiveFilters() {
+    const filtersByType = {};
+    const filterButtons = document.querySelectorAll(this.options.filterButtonsSelector);
+
+    filterButtons.forEach(btn => {
+      const type = btn.getAttribute('data-filter-type');
+      const isAll = btn.getAttribute('data-all') === 'true';
+      if (!type) return;
+
+      if (!filtersByType[type]) {
+        filtersByType[type] = [];
+      }
+
+      if (btn.classList.contains('active') && !isAll) {
+        filtersByType[type].push(btn.getAttribute('data-filter-value'));
+      }
+    });
+
+    ['eligibility', 'category', 'area'].forEach(type => {
+      if (!filtersByType[type]) {
+        filtersByType[type] = [];
+      }
+    });
+
+    return filtersByType;
+  }
+  
   /**
    * Show/hide search UI
    */
