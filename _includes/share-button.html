@@ -1,6 +1,6 @@
 <!-- Share button - simplified and working -->
 <div class="action-buttons" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
-  <button id="share-search" class="action-btn" aria-label="Share current search" title="Share this search">
+  <button class="action-btn share-search" type="button" aria-label="Share current search" title="Share this search">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="18" cy="5" r="3"></circle>
       <circle cx="6" cy="12" r="3"></circle>
@@ -106,12 +106,13 @@
 
 <script>
 (function() {
-  const shareBtn = document.getElementById('share-search');
+  const shareButtons = document.querySelectorAll('.share-search');
   const tooltip = document.getElementById('share-tooltip');
+
+  if (!shareButtons.length || !tooltip) return;
   
-  if (!shareBtn) return;
-  
-  shareBtn.addEventListener('click', async function() {
+  shareButtons.forEach((shareBtn) => {
+    shareBtn.addEventListener('click', async function() {
     const url = window.location.href;
     
     // Try native share API first (mobile)
@@ -128,15 +129,21 @@
     }
     
     // Fallback to clipboard
-    try {
-      await navigator.clipboard.writeText(url);
-      showTooltip('Link copied to clipboard!');
-    } catch (err) {
-      showTooltip('Failed to copy link');
-    }
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(url);
+          showTooltip('Link copied to clipboard!');
+        } else {
+          showTooltip('Clipboard not supported in this browser');
+        }
+      } catch (err) {
+        showTooltip('Failed to copy link');
+      }
+    });
   });
   
   function showTooltip(message) {
+    if (!tooltip) return;
     tooltip.textContent = message;
     tooltip.classList.add('show');
     
