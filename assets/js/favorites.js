@@ -5,6 +5,16 @@
 
   const favorites = {
     favorites: [],
+    list() {
+      return this.favorites.map(id => {
+        const el = document.querySelector(`.program-card[data-program-id="${id}"]`) || document.querySelector(`[data-program-id="${id}"]`);
+        const title = el?.querySelector('.program-name')?.textContent?.trim() || 'Saved program';
+        const linkEl = el?.querySelector('.program-link');
+        const url = linkEl?.getAttribute('href') || '#';
+        const linkText = linkEl?.textContent?.trim() || 'View program';
+        return { id, title, url, linkText };
+      });
+    },
     load() {
       try {
         const raw = localStorage.getItem(STORAGE_KEY);
@@ -58,7 +68,6 @@
         btn.setAttribute('aria-pressed', isFav ? 'true' : 'false');
         btn.setAttribute('title', isFav ? 'Saved' : 'Save');
         btn.setAttribute('aria-label', isFav ? 'Remove from saved' : 'Save program');
-        btn.onclick = () => this.toggle(id);
       });
     },
     updateUI() {
@@ -71,6 +80,13 @@
   favorites.updateUI();
 
   document.addEventListener('favoritesUpdated', () => favorites.updateUI());
+
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.favorite-toggle');
+    if (!btn) return;
+    const id = btn.dataset.programId;
+    favorites.toggle(id);
+  });
 
   window.favorites = favorites;
   document.dispatchEvent(new Event('favoritesReady'));

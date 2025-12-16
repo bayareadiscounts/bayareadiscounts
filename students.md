@@ -70,8 +70,10 @@ As a community driven project, we work to keep information current. However, ava
 <br>
 
 <!-- Action buttons -->
-{% include share-button.html %}
-{% include favorites-view.html %}
+<div class="actions-block" markdown="0">
+  {% include share-button.html %}
+  {% include favorites-view.html %}
+</div>
 
 <div id="app">
   <div class="search-panel active" aria-label="Search and filter programs">

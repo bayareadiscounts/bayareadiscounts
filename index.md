@@ -63,10 +63,11 @@ As a community driven project, we work to keep information current. However, ava
 <br>
 
 <!-- Action buttons -->
-{% include share-button.html %}
-{% include favorites-view.html %}
-
-{% include search-filter-ui.html %}
+<div class="actions-block" markdown="0">
+  {% include share-button.html %}
+  {% include favorites-view.html %}
+  {% include search-filter-ui.html %}
+</div>
 
 <div id="search-results" class="programs-container">
 {% for category in site.data.programs %}

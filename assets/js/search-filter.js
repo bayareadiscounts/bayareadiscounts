@@ -19,7 +19,7 @@ class DiscountSearchFilter {
     this.searchIndex = new Map();
     
     this.options = {
-      containerSelector: options.containerSelector || '.programs-container',
+      containerSelector: options.containerSelector || '#search-results',
       searchInputSelector: options.searchInputSelector || '#search-input',
       filterButtonsSelector: options.filterButtonsSelector || '.filter-btn',
       resultsSelector: options.resultsSelector || '#search-results',
@@ -33,7 +33,7 @@ class DiscountSearchFilter {
   init() {
     this.container = document.querySelector(this.options.containerSelector);
     this.searchInput = document.querySelector(this.options.searchInputSelector);
-    this.resultsContainer = document.querySelector(this.options.resultsSelector);
+    this.resultsContainer = document.querySelector(this.options.resultsSelector) || this.container;
     
     if (this.searchInput) {
       const debouncedSearch = debounce((e) => this.handleSearch(e));
@@ -41,9 +41,12 @@ class DiscountSearchFilter {
       this.searchInput.addEventListener('focus', () => this.showSearchUI());
     }
 
-    // Set up filter buttons
-    document.querySelectorAll(this.options.filterButtonsSelector).forEach(btn => {
-      btn.addEventListener('click', (e) => this.handleFilter(e));
+    // Set up filter buttons via event delegation
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest(this.options.filterButtonsSelector);
+      if (btn) {
+        this.handleFilter(e, btn);
+      }
     });
 
     this.buildSearchIndex();
@@ -53,7 +56,7 @@ class DiscountSearchFilter {
    * Build searchable index from all program cards
    */
   buildSearchIndex() {
-    const cards = document.querySelectorAll('[data-program]');
+    const cards = document.querySelectorAll('#search-results [data-program]');
     
     cards.forEach(card => {
       const programData = {
@@ -105,8 +108,7 @@ class DiscountSearchFilter {
   /**
    * Handle filter button clicks
    */
-  handleFilter(event) {
-    const btn = event.target;
+  handleFilter(event, btn) {
     const filterType = btn.getAttribute('data-filter-type');
     const filterValue = btn.getAttribute('data-filter-value');
 
@@ -172,25 +174,11 @@ class DiscountSearchFilter {
    * Render filtered programs
    */
   render() {
-    if (!this.resultsContainer) return;
+    const visibleIds = new Set(this.filteredPrograms.map(p => p.id));
 
-    this.resultsContainer.innerHTML = '';
-
-    if (this.filteredPrograms.length === 0) {
-      this.resultsContainer.innerHTML = `
-        <div class="no-results">
-          <p>No programs found matching your filters.</p>
-          <button class="reset-btn" onclick="searchFilter.resetFilters()">Clear Filters</button>
-        </div>
-      `;
-      return;
-    }
-
-    // Clone and display filtered programs
-    this.filteredPrograms.forEach(program => {
-      const clone = program.element.cloneNode(true);
-      clone.classList.add('search-result');
-      this.resultsContainer.appendChild(clone);
+    this.programs.forEach(program => {
+      const show = visibleIds.has(program.id);
+      program.element.style.display = show ? '' : 'none';
     });
 
     if (window.favorites && typeof window.favorites.updateUI === 'function') {
@@ -203,14 +191,11 @@ class DiscountSearchFilter {
    */
   resetResults() {
     this.filteredPrograms = [...this.programs];
-    
-    // If results container exists and is visible, show all programs
-    if (this.resultsContainer && this.resultsContainer.innerHTML !== '') {
-      this.render();
-    } else if (this.resultsContainer) {
-      this.resultsContainer.innerHTML = '';
-    }
-    
+
+    this.programs.forEach(program => {
+      program.element.style.display = '';
+    });
+
     this.updateResultsCount();
 
     if (window.favorites && typeof window.favorites.updateUI === 'function') {

@@ -7,7 +7,7 @@
     </div>
   </div>
   
-  <div id="favorites-list" class="programs-container">
+  <div id="favorites-list" class="favorites-list">
     <!-- Favorites will be rendered here -->
   </div>
   
@@ -67,6 +67,16 @@
   margin: 2rem auto;
   max-width: 1200px;
   padding: 0 1rem;
+}
+
+.favorites-list .favorite-row {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.favorites-list .favorite-row a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .favorites-header {
@@ -218,11 +228,11 @@
       });
     }
 
-    // Render favorites
+    // Render favorites (lightweight list, no cloning)
     function renderFavorites() {
-      const favoriteIds = Array.isArray(window.favorites.favorites) ? window.favorites.favorites : [];
+      const favs = typeof window.favorites.list === 'function' ? window.favorites.list() : [];
 
-      if (favoriteIds.length === 0) {
+      if (!favs.length) {
         favoritesList.innerHTML = '';
         noFavorites.style.display = 'block';
         return;
@@ -230,21 +240,11 @@
 
       noFavorites.style.display = 'none';
 
-      // Get all program cards and filter to favorites
-      const allCards = Array.from(document.querySelectorAll('.program-card'));
-      const favoriteCards = allCards.filter(card =>
-        favoriteIds.includes(card.dataset.programId)
-      );
+      const items = favs
+        .map(f => `<div class="favorite-row"><a href="${f.url}">${f.title}</a></div>`)
+        .join('');
 
-      // Clone and append favorite cards
-      favoritesList.innerHTML = '';
-      favoriteCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        favoritesList.appendChild(clone);
-      });
-
-      // Reinitialize favorites buttons
-      window.favorites.updateUI();
+      favoritesList.innerHTML = items;
     }
 
     document.addEventListener('favoritesUpdated', renderFavorites);

@@ -165,6 +165,12 @@ footer {
   margin-top: auto;
 }
 
+.actions-block {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 footer a {
   color: var(--text-link);
   text-decoration: underline;
