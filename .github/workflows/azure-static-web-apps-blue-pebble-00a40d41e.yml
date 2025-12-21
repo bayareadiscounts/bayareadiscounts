@@ -19,19 +19,31 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Build And Deploy
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Update Git commit date
+        run: ./scripts/update-git-date.sh
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+          PAGES_REPO_NWO: baytides/bayareadiscounts
+      
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLUE_PEBBLE_00A40D41E }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "_site" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          app_location: "_site"
+          skip_app_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -44,3 +56,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLUE_PEBBLE_00A40D41E }}
           action: "close"
+          app_location: "/"
