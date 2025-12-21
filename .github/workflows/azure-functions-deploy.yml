@@ -29,6 +29,9 @@ jobs:
         working-directory: azure-functions
         run: npm ci
 
+      - name: Install Azure Functions Core Tools
+        run: npm install -g azure-functions-core-tools@4 --unsafe-perm true
+
       - name: Login to Azure
         uses: azure/login@v1
         with:
