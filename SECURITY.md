@@ -12,7 +12,7 @@
 We take security seriously. If you discover a security vulnerability, please:
 
 1. **Do NOT** open a public issue
-2. Email security details to: **security [at] baytides [dot] org**
+2. Email security details to: **info [at] baytides [dot] org**
 3. Include:
    - Description of the vulnerability
    - Steps to reproduce
@@ -97,7 +97,7 @@ We follow responsible disclosure practices:
 
 ## Bug Bounty
 
-Currently, we do not offer a bug bounty program as this is an open-source community project. However, we deeply appreciate security research and will:
+Currently, we do not offer a bug bounty program as this is an open-source community project sponsored by a nonprofit organization. However, we deeply appreciate security research and will:
 
 - Publicly acknowledge contributions
 - Fast-track fixes for reported issues
@@ -108,15 +108,12 @@ Currently, we do not offer a bug bounty program as this is an open-source commun
 Security updates are released as soon as fixes are available:
 
 - **Critical**: Immediate deployment
-- **High**: Within 24 hours
+- **High**: Within 48 hours
 - **Medium/Low**: Next scheduled release
-
-Subscribe to releases to get notified: https://github.com/baytides/bayareadiscounts/releases
 
 ## Contact
 
-- **Security Issues**: security [at] baytides [dot] org
-- **General Contact**: hello [at] baytides [dot] org
+- **General Contact**: info [at] baytides [dot] org
 - **Project Maintainer**: [@baytides](https://github.com/baytides)
 
 ---

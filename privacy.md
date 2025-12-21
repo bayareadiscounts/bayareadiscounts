@@ -96,6 +96,10 @@ This website uses your browser's **local storage** exclusively for functionality
 
 **Legal Note**: Local storage data stored on your device is under your exclusive control and is not subject to our data practices or this privacy policy beyond the initial storage mechanism. We cannot access, view, modify, or delete this data. Only you, through your browser, have control over this information.
 
+### No Accounts or Email Subscriptions
+
+We do not offer user accounts, sign-in features, or email subscription services. All preferences (including the guided “Update Filters” step flow) are stored locally in your browser. We never collect, store, or process email addresses for notifications.
+
 ---
 
 ## Translation Feature {#translation-feature}

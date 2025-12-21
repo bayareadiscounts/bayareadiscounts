@@ -15,6 +15,7 @@ Thank you for your interest in contributing! This guide will help you add progra
 7. [Testing Your Changes](#testing-your-changes)
 8. [Submitting Your Changes](#submitting-your-changes)
 9. [Project Structure](#project-structure)
+10. [Privacy & Data Practices](#privacy-and-data-practices)
 
 ---
 
@@ -78,6 +79,18 @@ Thank you for your interest in contributing! This guide will help you add progra
 - Focus on public good and accessibility
 - No self-promotion or business advertising
 - This is NOT a business directory
+
+---
+
+## 🔒 Privacy & Data Practices {#privacy-and-data-practices}
+
+This project is privacy-first. Contributors must ensure changes do not introduce any collection of personal data or user tracking.
+
+- No user accounts or authentication. Do not add sign-in, user profiles, or backend user storage.
+- No email subscriptions or notifications. Do not add forms that collect email addresses or services that send emails to users.
+- Preferences are local-only. The “Update Filters” step flow stores selections in browser local storage; nothing is sent to servers.
+- Avoid cookies and tracking scripts. Keep analytics aggregate-only if present and self-hosted.
+- Respect Content Security Policy and security headers in configuration.
 
 #### ❌ What We Don't Accept
 

@@ -72,6 +72,10 @@ You agree not to:
 - Spam or engage in bulk commercial solicitation through the Website
 - Impersonate any person or entity or misrepresent your affiliation with any person or entity
 
+### No Accounts or Subscription Services
+
+The Website does not provide user accounts, authentication, or subscription services. You cannot create an account, log in, or subscribe to email updates. Any preferences (such as eligibility or county selections) are stored locally in your browser and are not transmitted to or stored by us.
+
 ---
 
 ## 3. Content Accuracy and Disclaimers {#content-accuracy-and-disclaimers}

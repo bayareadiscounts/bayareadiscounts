@@ -47,6 +47,7 @@ This community-driven resource aims to:
 - 🎨 **Dark Mode** - Automatic based on system preference
 - 🔒 **Privacy-First** - No personal data or cookies; self-hosted Plausible with aggregate metrics only
 - 🔗 **Transparent Referrals** - External program links carry `utm_source=bayareadiscounts` for anonymous impact tracking; no compensation or referral fees
+ - 🧭 **Step Flow + Local Preferences** - Set eligibility and county in a guided overlay; preferences are saved only in your browser (local storage). No accounts or email subscriptions.
 
 ---
 

@@ -7,11 +7,16 @@ class URLSharing {
 
   // Get filters from URL on page load
   getInitialState() {
+    const parseList = (val) => {
+      if (!val) return [];
+      return val.split(',').map(v => v.trim()).filter(Boolean);
+    };
+
     return {
       search: this.params.get('q') || '',
-      eligibility: this.params.get('eligibility') || '',
-      category: this.params.get('category') || '',
-      area: this.params.get('area') || ''
+      eligibility: parseList(this.params.get('eligibility')),
+      category: parseList(this.params.get('category')),
+      area: parseList(this.params.get('area'))
     };
   }
 
@@ -20,9 +25,13 @@ class URLSharing {
     const params = new URLSearchParams();
     
     if (filters.search) params.set('q', filters.search);
-    if (filters.eligibility) params.set('eligibility', filters.eligibility);
-    if (filters.category) params.set('category', filters.category);
-    if (filters.area) params.set('area', filters.area);
+    const toListString = (val) => Array.isArray(val) ? val.join(',') : (val || '');
+    const elig = toListString(filters.eligibility);
+    const cat = toListString(filters.category);
+    const area = toListString(filters.area);
+    if (elig) params.set('eligibility', elig);
+    if (cat) params.set('category', cat);
+    if (area) params.set('area', area);
     
     const newURL = params.toString()
       ? `${window.location.pathname}?${params.toString()}`

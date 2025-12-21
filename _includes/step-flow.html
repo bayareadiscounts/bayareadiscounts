@@ -1,0 +1,157 @@
+<div id="step-flow" class="step-flow-overlay" role="dialog" aria-modal="true" aria-label="Find programs">
+  <div class="step-flow-content" role="document">
+    <div class="step-flow-header">
+      <h2>Find programs in 2 quick steps</h2>
+      <div class="step-flow-controls">
+        <button type="button" class="step-flow-reset" aria-label="Restart and clear selections">Restart</button>
+        <button type="button" class="step-flow-skip" aria-label="Skip and see all programs">Skip</button>
+      </div>
+    </div>
+
+    <!-- Step 1: Eligibility -->
+    <section class="step" id="step-1" aria-labelledby="step-1-title">
+      <h3 id="step-1-title">Step 1: Select all that apply</h3>
+      <p class="step-help">Choose your eligibility groups (you can select multiple).</p>
+
+      <fieldset class="eligibility-options">
+        <legend class="sr-only">Eligibility options</legend>
+        <label><input type="checkbox" name="eligibility" value="low-income"> 💳 SNAP/EBT/Medi-Cal</label>
+        <label><input type="checkbox" name="eligibility" value="seniors"> 👵 Seniors</label>
+        <label><input type="checkbox" name="eligibility" value="youth"> 🧒 Youth</label>
+        <label><input type="checkbox" name="eligibility" value="college-students"> 🎓 College Students</label>
+        <label><input type="checkbox" name="eligibility" value="veterans"> 🎖️ Active Duty / Veterans</label>
+        <label><input type="checkbox" name="eligibility" value="families"> 👨‍👩‍👧 Families</label>
+        <label><input type="checkbox" name="eligibility" value="disability"> 🧑‍🦽 Disability</label>
+        <label><input type="checkbox" name="eligibility" value="nonprofits"> 🤝 Nonprofits</label>
+        <label><input type="checkbox" name="eligibility" value="everyone"> 🌎 Everyone</label>
+      </fieldset>
+
+      <div class="step-actions">
+        <button type="button" class="step-next" data-next="2">Continue</button>
+      </div>
+    </section>
+
+    <!-- Step 2: County -->
+    <section class="step" id="step-2" aria-labelledby="step-2-title" hidden>
+      <h3 id="step-2-title">Step 2: Select your county</h3>
+      <p class="step-help">We’ll include Bay Area-wide, Statewide, and Nationwide results automatically.</p>
+
+      <fieldset class="county-options">
+        <legend class="sr-only">County options</legend>
+        <label><input type="radio" name="county" value="San Francisco"> San Francisco</label>
+        <label><input type="radio" name="county" value="Alameda County"> Alameda County</label>
+        <label><input type="radio" name="county" value="Contra Costa County"> Contra Costa County</label>
+        <label><input type="radio" name="county" value="San Mateo County"> San Mateo County</label>
+        <label><input type="radio" name="county" value="Santa Clara County"> Santa Clara County</label>
+        <label><input type="radio" name="county" value="Marin County"> Marin County</label>
+        <label><input type="radio" name="county" value="Napa County"> Napa County</label>
+        <label><input type="radio" name="county" value="Solano County"> Solano County</label>
+        <label><input type="radio" name="county" value="Sonoma County"> Sonoma County</label>
+        <label><input type="radio" name="county" value="none"> None of the above</label>
+      </fieldset>
+
+      <div class="step-actions">
+        <button type="button" class="step-back" data-back="1">Back</button>
+        <button type="button" class="step-submit">Show results</button>
+      </div>
+
+      <!-- Preferences & subscription -->
+      <div class="preferences-subscription" aria-live="polite">
+        <div class="pref-row">
+          <button type="button" class="pref-save" aria-label="Save preferences on this device">Save Preferences</button>
+          <button type="button" class="pref-apply-saved" hidden>Use Saved Preferences</button>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+<style>
+.step-flow-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: saturate(120%) blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.step-flow-content {
+  width: min(840px, 92vw);
+  max-height: 92vh;
+  overflow: auto;
+  background: var(--bg, #fff);
+  color: var(--fg, #111);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  padding: 1.25rem 1.25rem 1rem;
+}
+.step-flow-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+.step-flow-controls { display: flex; gap: 0.5rem; }
+.step-flow-skip {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+.step-flow-reset {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  font-weight: 600;
+  cursor: pointer;
+}
+.step {
+  display: block;
+}
+.step-help { margin: 0.25rem 0 0.75rem; color: #555; }
+.eligibility-options, .county-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.5rem 1rem;
+}
+.eligibility-options label, .county-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 8px;
+}
+.step-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.step-next, .step-back, .step-submit {
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.step-next, .step-submit { background: #111; color: #fff; }
+.step-back { background: #e5e7eb; color: #111; }
+.preferences-subscription { border-top: 1px solid rgba(0,0,0,0.1); margin-top: 1rem; padding-top: 1rem; }
+.pref-row { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+.pref-save, .pref-apply-saved { background: #e5e7eb; color: #111; border: none; border-radius: 8px; padding: 0.5rem 0.9rem; font-weight: 600; cursor: pointer; }
+
+@media (prefers-color-scheme: dark) {
+  .step-flow-content { --bg: #111827; --fg: #e5e7eb; }
+  .eligibility-options label, .county-options label { border-color: rgba(255,255,255,0.14); }
+}
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+</style>

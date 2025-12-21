@@ -32,6 +32,8 @@ As a community driven project, we work to keep information current. However, ava
 
 <br>
 
+{% include step-flow.html %}
+
 {% include search-filter-ui.html %}
 
 <div id="search-results" class="programs-container" role="region" aria-live="polite" aria-label="Search results">
@@ -55,6 +57,7 @@ As a community driven project, we work to keep information current. However, ava
 <script src="{{ '/assets/js/keyboard-shortcuts.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/favorites.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/simple-analytics.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/step-flow.js' | relative_url }}" defer></script>
 
 <!-- Integrate URL sharing with search/filter -->
 <script>
@@ -74,19 +77,26 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Apply initial filters
-  if (initialState.eligibility) {
-    const eligBtn = document.querySelector(`[data-filter-type="eligibility"][data-filter-value="${initialState.eligibility}"]`);
-    if (eligBtn) eligBtn.click();
+  // Apply multiple eligibility, category, and area values
+  if (Array.isArray(initialState.eligibility)) {
+    initialState.eligibility.forEach(val => {
+      const btn = document.querySelector(`[data-filter-type="eligibility"][data-filter-value="${val}"]`);
+      if (btn) btn.click();
+    });
   }
-  
-  if (initialState.category) {
-    const catBtn = document.querySelector(`[data-filter-type="category"][data-filter-value="${initialState.category}"]`);
-    if (catBtn) catBtn.click();
+
+  if (Array.isArray(initialState.category)) {
+    initialState.category.forEach(val => {
+      const btn = document.querySelector(`[data-filter-type="category"][data-filter-value="${val}"]`);
+      if (btn) btn.click();
+    });
   }
-  
-  if (initialState.area) {
-    const areaBtn = document.querySelector(`[data-filter-type="area"][data-filter-value="${initialState.area}"]`);
-    if (areaBtn) areaBtn.click();
+
+  if (Array.isArray(initialState.area)) {
+    initialState.area.forEach(val => {
+      const btn = document.querySelector(`[data-filter-type="area"][data-filter-value="${val}"]`);
+      if (btn) btn.click();
+    });
   }
   
   // Listen for filter changes and update URL
@@ -103,9 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
       searchTimeout = setTimeout(() => {
         const filters = {
           search: e.target.value,
-          eligibility: document.querySelector('[data-filter-type="eligibility"].active')?.dataset.filterValue || '',
-          category: document.querySelector('[data-filter-type="category"].active')?.dataset.filterValue || '',
-          area: document.querySelector('[data-filter-type="area"].active')?.dataset.filterValue || ''
+          eligibility: Array.from(document.querySelectorAll('[data-filter-type="eligibility"].active:not([data-all="true"])')).map(b => b.dataset.filterValue),
+          category: Array.from(document.querySelectorAll('[data-filter-type="category"].active:not([data-all="true"])')).map(b => b.dataset.filterValue),
+          area: Array.from(document.querySelectorAll('[data-filter-type="area"].active:not([data-all="true"])')).map(b => b.dataset.filterValue)
         };
         urlSharing.updateURL(filters);
       }, 500);
@@ -118,9 +128,9 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(() => {
         const filters = {
           search: document.getElementById('search-input')?.value || '',
-          eligibility: document.querySelector('[data-filter-type="eligibility"].active')?.dataset.filterValue || '',
-          category: document.querySelector('[data-filter-type="category"].active')?.dataset.filterValue || '',
-          area: document.querySelector('[data-filter-type="area"].active')?.dataset.filterValue || ''
+          eligibility: Array.from(document.querySelectorAll('[data-filter-type="eligibility"].active:not([data-all="true"])')).map(b => b.dataset.filterValue),
+          category: Array.from(document.querySelectorAll('[data-filter-type="category"].active:not([data-all="true"])')).map(b => b.dataset.filterValue),
+          area: Array.from(document.querySelectorAll('[data-filter-type="area"].active:not([data-all="true"])')).map(b => b.dataset.filterValue)
         };
         document.dispatchEvent(new CustomEvent('filterChange', { detail: filters }));
       }, 100);
