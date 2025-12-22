@@ -1,5 +1,5 @@
 /**
- * Step Flow: Two-step onboarding wizard
+ * Step Flow: Two-step onboarding wizard (Full-page experience)
  * Step 1: Select eligibility
  * Step 2: Select county (or none)
  *
@@ -16,28 +16,33 @@
 
   // Show specific step
   function showStep(n) {
-    const steps = qsa('.step');
+    const steps = qsa('.step-page');
     steps.forEach(step => {
-      step.hidden = (step.id !== `step-${n}`);
+      step.hidden = !step.id.endsWith(`-${n}`);
     });
   }
 
-  // Close the overlay and show main content
-  function closeOverlay() {
-    const overlay = qs('#step-flow');
-    if (overlay) overlay.style.display = 'none';
+  // Close the page wizard and show main content
+  function closeWizard() {
+    const wizard = qs('#step-flow');
+    if (wizard) wizard.style.display = 'none';
 
     // Show all content after wizard completes
     const filterUI = qs('.filter-controls');
     const searchResults = qs('#search-results');
     const mobileDrawer = qs('.mobile-filter-drawer');
+    const header = qs('header');
+    const footer = qs('footer');
+
     if (filterUI) filterUI.style.display = 'block';
     if (searchResults) searchResults.style.display = 'block';
     if (mobileDrawer) mobileDrawer.style.display = 'block';
+    if (header) header.style.display = 'block';
+    if (footer) footer.style.display = 'block';
   }
 
   // Restart the wizard from step 1
-  function restartOverlay() {
+  function restartWizard() {
     // Clear all selections
     qsa('input[name="eligibility"]:checked').forEach(i => { i.checked = false; });
     const countyChecked = qs('input[name="county"]:checked');
@@ -169,19 +174,24 @@
 
   // Initialize when DOM is ready
   document.addEventListener('DOMContentLoaded', function() {
-    const overlay = qs('#step-flow');
-    if (!overlay) return;
+    const wizard = qs('#step-flow');
+    if (!wizard) return;
 
-    // Set up focus trap for modal
-    trapFocus(overlay);
+    // Set up focus trap for wizard
+    trapFocus(wizard);
 
-    // Hide all results and filters initially (wizard-first approach)
+    // Hide all page content initially (wizard-first approach)
     const filterUI = qs('.filter-controls');
     const searchResults = qs('#search-results');
     const mobileDrawer = qs('.mobile-filter-drawer');
+    const header = qs('header');
+    const footer = qs('footer');
+
     if (filterUI) filterUI.style.display = 'none';
     if (searchResults) searchResults.style.display = 'none';
     if (mobileDrawer) mobileDrawer.style.display = 'none';
+    if (header) header.style.display = 'none';
+    if (footer) footer.style.display = 'none';
 
     // Skip wizard in automation/testing or if user opts out
     const params = new URLSearchParams(window.location.search);
@@ -189,25 +199,17 @@
     const optOut = params.get('no-step') === '1';
 
     if (isAutomation || optOut) {
-      closeOverlay();
+      closeWizard();
       return;
     }
 
-    // Skip button
-    const skip = qs('.step-flow-skip');
-    if (skip) {
-      skip.addEventListener('click', () => {
-        closeOverlay();
+    // Skip buttons
+    const skipBtns = qsa('.step-flow-skip');
+    skipBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        closeWizard();
       });
-    }
-
-    // Reset button
-    const reset = qs('.step-flow-reset');
-    if (reset) {
-      reset.addEventListener('click', () => {
-        restartOverlay();
-      });
-    }
+    });
 
     // Step navigation - Next buttons
     qsa('.step-next').forEach(btn => {
@@ -224,6 +226,9 @@
         }
 
         showStep(currentStep);
+
+        // Scroll to top of wizard
+        wizard.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
 
@@ -232,6 +237,9 @@
       btn.addEventListener('click', () => {
         const backStep = parseInt(btn.getAttribute('data-back'));
         showStep(backStep);
+
+        // Scroll to top of wizard
+        wizard.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
 
@@ -247,6 +255,7 @@
         if (eligValues.length === 0) {
           alert('Please select at least one eligibility option.');
           showStep(1);
+          wizard.scrollTo({ top: 0, behavior: 'smooth' });
           return;
         }
 
@@ -267,7 +276,7 @@
         applySelections(eligValues, countyValue);
 
         // Close wizard
-        closeOverlay();
+        closeWizard();
       });
     }
 
@@ -311,11 +320,11 @@
       prefApplySaved.hidden = false;
     }
 
-    // Update Filters button - reopens overlay
+    // Update Filters button - reopens wizard
     document.addEventListener('click', (e) => {
       const t = e.target.closest('#update-filters-btn');
       if (t) {
-        overlay.style.display = 'flex';
+        wizard.style.display = 'block';
         showStep(1);
       }
     });

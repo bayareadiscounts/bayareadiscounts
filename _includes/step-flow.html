@@ -1,313 +1,665 @@
-<div id="step-flow" class="step-flow-overlay" role="dialog" aria-modal="true" aria-label="Find programs">
-  <div class="step-flow-content" role="document">
-    <div class="step-flow-header">
-      <h2>Find programs that match your needs</h2>
-      <button type="button" class="step-flow-skip" aria-label="Skip and browse all programs">Skip to all programs</button>
-    </div>
-
+<div id="step-flow" class="step-flow-page" role="main" aria-label="Find programs">
+  <div class="step-flow-container">
     <!-- Step 1: Eligibility -->
-    <section class="step" id="step-1" aria-labelledby="step-1-title">
-      <div class="step-progress" aria-label="Progress">Step 1 of 2</div>
-      <h3 id="step-1-title">Which of these apply to you?</h3>
-      <p class="step-help">Select all that apply to see relevant programs.</p>
+    <section class="step-page" id="step-1" aria-labelledby="step-1-title">
+      <div class="step-header">
+        <div class="step-progress">
+          <span class="progress-text">Step 1 of 2</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 50%"></div>
+          </div>
+        </div>
+        <button type="button" class="step-flow-skip" aria-label="Skip and browse all programs">
+          Skip to all programs
+        </button>
+      </div>
 
-      <fieldset class="eligibility-options">
-        <legend class="sr-only">Eligibility options</legend>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="low-income">
-          <span class="option-content">
-            <span class="option-icon">💳</span>
-            <span class="option-label">SNAP/EBT/Medi-Cal</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="seniors">
-          <span class="option-content">
-            <span class="option-icon">👵</span>
-            <span class="option-label">Seniors (65+)</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="youth">
-          <span class="option-content">
-            <span class="option-icon">🧒</span>
-            <span class="option-label">Youth</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="college-students">
-          <span class="option-content">
-            <span class="option-icon">🎓</span>
-            <span class="option-label">College Students</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="veterans">
-          <span class="option-content">
-            <span class="option-icon">🎖️</span>
-            <span class="option-label">Veterans / Active Duty</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="families">
-          <span class="option-content">
-            <span class="option-icon">👨‍👩‍👧</span>
-            <span class="option-label">Families</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="disability">
-          <span class="option-content">
-            <span class="option-icon">🧑‍🦽</span>
-            <span class="option-label">People with Disabilities</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="nonprofits">
-          <span class="option-content">
-            <span class="option-icon">🤝</span>
-            <span class="option-label">Nonprofit Organizations</span>
-          </span>
-        </label>
-        <label class="option-card">
-          <input type="checkbox" name="eligibility" value="everyone">
-          <span class="option-content">
-            <span class="option-icon">🌎</span>
-            <span class="option-label">Everyone</span>
-          </span>
-        </label>
-      </fieldset>
+      <div class="step-content">
+        <h1 id="step-1-title">Which of these apply to you?</h1>
+        <p class="step-description">Select all that apply to see relevant programs.</p>
 
-      <div class="step-actions">
-        <button type="button" class="btn-primary step-next" data-next="2">Continue</button>
+        <fieldset class="eligibility-grid">
+          <legend class="sr-only">Eligibility options</legend>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="low-income">
+            <span class="card-inner">
+              <span class="card-icon">💳</span>
+              <span class="card-text">SNAP/EBT/Medi-Cal</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="seniors">
+            <span class="card-inner">
+              <span class="card-icon">👵</span>
+              <span class="card-text">Seniors (65+)</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="youth">
+            <span class="card-inner">
+              <span class="card-icon">🧒</span>
+              <span class="card-text">Youth</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="college-students">
+            <span class="card-inner">
+              <span class="card-icon">🎓</span>
+              <span class="card-text">College Students</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="veterans">
+            <span class="card-inner">
+              <span class="card-icon">🎖️</span>
+              <span class="card-text">Veterans / Active Duty</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="families">
+            <span class="card-inner">
+              <span class="card-icon">👨‍👩‍👧</span>
+              <span class="card-text">Families</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="disability">
+            <span class="card-inner">
+              <span class="card-icon">🧑‍🦽</span>
+              <span class="card-text">People with Disabilities</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="nonprofits">
+            <span class="card-inner">
+              <span class="card-icon">🤝</span>
+              <span class="card-text">Nonprofit Organizations</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="checkbox" name="eligibility" value="everyone">
+            <span class="card-inner">
+              <span class="card-icon">🌎</span>
+              <span class="card-text">Everyone</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <div class="step-actions">
+          <button type="button" class="btn btn-primary step-next" data-next="2">
+            Continue
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- Step 2: County -->
-    <section class="step" id="step-2" aria-labelledby="step-2-title" hidden>
-      <div class="step-progress" aria-label="Progress">Step 2 of 2</div>
-      <h3 id="step-2-title">What county do you live in?</h3>
-      <p class="step-help">We'll automatically include Bay Area-wide, California statewide, and nationwide programs.</p>
-
-      <fieldset class="county-options">
-        <legend class="sr-only">County options</legend>
-        <label class="option-card"><input type="radio" name="county" value="San Francisco"><span class="option-content"><span class="option-label">San Francisco</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Alameda County"><span class="option-content"><span class="option-label">Alameda County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Contra Costa County"><span class="option-content"><span class="option-label">Contra Costa County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="San Mateo County"><span class="option-content"><span class="option-label">San Mateo County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Santa Clara County"><span class="option-content"><span class="option-label">Santa Clara County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Marin County"><span class="option-content"><span class="option-label">Marin County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Napa County"><span class="option-content"><span class="option-label">Napa County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Solano County"><span class="option-content"><span class="option-label">Solano County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="Sonoma County"><span class="option-content"><span class="option-label">Sonoma County</span></span></label>
-        <label class="option-card"><input type="radio" name="county" value="none"><span class="option-content"><span class="option-label">None of the above</span></span></label>
-      </fieldset>
-
-      <div class="step-actions">
-        <button type="button" class="btn-secondary step-back" data-back="1">Back</button>
-        <button type="button" class="btn-primary step-submit">Show my results</button>
+    <section class="step-page" id="step-2" aria-labelledby="step-2-title" hidden>
+      <div class="step-header">
+        <div class="step-progress">
+          <span class="progress-text">Step 2 of 2</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%"></div>
+          </div>
+        </div>
+        <button type="button" class="step-flow-skip" aria-label="Skip and browse all programs">
+          Skip to all programs
+        </button>
       </div>
 
-      <div class="preferences-section">
-        <details>
-          <summary>Save preferences for next time</summary>
-          <div class="pref-content">
-            <p class="pref-help">Your selections are saved locally on your device only.</p>
-            <button type="button" class="pref-save">Save these preferences</button>
-            <button type="button" class="pref-apply-saved" hidden>Load saved preferences</button>
-          </div>
-        </details>
+      <div class="step-content">
+        <h1 id="step-2-title">What county do you live in?</h1>
+        <p class="step-description">We'll automatically include Bay Area-wide, California statewide, and nationwide programs.</p>
+
+        <fieldset class="county-grid">
+          <legend class="sr-only">County options</legend>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="San Francisco">
+            <span class="card-inner">
+              <span class="card-text">San Francisco</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Alameda County">
+            <span class="card-inner">
+              <span class="card-text">Alameda County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Contra Costa County">
+            <span class="card-inner">
+              <span class="card-text">Contra Costa County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="San Mateo County">
+            <span class="card-inner">
+              <span class="card-text">San Mateo County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Santa Clara County">
+            <span class="card-inner">
+              <span class="card-text">Santa Clara County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Marin County">
+            <span class="card-inner">
+              <span class="card-text">Marin County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Napa County">
+            <span class="card-inner">
+              <span class="card-text">Napa County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Solano County">
+            <span class="card-inner">
+              <span class="card-text">Solano County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="Sonoma County">
+            <span class="card-inner">
+              <span class="card-text">Sonoma County</span>
+            </span>
+          </label>
+
+          <label class="option-card">
+            <input type="radio" name="county" value="none">
+            <span class="card-inner">
+              <span class="card-text">None of the above</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <div class="step-actions">
+          <button type="button" class="btn btn-secondary step-back" data-back="1">
+            Back
+          </button>
+          <button type="button" class="btn btn-primary step-submit">
+            Show my results
+          </button>
+        </div>
+
+        <div class="preferences-section">
+          <details>
+            <summary>Save preferences for next time</summary>
+            <div class="pref-content">
+              <p class="pref-help">Your selections are saved locally on your device only.</p>
+              <button type="button" class="btn btn-small pref-save">Save these preferences</button>
+              <button type="button" class="btn btn-small pref-apply-saved" hidden>Load saved preferences</button>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
   </div>
 </div>
 
 <style>
-.step-flow-overlay {
+/* Full-page wizard experience */
+.step-flow-page {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(4px);
+  background: #f9fafb;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.step-flow-container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  padding: 2rem 1rem;
 }
-.step-flow-content {
-  width: min(920px, 94vw);
-  max-height: 94vh;
-  overflow: auto;
-  background: var(--bg, #fff);
-  color: var(--fg, #1a202c);
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  padding: 2rem;
+
+.step-page {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.step-flow-header {
+
+/* Step header with progress */
+.step-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding-bottom: 1.5rem;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid rgba(0,0,0,0.08);
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
-.step-flow-header h2 {
-  margin: 0;
-  font-size: 1.75rem;
-  font-weight: 700;
-}
-.step-flow-skip {
-  background: transparent;
-  border: none;
-  color: #2563eb;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.step-flow-skip:hover { color: #1e40af; }
-.step { display: block; }
+
 .step-progress {
+  flex: 1;
+}
+
+.progress-text {
+  display: block;
   font-size: 0.875rem;
   font-weight: 600;
   color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
-.step h3 {
-  font-size: 1.5rem;
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.step-flow-skip {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.step-flow-skip:hover {
+  color: #1e40af;
+}
+
+/* Step content */
+.step-content {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.step-content h1 {
+  font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 0.5rem;
+  color: #111827;
+  margin: 0 0 1rem;
+  line-height: 1.2;
 }
-.step-help {
-  margin: 0 0 1.5rem;
+
+.step-description {
+  font-size: 1.125rem;
   color: #6b7280;
-  font-size: 1rem;
+  margin: 0 0 2.5rem;
+  line-height: 1.6;
 }
-.eligibility-options, .county-options {
+
+/* Option cards grid */
+.eligibility-grid,
+.county-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  border: none;
+  padding: 0;
 }
+
 .option-card {
   position: relative;
   display: block;
   cursor: pointer;
 }
-.option-card input[type="checkbox"],
-.option-card input[type="radio"] {
+
+.option-card input {
   position: absolute;
   opacity: 0;
+  width: 0;
+  height: 0;
 }
-.option-content {
+
+.card-inner {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 1.25rem;
+  gap: 0.875rem;
+  padding: 1.125rem 1.375rem;
   border: 2px solid #d1d5db;
   border-radius: 12px;
-  background: var(--bg, #fff);
-  transition: all 0.15s ease;
-  font-size: 1rem;
-  font-weight: 500;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  min-height: 68px;
 }
-.option-card:hover .option-content {
-  border-color: #2563eb;
+
+.option-card:hover .card-inner {
+  border-color: #93c5fd;
   background: #eff6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
 }
-.option-card input:checked + .option-content {
+
+.option-card input:checked + .card-inner {
   border-color: #2563eb;
   background: #dbeafe;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
-.option-icon {
-  font-size: 1.5rem;
+
+.option-card input:focus + .card-inner {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.card-icon {
+  font-size: 1.75rem;
   line-height: 1;
+  flex-shrink: 0;
 }
-.option-label {
-  flex: 1;
+
+.card-text {
+  font-size: 1.0625rem;
   font-weight: 600;
+  color: #111827;
+  line-height: 1.3;
 }
+
+/* Actions */
 .step-actions {
   display: flex;
-  justify-content: space-between;
   gap: 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
 }
-.step-back, .step-next, .step-submit,
-.btn-primary, .btn-secondary {
+
+.btn {
   appearance: none;
   border: none;
-  border-radius: 10px;
-  padding: 0.875rem 2rem;
+  border-radius: 12px;
+  padding: 1rem 2rem;
   font-weight: 600;
   font-size: 1.0625rem;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
 }
-.step-next, .step-submit, .btn-primary {
+
+.btn-primary {
   background: #2563eb;
-  color: #fff;
+  color: #ffffff;
+  flex: 1;
 }
-.step-next:hover, .step-submit:hover, .btn-primary:hover {
+
+.btn-primary:hover {
   background: #1e40af;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
-.step-back, .btn-secondary {
-  background: #e5e7eb;
+
+.btn-secondary {
+  background: #f3f4f6;
   color: #374151;
 }
-.step-back:hover, .btn-secondary:hover {
-  background: #d1d5db;
+
+.btn-secondary:hover {
+  background: #e5e7eb;
 }
+
+.btn-small {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  min-height: auto;
+}
+
+/* Preferences section */
 .preferences-section {
   margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
 }
+
 .preferences-section summary {
   cursor: pointer;
   font-weight: 600;
   color: #2563eb;
   list-style: none;
+  font-size: 0.9375rem;
 }
-.preferences-section summary::-webkit-details-marker { display: none; }
+
+.preferences-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.preferences-section summary:hover {
+  color: #1e40af;
+}
+
 .pref-content {
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1.25rem;
   background: #f9fafb;
-  border-radius: 8px;
+  border-radius: 10px;
 }
+
 .pref-help {
-  margin: 0 0 0.75rem;
-  font-size: 0.875rem;
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
   color: #6b7280;
+  line-height: 1.5;
 }
-.pref-save, .pref-apply-saved {
-  background: #e5e7eb;
-  color: #374151;
-  border: none;
-  border-radius: 8px;
-  padding: 0.625rem 1.25rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-right: 0.5rem;
-}
-.pref-save:hover, .pref-apply-saved:hover { background: #d1d5db; }
 
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
-  .step-flow-content { --bg: #1f2937; --fg: #f3f4f6; }
-  .option-content { border-color: #4b5563; background: #1f2937; }
-  .option-card:hover .option-content { background: #374151; }
-  .option-card input:checked + .option-content {
-    border-color: #3b82f6;
-    background: #1e3a8a;
+  .step-flow-page {
+    background: #111827;
   }
-  .pref-content { background: #374151; }
+
+  .step-content {
+    background: #1f2937;
+  }
+
+  .step-content h1 {
+    color: #f9fafb;
+  }
+
+  .step-description {
+    color: #d1d5db;
+  }
+
+  .card-inner {
+    background: #374151;
+    border-color: #4b5563;
+  }
+
+  .card-text {
+    color: #f9fafb;
+  }
+
+  .option-card:hover .card-inner {
+    background: #4b5563;
+    border-color: #60a5fa;
+  }
+
+  .option-card input:checked + .card-inner {
+    background: #1e3a8a;
+    border-color: #3b82f6;
+  }
+
+  .btn-secondary {
+    background: #374151;
+    color: #f9fafb;
+  }
+
+  .btn-secondary:hover {
+    background: #4b5563;
+  }
+
+  .pref-content {
+    background: #374151;
+  }
+
+  .progress-bar {
+    background: #374151;
+  }
+
+  .step-actions {
+    border-color: #374151;
+  }
+
+  .preferences-section {
+    border-color: #374151;
+  }
 }
 
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+body[data-theme="dark"] .step-flow-page {
+  background: #111827;
+}
+
+body[data-theme="dark"] .step-content {
+  background: #1f2937;
+}
+
+body[data-theme="dark"] .step-content h1 {
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] .step-description {
+  color: #d1d5db;
+}
+
+body[data-theme="dark"] .card-inner {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+body[data-theme="dark"] .card-text {
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] .option-card:hover .card-inner {
+  background: #4b5563;
+  border-color: #60a5fa;
+}
+
+body[data-theme="dark"] .option-card input:checked + .card-inner {
+  background: #1e3a8a;
+  border-color: #3b82f6;
+}
+
+body[data-theme="dark"] .btn-secondary {
+  background: #374151;
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] .btn-secondary:hover {
+  background: #4b5563;
+}
+
+body[data-theme="dark"] .pref-content {
+  background: #374151;
+}
+
+body[data-theme="dark"] .progress-bar {
+  background: #374151;
+}
+
+body[data-theme="dark"] .step-actions {
+  border-color: #374151;
+}
+
+body[data-theme="dark"] .preferences-section {
+  border-color: #374151;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .step-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .step-flow-skip {
+    text-align: center;
+  }
+
+  .step-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .step-content h1 {
+    font-size: 1.625rem;
+  }
+
+  .step-description {
+    font-size: 1rem;
+  }
+
+  .eligibility-grid,
+  .county-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-actions {
+    flex-direction: column-reverse;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Smooth page transitions */
+.step-page {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
