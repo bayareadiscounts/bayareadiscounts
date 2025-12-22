@@ -2,12 +2,17 @@
    WCAG 3.0 APCA CONTRAST CHECKER
    Implements the Advanced Perceptual Contrast Algorithm
    Reference: https://github.com/Myndex/apca-w3
+
+   Usage:
+   const lc = window.APCA.calculate('#000000', '#ffffff');
+   const rating = window.APCA.getRating(lc, 16, false);
+   const issues = window.APCA.scanPage();
    ============================================ */
 
 (function() {
   'use strict';
 
-  // APCA Constants
+  // APCA Constants (SAPC-8 G-series)
   const SA98G = {
     mainTRC: 2.4,
     normBG: 0.56,
