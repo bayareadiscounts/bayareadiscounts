@@ -12,6 +12,96 @@ const debounce = (fn, delay = 150) => {
   };
 };
 
+/**
+ * Simple fuzzy matching - allows for typos and partial matches
+ * Returns a score (higher = better match), or 0 for no match
+ */
+function fuzzyMatch(text, query) {
+  if (!text || !query) return 0;
+
+  text = text.toLowerCase();
+  query = query.toLowerCase();
+
+  // Exact match gets highest score
+  if (text.includes(query)) {
+    return 100 + (query.length / text.length) * 50;
+  }
+
+  // Check if all query characters appear in order (fuzzy)
+  let textIndex = 0;
+  let queryIndex = 0;
+  let matchedChars = 0;
+  let consecutiveBonus = 0;
+  let lastMatchIndex = -2;
+
+  while (textIndex < text.length && queryIndex < query.length) {
+    if (text[textIndex] === query[queryIndex]) {
+      matchedChars++;
+      // Bonus for consecutive matches
+      if (textIndex === lastMatchIndex + 1) {
+        consecutiveBonus += 5;
+      }
+      lastMatchIndex = textIndex;
+      queryIndex++;
+    }
+    textIndex++;
+  }
+
+  // All query characters must be found
+  if (queryIndex < query.length) {
+    return 0;
+  }
+
+  // Calculate score based on match quality
+  const matchRatio = matchedChars / query.length;
+  const positionPenalty = (textIndex - matchedChars) / text.length;
+
+  return Math.max(0, (matchRatio * 50) + consecutiveBonus - (positionPenalty * 20));
+}
+
+/**
+ * Recent searches manager
+ */
+const RecentSearches = {
+  STORAGE_KEY: 'bayarea_recent_searches',
+  MAX_ITEMS: 5,
+
+  get() {
+    try {
+      const raw = localStorage.getItem(this.STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      return [];
+    }
+  },
+
+  add(query) {
+    if (!query || query.length < 2) return;
+
+    let searches = this.get();
+    // Remove if already exists
+    searches = searches.filter(s => s.toLowerCase() !== query.toLowerCase());
+    // Add to front
+    searches.unshift(query);
+    // Keep only MAX_ITEMS
+    searches = searches.slice(0, this.MAX_ITEMS);
+
+    try {
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(searches));
+    } catch (e) {
+      // Storage full or unavailable
+    }
+  },
+
+  clear() {
+    try {
+      localStorage.removeItem(this.STORAGE_KEY);
+    } catch (e) {
+      // Ignore
+    }
+  }
+};
+
 class DiscountSearchFilter {
   constructor(options = {}) {
     this.programs = [];
@@ -37,11 +127,23 @@ class DiscountSearchFilter {
     this.searchInput = document.querySelector(this.options.searchInputSelector);
     this.resultsContainer = document.querySelector(this.options.resultsSelector) || this.container;
     this.sortSelect = document.querySelector(this.options.sortSelectSelector);
-    
+    this.currentQuery = '';
+
     if (this.searchInput) {
       const debouncedSearch = debounce((e) => this.handleSearch(e));
       this.searchInput.addEventListener('input', debouncedSearch);
-      this.searchInput.addEventListener('focus', () => this.showSearchUI());
+      this.searchInput.addEventListener('focus', () => {
+        this.showSearchUI();
+        this.showSuggestions();
+      });
+      this.searchInput.addEventListener('blur', () => {
+        // Delay hiding to allow clicking on suggestions
+        setTimeout(() => this.hideSuggestions(), 200);
+      });
+      this.searchInput.addEventListener('keydown', (e) => this.handleSearchKeydown(e));
+
+      // Create suggestions dropdown
+      this.createSuggestionsDropdown();
     }
 
     if (this.sortSelect) {
@@ -57,6 +159,172 @@ class DiscountSearchFilter {
     });
 
     this.buildSearchIndex();
+  }
+
+  /**
+   * Create the search suggestions dropdown
+   */
+  createSuggestionsDropdown() {
+    if (!this.searchInput) return;
+
+    const wrapper = this.searchInput.parentElement;
+    if (!wrapper) return;
+
+    // Make sure wrapper is positioned
+    wrapper.style.position = 'relative';
+
+    this.suggestionsEl = document.createElement('div');
+    this.suggestionsEl.className = 'search-suggestions';
+    this.suggestionsEl.setAttribute('role', 'listbox');
+    this.suggestionsEl.setAttribute('aria-label', 'Search suggestions');
+    this.suggestionsEl.style.display = 'none';
+
+    wrapper.appendChild(this.suggestionsEl);
+  }
+
+  /**
+   * Show search suggestions (recent searches + popular programs)
+   */
+  showSuggestions() {
+    if (!this.suggestionsEl) return;
+
+    const query = this.searchInput?.value.trim().toLowerCase() || '';
+    const recentSearches = RecentSearches.get();
+
+    // If there's a query, show matching suggestions
+    if (query.length >= 1) {
+      const matchingPrograms = this.programs
+        .filter(p => p.name.toLowerCase().includes(query))
+        .slice(0, 5);
+
+      if (matchingPrograms.length === 0 && recentSearches.length === 0) {
+        this.hideSuggestions();
+        return;
+      }
+
+      let html = '';
+
+      // Show matching programs as suggestions
+      if (matchingPrograms.length > 0) {
+        html += '<div class="suggestions-section"><span class="suggestions-label">Programs</span>';
+        matchingPrograms.forEach((program, index) => {
+          html += `<button class="suggestion-item" data-type="program" data-value="${this.escapeHtml(program.name)}" role="option" tabindex="-1">
+            <span class="suggestion-icon">📋</span>
+            <span class="suggestion-text">${this.escapeHtml(program.name)}</span>
+          </button>`;
+        });
+        html += '</div>';
+      }
+
+      this.suggestionsEl.innerHTML = html;
+      this.suggestionsEl.style.display = 'block';
+      this.selectedSuggestionIndex = -1;
+      return;
+    }
+
+    // Show recent searches when input is empty/focused
+    if (recentSearches.length === 0) {
+      this.hideSuggestions();
+      return;
+    }
+
+    let html = '<div class="suggestions-section">';
+    html += '<div class="suggestions-header"><span class="suggestions-label">Recent Searches</span>';
+    html += '<button class="clear-recent" type="button" aria-label="Clear recent searches">Clear</button></div>';
+
+    recentSearches.forEach((search, index) => {
+      html += `<button class="suggestion-item" data-type="recent" data-value="${this.escapeHtml(search)}" role="option" tabindex="-1">
+        <span class="suggestion-icon">🕐</span>
+        <span class="suggestion-text">${this.escapeHtml(search)}</span>
+      </button>`;
+    });
+
+    html += '</div>';
+    this.suggestionsEl.innerHTML = html;
+    this.suggestionsEl.style.display = 'block';
+    this.selectedSuggestionIndex = -1;
+
+    // Add click handler for clear button
+    const clearBtn = this.suggestionsEl.querySelector('.clear-recent');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        RecentSearches.clear();
+        this.hideSuggestions();
+      });
+    }
+
+    // Add click handlers for suggestion items
+    this.suggestionsEl.querySelectorAll('.suggestion-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const value = item.getAttribute('data-value');
+        if (value && this.searchInput) {
+          this.searchInput.value = value;
+          this.searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+          this.hideSuggestions();
+        }
+      });
+    });
+  }
+
+  /**
+   * Hide suggestions dropdown
+   */
+  hideSuggestions() {
+    if (this.suggestionsEl) {
+      this.suggestionsEl.style.display = 'none';
+    }
+  }
+
+  /**
+   * Handle keyboard navigation in search
+   */
+  handleSearchKeydown(event) {
+    if (!this.suggestionsEl || this.suggestionsEl.style.display === 'none') return;
+
+    const items = this.suggestionsEl.querySelectorAll('.suggestion-item');
+    if (items.length === 0) return;
+
+    switch (event.key) {
+      case 'ArrowDown':
+        event.preventDefault();
+        this.selectedSuggestionIndex = Math.min(this.selectedSuggestionIndex + 1, items.length - 1);
+        this.updateSuggestionSelection(items);
+        break;
+
+      case 'ArrowUp':
+        event.preventDefault();
+        this.selectedSuggestionIndex = Math.max(this.selectedSuggestionIndex - 1, -1);
+        this.updateSuggestionSelection(items);
+        break;
+
+      case 'Enter':
+        if (this.selectedSuggestionIndex >= 0 && items[this.selectedSuggestionIndex]) {
+          event.preventDefault();
+          items[this.selectedSuggestionIndex].click();
+        }
+        break;
+
+      case 'Escape':
+        this.hideSuggestions();
+        break;
+    }
+  }
+
+  /**
+   * Update visual selection state of suggestions
+   */
+  updateSuggestionSelection(items) {
+    items.forEach((item, index) => {
+      if (index === this.selectedSuggestionIndex) {
+        item.classList.add('selected');
+        item.scrollIntoView({ block: 'nearest' });
+      } else {
+        item.classList.remove('selected');
+      }
+    });
   }
 
   /**
@@ -96,21 +364,116 @@ class DiscountSearchFilter {
    * Handle search input
    */
   handleSearch(event) {
-    const query = event.target.value.toLowerCase().trim();
-    
+    const query = event.target.value.trim();
+    this.currentQuery = query;
+
     if (query.length < this.options.minChars) {
+      this.clearHighlights();
       this.resetResults();
       return;
     }
 
-    this.filteredPrograms = this.programs.filter(program => {
+    // Score and filter programs using fuzzy matching
+    const scoredPrograms = this.programs.map(program => {
       const indexed = this.searchIndex.get(program.id);
-      return indexed && indexed.searchText && indexed.searchText.includes(query);
+      if (!indexed) return { program, score: 0 };
+
+      // Calculate fuzzy match scores for different fields
+      const nameScore = fuzzyMatch(indexed.name, query) * 2; // Name matches are most important
+      const categoryScore = fuzzyMatch(indexed.category, query) * 1.5;
+      const benefitScore = fuzzyMatch(indexed.benefit, query);
+      const areaScore = fuzzyMatch(indexed.area, query);
+
+      const totalScore = nameScore + categoryScore + benefitScore + areaScore;
+      return { program, score: totalScore };
     });
 
-    this.sortPrograms();
+    // Filter to programs with positive scores and sort by score
+    this.filteredPrograms = scoredPrograms
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map(item => item.program);
+
+    // Save to recent searches (debounced - only after typing stops)
+    if (query.length >= 2) {
+      clearTimeout(this._recentSearchTimer);
+      this._recentSearchTimer = setTimeout(() => {
+        if (this.filteredPrograms.length > 0) {
+          RecentSearches.add(query);
+        }
+      }, 1000);
+    }
+
     this.render();
+    this.highlightMatches(query);
     this.updateResultsCount();
+  }
+
+  /**
+   * Highlight search matches in program cards
+   */
+  highlightMatches(query) {
+    if (!query || query.length < 2) {
+      this.clearHighlights();
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+
+    this.filteredPrograms.forEach(program => {
+      const nameEl = program.element.querySelector('.program-name');
+      const benefitEl = program.element.querySelector('[data-benefit]');
+
+      if (nameEl) {
+        this.highlightText(nameEl, lowerQuery);
+      }
+      if (benefitEl) {
+        this.highlightText(benefitEl, lowerQuery);
+      }
+    });
+  }
+
+  /**
+   * Highlight matching text within an element
+   */
+  highlightText(element, query) {
+    // Get original text (stored or current)
+    const originalText = element.getAttribute('data-original-text') || element.textContent;
+    element.setAttribute('data-original-text', originalText);
+
+    const lowerText = originalText.toLowerCase();
+    const index = lowerText.indexOf(query);
+
+    if (index === -1) {
+      element.textContent = originalText;
+      return;
+    }
+
+    // Create highlighted version
+    const before = originalText.slice(0, index);
+    const match = originalText.slice(index, index + query.length);
+    const after = originalText.slice(index + query.length);
+
+    element.innerHTML = `${this.escapeHtml(before)}<mark class="search-highlight">${this.escapeHtml(match)}</mark>${this.escapeHtml(after)}`;
+  }
+
+  /**
+   * Clear all search highlights
+   */
+  clearHighlights() {
+    document.querySelectorAll('[data-original-text]').forEach(el => {
+      el.textContent = el.getAttribute('data-original-text');
+      el.removeAttribute('data-original-text');
+    });
+  }
+
+  /**
+   * Escape HTML to prevent XSS
+   */
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
   }
 
   /**
