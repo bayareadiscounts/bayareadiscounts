@@ -8,7 +8,7 @@ actions: true
   document.addEventListener('DOMContentLoaded', function() {
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     navLinks.forEach(link => {
       const linkPath = new URL(link.href).pathname;
       if (linkPath === currentPath || (currentPath === '/' && linkPath === '/')) {
@@ -17,20 +17,6 @@ actions: true
     });
   });
 </script>
-
-<div class="heading-dark-adjust" markdown="1">
-
-## Stretch your budget and discover more of what your community has to offer.
-
-This guide features free and low-cost resources across the counties commonly recognized as the San Francisco Bay Area: Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma. Resources are highlighted for public benefit recipients such as SNAP/EBT and Medi-Cal, and various demographic groups, families, nonprofit organizations, and anyone looking to reduce everyday expenses, including local nonprofit organizations.
-
-As a community driven project, we work to keep information current. However, availability and eligibility can change, and some listings may occasionally be out of date. Always refer to the program's website for the most current details.
-
----
-
-</div>
-
-<br>
 
 {% include step-flow.html %}
 

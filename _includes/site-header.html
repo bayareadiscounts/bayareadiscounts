@@ -15,6 +15,66 @@
             All Programs
           </a>
         </li>
+        <li class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  {% if page.url contains '/eligibility/' %}aria-current="page"{% endif %}>
+            Eligibility Guides
+            <span class="dropdown-arrow" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/' or page.url == '/eligibility/index.html' %}aria-current="page"{% endif %}>
+                All Guides
+              </a>
+            </li>
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/public-assistance.html"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/public-assistance.html' %}aria-current="page"{% endif %}>
+                Public Assistance
+              </a>
+            </li>
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/military-veterans.html"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/military-veterans.html' %}aria-current="page"{% endif %}>
+                Military &amp; Veterans
+              </a>
+            </li>
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/students.html"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/students.html' %}aria-current="page"{% endif %}>
+                Students
+              </a>
+            </li>
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/seniors.html"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/seniors.html' %}aria-current="page"{% endif %}>
+                Seniors
+              </a>
+            </li>
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/disability.html"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/disability.html' %}aria-current="page"{% endif %}>
+                Disability
+              </a>
+            </li>
+            <li role="none">
+              <a href="{{ site.baseurl | default: '' }}/eligibility/utility-programs.html"
+                 role="menuitem"
+                 {% if page.url == '/eligibility/utility-programs.html' %}aria-current="page"{% endif %}>
+                Utility Programs
+              </a>
+            </li>
+          </ul>
+        </li>
         <li>
           <a href="{{ site.baseurl | default: '' }}/favorites.html"
              class="nav-link"
@@ -76,7 +136,9 @@
 }
 
 .nav-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   padding: 0.75rem 1.5rem;
   min-height: 48px;
   font-size: 1rem;
@@ -88,6 +150,8 @@
   border: 2px solid transparent;
   text-align: center;
   white-space: nowrap;
+  background: transparent;
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -114,19 +178,86 @@
   color: white;
 }
 
+/* Dropdown styles */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style: none;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.nav-dropdown-menu[data-open="true"] {
+  display: block;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.15s ease;
+}
+
+.nav-dropdown-menu a:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+}
+
+.nav-dropdown-menu a:focus {
+  outline: none;
+  background: #e5e7eb;
+}
+
+.nav-dropdown-menu a[aria-current="page"] {
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 500;
+}
+
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .site-logo img {
     max-width: 280px;
   }
-  
+
   .nav-menu {
     gap: 0.75rem;
   }
-  
+
   .nav-link {
     padding: 0.65rem 1.25rem;
     font-size: 0.95rem;
+  }
+
+  .nav-dropdown-menu {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    transform: none;
+    max-width: calc(100vw - 2rem);
   }
 }
 
@@ -156,6 +287,29 @@
   .nav-link[aria-current="page"]:hover {
     background: #1e40af;
   }
+
+  .nav-dropdown-menu {
+    background: #1f2937;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-dropdown-menu a {
+    color: #c9d1d9;
+  }
+
+  .nav-dropdown-menu a:hover {
+    background: #374151;
+    color: #79d8eb;
+  }
+
+  .nav-dropdown-menu a:focus {
+    background: #374151;
+  }
+
+  .nav-dropdown-menu a[aria-current="page"] {
+    background: #1e3a5f;
+    color: #79d8eb;
+  }
 }
 
 /* Dark mode - manual toggle */
@@ -176,4 +330,104 @@ body[data-theme="dark"] .nav-link[aria-current="page"] {
 body[data-theme="dark"] .nav-link[aria-current="page"]:hover {
   background: #1e40af;
 }
+
+body[data-theme="dark"] .nav-dropdown-menu {
+  background: #1f2937;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body[data-theme="dark"] .nav-dropdown-menu a {
+  color: #c9d1d9;
+}
+
+body[data-theme="dark"] .nav-dropdown-menu a:hover {
+  background: #374151;
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] .nav-dropdown-menu a:focus {
+  background: #374151;
+}
+
+body[data-theme="dark"] .nav-dropdown-menu a[aria-current="page"] {
+  background: #1e3a5f;
+  color: #79d8eb;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+  const dropdownMenu = document.querySelector('.nav-dropdown-menu');
+
+  if (!dropdownToggle || !dropdownMenu) return;
+
+  // Toggle dropdown on click
+  dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    dropdownMenu.setAttribute('data-open', !isExpanded);
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav-dropdown')) {
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+      dropdownMenu.setAttribute('data-open', 'false');
+    }
+  });
+
+  // Keyboard navigation
+  dropdownToggle.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      this.click();
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      if (!isExpanded) {
+        this.click();
+      }
+      const firstItem = dropdownMenu.querySelector('a');
+      if (firstItem) firstItem.focus();
+    } else if (e.key === 'Escape') {
+      this.setAttribute('aria-expanded', 'false');
+      dropdownMenu.setAttribute('data-open', 'false');
+    }
+  });
+
+  // Arrow key navigation within dropdown
+  dropdownMenu.addEventListener('keydown', function(e) {
+    const items = Array.from(this.querySelectorAll('a'));
+    const currentIndex = items.indexOf(document.activeElement);
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      const nextIndex = (currentIndex + 1) % items.length;
+      items[nextIndex].focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      const prevIndex = currentIndex <= 0 ? items.length - 1 : currentIndex - 1;
+      items[prevIndex].focus();
+    } else if (e.key === 'Escape') {
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+      dropdownMenu.setAttribute('data-open', 'false');
+      dropdownToggle.focus();
+    } else if (e.key === 'Tab' && !e.shiftKey && currentIndex === items.length - 1) {
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+      dropdownMenu.setAttribute('data-open', 'false');
+    }
+  });
+
+  // Close on focus out
+  document.querySelector('.nav-dropdown').addEventListener('focusout', function(e) {
+    setTimeout(() => {
+      if (!this.contains(document.activeElement)) {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.setAttribute('data-open', 'false');
+      }
+    }, 0);
+  });
+});
+</script>

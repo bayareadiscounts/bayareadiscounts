@@ -2,8 +2,13 @@
   <h2 id="footer-title" class="visually-hidden">Site Footer</h2>
   <div class="footer-inner">
     <p class="footer-brand">
-      <strong>Bay Area Discounts</strong>
-      · <em>Last Updated: {{ site.data.git.last_commit_date }}</em>
+      <a href="{{ site.baseurl | default: '' }}/" class="footer-logo-link" aria-label="Bay Area Discounts - Home">
+        <img src="{{ site.baseurl | default: '' }}/assets/images/logo/logo.svg"
+             alt="Bay Area Discounts"
+             class="footer-logo"
+             width="120"
+             height="120">
+      </a>
     </p>
 
     <p class="footer-support">

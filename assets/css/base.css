@@ -230,6 +230,22 @@ th, td {
   color: var(--text-heading);
 }
 
+.site-footer .footer-logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.site-footer .footer-logo {
+  display: block;
+  max-width: 120px;
+  height: auto;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer .footer-logo-link:hover .footer-logo {
+  opacity: 0.85;
+}
+
 .site-footer .footer-links a,
 .site-footer .footer-support a {
   display: inline-block; /* Ensure adequate target area */

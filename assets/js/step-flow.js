@@ -1,7 +1,8 @@
 /**
- * Step Flow: Two-step onboarding wizard (Full-page experience)
- * Step 1: Select eligibility
- * Step 2: Select county (or none)
+ * Step Flow: Three-step onboarding wizard (Full-page experience)
+ * Step 1: Introduction / About (Bay Tides info)
+ * Step 2: Select eligibility
+ * Step 3: Select county (or none)
  *
  * Logic:
  * - If county selected: Show programs for that county + Bay Area-wide + Statewide + Nationwide
@@ -206,10 +207,10 @@
     // Step navigation - Next buttons
     qsa('.step-next').forEach(btn => {
       btn.addEventListener('click', () => {
-        const currentStep = parseInt(btn.getAttribute('data-next'));
+        const nextStep = parseInt(btn.getAttribute('data-next'));
 
-        // Validate step 1 before proceeding
-        if (currentStep === 2) {
+        // Validate step 2 (eligibility) before proceeding to step 3
+        if (nextStep === 3) {
           const eligSelected = qsa('input[name="eligibility"]:checked');
           if (eligSelected.length === 0) {
             alert('Please select at least one eligibility option to continue.');
@@ -217,7 +218,7 @@
           }
         }
 
-        showStep(currentStep);
+        showStep(nextStep);
 
         // Scroll to top of wizard
         wizard.scrollTo({ top: 0, behavior: 'smooth' });
@@ -246,7 +247,7 @@
         // Validate at least one eligibility selected
         if (eligValues.length === 0) {
           alert('Please select at least one eligibility option.');
-          showStep(1);
+          showStep(2);
           wizard.scrollTo({ top: 0, behavior: 'smooth' });
           return;
         }

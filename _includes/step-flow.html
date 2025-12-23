@@ -5,13 +5,62 @@
       <img src="{{ site.baseurl | default: '' }}/assets/images/logo/banner.svg" alt="Bay Area Discounts">
     </div>
 
-    <!-- Step 1: Eligibility -->
+    <!-- Step 1: Introduction -->
     <section class="step-page" id="step-1" aria-labelledby="step-1-title">
       <div class="step-header">
         <div class="step-progress">
-          <span class="progress-text">Step 1 of 2</span>
+          <span class="progress-text">Step 1 of 3</span>
           <div class="progress-bar">
-            <div class="progress-fill" style="width: 50%"></div>
+            <div class="progress-fill" style="width: 33%"></div>
+          </div>
+        </div>
+        <button type="button" class="step-flow-skip" aria-label="Skip and browse all programs">
+          Skip to all programs
+        </button>
+      </div>
+
+      <div class="step-content intro-content">
+        <h1 id="step-1-title">Stretch your budget and discover more of what your community has to offer.</h1>
+
+        <p class="intro-text">
+          This guide features free and low-cost resources across the counties commonly recognized as the San Francisco Bay Area: <strong>Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma</strong>.
+        </p>
+
+        <p class="intro-text">
+          Resources are highlighted for public benefit recipients such as SNAP/EBT and Medi-Cal, and various demographic groups, families, nonprofit organizations, and anyone looking to reduce everyday expenses.
+        </p>
+
+        <div class="baytides-section">
+          <h2>About This Project</h2>
+          <p>
+            Bay Area Discounts is an open-source project led by <a href="https://baytides.org" target="_blank" rel="noopener noreferrer">Bay Tides</a>, an environmental 501(c)(3) nonprofit organization. While our primary mission focuses on protecting the Bay Area's natural environment, we believe that supporting our community's well-being is inseparable from environmental stewardship.
+          </p>
+          <p>
+            By helping residents access resources that reduce financial stress, we enable more people to participate in community life and environmental advocacy. This project is entirely volunteer-driven and receives no compensation for any programs or services listed.
+          </p>
+        </div>
+
+        <div class="disclaimer-section">
+          <p>
+            <strong>Please note:</strong> As a community-driven project, we work to keep information current. However, availability and eligibility can change, and some listings may occasionally be out of date. Always refer to the program's website for the most current details.
+          </p>
+        </div>
+
+        <div class="step-actions">
+          <button type="button" class="btn btn-primary step-next" data-next="2">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2: Eligibility -->
+    <section class="step-page" id="step-2" aria-labelledby="step-2-title" hidden>
+      <div class="step-header">
+        <div class="step-progress">
+          <span class="progress-text">Step 2 of 3</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 66%"></div>
           </div>
         </div>
         <button type="button" class="step-flow-skip" aria-label="Skip and browse all programs">
@@ -20,7 +69,7 @@
       </div>
 
       <div class="step-content">
-        <h1 id="step-1-title">Which of these apply to you?</h1>
+        <h1 id="step-2-title">Which of these apply to you?</h1>
         <p class="step-description">Select all that apply to see relevant programs.</p>
 
         <fieldset class="eligibility-grid">
@@ -100,18 +149,21 @@
         </fieldset>
 
         <div class="step-actions">
-          <button type="button" class="btn btn-primary step-next" data-next="2">
+          <button type="button" class="btn btn-secondary step-back" data-back="1">
+            Back
+          </button>
+          <button type="button" class="btn btn-primary step-next" data-next="3">
             Continue
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Step 2: County -->
-    <section class="step-page" id="step-2" aria-labelledby="step-2-title" hidden>
+    <!-- Step 3: County -->
+    <section class="step-page" id="step-3" aria-labelledby="step-3-title" hidden>
       <div class="step-header">
         <div class="step-progress">
-          <span class="progress-text">Step 2 of 2</span>
+          <span class="progress-text">Step 3 of 3</span>
           <div class="progress-bar">
             <div class="progress-fill" style="width: 100%"></div>
           </div>
@@ -122,7 +174,7 @@
       </div>
 
       <div class="step-content">
-        <h1 id="step-2-title">What county do you live in?</h1>
+        <h1 id="step-3-title">What county do you live in?</h1>
         <p class="step-description">We'll automatically include Bay Area-wide, California statewide, and nationwide programs.</p>
 
         <fieldset class="county-grid">
@@ -200,7 +252,7 @@
         </fieldset>
 
         <div class="step-actions">
-          <button type="button" class="btn btn-secondary step-back" data-back="1">
+          <button type="button" class="btn btn-secondary step-back" data-back="2">
             Back
           </button>
           <button type="button" class="btn btn-primary step-submit">
@@ -334,6 +386,80 @@
   color: #6b7280;
   margin: 0 0 2.5rem;
   line-height: 1.6;
+}
+
+/* Intro page specific styles */
+.intro-content h1 {
+  font-size: 1.75rem;
+  line-height: 1.35;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  font-size: 1.0625rem;
+  color: #374151;
+  line-height: 1.7;
+  margin: 0 0 1.25rem;
+}
+
+.intro-text strong {
+  color: #111827;
+}
+
+.baytides-section {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.baytides-section h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #065f46;
+  margin: 0 0 0.75rem;
+}
+
+.baytides-section p {
+  font-size: 0.9375rem;
+  color: #047857;
+  line-height: 1.65;
+  margin: 0 0 0.75rem;
+}
+
+.baytides-section p:last-child {
+  margin-bottom: 0;
+}
+
+.baytides-section a {
+  color: #047857;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.baytides-section a:hover {
+  color: #065f46;
+}
+
+.disclaimer-section {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.disclaimer-section p {
+  font-size: 0.9375rem;
+  color: #92400e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.disclaimer-section strong {
+  color: #78350f;
 }
 
 /* Option cards grid */
@@ -508,6 +634,44 @@
     color: #d1d5db;
   }
 
+  .intro-text {
+    color: #d1d5db;
+  }
+
+  .intro-text strong {
+    color: #f9fafb;
+  }
+
+  .baytides-section {
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+    border-color: #047857;
+  }
+
+  .baytides-section h2 {
+    color: #a7f3d0;
+  }
+
+  .baytides-section p {
+    color: #6ee7b7;
+  }
+
+  .baytides-section a {
+    color: #a7f3d0;
+  }
+
+  .disclaimer-section {
+    background: #451a03;
+    border-color: #b45309;
+  }
+
+  .disclaimer-section p {
+    color: #fcd34d;
+  }
+
+  .disclaimer-section strong {
+    color: #fbbf24;
+  }
+
   .card-inner {
     background: #374151;
     border-color: #4b5563;
@@ -567,6 +731,44 @@ body[data-theme="dark"] .step-content h1 {
 
 body[data-theme="dark"] .step-description {
   color: #d1d5db;
+}
+
+body[data-theme="dark"] .intro-text {
+  color: #d1d5db;
+}
+
+body[data-theme="dark"] .intro-text strong {
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] .baytides-section {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+  border-color: #047857;
+}
+
+body[data-theme="dark"] .baytides-section h2 {
+  color: #a7f3d0;
+}
+
+body[data-theme="dark"] .baytides-section p {
+  color: #6ee7b7;
+}
+
+body[data-theme="dark"] .baytides-section a {
+  color: #a7f3d0;
+}
+
+body[data-theme="dark"] .disclaimer-section {
+  background: #451a03;
+  border-color: #b45309;
+}
+
+body[data-theme="dark"] .disclaimer-section p {
+  color: #fcd34d;
+}
+
+body[data-theme="dark"] .disclaimer-section strong {
+  color: #fbbf24;
 }
 
 body[data-theme="dark"] .card-inner {
@@ -634,8 +836,21 @@ body[data-theme="dark"] .preferences-section {
     font-size: 1.625rem;
   }
 
+  .intro-content h1 {
+    font-size: 1.375rem;
+  }
+
   .step-description {
     font-size: 1rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .baytides-section,
+  .disclaimer-section {
+    padding: 1.25rem;
   }
 
   .eligibility-grid,
