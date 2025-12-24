@@ -1,19 +1,6 @@
 <section class="search-panel active" aria-label="Search and filter programs">
   <div class="search-container">
-    
-    <!-- Sort Dropdown (Moved to top) -->
-    <div class="sort-field">
-      <label for="sort-select" class="sort-label" id="sort-select-label">Sort by:</label>
-      <select id="sort-select" class="sort-select" aria-labelledby="sort-select-label" aria-describedby="sort-help">
-        <span id="sort-help" class="sr-only">Choose how to order the program list</span>
-        <option value="name-asc">Name (A-Z)</option>
-        <option value="name-desc">Name (Z-A)</option>
-        <option value="category-asc">Category (A-Z)</option>
-        <option value="area-asc">Area (A-Z)</option>
-        <option value="newest">Newest First</option>
-      </select>
-    </div>
-    
+
     <!-- Search Input -->
     <div class="search-field">
       <label for="search-input" class="sr-only">Search programs</label>
@@ -24,7 +11,6 @@
         aria-label="Search programs"
         autocomplete="off"
       >
-      <span class="results-count" aria-live="polite" aria-atomic="true"></span>
     </div>
 
     <!-- Filter Section -->
@@ -181,6 +167,22 @@
       <button type="button" class="reset-btn" onclick="searchFilter.resetFilters()">
         Clear All Filters
       </button>
+    </div>
+
+    <!-- Sort and Results (at bottom, near results) -->
+    <div class="sort-results-bar">
+      <span class="results-count" aria-live="polite" aria-atomic="true"></span>
+      <div class="sort-field">
+        <label for="sort-select" class="sort-label" id="sort-select-label">Sort by:</label>
+        <select id="sort-select" class="sort-select" aria-labelledby="sort-select-label" aria-describedby="sort-help">
+          <span id="sort-help" class="sr-only">Choose how to order the program list</span>
+          <option value="name-asc">Name (A-Z)</option>
+          <option value="name-desc">Name (Z-A)</option>
+          <option value="category-asc">Category (A-Z)</option>
+          <option value="area-asc">Area (A-Z)</option>
+          <option value="newest">Newest First</option>
+        </select>
+      </div>
     </div>
   </div>
 </section>

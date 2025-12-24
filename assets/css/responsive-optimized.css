@@ -186,8 +186,30 @@ a:visited {
 }
 
 #search-input::placeholder {
-  color: var(--text-primary);
-  opacity: 0.5;
+  color: var(--input-placeholder, #9ca3af);
+  opacity: 1;
+}
+
+/* Sort and results bar - positioned at bottom of filters, near results */
+.sort-results-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.sort-results-bar .results-count {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.sort-results-bar .sort-field {
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 /* Sort dropdown styling */
@@ -554,8 +576,7 @@ a:visited {
 
 .results-count {
   font-size: var(--text-base);
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  color: var(--text-heading);
   font-weight: 500;
 }
 
@@ -607,6 +628,16 @@ a:visited {
 
   .sort-select {
     width: 100%;
+  }
+
+  .sort-results-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .sort-results-bar .results-count {
+    text-align: center;
   }
 
   h1 {
@@ -1001,6 +1032,90 @@ body[data-theme="dark"] .reset-btn {
 
 body[data-theme="dark"] .reset-btn:hover {
   background: var(--filter-btn-bg-hover);
+}
+
+/* ============================================================
+   LIGHT MODE MANUAL TOGGLE
+   Enhanced visual separation when user selects light theme
+   ============================================================ */
+
+body[data-theme="light"] .program-card,
+body[data-theme="light"] .search-panel {
+  background: #ffffff;
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+body[data-theme="light"] .program-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+body[data-theme="light"] .filter-btn {
+  background: #ffffff;
+  color: var(--filter-btn-text);
+  border-color: #d1d5db;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+body[data-theme="light"] .filter-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+body[data-theme="light"] .filter-btn.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 172, 193, 0.3);
+}
+
+body[data-theme="light"] #search-input {
+  background: #ffffff;
+  color: var(--text-primary);
+  border-color: #d1d5db;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+body[data-theme="light"] #search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 3px rgba(0, 172, 193, 0.15);
+}
+
+body[data-theme="light"] #search-input::placeholder {
+  color: #9ca3af;
+}
+
+body[data-theme="light"] .sort-select {
+  background: #ffffff;
+  color: var(--text-primary);
+  border-color: #d1d5db;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+body[data-theme="light"] .reset-btn {
+  background: #ffffff;
+  color: var(--text-primary);
+  border-color: #d1d5db;
+}
+
+body[data-theme="light"] .reset-btn:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+body[data-theme="light"] .sort-field {
+  background: #ffffff;
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+body[data-theme="light"] .results-count {
+  color: var(--text-heading);
+}
+
+body[data-theme="light"] .sort-results-bar {
+  border-top-color: #d1d5db;
 }
 
 /* ============================================================

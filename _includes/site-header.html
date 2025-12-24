@@ -279,12 +279,12 @@
 /* Dark mode - system preference */
 @media (prefers-color-scheme: dark) {
   .nav-link {
-    color: var(--text-primary, #c9d1d9);
+    color: var(--text-link, #79d8eb);
   }
 
   .nav-link:hover {
     background: #30363d;
-    color: var(--text-link, #79d8eb);
+    color: var(--text-link-hover, #a8e6f1);
   }
 
   .nav-link[aria-current="page"] {
@@ -302,12 +302,12 @@
   }
 
   .nav-dropdown-menu a {
-    color: #c9d1d9;
+    color: var(--text-link, #79d8eb);
   }
 
   .nav-dropdown-menu a:hover {
     background: #374151;
-    color: #79d8eb;
+    color: var(--text-link-hover, #a8e6f1);
   }
 
   .nav-dropdown-menu a:focus {
@@ -322,12 +322,12 @@
 
 /* Dark mode - manual toggle */
 body[data-theme="dark"] .nav-link {
-  color: var(--text-primary, #c9d1d9);
+  color: var(--text-link, #79d8eb);
 }
 
 body[data-theme="dark"] .nav-link:hover {
   background: #30363d;
-  color: var(--text-link, #79d8eb);
+  color: var(--text-link-hover, #a8e6f1);
 }
 
 body[data-theme="dark"] .nav-link[aria-current="page"] {
@@ -345,12 +345,12 @@ body[data-theme="dark"] .nav-dropdown-menu {
 }
 
 body[data-theme="dark"] .nav-dropdown-menu a {
-  color: #c9d1d9;
+  color: var(--text-link, #79d8eb);
 }
 
 body[data-theme="dark"] .nav-dropdown-menu a:hover {
   background: #374151;
-  color: #79d8eb;
+  color: var(--text-link-hover, #a8e6f1);
 }
 
 body[data-theme="dark"] .nav-dropdown-menu a:focus {
@@ -360,6 +360,30 @@ body[data-theme="dark"] .nav-dropdown-menu a:focus {
 body[data-theme="dark"] .nav-dropdown-menu a[aria-current="page"] {
   background: #1e3a5f;
   color: #79d8eb;
+}
+
+/* Light mode - manual toggle (reset to light colors) */
+body[data-theme="light"] .nav-link {
+  color: #374151;
+}
+
+body[data-theme="light"] .nav-link:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+}
+
+body[data-theme="light"] .nav-dropdown-menu {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body[data-theme="light"] .nav-dropdown-menu a {
+  color: #374151;
+}
+
+body[data-theme="light"] .nav-dropdown-menu a:hover {
+  background: #f3f4f6;
+  color: #2563eb;
 }
 </style>
 
