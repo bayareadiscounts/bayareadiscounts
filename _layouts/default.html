@@ -135,105 +135,45 @@
         });
       }
 
-      // Expose install prompt globally for footer link
+      // Expose install prompt globally for utility bar install button
       window.deferredPrompt = null;
-      const installButton = document.createElement('button');
-      installButton.id = 'install-button';
-      installButton.type = 'button';
-      installButton.innerHTML = '📱 Install App';
-      installButton.style.cssText = `
-        display: none;
-        position: fixed;
-        bottom: 80px;
-        right: 30px;
-        padding: 12px 20px;
-        background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
-        color: white;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        z-index: 1000;
-        box-shadow: 0 4px 12px rgba(0, 172, 193, 0.4);
-        font-weight: 600;
-        font-size: 14px;
-        transition: all 0.3s ease;
-      `;
-      document.body.appendChild(installButton);
-
-      installButton.addEventListener('mouseenter', () => {
-        installButton.style.transform = 'translateY(-3px)';
-        installButton.style.boxShadow = '0 6px 16px rgba(0, 172, 193, 0.5)';
-      });
-
-      installButton.addEventListener('mouseleave', () => {
-        installButton.style.transform = 'translateY(0)';
-        installButton.style.boxShadow = '0 4px 12px rgba(0, 172, 193, 0.4)';
-      });
 
       window.addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
         window.deferredPrompt = e;
-        installButton.style.display = 'block';
 
-        const footerLink = document.getElementById('footer-install-link');
-        if (footerLink) {
-          footerLink.removeAttribute('aria-disabled');
-          footerLink.classList.remove('is-disabled');
-          footerLink.setAttribute('data-install-available', 'true');
-        }
-
-        const live = document.getElementById('install-live');
-        if (live) {
-          live.textContent = 'App install is available.';
+        // Show the install button in the utility bar
+        const installItem = document.getElementById('install-app-item');
+        if (installItem) {
+          installItem.style.display = '';
         }
       });
 
-      // Helper to trigger install from anywhere (e.g., footer link)
+      // Helper to trigger install from utility bar
       window.triggerPWAInstall = async () => {
-        const footerLink = document.getElementById('footer-install-link');
         if (!window.deferredPrompt) {
-          if (footerLink) footerLink.setAttribute('aria-disabled', 'true');
           return;
         }
         window.deferredPrompt.prompt();
         const { outcome } = await window.deferredPrompt.userChoice;
         console.log(`User response: ${outcome}`);
         window.deferredPrompt = null;
-        installButton.style.display = 'none';
-        if (footerLink) {
-          footerLink.setAttribute('aria-disabled', 'true');
-          footerLink.classList.add('is-disabled');
-          footerLink.removeAttribute('data-install-available');
+
+        // Hide the install button after prompt
+        const installItem = document.getElementById('install-app-item');
+        if (installItem) {
+          installItem.style.display = 'none';
         }
       };
 
-      installButton.addEventListener('click', async () => {
-        await window.triggerPWAInstall();
-      });
-
-      // Delegate footer link click
-      document.addEventListener('click', async (e) => {
-        const target = e.target.closest('#footer-install-link');
-        if (target && !target.getAttribute('aria-disabled')) {
-          e.preventDefault();
-          await window.triggerPWAInstall();
-        }
-      });
-
       window.addEventListener('appinstalled', () => {
         console.log('PWA installed');
-        installButton.style.display = 'none';
         window.deferredPrompt = null;
-        const footerLink = document.getElementById('footer-install-link');
-        if (footerLink) {
-          footerLink.setAttribute('aria-disabled', 'true');
-          footerLink.classList.add('is-disabled');
-          footerLink.removeAttribute('data-install-available');
-        }
 
-        const live = document.getElementById('install-live');
-        if (live) {
-          live.textContent = 'App installed.';
+        // Hide the install button
+        const installItem = document.getElementById('install-app-item');
+        if (installItem) {
+          installItem.style.display = 'none';
         }
       });
 

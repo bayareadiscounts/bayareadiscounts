@@ -55,6 +55,18 @@
           </button>
         </div>
 
+        <!-- Install App (hidden by default, shown when PWA install is available) -->
+        <div class="utility-item" id="install-app-item" style="display: none;">
+          <button type="button" id="install-app-btn" class="utility-btn utility-btn-install" aria-label="Install app">
+            <svg class="utility-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Install</span>
+          </button>
+        </div>
+
       </div>
     </div>
 
@@ -193,6 +205,23 @@
   transform: translateY(1px);
 }
 
+/* Install button accent styling */
+.utility-btn-install {
+  background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
+  color: white;
+  border-color: #00acc1;
+}
+
+.utility-btn-install:hover {
+  background: linear-gradient(135deg, #0097a7 0%, #00acc1 100%);
+  border-color: #0097a7;
+  color: white;
+}
+
+.utility-btn-install:focus {
+  outline: 3px solid #00acc1;
+}
+
 /* Toggle Button */
 .utility-bar-toggle {
   position: absolute;
@@ -261,6 +290,18 @@
 
   .utility-bar-toggle:hover {
     background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  }
+
+  .utility-btn-install {
+    background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
+    color: white;
+    border-color: #00acc1;
+  }
+
+  .utility-btn-install:hover {
+    background: linear-gradient(135deg, #0097a7 0%, #00acc1 100%);
+    border-color: #0097a7;
+    color: white;
   }
 }
 
@@ -372,6 +413,18 @@ body[data-theme="dark"] .utility-bar-toggle {
 
 body[data-theme="dark"] .utility-bar-toggle:hover {
   background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+}
+
+body[data-theme="dark"] .utility-btn-install {
+  background: linear-gradient(135deg, #00acc1 0%, #00bcd4 100%);
+  color: white;
+  border-color: #00acc1;
+}
+
+body[data-theme="dark"] .utility-btn-install:hover {
+  background: linear-gradient(135deg, #0097a7 0%, #00acc1 100%);
+  border-color: #0097a7;
+  color: white;
 }
 
 /* Font Size Applied Styles */
@@ -528,6 +581,16 @@ body[data-font-size="x-large"] {
         spacingToggle.style.background = '';
         spacingToggle.style.color = '';
         spacingToggle.style.borderColor = '';
+      }
+    });
+  }
+
+  // Install App button
+  const installAppBtn = document.getElementById('install-app-btn');
+  if (installAppBtn) {
+    installAppBtn.addEventListener('click', async () => {
+      if (typeof window.triggerPWAInstall === 'function') {
+        await window.triggerPWAInstall();
       }
     });
   }
