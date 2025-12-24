@@ -57,8 +57,8 @@ test.describe('WCAG 2.2 AAA Compliance Verification', () => {
     const themeBox = await themeSelect.boundingBox();
     expect(themeBox.height).toBeGreaterThanOrEqual(44);
 
-    // All utility buttons
-    const buttons = page.locator('.utility-btn');
+    // All visible utility buttons (skip hidden ones like install button when PWA not available)
+    const buttons = page.locator('.utility-btn:visible');
     const buttonCount = await buttons.count();
     for (let i = 0; i < buttonCount; i++) {
       const btn = buttons.nth(i);
