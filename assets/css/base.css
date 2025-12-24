@@ -430,6 +430,16 @@ body[data-theme="dark"] .content-wrapper code {
   border: 1px solid #30363d;
 }
 
+body[data-theme="light"] .content-wrapper code {
+  background: #f6f8fa;
+  color: #24292e;
+  border: none;
+}
+
+body[data-theme="light"] .content-wrapper blockquote {
+  border-left-color: var(--border-light);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -539,6 +549,44 @@ body[data-theme="dark"] .heading-dark-adjust em {
   color: #c9d1d9;
 }
 
+/* Light mode manual override - reset heading-dark-adjust when user selects light theme */
+body[data-theme="light"] .heading-dark-adjust h1,
+body[data-theme="light"] .heading-dark-adjust h2,
+body[data-theme="light"] .heading-dark-adjust h3,
+body[data-theme="light"] .heading-dark-adjust h4,
+body[data-theme="light"] .heading-dark-adjust h5,
+body[data-theme="light"] .heading-dark-adjust h6 {
+  color: var(--text-heading);
+}
+
+body[data-theme="light"] .heading-dark-adjust p,
+body[data-theme="light"] .heading-dark-adjust li,
+body[data-theme="light"] .heading-dark-adjust dd {
+  color: var(--text-primary);
+}
+
+body[data-theme="light"] .heading-dark-adjust a {
+  color: var(--text-link);
+}
+
+body[data-theme="light"] .heading-dark-adjust a:hover {
+  color: var(--text-link-hover);
+}
+
+body[data-theme="light"] .heading-dark-adjust strong {
+  color: var(--text-heading);
+}
+
+body[data-theme="light"] .heading-dark-adjust em {
+  color: var(--text-secondary);
+}
+
+body[data-theme="light"] .heading-dark-adjust ul,
+body[data-theme="light"] .heading-dark-adjust ol,
+body[data-theme="light"] .heading-dark-adjust blockquote {
+  color: var(--text-primary);
+}
+
 .toast-message {
   position: fixed;
   bottom: 1rem;
@@ -565,6 +613,17 @@ body[data-theme="dark"] .heading-dark-adjust em {
     background: #1f2937;
     border-color: #30363d;
   }
+}
+
+body[data-theme="dark"] .no-results {
+  background: #1f2937;
+  border-color: #30363d;
+}
+
+body[data-theme="light"] .no-results {
+  background: #f9fafb;
+  border-color: var(--border-color);
+  color: var(--text-primary);
 }
 
 .skip-link {

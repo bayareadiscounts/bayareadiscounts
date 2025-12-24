@@ -474,6 +474,131 @@ body.simple-language .simple-language-summary {
 }
 
 /* ============================================
+   MANUAL THEME OVERRIDES
+   When user selects a theme via the dropdown, these
+   override the system preference media queries.
+   ============================================ */
+
+/* Dark theme manual toggle */
+body[data-theme="dark"] #accessibility-panel {
+  background: #1a1a1a;
+  color: #e8eef5;
+  border: 1px solid #30363d;
+}
+
+body[data-theme="dark"] #accessibility-panel h3 {
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] .a11y-control-group {
+  border-bottom-color: #30363d;
+}
+
+body[data-theme="dark"] .a11y-control-group label,
+body[data-theme="dark"] .a11y-control-group span[id$="-label"] {
+  color: #e8eef5;
+}
+
+body[data-theme="dark"] .a11y-btn {
+  background: #21262d;
+  border-color: #30363d;
+  color: #e8eef5;
+}
+
+body[data-theme="dark"] .a11y-btn:hover {
+  background: #2d333b;
+  border-color: #79d8eb;
+}
+
+body[data-theme="dark"] .a11y-value {
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] .toggle-switch {
+  background: #30363d;
+}
+
+body[data-theme="dark"] .a11y-select {
+  background: #21262d;
+  border-color: #30363d;
+  color: #e8eef5;
+}
+
+body[data-theme="dark"] .a11y-close {
+  color: #8b949e;
+}
+
+body[data-theme="dark"] .a11y-close:hover {
+  background: #21262d;
+  color: #e8eef5;
+}
+
+/* Light theme manual toggle - resets dark system preference */
+body[data-theme="light"] #accessibility-panel {
+  background: white;
+  color: #24292e;
+  border: 1px solid #d0d7de;
+}
+
+body[data-theme="light"] #accessibility-panel h3 {
+  color: #00838f;
+}
+
+body[data-theme="light"] .a11y-control-group {
+  border-bottom-color: #e1e4e8;
+}
+
+body[data-theme="light"] .a11y-control-group label,
+body[data-theme="light"] .a11y-control-group span[id$="-label"] {
+  color: #24292e;
+}
+
+body[data-theme="light"] .a11y-btn {
+  background: #f6f8fa;
+  border-color: #d0d7de;
+  color: #24292e;
+}
+
+body[data-theme="light"] .a11y-btn:hover {
+  background: #e8eef5;
+  border-color: #00acc1;
+}
+
+body[data-theme="light"] .a11y-value {
+  color: #00838f;
+}
+
+body[data-theme="light"] .toggle-switch {
+  background: #d0d7de;
+}
+
+body[data-theme="light"] .a11y-select {
+  background: white;
+  border-color: #d1d5db;
+  color: #24292e;
+}
+
+body[data-theme="light"] .a11y-close {
+  color: #6e7781;
+}
+
+body[data-theme="light"] .a11y-close:hover {
+  background: #f6f8fa;
+  color: #24292e;
+}
+
+body[data-theme="light"] .a11y-report-btn {
+  background: #f6f8fa;
+  color: #24292e;
+  border-color: #d0d7de;
+}
+
+body[data-theme="light"] .a11y-report-btn:hover {
+  background: #e8eef5;
+  border-color: #00acc1;
+}
+
+/* ============================================
    ACCESSIBILITY FEATURE IMPLEMENTATIONS
    ============================================ */
 
