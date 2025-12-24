@@ -60,7 +60,8 @@ test.describe('Recent Changes - Site Header and Dark Mode', () => {
     const lightBgColor = await body.evaluate((el) => {
       return getComputedStyle(el).getPropertyValue('--bg-main').trim();
     });
-    expect(lightBgColor).toBe('white'); // Light mode background
+    // Browser may return 'white' or '#ffffff' depending on how it normalizes
+    expect(['white', '#ffffff']).toContain(lightBgColor); // Light mode background
   });
 
   test('dark mode toggle overrides system preference', async ({ page }) => {
@@ -81,7 +82,8 @@ test.describe('Recent Changes - Site Header and Dark Mode', () => {
     const bgColor = await body.evaluate((el) => {
       return getComputedStyle(el).getPropertyValue('--bg-main').trim();
     });
-    expect(bgColor).toBe('white'); // Should stay light
+    // Browser may return 'white' or '#ffffff' depending on how it normalizes
+    expect(['white', '#ffffff']).toContain(bgColor); // Should stay light
   });
 
   test('auto mode respects system preference', async ({ page }) => {
