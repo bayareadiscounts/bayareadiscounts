@@ -141,14 +141,6 @@
       </div>
 
       <button class="a11y-reset" id="reset-settings">Reset to Defaults</button>
-      <a class="a11y-report-btn" 
-         href="https://github.com/baytides/bayareadiscounts/issues/new?labels=accessibility&title=Accessibility%20tool%20issue&body=Describe%20the%20problem%20you%20experienced%20with%20the%20accessibility%20toolbar%20(including%20device,%20browser,%20and%20steps%20to%20reproduce)." 
-         target="_blank" 
-         rel="noopener noreferrer"
-         role="button"
-         aria-label="Report an issue with accessibility tools - opens in new window">
-        Report an issue with the accessibility tools <span class="visually-hidden">(opens in new window)</span>
-      </a>
     `;
     
     // Append to body

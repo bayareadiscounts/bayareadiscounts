@@ -332,15 +332,17 @@ class DiscountSearchFilter {
    */
   buildSearchIndex() {
     const cards = document.querySelectorAll('#search-results [data-program]');
-    
+
     cards.forEach(card => {
       const programData = {
         id: card.getAttribute('data-program-id') || Math.random(),
         name: card.getAttribute('data-program-name') || '',
         category: card.getAttribute('data-category') || '',
         area: card.getAttribute('data-area') || '',
+        city: card.getAttribute('data-city') || '',
         eligibility: card.getAttribute('data-eligibility') || '',
         benefit: card.querySelector('[data-benefit]')?.textContent || '',
+        verifiedDate: card.querySelector('.verified-badge')?.getAttribute('data-verified') || '',
         element: card,
         visible: true
       };
@@ -566,11 +568,21 @@ class DiscountSearchFilter {
    * Sort programs based on current sort option
    */
   sortPrograms() {
+    // Handle special case for recently-verified
+    if (this.currentSort === 'recently-verified') {
+      this.filteredPrograms.sort((a, b) => {
+        const dateA = a.verifiedDate ? new Date(a.verifiedDate).getTime() : 0;
+        const dateB = b.verifiedDate ? new Date(b.verifiedDate).getTime() : 0;
+        return dateB - dateA; // Most recent first
+      });
+      return;
+    }
+
     const [field, order] = this.currentSort.split('-');
-    
+
     this.filteredPrograms.sort((a, b) => {
       let compareA, compareB;
-      
+
       switch(field) {
         case 'name':
           compareA = a.name.toLowerCase();
@@ -581,17 +593,14 @@ class DiscountSearchFilter {
           compareB = b.category.toLowerCase();
           break;
         case 'area':
-          compareA = a.area.toLowerCase();
-          compareB = b.area.toLowerCase();
+          // Use city if available, otherwise use area (county)
+          compareA = (a.city || a.area || '').toLowerCase();
+          compareB = (b.city || b.area || '').toLowerCase();
           break;
-        case 'newest':
-          // For newest, we'd need added_date in the data attributes
-          // For now, maintain current order
-          return 0;
         default:
           return 0;
       }
-      
+
       if (order === 'asc') {
         return compareA > compareB ? 1 : compareA < compareB ? -1 : 0;
       } else {

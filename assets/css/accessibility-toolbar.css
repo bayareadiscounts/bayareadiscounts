@@ -333,59 +333,6 @@
   outline-offset: 2px;
 }
 
-/* Report button */
-.a11y-report-btn {
-  display: block;
-  width: 100%;
-  margin-top: 12px;
-  padding: 14px 20px;
-  background: #f1f5f9;
-  color: #0f172a;
-  border: 2px solid #cbd5e1;
-  border-radius: 8px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.a11y-report-btn:hover {
-  background: #e2e8f0;
-  border-color: #94a3b8;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.a11y-report-btn:focus {
-  outline: 3px solid #ff6f00;
-  outline-offset: 2px;
-  background: #e2e8f0;
-}
-
-.a11y-report-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  .a11y-report-btn {
-    background: #1e293b;
-    color: #e2e8f0;
-    border-color: #475569;
-  }
-  
-  .a11y-report-btn:hover {
-    background: #334155;
-    border-color: #64748b;
-  }
-  
-  .a11y-report-btn:focus {
-    outline-color: #ffb347;
-    background: #334155;
-  }
-}
-
 /* Simple language summary helper */
 body.simple-language .simple-language-summary {
   display: block;
@@ -585,17 +532,6 @@ body[data-theme="light"] .a11y-close {
 body[data-theme="light"] .a11y-close:hover {
   background: #f6f8fa;
   color: #24292e;
-}
-
-body[data-theme="light"] .a11y-report-btn {
-  background: #f6f8fa;
-  color: #24292e;
-  border-color: #d0d7de;
-}
-
-body[data-theme="light"] .a11y-report-btn:hover {
-  background: #e8eef5;
-  border-color: #00acc1;
 }
 
 /* ============================================

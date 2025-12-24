@@ -5,6 +5,7 @@
   data-program-name="{{ include.program.name }}"
   data-category="{{ include.program.category }}"
   data-area="{% if include.program.area %}{% assign area_val = include.program.area %}{% if area_val | first %}{{ area_val | join: ' ' }}{% else %}{{ area_val }}{% endif %}{% endif %}"
+  data-city="{% if include.program.city %}{{ include.program.city }}{% endif %}"
   data-eligibility="{% if include.program.eligibility %}{{ include.program.eligibility | join: ' ' }}{% endif %}"
 >
   <div class="program-card-header">
@@ -24,8 +25,8 @@
       <h3 class="program-name">
         <span class="program-name-text">{{ include.program.name }}</span>
         {% if include.program.verified_date %}
-          <span class="verified-badge" data-verified="{{ include.program.verified_date }}" title="Last verified {{ include.program.verified_date }}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <span class="verified-badge" data-verified="{{ include.program.verified_date }}" title="Last verified {{ include.program.verified_date }}" aria-label="Verified {{ include.program.verified_date }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
             </svg>
           </span>
@@ -109,7 +110,7 @@
           {% assign badge_display = elig %}
         {% endcase %}
 
-      <span class="eligibility-badge" aria-label="{{ badge_label }}" title="">
+      <span class="eligibility-badge" aria-label="{{ badge_label }}" title="{{ badge_label }}">
         {% if badge_emoji %}{{ badge_emoji }} {% endif %}{{ badge_display | default: badge_label }}
       </span>
     {% endfor %}
@@ -122,8 +123,8 @@
 
   <div class="program-footer">
     <span class="program-timeframe">{{ include.program.timeframe }}</span>
-    <a href="{{ include.program.link | append: '?utm_source=bayareadiscounts&utm_medium=referral&utm_campaign=directory' }}" class="program-link" target="_blank" rel="noopener">
-      {{ include.program.link_text | default: "Visit Program" }}
+    <a href="{{ include.program.link | append: '?utm_source=bayareadiscounts&utm_medium=referral&utm_campaign=directory' }}" class="program-link" target="_blank" rel="noopener" aria-label="{{ include.program.link_text | default: 'Visit Program' }} - {{ include.program.name }} (opens in new window)">
+      {{ include.program.link_text | default: "Visit Program" }}<span class="sr-only"> (opens in new window)</span>
     </a>
   </div>
 </article>

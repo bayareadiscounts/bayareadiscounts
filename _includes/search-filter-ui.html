@@ -174,13 +174,15 @@
       <span class="results-count" aria-live="polite" aria-atomic="true"></span>
       <div class="sort-field">
         <label for="sort-select" class="sort-label" id="sort-select-label">Sort by:</label>
+        <span id="sort-help" class="sr-only">Choose how to order the program list</span>
         <select id="sort-select" class="sort-select" aria-labelledby="sort-select-label" aria-describedby="sort-help">
-          <span id="sort-help" class="sr-only">Choose how to order the program list</span>
           <option value="name-asc">Name (A-Z)</option>
           <option value="name-desc">Name (Z-A)</option>
-          <option value="category-asc">Category (A-Z)</option>
           <option value="area-asc">Area (A-Z)</option>
-          <option value="newest">Newest First</option>
+          <option value="area-desc">Area (Z-A)</option>
+          <option value="category-asc">Category (A-Z)</option>
+          <option value="category-desc">Category (Z-A)</option>
+          <option value="recently-verified">Recently Verified</option>
         </select>
       </div>
     </div>

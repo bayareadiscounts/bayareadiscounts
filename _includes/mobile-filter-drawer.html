@@ -1,5 +1,5 @@
-<div class="mobile-filter-toggle" id="mobile-filter-toggle" role="button" aria-expanded="false" aria-controls="mobile-filter-drawer">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<div class="mobile-filter-toggle" id="mobile-filter-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="mobile-filter-drawer" aria-label="Open filters">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <line x1="4" y1="21" x2="4" y2="14"></line>
     <line x1="4" y1="10" x2="4" y2="3"></line>
     <line x1="12" y1="21" x2="12" y2="12"></line>
@@ -11,7 +11,7 @@
     <line x1="17" y1="16" x2="23" y2="16"></line>
   </svg>
   <span>Filters</span>
-  <span class="filter-count" id="active-filter-count"></span>
+  <span class="filter-count" id="active-filter-count" aria-live="polite"></span>
 </div>
 
 <style>
@@ -184,13 +184,29 @@
   closeBtn.textContent = 'Close Filters';
   panel.querySelector('.search-container').appendChild(closeBtn);
   
-  // Open drawer
-  toggle.addEventListener('click', function() {
+  // Open drawer function
+  function openDrawer() {
     panel.classList.add('mobile-open');
     panel.id = panel.id || 'mobile-filter-drawer';
     toggle.setAttribute('aria-expanded', 'true');
     backdrop.classList.add('show');
     document.body.style.overflow = 'hidden';
+    // Focus the first interactive element in the panel
+    setTimeout(function() {
+      const firstInput = panel.querySelector('input, button, select');
+      if (firstInput) firstInput.focus();
+    }, 100);
+  }
+
+  // Open drawer on click
+  toggle.addEventListener('click', openDrawer);
+
+  // Keyboard support for Enter and Space
+  toggle.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openDrawer();
+    }
   });
   
   // Close drawer

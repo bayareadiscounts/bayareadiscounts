@@ -235,6 +235,13 @@
     /* Badges */
     --badge-new-bg: #1e3a8a;
     --badge-new-text: #93c5fd;
+
+    /* Neutral palette for dark mode */
+    --neutral-50: #21262d;
+    --neutral-100: #30363d;
+    --neutral-200: #484f58;
+    --neutral-300: #6e7681;
+    --neutral-400: #8b949e;
   }
 }
 
@@ -287,6 +294,13 @@ body[data-theme="dark"] {
   /* Badges */
   --badge-new-bg: #1e3a8a;
   --badge-new-text: #93c5fd;
+
+  /* Neutral palette for dark mode */
+  --neutral-50: #21262d;
+  --neutral-100: #30363d;
+  --neutral-200: #484f58;
+  --neutral-300: #6e7681;
+  --neutral-400: #8b949e;
 }
 
 /* ============================================

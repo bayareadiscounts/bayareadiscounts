@@ -258,7 +258,18 @@
     border-color: #2563eb;
     color: #2563eb;
   }
-  
+
+  .print-button:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+  }
+
+  .print-button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+  }
+
   .print-button svg {
     width: 20px;
     height: 20px;
