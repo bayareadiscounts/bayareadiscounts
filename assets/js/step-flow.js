@@ -33,9 +33,9 @@
     const searchResults = qs('#search-results');
     const mobileDrawer = qs('.mobile-filter-drawer');
 
-    if (filterUI) filterUI.style.display = 'block';
-    if (searchResults) searchResults.style.display = 'block';
-    if (mobileDrawer) mobileDrawer.style.display = 'block';
+    if (filterUI) filterUI.style.display = '';
+    if (searchResults) searchResults.style.display = '';
+    if (mobileDrawer) mobileDrawer.style.display = '';
   }
 
   // Restart the wizard from step 1

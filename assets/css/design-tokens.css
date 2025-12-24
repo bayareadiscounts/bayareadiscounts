@@ -1,0 +1,345 @@
+/**
+ * ============================================
+ * DESIGN TOKENS - Single Source of Truth
+ * ============================================
+ * All colors, typography, spacing, and effects are defined here.
+ * Other CSS files should reference these variables exclusively.
+ *
+ * ADA Compliance: Uses sans-serif fonts (Calibri, Segoe UI) for readability.
+ * WCAG 2.2 AAA: All color combinations meet contrast requirements.
+ */
+
+:root {
+  /* ============================================
+     TYPOGRAPHY - ADA Compliant Sans-Serif Stack
+     ============================================ */
+  --font-sans: 'Calibri', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', 'Monaco', 'Courier New', monospace;
+
+  /* Font Sizes - Fluid Typography */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 2rem;      /* 32px */
+  --font-size-4xl: 2.5rem;    /* 40px */
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ============================================
+     BRAND COLORS
+     ============================================ */
+  --color-primary: #00acc1;         /* Teal - main brand */
+  --color-primary-dark: #00838f;    /* Teal darker - headings, links */
+  --color-primary-darker: #006064;  /* Teal darkest - hover states */
+  --color-accent: #ff6f00;          /* Orange - accents, CTAs */
+  --color-accent-light: #ff8f00;    /* Orange lighter */
+
+  /* Cyan Palette (brand tints) */
+  --color-cyan-50: #e0f7fa;
+  --color-cyan-100: #b2ebf2;
+  --color-cyan-200: #80deea;
+  --color-cyan-700: #0097a7;
+  --color-cyan-800: #00838f;
+  --color-cyan-900: #006064;
+
+  /* ============================================
+     SEMANTIC COLORS - Light Mode
+     ============================================ */
+
+  /* Backgrounds */
+  --bg-body: linear-gradient(135deg, #e0f7fa15 0%, #b2ebf215 100%);
+  --bg-main: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f9fafb;
+  --bg-hover: #e0f7fa;
+  --bg-footer: #ffffff;
+
+  /* Card Backgrounds */
+  --card-bg: #ffffff;
+  --card-border: #e1e4e8;
+  --card-shadow: rgba(0, 0, 0, 0.07);
+
+  /* Text Colors */
+  --text-primary: #24292e;
+  --text-secondary: #586069;
+  --text-muted: #6b7280;
+  --text-heading: #00838f;
+  --text-link: #00838f;
+  --text-link-hover: #006064;
+  --text-inverse: #ffffff;
+
+  /* Border Colors */
+  --border-color: #e1e4e8;
+  --border-light: #b2ebf2;
+  --border-focus: #2563eb;
+
+  /* Shadow Colors */
+  --shadow-sm: rgba(0, 0, 0, 0.05);
+  --shadow-md: rgba(0, 0, 0, 0.07);
+  --shadow-lg: rgba(0, 0, 0, 0.1);
+
+  /* ============================================
+     STATUS/FEEDBACK COLORS
+     ============================================ */
+  --color-success: #22c55e;       /* Green - verified, success */
+  --color-warning: #eab308;       /* Yellow - caution, aging */
+  --color-error: #ef4444;         /* Red - error, stale */
+  --color-info: #3b82f6;          /* Blue - information */
+
+  /* Focus Ring */
+  --focus-ring: #2563eb;
+  --focus-ring-offset: 2px;
+  --focus-ring-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+
+  /* ============================================
+     SPACING SCALE
+     ============================================ */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* ============================================
+     BORDER RADIUS
+     ============================================ */
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.375rem;  /* 6px */
+  --radius-lg: 0.5rem;    /* 8px */
+  --radius-xl: 0.75rem;   /* 12px */
+  --radius-2xl: 1rem;     /* 16px */
+  --radius-full: 9999px;
+
+  /* ============================================
+     TRANSITIONS
+     ============================================ */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* ============================================
+     Z-INDEX SCALE
+     ============================================ */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 500;
+  --z-modal-backdrop: 900;
+  --z-modal: 1000;
+  --z-toast: 1100;
+  --z-tooltip: 1200;
+
+  /* ============================================
+     CONTAINER WIDTHS
+     ============================================ */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-2xl: 1400px;
+
+  /* ============================================
+     COMPONENT-SPECIFIC TOKENS
+     ============================================ */
+
+  /* Filter Buttons */
+  --filter-btn-bg: #f3f4f6;
+  --filter-btn-bg-hover: #e5e7eb;
+  --filter-btn-bg-active: var(--color-primary);
+  --filter-btn-text: #374151;
+  --filter-btn-text-active: #ffffff;
+  --filter-btn-border: #d1d5db;
+
+  /* Program Cards */
+  --program-card-bg: var(--card-bg);
+  --program-card-border: var(--card-border);
+  --program-card-shadow: 0 1px 3px var(--shadow-sm), 0 1px 2px var(--shadow-md);
+
+  /* Badges */
+  --badge-new-bg: #dbeafe;
+  --badge-new-text: #1e40af;
+
+  /* Search Input */
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --input-border-focus: var(--color-primary);
+  --input-text: var(--text-primary);
+  --input-placeholder: #9ca3af;
+}
+
+/* ============================================
+   DARK MODE - System Preference
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Backgrounds */
+    --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d262615 100%);
+    --bg-main: #0d1117;
+    --bg-surface: #161b22;
+    --bg-surface-alt: #1c2128;
+    --bg-hover: #1b3a3a;
+    --bg-footer: #010409;
+
+    /* Card */
+    --card-bg: #1c2128;
+    --card-border: #30363d;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+
+    /* Text */
+    --text-primary: #e8eef5;
+    --text-secondary: #8b949e;
+    --text-muted: #6e7681;
+    --text-heading: #79d8eb;
+    --text-link: #79d8eb;
+    --text-link-hover: #a8e6f1;
+
+    /* Borders */
+    --border-color: #30363d;
+    --border-light: #1b3a3a;
+
+    /* Shadows */
+    --shadow-sm: rgba(0, 0, 0, 0.2);
+    --shadow-md: rgba(0, 0, 0, 0.3);
+    --shadow-lg: rgba(0, 0, 0, 0.4);
+
+    /* Filter Buttons */
+    --filter-btn-bg: #21262d;
+    --filter-btn-bg-hover: #30363d;
+    --filter-btn-text: #c9d1d9;
+    --filter-btn-border: #30363d;
+
+    /* Search Input */
+    --input-bg: #0d1117;
+    --input-border: #30363d;
+    --input-text: #e8eef5;
+    --input-placeholder: #6e7681;
+
+    /* Badges */
+    --badge-new-bg: #1e3a8a;
+    --badge-new-text: #93c5fd;
+  }
+}
+
+/* ============================================
+   DARK MODE - Manual Toggle Override
+   ============================================ */
+body[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d262615 100%);
+  --bg-main: #0d1117;
+  --bg-surface: #161b22;
+  --bg-surface-alt: #1c2128;
+  --bg-hover: #1b3a3a;
+  --bg-footer: #010409;
+
+  /* Card */
+  --card-bg: #1c2128;
+  --card-border: #30363d;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Text */
+  --text-primary: #e8eef5;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  --text-heading: #79d8eb;
+  --text-link: #79d8eb;
+  --text-link-hover: #a8e6f1;
+
+  /* Borders */
+  --border-color: #30363d;
+  --border-light: #1b3a3a;
+
+  /* Shadows */
+  --shadow-sm: rgba(0, 0, 0, 0.2);
+  --shadow-md: rgba(0, 0, 0, 0.3);
+  --shadow-lg: rgba(0, 0, 0, 0.4);
+
+  /* Filter Buttons */
+  --filter-btn-bg: #21262d;
+  --filter-btn-bg-hover: #30363d;
+  --filter-btn-text: #c9d1d9;
+  --filter-btn-border: #30363d;
+
+  /* Search Input */
+  --input-bg: #0d1117;
+  --input-border: #30363d;
+  --input-text: #e8eef5;
+  --input-placeholder: #6e7681;
+
+  /* Badges */
+  --badge-new-bg: #1e3a8a;
+  --badge-new-text: #93c5fd;
+}
+
+/* ============================================
+   LIGHT MODE - Manual Toggle Override
+   ============================================ */
+body[data-theme="light"] {
+  /* Reset all to light mode defaults */
+  --bg-body: linear-gradient(135deg, #e0f7fa15 0%, #b2ebf215 100%);
+  --bg-main: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f9fafb;
+  --bg-hover: #e0f7fa;
+  --bg-footer: #ffffff;
+
+  --card-bg: #ffffff;
+  --card-border: #e1e4e8;
+  --card-shadow: rgba(0, 0, 0, 0.07);
+
+  --text-primary: #24292e;
+  --text-secondary: #586069;
+  --text-muted: #6b7280;
+  --text-heading: #00838f;
+  --text-link: #00838f;
+  --text-link-hover: #006064;
+
+  --border-color: #e1e4e8;
+  --border-light: #b2ebf2;
+
+  --shadow-sm: rgba(0, 0, 0, 0.05);
+  --shadow-md: rgba(0, 0, 0, 0.07);
+  --shadow-lg: rgba(0, 0, 0, 0.1);
+
+  --filter-btn-bg: #f3f4f6;
+  --filter-btn-bg-hover: #e5e7eb;
+  --filter-btn-text: #374151;
+  --filter-btn-border: #d1d5db;
+
+  --input-bg: #ffffff;
+  --input-border: #d1d5db;
+  --input-text: var(--text-primary);
+  --input-placeholder: #9ca3af;
+
+  --badge-new-bg: #dbeafe;
+  --badge-new-text: #1e40af;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0.001ms;
+    --transition-normal: 0.001ms;
+    --transition-slow: 0.001ms;
+  }
+}

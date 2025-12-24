@@ -175,6 +175,9 @@
   border-radius: 50%;
   flex-shrink: 0;
   transition: all 0.2s ease;
+  /* Default to gray until JS adds the appropriate class */
+  background: #6b7280;
+  color: white;
 }
 
 .verified-badge svg {
@@ -184,20 +187,20 @@
 
 /* Green: Verified within 60 days */
 .verified-badge.fresh {
-  background: #10b981;
-  color: white;
+  background: #22c55e !important;
+  color: white !important;
 }
 
 /* Yellow: 61-179 days */
 .verified-badge.aging {
-  background: #f59e0b;
-  color: white;
+  background: #eab308 !important;
+  color: white !important;
 }
 
 /* Red: 180+ days - needs verification */
 .verified-badge.stale {
-  background: #ef4444;
-  color: white;
+  background: #ef4444 !important;
+  color: white !important;
 }
 
 /* Dark mode */
@@ -206,18 +209,30 @@
     background: #1e3a8a;
     color: #93c5fd;
   }
-  
+
   .verified-badge.fresh {
-    background: #059669;
+    background: #22c55e !important;
   }
-  
+
   .verified-badge.aging {
-    background: #d97706;
+    background: #eab308 !important;
   }
-  
+
   .verified-badge.stale {
-    background: #dc2626;
+    background: #ef4444 !important;
   }
+}
+
+body[data-theme="dark"] .verified-badge.fresh {
+  background: #22c55e !important;
+}
+
+body[data-theme="dark"] .verified-badge.aging {
+  background: #eab308 !important;
+}
+
+body[data-theme="dark"] .verified-badge.stale {
+  background: #ef4444 !important;
 }
 </style>
 

@@ -51,6 +51,71 @@
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
+
+  /* Card and component backgrounds */
+  --card-bg: white;
+  --card-border: var(--neutral-200);
+  --input-bg: white;
+  --input-border: var(--neutral-300);
+}
+
+/* Dark mode variables - system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --neutral-50: #1f2937;
+    --neutral-100: #374151;
+    --neutral-200: #4b5563;
+    --neutral-300: #6b7280;
+    --neutral-400: #9ca3af;
+    --neutral-600: #d1d5db;
+    --neutral-700: #e5e7eb;
+    --neutral-900: #f9fafb;
+    --card-bg: #1f2937;
+    --card-border: #374151;
+    --input-bg: #374151;
+    --input-border: #4b5563;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Dark mode variables - manual toggle */
+body[data-theme="dark"] {
+  --neutral-50: #1f2937;
+  --neutral-100: #374151;
+  --neutral-200: #4b5563;
+  --neutral-300: #6b7280;
+  --neutral-400: #9ca3af;
+  --neutral-600: #d1d5db;
+  --neutral-700: #e5e7eb;
+  --neutral-900: #f9fafb;
+  --card-bg: #1f2937;
+  --card-border: #374151;
+  --input-bg: #374151;
+  --input-border: #4b5563;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+/* Light mode variables - manual toggle (reset to defaults) */
+body[data-theme="light"] {
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-900: #111827;
+  --card-bg: white;
+  --card-border: #e5e7eb;
+  --input-bg: white;
+  --input-border: #d1d5db;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================================
@@ -350,8 +415,8 @@ a:visited {
 }
 
 .program-card {
-  background: white;
-  border: 1px solid var(--neutral-200);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
   padding: var(--interaction-padding);
   transition: all 0.3s ease;
@@ -362,10 +427,10 @@ a:visited {
   min-width: 280px;
   max-width: 100%;
   box-sizing: border-box;
-  
+
   /* Better depth perception in spatial UI */
   box-shadow: var(--shadow-sm);
-  
+
   /* Touch-friendly minimum size */
   min-height: 280px;
 }
@@ -917,14 +982,122 @@ input:focus,
   .verified-badge.fresh {
     background: #059669;
   }
-  
+
   .verified-badge.aging {
     background: #d97706;
   }
-  
+
   .verified-badge.stale {
     background: #dc2626;
   }
+}
+
+/* Manual dark mode toggle - mirrors system preference dark mode */
+body[data-theme="dark"] {
+  background-color: #0d1117;
+  color: #e8eef5;
+}
+
+body[data-theme="dark"] .program-card,
+body[data-theme="dark"] .search-panel {
+  background: #1c2128;
+  border-color: #30363d;
+}
+
+body[data-theme="dark"] .program-card:hover {
+  background: #262c36;
+}
+
+body[data-theme="dark"] #search-input {
+  background: #0d1117;
+  color: #e8eef5;
+  border-color: #30363d;
+}
+
+body[data-theme="dark"] #search-input::placeholder {
+  color: #8b949e;
+}
+
+body[data-theme="dark"] .filter-btn {
+  background: #21262d;
+  color: #e8eef5;
+  border-color: #30363d;
+}
+
+body[data-theme="dark"] .filter-btn:hover {
+  background: #30363d;
+}
+
+body[data-theme="dark"] .filter-btn.active {
+  background: var(--primary-teal);
+  border-color: var(--primary-teal);
+  color: white;
+}
+
+body[data-theme="dark"] .filter-group-label {
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] .program-area,
+body[data-theme="dark"] .program-category,
+body[data-theme="dark"] .program-timeframe,
+body[data-theme="dark"] .eligibility-badge {
+  background: #30363d;
+  color: #c9d1d9;
+}
+
+body[data-theme="dark"] .eligibility-badge:hover {
+  background: #404040;
+}
+
+body[data-theme="dark"] .filter-section-title {
+  color: #c9d1d9;
+}
+
+body[data-theme="dark"] .program-card h3,
+body[data-theme="dark"] .program-name {
+  color: #e8eef5;
+}
+
+body[data-theme="dark"] .program-card p,
+body[data-theme="dark"] .program-benefit {
+  color: #c9d1d9;
+}
+
+body[data-theme="dark"] .results-count {
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] a {
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] a:hover {
+  color: #a8e6f1;
+}
+
+body[data-theme="dark"] a:visited {
+  color: #79d8eb;
+}
+
+body[data-theme="dark"] .sort-select {
+  background: #21262d;
+  color: #e8eef5;
+  border-color: #30363d;
+}
+
+body[data-theme="dark"] .sort-label {
+  color: #c9d1d9;
+}
+
+body[data-theme="dark"] .reset-btn {
+  background: #21262d;
+  color: #e8eef5;
+  border-color: #30363d;
+}
+
+body[data-theme="dark"] .reset-btn:hover {
+  background: #30363d;
 }
 
 /* ============================================================

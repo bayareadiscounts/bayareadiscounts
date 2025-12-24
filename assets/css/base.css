@@ -1,74 +1,22 @@
-/* Core theme variables and base styles */
+/**
+ * Base Styles
+ *
+ * Note: All CSS variables (colors, fonts, spacing) are defined in design-tokens.css
+ * This file uses those tokens for consistency across the application.
+ */
+
+/* Legacy variable aliases for backwards compatibility */
 :root {
-  --primary-teal: #00acc1;
-  --primary-teal-dark: #00838f;
-  --primary-teal-darker: #006064;
-  --accent-orange: #ff6f00;
-  --accent-orange-light: #ff8f00;
-  --light-cyan: #e0f7fa;
-  --lighter-cyan: #b2ebf2;
-  --bg-body: linear-gradient(135deg, #e0f7fa15 0%, #b2ebf215 100%);
-  --bg-main: white;
-  --bg-table-hover: #e0f7fa;
-  --bg-footer: white;
-  --text-primary: #24292e;
-  --text-heading: #00838f;
-  --text-link: #00838f;
-  --text-link-hover: #006064;
-  --border-color: #e1e4e8;
-  --border-light: #b2ebf2;
-  --shadow: rgba(0, 0, 0, 0.07);
-  --shadow-light: rgba(0, 0, 0, 0.06);
-}
-
-/* Dark mode: triggered by system preference OR manual toggle */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d262615 100%);
-    --bg-main: #0d1117;
-    --bg-table-hover: #1b3a3a;
-    --bg-footer: #010409;
-    --text-primary: #e8eef5;
-    --text-heading: #79d8eb;
-    --text-link: #79d8eb;
-    --text-link-hover: #a8e6f1;
-    --border-color: #30363d;
-    --border-light: #1b3a3a;
-    --shadow: rgba(0, 0, 0, 0.3);
-    --shadow-light: rgba(0, 0, 0, 0.2);
-  }
-}
-
-/* Manual dark mode toggle (overrides auto) */
-body[data-theme="dark"] {
-  --bg-body: linear-gradient(135deg, #0a1a1a15 0%, #0d262615 100%);
-  --bg-main: #0d1117;
-  --bg-table-hover: #1b3a3a;
-  --bg-footer: #010409;
-  --text-primary: #e8eef5;
-  --text-heading: #79d8eb;
-  --text-link: #79d8eb;
-  --text-link-hover: #a8e6f1;
-  --border-color: #30363d;
-  --border-light: #1b3a3a;
-  --shadow: rgba(0, 0, 0, 0.3);
-  --shadow-light: rgba(0, 0, 0, 0.2);
-}
-
-/* Manual light mode toggle (overrides auto) */
-body[data-theme="light"] {
-  --bg-body: linear-gradient(135deg, #e0f7fa15 0%, #b2ebf215 100%);
-  --bg-main: white;
-  --bg-table-hover: #e0f7fa;
-  --bg-footer: white;
-  --text-primary: #24292e;
-  --text-heading: #00838f;
-  --text-link: #00838f;
-  --text-link-hover: #006064;
-  --border-color: #e1e4e8;
-  --border-light: #b2ebf2;
-  --shadow: rgba(0, 0, 0, 0.07);
-  --shadow-light: rgba(0, 0, 0, 0.06);
+  --primary-teal: var(--color-primary);
+  --primary-teal-dark: var(--color-primary-dark);
+  --primary-teal-darker: var(--color-primary-darker);
+  --accent-orange: var(--color-accent);
+  --accent-orange-light: var(--color-accent-light);
+  --light-cyan: var(--color-cyan-50);
+  --lighter-cyan: var(--color-cyan-100);
+  --bg-table-hover: var(--bg-hover);
+  --shadow-light: var(--shadow-sm);
+  --shadow: var(--shadow-md);
 }
 
 * {
@@ -78,7 +26,7 @@ body[data-theme="light"] {
 html, body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg-body);
   color: var(--text-primary);
   overflow-x: hidden;

@@ -20,7 +20,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <!-- Core styles -->
+  <!-- Core styles - Design tokens must load first -->
+  <link rel="stylesheet" href="{{ '/assets/css/design-tokens.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/responsive-optimized.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/accessibility-toolbar.css' | relative_url }}">
@@ -73,17 +74,6 @@
   <!-- Read More Functionality -->
   <script src="{{ '/assets/js/read-more.js' | relative_url }}"></script>
 
-  <!-- Shared client utilities (cache, translation helper) for browser -->
-  <script src="{{ '/assets/js/shared-bundle.js' | relative_url }}?v=20251219"></script>
-
-  {% if site.translations_enabled %}
-  <!-- Azure AI Translator (Privacy-focused) uses shared helpers -->
-  <script>
-    window.sharedCache = window.sharedLibs.createCache ? window.sharedLibs.createCache({ storage: window.localStorage }) : null;
-    window.DEFAULT_TRANSLATE_ENDPOINT = window.DEFAULT_TRANSLATE_ENDPOINT || '{{ site.translate_endpoint | default: "" }}';
-  </script>
-  <script src="{{ '/assets/js/azure-translator.js' | relative_url }}"></script>
-  {% endif %}
 
   <!-- Inline JavaScript for PWA and global search -->
   <script>
