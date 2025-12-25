@@ -73,3 +73,39 @@
   link: https://www.uscis.gov/i-912
   link_text: Learn More
   verified_date: '2025-12-16'
+- id: clsepa-legal-services
+  name: Community Legal Services in East Palo Alto
+  category: Legal Services
+  area: San Mateo County
+  eligibility:
+  - low-income
+  benefit: Free legal services for low-income families including immigration, housing,
+    workers' rights, record clearance, and consumer protection
+  timeframe: Ongoing
+  link: https://clsepa.org/
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: legal-aid-smc
+  name: Legal Aid Society of San Mateo County
+  category: Legal Services
+  area: San Mateo County
+  eligibility:
+  - low-income
+  benefit: Free legal help for housing, healthcare access, economic security, immigration,
+    education, and freedom from violence and abuse
+  timeframe: Ongoing
+  link: https://legalaidsmc.org/
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: project-sentinel-fair-housing
+  name: Project Sentinel Fair Housing
+  category: Legal Services
+  area: Bay Area-wide
+  eligibility:
+  - everyone
+  benefit: Free fair housing education, counseling, and housing discrimination complaint
+    investigation and advocacy
+  timeframe: Ongoing
+  link: https://housing.org/
+  link_text: Get Help
+  verified_date: '2025-12-25'

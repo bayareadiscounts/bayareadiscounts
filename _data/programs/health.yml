@@ -125,3 +125,42 @@
   link: https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Program-Landing1.aspx
   link_text: Apply
   verified_date: '2025-12-16'
+- id: smc-bhrs
+  name: Behavioral Health and Recovery Services (BHRS)
+  category: Health
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Mental illness and substance use treatment and prevention for children,
+    youth, families, adults, and older adults
+  timeframe: Ongoing
+  link: https://www.smchealth.org/bhrs
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: smc-aging-adult-services
+  name: Aging and Adult Services
+  category: Health
+  area: San Mateo County
+  eligibility:
+  - seniors
+  - disability
+  benefit: Abuse prevention, public guardian services, in-home care, and nutritious
+    meals for older and dependent adults
+  timeframe: Ongoing
+  link: https://www.smchealth.org/services-aging-and-adult
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: smc-pregnancy-children-families
+  name: San Mateo County Pregnancy, Children and Families
+  category: Health
+  area: San Mateo County
+  eligibility:
+  - low-income
+  - families
+  benefit: Free home visits, clinic services, and school-based programs for Medi-Cal
+    recipients; sliding fee scale for other county residents; services in multiple
+    languages
+  timeframe: Ongoing
+  link: https://www.smchealth.org/services-pregnancy-children-families
+  link_text: Learn More
+  verified_date: '2025-12-25'

@@ -166,3 +166,28 @@
   link: https://worldcomputerexchange.org/get-computers/
   link_text: Get Computers
   verified_date: '2025-12-16'
+- id: spectrum-internet-assist
+  name: Spectrum Internet Assist
+  category: Technology
+  area: Nationwide
+  eligibility:
+  - low-income
+  - seniors
+  benefit: Affordable high-speed internet for households with member participating
+    in National School Lunch Program, Community Eligibility Provision, or receiving
+    SSI (65+)
+  timeframe: Ongoing
+  link: https://www.spectrum.com/internet/spectrum-internet-assist
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: menlo-park-library-hotspots
+  name: Menlo Park Library Wi-Fi Hotspots
+  category: Technology
+  area: City of Menlo Park
+  eligibility:
+  - everyone
+  benefit: Free 7-day checkout of portable Wi-Fi hotspots for library cardholders
+  timeframe: Ongoing
+  link: https://menlopark.gov/
+  link_text: Check Availability
+  verified_date: '2025-12-25'

@@ -713,3 +713,582 @@
   link: https://thermostatcare.org/
   link_text: Find Location
   verified_date: '2025-12-16'
+- id: svp-ebike-rebate
+  name: Electric Bicycle Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: 10% rebate on new e-bike purchase, up to $300; income-qualified customers
+    can receive additional $200
+  how_to_use: Submit application within 60 days of purchase
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-ev-charger-rebate
+  name: EV Charging Station Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $550 rebate for installing electric vehicle charging station; available
+    for home, multifamily, schools, non-profit, and commercial facilities
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-used-ev-rebate
+  name: Income-Qualified Pre-Owned Electric Vehicle Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - low-income
+  benefit: Up to $3,500 for pre-owned EV ($1,500 for fully electric, $1,000 for plug-in
+    hybrid); LIHEAP-eligible customers may get $1,000 bonus; vehicles with MPGe 117+
+    may get additional $1,000 bonus
+  how_to_use: Apply online after purchase
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-induction-cooktop-rebate
+  name: Induction Cooktop, Range & Oven Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $750 rebate for replacing gas with induction range; income-qualified
+    customers may receive up to $950; cooktop and wall oven replacements also available
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-heat-pump-dryer-rebate
+  name: Heat Pump Clothes Dryer Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $250 rebate for replacing gas dryer with high-efficiency heat pump
+    dryer; income-qualified customers may receive up to $350
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-electric-dryer-rebate
+  name: Electric Clothes Dryer Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $150 rebate for replacing gas dryer with electric dryer; income-qualified
+    customers may receive up to $350
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-hpwh-gas-rebate
+  name: Heat Pump Water Heater Rebate (Gas Replacement)
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $5,500 rebate for replacing gas water heater with ENERGY STAR heat
+    pump water heater; income-qualified customers may receive up to $6,500
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-hpwh-electric-rebate
+  name: Heat Pump Water Heater Rebate (Electric Replacement)
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: $500 rebate for replacing electric resistance water heater with ENERGY
+    STAR heat pump water heater; income-qualified customers may receive additional
+    $500
+  how_to_use: Obtain permit from City of Santa Clara, then apply online
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-heat-pump-hvac-rebate
+  name: Heat Pump HVAC Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $10,000 rebate ($3,000 per ton) for replacing gas furnace and/or
+    AC with high-efficiency electric heat pump HVAC; income-qualified customers may
+    receive up to $11,000
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-hvac-tuneup-rebate
+  name: HVAC Tune-Up Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $75 rebate for HVAC tune-up by CA licensed contractor
+  how_to_use: Work with licensed contractor and apply online
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-circuit-pauser-rebate
+  name: Circuit Pauser or Splitter Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $50 rebate for circuit pauser/splitter to enable electrification
+    without panel upgrade; income-qualified customers may receive up to $150
+  how_to_use: Apply online as add-on to other SVP electrification rebate
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-smart-panel-rebate
+  name: Smart Electric Panel Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: $4,000 rebate for upgrading to smart electric panel (KOBEN, Lumin, SPAN)
+    to avoid main service upgrade; income-qualified customers may receive additional
+    $1,000-$2,000
+  how_to_use: Apply online; for projects starting July 1, 2025 or later
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-panel-upgrade-rebate
+  name: Main Service Panel Upgrade Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $1,500 rebate for upgrading main panel to higher amperage for EV
+    charger or electric appliance installation; income-qualified customers may receive
+    up to $2,500
+  how_to_use: Apply online as add-on to other SVP electrification rebate
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-prewire-rebate
+  name: New Circuits for Future Electric Appliances Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $500 per circuit (max $2,000 for 4 circuits) for prewiring future
+    electric appliances; income-qualified customers may receive up to $1,000 per circuit
+    (max $4,000)
+  how_to_use: Apply online as add-on to other SVP electrification rebate
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-battery-storage-rebate
+  name: Battery Storage Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: $0.15 per Wh up to $2,700 for battery storage with solar PV; FRAP customers
+    get additional $2,000; LIHEAP-eligible customers get additional $2,000
+  how_to_use: Apply online; valid for batteries purchased/installed after July 1,
+    2024
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-hoa-energy-grant
+  name: Energy Efficiency Grant for HOAs
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $25,000 grant for HOAs with 25+ units on D-1 rate to fund energy
+    efficiency upgrades to common areas; 20% matching funds required
+  how_to_use: Submit application by June 30 or December 31 each year
+  timeframe: Biannual application deadlines
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-income-qualified-solar
+  name: Income-Qualified Solar Grant
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - low-income
+  benefit: Free solar PV system grant of $3.50 per watt up to 3 kW for homeowners
+    on FRAP program for 1+ year
+  how_to_use: Apply through SVP; first come, first served
+  timeframe: While funds last
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-pool-pump-rebate
+  name: Variable Speed Pool Pump Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: $100 rebate for ENERGY STAR variable speed pool filtration pump with qualifying
+    controller
+  how_to_use: Apply online through SVP rebate platform
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: svp-solar-tuneup-rebate
+  name: Solar Tune-Up Rebate
+  category: Utilities
+  area: City of Santa Clara
+  eligibility:
+  - everyone
+  benefit: Up to $1,500 rebate for solar PV system tune-up by CA licensed contractor
+  how_to_use: Work with licensed contractor and apply online
+  timeframe: Ongoing
+  link: https://www.siliconvalleypower.com/residents/rebates
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-sj-cares
+  name: SJ Cares Discount
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - low-income
+  benefit: 10% discount on SJCE electricity charges; automatic enrollment for CARE
+    or FERA customers
+  how_to_use: Enroll in CARE or FERA through PG&E for automatic enrollment
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/discount-programs/
+  link_text: Learn More
+  verified_date: '2025-12-25'
+- id: sjce-solar-access
+  name: Solar Access Program
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - low-income
+  benefit: 20% off electricity bill; stacks with CARE/FERA for up to 55% total savings
+  how_to_use: Verify qualification on Solar Access webpage
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/discount-programs/
+  link_text: Check Eligibility
+  verified_date: '2025-12-25'
+- id: sjce-ecohome-hpwh
+  name: EcoHome Heat Pump Water Heater Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $2,000 rebate for replacing gas water heater with heat pump water heater;
+    Environmental Justice Community or income-qualified residents receive $3,000
+  how_to_use: Reserve funds online, install within 120 days, submit final documentation
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ecohome-rebate/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ecohome-hvac
+  name: EcoHome Heat Pump HVAC Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $1,500 rebate for replacing gas furnace with heat pump HVAC; Environmental
+    Justice Community or income-qualified residents receive $2,500
+  how_to_use: Reserve funds online, install within 120 days, submit final documentation
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ecohome-rebate/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ecohome-battery
+  name: EcoHome Battery Storage Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $125 per kWh up to $3,250 for battery storage with solar PV; Environmental
+    Justice Community or income-qualified residents receive $400 per kWh up to $10,400
+  how_to_use: Reserve funds online, install within 120 days, submit final documentation
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ecohome-rebate/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ecohome-panel
+  name: EcoHome Panel Upgrade Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $1,000 rebate for electrical panel upgrade as add-on to other EcoHome rebate
+  how_to_use: Apply as add-on when claiming heat pump or battery rebate
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ecohome-rebate/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ecohome-insulation
+  name: EcoHome Attic Insulation Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $500 rebate for attic insulation as add-on to other EcoHome rebate
+  how_to_use: Apply as add-on when claiming heat pump or battery rebate
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ecohome-rebate/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ecohome-prewire
+  name: EcoHome Circuit Prewiring Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $500 rebate for circuit prewiring as add-on to other EcoHome rebate
+  how_to_use: Apply as add-on when claiming heat pump or battery rebate
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ecohome-rebate/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ev-new
+  name: New EV Instant Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - low-income
+  benefit: $4,000 instant rebate on new battery electric vehicle (max vehicle price
+    $60,000); must be within 100% Area Median Income or enrolled in CARE/FERA
+  how_to_use: Apply online for income verification or present CARE/FERA documentation
+    at participating dealership
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ev-rebates/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-ev-used
+  name: Used EV Instant Rebate
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - low-income
+  benefit: $2,000 instant rebate on used battery electric vehicle (max vehicle price
+    $60,000); must be within 100% Area Median Income or enrolled in CARE/FERA
+  how_to_use: Apply online for income verification or present CARE/FERA documentation
+    at participating dealership
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/ev-rebates/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: sjce-peak-rewards
+  name: Peak Rewards Program
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: Earn $0.50-$1.00 per kWh reduced during peak hours; $20 enrollment bonus;
+    up to 6 earning opportunities monthly with no penalty for non-participation
+  how_to_use: Create FlexSaver account and respond to Peak Rewards Alerts
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/peak-rewards-for-all/
+  link_text: Enroll
+  verified_date: '2025-12-25'
+- id: sjce-peak-rewards-thermostat
+  name: Peak Rewards for Smart Thermostats
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $35 per year for enrolling Google Nest or Sensi smart thermostat in demand
+    response program; thermostat auto-adjusts during peak events with option to override
+  how_to_use: Enroll eligible thermostat through program portal
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/
+  link_text: Enroll
+  verified_date: '2025-12-25'
+- id: sjce-peak-rewards-ev-charger
+  name: Peak Rewards for EV Chargers
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $25 enrollment bonus plus $9 per month for enrolling Emporia EV charger
+    in managed charging program; charging pauses during peak events with option to
+    override
+  how_to_use: Enroll eligible EV charger through program portal
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/
+  link_text: Enroll
+  verified_date: '2025-12-25'
+- id: sjce-peak-rewards-battery
+  name: Peak Rewards for Battery Storage
+  category: Utilities
+  area: City of San Jose
+  eligibility:
+  - everyone
+  benefit: $10 per kWh enrollment bonus plus $0.13 per kWh quarterly for enrolling
+    battery storage in demand response program
+  how_to_use: Enroll eligible battery through program portal
+  timeframe: Ongoing
+  link: https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/
+  link_text: Enroll
+  verified_date: '2025-12-25'
+- id: cpau-rap
+  name: Rate Assistance Program (RAP)
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - low-income
+  - disability
+  benefit: Up to 25% off gas and/or electricity charges on monthly utility bills for
+    those with financial hardship or medical conditions requiring higher utility use
+  how_to_use: Apply with supporting documentation
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/rap
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-reap
+  name: Residential Energy Assistance Program (REAP)
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - low-income
+  benefit: Free home energy and water efficiency installations including weather stripping,
+    attic insulation, heating systems, water heaters, showerheads, and lighting
+  how_to_use: Must be eligible for RAP, live in deed-restricted affordable housing,
+    or participate in other income-qualified programs
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/reap
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-project-pledge
+  name: ProjectPLEDGE
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - low-income
+  benefit: One-time utility bill assistance for past-due amounts up to $750
+  how_to_use: Apply as CPAU customer-of-record; credit shall not exceed outstanding
+    balance
+  timeframe: While funds last
+  link: https://www.paloalto.gov/projectpledge
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-hpwh-rebate
+  name: Heat Pump Water Heater Rebate
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: $3,500 rebate for replacing gas water heater with heat pump water heater;
+    full-service installation as low as $2,300 or $1,100 with $20/month payments for
+    5 years
+  how_to_use: Reserve funds online, install within 120 days, submit final documentation
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/switch
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-hp-hvac-rebate
+  name: Heat Pump HVAC Rebate
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: $2,500 rebate for replacing gas furnace with heat pump HVAC system
+  how_to_use: Reserve funds online, install within 120 days, submit final documentation
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/electrifymyhome
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-gas-meter-removal
+  name: Gas Meter Removal Incentive
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: $2,500 incentive for fully electrifying your home with confirmation of
+    gas meter removal
+  how_to_use: Complete full home electrification and confirm gas meter removal
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/electrifymyhome
+  link_text: Learn More
+  verified_date: '2025-12-25'
+- id: cpau-ev-charger-mf-rebate
+  name: EV Charger Rebate for Multi-Family and Non-Profits
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: Up to $80,000 for installing EV chargers at schools, non-profits, multi-family,
+    and mixed-use properties
+  how_to_use: Apply through CPAU; subject to funding availability
+  timeframe: While funds last
+  link: https://www.paloalto.gov/EV
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-transformer-upgrade-rebate
+  name: Transformer Upgrade Rebate Program
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: Up to $10,000 for single-family homes or $100,000 for schools/non-profits/multi-family
+    for infrastructure upgrades related to EV charger installation
+  how_to_use: Apply through CPAU for utility service connection fee and substructure
+    work costs
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/EV
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-landscape-conversion
+  name: Landscape Conversion Rebate
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: Up to $4 per sq ft for converting lawn and/or swimming pool to sustainable,
+    low-water-use landscape; artificial turf not eligible
+  how_to_use: Apply through Valley Water before starting work
+  timeframe: Ongoing
+  link: https://watersavings.org
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-graywater-rebate
+  name: Graywater Laundry-to-Landscape Rebate
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: Up to $400 for installing graywater laundry-to-landscape system to direct
+    washer rinse water to landscape
+  how_to_use: Apply through Valley Water before starting work
+  timeframe: Ongoing
+  link: https://watersavings.org
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: cpau-stormwater-rebates
+  name: Stormwater Rebates Program
+  category: Utilities
+  area: City of Palo Alto
+  eligibility:
+  - everyone
+  benefit: Rebates for rain barrels, cisterns, pervious pavement, and rain gardens
+    to reduce stormwater runoff
+  how_to_use: Apply through City of Palo Alto; some features require building permit
+  timeframe: Ongoing
+  link: https://www.paloalto.gov/stormwater
+  link_text: Apply
+  verified_date: '2025-12-25'

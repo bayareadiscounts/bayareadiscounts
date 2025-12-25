@@ -145,3 +145,69 @@
   link: https://uwba.org/what-we-do/free-tax-help/
   link_text: Find Location
   verified_date: '2025-12-16'
+- id: baec-entrepreneur-center
+  name: Bay Area Entrepreneur Center
+  category: Finance
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free business management guidance, technical assistance, networking, one-on-one
+    consulting, and business workshops for aspiring and current entrepreneurs
+  how_to_use: Contact or visit Skyline College location
+  timeframe: Ongoing
+  link: https://www.skylinebaec.org/
+  link_text: Get Started
+  verified_date: '2025-12-25'
+- id: sf-score
+  name: San Francisco SCORE
+  category: Finance
+  area: Bay Area-wide
+  eligibility:
+  - everyone
+  benefit: Free and confidential business counseling plus low-cost workshops; over
+    50 retired and active professionals available to help
+  how_to_use: Request mentoring online or attend workshops
+  timeframe: Ongoing
+  link: https://sanfrancisco.score.org/
+  link_text: Find a Mentor
+  verified_date: '2025-12-25'
+- id: san-mateo-sbdc
+  name: San Mateo Small Business Development Center
+  category: Finance
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free assistance with relief applications, cash flow management, supply
+    chain issues, workforce capacity, and insurance coverage for small businesses
+  how_to_use: Contact for free consultation
+  timeframe: Ongoing
+  link: https://www.sanmateosbdc.org/
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: nova-workforce
+  name: NOVA Workforce Development
+  category: Finance
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free employment and training services connecting businesses, educators,
+    and job seekers in Silicon Valley
+  how_to_use: Contact San Mateo office for services
+  timeframe: Ongoing
+  link: https://novaworks.org/
+  link_text: Get Started
+  verified_date: '2025-12-25'
+- id: ibank-small-business
+  name: Small Business Finance Center (IBank)
+  category: Finance
+  area: Statewide
+  eligibility:
+  - everyone
+  benefit: Disaster Relief Loan Guarantee, Jump Start Loan Program, and other financing
+    programs for small businesses focusing on job creation in low- to moderate-income
+    communities
+  how_to_use: Apply through IBank
+  timeframe: Ongoing
+  link: https://ibank.ca.gov/small-business-finance-center/
+  link_text: Learn More
+  verified_date: '2025-12-25'

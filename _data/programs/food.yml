@@ -288,3 +288,43 @@
   link: https://www.ymcasf.org/program/food-assistance/
   link_text: Find Location
   verified_date: '2025-12-16'
+- id: ecumenical-hunger-program
+  name: Ecumenical Hunger Program
+  category: Food
+  area: San Mateo County
+  eligibility:
+  - low-income
+  - everyone
+  benefit: Nutritionally balanced food boxes for families and individuals; appointment
+    required
+  timeframe: Ongoing
+  link: https://www.ehpcares.org/
+  link_text: Schedule Appointment
+  verified_date: '2025-12-25'
+- id: jfcs-food-pantry
+  name: JFCS Food Pantry
+  category: Food
+  area: Santa Clara County
+  eligibility:
+  - low-income
+  - seniors
+  - disability
+  benefit: High-protein nutritious food for seniors on fixed income, disabled adults,
+    and low-income families
+  timeframe: Ongoing
+  link: https://www.jfcs.org/
+  link_text: Learn More
+  verified_date: '2025-12-25'
+- id: pvi-got-groceries
+  name: Got Groceries Program
+  category: Food
+  area: San Mateo County
+  eligibility:
+  - low-income
+  - everyone
+  benefit: Weekly full bags of groceries including produce, proteins, and breads for
+    individuals and families facing food insecurity
+  timeframe: Wednesdays
+  link: https://1pvi.org/
+  link_text: Learn More
+  verified_date: '2025-12-25'

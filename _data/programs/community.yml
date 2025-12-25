@@ -276,3 +276,364 @@
   link: https://www.grants.ca.gov/
   link_text: Search Grants
   verified_date: '2025-12-24'
+- id: smc-strong-fund
+  name: San Mateo County Strong Fund
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - low-income
+  - everyone
+  benefit: Household expense assistance for individuals and families; also supports
+    small businesses and nonprofits serving vulnerable populations
+  timeframe: While funds last
+  link: https://smcstrong.org/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: hip-housing-home-sharing
+  name: HIP Housing Home Sharing Program
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free matching service connecting housing providers with compatible singles,
+    seniors, or single parents seeking shared housing arrangements
+  timeframe: Ongoing
+  link: https://hiphousing.org/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: lifemoves-services
+  name: LifeMoves Opportunity Services Center
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - low-income
+  - everyone
+  benefit: Emergency interim shelter, food, clothing, and intensive case management
+    for families in crisis; includes specialized veteran support programs
+  timeframe: Ongoing
+  link: https://www.lifemoves.org/
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: haven-family-house
+  name: Haven Family House (LifeMoves)
+  category: Community Services
+  area: City of Menlo Park
+  eligibility:
+  - low-income
+  - veterans
+  benefit: Interim shelter and supportive services for 23 families experiencing homelessness;
+    serves up to 9 veteran families nightly
+  timeframe: Ongoing
+  link: https://www.lifemoves.org/
+  link_text: Get Help
+  verified_date: '2025-12-25'
+- id: friendly-voices-seniors
+  name: Friendly Voices Phone Buddies for Seniors
+  category: Community Services
+  area: Statewide
+  eligibility:
+  - seniors
+  benefit: Weekly volunteer phone calls offering supportive listening and confidentiality
+    for isolated, homebound seniors age 60+
+  timeframe: Ongoing
+  link: https://friendlyvoices.org/
+  link_text: Sign Up
+  verified_date: '2025-12-25'
+- id: cid-housing-modifications
+  name: Housing Accessibility Modifications Program
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - disability
+  - seniors
+  benefit: Grants for home modifications to improve accessibility for disabled and
+    elderly persons
+  timeframe: Ongoing
+  link: https://www.cidsanmateo.org/
+  link_text: Apply
+  verified_date: '2025-12-25'
+- id: echo-housing
+  name: ECHO Housing
+  category: Community Services
+  area: Bay Area-wide
+  eligibility:
+  - everyone
+  benefit: Addresses housing discrimination complaints and ensures equal access to
+    housing
+  timeframe: Ongoing
+  link: https://www.echofairhousing.org/
+  link_text: File Complaint
+  verified_date: '2025-12-25'
+- id: smc-fixit-clinics
+  name: Fixit Clinics
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free community repair workshops with volunteer coaches to help fix broken
+    electronics, appliances, computers, toys, sewing machines, and textiles; tools
+    and workspace provided
+  timeframe: Ongoing (check schedule)
+  link: https://www.smcsustainability.org/waste-reduction/reduce-reuse-repair/fixit-clinics/
+  link_text: Find Events
+  verified_date: '2025-12-25'
+- id: smc-library-sewing
+  name: San Mateo County Library Open Sewing Programs
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free open sewing and mending programs at multiple library branches including
+    Foster City, Half Moon Bay, Millbrae, Redwood City, San Mateo, and South San Francisco
+  timeframe: Ongoing (varies by location)
+  link: https://www.smcsustainability.org/waste-reduction/reduce-reuse-repair/fixit-clinics/
+  link_text: Find Schedule
+  verified_date: '2025-12-25'
+- id: recyclestuff
+  name: Recyclestuff.org
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Free search engine to find nearby donation and recycling locations for
+    household items, electronics, clothing, and more
+  timeframe: Ongoing
+  link: https://www.recyclestuff.org/
+  link_text: Search
+  verified_date: '2025-12-25'
+- id: smc-refuel-your-fun
+  name: ReFuel Your Fun Program
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Discounted propane refills for reusable cylinders as alternative to single-use
+    1 lb. propane cylinders
+  timeframe: Ongoing
+  link: https://www.smchealth.org/refuel
+  link_text: Learn More
+  verified_date: '2025-12-25'
+- id: acs-discovery-shop-menlo
+  name: American Cancer Society Discovery Shop (Menlo Park)
+  category: Community Services
+  area: City of Menlo Park
+  eligibility:
+  - everyone
+  benefit: Thrift store accepting donations of clothing, accessories, housewares,
+    linens, furniture, and collectibles; proceeds support cancer research and patient
+    programs
+  timeframe: Ongoing
+  link: https://www.cancer.org/involved/donate/more-ways-to-give/discovery-shops.html
+  link_text: Visit Store
+  verified_date: '2025-12-25'
+- id: ehp-donations
+  name: Ecumenical Hunger Program Donations
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, housewares, furniture, small appliances,
+    and more; serves East Palo Alto and neighboring communities; pickup available
+    for large items
+  timeframe: Ongoing
+  link: https://www.ehpcares.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: family-connections-donations
+  name: Family Connections Donations
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of baby and child-related items including strollers,
+    toys, books, and clothing; serves families with young children
+  timeframe: Ongoing
+  link: https://www.familyconnections.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: goodwill-sf-sm-marin
+  name: Goodwill Industries (SF, San Mateo, Marin)
+  category: Community Services
+  area: Bay Area-wide
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, electronics, furniture, housewares, books,
+    and sporting goods; proceeds fund job training programs; multiple donation centers
+    available
+  timeframe: Ongoing
+  link: https://sfgoodwill.org/
+  link_text: Find Location
+  verified_date: '2025-12-25'
+- id: latino-commission-donations
+  name: Latino Commission Donations
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, shoes, housewares, small furniture, and
+    small electronics to support alcohol and drug recovery services
+  timeframe: Ongoing
+  link: https://www.thelatincommission.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: nine-lives-foundation
+  name: Nine Lives Foundation
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of pet supplies, bedding, and cat-related items to support
+    cat rescue and adoption programs
+  timeframe: Ongoing
+  link: https://ninelivesfoundation.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: parca-thrift-shop
+  name: PARCA Thrift Shop
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, housewares, small furniture, and collectibles;
+    proceeds support adults with developmental disabilities; pickup available for
+    large items
+  timeframe: Ongoing
+  link: https://www.pfrparca.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: peninsula-humane-society-donations
+  name: Peninsula Humane Society & SPCA Donations
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of pet supplies, animal care items, and usable household
+    goods for resale; proceeds support animal rescue and adoption programs
+  timeframe: Ongoing
+  link: https://phs-spca.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: pick-of-the-litter
+  name: Pick of the Litter Books
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of used books, CDs, DVDs, and vinyl records; proceeds
+    support Peninsula Humane Society & SPCA programs
+  timeframe: Ongoing
+  link: https://pickofthelitterbooks.org/
+  link_text: Donate Books
+  verified_date: '2025-12-25'
+- id: puente-de-la-costa-sur
+  name: Puente de la Costa Sur
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, housewares, furniture, and building materials;
+    serves South Coast San Mateo County communities; pickup available
+  timeframe: Ongoing
+  link: https://www.mypuente.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: st-francis-center-rw
+  name: St. Francis Center (Redwood City)
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, shoes, bedding, housewares, furniture, and
+    appliances; serves low-income families in Redwood City area; pickup available
+  timeframe: Ongoing
+  link: https://stfranciscenterrwc.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: st-vincent-de-paul-smc
+  name: St. Vincent de Paul Society (San Mateo County)
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, furniture, housewares, and appliances; operates
+    thrift stores with proceeds supporting homeless and low-income assistance programs;
+    pickup available for large items
+  timeframe: Ongoing
+  link: https://www.svdpsm.org/
+  link_text: Schedule Pickup
+  verified_date: '2025-12-25'
+- id: samaritan-house-donations
+  name: Samaritan House Thrift Stores
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, housewares, furniture, electronics, and
+    sporting goods; proceeds support free food, health, and housing programs for low-income
+    residents
+  timeframe: Ongoing
+  link: https://samaritanhousesanmateo.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: savers-thrift
+  name: Savers Thrift Stores
+  category: Community Services
+  area: Bay Area-wide
+  eligibility:
+  - everyone
+  benefit: For-profit thrift store accepting donations of clothing, housewares, books,
+    and more; partners with local nonprofits who receive funds based on donation volume
+  timeframe: Ongoing
+  link: https://www.savers.com/
+  link_text: Find Location
+  verified_date: '2025-12-25'
+- id: south-coast-childrens
+  name: South Coast Children's Services
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of children's items, toys, books, and clothing to support
+    programs serving children and families on the South Coast
+  timeframe: Ongoing
+  link: https://www.southcoastchildrens.org/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: salvation-army-smc
+  name: The Salvation Army (San Mateo County)
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, furniture, housewares, electronics, and
+    appliances; operates thrift stores with proceeds supporting social services; free
+    pickup available for large items
+  timeframe: Ongoing
+  link: https://www.salvationarmyusa.org/
+  link_text: Schedule Pickup
+  verified_date: '2025-12-25'
+- id: turnstyle-thrift
+  name: Turnstyle Thrift Store
+  category: Community Services
+  area: San Mateo County
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, housewares, furniture, and collectibles;
+    proceeds support StarVista crisis intervention and youth services programs
+  timeframe: Ongoing
+  link: https://star-vista.org/turnstyle/
+  link_text: Donate
+  verified_date: '2025-12-25'
+- id: ucpa-golden-gate
+  name: United Cerebral Palsy Association of the Golden Gate
+  category: Community Services
+  area: Bay Area-wide
+  eligibility:
+  - everyone
+  benefit: Accepts donations of clothing, housewares, furniture, electronics, and
+    vehicles; free pickup available; proceeds support services for people with developmental
+    disabilities
+  timeframe: Ongoing
+  link: https://www.ucpgg.org/
+  link_text: Schedule Pickup
+  verified_date: '2025-12-25'
