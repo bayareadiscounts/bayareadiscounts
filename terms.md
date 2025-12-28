@@ -8,7 +8,7 @@ description: Terms of service for Bay Area Discounts website and resources
 
 # Terms of Service
 
-**Last Updated**: December 25, 2025
+**Last Updated**: December 28, 2025
 **Effective Date**: December 18, 2025
 
 <div class="simple-language-summary" aria-label="Simple language summary">
@@ -263,30 +263,51 @@ This indemnification obligation survives termination of these Terms.
 
 ---
 
-## 10. Governing Law and Dispute Resolution {#governing-law-and-dispute-resolution}
+## 10. Governing Law and Mandatory Arbitration {#governing-law-and-dispute-resolution}
 
 ### Governing Law
 
 These Terms are governed by the laws of the State of California, without regard to its conflict of law principles. The application of the United Nations Convention on Contracts for the International Sale of Goods is excluded.
 
-### Dispute Resolution
+### MANDATORY ARBITRATION AGREEMENT
 
-**Informal Resolution**: Before initiating any legal proceedings, you agree to attempt to resolve any dispute informally by contacting Bay Tides at privacy [at] baytides [dot] org.
+**PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT.**
 
-**Small Claims Court**: Any legal action or proceeding must be brought in the small claims court in San Mateo County, California, unless:
-- The parties agree otherwise in writing
-- The court lacks jurisdiction
-- The claim exceeds the small claims court's jurisdiction
+#### Agreement to Arbitrate
 
-You expressly waive the right to a jury trial.
+You and Bay Tides agree that any dispute, claim, or controversy arising out of or relating to these Terms, the Website, or any aspect of your relationship with Bay Tides (collectively, "Disputes") will be resolved exclusively through **final and binding individual arbitration**, rather than in court, except as set forth below.
 
-### Arbitration Alternative
+#### Waiver of Class Actions
 
-As an alternative to litigation, either party may elect binding arbitration administered by JAMS (Judicial Arbitration and Mediation Services) under its Comprehensive Arbitration Rules & Procedures, before a single arbitrator in San Mateo County, California. The arbitrator's decision is binding and may be entered as judgment in any court of competent jurisdiction.
+**YOU AND BAY TIDES AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, OR REPRESENTATIVE ACTION.** Unless both you and Bay Tides agree otherwise, the arbitrator may not consolidate more than one person's claims and may not preside over any form of class, collective, or representative proceeding.
 
-### Costs and Fees
+#### Informal Resolution First
 
-Each party bears its own costs of dispute resolution and legal fees, unless a statute, regulation, or applicable rule of law provides otherwise.
+Before initiating arbitration, you agree to first contact us at privacy [at] baytides [dot] org to attempt to resolve the dispute informally. We will attempt to resolve the dispute by contacting you via email. If we are unable to resolve a dispute within thirty (30) days, either party may proceed to arbitration.
+
+#### Arbitration Procedures
+
+Any arbitration shall be administered by **JAMS** under its Streamlined Arbitration Rules and Procedures, as modified by this agreement. The arbitration will be conducted by a single neutral arbitrator. The arbitration shall take place in San Mateo County, California, or at another mutually agreed location, or via videoconference if agreed by the parties.
+
+#### Arbitration Fees
+
+Each party shall initially bear its own filing fees and share equally in the arbitrator's fees. However, if you prevail in the arbitration, Bay Tides will reimburse your filing fees and pay the full arbitrator's fees for disputes involving $5,000 or less. For disputes involving more than $5,000, the arbitrator shall determine the allocation of fees based on the outcome and merits of the case.
+
+#### Exceptions to Arbitration
+
+Either party may bring an individual action in small claims court for disputes within the court's jurisdiction. Additionally, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to prevent the actual or threatened infringement or misappropriation of intellectual property rights.
+
+#### Opt-Out
+
+You may opt out of this arbitration agreement by sending written notice to Bay Tides via email at privacy [at] baytides [dot] org within fourteen (14) days of first using the Website. Your notice must include your name, address, and a clear statement that you wish to opt out of this arbitration agreement. If you opt out, you will not be precluded from using the Website, but this arbitration agreement will not apply to you.
+
+#### Survival
+
+This arbitration agreement will survive termination of your relationship with Bay Tides and your use of the Website.
+
+### Jurisdiction for Non-Arbitrated Matters
+
+For any matters not subject to arbitration, you consent to the exclusive jurisdiction of the state and federal courts located in San Mateo County, California.
 
 ---
 
