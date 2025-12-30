@@ -3,11 +3,11 @@
   "name": "511 Emergency Rides",
   "category": "transportation",
   "description": "6 free emergency Lyft/Uber rides annually",
-  "fullDescription": "511 Contra Costa provides emergency ride services for commuters who use alternative transportation, ensuring college students can get home safely in case of unexpected emergencies.",
+  "fullDescription": "511 Contra Costa provides emergency ride services for commuters who use alternative transportation, ensuring workers and students can get home safely in case of unexpected emergencies.",
   "whatTheyOffer": "- 6 free emergency Lyft or Uber rides per year\n- Available for qualified emergencies (illness, family emergency, unscheduled overtime)\n- Covers ride from school/work to home\n",
-  "howToGetIt": "1. Register with 511 Contra Costa's Guaranteed Ride Home program\n2. Must be enrolled at a participating college\n3. Use alternative transportation (transit, carpool, bike, walk) at least 2 days/week\n4. Request ride through the program when emergency occurs\n",
+  "howToGetIt": "1. Register with 511 Contra Costa's Guaranteed Ride Home program\n2. Must work or attend college in Contra Costa County\n3. Use alternative transportation (transit, carpool, bike, walk) at least 2 days/week\n4. Request ride through the program when emergency occurs\n",
   "groups": [
-    "college-students"
+    "everyone"
   ],
   "areas": [
     "Contra Costa County"

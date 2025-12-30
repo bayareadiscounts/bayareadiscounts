@@ -26,7 +26,7 @@
       "name": "College Students",
       "description": "For enrolled college students",
       "icon": "🎓",
-      "programCount": 17
+      "programCount": 15
     },
     {
       "id": "veterans",
@@ -131,7 +131,7 @@
       "name": "Everyone",
       "description": "Available to all residents",
       "icon": "🌎",
-      "programCount": 189
+      "programCount": 191
     }
   ]
 }

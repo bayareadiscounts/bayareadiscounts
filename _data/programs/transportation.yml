@@ -283,21 +283,21 @@
   category: Transportation
   area: Contra Costa County
   groups:
-  - college-students
-  description: 511 Contra Costa provides emergency ride services for commuters who use alternative transportation, ensuring college students can get home safely in case of unexpected emergencies.
+  - everyone
+  description: 511 Contra Costa provides emergency ride services for commuters who use alternative transportation, ensuring workers and students can get home safely in case of unexpected emergencies.
   what_they_offer: |
     - 6 free emergency Lyft or Uber rides per year
     - Available for qualified emergencies (illness, family emergency, unscheduled overtime)
     - Covers ride from school/work to home
   how_to_get_it: |
     1. Register with 511 Contra Costa's Guaranteed Ride Home program
-    2. Must be enrolled at a participating college
+    2. Must work or attend college in Contra Costa County
     3. Use alternative transportation (transit, carpool, bike, walk) at least 2 days/week
     4. Request ride through the program when emergency occurs
   phone: '925-942-9043'
   benefit: 6 free emergency Lyft/Uber rides annually
   how_to_use: Register through 511 Contra Costa
-  timeframe: Academic year
+  timeframe: Ongoing
   link: https://511contracosta.org/guaranteed-ride-home/
   link_text: Register
   verified_date: '2025-12-16'
@@ -307,8 +307,8 @@
   category: Transportation
   area: Contra Costa County
   groups:
-  - college-students
-  description: 511 Contra Costa offers incentives to encourage college students to try public transit, providing free Clipper card value when you commit to taking transit.
+  - everyone
+  description: 511 Contra Costa offers incentives to encourage workers and students to try public transit, providing free Clipper card value when you commit to taking transit.
   what_they_offer: |
     - Free $25 Clipper card for taking the transit pledge
     - One-time incentive to try transit
@@ -316,12 +316,12 @@
   how_to_get_it: |
     1. Visit the 511 Contra Costa website
     2. Complete the transit pledge online
-    3. Must be a college student in Contra Costa County
+    3. Must work or attend college in Contra Costa County
     4. Receive $25 Clipper card by mail or at designated pickup location
   phone: '925-942-9043'
   benefit: Free $25 Clipper card for taking transit pledge
   how_to_use: Complete transit pledge online
-  timeframe: Academic year
+  timeframe: Ongoing
   link: https://511contracosta.org/transit/transit-offer/
   link_text: Claim offer
   verified_date: '2025-12-16'
