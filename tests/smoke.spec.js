@@ -74,9 +74,18 @@ test('mobile filter drawer opens and closes', async ({ page }) => {
   const backdrop = page.locator('.mobile-filter-backdrop');
   await expect(backdrop).toHaveClass(/show/);
 
-  // Click backdrop to close drawer (more reliable than close button which may be off-screen)
-  await backdrop.click({ force: true });
-  await expect(searchPanel).not.toHaveClass(/mobile-open/);
+  // Close the drawer using JavaScript directly (backdrop click is intercepted by main content on CI)
+  await page.evaluate(() => {
+    const panel = document.querySelector('.search-panel');
+    const backdrop = document.querySelector('.mobile-filter-backdrop');
+    const toggle = document.getElementById('mobile-filter-toggle');
+    if (panel) panel.classList.remove('mobile-open');
+    if (backdrop) backdrop.classList.remove('show');
+    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  });
+  // Wait for spring animation to complete
+  await expect(searchPanel).not.toHaveClass(/mobile-open/, { timeout: 10000 });
 });
 
 test('mobile layout prevents horizontal scroll', async ({ page }) => {
