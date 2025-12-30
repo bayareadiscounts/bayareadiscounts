@@ -802,6 +802,458 @@
 }
 
 /* ============================================
+   STEP FLOW ENHANCED - Premium Wizard Experience
+   ============================================ */
+
+/* Wizard page with smooth transitions */
+.step-flow-page {
+  transition:
+    opacity 0.4s var(--ease-decelerate),
+    transform 0.4s var(--spring-gentle);
+}
+
+.step-flow-page.closing {
+  opacity: 0;
+  transform: scale(0.98) translateY(-10px);
+  pointer-events: none;
+}
+
+/* Step indicator dots with connecting line */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: var(--space-6);
+  position: relative;
+}
+
+.step-dot-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.step-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  background: var(--bg-surface);
+  border: 3px solid var(--border-color);
+  color: var(--text-muted);
+  transition: all 0.4s var(--spring-bounce);
+  position: relative;
+  z-index: 1;
+}
+
+.step-dot.active {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-color: var(--color-primary);
+  color: white;
+  transform: scale(1.1);
+  box-shadow:
+    0 4px 12px rgba(0, 131, 143, 0.35),
+    0 0 0 6px rgba(0, 172, 193, 0.15);
+}
+
+.step-dot.completed {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  border-color: #22c55e;
+  color: white;
+}
+
+.step-dot.completed::after {
+  content: '✓';
+  font-size: 1rem;
+}
+
+.step-dot.completed span {
+  display: none;
+}
+
+.step-connector {
+  width: 60px;
+  height: 4px;
+  background: var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.step-connector::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #22c55e 0%, var(--color-primary) 100%);
+  transition: width 0.5s var(--spring-gentle);
+}
+
+.step-connector.filled::after {
+  width: 100%;
+}
+
+.step-connector.active::after {
+  width: 50%;
+  background: linear-gradient(90deg, #22c55e 0%, var(--color-primary) 100%);
+  animation: pulseConnector 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseConnector {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Step labels below dots */
+.step-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-standard);
+}
+
+.step-dot.active + .step-label,
+.step-dot:hover + .step-label {
+  opacity: 1;
+}
+
+.step-dot.active + .step-label {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+/* Enhanced step page animations */
+.step-page {
+  animation: stepSlideIn 0.4s var(--spring-gentle) forwards;
+}
+
+.step-page.exiting {
+  animation: stepSlideOut 0.3s var(--ease-accelerate) forwards;
+}
+
+@keyframes stepSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes stepSlideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+}
+
+/* Backwards navigation animation */
+.step-page.entering-back {
+  animation: stepSlideInBack 0.4s var(--spring-gentle) forwards;
+}
+
+@keyframes stepSlideInBack {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Enhanced option cards with selection animation */
+.option-card {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.option-card .card-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ripple effect on selection */
+.option-card .card-inner::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(0, 172, 193, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s var(--spring-gentle), height 0.5s var(--spring-gentle);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.option-card input:checked + .card-inner::before {
+  width: 300%;
+  height: 300%;
+}
+
+/* Selection checkmark indicator */
+.option-card .card-inner::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s var(--spring-bounce);
+  z-index: 2;
+}
+
+.option-card input:checked + .card-inner::after {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(0, 131, 143, 0.3);
+}
+
+.option-card input:checked + .card-inner::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+/* Card content needs z-index to stay above ripple */
+.option-card .card-icon,
+.option-card .card-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Staggered animation for grid items */
+.eligibility-grid .option-card:nth-child(1) { animation-delay: 0.05s; }
+.eligibility-grid .option-card:nth-child(2) { animation-delay: 0.1s; }
+.eligibility-grid .option-card:nth-child(3) { animation-delay: 0.15s; }
+.eligibility-grid .option-card:nth-child(4) { animation-delay: 0.2s; }
+.eligibility-grid .option-card:nth-child(5) { animation-delay: 0.25s; }
+.eligibility-grid .option-card:nth-child(6) { animation-delay: 0.3s; }
+.eligibility-grid .option-card:nth-child(7) { animation-delay: 0.35s; }
+.eligibility-grid .option-card:nth-child(8) { animation-delay: 0.4s; }
+.eligibility-grid .option-card:nth-child(9) { animation-delay: 0.45s; }
+
+.county-grid .option-card:nth-child(1) { animation-delay: 0.05s; }
+.county-grid .option-card:nth-child(2) { animation-delay: 0.1s; }
+.county-grid .option-card:nth-child(3) { animation-delay: 0.15s; }
+.county-grid .option-card:nth-child(4) { animation-delay: 0.2s; }
+.county-grid .option-card:nth-child(5) { animation-delay: 0.25s; }
+.county-grid .option-card:nth-child(6) { animation-delay: 0.3s; }
+.county-grid .option-card:nth-child(7) { animation-delay: 0.35s; }
+.county-grid .option-card:nth-child(8) { animation-delay: 0.4s; }
+.county-grid .option-card:nth-child(9) { animation-delay: 0.45s; }
+.county-grid .option-card:nth-child(10) { animation-delay: 0.5s; }
+
+.eligibility-grid .option-card,
+.county-grid .option-card {
+  animation: cardFadeIn 0.4s var(--spring-gentle) backwards;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Enhanced quick jump section */
+.quick-jump-section {
+  position: relative;
+  padding-top: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.quick-jump-section::before {
+  content: 'or';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-surface);
+  padding: 0 var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.quick-jump-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.quick-jump-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-jump-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.quick-jump-btn:hover::before {
+  left: 100%;
+}
+
+/* Main content reveal animation after wizard closes */
+.main-content-reveal {
+  animation: contentReveal 0.5s var(--ease-decelerate) forwards;
+}
+
+@keyframes contentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Search panel entrance after wizard */
+.search-panel.entering {
+  animation: searchPanelEnter 0.6s var(--spring-gentle) forwards;
+}
+
+@keyframes searchPanelEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Results grid staggered entrance */
+.programs-container.entering .program-card {
+  animation: programCardEnter 0.4s var(--spring-gentle) backwards;
+}
+
+.programs-container.entering .program-card:nth-child(1) { animation-delay: 0.1s; }
+.programs-container.entering .program-card:nth-child(2) { animation-delay: 0.15s; }
+.programs-container.entering .program-card:nth-child(3) { animation-delay: 0.2s; }
+.programs-container.entering .program-card:nth-child(4) { animation-delay: 0.25s; }
+.programs-container.entering .program-card:nth-child(5) { animation-delay: 0.3s; }
+.programs-container.entering .program-card:nth-child(6) { animation-delay: 0.35s; }
+
+@keyframes programCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Wizard intro animation */
+.wizard-logo {
+  animation: wizardLogoEnter 0.8s var(--spring-gentle) backwards;
+}
+
+@keyframes wizardLogoEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.wizard-simple-intro {
+  animation: wizardIntroEnter 0.6s var(--spring-gentle) 0.2s backwards;
+}
+
+@keyframes wizardIntroEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover with subtle glow */
+.step-content .btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.step-content .btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.step-content .btn-primary:hover::before {
+  transform: translateX(100%);
+}
+
+/* Focus states for accessibility */
+.step-dot:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.option-card input:focus-visible + .card-inner {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================
    DARK MODE OVERRIDES
    ============================================ */
 :root[data-theme="dark"] .site-header,
@@ -976,6 +1428,54 @@ body[data-theme="dark"] .step-content .btn-primary {
 :root[data-theme="dark"] .step-content .btn-primary:hover,
 body[data-theme="dark"] .step-content .btn-primary:hover {
   background: linear-gradient(135deg, #00838f 0%, #006064 100%);
+}
+
+/* Step indicator dark mode */
+:root[data-theme="dark"] .step-dot,
+body[data-theme="dark"] .step-dot {
+  background: var(--bg-surface-alt);
+  border-color: var(--border-color);
+  color: var(--text-muted);
+}
+
+:root[data-theme="dark"] .step-dot.active,
+body[data-theme="dark"] .step-dot.active {
+  background: linear-gradient(135deg, #0097a7 0%, #00838f 100%);
+  border-color: #0097a7;
+}
+
+:root[data-theme="dark"] .step-connector,
+body[data-theme="dark"] .step-connector {
+  background: var(--border-color);
+}
+
+:root[data-theme="dark"] .step-label,
+body[data-theme="dark"] .step-label {
+  color: var(--text-muted);
+}
+
+:root[data-theme="dark"] .step-dot.active + .step-label,
+body[data-theme="dark"] .step-dot.active + .step-label {
+  color: var(--text-link);
+}
+
+/* Option card checkmark dark mode */
+:root[data-theme="dark"] .option-card .card-inner::after,
+body[data-theme="dark"] .option-card .card-inner::after {
+  border-color: var(--border-color);
+}
+
+:root[data-theme="dark"] .option-card input:checked + .card-inner::after,
+body[data-theme="dark"] .option-card input:checked + .card-inner::after {
+  background: linear-gradient(135deg, #0097a7 0%, #00838f 100%);
+  border-color: #0097a7;
+}
+
+/* Quick jump section dark mode */
+:root[data-theme="dark"] .quick-jump-section::before,
+body[data-theme="dark"] .quick-jump-section::before {
+  background: var(--bg-surface);
+  color: var(--text-muted);
 }
 
 /* ============================================

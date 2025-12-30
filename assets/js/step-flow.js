@@ -47,19 +47,52 @@
     }
   }
 
-  // Close the page wizard and show main content
+  // Close the page wizard and show main content with smooth transition
   function closeWizard() {
     const wizard = qs('#step-flow');
-    if (wizard) wizard.style.display = 'none';
-
-    // Show search results and filters after wizard completes
-    const filterUI = qs('.filter-controls');
+    const searchPanel = qs('.search-panel');
     const searchResults = qs('#search-results');
+    const filterUI = qs('.filter-controls');
     const mobileDrawer = qs('.mobile-filter-drawer');
 
-    if (filterUI) filterUI.style.display = '';
-    if (searchResults) searchResults.style.display = '';
-    if (mobileDrawer) mobileDrawer.style.display = '';
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (wizard && !prefersReducedMotion) {
+      // Add closing animation class
+      wizard.classList.add('closing');
+
+      // Wait for animation to complete before hiding
+      setTimeout(() => {
+        wizard.style.display = 'none';
+        wizard.classList.remove('closing');
+
+        // Show and animate main content
+        if (filterUI) filterUI.style.display = '';
+        if (mobileDrawer) mobileDrawer.style.display = '';
+
+        // Add entrance animation to search panel
+        if (searchPanel) {
+          searchPanel.style.display = '';
+          searchPanel.classList.add('entering');
+          setTimeout(() => searchPanel.classList.remove('entering'), 600);
+        }
+
+        // Add entrance animation to results
+        if (searchResults) {
+          searchResults.style.display = '';
+          searchResults.classList.add('entering');
+          setTimeout(() => searchResults.classList.remove('entering'), 800);
+        }
+      }, 400);
+    } else {
+      // Instant transition for reduced motion or no wizard
+      if (wizard) wizard.style.display = 'none';
+      if (filterUI) filterUI.style.display = '';
+      if (searchPanel) searchPanel.style.display = '';
+      if (searchResults) searchResults.style.display = '';
+      if (mobileDrawer) mobileDrawer.style.display = '';
+    }
   }
 
   // Restart the wizard from step 1
