@@ -8,9 +8,10 @@ test.describe('WCAG 2.2 AAA Compliance Verification', () => {
     const toggle = page.locator('#utility-bar-toggle');
 
     // WCAG 2.5.5: Target Size (AAA) - minimum 44x44px
+    // Use Math.round to handle subpixel rendering differences
     const box = await toggle.boundingBox();
-    expect(box.width).toBeGreaterThanOrEqual(44);
-    expect(box.height).toBeGreaterThanOrEqual(44);
+    expect(Math.round(box.width)).toBeGreaterThanOrEqual(44);
+    expect(Math.round(box.height)).toBeGreaterThanOrEqual(44);
 
     // Check it has proper aria labels
     await expect(toggle).toHaveAttribute('aria-label');

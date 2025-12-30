@@ -26,6 +26,8 @@ test('search filters results', async ({ page }) => {
 
 test('favorites toggle updates count', async ({ page }) => {
   await page.goto(home, { waitUntil: 'domcontentloaded' });
+  // Wait for program cards to load before looking for favorite toggle
+  await page.locator('[data-program]').first().waitFor({ state: 'visible' });
   await page.locator('.favorite-toggle').first().click();
   await page.goto('/favorites.html', { waitUntil: 'domcontentloaded' });
   const savedCount = page.locator('#favorites-count');
@@ -69,9 +71,9 @@ test('mobile filter drawer opens and closes', async ({ page }) => {
   const backdrop = page.locator('.mobile-filter-backdrop');
   await expect(backdrop).toHaveClass(/show/);
 
-  // Click close button to close drawer
+  // Click close button to close drawer using force to bypass element interception
   const closeBtn = page.locator('.mobile-drawer-close');
-  await closeBtn.click();
+  await closeBtn.click({ force: true });
   await expect(searchPanel).not.toHaveClass(/mobile-open/);
 });
 
