@@ -371,6 +371,10 @@
     },
 
     escapeHtml(text) {
+      // Use shared utility if available, falls back to local implementation
+      if (window.AppUtils && window.AppUtils.escapeHtml) {
+        return window.AppUtils.escapeHtml(text);
+      }
       const div = document.createElement('div');
       div.textContent = text;
       return div.innerHTML;

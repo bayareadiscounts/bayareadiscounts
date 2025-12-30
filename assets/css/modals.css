@@ -1,0 +1,693 @@
+/**
+ * Bay Area Discounts - Modal Styles
+ *
+ * Extracted from program-modal.js for better organization
+ * Handles:
+ * - Program detail modal overlay and content
+ * - Report issue form modal
+ * - Dark mode support
+ * - Responsive adaptations
+ */
+
+/* ============================================================
+   PROGRAM MODAL OVERLAY
+   ============================================================ */
+
+.program-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.program-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.program-modal {
+  background: var(--card-bg, #ffffff);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.95) translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.program-modal-overlay.active .program-modal {
+  transform: scale(1) translateY(0);
+}
+
+/* ============================================================
+   MODAL HEADER
+   ============================================================ */
+
+.modal-header {
+  position: relative;
+  height: 140px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modal-header-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--modal-cat-color, #0891b2), color-mix(in srgb, var(--modal-cat-color, #0891b2) 60%, #1e293b));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 12px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.modal-category {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+}
+
+/* ============================================================
+   MODAL BODY
+   ============================================================ */
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text-primary, #111827);
+  margin: 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #22c55e;
+  color: white;
+  border-radius: 50%;
+}
+
+.modal-location {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6b7280);
+  margin-bottom: 1rem;
+}
+
+.modal-description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #374151);
+  margin-bottom: 1.25rem;
+}
+
+/* ============================================================
+   MODAL SECTIONS
+   ============================================================ */
+
+.modal-section {
+  margin-bottom: 1.25rem;
+}
+
+.modal-section-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary, #6b7280);
+  margin: 0 0 0.5rem;
+}
+
+.modal-section-content {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-primary, #111827);
+}
+
+.modal-offer-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.modal-offer-list li {
+  margin-bottom: 0.375rem;
+  color: var(--text-primary, #111827);
+}
+
+/* Eligibility */
+.modal-eligibility {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-primary, #0891b2);
+  background: var(--color-primary-light, #ecfeff);
+  border-radius: 6px;
+}
+
+/* Contact */
+.modal-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.modal-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--text-primary, #111827);
+}
+
+.modal-contact-item svg {
+  flex-shrink: 0;
+  color: var(--color-primary, #0891b2);
+  margin-top: 2px;
+}
+
+.modal-contact-item a {
+  color: var(--color-primary, #0891b2);
+  text-decoration: none;
+}
+
+.modal-contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Meta */
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary, #9ca3af);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--card-border, #e5e7eb);
+}
+
+.modal-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* ============================================================
+   MODAL FOOTER
+   ============================================================ */
+
+.modal-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--card-border, #e5e7eb);
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.modal-actions {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-cta {
+  flex: 1;
+  min-width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  background: var(--color-primary, #0891b2);
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-height: 44px;
+}
+
+.modal-cta:hover {
+  background: var(--color-primary-dark, #0e7490);
+  transform: translateY(-1px);
+}
+
+.modal-cta-secondary {
+  background: var(--neutral-100, #f3f4f6);
+  color: var(--text-primary, #374151);
+}
+
+.modal-cta-secondary:hover {
+  background: var(--neutral-200, #e5e7eb);
+}
+
+.modal-cta-phone {
+  background: #22c55e;
+}
+
+.modal-cta-phone:hover {
+  background: #16a34a;
+}
+
+.modal-save-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: var(--neutral-100, #f3f4f6);
+  border: 1px solid var(--card-border, #e5e7eb);
+  border-radius: 10px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.modal-save-btn:hover {
+  background: var(--neutral-200, #e5e7eb);
+  color: #374151;
+}
+
+.modal-save-btn.saved {
+  color: #ef4444;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.modal-save-btn.saved svg {
+  fill: #ef4444;
+}
+
+/* ============================================================
+   REPORT ISSUE
+   ============================================================ */
+
+.modal-report {
+  padding: 0.75rem 1.5rem 1.25rem;
+  text-align: center;
+}
+
+.modal-report-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary, #9ca3af);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.modal-report-btn:hover {
+  color: var(--text-primary, #374151);
+}
+
+/* ============================================================
+   REPORT FORM OVERLAY
+   ============================================================ */
+
+.report-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.report-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.report-modal {
+  background: var(--card-bg, #ffffff);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.report-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+}
+
+.report-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #6b7280);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.report-close:hover {
+  background: var(--neutral-100, #f3f4f6);
+  color: var(--text-primary, #374151);
+}
+
+.report-program {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6b7280);
+  margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--card-border, #e5e7eb);
+}
+
+.report-program strong {
+  color: var(--text-primary, #111827);
+}
+
+.report-field {
+  margin-bottom: 1rem;
+}
+
+.report-field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary, #111827);
+  margin-bottom: 0.375rem;
+}
+
+.report-field select,
+.report-field input,
+.report-field textarea {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-primary, #111827);
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--card-border, #e5e7eb);
+  border-radius: 8px;
+  transition: border-color 0.15s ease;
+}
+
+.report-field select:focus,
+.report-field input:focus,
+.report-field textarea:focus {
+  outline: none;
+  border-color: var(--color-primary, #0891b2);
+}
+
+.report-field small {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary, #9ca3af);
+}
+
+.report-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.report-cancel {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary, #374151);
+  background: var(--neutral-100, #f3f4f6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.report-cancel:hover {
+  background: var(--neutral-200, #e5e7eb);
+}
+
+.report-submit {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  background: var(--color-primary, #0891b2);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.report-submit:hover {
+  background: var(--color-primary-dark, #0e7490);
+}
+
+.report-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.report-success svg {
+  color: #22c55e;
+  margin-bottom: 1rem;
+}
+
+.report-success h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+}
+
+.report-success p {
+  margin: 0 0 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6b7280);
+}
+
+.report-done {
+  padding: 0.625rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  background: var(--color-primary, #0891b2);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .modal-close-btn,
+  .report-close {
+    background: rgba(55, 65, 81, 0.95);
+    color: #f3f4f6;
+  }
+
+  .modal-save-btn,
+  .modal-cta-secondary {
+    background: #374151;
+    border-color: #4b5563;
+    color: #f3f4f6;
+  }
+
+  .report-modal {
+    background: #1f2937;
+  }
+
+  .report-field select,
+  .report-field input,
+  .report-field textarea {
+    background: #374151;
+    border-color: #4b5563;
+    color: #f3f4f6;
+  }
+}
+
+/* Manual dark mode toggle */
+body[data-theme="dark"] .modal-close-btn,
+body[data-theme="dark"] .report-close,
+:root[data-theme="dark"] .modal-close-btn,
+:root[data-theme="dark"] .report-close {
+  background: rgba(55, 65, 81, 0.95);
+  color: #f3f4f6;
+}
+
+body[data-theme="dark"] .modal-save-btn,
+body[data-theme="dark"] .modal-cta-secondary,
+:root[data-theme="dark"] .modal-save-btn,
+:root[data-theme="dark"] .modal-cta-secondary {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+body[data-theme="dark"] .report-modal,
+:root[data-theme="dark"] .report-modal {
+  background: #1f2937;
+}
+
+body[data-theme="dark"] .report-field select,
+body[data-theme="dark"] .report-field input,
+body[data-theme="dark"] .report-field textarea,
+:root[data-theme="dark"] .report-field select,
+:root[data-theme="dark"] .report-field input,
+:root[data-theme="dark"] .report-field textarea {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .program-modal {
+    max-height: 95vh;
+    border-radius: 16px 16px 0 0;
+    margin-top: auto;
+  }
+
+  .modal-header {
+    height: 120px;
+  }
+
+  .modal-body {
+    padding: 1.25rem;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .modal-footer {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-cta {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .program-modal-overlay,
+  .program-modal,
+  .report-overlay {
+    transition: none;
+  }
+}

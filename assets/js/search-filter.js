@@ -556,8 +556,12 @@ class DiscountSearchFilter {
 
   /**
    * Escape HTML to prevent XSS
+   * Uses shared utility if available, falls back to local implementation
    */
   escapeHtml(text) {
+    if (window.AppUtils && window.AppUtils.escapeHtml) {
+      return window.AppUtils.escapeHtml(text);
+    }
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
