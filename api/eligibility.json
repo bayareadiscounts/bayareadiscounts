@@ -5,7 +5,7 @@
       "name": "SNAP/EBT/Medi-Cal",
       "description": "For public benefit recipients",
       "icon": "💳",
-      "programCount": 149
+      "programCount": 148
     },
     {
       "id": "seniors",
@@ -61,7 +61,7 @@
       "name": "Everyone",
       "description": "Available to all residents",
       "icon": "🌎",
-      "programCount": 190
+      "programCount": 188
     }
   ]
 }
