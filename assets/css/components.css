@@ -1,0 +1,577 @@
+/**
+ * Bay Area Discounts - Component Styles
+ *
+ * Extracted from HTML includes for better organization.
+ * Contains styles for:
+ * - Mobile filter drawer
+ * - Favorites view and toggle
+ * - Print/export controls
+ */
+
+/* ============================================================
+   MOBILE FILTER TOGGLE & DRAWER
+   ============================================================ */
+
+.mobile-filter-toggle {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.mobile-filter-toggle:hover {
+  background: #1e40af;
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+}
+
+.filter-count {
+  background: white;
+  color: #2563eb;
+  border-radius: 1rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.filter-count:empty {
+  display: none;
+}
+
+/* Mobile drawer behavior */
+@media (max-width: 768px) {
+  .mobile-filter-toggle {
+    display: inline-flex;
+  }
+
+  /* Transform search panel into bottom drawer */
+  .search-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 85vh;
+    margin: 0;
+    border-radius: 1.25rem 1.25rem 0 0;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .search-panel.mobile-open {
+    transform: translateY(0);
+  }
+
+  /* Backdrop with blur */
+  .mobile-filter-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+
+  .mobile-filter-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Drag handle - Material Design style */
+  .search-panel::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 5px;
+    background: var(--border-color, #d1d5db);
+    border-radius: 2.5px;
+    margin: 12px auto 8px;
+    transition: width 0.15s ease, background-color 0.15s ease;
+    cursor: grab;
+  }
+
+  .search-panel:hover::before {
+    width: 48px;
+    background: var(--text-muted, #9ca3af);
+  }
+
+  /* Close button in drawer */
+  .mobile-drawer-close {
+    display: block;
+    width: 100%;
+    padding: 0.875rem;
+    background: var(--filter-btn-bg, #f3f4f6);
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary, #374151);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+    min-height: 44px;
+  }
+
+  .mobile-drawer-close:hover {
+    background: var(--filter-btn-bg-hover, #e5e7eb);
+  }
+
+  .mobile-drawer-close:active {
+    transform: scale(0.98);
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-drawer-close {
+    display: none;
+  }
+}
+
+/* ============================================================
+   FAVORITES VIEW & TOGGLE
+   ============================================================ */
+
+.favorites-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 48px;
+}
+
+.favorites-toggle-btn:hover {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.favorites-count {
+  background: #ef4444;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.favorites-view {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.favorites-header h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.favorites-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.favorites-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #374151;
+}
+
+.favorites-card h3 {
+  margin-top: 0.5rem;
+  color: #1f2937;
+}
+
+.favorites-card p {
+  color: #4b5563;
+}
+
+.favorites-list .favorite-row {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.favorites-list .favorite-row a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* ============================================================
+   PRINT/EXPORT CONTROLS
+   ============================================================ */
+
+.print-export-controls.favorites-export {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.favorites-export .export-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.favorites-export .export-btn:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.favorites-export .export-btn:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   SHARED BUTTONS
+   ============================================================ */
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 48px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-secondary {
+  background: white;
+  color: #6b7280;
+  border: 2px solid #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* ============================================================
+   DARK MODE - Mobile Filter
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .mobile-filter-toggle {
+    background: #2563eb;
+  }
+
+  .filter-count {
+    background: white;
+    color: #2563eb;
+  }
+
+  .search-panel::before {
+    background: #4b5563;
+  }
+
+  .search-panel:hover::before {
+    background: #6b7280;
+  }
+
+  .mobile-drawer-close {
+    background: #30363d;
+    color: #e8eef5;
+  }
+
+  .mobile-drawer-close:hover {
+    background: #21262d;
+  }
+}
+
+body[data-theme="dark"] .search-panel::before,
+:root[data-theme="dark"] .search-panel::before {
+  background: #4b5563;
+}
+
+body[data-theme="dark"] .search-panel:hover::before,
+:root[data-theme="dark"] .search-panel:hover::before {
+  background: #6b7280;
+}
+
+/* ============================================================
+   DARK MODE - Favorites
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .favorites-export .export-btn {
+    background: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+  }
+
+  .favorites-export .export-btn:hover {
+    background: #4b5563;
+    border-color: #6b7280;
+  }
+
+  .favorites-toggle-btn {
+    background: #21262d;
+    border-color: #30363d;
+    color: #e8eef5;
+  }
+
+  .favorites-toggle-btn:hover {
+    background: #30363d;
+    border-color: #f87171;
+    color: #f87171;
+  }
+
+  .favorites-header h2 {
+    color: #e8eef5;
+  }
+
+  .btn-primary {
+    background: #2563eb;
+    border-color: #2563eb;
+  }
+
+  .btn-secondary {
+    background: #21262d;
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+
+  .btn-secondary:hover {
+    background: #30363d;
+  }
+
+  .favorites-card {
+    background: #111827;
+    border-color: #30363d;
+    color: #e5e7eb;
+  }
+
+  .favorites-card h3 {
+    color: #e8eef5;
+  }
+
+  .favorites-card p {
+    color: #cbd5e1;
+  }
+}
+
+/* Manual dark mode toggle */
+:root[data-theme="dark"] .favorites-export .export-btn,
+body[data-theme="dark"] .favorites-export .export-btn {
+  background: #374151;
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+:root[data-theme="dark"] .favorites-export .export-btn:hover,
+body[data-theme="dark"] .favorites-export .export-btn:hover {
+  background: #4b5563;
+  border-color: #6b7280;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .favorites-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .favorites-actions {
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    flex: 1;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .search-panel {
+    transition: opacity 0.01ms !important;
+  }
+
+  .mobile-filter-backdrop {
+    transition: opacity 0.01ms !important;
+  }
+
+  .mobile-drawer-close:active {
+    transform: none !important;
+  }
+
+  .search-panel::before {
+    transition: none !important;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES - Favorites
+   ============================================================ */
+
+@media print {
+  /* Hide all UI elements except favorites content */
+  .favorites-header,
+  .favorites-export,
+  .favorites-toggle-btn,
+  .favorites-actions,
+  #view-favorites,
+  .site-header,
+  .utility-bar,
+  footer,
+  .mobile-bottom-nav,
+  .mobile-filter-toggle,
+  .search-panel,
+  .filters-section,
+  .quick-filters,
+  .accessibility-toolbar,
+  .skip-link,
+  .step-flow-page,
+  #search-results {
+    display: none !important;
+  }
+
+  /* Show favorites view */
+  .favorites-view {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .favorites-list {
+    display: block !important;
+  }
+
+  .favorites-card {
+    page-break-inside: avoid;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: none !important;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: white !important;
+    color: #111827 !important;
+  }
+
+  .favorites-card h3 {
+    color: #111827 !important;
+    font-size: 12pt;
+    margin-bottom: 0.5rem;
+  }
+
+  .favorites-card p {
+    color: #374151 !important;
+    font-size: 10pt;
+  }
+
+  .favorites-card a {
+    color: #2563eb !important;
+    text-decoration: underline;
+  }
+
+  /* Print header for favorites */
+  .print-favorites-header {
+    display: block !important;
+    text-align: center;
+    padding: 1rem 0 1.5rem;
+    border-bottom: 2px solid #2563eb;
+    margin-bottom: 1.5rem;
+  }
+
+  .print-favorites-header h1 {
+    font-size: 18pt;
+    color: #111827;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .print-favorites-header p {
+    font-size: 11pt;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  @page {
+    margin: 0.75in;
+    size: letter;
+  }
+
+  body {
+    color: #111827 !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Hide print header on screen */
+.print-favorites-header {
+  display: none;
+}
