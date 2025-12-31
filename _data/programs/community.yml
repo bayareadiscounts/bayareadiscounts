@@ -1397,3 +1397,603 @@
   link: https://www.ucpgg.org/
   link_text: Schedule Pickup
   verified_date: '2025-12-25'
+
+# LGBTQ+ Community Resources
+
+- id: sf-lgbt-center
+  name: SF LGBT Center
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - immigrants
+  - unemployed
+  - everyone
+  description: The San Francisco LGBT Center is a cornerstone of the LGBTQ+ community, providing a wide array of programs and services including financial assistance, immigration services, employment programs, and community events.
+  what_they_offer: |
+    - Trans Employment Program (job training and placement)
+    - Immigration legal services and DACA support
+    - Financial assistance programs
+    - Youth programs and services
+    - Community events and cultural programming
+    - Meeting space for LGBTQ+ organizations
+    - Senior services and activities
+  how_to_get_it: |
+    1. Visit the SF LGBT Center in person or online
+    2. Check program eligibility requirements
+    3. Register for services or programs
+    4. Some services require appointments
+    5. Drop-in services also available
+  phone: '415-865-5555'
+  address: 1800 Market St, San Francisco, CA 94102
+  benefit: Free employment programs, immigration services, financial assistance, and community resources
+  timeframe: Ongoing
+  link: https://www.sfcenter.org/
+  link_text: Visit Center
+  verified_date: '2025-12-30'
+
+- id: oakland-lgbtq-center
+  name: Oakland LGBTQ Community Center
+  category: Community Services
+  area: Alameda County
+  city: Oakland
+  groups:
+  - lgbtq
+  - seniors
+  - youth
+  - everyone
+  description: The Oakland LGBTQ Community Center provides a safe and affirming space with support groups, wellness services, senior programs, and community events in an alcohol and drug-free environment.
+  what_they_offer: |
+    - Free support groups and peer counseling
+    - Senior services and activities
+    - Youth drop-in programs
+    - Wellness clinic services
+    - Housing assistance resources
+    - Addiction recovery support
+    - Community events (open mic, gaming nights, drag shows)
+  how_to_get_it: |
+    1. Visit the center during open hours
+    2. Check website for event schedule
+    3. Join support groups (no registration needed)
+    4. Access drop-in services
+    5. Apply for specific programs as needed
+  phone: '510-882-2110'
+  address: 3207 Lakeshore Ave, Oakland, CA 94610
+  benefit: Free support groups, community events, wellness services, and senior/youth programming
+  timeframe: Ongoing
+  link: https://www.oaklandlgbtqcenter.org/
+  link_text: Visit Center
+  verified_date: '2025-12-30'
+
+- id: pacific-center
+  name: Pacific Center for Human Growth
+  category: Community Services
+  area: Alameda County
+  city: Berkeley
+  groups:
+  - lgbtq
+  - families
+  - seniors
+  - youth
+  - everyone
+  description: The Pacific Center for Human Growth is one of the oldest LGBTQ+ centers in the country, providing culturally responsive mental health services, peer support groups, and community programs in Berkeley.
+  what_they_offer: |
+    - Low-cost individual, couples, and family therapy
+    - Therapy for polyamorous relationships
+    - Support for partners of trans/gender-nonconforming individuals
+    - Youth drop-in programs
+    - Senior programming and social groups
+    - Peer support groups
+    - Sliding scale fees available
+  how_to_get_it: |
+    1. Call or visit the Pacific Center
+    2. Schedule intake appointment for therapy
+    3. Drop in for support groups and events
+    4. Fees based on sliding scale
+    5. No one turned away for inability to pay
+  phone: '510-548-8283'
+  address: 2712 Telegraph Ave, Berkeley, CA 94705
+  benefit: Sliding-scale therapy, free support groups, youth and senior programming
+  timeframe: Ongoing
+  link: https://www.pacificcenter.org/
+  link_text: Get Services
+  verified_date: '2025-12-30'
+
+- id: rainbow-community-center
+  name: Rainbow Community Center
+  category: Community Services
+  area: Contra Costa County
+  city: Concord
+  groups:
+  - lgbtq
+  - seniors
+  - youth
+  - everyone
+  description: Rainbow Community Center serves LGBTQ+ individuals and families in Contra Costa County with mental health services, HIV testing, youth programs, and community support resources.
+  what_they_offer: |
+    - Free HIV testing
+    - Mental health counseling
+    - Youth and senior programming
+    - Peer support groups
+    - Resources for hate crime survivors
+    - Intimate partner violence support
+    - Community socials and events
+  how_to_get_it: |
+    1. Visit the Rainbow Community Center
+    2. Walk in for HIV testing (no appointment needed)
+    3. Register for counseling services
+    4. Join support groups and programs
+    5. Check website for event schedule
+  phone: '925-692-0090'
+  address: 2118 Willow Pass Rd, Suite 500, Concord, CA 94520
+  benefit: Free HIV testing, counseling, support groups, and community resources
+  timeframe: Ongoing
+  link: https://www.rainbowcc.org/
+  link_text: Get Help
+  verified_date: '2025-12-30'
+
+- id: billy-defrank-center
+  name: Billy DeFrank LGBTQ+ Community Center
+  category: Community Services
+  area: Santa Clara County
+  city: San Jose
+  groups:
+  - lgbtq
+  - seniors
+  - everyone
+  description: The Billy DeFrank LGBTQ+ Community Center in San Jose offers HIV testing, computer access, a lending library, support groups, and community events for South Bay LGBTQ+ residents.
+  what_they_offer: |
+    - Free HIV testing
+    - Computer lab access
+    - LGBTQ+ lending library
+    - Support groups and meetings
+    - Adult and senior programming
+    - Community events and gatherings
+    - Resource referrals
+  how_to_get_it: |
+    1. Visit the center during open hours
+    2. Walk in for services
+    3. Schedule HIV testing
+    4. Join groups and programs
+    5. Check website for event calendar
+  phone: '408-293-2429'
+  address: 938 The Alameda, San Jose, CA 95126
+  benefit: Free HIV testing, computer access, library, support groups, and events
+  timeframe: Ongoing
+  link: https://www.defrankcenter.org/
+  link_text: Visit Center
+  verified_date: '2025-12-30'
+
+- id: spahr-center
+  name: The Spahr Center
+  category: Community Services
+  area: Marin County
+  city: San Rafael
+  groups:
+  - lgbtq
+  - seniors
+  - youth
+  - everyone
+  description: The Spahr Center serves Marin County's LGBTQ+ community with social programs, HIV support and prevention, youth groups, and senior discussions in a welcoming environment.
+  what_they_offer: |
+    - Free HIV testing and prevention services
+    - HIV support groups
+    - Youth drop-in groups
+    - Senior discussion groups
+    - Social mixers and events
+    - Resource referrals
+    - Community workshops
+  how_to_get_it: |
+    1. Visit The Spahr Center in San Rafael
+    2. Check website for group schedules
+    3. Walk in for HIV testing
+    4. Join programs and events
+    5. Call for resource referrals
+  phone: '415-457-1115'
+  address: 910 Irwin St, San Rafael, CA 94901
+  benefit: Free HIV services, youth and senior programs, support groups, and events
+  timeframe: Ongoing
+  link: https://www.thespahrcenter.org/
+  link_text: Get Services
+  verified_date: '2025-12-30'
+
+- id: lgbtq-connection-napa
+  name: LGBTQ Connection
+  category: Community Services
+  area: Napa County
+  city: Napa
+  groups:
+  - lgbtq
+  - youth
+  - everyone
+  description: LGBTQ Connection serves Napa County's LGBTQ+ community with trainings, workshops, wellness programs, leadership development, and community events.
+  what_they_offer: |
+    - Community events and gatherings
+    - Trainings and workshops
+    - Wellness programs
+    - Leadership development
+    - Youth programming
+    - Safe space education
+  how_to_get_it: |
+    1. Visit LGBTQ Connection in Napa
+    2. Check website for events and programs
+    3. Register for trainings and workshops
+    4. Join community gatherings
+    5. Participate in leadership programs
+  phone: '707-251-9432'
+  address: 780 Lincoln Ave, Napa, CA 94559
+  benefit: Free community events, trainings, workshops, and wellness programs
+  timeframe: Ongoing
+  link: https://lgbtqconnection.org/
+  link_text: Get Connected
+  verified_date: '2025-12-30'
+
+- id: queer-lifespace
+  name: Queer LifeSpace
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - low-income
+  - everyone
+  description: Queer LifeSpace provides low-cost mental health counseling, substance abuse services, and group therapy for the LGBTQ+ community on a sliding scale fee basis.
+  what_they_offer: |
+    - Low-fee individual therapy
+    - Substance abuse counseling
+    - Group therapy sessions
+    - Couples counseling
+    - Sliding scale fees (some as low as $20)
+    - LGBTQ+-affirming therapists
+  how_to_get_it: |
+    1. Visit queerlifespace.org
+    2. Complete intake form
+    3. Schedule consultation
+    4. Discuss fee based on income
+    5. Begin therapy services
+  phone: '415-558-8700'
+  address: 2275 Market St, #7, San Francisco, CA 94114
+  benefit: Sliding-scale mental health therapy starting at $20 per session
+  timeframe: Ongoing
+  link: https://www.queerlifespace.org/
+  link_text: Get Therapy
+  verified_date: '2025-12-30'
+
+- id: lyric-youth
+  name: LYRIC (Lavender Youth Recreation & Information Center)
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - youth
+  - low-income
+  description: LYRIC provides education, career training, health services, housing navigation, and leadership development for LGBTQQ+ youth ages 12-24 in San Francisco.
+  what_they_offer: |
+    - Education enhancement programs
+    - Career training and job placement
+    - Health promotion and PrEP/HIV care
+    - Housing navigation assistance
+    - Leadership development
+    - Drop-in youth services
+    - Mental health support
+  how_to_get_it: |
+    1. Visit LYRIC during drop-in hours
+    2. Must be ages 12-24
+    3. LGBTQQ+ youth and allies welcome
+    4. Register for specific programs
+    5. Walk-in services available
+  phone: '415-703-6150'
+  address: 127 Collingwood St, San Francisco, CA 94114
+  benefit: Free education, job training, health services, and housing help for LGBTQ+ youth
+  timeframe: Ongoing
+  link: https://lyric.org/
+  link_text: Get Help
+  verified_date: '2025-12-30'
+
+- id: outlet-peninsula
+  name: Outlet
+  category: Community Services
+  area: San Mateo County
+  groups:
+  - lgbtq
+  - youth
+  - families
+  description: Outlet provides counseling, support groups, and outreach services for LGBTQ+ youth and their families across San Mateo and Santa Clara counties with locations in Redwood City, Mountain View, and San Mateo.
+  what_they_offer: |
+    - Free youth counseling services
+    - Support groups for LGBTQ+ youth
+    - Parent and family support
+    - School outreach programs
+    - Adult support groups
+    - Community education
+  how_to_get_it: |
+    1. Contact Outlet at your nearest location
+    2. Schedule counseling appointment
+    3. Join youth or parent support groups
+    4. Services available for ages 13-25
+    5. Family members welcome
+  phone: '650-723-5111'
+  address: Multiple locations in Redwood City, Mountain View, San Mateo
+  benefit: Free counseling and support groups for LGBTQ+ youth and families
+  timeframe: Ongoing
+  link: https://www.acs-teens.org/what-we-do/outlet/
+  link_text: Find Location
+  verified_date: '2025-12-30'
+
+- id: api-wellness-transthrive
+  name: API Wellness / TRANS:THRIVE
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - low-income
+  - everyone
+  description: API Wellness offers primary care, PrEP prescriptions, free HIV/STD testing, and runs TRANS:THRIVE, a drop-in care center specifically for transgender individuals.
+  what_they_offer: |
+    - Primary care services
+    - Free HIV and STD testing
+    - PrEP prescriptions and support
+    - TRANS:THRIVE drop-in care center
+    - Support groups
+    - Community outings and events
+    - Trans-affirming healthcare
+  how_to_get_it: |
+    1. Visit API Wellness or TRANS:THRIVE
+    2. Walk in for HIV/STD testing
+    3. Schedule appointment for primary care
+    4. Drop in for TRANS:THRIVE services
+    5. Join support groups and events
+  phone: '415-292-3400'
+  address: 726 Polk St, San Francisco, CA 94109
+  benefit: Free HIV/STD testing, PrEP support, and trans-affirming drop-in care
+  timeframe: Ongoing
+  link: https://www.apiwellness.org/
+  link_text: Get Care
+  verified_date: '2025-12-30'
+
+- id: openhouse-sf
+  name: Openhouse
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - seniors
+  - low-income
+  description: Openhouse provides housing, community programs, case management, and mental health services specifically for LGBTQ+ seniors in San Francisco.
+  what_they_offer: |
+    - LGBTQ+-affirming senior housing
+    - Case management services
+    - Mental health support
+    - Social programs and activities
+    - Aging services and resources
+    - Community building events
+    - Volunteer opportunities
+  how_to_get_it: |
+    1. Contact Openhouse for services
+    2. Apply for senior housing (waitlist may apply)
+    3. Schedule case management intake
+    4. Join social programs and activities
+    5. Must be LGBTQ+ senior (typically 55+)
+  phone: '415-296-8995'
+  address: 65 Laguna St, San Francisco, CA 94102
+  benefit: LGBTQ+ senior housing, case management, mental health, and community programs
+  timeframe: Ongoing
+  link: https://www.openhousesf.org/
+  link_text: Get Services
+  verified_date: '2025-12-30'
+
+- id: pflag-sf
+  name: PFLAG San Francisco
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - families
+  - everyone
+  description: PFLAG San Francisco provides support, education, and advocacy for LGBTQ+ individuals and their families, with regular support meetings and community resources.
+  what_they_offer: |
+    - Monthly support group meetings
+    - Family support and education
+    - LGBTQ+ advocacy resources
+    - Speaker programs for schools/organizations
+    - Connection to local resources
+    - Virtual support options
+  how_to_get_it: |
+    1. Visit pflagsf.org for meeting schedule
+    2. Attend monthly support meetings
+    3. Contact for individual support
+    4. Request speakers for your organization
+    5. Access online resources
+  phone: '415-921-8850'
+  address: 584 Castro St #758, San Francisco, CA 94114
+  benefit: Free family support meetings, education, and advocacy resources
+  timeframe: Ongoing
+  link: https://pflagsf.org/
+  link_text: Get Support
+  verified_date: '2025-12-30'
+
+- id: trans-lifeline
+  name: Trans Lifeline
+  category: Community Services
+  area: Nationwide
+  groups:
+  - lgbtq
+  - everyone
+  description: Trans Lifeline is a grassroots hotline offering direct emotional and financial support to trans people in crisis, staffed entirely by transgender operators.
+  what_they_offer: |
+    - 24/7 crisis hotline (staffed by trans people)
+    - Emotional support during crisis
+    - Microgrants for emergency needs
+    - Name change assistance grants
+    - Peer support connections
+    - Resource referrals
+  how_to_get_it: |
+    1. Call the Trans Lifeline hotline
+    2. US: 877-565-8860
+    3. Canada: 877-330-6366
+    4. All operators are trans
+    5. No police involvement without consent
+    6. Apply for microgrants online
+  phone: '877-565-8860'
+  benefit: Free 24/7 trans-staffed crisis hotline and emergency financial assistance
+  timeframe: Ongoing
+  link: https://translifeline.org/
+  link_text: Get Help
+  verified_date: '2025-12-30'
+
+- id: trevor-project
+  name: The Trevor Project
+  category: Community Services
+  area: Nationwide
+  groups:
+  - lgbtq
+  - youth
+  description: The Trevor Project provides 24/7 crisis intervention and suicide prevention services for LGBTQ+ young people ages 13-24 via phone, text, and chat.
+  what_they_offer: |
+    - 24/7 crisis hotline (1-866-488-7386)
+    - Text support (text START to 678-678)
+    - Online chat support
+    - TrevorSpace online community
+    - Educational resources
+    - Trained counselors for LGBTQ+ youth
+  how_to_get_it: |
+    1. Call 1-866-488-7386 (24/7)
+    2. Text START to 678-678
+    3. Chat online at thetrevorproject.org
+    4. Join TrevorSpace community
+    5. For ages 13-24
+  phone: '1-866-488-7386'
+  benefit: Free 24/7 crisis support for LGBTQ+ youth via phone, text, and chat
+  timeframe: Ongoing
+  link: https://www.thetrevorproject.org/
+  link_text: Get Help
+  verified_date: '2025-12-30'
+
+- id: lgbt-asylum-project
+  name: The LGBT Asylum Project
+  category: Community Services
+  area: Bay Area-wide
+  groups:
+  - lgbtq
+  - immigrants
+  - low-income
+  description: The LGBT Asylum Project provides free legal representation and support to LGBTQ+ asylum seekers fleeing persecution based on their sexual orientation or gender identity.
+  what_they_offer: |
+    - Free legal representation for asylum cases
+    - Help preparing asylum applications
+    - Court representation
+    - Case management support
+    - Connection to community resources
+    - Pro bono attorney referrals
+  how_to_get_it: |
+    1. Contact The LGBT Asylum Project
+    2. Complete intake process
+    3. Must be LGBTQ+ asylum seeker
+    4. Cases handled by volunteer attorneys
+    5. All services are free
+  phone: '415-727-9285'
+  benefit: Free legal representation for LGBTQ+ asylum seekers
+  timeframe: Ongoing
+  link: https://www.lgbtasylumproject.org/
+  link_text: Get Legal Help
+  verified_date: '2025-12-30'
+
+- id: tgi-justice-project
+  name: TGI Justice Project
+  category: Community Services
+  area: Bay Area-wide
+  groups:
+  - lgbtq
+  - reentry
+  - low-income
+  description: TGI Justice Project supports transgender and intersex people who are currently or formerly incarcerated, providing reentry services, advocacy, and community support.
+  what_they_offer: |
+    - Reentry support services
+    - Advocacy for incarcerated trans/intersex people
+    - Housing assistance
+    - Legal name/gender marker changes
+    - Community organizing
+    - Mutual aid support
+  how_to_get_it: |
+    1. Contact TGI Justice Project
+    2. Currently or formerly incarcerated trans/intersex individuals welcome
+    3. Receive reentry support
+    4. Access advocacy services
+    5. Join community programs
+  phone: '415-252-1444'
+  address: 370 Turk St, #370, San Francisco, CA 94102
+  benefit: Free reentry support, advocacy, and community resources for trans/intersex individuals
+  timeframe: Ongoing
+  link: https://tgijp.org/
+  link_text: Get Support
+  verified_date: '2025-12-30'
+
+- id: el-la-para-translatinas
+  name: El/La Para TransLatinas
+  category: Community Services
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - immigrants
+  - low-income
+  description: El/La Para TransLatinas provides community building, protection, and support services specifically for transgender Latina women in the Bay Area.
+  what_they_offer: |
+    - Community support groups
+    - Immigration assistance
+    - Health navigation
+    - Safety and advocacy
+    - Leadership development
+    - Know Your Rights workshops
+    - Cultural programming
+  how_to_get_it: |
+    1. Contact El/La Para TransLatinas
+    2. Join community groups and events
+    3. Access support services
+    4. Participate in workshops
+    5. Services in Spanish and English
+  phone: '415-864-7278'
+  address: 2940 16th St, Suite 319, San Francisco, CA 94103
+  benefit: Free community support, immigration help, and advocacy for trans Latina women
+  timeframe: Ongoing
+  link: https://ellaparatranslatinas.org/
+  link_text: Get Support
+  verified_date: '2025-12-30'
+
+- id: glbt-historical-society
+  name: GLBT Historical Society Museum
+  category: Museums
+  area: San Francisco
+  city: San Francisco
+  groups:
+  - lgbtq
+  - seniors
+  - low-income
+  - everyone
+  description: The GLBT Historical Society Museum in the Castro preserves and exhibits LGBTQ+ history, culture, and arts, with free admission days and reduced rates available.
+  what_they_offer: |
+    - Free First Sundays (free admission monthly)
+    - Regular admission only $10
+    - Seniors, students, military: $7
+    - LGBTQ+ history exhibitions
+    - Research archives access
+    - Educational programs
+    - Community events
+  how_to_get_it: |
+    1. Visit on First Sunday for free admission
+    2. Or pay regular admission ($10, $7 reduced)
+    3. Check website for current exhibitions
+    4. Access archives by appointment
+    5. Join educational programs
+  phone: '415-621-1107'
+  address: 4127 18th St, San Francisco, CA 94114
+  benefit: Free First Sundays and $7 reduced admission for seniors/students/military
+  timeframe: Ongoing
+  link: https://www.glbthistory.org/
+  link_text: Plan Visit
+  verified_date: '2025-12-30'

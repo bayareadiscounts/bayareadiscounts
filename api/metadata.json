@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2025-12-31T00:01:17.501Z",
-  "totalPrograms": 355,
+  "generatedAt": "2025-12-31T00:04:48.791Z",
+  "totalPrograms": 374,
   "endpoints": {
     "programs": "/api/programs.json",
     "categories": "/api/categories.json",

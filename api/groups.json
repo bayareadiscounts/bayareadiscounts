@@ -5,21 +5,21 @@
       "name": "SNAP/EBT/Medi-Cal",
       "description": "For public benefit recipients",
       "icon": "💳",
-      "programCount": 148
+      "programCount": 156
     },
     {
       "id": "seniors",
       "name": "Seniors (65+)",
       "description": "For adults age 65 and older",
       "icon": "👵",
-      "programCount": 32
+      "programCount": 39
     },
     {
       "id": "youth",
       "name": "Youth",
       "description": "For children and young adults",
       "icon": "🧒",
-      "programCount": 26
+      "programCount": 34
     },
     {
       "id": "college-students",
@@ -40,7 +40,7 @@
       "name": "Families",
       "description": "For families with children",
       "icon": "👨‍👩‍👧",
-      "programCount": 33
+      "programCount": 36
     },
     {
       "id": "disability",
@@ -54,7 +54,7 @@
       "name": "LGBT+",
       "description": "For LGBTQ+ community members",
       "icon": "🌈",
-      "programCount": 0
+      "programCount": 19
     },
     {
       "id": "first-responders",
@@ -75,14 +75,14 @@
       "name": "Unemployed/Job Seekers",
       "description": "For people actively seeking employment",
       "icon": "💼",
-      "programCount": 1
+      "programCount": 2
     },
     {
       "id": "immigrants",
       "name": "Immigrants/Refugees",
       "description": "For new arrivals, undocumented, DACA",
       "icon": "🌍",
-      "programCount": 3
+      "programCount": 6
     },
     {
       "id": "unhoused",
@@ -117,7 +117,7 @@
       "name": "Formerly Incarcerated",
       "description": "For reentry support programs",
       "icon": "🔓",
-      "programCount": 1
+      "programCount": 2
     },
     {
       "id": "nonprofits",
@@ -131,7 +131,7 @@
       "name": "Everyone",
       "description": "Available to all residents",
       "icon": "🌎",
-      "programCount": 191
+      "programCount": 203
     }
   ]
 }
