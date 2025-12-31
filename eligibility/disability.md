@@ -18,9 +18,55 @@ This guide explains eligibility for disability-related discounts and services, i
 
 ---
 
+<div class="quick-eligibility-check">
+  <div class="quick-check-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <h2>Programs You May Qualify For</h2>
+  </div>
+  <p>Select which apply to you to see relevant programs:</p>
+
+  <div class="eligibility-checklist-container" data-checklist-id="disability-check">
+    <ul class="eligibility-checklist" data-checklist-id="disability-check">
+      <li class="eligibility-checklist-item" data-item-id="ssdi" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I receive SSDI (Social Security Disability Insurance)</span>
+        <span class="checklist-help">Based on work history</span>
+      </li>
+      <li class="eligibility-checklist-item" data-item-id="ssi" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I receive SSI (Supplemental Security Income)</span>
+        <span class="checklist-help">Based on financial need</span>
+      </li>
+      <li class="eligibility-checklist-item" data-item-id="regional" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I am a Regional Center client</span>
+        <span class="checklist-help">Developmental disability services</span>
+      </li>
+      <li class="eligibility-checklist-item" data-item-id="placard" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I have a disabled parking placard</span>
+      </li>
+      <li class="eligibility-checklist-item" data-item-id="va" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I have a VA disability rating</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+---
+
 ## Federal Disability Programs
 
-### Social Security Disability Insurance (SSDI)
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Social Security Disability Insurance (SSDI)</h3>
+  </summary>
+  <div class="expandable-content">
 
 SSDI provides monthly benefits to people who have worked and paid Social Security taxes but can no longer work due to a qualifying disability.
 
@@ -37,9 +83,15 @@ SSDI provides monthly benefits to people who have worked and paid Social Securit
 
 **Apply:** [ssa.gov/disability](https://www.ssa.gov/disability/) or call 1-800-772-1213
 
----
+  </div>
+</details>
 
-### Supplemental Security Income (SSI)
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Supplemental Security Income (SSI)</h3>
+  </summary>
+  <div class="expandable-content">
 
 SSI provides monthly cash assistance to people with disabilities (and seniors 65+) who have limited income and resources.
 
@@ -57,9 +109,15 @@ SSI provides monthly cash assistance to people with disabilities (and seniors 65
 
 **Apply:** [ssa.gov/ssi](https://www.ssa.gov/ssi/) or visit your local Social Security office.
 
----
+  </div>
+</details>
 
-### Comparison: SSDI vs. SSI
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Comparison: SSDI vs. SSI</h3>
+  </summary>
+  <div class="expandable-content">
 
 | Feature | SSDI | SSI |
 |---------|------|-----|
@@ -69,11 +127,19 @@ SSI provides monthly cash assistance to people with disabilities (and seniors 65
 | Health coverage | Medicare (after 24 months) | Medi-Cal (immediate) |
 | Can receive both? | Yes, if you meet both requirements | Yes |
 
+  </div>
+</details>
+
 ---
 
 ## California Programs
 
-### Medi-Cal for People with Disabilities
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Medi-Cal for People with Disabilities</h3>
+  </summary>
+  <div class="expandable-content">
 
 California's Medicaid program provides comprehensive health coverage.
 
@@ -93,9 +159,15 @@ California's Medicaid program provides comprehensive health coverage.
 
 **Apply:** [BenefitsCal.com](https://benefitscal.com)
 
----
+  </div>
+</details>
 
-### In-Home Supportive Services (IHSS)
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>In-Home Supportive Services (IHSS)</h3>
+  </summary>
+  <div class="expandable-content">
 
 IHSS helps people with disabilities remain safely in their homes by providing paid caregivers.
 
@@ -112,9 +184,15 @@ IHSS helps people with disabilities remain safely in their homes by providing pa
 
 **Apply:** Contact your county social services agency. See the [Public Assistance Guide]({{ site.baseurl }}/eligibility/public-assistance.html) for office locations.
 
----
+  </div>
+</details>
 
-### California Regional Centers
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>California Regional Centers</h3>
+  </summary>
+  <div class="expandable-content">
 
 California's 21 Regional Centers provide services to people with developmental disabilities.
 
@@ -133,48 +211,70 @@ California's 21 Regional Centers provide services to people with developmental d
 - Respite care for families
 - Behavioral services
 
-**Bay Area Regional Centers:**
-
-**Regional Center of the East Bay**
-Serving Alameda and Contra Costa Counties
-(510) 618-6100
-[rceb.org](https://www.rceb.org)
-
-**Golden Gate Regional Center**
-Serving San Francisco, Marin, and San Mateo Counties
-(415) 546-9222
-[ggrc.org](https://www.ggrc.org)
-
-**San Andreas Regional Center**
-Serving Santa Clara, San Benito, Santa Cruz, and Monterey Counties
-(408) 374-9960
-[sanandreasregional.org](https://www.sanandreasregional.org)
-
-**North Bay Regional Center**
-Serving Napa, Solano, and Sonoma Counties
-(707) 256-1100
-[nbrc.net](https://www.nbrc.net)
+  </div>
+</details>
 
 ---
 
-### California State Disability Insurance (SDI)
+## Bay Area Regional Centers
 
-Short-term wage replacement for California workers who can't work due to non-work-related illness, injury, or pregnancy.
+<div class="county-selector">
+  <label for="regional-center-select" class="county-select-label">Select your county to find your Regional Center:</label>
+  <select id="regional-center-select" class="county-select">
+    <option value="">Choose a county...</option>
+    <option value="east-bay">Alameda & Contra Costa Counties</option>
+    <option value="golden-gate">San Francisco, Marin & San Mateo Counties</option>
+    <option value="san-andreas">Santa Clara County</option>
+    <option value="north-bay">Napa, Solano & Sonoma Counties</option>
+  </select>
 
-**Key Features:**
-- Pays approximately 60-70% of wages (up to a cap)
-- Maximum 52 weeks of benefits
-- Must have paid into SDI through paycheck deductions
+  <div class="county-info" data-county="east-bay">
+    <h4>Regional Center of the East Bay</h4>
+    <div class="county-details">
+      <p>Serving Alameda and Contra Costa Counties</p>
+      <p><strong>Phone:</strong> <a href="tel:510-618-6100">(510) 618-6100</a></p>
+      <p><strong>Website:</strong> <a href="https://www.rceb.org" target="_blank" rel="noopener">rceb.org</a></p>
+    </div>
+  </div>
 
-**Note:** SDI is different from SSDI. SDI is temporary state benefits; SSDI is long-term federal benefits for permanent disability.
+  <div class="county-info" data-county="golden-gate">
+    <h4>Golden Gate Regional Center</h4>
+    <div class="county-details">
+      <p>Serving San Francisco, Marin, and San Mateo Counties</p>
+      <p><strong>Phone:</strong> <a href="tel:415-546-9222">(415) 546-9222</a></p>
+      <p><strong>Website:</strong> <a href="https://www.ggrc.org" target="_blank" rel="noopener">ggrc.org</a></p>
+    </div>
+  </div>
 
-**Apply:** [edd.ca.gov/disability](https://edd.ca.gov/disability/)
+  <div class="county-info" data-county="san-andreas">
+    <h4>San Andreas Regional Center</h4>
+    <div class="county-details">
+      <p>Serving Santa Clara, San Benito, Santa Cruz, and Monterey Counties</p>
+      <p><strong>Phone:</strong> <a href="tel:408-374-9960">(408) 374-9960</a></p>
+      <p><strong>Website:</strong> <a href="https://www.sanandreasregional.org" target="_blank" rel="noopener">sanandreasregional.org</a></p>
+    </div>
+  </div>
+
+  <div class="county-info" data-county="north-bay">
+    <h4>North Bay Regional Center</h4>
+    <div class="county-details">
+      <p>Serving Napa, Solano, and Sonoma Counties</p>
+      <p><strong>Phone:</strong> <a href="tel:707-256-1100">(707) 256-1100</a></p>
+      <p><strong>Website:</strong> <a href="https://www.nbrc.net" target="_blank" rel="noopener">nbrc.net</a></p>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## Verifying Disability Status
 
-### Common Documentation
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Common Documentation</h3>
+  </summary>
+  <div class="expandable-content">
 
 Different discount programs accept different proof:
 
@@ -196,9 +296,15 @@ Different discount programs accept different proof:
 - Doctor's verification letter
 - DMV Disabled Person ID card
 
----
+  </div>
+</details>
 
-### California Disabled Parking Placard
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>California Disabled Parking Placard</h3>
+  </summary>
+  <div class="expandable-content">
 
 **Permanent Placard (Blue):** For permanent disabilities affecting mobility.
 
@@ -209,11 +315,19 @@ Different discount programs accept different proof:
 **Apply:** Complete DMV form REG 195 with your healthcare provider's certification.
 [dmv.ca.gov/portal/disabled-placards](https://www.dmv.ca.gov/portal/disabled-placards/)
 
+  </div>
+</details>
+
 ---
 
 ## Disability Discounts & Accommodations
 
-### Transit
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Transit</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **BART:** 62.5% discount with RTC Discount Card
 - **Muni (SFMTA):** Free for people with disabilities (with Clipper Card and qualifying documentation)
@@ -226,9 +340,15 @@ Different discount programs accept different proof:
 Provides discounted fares across multiple Bay Area transit agencies.
 [clippercard.com/ClipperWeb/discounts](https://www.clippercard.com/ClipperWeb/discounts.html)
 
----
+  </div>
+</details>
 
-### National & State Parks
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>National & State Parks</h3>
+  </summary>
+  <div class="expandable-content">
 
 **America the Beautiful Access Pass**
 - Free lifetime pass for U.S. citizens with permanent disabilities
@@ -241,9 +361,15 @@ Provides discounted fares across multiple Bay Area transit agencies.
 - Must have permanent disability
 - [parks.ca.gov](https://www.parks.ca.gov/?page_id=1049)
 
----
+  </div>
+</details>
 
-### Technology & Communications
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Technology & Communications</h3>
+  </summary>
+  <div class="expandable-content">
 
 **National Relay Service**
 Free service for deaf, hard of hearing, or speech-disabled individuals.
@@ -258,9 +384,15 @@ Free specialized phones and equipment for people with hearing, vision, cognitive
 Built-in accessibility features on all Apple devices.
 [apple.com/accessibility](https://www.apple.com/accessibility/)
 
----
+  </div>
+</details>
 
-### Museums & Cultural Institutions
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Museums & Cultural Institutions</h3>
+  </summary>
+  <div class="expandable-content">
 
 Many Bay Area museums offer free or reduced admission and accessibility accommodations:
 
@@ -272,9 +404,15 @@ Many Bay Area museums offer free or reduced admission and accessibility accommod
 **Museums for All:** EBT cardholders (which often includes SSI recipients) receive $3 admission at participating museums.
 [museums4all.org](https://museums4all.org/)
 
----
+  </div>
+</details>
 
-### Utilities
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Utilities</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **CARE Program (PG&E):** 20%+ discount for low-income households, including many SSI recipients
 - **FERA Program:** 18% discount for households slightly above CARE limits
@@ -283,19 +421,25 @@ Many Bay Area museums offer free or reduced admission and accessibility accommod
 
 See the [Utility Programs Guide]({{ site.baseurl }}/eligibility/utility-programs.html) for full details.
 
+  </div>
+</details>
+
 ---
 
 ## ADA Rights & Accommodations
 
-The Americans with Disabilities Act (ADA) guarantees rights in:
-
-**Employment (Title I):** Employers with 15+ employees must provide reasonable accommodations.
-
-**Public Services (Title II):** State and local governments must be accessible.
-
-**Public Accommodations (Title III):** Businesses open to the public must remove barriers and provide accommodations.
-
-**Telecommunications (Title IV):** Relay services for hearing/speech impaired.
+<div class="info-callout">
+  <div class="callout-icon" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="16" x2="12" y2="12"></line>
+      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+    </svg>
+  </div>
+  <div class="callout-content">
+    <p>The Americans with Disabilities Act (ADA) guarantees rights in employment, public services, public accommodations, and telecommunications.</p>
+  </div>
+</div>
 
 **Filing Complaints:**
 - Employment: [EEOC.gov](https://www.eeoc.gov/)
@@ -306,31 +450,29 @@ The Americans with Disabilities Act (ADA) guarantees rights in:
 
 ## Bay Area Disability Resources
 
-### Independent Living Centers
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Independent Living Centers</h3>
+  </summary>
+  <div class="expandable-content">
 
 Independent Living Centers provide advocacy, information, and services for people with disabilities.
 
-**Center for Independent Living (CIL)**
-Alameda and Contra Costa Counties
-(510) 841-4776
-[thecil.org](https://www.thecil.org/)
+- **Center for Independent Living (CIL):** Alameda and Contra Costa Counties – (510) 841-4776 – [thecil.org](https://www.thecil.org/)
+- **Independent Living Resource Center San Francisco:** (415) 543-6222 – [ilrcsf.org](https://www.ilrcsf.org/)
+- **Silicon Valley Independent Living Center:** Santa Clara County – (408) 894-9041 – [svilc.org](https://www.svilc.org/)
+- **Marin Center for Independent Living:** (415) 459-6245 – [marincil.org](https://www.marincil.org/)
 
-**Independent Living Resource Center San Francisco**
-(415) 543-6222
-[ilrcsf.org](https://www.ilrcsf.org/)
+  </div>
+</details>
 
-**Silicon Valley Independent Living Center**
-Santa Clara County
-(408) 894-9041
-[svilc.org](https://www.svilc.org/)
-
-**Marin Center for Independent Living**
-(415) 459-6245
-[marincil.org](https://www.marincil.org/)
-
----
-
-### Legal Aid
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Legal Aid</h3>
+  </summary>
+  <div class="expandable-content">
 
 **Disability Rights California**
 Statewide protection and advocacy organization.
@@ -341,6 +483,9 @@ Statewide protection and advocacy organization.
 Free civil legal services for low-income residents.
 (510) 250-5270
 [baylegal.org](https://baylegal.org/)
+
+  </div>
+</details>
 
 ---
 

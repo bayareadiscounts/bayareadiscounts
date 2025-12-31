@@ -18,11 +18,51 @@ This guide explains what qualifies as student status for discount programs and h
 
 ---
 
+<div class="quick-eligibility-check">
+  <div class="quick-check-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <h2>Am I Eligible?</h2>
+  </div>
+  <p>Check if you qualify for student discounts:</p>
+
+  <div class="eligibility-checklist-container" data-checklist-id="student-check">
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 0%"></div>
+    </div>
+    <p class="progress-text"><strong>0</strong> of <strong>3</strong> requirements checked</p>
+
+    <ul class="eligibility-checklist" data-checklist-id="student-check">
+      <li class="eligibility-checklist-item" data-item-id="enrolled" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I am currently enrolled in an accredited educational institution</span>
+        <span class="checklist-help">College, university, community college, vocational school, or high school</span>
+      </li>
+      <li class="eligibility-checklist-item" data-item-id="half-time" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I am enrolled at least half-time (for most programs)</span>
+        <span class="checklist-help">Some programs accept any enrollment status</span>
+      </li>
+      <li class="eligibility-checklist-item" data-item-id="verification" tabindex="0" role="checkbox" aria-checked="false">
+        <span class="checklist-checkbox" aria-hidden="true"></span>
+        <span class="checklist-label">I have proof of enrollment (ID, .edu email, or enrollment letter)</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+---
+
 ## Who Qualifies?
 
-Student discounts typically require current enrollment at an accredited educational institution. Requirements vary by program.
-
-### Generally Eligible
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Generally Eligible</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **College/University Students:** Enrolled at least half-time in an accredited institution
 - **Graduate Students:** Master's, doctoral, and professional degree programs
@@ -31,67 +71,126 @@ Student discounts typically require current enrollment at an accredited educatio
 - **High School Students:** Some programs include students 16+
 - **International Students:** With valid student visas and enrollment
 
-### May Have Limitations
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>May Have Limitations</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **Online-Only Students:** Some programs require in-person enrollment
 - **Non-Degree Students:** Taking classes without pursuing a degree
 - **Part-Time Students:** Some programs require half-time or full-time enrollment
 - **Continuing Education:** Varies by program
 
+  </div>
+</details>
+
 ---
 
 ## Common Verification Methods
 
-### Student ID Card
+<div class="step-cards">
+  <div class="step-card">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Student ID Card</h4>
+      <p>Most programs accept a current, valid student ID card showing:</p>
+      <ul>
+        <li>Your name and photo</li>
+        <li>School name</li>
+        <li>Current academic year or expiration date</li>
+      </ul>
+      <div class="info-callout" style="margin-top: 0.75rem;">
+        <div class="callout-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </div>
+        <div class="callout-content">
+          <p><strong>Tip:</strong> If your ID doesn't have an expiration date, you may need additional verification.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-Most programs accept a current, valid student ID card showing:
-- Your name and photo
-- School name
-- Current academic year or expiration date
+  <div class="step-card">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>.edu Email Address</h4>
+      <p>Many online services verify student status through your school-issued email:</p>
+      <ul>
+        <li>Must be a valid .edu (or international equivalent) address</li>
+        <li>You'll receive a verification link to confirm access</li>
+        <li>Some programs re-verify periodically</li>
+      </ul>
+      <p style="margin-top: 0.75rem;"><strong>Services using .edu verification:</strong></p>
+      <ul>
+        <li>Spotify Student</li>
+        <li>Apple Music Student</li>
+        <li>Amazon Prime Student</li>
+        <li>Adobe Creative Cloud</li>
+        <li>Microsoft Office 365 Education</li>
+      </ul>
+    </div>
+  </div>
 
-**Tip:** Some discount programs require your ID to have an expiration date. If yours doesn't, you may need additional verification.
+  <div class="step-card">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Enrollment Verification Services</h4>
+      <p>Some programs use third-party services:</p>
+      <ul>
+        <li><strong>SheerID</strong> – Partners with Spotify, Apple, and many retailers</li>
+        <li><strong>UNiDAYS</strong> – Free student discount platform</li>
+        <li><strong>Student Beans</strong> – Discount verification service</li>
+      </ul>
+      <p style="margin-top: 0.5rem;">These services may verify through connection to your school's enrollment system, upload of documents, or .edu email.</p>
+    </div>
+  </div>
 
-### .edu Email Address
-
-Many online services verify student status through your school-issued email:
-- Must be a valid .edu (or international equivalent) address
-- You'll receive a verification link to confirm access
-- Some programs re-verify periodically
-
-**Services using .edu verification:**
-- Spotify Student
-- Apple Music Student
-- Amazon Prime Student
-- Adobe Creative Cloud
-- Microsoft Office 365 Education
-
-### Enrollment Verification Services
-
-Some programs use third-party services:
-
-- **SheerID** – Partners with Spotify, Apple, and many retailers
-- **UNiDAYS** – Free student discount platform
-- **Student Beans** – Discount verification service
-
-These services may verify through:
-- Connection to your school's enrollment system
-- Upload of enrollment documents
-- .edu email verification
-
-### Official Enrollment Documents
-
-For programs not accepting ID cards or digital verification:
-- Current class schedule
-- Enrollment verification letter from registrar
-- Tuition bill or receipt with current term dates
+  <div class="step-card">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Official Enrollment Documents</h4>
+      <p>For programs not accepting ID cards or digital verification:</p>
+      <ul>
+        <li>Current class schedule</li>
+        <li>Enrollment verification letter from registrar</li>
+        <li>Tuition bill or receipt with current term dates</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## CalFresh for Students
 
-College students have special rules for CalFresh (food stamp) eligibility.
+<div class="info-callout">
+  <div class="callout-icon" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="16" x2="12" y2="12"></line>
+      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+    </svg>
+  </div>
+  <div class="callout-content">
+    <p><strong>Important:</strong> College students have special rules for CalFresh (food stamp) eligibility. You must meet an exemption to qualify.</p>
+  </div>
+</div>
 
-### Student Exemptions
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Student Exemptions</h3>
+  </summary>
+  <div class="expandable-content">
 
 Students enrolled at least half-time in higher education must meet an exemption to receive CalFresh:
 
@@ -104,25 +203,47 @@ Students enrolled at least half-time in higher education must meet an exemption 
 - Participating in SNAP Employment & Training
 - Not intending to register for the next school term
 
-### Resources
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Resources</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **[BenefitsCal Student Center](https://benefitscal.com/StudentCenter/Home?lang=en)** – Check your eligibility
 - **Campus Basic Needs Centers** – Many Bay Area colleges have food pantries and benefits navigators
 - **EBT on Campus** – Some campus dining accepts EBT
 
+  </div>
+</details>
+
 ---
 
 ## Bay Area Schools with Student Benefits Programs
 
-Many Bay Area institutions offer their own discount programs and resources:
-
-### University of California
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>University of California</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **UC Berkeley:** [Basic Needs Center](https://basicneeds.berkeley.edu)
 - **UC San Francisco:** [Student Health & Counseling](https://studenthealth.ucsf.edu)
 - **UC Santa Cruz:** [Slug Support](https://basicneeds.ucsc.edu)
 
-### California State University
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>California State University</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **San Francisco State:** [Basic Needs](https://basicneeds.sfsu.edu)
 - **San Jose State:** [Spartans' Food Pantry](https://www.sjsu.edu/spartanfoodpantry/)
@@ -130,25 +251,49 @@ Many Bay Area institutions offer their own discount programs and resources:
 - **Sonoma State:** [Seawolf Basic Needs](https://basicneeds.sonoma.edu)
 - **Cal Maritime:** [Student Services](https://www.csum.edu/student-life/)
 
-### Community Colleges
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Community Colleges</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **City College of San Francisco:** [Student Services](https://www.ccsf.edu/student-services)
 - **Foothill-De Anza Colleges:** [Food Pantry](https://www.deanza.edu/food-pantry/)
 - **Diablo Valley College:** [The Stand](https://www.dvc.edu/student-services/the-stand/)
 - **College of Marin:** [Student Services](https://www.marin.edu/student-services/)
 
-### Private Universities
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Private Universities</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **Stanford University:** [Student Discounts](https://studentaffairs.stanford.edu)
 - **Santa Clara University:** [Student Resources](https://www.scu.edu/osl/)
 - **University of San Francisco:** [Student Services](https://myusf.usfca.edu)
 - **Mills College:** [Student Life](https://www.mills.edu)
 
+  </div>
+</details>
+
 ---
 
 ## Common Student Discounts
 
-### Transit
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Transit</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **BART:** Youth Clipper Card (18 and under), may offer reduced fares for college students
 - **Muni:** Free Muni for Youth (18 and under)
@@ -156,35 +301,78 @@ Many Bay Area institutions offer their own discount programs and resources:
 - **VTA:** Student Eco Pass through participating schools
 - **Caltrain:** Monthly passes through participating universities
 
-### Technology
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Technology</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **Apple:** Education pricing on Mac, iPad, and accessories
 - **Microsoft:** Free Office 365 Education
 - **Adobe:** 60%+ off Creative Cloud
 - **GitHub:** Free GitHub Pro and developer tools
 
-### Entertainment
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Entertainment</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **Spotify Premium Student:** 50% off (includes Hulu and Showtime)
 - **Apple Music Student:** 50% off
 - **Amazon Prime Student:** 50% off, 6-month free trial
 - **Museums:** Many offer free or reduced admission
 
-### Software
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Software</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **Autodesk:** Free access to AutoCAD, Revit, etc.
 - **JetBrains:** Free IDEs for students
 - **Tableau:** Free Tableau Desktop license
 
+  </div>
+</details>
+
 ---
 
 ## Maintaining Your Student Status
 
-**Verification Periods:** Many programs re-verify annually or each semester. Mark your calendar to renew before discounts expire.
+<div class="document-checklist-container">
+  <p>Keep track of important verification tasks:</p>
 
-**After Graduation:** Most student discounts end upon graduation or withdrawal. Some programs offer grace periods or alumni pricing.
-
-**Keep Documentation:** Save copies of your enrollment verification in case you need to prove status later.
+  <ul class="document-checklist" data-checklist-id="student-maintenance">
+    <li class="document-item" data-item-id="renewal" tabindex="0" role="checkbox" aria-checked="false">
+      <span class="document-checkbox" aria-hidden="true"></span>
+      <span class="document-label">Mark renewal dates on calendar</span>
+      <span class="document-examples">Many programs re-verify annually or each semester</span>
+    </li>
+    <li class="document-item" data-item-id="docs" tabindex="0" role="checkbox" aria-checked="false">
+      <span class="document-checkbox" aria-hidden="true"></span>
+      <span class="document-label">Save enrollment verification documents</span>
+      <span class="document-examples">Keep copies in case you need to prove status later</span>
+    </li>
+    <li class="document-item" data-item-id="graduation" tabindex="0" role="checkbox" aria-checked="false">
+      <span class="document-checkbox" aria-hidden="true"></span>
+      <span class="document-label">Check alumni pricing before graduation</span>
+      <span class="document-examples">Some programs offer grace periods or alumni pricing</span>
+    </li>
+  </ul>
+</div>
 
 ---
 

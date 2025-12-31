@@ -2010,7 +2010,7 @@
   description: ID.me provides verified identity for first responders (firefighters, EMTs, paramedics, police) to unlock exclusive discounts at hundreds of retailers, restaurants, and service providers.
   what_they_offer: |
     - One-time identity verification
-    - Access to 100+ retailer discounts
+    - Access to many retailer discounts
     - 10-25% off at major brands
     - Tech discounts (Apple, Samsung, Dell)
     - Travel discounts (hotels, car rentals)
@@ -2021,7 +2021,7 @@
     3. Upload employment verification if needed
     4. Once verified, access discounts through ID.me Shop
     5. Verification transfers across all participating retailers
-  benefit: 10-25% discounts at 100+ major retailers after one-time verification
+  benefit: 10-25% discounts at many major retailers after one-time verification
   timeframe: Ongoing
   link: https://www.id.me/government
   link_text: Verify Status
@@ -2209,7 +2209,7 @@
     3. Upload school ID or employment verification
     4. Once verified, access discounts through ID.me Shop
     5. Verification works across all participating stores
-  benefit: 10-25% discounts at 100+ retailers after one-time teacher verification
+  benefit: 10-25% discounts at many retailers after one-time teacher verification
   timeframe: Ongoing
   link: https://www.id.me/teacher-military-discounts
   link_text: Verify Status

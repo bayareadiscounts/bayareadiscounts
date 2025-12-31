@@ -18,26 +18,67 @@ This guide explains age thresholds for senior discounts, how to verify eligibili
 
 ---
 
-## Age Thresholds Vary by Program
+<div class="quick-eligibility-check">
+  <div class="quick-check-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <h2>Quick Age Check</h2>
+  </div>
+  <p>Different programs have different age requirements:</p>
 
-There's no universal age for "senior" status. Different programs set different thresholds:
+  <div class="age-thresholds">
+    <div class="age-threshold-item">
+      <span class="age-badge">50+</span>
+      <span class="age-programs">AARP membership, some gyms, early retirement communities</span>
+    </div>
+    <div class="age-threshold-item">
+      <span class="age-badge">55+</span>
+      <span class="age-programs">Some retail discounts, senior living communities, some transit programs</span>
+    </div>
+    <div class="age-threshold-item">
+      <span class="age-badge">60+</span>
+      <span class="age-programs">Older Americans Act services, some museum discounts, Meals on Wheels</span>
+    </div>
+    <div class="age-threshold-item">
+      <span class="age-badge">62+</span>
+      <span class="age-programs">Social Security early retirement, HUD senior housing, National Park Senior Pass</span>
+    </div>
+    <div class="age-threshold-item">
+      <span class="age-badge">65+</span>
+      <span class="age-programs">Medicare eligibility, most retail senior discounts, property tax exemptions</span>
+    </div>
+    <div class="age-threshold-item">
+      <span class="age-badge">70+</span>
+      <span class="age-programs">Some enhanced discounts, required minimum distributions from retirement accounts</span>
+    </div>
+  </div>
 
-| Age | Common Programs |
-|-----|-----------------|
-| **50+** | AARP membership, some gyms, early retirement communities |
-| **55+** | Some retail discounts, senior living communities, some transit programs |
-| **60+** | Older Americans Act services, some museum discounts, Meals on Wheels |
-| **62+** | Social Security early retirement, HUD senior housing, National Park Senior Pass |
-| **65+** | Medicare eligibility, most retail senior discounts, property tax exemptions |
-| **70+** | Some enhanced discounts, required minimum distributions from retirement accounts |
-
-**Tip:** Always ask about senior discounts—eligibility ages vary widely and aren't always posted.
+  <div class="info-callout" style="margin-top: 1rem;">
+    <div class="callout-icon" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+    </div>
+    <div class="callout-content">
+      <p><strong>Tip:</strong> Always ask about senior discounts—eligibility ages vary widely and aren't always posted.</p>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## How to Verify Your Age
 
-### Government-Issued ID
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Government-Issued ID</h3>
+  </summary>
+  <div class="expandable-content">
 
 Most programs accept standard identification:
 
@@ -45,19 +86,43 @@ Most programs accept standard identification:
 - U.S. Passport
 - Military ID
 
-### Medicare Card
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Medicare Card</h3>
+  </summary>
+  <div class="expandable-content">
 
 Your Medicare card confirms you're 65+ (or have qualifying disability). Many programs accept this as proof of senior status.
 
-### AARP Card
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>AARP Card</h3>
+  </summary>
+  <div class="expandable-content">
 
 While AARP membership starts at 50, an AARP card is widely recognized for senior discounts, though merchants may still require government ID.
+
+  </div>
+</details>
 
 ---
 
 ## Senior Benefits Programs
 
-### Social Security
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Social Security</h3>
+  </summary>
+  <div class="expandable-content">
 
 **Full Retirement Age (FRA):**
 - Born 1943-1954: Age 66
@@ -70,9 +135,15 @@ While AARP membership starts at 50, an AARP card is widely recognized for senior
 
 **Apply:** [ssa.gov](https://www.ssa.gov) or call 1-800-772-1213
 
----
+  </div>
+</details>
 
-### Medicare
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Medicare</h3>
+  </summary>
+  <div class="expandable-content">
 
 Federal health insurance for those 65+ or with qualifying disabilities.
 
@@ -89,9 +160,15 @@ Federal health insurance for those 65+ or with qualifying disabilities.
 - Phone: 1-800-434-0222
 - [cahealthadvocates.org](https://cahealthadvocates.org)
 
----
+  </div>
+</details>
 
-### Supplemental Security Income (SSI)
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Supplemental Security Income (SSI)</h3>
+  </summary>
+  <div class="expandable-content">
 
 Cash assistance for seniors 65+ (or blind/disabled) with limited income and resources.
 
@@ -101,11 +178,17 @@ Cash assistance for seniors 65+ (or blind/disabled) with limited income and reso
 
 **California Supplement:** Additional state payment increases total benefits.
 
-**Apply:** [ssa.gov](https://www.ssa.gov/ssi/) or visit your local Social Security office.
+**Apply:** [ssa.gov/ssi](https://www.ssa.gov/ssi/) or visit your local Social Security office.
 
----
+  </div>
+</details>
 
-### Medi-Cal for Seniors
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Medi-Cal for Seniors</h3>
+  </summary>
+  <div class="expandable-content">
 
 California's Medicaid program provides health coverage and can supplement Medicare.
 
@@ -121,9 +204,15 @@ California's Medicaid program provides health coverage and can supplement Medica
 
 **Apply:** [BenefitsCal.com](https://benefitscal.com) or your county social services office.
 
----
+  </div>
+</details>
 
-### In-Home Supportive Services (IHSS)
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>In-Home Supportive Services (IHSS)</h3>
+  </summary>
+  <div class="expandable-content">
 
 Helps seniors remain at home by providing assistance with daily activities.
 
@@ -138,89 +227,143 @@ Helps seniors remain at home by providing assistance with daily activities.
 
 **Apply:** Contact your county's IHSS office through your social services agency.
 
+  </div>
+</details>
+
 ---
 
 ## Bay Area Senior Resources
 
-### Area Agencies on Aging
+<div class="county-selector">
+  <label for="county-select-aaa" class="county-select-label">Select your county to see Area Agency on Aging information:</label>
+  <select id="county-select-aaa" class="county-select">
+    <option value="">Choose a county...</option>
+    <option value="alameda">Alameda County</option>
+    <option value="contra-costa">Contra Costa County</option>
+    <option value="marin">Marin County</option>
+    <option value="napa">Napa County</option>
+    <option value="san-francisco">San Francisco County</option>
+    <option value="san-mateo">San Mateo County</option>
+    <option value="santa-clara">Santa Clara County</option>
+    <option value="solano">Solano County</option>
+    <option value="sonoma">Sonoma County</option>
+  </select>
 
-These agencies coordinate senior services funded under the Older Americans Act.
+  <div class="county-info" data-county="alameda">
+    <h4>Alameda County Area Agency on Aging</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:510-577-1900">(510) 577-1900</a></p>
+      <p><strong>Website:</strong> <a href="https://www.acgov.org/aging/" target="_blank" rel="noopener">acgov.org/aging</a></p>
+    </div>
+  </div>
 
-**Alameda County**
-Area Agency on Aging
-(510) 577-1900
-[acgov.org/aging](https://www.acgov.org/aging/)
+  <div class="county-info" data-county="contra-costa">
+    <h4>Contra Costa County Area Agency on Aging</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:925-229-8434">(925) 229-8434</a></p>
+      <p><strong>Website:</strong> <a href="https://www.coccoaa.org/" target="_blank" rel="noopener">coccoaa.org</a></p>
+    </div>
+  </div>
 
-**Contra Costa County**
-Area Agency on Aging
-(925) 229-8434
-[coccoaa.org](https://www.coccoaa.org/)
+  <div class="county-info" data-county="marin">
+    <h4>Marin Aging and Adult Services</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:415-457-4636">(415) 457-4636</a></p>
+      <p><strong>Website:</strong> <a href="https://www.marinhhs.org/aging-adult-services" target="_blank" rel="noopener">marinhhs.org/aging-adult-services</a></p>
+    </div>
+  </div>
 
-**Marin County**
-Marin Aging and Adult Services
-(415) 457-4636
-[marinhhs.org/aging-adult-services](https://www.marinhhs.org/aging-adult-services)
+  <div class="county-info" data-county="napa">
+    <h4>Napa County Area Agency on Aging</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:707-253-4218">(707) 253-4218</a></p>
+      <p><strong>Website:</strong> <a href="https://www.countyofnapa.org/221/Napa-County-Area-Agency-on-Aging" target="_blank" rel="noopener">countyofnapa.org</a></p>
+    </div>
+  </div>
 
-**Napa County**
-Napa County Area Agency on Aging
-(707) 253-4218
-[countyofnapa.org](https://www.countyofnapa.org/221/Napa-County-Area-Agency-on-Aging)
+  <div class="county-info" data-county="san-francisco">
+    <h4>San Francisco Department of Disability and Aging Services</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:415-355-6700">(415) 355-6700</a></p>
+      <p><strong>Website:</strong> <a href="https://www.sfhsa.org/services/care-support/aging-and-adult-services" target="_blank" rel="noopener">sfhsa.org</a></p>
+    </div>
+  </div>
 
-**San Francisco County**
-Department of Disability and Aging Services
-(415) 355-6700
-[sfhsa.org/services/care-support/aging-and-adult-services](https://www.sfhsa.org/services/care-support/aging-and-adult-services)
+  <div class="county-info" data-county="san-mateo">
+    <h4>San Mateo County Aging and Adult Services</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:650-573-2700">(650) 573-2700</a></p>
+      <p><strong>Website:</strong> <a href="https://www.smchealth.org/aas" target="_blank" rel="noopener">smchealth.org/aas</a></p>
+    </div>
+  </div>
 
-**San Mateo County**
-Aging and Adult Services
-(650) 573-2700
-[smchealth.org/aas](https://www.smchealth.org/aas)
+  <div class="county-info" data-county="santa-clara">
+    <h4>Sourcewise (Area Agency on Aging)</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:408-350-3200">(408) 350-3200</a></p>
+      <p><strong>Website:</strong> <a href="https://www.mysourcewise.com/" target="_blank" rel="noopener">mysourcewise.com</a></p>
+    </div>
+  </div>
 
-**Santa Clara County**
-Sourcewise (Area Agency on Aging)
-(408) 350-3200
-[mysourcewise.com](https://www.mysourcewise.com/)
+  <div class="county-info" data-county="solano">
+    <h4>Solano County Area Agency on Aging</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:707-784-8960">(707) 784-8960</a></p>
+      <p><strong>Website:</strong> <a href="https://www.solanocounty.com/depts/hss/aaa/" target="_blank" rel="noopener">solanocounty.com</a></p>
+    </div>
+  </div>
 
-**Solano County**
-Area Agency on Aging
-(707) 784-8960
-[solanocounty.com](https://www.solanocounty.com/depts/hss/aaa/)
-
-**Sonoma County**
-Area Agency on Aging
-(707) 565-5950
-[sonomacounty.ca.gov/human-services](https://sonomacounty.ca.gov/human-services/human-services-department/area-agency-on-aging/)
+  <div class="county-info" data-county="sonoma">
+    <h4>Sonoma County Area Agency on Aging</h4>
+    <div class="county-details">
+      <p><strong>Phone:</strong> <a href="tel:707-565-5950">(707) 565-5950</a></p>
+      <p><strong>Website:</strong> <a href="https://sonomacounty.ca.gov/human-services/human-services-department/area-agency-on-aging/" target="_blank" rel="noopener">sonomacounty.ca.gov</a></p>
+    </div>
+  </div>
+</div>
 
 ---
 
-### Senior Centers
+## Meals Programs
 
-Bay Area senior centers offer programs, meals, and social activities. Contact your city or county for locations near you, or search:
+<div class="step-cards">
+  <div class="step-card">
+    <div class="step-number" style="background: #22c55e;">1</div>
+    <div class="step-content">
+      <h4>Meals on Wheels</h4>
+      <p>Home-delivered meals for homebound seniors.</p>
+      <p><a href="https://www.mealsonwheelsamerica.org/" target="_blank" rel="noopener">mealsonwheelsamerica.org</a></p>
+    </div>
+  </div>
 
-- [AARP Community Connections](https://aarpcommunityconnections.org)
-- [National Council on Aging](https://ncoa.org)
+  <div class="step-card">
+    <div class="step-number" style="background: #22c55e;">2</div>
+    <div class="step-content">
+      <h4>Congregate Meals</h4>
+      <p>Free or low-cost meals served at senior centers and community sites. Contact your Area Agency on Aging for locations.</p>
+    </div>
+  </div>
 
----
-
-### Meals Programs
-
-**Meals on Wheels**
-Home-delivered meals for homebound seniors.
-[mealsonwheelsamerica.org](https://www.mealsonwheelsamerica.org/)
-
-**Congregate Meals**
-Free or low-cost meals served at senior centers and community sites.
-Contact your Area Agency on Aging for locations.
-
-**CalFresh for Seniors**
-Seniors 60+ may qualify for food benefits even with slightly higher incomes than general population.
-[BenefitsCal.com](https://benefitscal.com)
+  <div class="step-card">
+    <div class="step-number" style="background: #22c55e;">3</div>
+    <div class="step-content">
+      <h4>CalFresh for Seniors</h4>
+      <p>Seniors 60+ may qualify for food benefits even with slightly higher incomes than general population.</p>
+      <p><a href="https://benefitscal.com" target="_blank" rel="noopener">BenefitsCal.com</a></p>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## Common Senior Discounts
 
-### Transit
+<details class="expandable-section" open>
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Transit</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **BART:** 62.5% discount for seniors 65+, Clipper Senior card required
 - **Muni (SFMTA):** Free for seniors 65+ with Clipper card
@@ -229,7 +372,15 @@ Seniors 60+ may qualify for food benefits even with slightly higher incomes than
 - **VTA:** Senior fare for 65+
 - **Golden Gate Transit:** Senior discount for 65+
 
-### National & State Parks
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>National & State Parks</h3>
+  </summary>
+  <div class="expandable-content">
 
 **America the Beautiful Senior Pass**
 - Age: 62+
@@ -241,7 +392,15 @@ Seniors 60+ may qualify for food benefits even with slightly higher incomes than
 - Limited Income Senior Pass: Free day use for low-income seniors 62+
 - [parks.ca.gov](https://www.parks.ca.gov/?page_id=1049)
 
-### Retail & Dining
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Retail & Dining</h3>
+  </summary>
+  <div class="expandable-content">
 
 Many retailers offer senior discounts, though policies vary by location:
 
@@ -252,7 +411,15 @@ Many retailers offer senior discounts, though policies vary by location:
 
 **Tip:** Ask at checkout—many discounts aren't advertised.
 
-### Utilities
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Utilities</h3>
+  </summary>
+  <div class="expandable-content">
 
 - **CARE Program:** 20%+ discount on PG&E for low-income households
 - **FERA Program:** 18% discount for households slightly above CARE limits
@@ -262,25 +429,52 @@ Many retailers offer senior discounts, though policies vary by location:
 
 See the [Utility Programs Guide]({{ site.baseurl }}/eligibility/utility-programs.html) for details.
 
+  </div>
+</details>
+
 ---
 
 ## Property Tax Relief
 
-### Homeowner's Exemption
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Homeowner's Exemption</h3>
+  </summary>
+  <div class="expandable-content">
 
 All California homeowners may claim a $7,000 reduction in assessed value (saving approximately $70/year).
 
-### Senior Property Tax Postponement
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Senior Property Tax Postponement</h3>
+  </summary>
+  <div class="expandable-content">
 
 Seniors 62+ with household income under $51,762 (2024) may defer property taxes until the home is sold.
 
 **Apply:** [sco.ca.gov/ardtax_prop_tax_postponement.html](https://www.sco.ca.gov/ardtax_prop_tax_postponement.html)
 
-### Proposition 60/90/110
+  </div>
+</details>
+
+<details class="expandable-section">
+  <summary class="expandable-header">
+    <span class="expandable-icon" aria-hidden="true"></span>
+    <h3>Proposition 60/90/110</h3>
+  </summary>
+  <div class="expandable-content">
 
 Seniors 55+ may transfer their current property tax base to a replacement home within the same or participating county.
 
 **Apply:** Through your county assessor's office.
+
+  </div>
+</details>
 
 ---
 
@@ -307,3 +501,63 @@ A: Contact your local Area Agency on Aging, search [HUD's affordable housing dat
 [Back to Eligibility Guides]({{ site.baseurl }}/eligibility/) · [Back to All Programs]({{ site.baseurl }}/)
 
 </div>
+
+<style>
+/* Age Thresholds Display */
+.age-thresholds {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.age-threshold-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--card-bg, #f8fafc);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 8px;
+}
+
+.age-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  background: var(--color-primary, #00ACC1);
+  border-radius: 6px;
+}
+
+.age-programs {
+  font-size: 0.9rem;
+  color: var(--text-secondary, #6b7280);
+  line-height: 1.4;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .age-threshold-item {
+    background: var(--dark-card-bg, #1e1e2e);
+    border-color: var(--dark-border, #30363d);
+  }
+
+  .age-programs {
+    color: var(--dark-text-secondary, #8b949e);
+  }
+}
+
+body[data-theme="dark"] .age-threshold-item {
+  background: var(--dark-card-bg, #1e1e2e);
+  border-color: var(--dark-border, #30363d);
+}
+
+body[data-theme="dark"] .age-programs {
+  color: var(--dark-text-secondary, #8b949e);
+}
+</style>

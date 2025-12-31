@@ -1,0 +1,699 @@
+/**
+ * ============================================
+ * ELIGIBILITY GUIDE STYLES
+ * ============================================
+ * Interactive expandable sections, checklists, and progress tracking
+ * WCAG 2.2 AAA Compliant
+ */
+
+/* ============================================
+   GUIDE CONTAINER
+   ============================================ */
+.eligibility-guide {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   QUICK ELIGIBILITY CHECK
+   ============================================ */
+.quick-eligibility-check {
+  background: linear-gradient(135deg, rgba(0, 172, 193, 0.08), rgba(0, 131, 143, 0.08));
+  border: 1px solid rgba(0, 172, 193, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.quick-check-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.quick-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary, #00ACC1);
+  border-radius: 12px;
+  color: white;
+}
+
+.quick-check-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+  margin: 0;
+}
+
+.quick-check-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary, #6b7280);
+  margin: 4px 0 0;
+}
+
+/* ============================================
+   INTERACTIVE CHECKLIST
+   ============================================ */
+.eligibility-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eligibility-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.eligibility-checklist-item:hover {
+  border-color: var(--color-primary, #00ACC1);
+}
+
+.eligibility-checklist-item.checked {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.checklist-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--bg-surface, #ffffff);
+  border: 2px solid var(--border-color, #d1d5db);
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.eligibility-checklist-item.checked .checklist-checkbox {
+  background: #22c55e;
+  border-color: #22c55e;
+}
+
+.checklist-checkbox svg {
+  width: 14px;
+  height: 14px;
+  color: white;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.15s ease;
+}
+
+.eligibility-checklist-item.checked .checklist-checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.checklist-content {
+  flex: 1;
+}
+
+.checklist-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary, #111827);
+}
+
+.checklist-description {
+  font-size: 13px;
+  color: var(--text-secondary, #6b7280);
+  margin-top: 4px;
+}
+
+/* Progress indicator */
+.checklist-progress {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color, #e5e7eb);
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--border-color, #e5e7eb);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-secondary, #6b7280);
+  text-align: center;
+}
+
+.progress-text strong {
+  color: #22c55e;
+}
+
+/* ============================================
+   EXPANDABLE SECTIONS
+   ============================================ */
+.expandable-section {
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.expandable-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--bg-surface, #ffffff);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.expandable-header:hover {
+  background: var(--bg-surface-alt, #f9fafb);
+}
+
+.expandable-header:focus-visible {
+  outline: 2px solid var(--color-primary, #00ACC1);
+  outline-offset: -2px;
+}
+
+.expandable-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+}
+
+.expandable-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 172, 193, 0.1);
+  border-radius: 8px;
+  color: var(--color-primary, #00ACC1);
+}
+
+.expandable-arrow {
+  color: var(--text-secondary, #6b7280);
+  transition: transform 0.2s ease;
+}
+
+.expandable-section[open] .expandable-arrow {
+  transform: rotate(180deg);
+}
+
+.expandable-content {
+  padding: 0 20px 20px;
+  animation: expandIn 0.2s ease;
+}
+
+@keyframes expandIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   COUNTY SELECTOR
+   ============================================ */
+.county-selector {
+  margin-bottom: 24px;
+}
+
+.county-selector-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+  margin-bottom: 8px;
+}
+
+.county-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--text-primary, #111827);
+  background: var(--bg-surface, #ffffff);
+  border: 2px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.county-select:hover,
+.county-select:focus {
+  border-color: var(--color-primary, #00ACC1);
+  outline: none;
+}
+
+.county-info {
+  display: none;
+  margin-top: 16px;
+  padding: 20px;
+  background: var(--bg-surface-alt, #f9fafb);
+  border-radius: 12px;
+  animation: fadeIn 0.2s ease;
+}
+
+.county-info.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.county-info-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+  margin: 0 0 12px;
+}
+
+.county-info-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text-secondary, #6b7280);
+}
+
+.county-info-detail svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-primary, #00ACC1);
+}
+
+.county-info-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.county-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary, #00ACC1);
+  background: transparent;
+  border: 1px solid var(--color-primary, #00ACC1);
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.county-action-btn:hover {
+  background: rgba(0, 172, 193, 0.1);
+}
+
+/* ============================================
+   STEP CARDS
+   ============================================ */
+.step-cards {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.step-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  transition: all 0.15s ease;
+}
+
+.step-card:hover {
+  border-color: var(--color-primary, #00ACC1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-primary, #00ACC1), var(--color-primary-dark, #00838F));
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+  margin: 0 0 4px;
+}
+
+.step-description {
+  font-size: 14px;
+  color: var(--text-secondary, #6b7280);
+  margin: 0;
+}
+
+.step-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary, #00ACC1);
+  text-decoration: none;
+}
+
+.step-action:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   INFO CALLOUTS
+   ============================================ */
+.info-callout {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.info-callout-icon {
+  flex-shrink: 0;
+}
+
+.info-callout-content {
+  flex: 1;
+  font-size: 14px;
+}
+
+.info-callout-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info-callout.tip {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.info-callout.tip .info-callout-icon {
+  color: #22c55e;
+}
+
+.info-callout.tip .info-callout-title {
+  color: #16a34a;
+}
+
+.info-callout.warning {
+  background: rgba(234, 179, 8, 0.1);
+  border: 1px solid rgba(234, 179, 8, 0.2);
+}
+
+.info-callout.warning .info-callout-icon {
+  color: #eab308;
+}
+
+.info-callout.warning .info-callout-title {
+  color: #ca8a04;
+}
+
+.info-callout.info {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.info-callout.info .info-callout-icon {
+  color: #3b82f6;
+}
+
+.info-callout.info .info-callout-title {
+  color: #2563eb;
+}
+
+/* ============================================
+   DOCUMENT CHECKLIST
+   ============================================ */
+.document-checklist {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.document-checklist-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.document-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  cursor: pointer;
+}
+
+.document-item:last-child {
+  border-bottom: none;
+}
+
+.document-check {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color, #d1d5db);
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+.document-item.checked .document-check {
+  background: #22c55e;
+  border-color: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.document-item.checked .document-check::after {
+  content: '';
+  width: 10px;
+  height: 6px;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  margin-bottom: 2px;
+}
+
+.document-label {
+  font-size: 14px;
+  color: var(--text-primary, #111827);
+}
+
+.document-item.checked .document-label {
+  text-decoration: line-through;
+  color: var(--text-secondary, #6b7280);
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  .quick-eligibility-check {
+    background: linear-gradient(135deg, rgba(0, 172, 193, 0.15), rgba(0, 131, 143, 0.15));
+    border-color: rgba(0, 172, 193, 0.3);
+  }
+
+  .quick-check-title,
+  .expandable-title,
+  .county-selector-label,
+  .county-info-title,
+  .step-title,
+  .document-checklist-title,
+  .checklist-label,
+  .document-label {
+    color: var(--dark-text, #e8eef5);
+  }
+
+  .quick-check-subtitle,
+  .checklist-description,
+  .county-info-detail,
+  .step-description,
+  .progress-text {
+    color: var(--dark-text-secondary, #8b949e);
+  }
+
+  .eligibility-checklist-item,
+  .expandable-section,
+  .expandable-header,
+  .step-card,
+  .document-checklist {
+    background: var(--dark-surface, #161b22);
+    border-color: var(--dark-border, #30363d);
+  }
+
+  .expandable-header:hover,
+  .county-info {
+    background: var(--dark-surface-alt, #1c2128);
+  }
+
+  .county-select {
+    background: var(--dark-surface, #161b22);
+    border-color: var(--dark-border, #30363d);
+    color: var(--dark-text, #e8eef5);
+  }
+
+  .document-item {
+    border-color: var(--dark-border, #30363d);
+  }
+}
+
+body[data-theme="dark"] .quick-eligibility-check {
+  background: linear-gradient(135deg, rgba(0, 172, 193, 0.15), rgba(0, 131, 143, 0.15));
+  border-color: rgba(0, 172, 193, 0.3);
+}
+
+body[data-theme="dark"] .quick-check-title,
+body[data-theme="dark"] .expandable-title,
+body[data-theme="dark"] .county-selector-label,
+body[data-theme="dark"] .county-info-title,
+body[data-theme="dark"] .step-title,
+body[data-theme="dark"] .document-checklist-title,
+body[data-theme="dark"] .checklist-label,
+body[data-theme="dark"] .document-label {
+  color: var(--dark-text, #e8eef5);
+}
+
+body[data-theme="dark"] .quick-check-subtitle,
+body[data-theme="dark"] .checklist-description,
+body[data-theme="dark"] .county-info-detail,
+body[data-theme="dark"] .step-description,
+body[data-theme="dark"] .progress-text {
+  color: var(--dark-text-secondary, #8b949e);
+}
+
+body[data-theme="dark"] .eligibility-checklist-item,
+body[data-theme="dark"] .expandable-section,
+body[data-theme="dark"] .expandable-header,
+body[data-theme="dark"] .step-card,
+body[data-theme="dark"] .document-checklist {
+  background: var(--dark-surface, #161b22);
+  border-color: var(--dark-border, #30363d);
+}
+
+body[data-theme="dark"] .expandable-header:hover,
+body[data-theme="dark"] .county-info {
+  background: var(--dark-surface-alt, #1c2128);
+}
+
+body[data-theme="dark"] .county-select {
+  background: var(--dark-surface, #161b22);
+  border-color: var(--dark-border, #30363d);
+  color: var(--dark-text, #e8eef5);
+}
+
+body[data-theme="dark"] .document-item {
+  border-color: var(--dark-border, #30363d);
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .expandable-arrow,
+  .checklist-checkbox svg,
+  .progress-fill {
+    transition: none;
+  }
+
+  @keyframes expandIn {
+    from, to { opacity: 1; transform: none; }
+  }
+
+  @keyframes fadeIn {
+    from, to { opacity: 1; }
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  .quick-eligibility-check,
+  .expandable-section,
+  .step-card,
+  .document-checklist {
+    border: 1px solid #000;
+    background: #fff;
+  }
+
+  .expandable-content {
+    display: block !important;
+  }
+
+  .county-selector,
+  .checklist-progress {
+    display: none;
+  }
+}

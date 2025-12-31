@@ -40,6 +40,10 @@
   <link rel="stylesheet" href="{{ '/assets/css/modern-ui.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/modals.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/components.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/desktop-sidebar.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/for-you.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/eligibility-wizard.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/eligibility-guide.css' | relative_url }}">
 
   <!-- Privacy-friendly analytics by Plausible -->
   <link rel="preconnect" href="https://plausible.baytides.org" crossorigin>
@@ -91,8 +95,12 @@
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
   <meta name="twitter:image" content="{{ site.url }}{{ '/assets/images/logo/banner.png' | relative_url }}">
 </head>
-<body>
+<body class="{% if page.sidebar != false %}has-sidebar{% endif %}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  {% if page.sidebar != false %}
+    {% include desktop-sidebar.html %}
+  {% endif %}
 
   {% include utility-bar.html %}
   {% include site-header.html %}
@@ -136,6 +144,18 @@
 
   <!-- Flutter-Inspired Interactions (Ripples, Haptics) -->
   <script src="{{ '/assets/js/flutter-interactions.js' | relative_url }}"></script>
+
+  <!-- Desktop Sidebar Navigation -->
+  <script src="{{ '/assets/js/desktop-sidebar.js' | relative_url }}"></script>
+
+  <!-- For You / Personalization -->
+  <script src="{{ '/assets/js/for-you.js' | relative_url }}"></script>
+
+  <!-- Eligibility Wizard -->
+  <script src="{{ '/assets/js/eligibility-wizard.js' | relative_url }}"></script>
+
+  <!-- Eligibility Guide Interactive Features -->
+  <script src="{{ '/assets/js/eligibility-guide.js' | relative_url }}"></script>
 
   <!-- Inline JavaScript for PWA and global search -->
   <script>

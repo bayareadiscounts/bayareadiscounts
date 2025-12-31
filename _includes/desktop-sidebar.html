@@ -1,0 +1,166 @@
+<!-- Desktop Sidebar Navigation - macOS App Style -->
+<aside class="desktop-sidebar" id="desktop-sidebar" role="navigation" aria-label="Main navigation">
+  <!-- App Branding -->
+  <div class="sidebar-branding">
+    <a href="{{ '/' | relative_url }}" class="sidebar-logo" aria-label="Bay Area Discounts Home">
+      <div class="sidebar-logo-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+          <line x1="7" y1="7" x2="7.01" y2="7"></line>
+        </svg>
+      </div>
+      <div class="sidebar-logo-text">
+        <span class="sidebar-logo-title">Bay Area</span>
+        <span class="sidebar-logo-subtitle">Discounts</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Navigation Items -->
+  <nav class="sidebar-nav">
+    <ul class="sidebar-nav-list" role="list">
+      <li>
+        <a href="#for-you" class="sidebar-nav-item active" data-view="for-you" role="button" aria-current="true">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-default" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">For You</span>
+            <span class="sidebar-nav-subtitle">Personalized picks</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#directory" class="sidebar-nav-item" data-view="directory" role="button">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-default" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">Directory</span>
+            <span class="sidebar-nav-subtitle" id="program-count-label">All programs</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/favorites.html' | relative_url }}" class="sidebar-nav-item" data-view="saved">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-default" aria-hidden="true">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active" aria-hidden="true">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">Saved</span>
+            <span class="sidebar-nav-subtitle" id="saved-count-label">No saved</span>
+          </span>
+          <span class="sidebar-nav-badge" id="saved-badge" hidden>0</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Section Divider -->
+    <div class="sidebar-section-divider">
+      <span class="sidebar-section-title">Resources</span>
+    </div>
+
+    <ul class="sidebar-nav-list" role="list">
+      <li>
+        <a href="{{ '/eligibility/' | relative_url }}" class="sidebar-nav-item">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">Eligibility Guides</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/about.html' | relative_url }}" class="sidebar-nav-item">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">About</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Section Divider -->
+    <div class="sidebar-section-divider">
+      <span class="sidebar-section-title">Preferences</span>
+    </div>
+
+    <ul class="sidebar-nav-list" role="list">
+      <li>
+        <button class="sidebar-nav-item" id="sidebar-theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-light" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-dark" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">Appearance</span>
+            <span class="sidebar-nav-subtitle" id="theme-label">System</span>
+          </span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Keyboard Shortcuts Hint -->
+  <div class="sidebar-shortcuts">
+    <div class="sidebar-shortcuts-title">Keyboard Shortcuts</div>
+    <div class="sidebar-shortcut">
+      <span class="sidebar-shortcut-label">Search</span>
+      <kbd class="sidebar-shortcut-key"><span class="kbd-cmd"></span>K</kbd>
+    </div>
+    <div class="sidebar-shortcut">
+      <span class="sidebar-shortcut-label">Dark Mode</span>
+      <kbd class="sidebar-shortcut-key"><span class="kbd-cmd"></span><span class="kbd-shift"></span>D</kbd>
+    </div>
+    <div class="sidebar-shortcut">
+      <span class="sidebar-shortcut-label">Help</span>
+      <kbd class="sidebar-shortcut-key">?</kbd>
+    </div>
+  </div>
+</aside>
