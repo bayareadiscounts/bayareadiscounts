@@ -98,6 +98,12 @@
 <body class="{% if page.sidebar != false %}has-sidebar{% endif %}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
+  <!-- Global Accessibility Button (top-right) -->
+  <button type="button" id="accessibility-button" class="global-a11y-btn" aria-label="Open accessibility options">
+    <span class="a11y-icon" aria-hidden="true">♿</span>
+    <span class="a11y-text">Accessibility</span>
+  </button>
+
   {% if page.sidebar != false %}
     {% include desktop-sidebar.html %}
   {% endif %}

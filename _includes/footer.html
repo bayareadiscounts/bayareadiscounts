@@ -15,21 +15,26 @@
       <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
          target="_blank"
          rel="noopener"
-         class="footer-wcag-badge"
+         class="footer-badge"
          title="WCAG 2.2 Level AAA conformance"
          data-no-translate>
         <img height="20" width="88"
              src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA-blue.png"
              alt="WCAG 2.2 AAA conformance badge">
       </a>
+      <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=bayareadiscounts.com"
+         target="_blank"
+         rel="noopener"
+         class="footer-badge"
+         title="This website runs on green hosting"
+         data-no-translate>
+        <img height="20" width="42"
+             src="https://app.greenweb.org/api/v3/greencheckimage/bayareadiscounts.com?nocache=true"
+             alt="Green hosting badge">
+      </a>
     </div>
   </div>
 </footer>
-
-<!-- Fixed accessibility button in corner -->
-<button type="button" id="accessibility-button" class="corner-a11y-btn" aria-label="Open accessibility options">
-  <span class="a11y-icon" aria-hidden="true">♿</span>
-</button>
 
 <style>
 .site-footer {
@@ -97,7 +102,7 @@
   font-size: 0.75rem;
 }
 
-.footer-wcag-badge {
+.footer-badge {
   display: inline-flex;
   align-items: center;
   padding: 4px;
@@ -105,18 +110,20 @@
   min-height: 28px;
 }
 
-.footer-wcag-badge:hover,
-.footer-wcag-badge:focus {
+.footer-badge:hover,
+.footer-badge:focus {
   background: rgba(0, 0, 0, 0.05);
 }
 
-.footer-wcag-badge:focus-visible {
+.footer-badge:focus-visible {
   outline: 2px solid var(--color-primary, #00acc1);
   outline-offset: 2px;
 }
 
-.footer-wcag-badge img {
+.footer-badge img {
   display: block;
+  height: 20px;
+  width: auto;
 }
 
 /* Dark mode */
@@ -144,8 +151,8 @@
     color: var(--dark-text-muted, #6e7681);
   }
 
-  .footer-wcag-badge:hover,
-  .footer-wcag-badge:focus {
+  .footer-badge:hover,
+  .footer-badge:focus {
     background: rgba(255, 255, 255, 0.05);
   }
 }
@@ -173,8 +180,8 @@ body[data-theme="dark"] .footer-tagline {
   color: var(--dark-text-muted, #6e7681);
 }
 
-body[data-theme="dark"] .footer-wcag-badge:hover,
-body[data-theme="dark"] .footer-wcag-badge:focus {
+body[data-theme="dark"] .footer-badge:hover,
+body[data-theme="dark"] .footer-badge:focus {
   background: rgba(255, 255, 255, 0.05);
 }
 

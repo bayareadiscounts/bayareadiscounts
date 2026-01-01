@@ -3,142 +3,143 @@
    Modern frosted glass design with refined interactions
    ============================================ */
 
-/* Fixed corner accessibility button */
-#accessibility-button.corner-a11y-btn {
+/* Global accessibility button (top-right pill) */
+.global-a11y-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  display: flex;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  padding: 0;
+  gap: 8px;
+  padding: 10px 18px;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: #374151;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
-#accessibility-button.corner-a11y-btn:hover {
+.global-a11y-btn:hover {
   background: rgba(255, 255, 255, 1);
-  border-color: var(--color-primary, #00acc1);
-  box-shadow: 0 4px 16px rgba(0, 172, 193, 0.25), 0 2px 4px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+  border-color: #2563eb;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+  color: #2563eb;
 }
 
-#accessibility-button.corner-a11y-btn:focus-visible {
-  outline: 2px solid var(--color-primary, #00acc1);
+.global-a11y-btn:focus-visible {
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
-  background: rgba(255, 255, 255, 1);
 }
 
-#accessibility-button.corner-a11y-btn .a11y-icon {
-  font-size: 1.375rem;
-  line-height: 1;
+.global-a11y-btn .a11y-icon {
+  font-size: 1.125rem;
 }
 
-/* Dark mode corner button */
+.global-a11y-btn .a11y-text {
+  font-weight: 600;
+}
+
+/* Dark mode global button */
 @media (prefers-color-scheme: dark) {
-  #accessibility-button.corner-a11y-btn {
+  .global-a11y-btn {
     background: rgba(31, 41, 55, 0.95);
     border-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: #e5e7eb;
   }
 
-  #accessibility-button.corner-a11y-btn:hover {
+  .global-a11y-btn:hover {
     background: rgba(55, 65, 81, 1);
-    border-color: var(--text-link, #79d8eb);
-    box-shadow: 0 4px 16px rgba(121, 216, 235, 0.2), 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-color: #60a5fa;
+    color: #60a5fa;
   }
 
-  #accessibility-button.corner-a11y-btn:focus-visible {
-    outline-color: var(--text-link, #79d8eb);
-    background: rgba(55, 65, 81, 1);
+  .global-a11y-btn:focus-visible {
+    outline-color: #60a5fa;
   }
 }
 
-body[data-theme="dark"] #accessibility-button.corner-a11y-btn {
+body[data-theme="dark"] .global-a11y-btn {
   background: rgba(31, 41, 55, 0.95);
   border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #e5e7eb;
 }
 
-body[data-theme="dark"] #accessibility-button.corner-a11y-btn:hover {
+body[data-theme="dark"] .global-a11y-btn:hover {
   background: rgba(55, 65, 81, 1);
-  border-color: var(--text-link, #79d8eb);
-  box-shadow: 0 4px 16px rgba(121, 216, 235, 0.2), 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-color: #60a5fa;
+  color: #60a5fa;
 }
 
-body[data-theme="dark"] #accessibility-button.corner-a11y-btn:focus-visible {
-  outline-color: var(--text-link, #79d8eb);
-  background: rgba(55, 65, 81, 1);
+body[data-theme="dark"] .global-a11y-btn:focus-visible {
+  outline-color: #60a5fa;
 }
 
-/* High contrast corner button */
-body.high-contrast #accessibility-button.corner-a11y-btn {
+/* High contrast global button */
+body.high-contrast .global-a11y-btn {
   background: #ffffff !important;
   border: 3px solid #000000 !important;
+  color: #000000 !important;
   box-shadow: none !important;
 }
 
-body.high-contrast #accessibility-button.corner-a11y-btn:hover {
+body.high-contrast .global-a11y-btn:hover {
   background: #e6e6e6 !important;
-  transform: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
-  body.high-contrast #accessibility-button.corner-a11y-btn {
+  body.high-contrast .global-a11y-btn {
     background: #000000 !important;
     border-color: #ffffff !important;
+    color: #ffffff !important;
   }
 
-  body.high-contrast #accessibility-button.corner-a11y-btn:hover {
+  body.high-contrast .global-a11y-btn:hover {
     background: #1a1a1a !important;
   }
 }
 
-body[data-theme="dark"].high-contrast #accessibility-button.corner-a11y-btn {
+body[data-theme="dark"].high-contrast .global-a11y-btn {
   background: #000000 !important;
   border-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-body[data-theme="dark"].high-contrast #accessibility-button.corner-a11y-btn:hover {
+body[data-theme="dark"].high-contrast .global-a11y-btn:hover {
   background: #1a1a1a !important;
 }
 
-/* Mobile adjustments for corner button */
+/* Mobile adjustments for global button */
 @media (max-width: 768px) {
-  #accessibility-button.corner-a11y-btn {
-    bottom: 16px;
-    right: 16px;
-    width: 44px;
-    height: 44px;
+  .global-a11y-btn {
+    padding: 8px 14px;
+    font-size: 0.8125rem;
   }
 
-  #accessibility-button.corner-a11y-btn .a11y-icon {
-    font-size: 1.25rem;
+  .global-a11y-btn .a11y-icon {
+    font-size: 1rem;
   }
 }
 
-/* Hide corner button when step flow is visible */
-.step-flow-page:not([style*="display: none"]) ~ #accessibility-button.corner-a11y-btn,
-.step-flow-page:not(.closing) ~ #accessibility-button.corner-a11y-btn {
+/* Hide global button when step flow is visible (wizard has its own) */
+.step-flow-page:not([style*="display: none"]) ~ .global-a11y-btn,
+body:has(.step-flow-page:not([style*="display: none"])) .global-a11y-btn {
   display: none;
 }
 
 /* Accessibility panel - Frosted glass */
 #accessibility-panel {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
-  transform: translateY(12px) scale(0.97);
-  transform-origin: bottom right;
+  top: 64px;
+  right: 16px;
+  transform: translateY(-12px) scale(0.97);
+  transform-origin: top right;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);

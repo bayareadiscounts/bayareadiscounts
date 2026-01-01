@@ -31,20 +31,14 @@
 
   // Create and inject the accessibility toolbar
   function createToolbar() {
-    // Find the footer button (created in footer.html)
-    const button = document.getElementById('accessibility-button');
+    // Find the global accessibility button (in default.html layout)
+    const globalButton = document.getElementById('accessibility-button');
     // Also find the wizard button if step flow is present
     const wizardButton = document.getElementById('wizard-accessibility-button');
 
-    if (!button && !wizardButton) {
+    if (!globalButton && !wizardButton) {
       console.warn('Accessibility button not found');
       return;
-    }
-
-    // Set up the main footer button if it exists
-    if (button) {
-      button.setAttribute('aria-label', 'Open accessibility options');
-      button.setAttribute('aria-expanded', 'false');
     }
 
     // Create panel
@@ -125,31 +119,35 @@
       <button class="a11y-reset" id="reset-settings">Reset to Defaults</button>
     `;
     
-    // Set up the wizard button if it exists
+    // Set up buttons
+    if (globalButton) {
+      globalButton.setAttribute('aria-label', 'Open accessibility options');
+      globalButton.setAttribute('aria-expanded', 'false');
+    }
     if (wizardButton) {
       wizardButton.setAttribute('aria-label', 'Open accessibility options');
       wizardButton.setAttribute('aria-expanded', 'false');
     }
 
-    // Append panel to body (button is already in footer)
+    // Append panel to body
     document.body.appendChild(panel);
 
     // Apply saved settings on load
     applySettings();
 
-    // Event listeners - pass both buttons
-    setupEventListeners(button, wizardButton, panel);
+    // Event listeners for both buttons
+    setupEventListeners(globalButton, wizardButton, panel);
   }
 
-  function setupEventListeners(button, wizardButton, panel) {
+  function setupEventListeners(globalButton, wizardButton, panel) {
     // Track which button opened the panel for focus return
     let activeButton = null;
 
-    // Toggle panel from footer button
-    if (button) {
-      button.addEventListener('click', () => {
-        activeButton = button;
-        togglePanel(button, panel);
+    // Toggle panel from global button
+    if (globalButton) {
+      globalButton.addEventListener('click', () => {
+        activeButton = globalButton;
+        togglePanel(globalButton, panel);
       });
     }
 
@@ -188,10 +186,11 @@
     // Keyboard shortcuts
     document.addEventListener('keydown', handleKeyboardShortcuts);
 
-    // Close on outside click - check both buttons
+    // Close on outside click
     document.addEventListener('click', (e) => {
-      const clickedButton = (button && e.target === button) || (wizardButton && e.target === wizardButton);
-      if (!panel.contains(e.target) && !clickedButton) {
+      const clickedGlobal = globalButton && (e.target === globalButton || globalButton.contains(e.target));
+      const clickedWizard = wizardButton && (e.target === wizardButton || wizardButton.contains(e.target));
+      if (!panel.contains(e.target) && !clickedGlobal && !clickedWizard) {
         closePanelWithButton(activeButton, panel);
       }
     });
