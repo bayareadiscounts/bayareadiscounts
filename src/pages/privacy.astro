@@ -39,6 +39,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li>No analytics that identify individual users</li>
             <li>No collection of names, emails, or contact information</li>
             <li>No third-party trackers</li>
+            <li>We do not sell, rent, or share your personal information with third parties</li>
           </ul>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
@@ -53,7 +54,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li><strong>Recent searches</strong> (only in the mobile app)</li>
           </ul>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-            This data never leaves your device and is not sent to any server.
+            This data never leaves your device and is not sent to any server. This data is not processed ephemerally—it persists on your device until you clear it.
           </p>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
@@ -67,6 +68,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li>We do not store your conversation history on our servers</li>
             <li>Conversations are not linked to any personal identifier</li>
             <li>Azure OpenAI processes the request and responses are returned directly to you</li>
+            <li>Microsoft Azure processes data in accordance with their privacy policies</li>
           </ul>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
@@ -81,14 +83,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li>Pages visited and timestamps</li>
           </ul>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-            These logs are used for security purposes only and are not used to identify or track individuals.
+            These logs are used for security purposes only and are not used to identify or track individuals. Logs are retained according to Microsoft Azure's standard retention policies.
           </p>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
             External Links
           </h2>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-            Bay Navigator links to external websites for program information. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.
+            Bay Navigator links to external websites for program information. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies before providing any personal information.
           </p>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
@@ -102,6 +104,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <li>Favorites and preferences stored locally on your device</li>
             <li>Optional crash reporting through Sentry (can be disabled)</li>
             <li>No advertising or tracking SDKs</li>
+            <li>Data stored locally is not ephemeral and persists until you delete the app or clear data</li>
           </ul>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
@@ -111,26 +114,71 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             Bay Navigator is open source. You can review our code at <a href="https://github.com/baytides/baynavigator">github.com/baytides/baynavigator</a> to verify our privacy practices.
           </p>
 
+          <!-- California Privacy Rights -->
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
-            Children's Privacy
+            California Privacy Rights (CCPA/CPRA)
+          </h2>
+          <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+            If you are a California resident, the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) provide you with specific rights regarding your personal information. Because Bay Navigator does not collect personal information, most CCPA/CPRA rights do not apply. However, we provide this disclosure for transparency:
+          </p>
+          <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4">
+            <li><strong>Right to Know:</strong> We do not collect personal information that would be subject to disclosure requests.</li>
+            <li><strong>Right to Delete:</strong> No personal information is stored on our servers. Local data on your device can be deleted by clearing browser/app data.</li>
+            <li><strong>Right to Opt-Out of Sale:</strong> We do not sell personal information to third parties.</li>
+            <li><strong>Right to Non-Discrimination:</strong> We do not discriminate against users who exercise their privacy rights.</li>
+            <li><strong>Right to Correct:</strong> No personal information is collected that would require correction.</li>
+            <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We do not collect sensitive personal information.</li>
+          </ul>
+          <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+            <strong>Categories of Personal Information:</strong> Bay Navigator does not collect, use, disclose, or sell personal information as defined under CCPA/CPRA. We do not use personal information for cross-context behavioral advertising.
+          </p>
+
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
+            Do Not Track Signals
           </h2>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-            Bay Navigator does not knowingly collect any personal information from children under 13. Since we don't collect personal information from any user, this applies universally.
+            Bay Navigator honors Do Not Track (DNT) browser signals. Because we do not track users, no action is required when we receive a DNT signal—our default behavior is already privacy-respecting.
+          </p>
+
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
+            Children's Privacy (COPPA)
+          </h2>
+          <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+            Bay Navigator does not knowingly collect any personal information from children under 13, in compliance with the Children's Online Privacy Protection Act (COPPA). Since we don't collect personal information from any user, this applies universally. If you believe a child has provided personal information through our Service, please contact us immediately.
+          </p>
+
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
+            Data Retention
+          </h2>
+          <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+            We do not retain personal data on our servers. Server logs are retained by Microsoft Azure according to their standard policies. Data stored locally on your device (preferences, favorites) persists until you clear it.
+          </p>
+
+          <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
+            Data Security
+          </h2>
+          <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+            We implement reasonable security measures to protect against unauthorized access. Our website uses HTTPS encryption for all connections. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
           </p>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
             Changes to This Policy
           </h2>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-            If we make changes to this privacy policy, we will update the "Last updated" date at the top. Significant changes will be announced on our GitHub repository.
+            If we make changes to this privacy policy, we will update the "Last updated" date at the top. Significant changes will be announced on our GitHub repository. We encourage you to review this policy periodically.
           </p>
 
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mt-8 mb-4">
             Contact
           </h2>
-          <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-            If you have questions about this privacy policy, you can contact us at hello [at] baytides [dot] org or open an issue on <a href="https://github.com/baytides/baynavigator/issues">GitHub</a>.
+          <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+            If you have questions about this privacy policy or wish to exercise your privacy rights, you can contact us at:
           </p>
+          <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-6">
+            <li>Email: hello [at] baytides [dot] org</li>
+            <li>GitHub: <a href="https://github.com/baytides/baynavigator/issues">github.com/baytides/baynavigator/issues</a></li>
+            <li>Address: Bay Tides, San Mateo County, California, USA</li>
+          </ul>
         </div>
 
         <div class="mt-12">
