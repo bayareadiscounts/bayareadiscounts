@@ -10,7 +10,7 @@
      alt="Level AAA conformance, W3C WAI Web Content Accessibility Guidelines 2.2">
 </a>
 
-**[BayNavigator.com](https://baynavigator.org)** — A searchable directory of free and low-cost programs across the San Francisco Bay Area.
+**[BayNavigator.org](https://baynavigator.org)** — A searchable directory of free and low-cost programs across the San Francisco Bay Area.
 
 Find benefits and discounts for:
 - 💳 SNAP/EBT/Medi-Cal recipients
