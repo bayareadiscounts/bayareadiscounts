@@ -56,7 +56,7 @@ const badgeColor = categoryColors[category] || 'bg-neutral-100 text-neutral-800 
     <span class="text-sm text-neutral-500 dark:text-neutral-400">{area}</span>
   </div>
 
-  <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-primary-700 dark:group-hover:text-primary-400">
+  <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-primary-700 dark:group-hover:text-primary-300">
     {name}
   </h3>
 
@@ -66,7 +66,7 @@ const badgeColor = categoryColors[category] || 'bg-neutral-100 text-neutral-800 
 
   {whatTheyOffer && (
     <details class="mb-4">
-      <summary class="cursor-pointer text-sm font-medium text-primary-700 dark:text-primary-400 hover:underline">
+      <summary class="cursor-pointer text-sm font-medium text-primary-700 dark:text-primary-300 hover:underline">
         What they offer
       </summary>
       <div class="mt-2 pl-4 text-sm text-neutral-600 dark:text-neutral-300 prose-width whitespace-pre-line">
@@ -77,7 +77,7 @@ const badgeColor = categoryColors[category] || 'bg-neutral-100 text-neutral-800 
 
   {howToGetIt && (
     <details class="mb-4">
-      <summary class="cursor-pointer text-sm font-medium text-primary-700 dark:text-primary-400 hover:underline">
+      <summary class="cursor-pointer text-sm font-medium text-primary-700 dark:text-primary-300 hover:underline">
         How to get it
       </summary>
       <div class="mt-2 pl-4 text-sm text-neutral-600 dark:text-neutral-300">
@@ -104,7 +104,7 @@ const badgeColor = categoryColors[category] || 'bg-neutral-100 text-neutral-800 
     {phone && (
       <a
         href={`tel:${phone.replace(/\D/g, '')}`}
-        class="inline-flex items-center text-sm text-neutral-600 dark:text-neutral-300 hover:text-primary-700 dark:hover:text-primary-400 no-underline"
+        class="inline-flex items-center text-sm text-neutral-600 dark:text-neutral-300 hover:text-primary-700 dark:hover:text-primary-300 no-underline"
       >
         <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
