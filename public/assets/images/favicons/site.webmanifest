@@ -1,0 +1,48 @@
+{
+  "name": "Bay Navigator",
+  "short_name": "Bay Nav",
+  "description": "Community-maintained guide to free and discounted benefits across the San Francisco Bay Area",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00acc1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/favicons/web-app-manifest-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/favicons/web-app-manifest-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "lifestyle", "utilities", "reference"],
+  "shortcuts": [
+    {
+      "name": "Bay Navigator",
+      "short_name": "Navigator",
+      "description": "View the main resource guide",
+      "url": "/",
+      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+    },
+    {
+      "name": "College Student Resources",
+      "short_name": "Students",
+      "description": "Resources for college students",
+      "url": "/students.html",
+      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+    },
+    {
+      "name": "Nonprofit Resources",
+      "short_name": "Nonprofits",
+      "description": "Resources for nonprofit organizations",
+      "url": "/nonprofit_resources_section.html",
+      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+    }
+  ]
+}
