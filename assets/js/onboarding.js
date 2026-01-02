@@ -348,11 +348,7 @@
           }
         });
 
-        // Update view to directory
-        if (window.location.hash !== '#directory') {
-          history.replaceState({ view: 'directory' }, '', '#directory');
-          document.dispatchEvent(new CustomEvent('viewChange', { detail: { view: 'directory' } }));
-        }
+        // No longer using hash-based navigation
       } else if (attempts < 50) {
         setTimeout(() => tryApply(attempts + 1), 100);
       }

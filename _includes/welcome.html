@@ -3,7 +3,7 @@
   Simple, clean intro that leads to onboarding
 {% endcomment %}
 
-<div id="welcome-screen" class="welcome-screen" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+<div id="welcome-screen" class="welcome-screen" role="dialog" aria-modal="true" aria-labelledby="welcome-title" hidden>
   <div class="welcome-container">
     <!-- Logo -->
     <div class="welcome-logo">
@@ -332,18 +332,20 @@ body[data-theme="dark"] .welcome-chip:hover {
 (function() {
   'use strict';
 
+  var STORAGE_KEY = 'baynavigator_preferences';
+
   // Check localStorage directly to avoid timing issues with Preferences loading
   function hasCompletedOnboarding() {
     try {
-      const stored = localStorage.getItem('baynavigator_preferences');
+      var stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        const prefs = JSON.parse(stored);
+        var prefs = JSON.parse(stored);
         return prefs.completedOnboarding === true;
       }
       // Also check old storage keys for migration
-      const oldPrefs = localStorage.getItem('bad_prefs') || localStorage.getItem('user-preferences');
+      var oldPrefs = localStorage.getItem('bad_prefs') || localStorage.getItem('user-preferences');
       if (oldPrefs) {
-        const old = JSON.parse(oldPrefs);
+        var old = JSON.parse(oldPrefs);
         // If they had any groups selected, they completed onboarding
         return !!(old.groups && old.groups.length > 0);
       }
@@ -353,59 +355,62 @@ body[data-theme="dark"] .welcome-chip:hover {
     return false;
   }
 
+  // Mark onboarding complete directly in localStorage
+  function markOnboardingComplete() {
+    try {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      var prefs = stored ? JSON.parse(stored) : { version: 1, groups: [], county: null };
+      prefs.completedOnboarding = true;
+      prefs.lastUpdated = Date.now();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
+    } catch (e) {
+      console.error('Error saving preferences:', e);
+    }
+  }
+
+  // Run immediately (not waiting for DOMContentLoaded) to check if we should show
+  var welcome = document.getElementById('welcome-screen');
+  if (welcome) {
+    var shouldShow = !hasCompletedOnboarding();
+    var params = new URLSearchParams(window.location.search);
+    var skipWelcome = params.get('no-welcome') === '1' || navigator.webdriver;
+
+    if (shouldShow && !skipWelcome) {
+      welcome.hidden = false;
+    }
+  }
+
+  // Set up event listeners after DOM is ready
   document.addEventListener('DOMContentLoaded', function() {
-    const welcome = document.getElementById('welcome-screen');
+    var welcome = document.getElementById('welcome-screen');
     if (!welcome) return;
 
-    // Check if we should show welcome screen
-    const shouldShow = !hasCompletedOnboarding();
-    const params = new URLSearchParams(window.location.search);
-    const skipWelcome = params.get('no-welcome') === '1' || navigator.webdriver;
-
-    if (!shouldShow || skipWelcome) {
-      welcome.hidden = true;
-      return;
+    // Handle "Find Programs for Me" button
+    var personalizeBtn = document.getElementById('welcome-personalize');
+    if (personalizeBtn) {
+      personalizeBtn.addEventListener('click', function() {
+        welcome.hidden = true;
+        if (window.Onboarding) {
+          window.Onboarding.open();
+        }
+      });
     }
 
-    // Show welcome screen
-    welcome.hidden = false;
-
-    // Handle "Find Programs for Me" button
-    document.getElementById('welcome-personalize')?.addEventListener('click', function() {
-      welcome.hidden = true;
-      if (window.Onboarding) {
-        window.Onboarding.open();
-      }
-    });
-
     // Handle "Browse All" button
-    document.getElementById('welcome-browse')?.addEventListener('click', function() {
-      welcome.hidden = true;
-      // Mark as skipped but not completed
-      if (window.Preferences) {
-        window.Preferences.update({ completedOnboarding: true });
-      }
-    });
+    var browseBtn = document.getElementById('welcome-browse');
+    if (browseBtn) {
+      browseBtn.addEventListener('click', function() {
+        welcome.hidden = true;
+        markOnboardingComplete();
+      });
+    }
 
     // Handle category chips
-    welcome.querySelectorAll('.welcome-chip').forEach(chip => {
+    var chips = welcome.querySelectorAll('.welcome-chip');
+    chips.forEach(function(chip) {
       chip.addEventListener('click', function() {
-        const category = this.dataset.category;
         welcome.hidden = true;
-
-        // Mark as completed
-        if (window.Preferences) {
-          window.Preferences.update({ completedOnboarding: true });
-        }
-
-        // Apply category filter
-        setTimeout(() => {
-          if (window.searchFilter) {
-            window.searchFilter.resetFilters();
-            const btn = document.querySelector(`[data-filter-type="category"][data-filter-value="${category}"]`);
-            if (btn) btn.click();
-          }
-        }, 100);
+        markOnboardingComplete();
       });
     });
   });
