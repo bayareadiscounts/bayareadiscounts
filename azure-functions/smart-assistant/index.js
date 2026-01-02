@@ -13,29 +13,39 @@ const AZURE_SEARCH_KEY = process.env.AZURE_SEARCH_KEY;
 const SEARCH_INDEX = 'programs';
 
 // System prompt that guides the AI assistant
-const SYSTEM_PROMPT = `You are Bay Navigator's helpful assistant, designed to help Bay Area residents find free and low-cost community programs and services.
+const SYSTEM_PROMPT = `You are Bay Navigator's assistant. Help Bay Area residents find free and low-cost programs.
 
-You have access to a database of programs. When the user asks a question, you will receive relevant program information to use in your response.
+RESPONSE FORMAT - Use this exact structure:
+1. One brief sentence acknowledging what they need (max 15 words)
+2. List 2-4 most relevant programs in this format:
 
-Your role is to:
-1. Understand what the user is looking for (food assistance, utility help, healthcare, etc.)
-2. Recommend specific programs from the provided search results
-3. Explain how each program might help and key eligibility requirements
-4. Be warm, empathetic, and helpful - many users may be in difficult situations
+**[Program Name]**
+[One sentence about what it offers]
+[Phone or website if available]
 
-When responding:
-- Reference specific program names from the search results
-- Include key details like phone numbers and websites when available
-- Keep responses concise but informative (3-4 paragraphs max)
-- If no relevant programs are found, suggest categories to explore on the website
-- Acknowledge the user's situation with empathy
-- Always encourage them to verify details as eligibility may vary
+3. End with: "Verify eligibility directly with each program."
 
-Do NOT:
-- Make up program names, phone numbers, or details not in the search results
-- Promise eligibility for any program
-- Provide legal, medical, or financial advice
-- Share information outside of Bay Area community resources`;
+RULES:
+- Be concise. No lengthy explanations.
+- Only mention programs from the search results provided
+- Don't make up details not in the data
+- No legal/medical/financial advice
+- If no programs match, say "I couldn't find matching programs. Try browsing by category on the main page."`;
+
+// Format programs as structured cards for the response
+function formatProgramsAsCards(programs) {
+  if (!programs || programs.length === 0) return [];
+
+  return programs.slice(0, 5).map(p => ({
+    id: p.id,
+    name: p.name,
+    category: p.category,
+    description: p.description?.slice(0, 150) + (p.description?.length > 150 ? '...' : ''),
+    phone: p.phone || null,
+    website: p.website || null,
+    areas: p.areas || [],
+  }));
+}
 
 /**
  * Search Azure AI Search for relevant programs
@@ -155,11 +165,11 @@ async function callAzureOpenAI(messages) {
     },
     body: JSON.stringify({
       messages,
-      max_tokens: 800,
-      temperature: 0.7,
+      max_tokens: 400,  // Reduced for concise responses
+      temperature: 0.5, // Lower for more consistent formatting
       top_p: 0.9,
-      frequency_penalty: 0.3,
-      presence_penalty: 0.1
+      frequency_penalty: 0.5, // Higher to reduce repetition
+      presence_penalty: 0.2
     })
   });
 
@@ -246,11 +256,15 @@ module.exports = async function (context, req) {
     const assistantMessage = completion.choices?.[0]?.message?.content ||
       "I'm sorry, I couldn't process your request. Please try again.";
 
+    // Include structured program cards for clean display
+    const programCards = formatProgramsAsCards(programs);
+
     context.res = {
       status: 200,
       headers: corsHeaders,
       body: JSON.stringify({
         message: assistantMessage,
+        programs: programCards,
         programsFound: programs.length,
         usage: {
           promptTokens: completion.usage?.prompt_tokens,

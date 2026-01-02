@@ -75,6 +75,8 @@ function transformProgram(program) {
     website: program.link || '',
     phone: program.phone || null,
     requirements: program.requirements || null,
+    source: program.source || 'local', // 'federal' for USAGov programs
+    agency: program.agency || null, // Federal agency name if applicable
   };
 }
 

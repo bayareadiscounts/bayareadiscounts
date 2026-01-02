@@ -86,6 +86,12 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       <button type="button" class="quick-prompt-btn">Food assistance</button>
       <button type="button" class="quick-prompt-btn">Utility bill help</button>
       <button type="button" class="quick-prompt-btn">Healthcare</button>
+      <button type="button" id="view-saved-btn" class="quick-prompt-btn flex items-center gap-1">
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+        Saved
+      </button>
     </div>
   </div>
 
@@ -164,7 +170,7 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
   });
 
   // Quick prompts
-  document.querySelectorAll('.quick-prompt-btn').forEach(btn => {
+  document.querySelectorAll('.quick-prompt-btn:not(#view-saved-btn)').forEach(btn => {
     btn.addEventListener('click', () => {
       if (input && !isLoading) {
         input.value = btn.textContent || '';
@@ -172,6 +178,9 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       }
     });
   });
+
+  // View saved programs
+  document.getElementById('view-saved-btn')?.addEventListener('click', showSavedPrograms);
 
   // Form submit
   form?.addEventListener('submit', (e) => {
@@ -215,8 +224,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       conversationHistory.push({ role: 'user', content: message });
       conversationHistory.push({ role: 'assistant', content: data.message });
 
-      // Add assistant response
-      addMessage(data.message, 'assistant');
+      // Add assistant response with program cards
+      addAssistantResponse(data.message, data.programs || []);
 
     } catch (error) {
       console.error('Assistant error:', error);
@@ -272,6 +281,202 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML.replace(/\n/g, '<br>');
+  }
+
+  function addAssistantResponse(message, programs) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'assistant-message space-y-3';
+
+    // Add the text message
+    const messageBubble = document.createElement('div');
+    messageBubble.className = 'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
+    messageBubble.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">${escapeHtml(message)}</p>`;
+    wrapper.appendChild(messageBubble);
+
+    // Add program cards if available
+    if (programs && programs.length > 0) {
+      const cardsContainer = document.createElement('div');
+      cardsContainer.className = 'space-y-2 mt-2';
+
+      programs.forEach(program => {
+        const card = document.createElement('div');
+        card.className = 'bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-600 rounded-lg p-3 text-sm';
+
+        const programId = program.id || program.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        const hasPageCard = document.getElementById(`program-${programId}`);
+
+        card.innerHTML = `
+          <div class="flex items-start justify-between gap-2">
+            <div class="flex-1">
+              <h4 class="font-medium text-neutral-900 dark:text-white">${escapeHtml(program.name)}</h4>
+              ${program.category ? `<span class="text-xs text-primary-600 dark:text-primary-300">${escapeHtml(program.category)}</span>` : ''}
+            </div>
+            <button type="button" class="save-program-btn p-1 text-neutral-400 hover:text-primary-600 dark:hover:text-primary-300" data-program='${JSON.stringify(program).replace(/'/g, "&#39;")}' aria-label="Save program">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+            </button>
+          </div>
+          ${program.description ? `<p class="text-neutral-600 dark:text-neutral-300 mt-1">${escapeHtml(program.description)}</p>` : ''}
+          <div class="flex flex-wrap gap-2 mt-2">
+            ${hasPageCard ? `<a href="#program-${programId}" class="text-xs text-primary-700 dark:text-primary-300 hover:underline" onclick="closeAndScroll('program-${programId}')">View details</a>` : ''}
+            ${program.phone ? `<a href="tel:${program.phone.replace(/\D/g, '')}" class="text-xs text-neutral-600 dark:text-neutral-400 hover:text-primary-600">${escapeHtml(program.phone)}</a>` : ''}
+            ${program.website ? `<a href="${program.website}" target="_blank" rel="noopener noreferrer" class="text-xs text-primary-600 dark:text-primary-300 hover:underline">Website</a>` : ''}
+          </div>
+        `;
+
+        cardsContainer.appendChild(card);
+      });
+
+      wrapper.appendChild(cardsContainer);
+
+      // Add save all button
+      const saveAllBtn = document.createElement('button');
+      saveAllBtn.type = 'button';
+      saveAllBtn.className = 'text-xs text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-1 mt-2';
+      saveAllBtn.innerHTML = `
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+        Save all ${programs.length} programs
+      `;
+      saveAllBtn.addEventListener('click', () => savePrograms(programs));
+      wrapper.appendChild(saveAllBtn);
+    }
+
+    messagesContainer?.appendChild(wrapper);
+    messagesContainer?.scrollTo({ top: messagesContainer.scrollHeight, behavior: 'smooth' });
+
+    // Attach save handlers
+    wrapper.querySelectorAll('.save-program-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const program = JSON.parse(btn.dataset.program);
+        savePrograms([program]);
+        btn.innerHTML = `<svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 24 24"><path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>`;
+      });
+    });
+  }
+
+  function savePrograms(programs) {
+    const saved = JSON.parse(localStorage.getItem('savedPrograms') || '[]');
+    const existingIds = new Set(saved.map(p => p.id || p.name));
+
+    programs.forEach(program => {
+      const id = program.id || program.name;
+      if (!existingIds.has(id)) {
+        saved.push({
+          ...program,
+          savedAt: new Date().toISOString()
+        });
+        existingIds.add(id);
+      }
+    });
+
+    localStorage.setItem('savedPrograms', JSON.stringify(saved));
+
+    // Show confirmation
+    const toast = document.createElement('div');
+    toast.className = 'fixed bottom-24 left-1/2 -translate-x-1/2 bg-neutral-900 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50';
+    toast.textContent = programs.length === 1 ? 'Program saved!' : `${programs.length} programs saved!`;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2000);
+  }
+
+  // Close panel and scroll to program card
+  window.closeAndScroll = function(elementId) {
+    panel?.classList.add('hidden');
+    toggle?.setAttribute('aria-expanded', 'false');
+    setTimeout(() => {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.classList.add('ring-2', 'ring-primary-500');
+        setTimeout(() => element.classList.remove('ring-2', 'ring-primary-500'), 2000);
+      }
+    }, 100);
+  };
+
+  function showSavedPrograms() {
+    const saved = JSON.parse(localStorage.getItem('savedPrograms') || '[]');
+
+    if (saved.length === 0) {
+      addMessage("You haven't saved any programs yet. When I show you programs, click the bookmark icon to save them for later.", 'assistant');
+      return;
+    }
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'assistant-message space-y-3';
+
+    const header = document.createElement('div');
+    header.className = 'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
+    header.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">You have <strong>${saved.length}</strong> saved program${saved.length !== 1 ? 's' : ''}:</p>`;
+    wrapper.appendChild(header);
+
+    const cardsContainer = document.createElement('div');
+    cardsContainer.className = 'space-y-2 mt-2';
+
+    saved.forEach((program, index) => {
+      const card = document.createElement('div');
+      card.className = 'bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-600 rounded-lg p-3 text-sm';
+
+      const programId = program.id || program.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+      card.innerHTML = `
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex-1">
+            <h4 class="font-medium text-neutral-900 dark:text-white">${escapeHtml(program.name)}</h4>
+            ${program.category ? `<span class="text-xs text-primary-600 dark:text-primary-300">${escapeHtml(program.category)}</span>` : ''}
+          </div>
+          <button type="button" class="remove-saved-btn p-1 text-neutral-400 hover:text-red-500" data-index="${index}" aria-label="Remove saved program">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+        ${program.description ? `<p class="text-neutral-600 dark:text-neutral-300 mt-1">${escapeHtml(program.description)}</p>` : ''}
+        <div class="flex flex-wrap gap-2 mt-2">
+          ${program.phone ? `<a href="tel:${program.phone.replace(/\D/g, '')}" class="text-xs text-neutral-600 dark:text-neutral-400 hover:text-primary-600">${escapeHtml(program.phone)}</a>` : ''}
+          ${program.website ? `<a href="${program.website}" target="_blank" rel="noopener noreferrer" class="text-xs text-primary-600 dark:text-primary-300 hover:underline">Website</a>` : ''}
+        </div>
+      `;
+
+      cardsContainer.appendChild(card);
+    });
+
+    wrapper.appendChild(cardsContainer);
+
+    // Clear all button
+    const clearAllBtn = document.createElement('button');
+    clearAllBtn.type = 'button';
+    clearAllBtn.className = 'text-xs text-red-600 dark:text-red-400 hover:underline mt-2';
+    clearAllBtn.textContent = 'Clear all saved programs';
+    clearAllBtn.addEventListener('click', () => {
+      if (confirm('Remove all saved programs?')) {
+        localStorage.removeItem('savedPrograms');
+        wrapper.remove();
+        addMessage('All saved programs have been cleared.', 'assistant');
+      }
+    });
+    wrapper.appendChild(clearAllBtn);
+
+    messagesContainer?.appendChild(wrapper);
+    messagesContainer?.scrollTo({ top: messagesContainer.scrollHeight, behavior: 'smooth' });
+
+    // Attach remove handlers
+    wrapper.querySelectorAll('.remove-saved-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const index = parseInt(btn.dataset.index);
+        const saved = JSON.parse(localStorage.getItem('savedPrograms') || '[]');
+        saved.splice(index, 1);
+        localStorage.setItem('savedPrograms', JSON.stringify(saved));
+        btn.closest('.bg-white, .dark\\:bg-neutral-800')?.remove();
+
+        if (saved.length === 0) {
+          wrapper.remove();
+          addMessage('All saved programs have been cleared.', 'assistant');
+        }
+      });
+    });
   }
 </script>
 

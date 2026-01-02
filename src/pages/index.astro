@@ -21,6 +21,7 @@ const programFiles = [
   'technology.yml',
   'recreation.yml',
   'community.yml',
+  'federal-benefits.yml', // Federal programs from USAGov
 ];
 
 interface Program {
@@ -35,6 +36,8 @@ interface Program {
   link?: string;
   link_text?: string;
   groups?: string[];
+  verified_by?: string;
+  verified_date?: string;
 }
 
 let allPrograms: Program[] = [];
@@ -143,6 +146,8 @@ allPrograms.sort((a, b) => a.name.localeCompare(b.name));
             link={program.link}
             linkText={program.link_text}
             groups={program.groups}
+            verifiedBy={program.verified_by}
+            verifiedDate={program.verified_date}
           />
         ))}
       </div>
