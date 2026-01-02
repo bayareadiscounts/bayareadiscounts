@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_NAME = `bay-navigator-${CACHE_VERSION}`;
 const API_CACHE_NAME = `bay-area-api-${CACHE_VERSION}`;
 const BASE_URL = self.registration.scope.replace(/\/$/, '');
@@ -7,17 +7,21 @@ const API_CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
 
 const urlsToCache = [
   `${BASE_URL}/`,
-  `${BASE_URL}/students.html`,
+  `${BASE_URL}/favorites.html`,
+  `${BASE_URL}/eligibility/`,
+  `${BASE_URL}/about.html`,
   `${BASE_URL}/assets/css/base.css`,
   `${BASE_URL}/assets/css/responsive-optimized.css`,
   `${BASE_URL}/assets/css/accessibility-toolbar.css`,
   `${BASE_URL}/assets/css/read-more.css`,
+  `${BASE_URL}/assets/css/onboarding.css`,
   `${BASE_URL}/assets/js/search-filter.js`,
   `${BASE_URL}/assets/js/accessibility-toolbar.js`,
   `${BASE_URL}/assets/js/read-more.js`,
   `${BASE_URL}/assets/js/favorites.js`,
   `${BASE_URL}/assets/js/apca-contrast.js`,
-  `${BASE_URL}/assets/js/step-flow.js`,
+  `${BASE_URL}/assets/js/preferences.js`,
+  `${BASE_URL}/assets/js/onboarding.js`,
   `${BASE_URL}/assets/images/favicons/favicon-96x96.png`,
   `${BASE_URL}/assets/images/favicons/favicon.svg`,
   `${BASE_URL}/assets/images/favicons/apple-touch-icon.png`,

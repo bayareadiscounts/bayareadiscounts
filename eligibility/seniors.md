@@ -14,7 +14,7 @@ Many programs offer discounts for older adults. The age you need to be varies - 
 
 This guide explains age thresholds for senior discounts, how to verify eligibility, and senior-specific benefit programs available in the Bay Area.
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
 ---
 
@@ -55,7 +55,7 @@ This guide explains age thresholds for senior discounts, how to verify eligibili
     </div>
   </div>
 
-  <div class="info-callout" style="margin-top: 1rem;">
+  <div class="info-callout">
     <div class="callout-icon" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"></circle>
@@ -149,7 +149,7 @@ Federal health insurance for those 65+ or with qualifying disabilities.
 
 **Parts:**
 - **Part A:** Hospital insurance (usually premium-free)
-- **Part B:** Medical insurance ($174.70/month in 2024, income-based)
+- **Part B:** Medical insurance ($185/month in 2026, income-based)
 - **Part C:** Medicare Advantage (private plans)
 - **Part D:** Prescription drug coverage
 
@@ -172,9 +172,9 @@ Federal health insurance for those 65+ or with qualifying disabilities.
 
 Cash assistance for seniors 65+ (or blind/disabled) with limited income and resources.
 
-**2024 Federal Rates:**
-- Individual: $943/month
-- Couple: $1,415/month
+**2026 Federal Rates:**
+- Individual: $967/month
+- Couple: $1,450/month
 
 **California Supplement:** Additional state payment increases total benefits.
 
@@ -195,7 +195,7 @@ California's Medicaid program provides health coverage and can supplement Medica
 **Eligibility:**
 - Age 65+ with income at or below 138% FPL
 - May qualify at higher income with spend-down
-- Asset limits have been eliminated for most applicants as of 2024
+- Asset limits have been eliminated for most applicants
 
 **What It Covers:**
 - Medicare premiums, deductibles, and copays
@@ -328,7 +328,7 @@ Helps seniors remain at home by providing assistance with daily activities.
 
 <div class="step-cards">
   <div class="step-card">
-    <div class="step-number" style="background: #22c55e;">1</div>
+    <div class="step-number">1</div>
     <div class="step-content">
       <h4>Meals on Wheels</h4>
       <p>Home-delivered meals for homebound seniors.</p>
@@ -337,7 +337,7 @@ Helps seniors remain at home by providing assistance with daily activities.
   </div>
 
   <div class="step-card">
-    <div class="step-number" style="background: #22c55e;">2</div>
+    <div class="step-number">2</div>
     <div class="step-content">
       <h4>Congregate Meals</h4>
       <p>Free or low-cost meals served at senior centers and community sites. Contact your Area Agency on Aging for locations.</p>
@@ -345,10 +345,10 @@ Helps seniors remain at home by providing assistance with daily activities.
   </div>
 
   <div class="step-card">
-    <div class="step-number" style="background: #22c55e;">3</div>
+    <div class="step-number">3</div>
     <div class="step-content">
       <h4>CalFresh for Seniors</h4>
-      <p>Seniors 60+ may qualify for food benefits even with slightly higher incomes than general population.</p>
+      <p>Seniors 60+ may qualify for food benefits even with slightly higher incomes than the general population.</p>
       <p><a href="https://benefitscal.com" target="_blank" rel="noopener">BenefitsCal.com</a></p>
     </div>
   </div>
@@ -455,7 +455,7 @@ All California homeowners may claim a $7,000 reduction in assessed value (saving
   </summary>
   <div class="expandable-content">
 
-Seniors 62+ with household income under $51,762 (2024) may defer property taxes until the home is sold.
+Seniors 62+ with household income under $55,000 (2026) may defer property taxes until the home is sold.
 
 **Apply:** [sco.ca.gov/ardtax_prop_tax_postponement.html](https://www.sco.ca.gov/ardtax_prop_tax_postponement.html)
 
@@ -498,66 +498,6 @@ A: Contact your local Area Agency on Aging, search [HUD's affordable housing dat
 
 ---
 
-[Back to Eligibility Guides]({{ site.baseurl }}/eligibility/) · [Back to All Programs]({{ site.baseurl }}/)
+[← Eligibility Guides]({{ site.baseurl }}/eligibility/) · [← All Programs]({{ site.baseurl }}/)
 
 </div>
-
-<style>
-/* Age Thresholds Display */
-.age-thresholds {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin: 1rem 0;
-}
-
-.age-threshold-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.75rem 1rem;
-  background: var(--card-bg, #f8fafc);
-  border: 1px solid var(--border-color, #e5e7eb);
-  border-radius: 8px;
-}
-
-.age-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 48px;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: white;
-  background: var(--color-primary, #00ACC1);
-  border-radius: 6px;
-}
-
-.age-programs {
-  font-size: 0.9rem;
-  color: var(--text-secondary, #6b7280);
-  line-height: 1.4;
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  .age-threshold-item {
-    background: var(--dark-card-bg, #1e1e2e);
-    border-color: var(--dark-border, #30363d);
-  }
-
-  .age-programs {
-    color: var(--dark-text-secondary, #8b949e);
-  }
-}
-
-body[data-theme="dark"] .age-threshold-item {
-  background: var(--dark-card-bg, #1e1e2e);
-  border-color: var(--dark-border, #30363d);
-}
-
-body[data-theme="dark"] .age-programs {
-  color: var(--dark-text-secondary, #8b949e);
-}
-</style>

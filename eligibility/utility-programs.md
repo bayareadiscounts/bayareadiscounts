@@ -14,7 +14,7 @@ If you have trouble paying your electric, gas, water, phone, or internet bills, 
 
 This guide covers utility assistance programs available to Bay Area residents, including discounts on electricity, gas, water, phone, and internet service.
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
 ---
 
@@ -65,7 +65,7 @@ This guide covers utility assistance programs available to Bay Area residents, i
     </ul>
   </div>
 
-  <div class="info-callout" style="margin-top: 1rem;">
+  <div class="info-callout">
     <div class="callout-icon" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"></circle>
@@ -92,15 +92,15 @@ This guide covers utility assistance programs available to Bay Area residents, i
 
 CARE provides a **20-35% discount** on electricity and natural gas bills for income-eligible households.
 
-**2024 Income Limits:**
+**2026 Income Limits:**
 
 | Household Size | Maximum Annual Income |
 |----------------|----------------------|
-| 1-2 persons | $39,440 |
-| 3 persons | $49,720 |
-| 4 persons | $60,000 |
-| 5 persons | $70,280 |
-| Each additional | +$10,280 |
+| 1-2 persons | $42,000 |
+| 3 persons | $53,000 |
+| 4 persons | $64,000 |
+| 5 persons | $75,000 |
+| Each additional | +$11,000 |
 
 **How to Apply (PG&E):**
 - Online: [pge.com/care](https://www.pge.com/care)
@@ -121,15 +121,15 @@ CARE provides a **20-35% discount** on electricity and natural gas bills for inc
 
 FERA provides an **18% discount on electricity** for households with 3+ members whose income is slightly above CARE limits.
 
-**2024 Income Limits:**
+**2026 Income Limits:**
 
 | Household Size | Minimum Income | Maximum Income |
 |----------------|----------------|----------------|
-| 3 persons | $49,721 | $62,150 |
-| 4 persons | $60,001 | $75,000 |
-| 5 persons | $70,281 | $87,850 |
-| 6 persons | $80,561 | $100,700 |
-| Each additional | +$10,280 | +$12,850 |
+| 3 persons | $53,001 | $66,000 |
+| 4 persons | $64,001 | $80,000 |
+| 5 persons | $75,001 | $94,000 |
+| 6 persons | $86,001 | $108,000 |
+| Each additional | +$11,000 | +$14,000 |
 
 **Note:** FERA is only for electricity (not gas) and requires a household of 3 or more.
 
@@ -177,15 +177,15 @@ LIHEAP provides **one-time payments** to help with energy bills and weatherizati
 - Income at or below 60% of State Median Income
 - Higher priority for elderly, disabled, and families with young children
 
-**2024 Income Limits (60% SMI):**
+**2026 Income Limits (60% SMI):**
 
 | Household Size | Maximum Annual Income |
 |----------------|----------------------|
-| 1 person | $35,208 |
-| 2 persons | $46,032 |
-| 3 persons | $56,868 |
-| 4 persons | $67,692 |
-| 5 persons | $78,528 |
+| 1 person | $38,000 |
+| 2 persons | $50,000 |
+| 3 persons | $61,000 |
+| 4 persons | $73,000 |
+| 5 persons | $84,000 |
 
   </div>
 </details>

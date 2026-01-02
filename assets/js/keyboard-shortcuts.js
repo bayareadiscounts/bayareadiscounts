@@ -274,11 +274,14 @@ class KeyboardShortcuts {
       return;
     }
 
-    // Close step-flow wizard if open
-    const stepFlow = document.getElementById('step-flow');
-    if (stepFlow && !stepFlow.hidden && stepFlow.style.display !== 'none') {
-      stepFlow.hidden = true;
-      stepFlow.style.display = 'none';
+    // Close onboarding modal if open
+    const onboarding = document.getElementById('onboarding-modal');
+    if (onboarding && !onboarding.hidden) {
+      if (window.Onboarding && window.Onboarding.close) {
+        window.Onboarding.close();
+      } else {
+        onboarding.hidden = true;
+      }
       return;
     }
 

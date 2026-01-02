@@ -14,7 +14,7 @@ These are government programs that help people with low income. If you get Medi-
 
 This guide covers California's major public assistance programs that qualify you for many discounts listed on Bay Navigator. If you receive benefits from any of these programs, you may be eligible for reduced rates on utilities, transit, internet, museum admission, and more.
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
 ---
 
@@ -38,7 +38,7 @@ This guide covers California's major public assistance programs that qualify you
       <li class="eligibility-checklist-item" data-item-id="income" tabindex="0" role="checkbox" aria-checked="false">
         <span class="checklist-checkbox" aria-hidden="true"></span>
         <span class="checklist-label">My household income is at or below 200% of the Federal Poverty Level</span>
-        <span class="checklist-help">For a family of 4, this is about $62,400/year in 2024</span>
+        <span class="checklist-help">For a family of 4, this is about $65,000/year in 2026</span>
       </li>
       <li class="eligibility-checklist-item" data-item-id="resident" tabindex="0" role="checkbox" aria-checked="false">
         <span class="checklist-checkbox" aria-hidden="true"></span>

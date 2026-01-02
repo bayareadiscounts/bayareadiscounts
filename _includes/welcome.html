@@ -1,0 +1,413 @@
+{% comment %}
+  Welcome Screen - Shown to first-time visitors
+  Simple, clean intro that leads to onboarding
+{% endcomment %}
+
+<div id="welcome-screen" class="welcome-screen" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+  <div class="welcome-container">
+    <!-- Logo -->
+    <div class="welcome-logo">
+      <img src="{{ '/assets/images/logo/banner.svg' | relative_url }}" alt="Bay Navigator" width="280">
+    </div>
+
+    <!-- Main content -->
+    <div class="welcome-content">
+      <h1 id="welcome-title" class="welcome-title">Find free and discounted programs in the Bay Area</h1>
+
+      <p class="welcome-description">
+        Discover resources for food, transit, utilities, healthcare, and more across
+        Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties.
+      </p>
+
+      <div class="welcome-actions">
+        <button type="button" class="welcome-btn welcome-btn-primary" id="welcome-personalize">
+          Find Programs for Me
+        </button>
+        <button type="button" class="welcome-btn welcome-btn-secondary" id="welcome-browse">
+          Browse All Programs
+        </button>
+      </div>
+
+      <!-- Quick category links -->
+      <div class="welcome-categories">
+        <span class="welcome-categories-label">Or jump to:</span>
+        <div class="welcome-category-chips">
+          <button type="button" class="welcome-chip" data-category="Food">🍎 Food</button>
+          <button type="button" class="welcome-chip" data-category="Health">🏥 Health</button>
+          <button type="button" class="welcome-chip" data-category="Public Transit">🚌 Transit</button>
+          <button type="button" class="welcome-chip" data-category="Utilities">💡 Utilities</button>
+          <button type="button" class="welcome-chip" data-category="Finance">💰 Finance</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer note -->
+    <p class="welcome-note">
+      A community-driven resource. Always verify details with official program websites.
+    </p>
+  </div>
+</div>
+
+<style>
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+.welcome-screen[hidden] {
+  display: none;
+}
+
+.welcome-container {
+  max-width: 600px;
+  text-align: center;
+}
+
+.welcome-logo {
+  margin-bottom: 2rem;
+}
+
+.welcome-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-content {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+
+.welcome-description {
+  font-size: 1.0625rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+.welcome-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 52px;
+}
+
+.welcome-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.welcome-btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+.welcome-btn-secondary {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.welcome-btn-secondary:hover {
+  background: #e5e7eb;
+}
+
+.welcome-btn:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.welcome-categories {
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.welcome-categories-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.welcome-category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.welcome-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.welcome-chip:hover {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+.welcome-chip:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.welcome-note {
+  margin-top: 1.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .welcome-screen {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  }
+
+  .welcome-content {
+    background: #1f2937;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .welcome-title {
+    color: #f9fafb;
+  }
+
+  .welcome-description {
+    color: #9ca3af;
+  }
+
+  .welcome-btn-secondary {
+    background: #374151;
+    color: #f3f4f6;
+  }
+
+  .welcome-btn-secondary:hover {
+    background: #4b5563;
+  }
+
+  .welcome-categories {
+    border-color: #374151;
+  }
+
+  .welcome-categories-label {
+    color: #9ca3af;
+  }
+
+  .welcome-chip {
+    background: #374151;
+    border-color: #4b5563;
+    color: #e5e7eb;
+  }
+
+  .welcome-chip:hover {
+    background: #1e3a8a;
+    border-color: #3b82f6;
+    color: #93c5fd;
+  }
+
+  .welcome-note {
+    color: #9ca3af;
+  }
+}
+
+body[data-theme="dark"] .welcome-screen {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+}
+
+body[data-theme="dark"] .welcome-content {
+  background: #1f2937;
+}
+
+body[data-theme="dark"] .welcome-title {
+  color: #f9fafb;
+}
+
+body[data-theme="dark"] .welcome-description {
+  color: #9ca3af;
+}
+
+body[data-theme="dark"] .welcome-btn-secondary {
+  background: #374151;
+  color: #f3f4f6;
+}
+
+body[data-theme="dark"] .welcome-btn-secondary:hover {
+  background: #4b5563;
+}
+
+body[data-theme="dark"] .welcome-categories {
+  border-color: #374151;
+}
+
+body[data-theme="dark"] .welcome-chip {
+  background: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+body[data-theme="dark"] .welcome-chip:hover {
+  background: #1e3a8a;
+  border-color: #3b82f6;
+  color: #93c5fd;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .welcome-screen {
+    padding: 1rem;
+  }
+
+  .welcome-logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .welcome-logo img {
+    max-width: 240px;
+  }
+
+  .welcome-content {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .welcome-description {
+    font-size: 1rem;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .welcome-btn:hover {
+    transform: none;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  // Check localStorage directly to avoid timing issues with Preferences loading
+  function hasCompletedOnboarding() {
+    try {
+      const stored = localStorage.getItem('baynavigator_preferences');
+      if (stored) {
+        const prefs = JSON.parse(stored);
+        return prefs.completedOnboarding === true;
+      }
+      // Also check old storage keys for migration
+      const oldPrefs = localStorage.getItem('bad_prefs') || localStorage.getItem('user-preferences');
+      if (oldPrefs) {
+        const old = JSON.parse(oldPrefs);
+        // If they had any groups selected, they completed onboarding
+        return !!(old.groups && old.groups.length > 0);
+      }
+    } catch (e) {
+      // Ignore parse errors
+    }
+    return false;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const welcome = document.getElementById('welcome-screen');
+    if (!welcome) return;
+
+    // Check if we should show welcome screen
+    const shouldShow = !hasCompletedOnboarding();
+    const params = new URLSearchParams(window.location.search);
+    const skipWelcome = params.get('no-welcome') === '1' || navigator.webdriver;
+
+    if (!shouldShow || skipWelcome) {
+      welcome.hidden = true;
+      return;
+    }
+
+    // Show welcome screen
+    welcome.hidden = false;
+
+    // Handle "Find Programs for Me" button
+    document.getElementById('welcome-personalize')?.addEventListener('click', function() {
+      welcome.hidden = true;
+      if (window.Onboarding) {
+        window.Onboarding.open();
+      }
+    });
+
+    // Handle "Browse All" button
+    document.getElementById('welcome-browse')?.addEventListener('click', function() {
+      welcome.hidden = true;
+      // Mark as skipped but not completed
+      if (window.Preferences) {
+        window.Preferences.update({ completedOnboarding: true });
+      }
+    });
+
+    // Handle category chips
+    welcome.querySelectorAll('.welcome-chip').forEach(chip => {
+      chip.addEventListener('click', function() {
+        const category = this.dataset.category;
+        welcome.hidden = true;
+
+        // Mark as completed
+        if (window.Preferences) {
+          window.Preferences.update({ completedOnboarding: true });
+        }
+
+        // Apply category filter
+        setTimeout(() => {
+          if (window.searchFilter) {
+            window.searchFilter.resetFilters();
+            const btn = document.querySelector(`[data-filter-type="category"][data-filter-value="${category}"]`);
+            if (btn) btn.click();
+          }
+        }, 100);
+      });
+    });
+  });
+})();
+</script>

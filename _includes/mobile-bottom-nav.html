@@ -1,47 +1,40 @@
 <!-- Mobile Bottom Navigation -->
 <nav class="mobile-bottom-nav" role="navigation" aria-label="Mobile navigation">
-  <button type="button" class="bottom-nav-item" data-nav="home" aria-label="Browse all programs">
+  <a href="{{ '/' | relative_url }}" class="bottom-nav-item" aria-label="Browse all programs">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="3" y="3" width="7" height="7"></rect>
       <rect x="14" y="3" width="7" height="7"></rect>
       <rect x="14" y="14" width="7" height="7"></rect>
       <rect x="3" y="14" width="7" height="7"></rect>
     </svg>
-    <span>Browse</span>
-  </button>
+    <span>Programs</span>
+  </a>
 
-  <button type="button" class="bottom-nav-item active" data-nav="for-you" aria-current="page" aria-label="Personalized recommendations">
+  <a href="{{ '/favorites.html' | relative_url }}" class="bottom-nav-item" aria-label="View saved programs">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-    </svg>
-    <span>For You</span>
-  </button>
-
-  <button type="button" class="bottom-nav-item" data-nav="saved" aria-label="View saved programs">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
     </svg>
     <span>Saved</span>
-    <span class="nav-badge saved-count" aria-label="saved programs count"></span>
-  </button>
+    <span class="nav-badge saved-count" id="mobile-saved-badge" aria-label="saved programs count"></span>
+  </a>
 
-  <button type="button" class="bottom-nav-item" data-nav="filters" aria-label="Open filters">
+  <a href="{{ '/eligibility/' | relative_url }}" class="bottom-nav-item" aria-label="Eligibility guides">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <line x1="4" y1="21" x2="4" y2="14"></line>
-      <line x1="4" y1="10" x2="4" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="12"></line>
-      <line x1="12" y1="8" x2="12" y2="3"></line>
-      <line x1="20" y1="21" x2="20" y2="16"></line>
-      <line x1="20" y1="12" x2="20" y2="3"></line>
-      <line x1="1" y1="14" x2="7" y2="14"></line>
-      <line x1="9" y1="8" x2="15" y2="8"></line>
-      <line x1="17" y1="16" x2="23" y2="16"></line>
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+      <polyline points="14 2 14 8 20 8"></polyline>
+      <line x1="16" y1="13" x2="8" y2="13"></line>
+      <line x1="16" y1="17" x2="8" y2="17"></line>
+    </svg>
+    <span>Guides</span>
+  </a>
+
+  <button type="button" class="bottom-nav-item" id="mobile-filters-btn" aria-label="Update filters" data-open-onboarding>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
     </svg>
     <span>Filters</span>
-    <span class="nav-badge filter-count-badge" aria-label="active filters count"></span>
   </button>
 </nav>
-
 
 <style>
 /* Mobile Bottom Navigation */
@@ -89,6 +82,7 @@
   transition: all 0.2s ease;
   position: relative;
   min-height: 48px;
+  text-decoration: none;
 }
 
 .bottom-nav-item svg {
@@ -138,13 +132,9 @@
   justify-content: center;
 }
 
-.nav-badge:empty {
+.nav-badge:empty,
+.nav-badge[hidden] {
   display: none;
-}
-
-/* Filter count badge uses primary color */
-.filter-count-badge {
-  background: #2563eb;
 }
 
 /* Dark mode */
@@ -181,208 +171,64 @@ body[data-theme="dark"] .bottom-nav-item.active {
 
 <script>
 (function() {
-  const nav = document.querySelector('.mobile-bottom-nav');
-  const items = document.querySelectorAll('.bottom-nav-item');
-  const savedCountBadge = document.querySelector('.saved-count');
-  const filterCountBadge = document.querySelector('.filter-count-badge');
+  'use strict';
 
-  if (!nav) return;
+  // Highlight current page in navigation
+  function updateActiveNav() {
+    const currentPath = window.location.pathname;
+    const navItems = document.querySelectorAll('.mobile-bottom-nav .bottom-nav-item');
+
+    navItems.forEach(item => {
+      if (item.tagName === 'A') {
+        const href = item.getAttribute('href');
+        const isActive = href === currentPath ||
+          (href === '/' && currentPath === '/') ||
+          (href !== '/' && currentPath.startsWith(href));
+
+        item.classList.toggle('active', isActive);
+        if (isActive) {
+          item.setAttribute('aria-current', 'page');
+        } else {
+          item.removeAttribute('aria-current');
+        }
+      }
+    });
+  }
 
   // Update saved count badge
-  function updateSavedCount() {
-    if (!savedCountBadge) return;
+  function updateSavedBadge() {
+    const badge = document.getElementById('mobile-saved-badge');
+    if (!badge) return;
+
     try {
       const favorites = JSON.parse(localStorage.getItem('bayarea_favorites') || '[]');
-      savedCountBadge.textContent = favorites.length > 0 ? favorites.length : '';
-    } catch (e) {
-      savedCountBadge.textContent = '';
-    }
-  }
-
-  // Update filter count badge
-  function updateFilterCount() {
-    if (!filterCountBadge) return;
-    const activeFilters = document.querySelectorAll('.filter-btn.active:not([data-value=""])');
-    const searchInput = document.getElementById('search-input') || document.getElementById('search');
-    const hasSearch = searchInput && searchInput.value.trim().length > 0;
-    const count = activeFilters.length + (hasSearch ? 1 : 0);
-    filterCountBadge.textContent = count > 0 ? count : '';
-  }
-
-  // Open filter drawer
-  function openFilterDrawer() {
-    const panel = document.querySelector('.search-panel');
-    if (!panel) return;
-
-    panel.classList.add('mobile-open');
-    panel.id = panel.id || 'mobile-filter-drawer';
-
-    // Create backdrop if not exists
-    let backdrop = document.querySelector('.mobile-filter-backdrop');
-    if (!backdrop) {
-      backdrop = document.createElement('div');
-      backdrop.className = 'mobile-filter-backdrop';
-      document.body.appendChild(backdrop);
-      backdrop.addEventListener('click', closeFilterDrawer);
-    }
-    backdrop.classList.add('show');
-    document.body.style.overflow = 'hidden';
-
-    // Focus the first interactive element
-    setTimeout(function() {
-      const firstInput = panel.querySelector('input, button, select');
-      if (firstInput) firstInput.focus();
-    }, 100);
-  }
-
-  // Close filter drawer
-  function closeFilterDrawer() {
-    const panel = document.querySelector('.search-panel');
-    const backdrop = document.querySelector('.mobile-filter-backdrop');
-    if (panel) panel.classList.remove('mobile-open');
-    if (backdrop) backdrop.classList.remove('show');
-    document.body.style.overflow = '';
-  }
-
-  // Handle navigation item clicks
-  items.forEach(item => {
-    item.addEventListener('click', () => {
-      const target = item.getAttribute('data-nav');
-
-      // Don't change active state for filters (it's a modal action)
-      if (target !== 'filters') {
-        items.forEach(i => {
-          i.classList.remove('active');
-          i.removeAttribute('aria-current');
-        });
-        item.classList.add('active');
-        item.setAttribute('aria-current', 'page');
+      if (favorites.length > 0) {
+        badge.textContent = favorites.length;
+        badge.hidden = false;
+      } else {
+        badge.hidden = true;
       }
+    } catch (e) {
+      badge.hidden = true;
+    }
+  }
 
-      // Handle navigation actions
-      switch (target) {
-        case 'home':
-          // Show directory view (all programs)
-          document.dispatchEvent(new CustomEvent('viewChange', { detail: { view: 'directory' } }));
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-          break;
-
-        case 'for-you':
-          // Show For You view
-          document.dispatchEvent(new CustomEvent('viewChange', { detail: { view: 'for-you' } }));
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-          break;
-
-        case 'saved':
-          // Show saved programs
-          showSavedPrograms();
-          break;
-
-        case 'filters':
-          // Open filter drawer
-          openFilterDrawer();
-          break;
+  // Handle filters button - opens onboarding modal
+  const filtersBtn = document.getElementById('mobile-filters-btn');
+  if (filtersBtn) {
+    filtersBtn.addEventListener('click', function() {
+      if (window.Onboarding) {
+        window.Onboarding.open();
       }
     });
-  });
-
-  // Show saved programs
-  function showSavedPrograms() {
-    try {
-      const favorites = JSON.parse(localStorage.getItem('bayarea_favorites') || '[]');
-
-      if (favorites.length === 0) {
-        alert('You haven\'t saved any programs yet. Tap the heart icon on a program to save it.');
-        return;
-      }
-
-      // Switch to directory view first
-      document.dispatchEvent(new CustomEvent('viewChange', { detail: { view: 'directory' } }));
-
-      // Hide all programs, show only saved
-      setTimeout(() => {
-        document.querySelectorAll('.program-card').forEach(card => {
-          const programId = card.getAttribute('data-program-id');
-          if (favorites.includes(programId)) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-
-        // Update results count
-        const countEl = document.querySelector('.results-count');
-        if (countEl) {
-          countEl.textContent = `Showing ${favorites.length} saved program${favorites.length !== 1 ? 's' : ''}`;
-        }
-
-        // Scroll to results
-        const results = document.getElementById('search-results');
-        if (results) {
-          results.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 50);
-    } catch (e) {
-      console.error('Error showing saved programs:', e);
-    }
   }
 
-  // Listen for view changes to update bottom nav active state
-  document.addEventListener('viewChange', (e) => {
-    const view = e.detail.view;
-    items.forEach(i => {
-      i.classList.remove('active');
-      i.removeAttribute('aria-current');
-    });
-
-    if (view === 'for-you') {
-      document.querySelector('[data-nav="for-you"]')?.classList.add('active');
-      document.querySelector('[data-nav="for-you"]')?.setAttribute('aria-current', 'page');
-    } else if (view === 'directory') {
-      document.querySelector('[data-nav="home"]')?.classList.add('active');
-      document.querySelector('[data-nav="home"]')?.setAttribute('aria-current', 'page');
-    }
-  });
-
-  // Initial counts
-  updateSavedCount();
-  updateFilterCount();
+  // Initialize
+  updateActiveNav();
+  updateSavedBadge();
 
   // Listen for changes
-  window.addEventListener('storage', updateSavedCount);
-  document.addEventListener('click', (e) => {
-    if (e.target.closest('.favorite-toggle') || e.target.closest('.card-save-btn')) {
-      setTimeout(updateSavedCount, 100);
-    }
-    if (e.target.classList.contains('filter-btn')) {
-      setTimeout(updateFilterCount, 100);
-    }
-  });
-
-  // Update filter count on search input
-  const searchInput = document.getElementById('search-input') || document.getElementById('search');
-  if (searchInput) {
-    searchInput.addEventListener('input', updateFilterCount);
-  }
-
-  // Sync with sidebar navigation if present
-  document.querySelectorAll('.sidebar-nav-item[data-view]').forEach(sidebarItem => {
-    sidebarItem.addEventListener('click', () => {
-      const view = sidebarItem.dataset.view;
-      if (view === 'for-you' || view === 'directory') {
-        items.forEach(i => {
-          i.classList.remove('active');
-          i.removeAttribute('aria-current');
-        });
-        const navItem = view === 'for-you'
-          ? document.querySelector('[data-nav="for-you"]')
-          : document.querySelector('[data-nav="home"]');
-        if (navItem) {
-          navItem.classList.add('active');
-          navItem.setAttribute('aria-current', 'page');
-        }
-      }
-    });
-  });
+  window.addEventListener('storage', updateSavedBadge);
+  document.addEventListener('favoritesChanged', updateSavedBadge);
 })();
 </script>

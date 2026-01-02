@@ -14,7 +14,7 @@ If you have a disability, there are programs that can help you. This includes SS
 
 This guide explains eligibility for disability-related discounts and services, including federal benefit programs, California services, and how to verify your status for discount programs.
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
 ---
 
@@ -75,9 +75,9 @@ SSDI provides monthly benefits to people who have worked and paid Social Securit
 - Must be unable to perform substantial gainful activity (SGA)
 - Must have earned enough work credits (typically 20 credits in the last 10 years)
 
-**2024 Benefit Amounts:**
-- Average monthly benefit: ~$1,537
-- Maximum monthly benefit: ~$3,822
+**2026 Benefit Amounts:**
+- Average monthly benefit: ~$1,580
+- Maximum monthly benefit: ~$3,900
 
 **Medicare:** SSDI recipients become eligible for Medicare after 24 months of receiving benefits.
 
@@ -101,8 +101,8 @@ SSI provides monthly cash assistance to people with disabilities (and seniors 65
 - Limited resources (under $2,000 individual / $3,000 couple)
 - U.S. citizen or qualifying non-citizen
 
-**2024 Benefit Amounts:**
-- Federal: $943/month individual, $1,415/month couple
+**2026 Benefit Amounts:**
+- Federal: $967/month individual, $1,450/month couple
 - California adds a state supplement increasing total benefits
 
 **Medi-Cal:** SSI recipients in California automatically qualify for Medi-Cal.

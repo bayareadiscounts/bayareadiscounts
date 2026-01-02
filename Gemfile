@@ -1,10 +1,21 @@
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# Use Jekyll 4.x for modern Ruby compatibility
+gem "jekyll", "~> 4.3"
 
-gem "github-pages", group: :jekyll_plugins
+# GitHub Pages compatible plugins
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-paginate"
+gem "jekyll-redirect-from"
+gem "jekyll-relative-links"
+gem "jekyll-optional-front-matter"
+gem "jekyll-titles-from-headings"
+gem "jekyll-default-layout"
+gem "jekyll-readme-index"
 
-# Explicit server/runtime deps for local/CI Jekyll serve
+# Server/runtime deps
 gem "webrick"
 gem "faraday-retry"
 

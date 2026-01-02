@@ -14,7 +14,7 @@ If you served in the military (or are currently serving), you can get many disco
 
 This guide explains who qualifies for military and veteran discounts, how eligibility is defined by federal law, and how to verify your status for discount programs.
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
 ---
 

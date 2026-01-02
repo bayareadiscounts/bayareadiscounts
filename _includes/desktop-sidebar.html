@@ -1,6 +1,6 @@
-<!-- Desktop Sidebar Navigation - macOS App Style -->
+<!-- Desktop Sidebar Navigation -->
 <aside class="desktop-sidebar" id="desktop-sidebar" role="navigation" aria-label="Main navigation">
-  <!-- App Branding - Logo Image -->
+  <!-- App Branding -->
   <div class="sidebar-branding">
     <a href="{{ '/' | relative_url }}" class="sidebar-logo" aria-label="Bay Navigator Home">
       <img src="{{ '/assets/images/logo/banner.svg' | relative_url }}" alt="Bay Navigator" class="sidebar-logo-img">
@@ -11,31 +11,9 @@
   <nav class="sidebar-nav">
     <ul class="sidebar-nav-list" role="list">
       <li>
-        <a href="#for-you" class="sidebar-nav-item active" data-view="for-you" role="button" aria-current="true">
+        <a href="{{ '/' | relative_url }}" class="sidebar-nav-item">
           <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-default" aria-hidden="true">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active" aria-hidden="true">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-            </svg>
-          </span>
-          <span class="sidebar-nav-content">
-            <span class="sidebar-nav-label">For You</span>
-            <span class="sidebar-nav-subtitle">Personalized picks</span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#directory" class="sidebar-nav-item" data-view="directory" role="button">
-          <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-default" aria-hidden="true">
-              <rect x="3" y="3" width="7" height="7"></rect>
-              <rect x="14" y="3" width="7" height="7"></rect>
-              <rect x="14" y="14" width="7" height="7"></rect>
-              <rect x="3" y="14" width="7" height="7"></rect>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="3" y="3" width="7" height="7"></rect>
               <rect x="14" y="3" width="7" height="7"></rect>
               <rect x="14" y="14" width="7" height="7"></rect>
@@ -43,36 +21,25 @@
             </svg>
           </span>
           <span class="sidebar-nav-content">
-            <span class="sidebar-nav-label">Directory</span>
-            <span class="sidebar-nav-subtitle" id="program-count-label">All programs</span>
+            <span class="sidebar-nav-label">Programs</span>
+            <span class="sidebar-nav-subtitle">Browse all</span>
           </span>
         </a>
       </li>
       <li>
-        <a href="{{ '/favorites.html' | relative_url }}" class="sidebar-nav-item" data-view="saved">
+        <a href="{{ '/favorites.html' | relative_url }}" class="sidebar-nav-item">
           <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-default" aria-hidden="true">
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-active" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
             </svg>
           </span>
           <span class="sidebar-nav-content">
             <span class="sidebar-nav-label">Saved</span>
-            <span class="sidebar-nav-subtitle" id="saved-count-label">No saved</span>
+            <span class="sidebar-nav-subtitle" id="saved-count-label">Your saved programs</span>
           </span>
           <span class="sidebar-nav-badge" id="saved-badge" hidden>0</span>
         </a>
       </li>
-    </ul>
-
-    <!-- Section Divider -->
-    <div class="sidebar-section-divider">
-      <span class="sidebar-section-title">Resources</span>
-    </div>
-
-    <ul class="sidebar-nav-list" role="list">
       <li>
         <a href="{{ '/eligibility/' | relative_url }}" class="sidebar-nav-item">
           <span class="sidebar-nav-icon">
@@ -81,7 +48,6 @@
               <polyline points="14 2 14 8 20 8"></polyline>
               <line x1="16" y1="13" x2="8" y2="13"></line>
               <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
           </span>
           <span class="sidebar-nav-content">
@@ -107,10 +73,22 @@
 
     <!-- Section Divider -->
     <div class="sidebar-section-divider">
-      <span class="sidebar-section-title">Preferences</span>
+      <span class="sidebar-section-title">Settings</span>
     </div>
 
     <ul class="sidebar-nav-list" role="list">
+      <li>
+        <button class="sidebar-nav-item" id="sidebar-update-filters" type="button" data-open-onboarding aria-label="Update your filters">
+          <span class="sidebar-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+          </span>
+          <span class="sidebar-nav-content">
+            <span class="sidebar-nav-label">Update Filters</span>
+          </span>
+        </button>
+      </li>
       <li>
         <button class="sidebar-nav-item" id="sidebar-theme-toggle" type="button" aria-label="Toggle dark mode">
           <span class="sidebar-nav-icon">
@@ -135,54 +113,6 @@
           </span>
         </button>
       </li>
-      <li>
-        <button class="sidebar-nav-item" id="sidebar-spacing-toggle" type="button" aria-label="Toggle enhanced text spacing" aria-pressed="false">
-          <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16"/>
-            </svg>
-          </span>
-          <span class="sidebar-nav-content">
-            <span class="sidebar-nav-label">Text Spacing</span>
-            <span class="sidebar-nav-subtitle" id="spacing-label">Normal</span>
-          </span>
-        </button>
-      </li>
-    </ul>
-
-    <!-- Section Divider -->
-    <div class="sidebar-section-divider">
-      <span class="sidebar-section-title">Actions</span>
-    </div>
-
-    <ul class="sidebar-nav-list" role="list">
-      <li>
-        <button class="sidebar-nav-item" id="sidebar-update-filters" type="button" aria-label="Update your filters">
-          <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-            </svg>
-          </span>
-          <span class="sidebar-nav-content">
-            <span class="sidebar-nav-label">Update Filters</span>
-          </span>
-        </button>
-      </li>
-      <li>
-        <button class="sidebar-nav-item" id="sidebar-share" type="button" aria-label="Share this page">
-          <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="18" cy="5" r="3"></circle>
-              <circle cx="6" cy="12" r="3"></circle>
-              <circle cx="18" cy="19" r="3"></circle>
-              <path d="M8.59 13.51l6.83 3.98m-.01-10.98l-6.82 3.98"></path>
-            </svg>
-          </span>
-          <span class="sidebar-nav-content">
-            <span class="sidebar-nav-label">Share</span>
-          </span>
-        </button>
-      </li>
       <li id="sidebar-install-item" style="display: none;">
         <button class="sidebar-nav-item sidebar-nav-item-accent" id="sidebar-install" type="button" aria-label="Install app">
           <span class="sidebar-nav-icon">
@@ -197,39 +127,113 @@
           </span>
         </button>
       </li>
-      <li>
-        <button class="sidebar-nav-item sidebar-nav-item-danger" id="sidebar-clear-data" type="button" aria-label="Clear saved data">
-          <span class="sidebar-nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="3 6 5 6 21 6"></polyline>
-              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-              <line x1="10" y1="11" x2="10" y2="17"></line>
-              <line x1="14" y1="11" x2="14" y2="17"></line>
-            </svg>
-          </span>
-          <span class="sidebar-nav-content">
-            <span class="sidebar-nav-label">Clear Data</span>
-          </span>
-        </button>
-      </li>
     </ul>
   </nav>
-
-  <!-- Keyboard Shortcuts Hint (dynamically updated by JS) -->
-  <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-    <div class="sidebar-shortcuts-title">Keyboard Shortcuts</div>
-    <div class="sidebar-shortcut" data-shortcut="search">
-      <span class="sidebar-shortcut-label">Search</span>
-      <kbd class="sidebar-shortcut-key"></kbd>
-    </div>
-    <div class="sidebar-shortcut" data-shortcut="darkmode">
-      <span class="sidebar-shortcut-label">Dark Mode</span>
-      <kbd class="sidebar-shortcut-key"></kbd>
-    </div>
-    <div class="sidebar-shortcut" data-shortcut="help">
-      <span class="sidebar-shortcut-label">Help</span>
-      <kbd class="sidebar-shortcut-key"></kbd>
-    </div>
-    <div class="sidebar-shortcuts-note" id="shortcuts-browser-note"></div>
-  </div>
 </aside>
+
+<script>
+(function() {
+  'use strict';
+
+  // Highlight current page in navigation
+  function updateActiveNav() {
+    const currentPath = window.location.pathname;
+    const navItems = document.querySelectorAll('.sidebar-nav-item');
+
+    navItems.forEach(item => {
+      if (item.tagName === 'A') {
+        const href = item.getAttribute('href');
+        const isActive = href === currentPath ||
+          (href === '/' && currentPath === '/') ||
+          (href !== '/' && currentPath.startsWith(href));
+
+        item.classList.toggle('active', isActive);
+        if (isActive) {
+          item.setAttribute('aria-current', 'page');
+        } else {
+          item.removeAttribute('aria-current');
+        }
+      }
+    });
+  }
+
+  // Update saved count badge
+  function updateSavedBadge() {
+    const badge = document.getElementById('saved-badge');
+    const label = document.getElementById('saved-count-label');
+    if (!badge) return;
+
+    try {
+      const favorites = JSON.parse(localStorage.getItem('bayarea_favorites') || '[]');
+      if (favorites.length > 0) {
+        badge.textContent = favorites.length;
+        badge.hidden = false;
+        if (label) label.textContent = favorites.length + ' saved';
+      } else {
+        badge.hidden = true;
+        if (label) label.textContent = 'Your saved programs';
+      }
+    } catch (e) {
+      badge.hidden = true;
+    }
+  }
+
+  // Theme toggle
+  const themeToggle = document.getElementById('sidebar-theme-toggle');
+  const themeLabel = document.getElementById('theme-label');
+
+  if (themeToggle) {
+    function updateThemeLabel() {
+      const current = localStorage.getItem('theme-preference') || 'auto';
+      const labels = { auto: 'System', light: 'Light', dark: 'Dark' };
+      if (themeLabel) themeLabel.textContent = labels[current] || 'System';
+    }
+
+    themeToggle.addEventListener('click', function() {
+      const current = localStorage.getItem('theme-preference') || 'auto';
+      const next = current === 'auto' ? 'light' : current === 'light' ? 'dark' : 'auto';
+      localStorage.setItem('theme-preference', next);
+
+      if (next === 'auto') {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', next);
+      }
+
+      updateThemeLabel();
+    });
+
+    updateThemeLabel();
+  }
+
+  // Install button
+  const installBtn = document.getElementById('sidebar-install');
+  const installItem = document.getElementById('sidebar-install-item');
+
+  if (installBtn && installItem) {
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      window.deferredPrompt = e;
+      installItem.style.display = '';
+    });
+
+    installBtn.addEventListener('click', async function() {
+      if (window.deferredPrompt) {
+        window.deferredPrompt.prompt();
+        await window.deferredPrompt.userChoice;
+        window.deferredPrompt = null;
+        installItem.style.display = 'none';
+      }
+    });
+  }
+
+  // Initialize
+  updateActiveNav();
+  updateSavedBadge();
+
+  // Listen for changes
+  window.addEventListener('storage', updateSavedBadge);
+  document.addEventListener('favoritesChanged', updateSavedBadge);
+})();
+</script>

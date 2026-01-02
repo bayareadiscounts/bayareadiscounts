@@ -14,7 +14,7 @@ If you're in college, community college, or graduate school, you can get discoun
 
 This guide explains what qualifies as student status for discount programs and how to verify your enrollment.
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
 
 ---
 

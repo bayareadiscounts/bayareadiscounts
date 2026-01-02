@@ -697,3 +697,299 @@ body[data-theme="dark"] .document-item {
     display: none;
   }
 }
+
+/* ============================================
+   ELIGIBILITY INDEX CARDS
+   ============================================ */
+.eligibility-cards {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .eligibility-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.eligibility-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.eligibility-card:hover {
+  border-color: var(--color-primary, #00ACC1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.eligibility-card:focus-visible {
+  outline: 3px solid var(--color-primary, #00ACC1);
+  outline-offset: 2px;
+}
+
+.eligibility-card-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 172, 193, 0.1);
+  border-radius: 12px;
+  color: var(--color-primary, #00ACC1);
+}
+
+.eligibility-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.eligibility-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+}
+
+.eligibility-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6b7280);
+  line-height: 1.4;
+}
+
+.eligibility-card-arrow {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  color: var(--text-muted, #9ca3af);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.eligibility-card:hover .eligibility-card-arrow {
+  transform: translateX(4px);
+  color: var(--color-primary, #00ACC1);
+}
+
+/* Quick Links */
+.quick-links-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+@media (min-width: 640px) {
+  .quick-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.quick-link-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: var(--bg-surface-alt, #f9fafb);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s ease;
+}
+
+.quick-link-card:hover {
+  background: var(--bg-surface, #ffffff);
+  border-color: var(--color-primary, #00ACC1);
+}
+
+.quick-link-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.quick-link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.quick-link-text strong {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary, #111827);
+}
+
+.quick-link-text span:last-child {
+  font-size: 0.8rem;
+  color: var(--color-primary, #00ACC1);
+}
+
+/* Dark Mode - Eligibility Cards */
+@media (prefers-color-scheme: dark) {
+  .eligibility-card {
+    background: var(--dark-surface, #161b22);
+    border-color: var(--dark-border, #30363d);
+  }
+
+  .eligibility-card h3 {
+    color: var(--dark-text, #e8eef5);
+  }
+
+  .eligibility-card p {
+    color: var(--dark-text-secondary, #8b949e);
+  }
+
+  .quick-link-card {
+    background: var(--dark-surface, #161b22);
+    border-color: var(--dark-border, #30363d);
+  }
+
+  .quick-link-text strong {
+    color: var(--dark-text, #e8eef5);
+  }
+}
+
+body[data-theme="dark"] .eligibility-card {
+  background: var(--dark-surface, #161b22);
+  border-color: var(--dark-border, #30363d);
+}
+
+body[data-theme="dark"] .eligibility-card h3 {
+  color: var(--dark-text, #e8eef5);
+}
+
+body[data-theme="dark"] .eligibility-card p {
+  color: var(--dark-text-secondary, #8b949e);
+}
+
+body[data-theme="dark"] .quick-link-card {
+  background: var(--dark-surface, #161b22);
+  border-color: var(--dark-border, #30363d);
+}
+
+body[data-theme="dark"] .quick-link-text strong {
+  color: var(--dark-text, #e8eef5);
+}
+
+/* ============================================
+   AGE THRESHOLDS (Seniors Guide)
+   ============================================ */
+.age-thresholds {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.age-threshold-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-surface-alt, #f9fafb);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 8px;
+}
+
+.age-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: white;
+  background: var(--color-primary, #00ACC1);
+  border-radius: 6px;
+}
+
+.age-programs {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6b7280);
+  line-height: 1.4;
+}
+
+@media (prefers-color-scheme: dark) {
+  .age-threshold-item {
+    background: var(--dark-surface, #161b22);
+    border-color: var(--dark-border, #30363d);
+  }
+
+  .age-programs {
+    color: var(--dark-text-secondary, #8b949e);
+  }
+}
+
+body[data-theme="dark"] .age-threshold-item {
+  background: var(--dark-surface, #161b22);
+  border-color: var(--dark-border, #30363d);
+}
+
+body[data-theme="dark"] .age-programs {
+  color: var(--dark-text-secondary, #8b949e);
+}
+
+/* ============================================
+   ELIGIBILITY CTA
+   ============================================ */
+.eligibility-cta {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-radius: 16px;
+  margin-top: 2rem;
+}
+
+.eligibility-cta p {
+  font-size: 1.125rem;
+  color: #374151;
+  margin: 0 0 1rem;
+}
+
+.eligibility-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2563eb;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.eligibility-cta-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .eligibility-cta {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  }
+
+  .eligibility-cta p {
+    color: #e5e7eb;
+  }
+}
+
+body[data-theme="dark"] .eligibility-cta {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+}
+
+body[data-theme="dark"] .eligibility-cta p {
+  color: #e5e7eb;
+}
