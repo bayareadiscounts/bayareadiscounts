@@ -463,6 +463,316 @@ class ApiService {
   }
 
   // ============================================
+  // AI SEARCH
+  // ============================================
+
+  static const String _aiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assistant';
+  static const String _conversationHistoryCacheKey = 'bay_area_discounts:conversation_history';
+
+  /// Perform an AI-powered search using the Smart Assistant
+  /// Returns both the AI message and matching programs
+  Future<AISearchResult> performAISearch({
+    required String query,
+    List<Map<String, String>>? conversationHistory,
+  }) async {
+    try {
+      final history = conversationHistory ?? await getConversationHistory();
+
+      final response = await _client
+          .post(
+            Uri.parse(_aiEndpoint),
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode({
+              'message': query,
+              'conversationHistory': history.take(6).toList(),
+            }),
+          )
+          .timeout(const Duration(seconds: 30));
+
+      if (response.statusCode != 200) {
+        final error = jsonDecode(response.body);
+        throw Exception(error['error'] ?? 'AI search failed');
+      }
+
+      final data = jsonDecode(response.body) as Map<String, dynamic>;
+
+      // Update conversation history
+      await _addToConversationHistory('user', query);
+      await _addToConversationHistory('assistant', data['message'] as String);
+
+      // Parse programs from response
+      final programsList = data['programs'] as List? ?? [];
+      final programs = programsList
+          .map((p) => Program.fromJson(p as Map<String, dynamic>))
+          .toList();
+
+      return AISearchResult(
+        message: data['message'] as String,
+        programs: programs,
+      );
+    } catch (e) {
+      if (e.toString().contains('TimeoutException')) {
+        throw Exception('AI search timed out. Please try again.');
+      }
+      rethrow;
+    }
+  }
+
+  /// Get conversation history for AI context
+  Future<List<Map<String, String>>> getConversationHistory() async {
+    try {
+      final prefs = await _preferences;
+      final history = prefs.getString(_conversationHistoryCacheKey);
+      if (history == null) return [];
+
+      final list = jsonDecode(history) as List;
+      return list.map((item) => Map<String, String>.from(item as Map)).toList();
+    } catch (e) {
+      return [];
+    }
+  }
+
+  /// Add a message to conversation history
+  Future<void> _addToConversationHistory(String role, String content) async {
+    try {
+      final history = await getConversationHistory();
+      history.add({'role': role, 'content': content});
+
+      // Keep only the last 10 messages
+      final trimmed = history.length > 10 ? history.sublist(history.length - 10) : history;
+
+      final prefs = await _preferences;
+      await prefs.setString(_conversationHistoryCacheKey, jsonEncode(trimmed));
+    } catch (e) {
+      // Silently fail
+    }
+  }
+
+  /// Clear conversation history
+  Future<void> clearConversationHistory() async {
+    final prefs = await _preferences;
+    await prefs.remove(_conversationHistoryCacheKey);
+  }
+
+  /// Check if a query should use AI search (complex/natural language queries)
+  bool shouldUseAISearch(String query) {
+    if (query.length < 10) return false;
+
+    // Demographic/eligibility terms that suggest complex queries
+    final demographicTerms = [
+      'senior', 'elderly', 'veteran', 'disabled', 'disability',
+      'student', 'low-income', 'homeless', 'immigrant', 'lgbtq',
+      'family', 'child', 'parent', 'youth', 'teen',
+    ];
+
+    // Natural language patterns
+    final naturalPatterns = [
+      'i need', 'i\'m looking', 'help with', 'how can i', 'where can i',
+      'looking for', 'need help', 'can you help', 'what programs',
+      'i am a', 'i\'m a', 'my family', 'we need',
+    ];
+
+    final lowerQuery = query.toLowerCase();
+
+    // Check for demographic terms
+    for (final term in demographicTerms) {
+      if (lowerQuery.contains(term)) return true;
+    }
+
+    // Check for natural language patterns
+    for (final pattern in naturalPatterns) {
+      if (lowerQuery.contains(pattern)) return true;
+    }
+
+    // Multiple words with spaces suggest natural language
+    final wordCount = query.split(' ').where((w) => w.length > 2).length;
+    if (wordCount >= 4) return true;
+
+    return false;
+  }
+
+  /// Detect crisis keywords in a query
+  CrisisType? detectCrisis(String query) {
+    final lowerQuery = query.toLowerCase();
+
+    // Emergency keywords
+    const emergencyKeywords = [
+      'emergency', 'danger', 'hurt', 'attack', 'abuse',
+      'violence', 'domestic violence', 'unsafe', 'threatened',
+    ];
+
+    // Mental health crisis keywords
+    const mentalHealthKeywords = [
+      'suicide', 'suicidal', 'kill myself', 'end my life',
+      'don\'t want to live', 'want to die', 'self-harm',
+      'cutting', 'hurting myself', 'crisis', 'desperate',
+    ];
+
+    for (final keyword in emergencyKeywords) {
+      if (lowerQuery.contains(keyword)) return CrisisType.emergency;
+    }
+
+    for (final keyword in mentalHealthKeywords) {
+      if (lowerQuery.contains(keyword)) return CrisisType.mentalHealth;
+    }
+
+    return null;
+  }
+
+  // ============================================
+  // USER PROFILES
+  // ============================================
+
+  static const String _profilesCacheKey = 'bay_area_discounts:profiles';
+  static const String _activeProfileCacheKey = 'bay_area_discounts:active_profile';
+  static const int _maxProfiles = 6;
+  static const int _maxSavedPerProfile = 50;
+
+  /// Get all user profiles
+  Future<List<UserProfile>> getProfiles() async {
+    try {
+      final prefs = await _preferences;
+      final profiles = prefs.getString(_profilesCacheKey);
+      if (profiles == null) return [];
+
+      final list = jsonDecode(profiles) as List;
+      return list.map((p) => UserProfile.fromJson(p as Map<String, dynamic>)).toList();
+    } catch (e) {
+      return [];
+    }
+  }
+
+  /// Get active profile ID
+  Future<String?> getActiveProfileId() async {
+    final prefs = await _preferences;
+    return prefs.getString(_activeProfileCacheKey);
+  }
+
+  /// Set active profile ID
+  Future<void> setActiveProfileId(String? id) async {
+    final prefs = await _preferences;
+    if (id == null) {
+      await prefs.remove(_activeProfileCacheKey);
+    } else {
+      await prefs.setString(_activeProfileCacheKey, id);
+    }
+  }
+
+  /// Create a new profile
+  Future<UserProfile?> createProfile({
+    required String name,
+    required String relationship,
+    required int colorIndex,
+    List<String> eligibilityGroups = const [],
+    String? county,
+  }) async {
+    final profiles = await getProfiles();
+    if (profiles.length >= _maxProfiles) return null;
+
+    final profile = UserProfile(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      name: name,
+      relationship: relationship,
+      colorIndex: colorIndex,
+      eligibilityGroups: eligibilityGroups,
+      county: county,
+      createdAt: DateTime.now(),
+    );
+
+    profiles.add(profile);
+    await _saveProfiles(profiles);
+
+    // If this is the first profile, set it as active
+    if (profiles.length == 1) {
+      await setActiveProfileId(profile.id);
+    }
+
+    return profile;
+  }
+
+  /// Update an existing profile
+  Future<void> updateProfile(UserProfile profile) async {
+    final profiles = await getProfiles();
+    final index = profiles.indexWhere((p) => p.id == profile.id);
+    if (index != -1) {
+      profiles[index] = profile;
+      await _saveProfiles(profiles);
+    }
+  }
+
+  /// Delete a profile and its saved programs
+  Future<void> deleteProfile(String id) async {
+    final profiles = await getProfiles();
+    profiles.removeWhere((p) => p.id == id);
+    await _saveProfiles(profiles);
+
+    // Clear saved programs for this profile
+    await clearProfileFavorites(id);
+
+    // If deleted profile was active, switch to first available or none
+    final activeId = await getActiveProfileId();
+    if (activeId == id) {
+      await setActiveProfileId(profiles.isNotEmpty ? profiles.first.id : null);
+    }
+  }
+
+  Future<void> _saveProfiles(List<UserProfile> profiles) async {
+    final prefs = await _preferences;
+    await prefs.setString(
+      _profilesCacheKey,
+      jsonEncode(profiles.map((p) => p.toJson()).toList()),
+    );
+  }
+
+  /// Get favorites for a specific profile
+  Future<List<String>> getProfileFavorites(String profileId) async {
+    try {
+      final prefs = await _preferences;
+      final key = '${_favoritesCacheKey}_$profileId';
+      final favorites = prefs.getString(key);
+      if (favorites == null) return [];
+      return List<String>.from(jsonDecode(favorites) as List);
+    } catch (e) {
+      return [];
+    }
+  }
+
+  /// Add a favorite for a specific profile
+  Future<bool> addProfileFavorite(String profileId, String programId) async {
+    final favorites = await getProfileFavorites(profileId);
+    if (favorites.length >= _maxSavedPerProfile) return false;
+    if (favorites.contains(programId)) return true;
+
+    favorites.add(programId);
+    final prefs = await _preferences;
+    final key = '${_favoritesCacheKey}_$profileId';
+    await prefs.setString(key, jsonEncode(favorites));
+    return true;
+  }
+
+  /// Remove a favorite for a specific profile
+  Future<void> removeProfileFavorite(String profileId, String programId) async {
+    final favorites = await getProfileFavorites(profileId);
+    favorites.remove(programId);
+    final prefs = await _preferences;
+    final key = '${_favoritesCacheKey}_$profileId';
+    await prefs.setString(key, jsonEncode(favorites));
+  }
+
+  /// Check if a program is favorited for a profile
+  Future<bool> isProfileFavorite(String profileId, String programId) async {
+    final favorites = await getProfileFavorites(profileId);
+    return favorites.contains(programId);
+  }
+
+  /// Clear all favorites for a profile
+  Future<void> clearProfileFavorites(String profileId) async {
+    final prefs = await _preferences;
+    final key = '${_favoritesCacheKey}_$profileId';
+    await prefs.remove(key);
+  }
+
+  // ============================================
   // CACHE MANAGEMENT
   // ============================================
 
@@ -474,7 +784,7 @@ class ApiService {
       _groupsCacheKey,
       _areasCacheKey,
       _metadataCacheKey,
-      // Don't clear favorites
+      // Don't clear favorites or profiles
     ];
     for (final key in keys) {
       await prefs.remove(key);

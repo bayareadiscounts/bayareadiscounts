@@ -303,3 +303,113 @@ class FilterPreset {
     };
   }
 }
+
+/// Result from AI-powered search
+class AISearchResult {
+  final String message;
+  final List<Program> programs;
+
+  AISearchResult({
+    required this.message,
+    required this.programs,
+  });
+}
+
+/// Types of crisis situations detected in queries
+enum CrisisType {
+  emergency, // Call 911
+  mentalHealth, // Call 988 Suicide & Crisis Lifeline
+}
+
+/// User profile for personalized recommendations
+class UserProfile {
+  final String id;
+  final String name;
+  final String relationship;
+  final int colorIndex;
+  final List<String> eligibilityGroups;
+  final String? county;
+  final DateTime createdAt;
+
+  UserProfile({
+    required this.id,
+    required this.name,
+    required this.relationship,
+    required this.colorIndex,
+    this.eligibilityGroups = const [],
+    this.county,
+    required this.createdAt,
+  });
+
+  factory UserProfile.fromJson(Map<String, dynamic> json) {
+    return UserProfile(
+      id: json['id'] as String,
+      name: json['name'] as String,
+      relationship: json['relationship'] as String,
+      colorIndex: json['colorIndex'] as int,
+      eligibilityGroups: List<String>.from(json['eligibilityGroups'] ?? []),
+      county: json['county'] as String?,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'relationship': relationship,
+      'colorIndex': colorIndex,
+      'eligibilityGroups': eligibilityGroups,
+      'county': county,
+      'createdAt': createdAt.toIso8601String(),
+    };
+  }
+
+  UserProfile copyWith({
+    String? name,
+    String? relationship,
+    int? colorIndex,
+    List<String>? eligibilityGroups,
+    String? county,
+  }) {
+    return UserProfile(
+      id: id,
+      name: name ?? this.name,
+      relationship: relationship ?? this.relationship,
+      colorIndex: colorIndex ?? this.colorIndex,
+      eligibilityGroups: eligibilityGroups ?? this.eligibilityGroups,
+      county: county ?? this.county,
+      createdAt: createdAt,
+    );
+  }
+
+  /// Available relationship types
+  static const List<String> relationshipTypes = [
+    'Self',
+    'Spouse',
+    'Parent',
+    'Child',
+    'Sibling',
+    'Grandparent',
+    'Grandchild',
+    'Aunt/Uncle',
+    'Niece/Nephew',
+    'Cousin',
+    'Friend',
+    'Other',
+  ];
+
+  /// Profile color options (Material Design palette)
+  static const List<int> profileColors = [
+    0xFF2196F3, // Blue
+    0xFF4CAF50, // Green
+    0xFFF44336, // Red
+    0xFF9C27B0, // Purple
+    0xFFFF9800, // Orange
+    0xFF00BCD4, // Cyan
+    0xFFE91E63, // Pink
+    0xFF795548, // Brown
+    0xFF607D8B, // Blue Grey
+    0xFF009688, // Teal
+  ];
+}

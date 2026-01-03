@@ -22,6 +22,8 @@ import 'services/keyboard_shortcuts_service.dart';
 import 'services/desktop_menu_service.dart';
 import 'services/export_service.dart';
 import 'services/platform_service.dart';
+import 'widgets/smart_assistant.dart';
+import 'screens/program_detail_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // Sentry DSN - set via environment or leave empty to disable
@@ -498,6 +500,30 @@ class MainNavigationState extends State<MainNavigation> {
                   ),
                 ],
               ),
+      );
+    }
+
+    // Add SmartAssistant overlay (mobile only)
+    if (!useDesktopLayout) {
+      scaffold = Stack(
+        children: [
+          scaffold,
+          Consumer<ProgramsProvider>(
+            builder: (context, provider, _) => SmartAssistant(
+              onProgramTap: (program) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => ProgramDetailScreen(program: program),
+                  ),
+                );
+              },
+              onFavoriteToggle: (program) {
+                provider.toggleFavorite(program.id);
+              },
+              isFavorite: (id) => provider.isFavorite(id),
+            ),
+          ),
+        ],
       );
     }
 
