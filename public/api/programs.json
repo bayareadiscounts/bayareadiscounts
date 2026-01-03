@@ -1,6 +1,6 @@
 {
-  "total": 402,
-  "count": 402,
+  "total": 465,
+  "count": 465,
   "offset": 0,
   "programs": [
     {
@@ -25,7 +25,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "czi-community-space",
@@ -49,7 +49,7 @@
       "address": "801 Jefferson Avenue, Redwood City, CA 94063",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "dolly-parton-library",
@@ -73,7 +73,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "generation-thrive-spaces",
@@ -97,7 +97,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "google-community-space",
@@ -121,7 +121,7 @@
       "address": "San Francisco, CA",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ohana-floor-salesforce",
@@ -145,7 +145,7 @@
       "address": "Salesforce Tower, 415 Mission Street, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "season-of-sharing",
@@ -169,7 +169,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sobrato-conference-space",
@@ -193,7 +193,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "tides-converge",
@@ -217,7 +217,7 @@
       "address": "The Presidio, San Francisco, CA",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "va-vet-centers",
@@ -241,7 +241,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ymca",
@@ -266,7 +266,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bacn-emergency-childcare",
@@ -292,7 +292,7 @@
       "address": "1506 Mendocino Drive, Concord, CA 94521",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-state-preschool",
@@ -318,7 +318,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "calworks-child-care",
@@ -344,7 +344,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "childrens-council-sf",
@@ -370,7 +370,7 @@
       "address": "445 Church Street, San Francisco, CA 94114",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "choices-for-children",
@@ -396,7 +396,7 @@
       "address": "111 W. St. John Street, Suite 1100, San Jose, CA 95113",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "head-start",
@@ -422,7 +422,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bacn-boutique",
@@ -450,7 +450,7 @@
       "address": "1506 Mendocino Drive, Concord, CA 94521",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bacn-food-pantry-diaper",
@@ -476,7 +476,7 @@
       "address": "1506 Mendocino Drive, Concord, CA 94521",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-diaper-bank",
@@ -500,7 +500,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "st-anthonys-clothing",
@@ -524,7 +524,7 @@
       "address": "150 Golden Gate Avenue, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-grants-portal",
@@ -548,7 +548,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "hip-housing-home-sharing",
@@ -572,7 +572,7 @@
       "address": "364 S. Railroad Avenue, San Mateo, CA 94401",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lifemoves-services",
@@ -598,7 +598,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "haven-family-house",
@@ -625,7 +625,7 @@
       "address": "Menlo Park, CA",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "friendly-voices-seniors",
@@ -649,7 +649,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cid-housing-modifications",
@@ -674,7 +674,7 @@
       "address": "2001 Winward Way, Suite 103, San Mateo, CA 94404",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "echo-housing",
@@ -698,7 +698,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-fixit-clinics",
@@ -722,7 +722,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-library-sewing",
@@ -746,7 +746,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "recyclestuff",
@@ -770,7 +770,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-refuel-your-fun",
@@ -794,7 +794,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "acs-discovery-shop-menlo",
@@ -818,7 +818,7 @@
       "address": "891 Santa Cruz Avenue, Menlo Park, CA 94025",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ehp-donations",
@@ -842,7 +842,7 @@
       "address": "2411 Pulgas Avenue, East Palo Alto, CA 94303",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "family-connections-donations",
@@ -866,7 +866,7 @@
       "address": "109 S. Claremont Street, San Mateo, CA 94401",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "goodwill-sf-sm-marin",
@@ -890,7 +890,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "latino-commission-donations",
@@ -914,7 +914,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "nine-lives-foundation",
@@ -938,7 +938,7 @@
       "address": "3137 Jefferson Avenue, Redwood City, CA 94062",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "parca-thrift-shop",
@@ -962,7 +962,7 @@
       "address": "1101 El Camino Real, San Bruno, CA 94066",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "peninsula-humane-society-donations",
@@ -986,7 +986,7 @@
       "address": "1450 Rollins Road, Burlingame, CA 94010",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pick-of-the-litter",
@@ -1010,7 +1010,7 @@
       "address": "1101 California Drive, Burlingame, CA 94010",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "puente-de-la-costa-sur",
@@ -1034,7 +1034,7 @@
       "address": "620 North Street, Pescadero, CA 94060",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "st-francis-center-rw",
@@ -1058,7 +1058,7 @@
       "address": "139 Elm Street, Redwood City, CA 94062",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "st-vincent-de-paul-smc",
@@ -1082,7 +1082,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "samaritan-house-donations",
@@ -1106,7 +1106,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "savers-thrift",
@@ -1130,7 +1130,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "south-coast-childrens",
@@ -1154,7 +1154,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "salvation-army-smc",
@@ -1178,7 +1178,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ucpa-golden-gate",
@@ -1202,7 +1202,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-lgbt-center",
@@ -1229,7 +1229,7 @@
       "address": "1800 Market St, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "oakland-lgbtq-center",
@@ -1256,7 +1256,7 @@
       "address": "3207 Lakeshore Ave, Oakland, CA 94610",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pacific-center",
@@ -1284,7 +1284,7 @@
       "address": "2712 Telegraph Ave, Berkeley, CA 94705",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "rainbow-community-center",
@@ -1311,7 +1311,7 @@
       "address": "2118 Willow Pass Rd, Suite 500, Concord, CA 94520",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "billy-defrank-center",
@@ -1337,7 +1337,7 @@
       "address": "938 The Alameda, San Jose, CA 95126",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "spahr-center",
@@ -1364,7 +1364,7 @@
       "address": "910 Irwin St, San Rafael, CA 94901",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lgbtq-connection-napa",
@@ -1390,7 +1390,7 @@
       "address": "780 Lincoln Ave, Napa, CA 94559",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "queer-lifespace",
@@ -1416,7 +1416,7 @@
       "address": "2275 Market St,",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lyric-youth",
@@ -1442,7 +1442,7 @@
       "address": "127 Collingwood St, San Francisco, CA 94114",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "outlet-peninsula",
@@ -1468,7 +1468,7 @@
       "address": "Multiple locations in Redwood City, Mountain View, San Mateo",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "api-wellness-transthrive",
@@ -1494,7 +1494,7 @@
       "address": "726 Polk St, San Francisco, CA 94109",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "openhouse-sf",
@@ -1520,7 +1520,7 @@
       "address": "65 Laguna St, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pflag-sf",
@@ -1546,7 +1546,7 @@
       "address": "584 Castro St",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "trans-lifeline",
@@ -1571,7 +1571,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "trevor-project",
@@ -1596,7 +1596,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lgbt-asylum-project",
@@ -1622,7 +1622,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "tgi-justice-project",
@@ -1648,7 +1648,7 @@
       "address": "370 Turk St,",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "el-la-para-translatinas",
@@ -1674,7 +1674,7 @@
       "address": "2940 16th St, Suite 319, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "glbt-historical-society",
@@ -1701,7 +1701,7 @@
       "address": "4127 18th St, San Francisco, CA 94114",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "id-me-first-responders",
@@ -1726,7 +1726,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "govx-first-responder",
@@ -1752,7 +1752,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "verizon-first-responders",
@@ -1776,7 +1776,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "tmobile-first-responders",
@@ -1800,7 +1800,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "apple-first-responders",
@@ -1824,7 +1824,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "exploratorium-teacher-free",
@@ -1849,7 +1849,7 @@
       "address": "Pier 15, San Francisco, CA 94111",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bay-area-writing-project",
@@ -1873,7 +1873,7 @@
       "address": "UC Berkeley, Graduate School of Education",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "teacher-id-me-discounts",
@@ -1897,7 +1897,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-jobsnow",
@@ -1923,7 +1923,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "the-job-forum",
@@ -1948,7 +1948,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "oewd-citybuild",
@@ -1974,7 +1974,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "oewd-techsf",
@@ -2000,7 +2000,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "meda-workforce",
@@ -2026,7 +2026,7 @@
       "address": "2301 Mission St, Suite 301, San Francisco, CA 94110",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "iiba-immigration",
@@ -2051,7 +2051,7 @@
       "address": "1063 Market St, Suite 400, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "eblc-immigration",
@@ -2076,7 +2076,7 @@
       "address": "2921 Adeline St, Berkeley, CA 94703",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-hsh",
@@ -2101,7 +2101,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "project-homeless-connect",
@@ -2127,7 +2127,7 @@
       "address": "121 7th St, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "st-anthonys-dining",
@@ -2153,7 +2153,7 @@
       "address": "150 Golden Gate Ave, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "family-caregiver-alliance",
@@ -2179,7 +2179,7 @@
       "address": "785 Market St, Suite 750, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ihss",
@@ -2206,7 +2206,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "beyond-emancipation",
@@ -2231,7 +2231,7 @@
       "address": "505 14th St, Suite 900, Oakland, CA 94612",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "first-place-for-youth",
@@ -2256,7 +2256,7 @@
       "address": "426 17th St, Suite 200, Oakland, CA 94612",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "chafee-grant",
@@ -2281,7 +2281,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-casa",
@@ -2307,7 +2307,7 @@
       "address": "870 Market St, Suite 1065, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "five-keys",
@@ -2333,7 +2333,7 @@
       "address": "70 Oak Grove St, San Francisco, CA 94107",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "project-rebound",
@@ -2357,7 +2357,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "anti-recidivism-coalition",
@@ -2381,7 +2381,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "centerforce-reentry",
@@ -2406,7 +2406,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "act-fee-waivers",
@@ -2430,7 +2430,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ap-exam-fee-reductions",
@@ -2454,7 +2454,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-college-promise-grant",
@@ -2478,7 +2478,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "common-app-fee-waiver",
@@ -2502,7 +2502,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sat-fee-waivers",
@@ -2526,7 +2526,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "a-greener-source",
@@ -2550,7 +2550,7 @@
       "address": "30799 Wiegman Rd, Hayward, CA 94544",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "alameda-county-property-salvage",
@@ -2574,7 +2574,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "building-resources",
@@ -2599,7 +2599,7 @@
       "address": "701 Amador Street, San Francisco, CA 94124",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-federal-surplus-program",
@@ -2623,7 +2623,7 @@
       "address": "1625 Exposition Blvd, Sacramento, CA 95815",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "city-of-san-jose-surplus",
@@ -2647,7 +2647,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "santa-clara-county-surplus-donations",
@@ -2671,7 +2671,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "santa-clara-county-library-surplus",
@@ -2695,7 +2695,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-virtual-warehouse",
@@ -2719,7 +2719,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "scrap-sf",
@@ -2744,7 +2744,7 @@
       "address": "801 Toland Street, San Francisco, CA 94124",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-surplus-property",
@@ -2768,7 +2768,1574 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-child",
+      "name": "Retirement benefits for child",
+      "category": "federal-benefits",
+      "description": "Replacement income for underaged children of qualified retirees and families receiving retirement benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Replacement income for underaged children of qualified retirees and families receiving retirement benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is under 18 years\n- The applicant’s marital status is unmarried\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is the child or spouse of a person who is receiving retirement or disability benefits\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "families",
+        "people-with-disabilities",
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/retirement/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-supplemental-security-income-ssi-for-chi",
+      "name": "Supplemental Security Income (SSI) for Child",
+      "category": "federal-benefits",
+      "description": "Monthly cash payments to meet the basic needs of children with disabilities and caretakers with limited income, savings, or other resources. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Monthly cash payments to meet the basic needs of children with disabilities and caretakers with limited income, savings, or other resources. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is under 18 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n- The applicant has limited income and resources\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "families",
+        "people-with-disabilities",
+        "low-income"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/disability/apply-child.html",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-centers-for-medicare-with-disability",
+      "name": "Medicare with disability",
+      "category": "federal-benefits",
+      "description": "A health insurance program for Americans aged 65 and older, and for people with disabilities.\n",
+      "fullDescription": "A health insurance program for Americans aged 65 and older, and for people with disabilities.\n",
+      "whatTheyOffer": "Administers Medicare, Medicaid, and the Health Insurance Exchanges.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors",
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.medicare.gov/basics/get-started-with-medicare",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-veteran-s-pension-with-disability",
+      "name": "Veteran's pension with disability",
+      "category": "federal-benefits",
+      "description": "Monthly payments to wartime veterans with specific age, disability, income, or net worth.\n",
+      "fullDescription": "Monthly payments to wartime veterans with specific age, disability, income, or net worth.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years\n- The applicant has a disability or impairment\n- The applicant has limited income and resources\n- The applicant served in the active military\n- The applicant’s service status is: honorable, general or other than dishonorable discharge\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors",
+        "people-with-disabilities",
+        "low-income",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/pension/how-to-apply/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-veteran-readiness-and-employment-vr-e",
+      "name": "Veteran readiness and employment (VR&E)",
+      "category": "federal-benefits",
+      "description": "Employment support for service members and veterans with a disability that limits their ability to work.\n",
+      "fullDescription": "Employment support for service members and veterans with a disability that limits their ability to work.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n- The applicant served in the active military\n- The applicant's service status is: active-duty service member or honorable, general or other than dishonorable discharge\n- The applicant’s disability was caused or made worse by their active-duty military service\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/careers-employment/vocational-rehabilitation/eligibility/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-combat-related-special-compensation-crsc",
+      "name": "Combat-Related Special Compensation (CRSC)",
+      "category": "federal-benefits",
+      "description": "Pays added benefits to retirees with at least 20 years of service and who receive VA compensation for combat-related disabilities.\n",
+      "fullDescription": "Pays added benefits to retirees with at least 20 years of service and who receive VA compensation for combat-related disabilities.\n",
+      "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n- The applicant served in the active military\n- The applicant’s service status is: retired from the service\n- The applicant’s disability was caused or made worse by their active-duty military service\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://militarypay.defense.gov/Benefits/New-Retired-Benefits-Program/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-ticket-to-work-program",
+      "name": "Ticket to Work Program",
+      "category": "federal-benefits",
+      "description": "Career development for Social Security disability beneficiaries ages 18 to 64 years who would like to work.\n",
+      "fullDescription": "Career development for Social Security disability beneficiaries ages 18 to 64 years who would like to work.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is between 18-64 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/work/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-supplemental-security-income-ssi",
+      "name": "Supplemental Security Income (SSI)",
+      "category": "federal-benefits",
+      "description": "Financial assistance to adults with disabilities, and people 65 and older without disabilities who meet specific financial limits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to adults with disabilities, and people 65 and older without disabilities who meet specific financial limits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n- The applicant has limited income and resources\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "low-income"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/ssi/adults.html",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for",
+      "name": "Social Security disability insurance for child with disabilities",
+      "category": "federal-benefits",
+      "description": "Financial assistance to adult children with disabilities who are unable to work and whose parents receive disability benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to adult children with disabilities who are unable to work and whose parents receive disability benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 18 years\n- The applicant’s marital status is unmarried\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/disability/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance",
+      "name": "Social Security Disability Insurance",
+      "category": "federal-benefits",
+      "description": "Financial assistance to people with disabilities. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to people with disabilities. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- You worked and paid Social Security taxes on your earnings\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/disability/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-financial-assistance-and-social-services",
+      "name": "Financial Assistance and Social Services (FASS)",
+      "category": "federal-benefits",
+      "description": "Direct assistance to American Indians and Alaska Natives, including financial, child, burial, emergency, and adult care assistance.\n",
+      "fullDescription": "Direct assistance to American Indians and Alaska Natives, including financial, child, burial, emergency, and adult care assistance.\n",
+      "whatTheyOffer": "The Bureau of Indian Affairs enhances the quality of life and protects and improves the trust assets of American Indians, Indian tribes, and Alaska Natives.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has limited income and resources\n- The applicant is a member of an American Indian Tribe or an Alaska Native\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "low-income",
+        "native-americans",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.bia.gov/bia/ois/dhs/financial-assistance",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-federal-retirement-thrift-savings-plan-tsp",
+      "name": "Thrift Savings Plan (TSP)",
+      "category": "federal-benefits",
+      "description": "A retirement savings and investment plan sponsored by the Federal Government for members of the uniformed services and federal employees. The TSP offers similar savings and tax benefits that private corporations offer under '401(k)' plans.\n",
+      "fullDescription": "A retirement savings and investment plan sponsored by the Federal Government for members of the uniformed services and federal employees. The TSP offers similar savings and tax benefits that private corporations offer under '401(k)' plans.\n",
+      "whatTheyOffer": "Helps current and former civilian employees and members of the uniformed services prepare for their retirement with the Thrift Savings Plan (TSP).\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant worked and paid Social Security taxes\n- The applicant is over 60 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant served in the active military\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.tsp.gov/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-parents",
+      "name": "Retirement benefits for parents",
+      "category": "federal-benefits",
+      "description": "Replacement income for qualified retirees and their families.\n",
+      "fullDescription": "Replacement income for qualified retirees and their families.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant’s marital status is unmarried or divorced\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is caring for the child of someone who died, is retired, or has a disability, and the child has a disability or is under 16 years\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/retirement/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-centers-for-medicare-savings-programs-msp",
+      "name": "Medicare Savings Programs (MSP)",
+      "category": "federal-benefits",
+      "description": "Get help paying Medicare insurance, like deductibles, coinsurance, and copayments.\n",
+      "fullDescription": "Get help paying Medicare insurance, like deductibles, coinsurance, and copayments.\n",
+      "whatTheyOffer": "Administers Medicare, Medicaid, and the Health Insurance Exchanges.\n",
+      "howToGetIt": "Eligibility requirements:\n-  The applicant is at least 65 years\n- The applicant has a disability or impairment\n- The applicant has limited income and resources\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors",
+        "people-with-disabilities",
+        "low-income"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-veteran-s-pension",
+      "name": "Veteran's pension",
+      "category": "federal-benefits",
+      "description": "Monthly payments to wartime veterans with specific age, disability, income, or net worth criteria.\n",
+      "fullDescription": "Monthly payments to wartime veterans with specific age, disability, income, or net worth criteria.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years\n- The applicant has limited income and resources\n- The applicant served in the active military\n- The applicant’s service status is: honorable, general or other than dishonorable discharge\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors",
+        "low-income",
+        "veterans",
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/pension/how-to-apply/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-supplemental-security-income-ssi-for-adu",
+      "name": "Supplemental Security Income (SSI) for adults",
+      "category": "federal-benefits",
+      "description": "Financial assistance to meet basic needs for food, clothing, and shelter for people who are older or with disabilities. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to meet basic needs for food, clothing, and shelter for people who are older or with disabilities. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has limited income and resources\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors",
+        "low-income",
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/ssi/65older.html",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits",
+      "name": "Retirement benefits",
+      "category": "federal-benefits",
+      "description": "Replacement income for qualified retirees and their families.&nbsp;You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Replacement income for qualified retirees and their families.&nbsp;You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant worked and paid Social Security taxes\n- The applicant is at least 62 years\n- The applicant is a US citizen or an eligible non-citizen\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/retirement/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-coal-miner-worker-s-compensation",
+      "name": "Coal miner worker's compensation",
+      "category": "federal-benefits",
+      "description": "Compensation to coal miners who were totally disabled by black lung disease (pneumoconiosis) or surviving spouses of miners whose deaths are attributable to this disease.&nbsp;Also provides medical coverage for treatment of related lung diseases.\n",
+      "fullDescription": "Compensation to coal miners who were totally disabled by black lung disease (pneumoconiosis) or surviving spouses of miners whose deaths are attributable to this disease.&nbsp;Also provides medical coverage for treatment of related lung diseases.\n",
+      "whatTheyOffer": "Promotes and improves the welfare, working conditions, opportunities, benefits and rights of wage earners, job seekers, and retirees of the United States.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n- The applicant worked in the coal mining industry and suffer from black lung disease\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.dol.gov/agencies/owcp/dcmwc/filing_guide_miner",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-coal-miner-worker-s-compensation-for-sur",
+      "name": "Coal miner worker's compensation for surviving spouse",
+      "category": "federal-benefits",
+      "description": "Compensation to surviving spouses of coal miners totally disabled by or whose deaths are attributable to black lung disease (pneumoconiosis).\n",
+      "fullDescription": "Compensation to surviving spouses of coal miners totally disabled by or whose deaths are attributable to black lung disease (pneumoconiosis).\n",
+      "whatTheyOffer": "Promotes and improves the welfare, working conditions, opportunities, benefits and rights of wage earners, job seekers, and retirees of the United States.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked in the coal mines and their death was due to black lung disease (pneumoconiosis)\n- The applicant's relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.dol.gov/agencies/owcp/dcmwc/filing_guide_survivor",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-presidential-memorial-certificate",
+      "name": "Presidential Memorial Certificate",
+      "category": "federal-benefits",
+      "description": "An engraved Presidential Memorial Certificate (PMC) signed by the current president honoring the military service of a veteran or reservist.\n",
+      "fullDescription": "An engraved Presidential Memorial Certificate (PMC) signed by the current president honoring the military service of a veteran or reservist.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member, honorable, general or other than dishonorable discharge, or member of the National Guard/Reserves\n- One of the following applies to the deceased: died while on active duty, died as a result of a service-related disability/illness, died while receiving/traveling to VA care, or died while receiving/eligible for VA compensation\n- The applicant’s relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/burials-memorials/memorial-items/presidential-memorial-certificates/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-veterans-burial-allowance",
+      "name": "Veterans burial allowance",
+      "category": "federal-benefits",
+      "description": "Assistance with burial, funeral, and transportation costs of a deceased veteran.\n",
+      "fullDescription": "Assistance with burial, funeral, and transportation costs of a deceased veteran.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased died within the last two years\n- The deceased served in the active military\n- The deceased's service status is: honorable, general or other than dishonorable discharge\n- One of the following applies to the deceased: died as a result of a service-related disability/illness, died while receiving/traveling to VA care, or died while receiving/eligible for VA compensation\n- The applicant's relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/burials-memorials/veterans-burial-allowance/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-survivors-pension-for-spouse",
+      "name": "Survivors pension for spouse",
+      "category": "federal-benefits",
+      "description": "Monthly payments to surviving spouses of wartime veterans with certain income and net worth limits.\n",
+      "fullDescription": "Monthly payments to surviving spouses of wartime veterans with certain income and net worth limits.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The deceased's service status is: honorable, general or other than dishonorable discharge\n- The applicant’s marital status is unmarried or widowed\n- The applicant’s relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/pension/survivors-pension/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-survivors-pension-for-child-with-disabil",
+      "name": "Survivors pension for child with disabilities",
+      "category": "federal-benefits",
+      "description": "Monthly payments to qualified unmarried dependent children with disabilities of wartime veterans with certain income and net worth limits.\n",
+      "fullDescription": "Monthly payments to qualified unmarried dependent children with disabilities of wartime veterans with certain income and net worth limits.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The deceased's service status is: honorable, general or other than dishonorable discharge\n- The applicant is under 18 years\n- The applicant's marital status is unmarried\n- The applicant's relationship to the deceased is: child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/pension/survivors-pension/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-veterans-medallions",
+      "name": "Veterans medallions",
+      "category": "federal-benefits",
+      "description": "A headstone medallion, grave marker, and Presidential Memorial Certificate for eligible veterans buried in a private cemetery.\n",
+      "fullDescription": "A headstone medallion, grave marker, and Presidential Memorial Certificate for eligible veterans buried in a private cemetery.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The deceased's service status is: active-duty service member, honorable, general or other than dishonorable discharge, or a member of the National Guard/Reserves\n- The deceased is buried in a grave with a privately purchased headstone or an unmarked grave\n- The applicant's relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-veterans-headstone-and-grave-marker",
+      "name": "Veterans headstone and grave marker",
+      "category": "federal-benefits",
+      "description": "A headstone, grave or niche marker, or medallion to honor a veteran, service member, or eligible family member.\n",
+      "fullDescription": "A headstone, grave or niche marker, or medallion to honor a veteran, service member, or eligible family member.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The deceased's service status is: active-duty service member, honorable, general or other than dishonorable discharge, or member of the National Guard/Reserves\n- The deceased is buried in a grave with a privately purchased headstone or an unmarked grave\n- The applicant's relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-life-insurance-for-survivors-of-veterans",
+      "name": "Life insurance for survivors of veterans",
+      "category": "federal-benefits",
+      "description": "Payment from a veteran's or service member's life insurance policy.\n",
+      "fullDescription": "Payment from a veteran's or service member's life insurance policy.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member, honorable, general or other than dishonorable discharge, retired from the service, or member of the National Guard/Reserves\n- The applicant’s relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.benefits.va.gov/INSURANCE/sglivgli.asp",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-dependency-and-indemnity-compensation-di",
+      "name": "Dependency and Indemnity Compensation (DIC)",
+      "category": "federal-benefits",
+      "description": "Tax-free financial assistance to eligible dependents, spouses, or parents of service members and veterans.\n",
+      "fullDescription": "Tax-free financial assistance to eligible dependents, spouses, or parents of service members and veterans.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member or honorable, general or other than dishonorable discharge\n- One of the following applies to the deceased: died while on active duty, died as a result of a service-related disability/illness, or died while receiving/eligible for VA compensation\n- The applicant’s relationship to the deceased is: child, parent, or spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/disability/dependency-indemnity-compensation/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-civilian-health-and-medical-program-of-t",
+      "name": "Civilian Health and Medical Program of the VA (CHAMPVA)",
+      "category": "federal-benefits",
+      "description": "Health insurance for dependents and surviving spouses covering some health care services, supplies, and pharmacy benefits.\n",
+      "fullDescription": "Health insurance for dependents and surviving spouses covering some health care services, supplies, and pharmacy benefits.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member or honorable, general or other than dishonorable discharge\n- One of the following applies to the deceased: died while on active duty or died as a result of a service-related disability/illness\n- The applicant's marital status is: unmarried or widowed\n- The applicant’s relationship to the deceased is: child or spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/health-care/family-caregiver-benefits/champva/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-burial-benefits",
+      "name": "Burial benefits",
+      "category": "federal-benefits",
+      "description": "Burial and transport assistance for the deceased, and travel support for the spouse, children, and immediate family members of the service member.\n",
+      "fullDescription": "Burial and transport assistance for the deceased, and travel support for the spouse, children, and immediate family members of the service member.\n",
+      "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty member\n- One of the following applies to the deceased: died on active duty\n- The applicant's relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.militaryonesource.mil/benefits/funeral-and-burial-benefits-for-service-members/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-lump-sum-death-benefit",
+      "name": "Lump-sum death benefit",
+      "category": "federal-benefits",
+      "description": "Financial assistance of $255 to surviving spouses of a deceased person who qualified for Social Security benefits.\n",
+      "fullDescription": "Financial assistance of $255 to surviving spouses of a deceased person who qualified for Social Security benefits.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The deceased died within the last two years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant’s relationship to the deceased is: spouse or child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/survivors/ifyou.html#h7",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-additional-disability-benefits-for-veter",
+      "name": "Additional disability benefits for veterans",
+      "category": "federal-benefits",
+      "description": "Grants for people with a disability related to their military service to support with adaptive-equipment, special vehicles, clothing, dental assistance, and more.\n",
+      "fullDescription": "Grants for people with a disability related to their military service to support with adaptive-equipment, special vehicles, clothing, dental assistance, and more.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n- The applicant served in the active military\n- The applicant’s service status is: active-duty service member, Honorable, general or other than dishonorable discharge, or retired from the service\n- The applicant’s disability was caused or made worse by their active-duty military service\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/disability/eligibility/special-claims/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-financial-assistance-and-social-services",
+      "name": "Financial Assistance and Social Services (FASS) - Burial assistance",
+      "category": "federal-benefits",
+      "description": "Burial assistance for deceased American Indians who do not have resources for funeral expenses or with certain income and net worth limits.\n",
+      "fullDescription": "Burial assistance for deceased American Indians who do not have resources for funeral expenses or with certain income and net worth limits.\n",
+      "whatTheyOffer": "The Bureau of Indian Affairs enhances the quality of life and protects and improves the trust assets of American Indians, Indian tribes, and Alaska Natives.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased was a member of a federally recognized American Indian Tribe or an Alaska Native.\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.bia.gov/bia/ois/dhs/financial-assistance",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-parents-caring-fo",
+      "name": "Survivors benefits for parents caring for a child",
+      "category": "federal-benefits",
+      "description": "Social Security survivors benefits to the person providing care for the child of a deceased worker.\n",
+      "fullDescription": "Social Security survivors benefits to the person providing care for the child of a deceased worker.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The applicant’s marital status is unmarried or widowed\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is caring for the child of someone who died, is retired, or has a disability, and the child has a disability or is under 16 years\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/forms/ssa-5.html",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-annuity-for-military-surviving-spouses",
+      "name": "Annuity for military surviving spouses",
+      "category": "federal-benefits",
+      "description": "Financial support for surviving spouses of members of the uniformed services.\n",
+      "fullDescription": "Financial support for surviving spouses of members of the uniformed services.\n",
+      "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased died before 1978\n- The deceased served in the active military\n- The service status of the deceased is: retired from the service\n- The applicant’s relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://militarypay.defense.gov/Benefits/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-education-benefits-gi-bill-for-survivors",
+      "name": "Education benefits (GI Bill) for survivors",
+      "category": "federal-benefits",
+      "description": "VA education benefits or job training for dependents and survivors of a veteran. You must have a high school or GED diploma to be eligible.\n",
+      "fullDescription": "VA education benefits or job training for dependents and survivors of a veteran. You must have a high school or GED diploma to be eligible.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member or honorable, general or other than dishonorable discharge\n- One of the following applies to the deceased: died while on active duty or died as a result of a service-related disability/illness\n- The applicant’s relationship to the deceased is: spouse or child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/education/survivor-dependent-benefits/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-child-with-disabi",
+      "name": "Survivors benefits for child with disabilities",
+      "category": "federal-benefits",
+      "description": "Social Security survivors benefits to a child, stepchild, grandchild, or adopted child with disabilities of eligible workers. You only need one application to apply for all SSA benefits.\n",
+      "fullDescription": "Social Security survivors benefits to a child, stepchild, grandchild, or adopted child with disabilities of eligible workers. You only need one application to apply for all SSA benefits.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The applicant is under 18 years\n- The applicant's marital status is unmarried\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant’s relationship to the deceased is: child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/survivors/ifyou.html#h4",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-spouse-with-disab",
+      "name": "Survivors benefits for spouse with disabilities",
+      "category": "federal-benefits",
+      "description": "Benefits for surviving spouses and certain divorced spouses with disabilities. Eligible survivors must have a disability that prevents them from working for more than a year. You only need one application to apply for all SSA benefits.\n",
+      "fullDescription": "Benefits for surviving spouses and certain divorced spouses with disabilities. Eligible survivors must have a disability that prevents them from working for more than a year. You only need one application to apply for all SSA benefits.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The applicant is at least 50 years\n- The applicant’s marital status is widowed or divorced\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant’s relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/survivors/ifyou.html#h2",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-public-safety-officers-educational-assis",
+      "name": "Public safety officers' Educational Assistance Program",
+      "category": "federal-benefits",
+      "description": "Financial assistance for higher education to spouses and children of police, fire, and emergency public safety officers killed in the line of duty.\n",
+      "fullDescription": "Financial assistance for higher education to spouses and children of police, fire, and emergency public safety officers killed in the line of duty.\n",
+      "whatTheyOffer": "Offers financial and educational support to help families of fallen public safety officers.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased was a public safety officer who died in the line of duty\n- The applicant’s relationship to the deceased is: spouse or child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://psob.bja.ojp.gov/PSOB_Education2018.pdf",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-public-safety-officers-death-benefits",
+      "name": "Public safety officers' death benefits",
+      "category": "federal-benefits",
+      "description": "A one-time benefit for survivors of law enforcement officers, firefighters, and other first responders whose deaths were related to an injury sustained during the line of duty.\n",
+      "fullDescription": "A one-time benefit for survivors of law enforcement officers, firefighters, and other first responders whose deaths were related to an injury sustained during the line of duty.\n",
+      "whatTheyOffer": "Offers financial and educational support to help families of fallen public safety officers.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased was a public safety officer who died in the line of duty\n- The applicant’s relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://bja.ojp.gov/program/psob/benefits",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-burial-flag",
+      "name": "Burial flag",
+      "category": "federal-benefits",
+      "description": "A United States flag for the coffin or urn in honor of the military service member.\n",
+      "fullDescription": "A United States flag for the coffin or urn in honor of the military service member.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member, honorable, general or other than dishonorable discharge, or member of the National Guard/Reserves\n- The applicant's relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/burials-memorials/memorial-items/burial-flags/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-home-loan-program-for-survivors",
+      "name": "Home loan program for survivors",
+      "category": "federal-benefits",
+      "description": "A VA-backed home loan to surviving spouses of veterans.\n",
+      "fullDescription": "A VA-backed home loan to surviving spouses of veterans.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member or honorable, general or other than dishonorable discharge\n- One of the following applies to the deceased: died while on active duty, died as a result of a service-related disability/illness, Died while receiving/traveling to VA care, or died while receiving/eligible for VA compensation\n- The applicant’s marital status is\n- The applicant’s relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/housing-assistance/home-loans/surviving-spouse/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-child",
+      "name": "Survivors benefits for child",
+      "category": "federal-benefits",
+      "description": "Offers Social Security survivors benefits to a child, stepchild, grandchild, or adopted child of eligible workers.\n",
+      "fullDescription": "Offers Social Security survivors benefits to a child, stepchild, grandchild, or adopted child of eligible workers.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The applicant is under 18 years\n- The applicant's marital status is unmarried\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant’s relationship to the deceased is: child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/survivors/ifyou.html#h4",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-survivor-benefit-plan",
+      "name": "Survivor benefit plan",
+      "category": "federal-benefits",
+      "description": "Offers up to 55% of a service member's retired pay for survivors of active duty service members and some retired and reserve members.\n",
+      "fullDescription": "Offers up to 55% of a service member's retired pay for survivors of active duty service members and some retired and reserve members.\n",
+      "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member, retired from the service, or member of the National Guard/Reserves\n- One of the following applies to the deceased: died while on active duty or died while on inactive-duty service training\n- The applicant’s relationship to the deceased is: spouse or child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://bja.ojp.gov/program/psob/benefits",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-burial-in-va-national-cemetery",
+      "name": "Burial in VA national cemetery",
+      "category": "federal-benefits",
+      "description": "Burial in VA national cemeteries for eligible veterans, service members, and some family members.\n",
+      "fullDescription": "Burial in VA national cemeteries for eligible veterans, service members, and some family members.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member, honorable, general or other than dishonorable discharge, or member of the National Guard/Reserves\n- One of the following applies to the deceased: died while on active duty, died as a result of a service-related disability/illness, died while receiving/traveling to VA care, or died while receiving/eligible for VA compensation\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/burials-memorials/eligibility/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-internal-revenue-tax-advantaged-retirement-plans-informat",
+      "name": "Tax-advantaged retirement plans information",
+      "category": "federal-benefits",
+      "description": "Learn about tax-advantaged retirement plans and how to manage retirement savings during changes in your life.\n",
+      "fullDescription": "Learn about tax-advantaged retirement plans and how to manage retirement savings during changes in your life.\n",
+      "whatTheyOffer": "Administers and enforces U.S. federal tax laws.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 62 years\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.irs.gov/retirement-plans",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-internal-revenue-tax-relief-programs-for-people-with-disa",
+      "name": "Tax relief programs for people with disabilities",
+      "category": "federal-benefits",
+      "description": "Programs that help people with disabilities save money with tax-favored accounts and maintain health, independence, and quality of life\n",
+      "fullDescription": "Programs that help people with disabilities save money with tax-favored accounts and maintain health, independence, and quality of life\n",
+      "whatTheyOffer": "Administers and enforces U.S. federal tax laws.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.irs.gov/publications/p907",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for",
+      "name": "Social Security disability insurance for child",
+      "category": "federal-benefits",
+      "description": "Financial assistance to minor children whose parents receive disability benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to minor children whose parents receive disability benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is under 18 years\n- The applicant’s marital status is unmarried\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is the child or spouse of a person who is receiving retirement or disability benefits\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "families",
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/disability/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for",
+      "name": "Social Security disability insurance for parents",
+      "category": "federal-benefits",
+      "description": "Financial assistance to people with disabilities and their family members. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to people with disabilities and their family members. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant’s marital status is unmarried or divorced\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is caring for the child of someone who died, is retired, or has a disability, and the child has a disability or is under 16 years\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/disability/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for",
+      "name": "Social Security disability insurance for spouse",
+      "category": "federal-benefits",
+      "description": "Financial assistance to people with disabilities and their family. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "Financial assistance to people with disabilities and their family. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 62 years\n- The applicant's marital status is married\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is the child or spouse of a person who is receiving retirement or disability benefits\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/disability/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-spouse",
+      "name": "Retirement benefits for spouse",
+      "category": "federal-benefits",
+      "description": "A replacement income for spouses of qualified retirees. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "A replacement income for spouses of qualified retirees. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 62 years\n- The applicant’s marital status is married\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is the child or spouse of a person who is receiving retirement or disability benefits\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/retirement/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-child-with-disab",
+      "name": "Retirement benefits for child with disabilities",
+      "category": "federal-benefits",
+      "description": "A replacement income for adult children with disabilities of qualified retirees and families receiving retirement benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "fullDescription": "A replacement income for adult children with disabilities of qualified retirees and families receiving retirement benefits. You only need one application to apply for all disability benefits offered by SSA.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is under 18 years\n- The applicant’s marital status is unmarried\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "families",
+        "people-with-disabilities",
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/retirement/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-public-safety-officers-disability-benefi",
+      "name": "Public safety officers' disability benefits",
+      "category": "federal-benefits",
+      "description": "A one-time benefit to public safety officers who were permanently and totally disabled as a result of an injury while in the line of duty.\n",
+      "fullDescription": "A one-time benefit to public safety officers who were permanently and totally disabled as a result of an injury while in the line of duty.\n",
+      "whatTheyOffer": "Offers financial and educational support to help families of fallen public safety officers.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n- The applicant is unable to work for a year or more because of a disability\n- You are a public safety officer who was catastrophically injured in the line of duty\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://bja.ojp.gov/program/psob/benefits",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-centers-for-medicare-with-retirement",
+      "name": "Medicare with retirement",
+      "category": "federal-benefits",
+      "description": "A health insurance program for Americans aged 65 and older, and for people with disabilities.\n",
+      "fullDescription": "A health insurance program for Americans aged 65 and older, and for people with disabilities.\n",
+      "whatTheyOffer": "Administers Medicare, Medicaid, and the Health Insurance Exchanges.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years old\n- The applicant is a US citizen or an eligible non-citizen\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.medicare.gov/basics/get-started-with-medicare",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-concurrent-retirement-and-disability-pay",
+      "name": "Concurrent Retirement and Disability Payments (CRDP)",
+      "category": "federal-benefits",
+      "description": "Offsets military retired pay due for VA disability compensation. Eligibility is automatic. No application is needed.\n",
+      "fullDescription": "Offsets military retired pay due for VA disability compensation. Eligibility is automatic. No application is needed.\n",
+      "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant’s date of birth is 60 years or older\n- The applicant has a disability or impairment\n- The deceased served in the active military\n- The applicant’s service status is: retired from the service or member of the National Guard or Reserves\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "survivors",
+        "seniors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://militarypay.defense.gov/Benefits/New-Retired-Benefits-Program/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-death-gratuity",
+      "name": "Death gratuity",
+      "category": "federal-benefits",
+      "description": "Tax free payment of $100,000 to eligible survivors of members of the Armed Forces who died while on active duty or while serving in certain reserve statuses.\n",
+      "fullDescription": "Tax free payment of $100,000 to eligible survivors of members of the Armed Forces who died while on active duty or while serving in certain reserve statuses.\n",
+      "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member or member of the National Guard/Reserves\n- One of the following applies to the deceased: died while on active duty or Died while on inactive-duty service training\n- The applicant’s relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://militarypay.defense.gov/Benefits/Death-Gratuity/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-disability-compensation",
+      "name": "Disability compensation",
+      "category": "federal-benefits",
+      "description": "A monthly tax-free payment to veterans who got sick or injured while serving in the military or whose service made an existing condition worse.\n",
+      "fullDescription": "A monthly tax-free payment to veterans who got sick or injured while serving in the military or whose service made an existing condition worse.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n- The applicant served in the active military\n- The applicant’s disability was caused or made worse by their active-duty military service\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/disability/eligibility/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-extra-help-with-medicare-prescription-dr",
+      "name": "Extra help with Medicare prescription drug plan (Part D) costs",
+      "category": "federal-benefits",
+      "description": "Helps with the cost of prescription drugs, like deductibles and copays.&nbsp;\n",
+      "fullDescription": "Helps with the cost of prescription drugs, like deductibles and copays.&nbsp;\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years old\n- The applicant has a disability or impairment\n- The applicant has limited income and resources\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "seniors",
+        "people-with-disabilities",
+        "low-income"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/medicare/prescriptionhelp.html",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-housing-improvement-program",
+      "name": "Housing improvement program",
+      "category": "federal-benefits",
+      "description": "Helps with home repair, renovation, replacement, and new housing for American Indian and Alaska Native individuals and families with no resources for standard housing.\n",
+      "fullDescription": "Helps with home repair, renovation, replacement, and new housing for American Indian and Alaska Native individuals and families with no resources for standard housing.\n",
+      "whatTheyOffer": "The Bureau of Indian Affairs enhances the quality of life and protects and improves the trust assets of American Indians, Indian tribes, and Alaska Natives.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has limited income and resources\n- The applicant is a member of an American Indian Tribe or an Alaska Native\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "low-income",
+        "native-americans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.bia.gov/bia/ois/dhs/housing-improvement-program",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-veterans-affairs-survivors-pension-for-child",
+      "name": "Survivors pension for child",
+      "category": "federal-benefits",
+      "description": "Monthly payments to qualified unmarried dependent children of deceased wartime veterans.\n",
+      "fullDescription": "Monthly payments to qualified unmarried dependent children of deceased wartime veterans.\n",
+      "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: honorable, general or other than dishonorable discharge\n- The applicant is under 18 years\n- The applicant’s marital status is unmarried\n- The applicant’s relationship to the deceased is: child\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors",
+        "families",
+        "veterans"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.va.gov/pension/survivors-pension/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-parents",
+      "name": "Survivors benefits for parents",
+      "category": "federal-benefits",
+      "description": "Social Security survivors benefits to parents of eligible workers.\n",
+      "fullDescription": "Social Security survivors benefits to parents of eligible workers.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The applicant is at least 62 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant’s relationship to the deceased is: parent\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/survivors/ifyou.html#h5",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-spouse",
+      "name": "Survivors benefits for spouse",
+      "category": "federal-benefits",
+      "description": "Social Security survivors benefits to surviving spouses and certain divorced spouses of eligible workers.\n",
+      "fullDescription": "Social Security survivors benefits to surviving spouses and certain divorced spouses of eligible workers.\n",
+      "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+      "howToGetIt": "Eligibility requirements:\n- The deceased worked and paid Social Security taxes\n- The applicant is at least 60 years\n- The applicant’s marital status is widowed or divorced\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant’s relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "survivors"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.ssa.gov/benefits/survivors/ifyou.html#h2",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-library-of-braille-and-audio-materials-service",
+      "name": "Braille and audio materials service",
+      "category": "federal-benefits",
+      "description": "Braille and audio materials and services at no cost for people who are blind or have a visual, physical, perceptual, or reading disability.\n",
+      "fullDescription": "Braille and audio materials and services at no cost for people who are blind or have a visual, physical, perceptual, or reading disability.\n",
+      "whatTheyOffer": "Provides Congress with research for the legislative process, administers the national copyright system, and manages the largest collection of books, recordings, photographs, maps and manuscripts in the world.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has a disability or impairment\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "people-with-disabilities"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.loc.gov/nls/enrollment-equipment/apply-for-nls-service/",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
+    },
+    {
+      "id": "federal-department-of-housing-choice-voucher-section-8",
+      "name": "Housing choice voucher (Section 8)",
+      "category": "federal-benefits",
+      "description": "Learn if you are eligible for a Section 8 housing choice voucher to pay rent for private housing. Housing choice vouchers are for families with low incomes, seniors, and people with disabilities.Find your public housing agency to learn if you are eligible and apply.\n",
+      "fullDescription": "Learn if you are eligible for a Section 8 housing choice voucher to pay rent for private housing. Housing choice vouchers are for families with low incomes, seniors, and people with disabilities.Find your public housing agency to learn if you are eligible and apply.\n",
+      "whatTheyOffer": "Administers programs that provide housing and community development assistance and ensures fair and equal housing opportunities for everyone.\n",
+      "howToGetIt": "Eligibility requirements:\n- The applicant has limited income and resources\n- The applicant is a U.S. citizen or eligible non-citizen\n\nVisit the official website or call for more information.\n",
+      "groups": [
+        "low-income"
+      ],
+      "areas": [
+        "Nationwide"
+      ],
+      "city": null,
+      "website": "https://www.usa.gov/housing-voucher-section-8",
+      "cost": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "requirements": null,
+      "howToApply": null,
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "calable",
@@ -2792,7 +4359,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "aarp-tax-aide",
@@ -2817,7 +4384,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "alameda-county-vita",
@@ -2842,7 +4409,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "community-gatepath-vita",
@@ -2866,7 +4433,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "csu-east-bay-vita",
@@ -2890,7 +4457,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "irs-vita-locator",
@@ -2915,7 +4482,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ebaldc-vita",
@@ -2940,7 +4507,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "samaritan-house-vita",
@@ -2965,7 +4532,7 @@
       "address": "4031 Pacific Blvd, San Mateo, CA 94403",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-state-vita",
@@ -2991,7 +4558,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sparkpoint-fremont-vita",
@@ -3016,7 +4583,7 @@
       "address": "39155 Liberty Street, Fremont, CA 94538",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "united-way-bay-area-taxes",
@@ -3040,7 +4607,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "baec-entrepreneur-center",
@@ -3064,7 +4631,7 @@
       "address": "3300 College Drive, Building 1, San Bruno, CA 94066",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-score",
@@ -3088,7 +4655,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "san-mateo-sbdc",
@@ -3112,7 +4679,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "nova-workforce",
@@ -3137,7 +4704,7 @@
       "address": "505 W. Olive Avenue, Suite 550, Sunnyvale, CA 94086",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ibank-small-business",
@@ -3161,7 +4728,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "alameda-food-bank",
@@ -3186,7 +4753,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "alameda-meals-on-wheels",
@@ -3211,7 +4778,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bernal-heights-brown-bag",
@@ -3237,7 +4804,7 @@
       "address": "515 Cortland Avenue, San Francisco, CA 94110",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "calfresh-online",
@@ -3261,7 +4828,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "calfresh-rmp",
@@ -3288,7 +4855,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "food-bank-contra-costa-solano",
@@ -3313,7 +4880,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "j-sei-meals-on-wheels",
@@ -3337,7 +4904,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "market-match",
@@ -3361,7 +4928,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "mow-contra-costa",
@@ -3386,7 +4953,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "mow-diablo-region",
@@ -3411,7 +4978,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "mow-san-francisco",
@@ -3436,7 +5003,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "mow-san-mateo",
@@ -3461,7 +5028,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "project-open-hand",
@@ -3488,7 +5055,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "rainbow-grocery",
@@ -3513,7 +5080,7 @@
       "address": "1745 Folsom Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "second-harvest-silicon-valley",
@@ -3539,7 +5106,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-marin-food-bank",
@@ -3565,7 +5132,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sos-meals-on-wheels",
@@ -3590,7 +5157,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sourcewise-meals-on-wheels",
@@ -3615,7 +5182,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "spectrum-mow",
@@ -3640,7 +5207,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "st-anthonys-dining",
@@ -3664,7 +5231,7 @@
       "address": "150 Golden Gate Avenue, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "universal-school-meals",
@@ -3689,7 +5256,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "wic-program",
@@ -3716,7 +5283,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ymca-food-pantries",
@@ -3742,7 +5309,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ecumenical-hunger-program",
@@ -3767,7 +5334,7 @@
       "address": "2411 Pulgas Avenue, East Palo Alto, CA 94303",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "jfcs-food-pantry",
@@ -3793,7 +5360,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pvi-got-groceries",
@@ -3818,7 +5385,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "988-suicide-crisis-lifeline",
@@ -3842,7 +5409,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "crisis-text-line",
@@ -3866,7 +5433,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "denti-cal",
@@ -3890,7 +5457,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "eyecare-america",
@@ -3914,7 +5481,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "medi-cal",
@@ -3938,7 +5505,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "needymeds",
@@ -3962,7 +5529,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "planned-parenthood",
@@ -3987,7 +5554,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ryan-white-program",
@@ -4011,7 +5578,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "samhsa-helpline",
@@ -4035,7 +5602,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "va-health-benefits",
@@ -4059,7 +5626,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "wic-health",
@@ -4085,7 +5652,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-bhrs",
@@ -4109,7 +5676,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-aging-adult-services",
@@ -4135,7 +5702,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "smc-pregnancy-children-families",
@@ -4161,7 +5728,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "calrx-naloxone",
@@ -4185,7 +5752,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "naloxone-distribution-project",
@@ -4209,7 +5776,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "adap",
@@ -4233,7 +5800,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "kick-it-california",
@@ -4257,7 +5824,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "black-infant-health",
@@ -4282,7 +5849,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-home-visiting",
@@ -4308,7 +5875,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "vaccines-for-children",
@@ -4333,7 +5900,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "prep-assistance-program",
@@ -4358,7 +5925,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "every-woman-counts",
@@ -4382,7 +5949,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpsp",
@@ -4408,7 +5975,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "childhood-lead-poisoning-prevention",
@@ -4432,7 +5999,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "myturn",
@@ -4456,7 +6023,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "court-fee-waivers",
@@ -4481,7 +6048,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "justice-diversity-center",
@@ -4506,7 +6073,7 @@
       "address": "301 Battery Street, 3rd Floor, San Francisco, CA 94111",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "racial-equity-project",
@@ -4530,7 +6097,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-financial-justice-project",
@@ -4555,7 +6122,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-immigrant-support",
@@ -4581,7 +6148,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "uscis-i-912-fee-waiver",
@@ -4607,7 +6174,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "clsepa-legal-services",
@@ -4633,7 +6200,7 @@
       "address": "1861 Bay Road, East Palo Alto, CA 94303",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "legal-aid-smc",
@@ -4657,7 +6224,7 @@
       "address": "330 Twin Dolphin Drive, Suite 123, Redwood City, CA 94065",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "project-sentinel-fair-housing",
@@ -4681,7 +6248,7 @@
       "address": "1490 El Camino Real, Santa Clara, CA 95050",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-001",
@@ -4705,7 +6272,7 @@
       "address": "1901 Russell Street, Berkeley, CA 94703",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-002",
@@ -4729,7 +6296,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-003",
@@ -4753,7 +6320,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-004",
@@ -4777,7 +6344,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-005",
@@ -4801,7 +6368,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-006",
@@ -4825,7 +6392,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lib-007",
@@ -4850,7 +6417,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sfpl-elibrary",
@@ -4874,7 +6441,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sfpl-digital-collections",
@@ -4898,7 +6465,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "open-library",
@@ -4922,7 +6489,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "libby-app",
@@ -4946,7 +6513,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-digital-newspaper-collection",
@@ -4970,7 +6537,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "career-online-high-school",
@@ -4994,7 +6561,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "online-archive-of-california",
@@ -5018,7 +6585,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "alameda-county-library-digital",
@@ -5042,7 +6609,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "oakland-library-digital",
@@ -5066,7 +6633,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "san-mateo-county-library-digital",
@@ -5090,7 +6657,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "peninsula-library-digital",
@@ -5114,7 +6681,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "contra-costa-library-digital",
@@ -5138,7 +6705,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sfpl-services",
@@ -5162,7 +6729,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "santa-clara-county-library-digital",
@@ -5186,7 +6753,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "marin-county-library-digital",
@@ -5210,7 +6777,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sonoma-county-library-digital",
@@ -5234,7 +6801,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "solano-county-library-digital",
@@ -5258,7 +6825,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "napa-county-library-databases",
@@ -5282,7 +6849,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "banfield-foundation",
@@ -5306,7 +6873,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bebhs-spay-bay",
@@ -5331,7 +6898,7 @@
       "address": "2700 Ninth Street, Berkeley, CA 94710",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "hssv-pet-pantry",
@@ -5356,7 +6923,7 @@
       "address": "901 Ames Avenue, Milpitas, CA 95035",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "humane-world",
@@ -5380,7 +6947,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "joybound-vet-care",
@@ -5405,7 +6972,7 @@
       "address": "2890 Mitchell Drive, Walnut Creek, CA 94598",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "joybound-pet-food",
@@ -5430,7 +6997,7 @@
       "address": "2890 Mitchell Drive, Walnut Creek, CA 94598",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "joybound-vaccinations",
@@ -5455,7 +7022,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "joybound-pet-safety-net",
@@ -5480,7 +7047,7 @@
       "address": "2890 Mitchell Drive, Walnut Creek, CA 94598",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "joybound-spay-neuter",
@@ -5506,7 +7073,7 @@
       "address": "2890 Mitchell Drive, Walnut Creek, CA 94598",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "marin-humane-pet-care",
@@ -5531,7 +7098,7 @@
       "address": "171 Bel Marin Keys Blvd, Novato, CA 94949",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "muttville-cuddle-club",
@@ -5555,7 +7122,7 @@
       "address": "255 Alabama Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "muttville-seniors-for-seniors",
@@ -5579,7 +7146,7 @@
       "address": "255 Alabama Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "phs-mobile-spay-neuter",
@@ -5604,7 +7171,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "phs-vaccine-clinics",
@@ -5628,7 +7195,7 @@
       "address": "12 Airport Blvd, San Mateo, CA 94401",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pet-help-finder",
@@ -5652,7 +7219,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pets-in-need",
@@ -5677,7 +7244,7 @@
       "address": "871 Fifth Avenue, Redwood City, CA 94063",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pets-of-homeless",
@@ -5702,7 +7269,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-spca-community-clinic",
@@ -5727,7 +7294,7 @@
       "address": "201 Alabama Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-spca-spay-neuter",
@@ -5751,7 +7318,7 @@
       "address": "201 Alabama Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sf-aid-for-animals",
@@ -5776,7 +7343,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "the-pet-fund",
@@ -5800,7 +7367,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "vet-billing",
@@ -5824,7 +7391,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "vetco-clinics",
@@ -5848,7 +7415,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "vip-petcare",
@@ -5872,7 +7439,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "america-the-beautiful-pass",
@@ -5898,7 +7465,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ca-state-parks-adventure-pass",
@@ -5922,7 +7489,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ca-state-parks-disabled-discount",
@@ -5946,7 +7513,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ca-state-parks-distinguished-veteran",
@@ -5970,7 +7537,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "golden-bear-pass",
@@ -5995,7 +7562,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "senior-golden-bear-pass",
@@ -6019,7 +7586,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "museums-for-all",
@@ -6044,7 +7611,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "aquarium-of-bay",
@@ -6071,7 +7638,7 @@
       "address": "PIER 39, The Embarcadero & Beach Street, San Francisco, CA 94133",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "asian-art-museum",
@@ -6100,7 +7667,7 @@
       "address": "200 Larkin Street, San Francisco, CA 94102",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bay-area-discovery-museum",
@@ -6129,7 +7696,7 @@
       "address": "557 McReynolds Road, Sausalito, CA 94965",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cal-academy",
@@ -6154,7 +7721,7 @@
       "address": "55 Music Concourse Drive, San Francisco, CA 94118",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "chabot-space-center",
@@ -6179,7 +7746,7 @@
       "address": "10000 Skyline Boulevard, Oakland, CA 94619",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cartoon-art-museum",
@@ -6209,7 +7776,7 @@
       "address": "781 Beach Street, San Francisco, CA 94109",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "childrens-creativity-museum",
@@ -6235,7 +7802,7 @@
       "address": "221 Fourth Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "childrens-discovery-museum-sj",
@@ -6259,7 +7826,7 @@
       "address": "180 Woz Way, San Jose, CA 95110",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "childrens-fairyland",
@@ -6285,7 +7852,7 @@
       "address": "699 Bellevue Avenue, Oakland, CA 94610",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "exploratorium",
@@ -6310,7 +7877,7 @@
       "address": "Pier 15, The Embarcadero, San Francisco, CA 94111",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "fine-arts-museums-sf",
@@ -6340,7 +7907,7 @@
       "address": "50 Hagiwara Tea Garden Drive, San Francisco, CA 94118 (de Young)",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "golden-gate-park-gardens",
@@ -6366,7 +7933,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lawrence-hall-science",
@@ -6393,7 +7960,7 @@
       "address": "1 Centennial Drive, Berkeley, CA 94720",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "moad-museum",
@@ -6421,7 +7988,7 @@
       "address": "685 Mission Street, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "museum-craft-design",
@@ -6451,7 +8018,7 @@
       "address": "2569 Third Street, San Francisco, CA 94107",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "oakland-museum",
@@ -6476,7 +8043,7 @@
       "address": "1000 Oak Street, Oakland, CA 94607",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "oakland-zoo",
@@ -6502,7 +8069,7 @@
       "address": "9777 Golf Links Road, Oakland, CA 94605",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sfmoma",
@@ -6531,7 +8098,7 @@
       "address": "151 Third Street, San Francisco, CA 94103",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sj-museum-art",
@@ -6556,7 +8123,7 @@
       "address": "110 South Market Street, San Jose, CA 95113",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "the-tech-interactive",
@@ -6581,7 +8148,7 @@
       "address": "201 South Market Street, San Jose, CA 95113",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "walt-disney-family-museum",
@@ -6609,7 +8176,7 @@
       "address": "104 Montgomery Street, Presidio of San Francisco, CA 94129",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "7-eleven-gold-pass",
@@ -6635,7 +8202,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "amazon-prime-access",
@@ -6659,7 +8226,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "att-access",
@@ -6683,7 +8250,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "california-lifeline",
@@ -6707,7 +8274,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "good360",
@@ -6731,7 +8298,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "goodstack-nonprofit-discounts",
@@ -6755,7 +8322,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "instacart-ebt",
@@ -6779,7 +8346,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "internet-essentials",
@@ -6803,7 +8370,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "kanopy-students",
@@ -6827,7 +8394,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "tech-exchange",
@@ -6851,7 +8418,7 @@
       "address": "2371 Filbert Street, Oakland, CA 94607",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "techsoup-discount-marketplace",
@@ -6875,7 +8442,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "t-mobile-project-10million",
@@ -6899,7 +8466,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "walmart-plus-assist",
@@ -6923,7 +8490,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "world-computer-exchange",
@@ -6947,7 +8514,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "spectrum-internet-assist",
@@ -6972,7 +8539,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "menlo-park-library-hotspots",
@@ -6996,7 +8563,7 @@
       "address": "800 Alma Street, Menlo Park, CA 94025",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ac-transit-stpp",
@@ -7021,7 +8588,7 @@
       "address": "1600 Franklin Street, Oakland, CA 94612",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bart-discount",
@@ -7045,7 +8612,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bart-muni-a-pass",
@@ -7069,7 +8636,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bike-share-for-all",
@@ -7093,7 +8660,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "caltrain-youth-fares",
@@ -7117,7 +8684,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "city-coach-solano",
@@ -7141,7 +8708,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "clipper-baypass",
@@ -7165,7 +8732,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "clipper-start",
@@ -7189,7 +8756,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "dmv-reduced-fee-id",
@@ -7213,7 +8780,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "emergency-ride-home-marin",
@@ -7237,7 +8804,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "emery-go-round",
@@ -7261,7 +8828,7 @@
       "address": "1300 Park Avenue, Emeryville, CA 94608",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "511-emergency-rides-contra-costa",
@@ -7285,7 +8852,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "511-transit-incentives-contra-costa",
@@ -7309,7 +8876,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "lime-access",
@@ -7333,7 +8900,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "low-cost-auto-insurance",
@@ -7357,7 +8924,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "marin-transit-students",
@@ -7381,7 +8948,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "muni-free",
@@ -7409,7 +8976,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "petaluma-transit-free",
@@ -7433,7 +9000,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "rtc-clipper-card",
@@ -7457,7 +9024,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "samtrans",
@@ -7481,7 +9048,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "samtrans-youth",
@@ -7505,7 +9072,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "santa-rosa-citybus",
@@ -7532,7 +9099,7 @@
       "address": "600 Morgan Street, Santa Rosa, CA 95401",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "senior-clipper-card",
@@ -7556,7 +9123,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cid-borrow-battery",
@@ -7580,7 +9147,7 @@
       "address": "2001 Winward Way, Suite 103, San Mateo, CA 94404",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cleanpowersf",
@@ -7604,7 +9171,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ebmud-assistance",
@@ -7628,7 +9195,7 @@
       "address": "375 11th Street, Oakland, CA 94607",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "liheap",
@@ -7652,7 +9219,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "medical-baseline",
@@ -7676,7 +9243,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pce-ebike-rebate",
@@ -7700,7 +9267,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pce-heat-pump-rebate",
@@ -7725,7 +9292,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pce-home-upgrade-services",
@@ -7749,7 +9316,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pce-used-ev-rebate",
@@ -7773,7 +9340,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pce-water-heater-rebate",
@@ -7798,7 +9365,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pce-zero-interest-loan",
@@ -7822,7 +9389,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-amp",
@@ -7846,7 +9413,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-automated-response",
@@ -7870,7 +9437,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-care",
@@ -7894,7 +9461,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpuc-esa",
@@ -7918,7 +9485,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-generator-battery-rebate",
@@ -7942,7 +9509,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sgip-home-battery-sgip",
@@ -7966,7 +9533,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-induction-test-drive",
@@ -7990,7 +9557,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-match-payment",
@@ -8014,7 +9581,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-permanent-battery-rebate",
@@ -8038,7 +9605,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-portable-battery",
@@ -8062,7 +9629,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-reach",
@@ -8086,7 +9653,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-residential-charging",
@@ -8110,7 +9677,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-used-ev-rebate",
@@ -8134,7 +9701,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-v2x-pilot",
@@ -8158,7 +9725,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "pge-wattersaver",
@@ -8182,7 +9749,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "baaqmd-clean-cars-ev",
@@ -8206,7 +9773,7 @@
       "address": "375 Beale Street, Suite 600, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "baaqmd-clean-cars-fuel-cell",
@@ -8230,7 +9797,7 @@
       "address": "375 Beale Street, Suite 600, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "baaqmd-clean-cars-ebike-transit",
@@ -8254,7 +9821,7 @@
       "address": "375 Beale Street, Suite 600, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "baaqmd-vehicle-buyback",
@@ -8278,7 +9845,7 @@
       "address": "375 Beale Street, Suite 600, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "baaqmd-wood-stove",
@@ -8303,7 +9870,7 @@
       "address": "375 Beale Street, Suite 600, San Francisco, CA 94105",
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "carb-ebike-rebate",
@@ -8327,7 +9894,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ca-old-vehicle-retirement",
@@ -8351,7 +9918,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "dcap-clean-cars",
@@ -8375,7 +9942,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "federal-ev-charger-credit",
@@ -8399,7 +9966,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "weatherization-assistance",
@@ -8423,7 +9990,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bayren-ease",
@@ -8447,7 +10014,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "bayren-home-assessment",
@@ -8471,7 +10038,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "calwater-rebates",
@@ -8495,7 +10062,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "energy-smart-homes-electrification",
@@ -8519,7 +10086,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "golden-state-heat-pump-water",
@@ -8543,7 +10110,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "golden-state-gas-water-heater",
@@ -8567,7 +10134,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "golden-state-room-ac",
@@ -8591,7 +10158,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "golden-state-smart-thermostat",
@@ -8615,7 +10182,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "ohmconnect",
@@ -8639,7 +10206,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "quitcarbon-rebate",
@@ -8663,7 +10230,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "recology-discount",
@@ -8687,7 +10254,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "redwood-city-electrification",
@@ -8712,7 +10279,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "redwood-city-ev-charger",
@@ -8736,7 +10303,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "redwood-city-lawn-equipment",
@@ -8760,7 +10327,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "redwood-city-solar",
@@ -8784,7 +10351,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "rising-sun-green-house",
@@ -8808,7 +10375,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sfpuc-cap",
@@ -8832,7 +10399,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "thermostat-care-mercury",
@@ -8856,7 +10423,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-ebike-rebate",
@@ -8880,7 +10447,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-ev-charger-rebate",
@@ -8904,7 +10471,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-used-ev-rebate",
@@ -8928,7 +10495,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-induction-cooktop-rebate",
@@ -8952,7 +10519,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-heat-pump-dryer-rebate",
@@ -8976,7 +10543,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-electric-dryer-rebate",
@@ -9000,7 +10567,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-hpwh-gas-rebate",
@@ -9024,7 +10591,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-hpwh-electric-rebate",
@@ -9048,7 +10615,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-heat-pump-hvac-rebate",
@@ -9072,7 +10639,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-hvac-tuneup-rebate",
@@ -9096,7 +10663,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-circuit-pauser-rebate",
@@ -9120,7 +10687,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-smart-panel-rebate",
@@ -9144,7 +10711,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-panel-upgrade-rebate",
@@ -9168,7 +10735,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-prewire-rebate",
@@ -9192,7 +10759,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-battery-storage-rebate",
@@ -9216,7 +10783,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-hoa-energy-grant",
@@ -9240,7 +10807,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-income-qualified-solar",
@@ -9264,7 +10831,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-pool-pump-rebate",
@@ -9288,7 +10855,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "svp-solar-tuneup-rebate",
@@ -9312,7 +10879,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-sj-cares",
@@ -9336,7 +10903,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-solar-access",
@@ -9360,7 +10927,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ecohome-hpwh",
@@ -9384,7 +10951,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ecohome-hvac",
@@ -9408,7 +10975,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ecohome-battery",
@@ -9432,7 +10999,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ecohome-panel",
@@ -9456,7 +11023,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ecohome-insulation",
@@ -9480,7 +11047,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ecohome-prewire",
@@ -9504,7 +11071,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ev-new",
@@ -9528,7 +11095,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-ev-used",
@@ -9552,7 +11119,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-peak-rewards",
@@ -9576,7 +11143,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-peak-rewards-thermostat",
@@ -9600,7 +11167,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-peak-rewards-ev-charger",
@@ -9624,7 +11191,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "sjce-peak-rewards-battery",
@@ -9648,7 +11215,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-rap",
@@ -9673,7 +11240,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-reap",
@@ -9697,7 +11264,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-project-pledge",
@@ -9721,7 +11288,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-hpwh-rebate",
@@ -9745,7 +11312,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-hp-hvac-rebate",
@@ -9769,7 +11336,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-gas-meter-removal",
@@ -9793,7 +11360,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-ev-charger-mf-rebate",
@@ -9817,7 +11384,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-transformer-upgrade-rebate",
@@ -9841,7 +11408,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-landscape-conversion",
@@ -9865,7 +11432,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-graywater-rebate",
@@ -9889,7 +11456,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     },
     {
       "id": "cpau-stormwater-rebates",
@@ -9913,7 +11480,7 @@
       "address": null,
       "requirements": null,
       "howToApply": null,
-      "lastUpdated": "2026-01-02"
+      "lastUpdated": "2026-01-03"
     }
   ]
 }

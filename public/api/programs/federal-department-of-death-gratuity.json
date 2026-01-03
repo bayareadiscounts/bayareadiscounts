@@ -1,0 +1,24 @@
+{
+  "id": "federal-department-of-death-gratuity",
+  "name": "Death gratuity",
+  "category": "federal-benefits",
+  "description": "Tax free payment of $100,000 to eligible survivors of members of the Armed Forces who died while on active duty or while serving in certain reserve statuses.\n",
+  "fullDescription": "Tax free payment of $100,000 to eligible survivors of members of the Armed Forces who died while on active duty or while serving in certain reserve statuses.\n",
+  "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+  "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty service member or member of the National Guard/Reserves\n- One of the following applies to the deceased: died while on active duty or Died while on inactive-duty service training\n- The applicant’s relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "survivors"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://militarypay.defense.gov/Benefits/Death-Gratuity/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

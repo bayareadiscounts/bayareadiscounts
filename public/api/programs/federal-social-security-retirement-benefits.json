@@ -1,0 +1,25 @@
+{
+  "id": "federal-social-security-retirement-benefits",
+  "name": "Retirement benefits",
+  "category": "federal-benefits",
+  "description": "Replacement income for qualified retirees and their families.&nbsp;You only need one application to apply for all disability benefits offered by SSA.\n",
+  "fullDescription": "Replacement income for qualified retirees and their families.&nbsp;You only need one application to apply for all disability benefits offered by SSA.\n",
+  "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+  "howToGetIt": "Eligibility requirements:\n- The applicant worked and paid Social Security taxes\n- The applicant is at least 62 years\n- The applicant is a US citizen or an eligible non-citizen\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "people-with-disabilities",
+    "seniors"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.ssa.gov/benefits/retirement/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

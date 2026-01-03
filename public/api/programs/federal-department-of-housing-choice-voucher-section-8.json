@@ -1,0 +1,24 @@
+{
+  "id": "federal-department-of-housing-choice-voucher-section-8",
+  "name": "Housing choice voucher (Section 8)",
+  "category": "federal-benefits",
+  "description": "Learn if you are eligible for a Section 8 housing choice voucher to pay rent for private housing. Housing choice vouchers are for families with low incomes, seniors, and people with disabilities.Find your public housing agency to learn if you are eligible and apply.\n",
+  "fullDescription": "Learn if you are eligible for a Section 8 housing choice voucher to pay rent for private housing. Housing choice vouchers are for families with low incomes, seniors, and people with disabilities.Find your public housing agency to learn if you are eligible and apply.\n",
+  "whatTheyOffer": "Administers programs that provide housing and community development assistance and ensures fair and equal housing opportunities for everyone.\n",
+  "howToGetIt": "Eligibility requirements:\n- The applicant has limited income and resources\n- The applicant is a U.S. citizen or eligible non-citizen\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "low-income"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.usa.gov/housing-voucher-section-8",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

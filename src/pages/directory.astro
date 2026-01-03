@@ -23,22 +23,11 @@ if (fs.existsSync(suppressedPath)) {
   }
 }
 
-// Load all program YAML files
+// Load all program YAML files dynamically
 const dataDir = path.join(process.cwd(), 'src/data');
-const programFiles = [
-  'food.yml',
-  'health.yml',
-  'housing.yml',
-  'utilities.yml',
-  'transportation.yml',
-  'education.yml',
-  'legal.yml',
-  'finance.yml',
-  'technology.yml',
-  'recreation.yml',
-  'community.yml',
-  'federal-benefits.yml',
-];
+const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml'];
+const programFiles = fs.readdirSync(dataDir)
+  .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
 interface Program {
   id: string;

@@ -1,0 +1,26 @@
+{
+  "id": "federal-centers-for-medicare-savings-programs-msp",
+  "name": "Medicare Savings Programs (MSP)",
+  "category": "federal-benefits",
+  "description": "Get help paying Medicare insurance, like deductibles, coinsurance, and copayments.\n",
+  "fullDescription": "Get help paying Medicare insurance, like deductibles, coinsurance, and copayments.\n",
+  "whatTheyOffer": "Administers Medicare, Medicaid, and the Health Insurance Exchanges.\n",
+  "howToGetIt": "Eligibility requirements:\n-  The applicant is at least 65 years\n- The applicant has a disability or impairment\n- The applicant has limited income and resources\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "seniors",
+    "people-with-disabilities",
+    "low-income"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

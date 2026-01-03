@@ -15,21 +15,53 @@ const yaml = require('js-yaml');
 const USAGOV_API = 'https://www.usa.gov/s3/files/benefit-finder/api/life-event/all_benefits.json';
 const OUTPUT_FILE = path.join(__dirname, '../src/data/federal-benefits.yml');
 
-// Map USAGov agencies to our category system
+// Map USAGov agencies to our category system (fallback)
 const AGENCY_TO_CATEGORY = {
-  'Social Security Administration (SSA)': 'Finance',
-  'Veterans Affairs Department (VA)': 'Community',
-  'Department of Defense (DOD)': 'Community',
-  'Centers for Medicare and Medicaid (CMS)': 'Health',
-  'Federal Emergency Management Agency (FEMA)': 'Community',
-  'Department of Labor (DOL)': 'Finance',
-  'Department of Justice (DOJ)': 'Legal',
-  'Department of Housing and Urban Development (HUD)': 'Housing',
-  'Internal Revenue Service (IRS)': 'Finance',
-  'Department of Interior (DOI) - Indian Affairs': 'Community',
-  'Library of Congress (LOC)': 'Education',
-  'Federal Retirement Thrift Investment Board (FRTIB)': 'Finance',
+  'Social Security Administration (SSA)': 'finance',
+  'Veterans Affairs Department (VA)': 'finance',  // Default, overridden by keywords
+  'Department of Defense (DOD)': 'finance',
+  'Centers for Medicare and Medicaid (CMS)': 'health',
+  'Federal Emergency Management Agency (FEMA)': 'community',
+  'Department of Labor (DOL)': 'finance',
+  'Department of Justice (DOJ)': 'legal',
+  'Department of Housing and Urban Development (HUD)': 'community', // No housing category
+  'Internal Revenue Service (IRS)': 'finance',
+  'Department of Interior (DOI) - Indian Affairs': 'community',
+  'Library of Congress (LOC)': 'education',
+  'Federal Retirement Thrift Investment Board (FRTIB)': 'finance',
 };
+
+// Categorize based on benefit title/description keywords (more accurate than agency)
+function categorizeByKeywords(title, summary) {
+  const text = `${title} ${summary}`.toLowerCase();
+
+  // Health/Medical
+  if (text.includes('medicare') || text.includes('medicaid') || text.includes('health') ||
+      text.includes('medical') || text.includes('champva') || text.includes('prescription')) {
+    return 'health';
+  }
+
+  // Education
+  if (text.includes('education') || text.includes('gi bill') || text.includes('school') ||
+      text.includes('braille') || text.includes('library')) {
+    return 'education';
+  }
+
+  // Legal
+  if (text.includes('legal') || text.includes('court') || text.includes('justice')) {
+    return 'legal';
+  }
+
+  // Community services (burial, emergency, social services)
+  if (text.includes('burial') || text.includes('funeral') || text.includes('cemetery') ||
+      text.includes('headstone') || text.includes('grave') || text.includes('memorial') ||
+      text.includes('flag')) {
+    return 'community';
+  }
+
+  // Finance is the default for most benefits (pension, disability payments, SSI, etc.)
+  return null; // Will use agency fallback
+}
 
 // Map eligibility criteria to our target groups
 const CRITERIA_TO_GROUPS = {
@@ -56,6 +88,9 @@ function stripHtml(html) {
     .trim();
 }
 
+// Track generated IDs to ensure uniqueness
+const generatedIds = new Set();
+
 function generateId(title, agency) {
   const agencyShort = agency
     .replace(/\([^)]+\)/g, '')
@@ -69,9 +104,20 @@ function generateId(title, agency) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
-    .slice(0, 40);
+    .slice(0, 50); // Increased from 40 to reduce collisions
 
-  return `federal-${agencyShort}-${titleSlug}`;
+  let baseId = `federal-${agencyShort}-${titleSlug}`;
+  let finalId = baseId;
+  let counter = 2;
+
+  // Ensure uniqueness by appending a counter if needed
+  while (generatedIds.has(finalId)) {
+    finalId = `${baseId}-${counter}`;
+    counter++;
+  }
+
+  generatedIds.add(finalId);
+  return finalId;
 }
 
 function extractGroups(eligibility) {
@@ -109,7 +155,11 @@ function transformBenefit(benefitWrapper) {
   const agency = benefit.agency || {};
   const agencyTitle = (agency.title || 'Federal Government').trim();
 
-  const category = AGENCY_TO_CATEGORY[agencyTitle] || 'Community';
+  // First try keyword-based categorization, then fall back to agency mapping
+  const summary = stripHtml(benefit.summary || '');
+  const category = categorizeByKeywords(benefit.title, summary) ||
+                   AGENCY_TO_CATEGORY[agencyTitle] ||
+                   'community';
   const groups = extractGroups(benefit.eligibility || []);
 
   // Add general groups based on title/summary

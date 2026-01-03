@@ -1,0 +1,24 @@
+{
+  "id": "federal-social-security-retirement-benefits-for-parents",
+  "name": "Retirement benefits for parents",
+  "category": "federal-benefits",
+  "description": "Replacement income for qualified retirees and their families.\n",
+  "fullDescription": "Replacement income for qualified retirees and their families.\n",
+  "whatTheyOffer": "Administers Social Security, as well as disability insurance, and other benefits.\n",
+  "howToGetIt": "Eligibility requirements:\n- The applicant’s marital status is unmarried or divorced\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant is caring for the child of someone who died, is retired, or has a disability, and the child has a disability or is under 16 years\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "seniors"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.ssa.gov/benefits/retirement/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

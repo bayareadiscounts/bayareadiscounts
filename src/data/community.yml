@@ -2490,37 +2490,6 @@
   link_text: Get Services
   verified_date: '2025-12-30'
 
-- id: st-anthonys-dining
-  name: St. Anthony's Free Dining Room
-  category: Food
-  area: San Francisco
-  city: San Francisco
-  groups:
-  - unhoused
-  - income-eligible
-  - everyone
-  description: St. Anthony's operates San Francisco's largest free dining room, serving nutritious meals daily to anyone in need without questions or requirements.
-  what_they_offer: |
-    - Free hot meals daily
-    - No ID or documentation required
-    - Vegetarian options available
-    - Served with dignity and respect
-    - Clean, welcoming environment
-    - Additional social services on-site
-  how_to_get_it: |
-    1. Visit St. Anthony's Dining Room
-    2. No reservation or registration needed
-    3. Meals served during posted hours
-    4. All are welcome regardless of status
-    5. Access other services as needed
-  phone: '415-241-2600'
-  address: 150 Golden Gate Ave, San Francisco, CA 94102
-  benefit: Free nutritious meals served daily with dignity to anyone in need
-  timeframe: Daily
-  link: https://www.stanthonysf.org/services/dining-room/
-  link_text: View Hours
-  verified_date: '2025-12-30'
-
 # Caregiver Resources
 
 - id: family-caregiver-alliance

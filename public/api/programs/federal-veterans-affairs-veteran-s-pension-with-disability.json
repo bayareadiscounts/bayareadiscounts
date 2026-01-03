@@ -1,0 +1,27 @@
+{
+  "id": "federal-veterans-affairs-veteran-s-pension-with-disability",
+  "name": "Veteran's pension with disability",
+  "category": "federal-benefits",
+  "description": "Monthly payments to wartime veterans with specific age, disability, income, or net worth.\n",
+  "fullDescription": "Monthly payments to wartime veterans with specific age, disability, income, or net worth.\n",
+  "whatTheyOffer": "Provides a wide range of benefits in support of veterans, service members, and their families.\n",
+  "howToGetIt": "Eligibility requirements:\n- The applicant is at least 65 years\n- The applicant has a disability or impairment\n- The applicant has limited income and resources\n- The applicant served in the active military\n- The applicant’s service status is: honorable, general or other than dishonorable discharge\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "seniors",
+    "people-with-disabilities",
+    "low-income",
+    "veterans"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.va.gov/pension/how-to-apply/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

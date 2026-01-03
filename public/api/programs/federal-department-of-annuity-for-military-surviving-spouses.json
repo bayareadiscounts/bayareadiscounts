@@ -1,0 +1,24 @@
+{
+  "id": "federal-department-of-annuity-for-military-surviving-spouses",
+  "name": "Annuity for military surviving spouses",
+  "category": "federal-benefits",
+  "description": "Financial support for surviving spouses of members of the uniformed services.\n",
+  "fullDescription": "Financial support for surviving spouses of members of the uniformed services.\n",
+  "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+  "howToGetIt": "Eligibility requirements:\n- The deceased died before 1978\n- The deceased served in the active military\n- The service status of the deceased is: retired from the service\n- The applicant’s relationship to the deceased is: spouse\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "survivors"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://militarypay.defense.gov/Benefits/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "federal-federal-retirement-thrift-savings-plan-tsp",
+  "name": "Thrift Savings Plan (TSP)",
+  "category": "federal-benefits",
+  "description": "A retirement savings and investment plan sponsored by the Federal Government for members of the uniformed services and federal employees. The TSP offers similar savings and tax benefits that private corporations offer under '401(k)' plans.\n",
+  "fullDescription": "A retirement savings and investment plan sponsored by the Federal Government for members of the uniformed services and federal employees. The TSP offers similar savings and tax benefits that private corporations offer under '401(k)' plans.\n",
+  "whatTheyOffer": "Helps current and former civilian employees and members of the uniformed services prepare for their retirement with the Thrift Savings Plan (TSP).\n",
+  "howToGetIt": "Eligibility requirements:\n- The applicant worked and paid Social Security taxes\n- The applicant is over 60 years\n- The applicant is a US citizen or an eligible non-citizen\n- The applicant served in the active military\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "veterans"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.tsp.gov/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}

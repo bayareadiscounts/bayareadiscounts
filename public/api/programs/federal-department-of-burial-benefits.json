@@ -1,0 +1,25 @@
+{
+  "id": "federal-department-of-burial-benefits",
+  "name": "Burial benefits",
+  "category": "federal-benefits",
+  "description": "Burial and transport assistance for the deceased, and travel support for the spouse, children, and immediate family members of the service member.\n",
+  "fullDescription": "Burial and transport assistance for the deceased, and travel support for the spouse, children, and immediate family members of the service member.\n",
+  "whatTheyOffer": "Provides support for qualified spouses, children, and other family members of deceased service members.\n",
+  "howToGetIt": "Eligibility requirements:\n- The deceased served in the active military\n- The service status of the deceased is: active-duty member\n- One of the following applies to the deceased: died on active duty\n- The applicant's relationship to the deceased is: spouse, child, parent, or other family member\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "survivors",
+    "families"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.militaryonesource.mil/benefits/funeral-and-burial-benefits-for-service-members/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "lastUpdated": "2026-01-03"
+}
