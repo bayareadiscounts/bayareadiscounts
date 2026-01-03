@@ -643,12 +643,14 @@ const sizeClasses = size === 'large'
       </div>
     `;
 
-    // Insert at the top of the page, after the header
-    const main = document.querySelector('main');
-    if (main) {
-      main.insertBefore(banner, main.firstChild);
-      // Scroll to top to ensure banner is visible
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Insert directly inside the search container, after the input
+    const searchContainer = document.querySelector('.search-container');
+    if (searchContainer) {
+      searchContainer.appendChild(banner);
+    } else {
+      // Fallback: insert after search input
+      const searchInput = document.getElementById('search-input');
+      searchInput?.parentElement?.appendChild(banner);
     }
 
     // Close handler
@@ -659,10 +661,14 @@ const sizeClasses = size === 'large'
   function performSearch() {
     const query = searchInput?.value.trim() || '';
 
-    // Check for crisis keywords first - show banner but continue with search
+    // Check for crisis keywords first - show banner but ALSO show relevant programs
     const crisisType = checkForCrisis(query);
     if (crisisType) {
       showCrisisBanner(crisisType);
+      // Continue with fuzzy search to show relevant mental health resources
+      // (like 988 Suicide & Crisis Lifeline)
+      performFuzzySearch(query);
+      return; // Skip AI search for crisis queries
     }
 
     // Clear AI state for new searches
@@ -686,46 +692,13 @@ const sizeClasses = size === 'large'
     }
   }
 
-  // Debounced search on input
-  searchInput?.addEventListener('input', () => {
-    clearTimeout(debounceTimer);
-    const query = searchInput.value.trim();
-
-    // When offline, AI disabled, or simple queries, use short delay
-    if (isOffline || !aiEnabled || !isComplexQuery(query)) {
-      debounceTimer = setTimeout(performSearch, 150);
-    } else {
-      // Longer delay for AI queries to avoid too many API calls
-      debounceTimer = setTimeout(performSearch, 600);
-    }
-  });
-
-  // Handle Enter key - immediately perform search
+  // Handle Enter key - perform search only on Enter
   searchInput?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
       clearTimeout(debounceTimer);
       searchHints?.classList.add('hidden');
       performSearch();
-    }
-  });
-
-  // Show hints on focus if empty
-  searchInput?.addEventListener('focus', () => {
-    if (!searchInput.value) {
-      searchHints?.classList.remove('hidden');
-    }
-  });
-
-  // Hide hints on blur (with delay for click)
-  searchInput?.addEventListener('blur', () => {
-    setTimeout(() => searchHints?.classList.add('hidden'), 200);
-  });
-
-  // Hide hints when typing
-  searchInput?.addEventListener('input', () => {
-    if (searchInput.value) {
-      searchHints?.classList.add('hidden');
     }
   });
 
@@ -824,7 +797,7 @@ const sizeClasses = size === 'large'
 
   /* Crisis Banner Styles */
   .crisis-banner {
-    @apply w-full py-3 px-4;
+    @apply w-full mt-4 py-4 px-6 rounded-xl shadow-lg;
     animation: slideDown 0.3s ease-out;
   }
 
@@ -837,7 +810,7 @@ const sizeClasses = size === 'large'
   }
 
   .crisis-banner-content {
-    @apply container mx-auto flex flex-wrap items-center justify-center gap-3 md:gap-4;
+    @apply flex flex-wrap items-center justify-center gap-3 md:gap-4;
   }
 
   .crisis-banner-text {

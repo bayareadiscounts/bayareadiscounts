@@ -27,7 +27,7 @@ test('homepage search shows results', async ({ page }) => {
   await input.press('Enter');
 
   // Wait for search to complete
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(1500);
 
   // Verify section is visible
   await expect(searchResults).not.toHaveClass(/hidden/, { timeout: 5000 });
