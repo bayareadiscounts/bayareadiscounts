@@ -29,12 +29,17 @@ const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppress
 const programFiles = fs.readdirSync(dataDir)
   .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
+interface Amenity {
+  name: string;
+  link?: string;
+}
+
 interface Program {
   id: string;
   name: string;
   category: string;
   area: string;
-  description: string;
+  description?: string;
   what_they_offer?: string;
   how_to_get_it?: string;
   phone?: string;
@@ -43,6 +48,12 @@ interface Program {
   groups?: string[];
   verified_by?: string;
   verified_date?: string;
+  // New fields
+  city?: string;
+  address?: string;
+  map_link?: string;
+  amenities?: Amenity[];
+  fee_info?: string;
 }
 
 let allPrograms: Program[] = [];
@@ -168,6 +179,11 @@ allPrograms.sort((a, b) => a.name.localeCompare(b.name));
             groups={program.groups}
             verifiedBy={program.verified_by}
             verifiedDate={program.verified_date}
+            city={program.city}
+            address={program.address}
+            mapLink={program.map_link}
+            amenities={program.amenities}
+            feeInfo={program.fee_info}
           />
         ))}
       </div>

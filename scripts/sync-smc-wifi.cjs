@@ -95,6 +95,7 @@ function isPublicLocation(location) {
 
 /**
  * Determine category based on location type
+ * Uses canonical categories from groups.yml
  */
 function getCategoryForLocation(name) {
   const lowerName = name.toLowerCase();
@@ -112,12 +113,12 @@ function getCategoryForLocation(name) {
 
   // Libraries
   if (lowerName.includes('library')) {
-    return 'Education';
+    return 'Library Resources';
   }
 
-  // Health facilities
+  // Health facilities - use "Health" (canonical category)
   if (lowerName.includes('clinic') || lowerName.includes('health') || lowerName.includes('wic')) {
-    return 'Healthcare';
+    return 'Health';
   }
 
   // Default to Technology for pure WiFi spots

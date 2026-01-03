@@ -791,7 +791,7 @@
 
 - id: ca-sp-albany-smr
   name: Albany SMR
-  category: State Parks
+  category: Parks & Open Space
   area: Alameda County
   city: Albany
   groups:
@@ -804,7 +804,7 @@
 
 - id: ca-sp-bethany-reservoir-sra
   name: Bethany Reservoir SRA
-  category: State Parks
+  category: Parks & Open Space
   area: Alameda County
   city: Byron
   groups:
@@ -817,7 +817,7 @@
 
 - id: ca-sp-emeryville-crescent-smr
   name: Emeryville Crescent SMR
-  category: State Parks
+  category: Parks & Open Space
   area: Alameda County
   city: Emeryville
   groups:
@@ -830,7 +830,7 @@
 
 - id: ca-sp-lake-del-valle-sra
   name: Lake Del Valle SRA
-  category: State Parks
+  category: Parks & Open Space
   area: Alameda County
   city: Livermore
   groups:
@@ -843,7 +843,7 @@
 
 - id: ca-sp-mclaughlin-eastshore-sp-ss
   name: McLaughlin Eastshore SP SS
-  category: State Parks
+  category: Parks & Open Space
   area: Alameda County
   city: Berkeley
   groups:
@@ -856,7 +856,7 @@
 
 - id: ca-sp-robert-w-crown-memorial-sb
   name: Robert W Crown Memorial SB
-  category: State Parks
+  category: Parks & Open Space
   area: Alameda County
   city: Alameda
   groups:
@@ -869,7 +869,7 @@
 
 - id: ca-sp-franks-tract-sra
   name: Franks Tract SRA
-  category: State Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Bethel Island
   groups:
@@ -882,7 +882,7 @@
 
 - id: ca-sp-marsh-creek-state-park
   name: Marsh Creek State Park
-  category: State Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Brentwood
   groups:
@@ -895,7 +895,7 @@
 
 - id: ca-sp-mount-diablo-sp
   name: Mount Diablo SP
-  category: State Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Walnut Creek
   groups:
@@ -908,7 +908,7 @@
 
 - id: ca-sp-angel-island-sp
   name: Angel Island SP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: Belvedere-Tiburon
   groups:
@@ -921,7 +921,7 @@
 
 - id: ca-sp-china-camp-sp
   name: China Camp SP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: San Rafael
   groups:
@@ -934,7 +934,7 @@
 
 - id: ca-sp-marconi-conference-center-shp
   name: Marconi Conference Center SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: Marshall
   groups:
@@ -947,7 +947,7 @@
 
 - id: ca-sp-mount-tamalpais-sp
   name: Mount Tamalpais SP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: Mill Valley
   groups:
@@ -960,7 +960,7 @@
 
 - id: ca-sp-olompali-shp
   name: Olompali SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: Novato
   groups:
@@ -973,7 +973,7 @@
 
 - id: ca-sp-samuel-p-taylor-sp
   name: Samuel P Taylor SP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: Lagunitas
   groups:
@@ -986,7 +986,7 @@
 
 - id: ca-sp-tomales-bay-sp
   name: Tomales Bay SP
-  category: State Parks
+  category: Parks & Open Space
   area: Marin County
   city: Point Reyes Station
   groups:
@@ -999,7 +999,7 @@
 
 - id: ca-sp-bale-grist-mill-shp
   name: Bale Grist Mill SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Napa County
   city: St. Helena
   groups:
@@ -1012,7 +1012,7 @@
 
 - id: ca-sp-bothe-napa-valley-sp
   name: Bothe Napa Valley SP
-  category: State Parks
+  category: Parks & Open Space
   area: Napa County
   city: Calistoga
   groups:
@@ -1025,7 +1025,7 @@
 
 - id: ca-sp-robert-louis-stevenson-sp
   name: Robert Louis Stevenson SP
-  category: State Parks
+  category: Parks & Open Space
   area: Napa County
   city: Calistoga
   groups:
@@ -1038,7 +1038,7 @@
 
 - id: ca-sp-candlestick-point-sra
   name: Candlestick Point SRA
-  category: State Parks
+  category: Parks & Open Space
   area: San Francisco County
   city: San Francisco
   groups:
@@ -1051,7 +1051,7 @@
 
 - id: ca-sp-ano-nuevo-sp
   name: Ano Nuevo SP
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero
   groups:
@@ -1064,7 +1064,7 @@
 
 - id: ca-sp-bean-hollow-sb
   name: Bean Hollow SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero
   groups:
@@ -1077,7 +1077,7 @@
 
 - id: ca-sp-burleigh-h-murray-ranch-prop
   name: Burleigh H Murray Ranch Prop
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -1090,7 +1090,7 @@
 
 - id: ca-sp-butano-sp
   name: Butano SP
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero
   groups:
@@ -1103,7 +1103,7 @@
 
 - id: ca-sp-gray-whale-cove-sb
   name: Gray Whale Cove SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -1116,7 +1116,7 @@
 
 - id: ca-sp-half-moon-bay-sb
   name: Half Moon Bay SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -1129,7 +1129,7 @@
 
 - id: ca-sp-montara-sb
   name: Montara SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Montara
   groups:
@@ -1142,7 +1142,7 @@
 
 - id: ca-sp-pacifica-sb
   name: Pacifica SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -1155,7 +1155,7 @@
 
 - id: ca-sp-pescadero-sb
   name: Pescadero SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero
   groups:
@@ -1168,7 +1168,7 @@
 
 - id: ca-sp-pigeon-point-light-station-shp
   name: Pigeon Point Light Station SHP
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero
   groups:
@@ -1181,7 +1181,7 @@
 
 - id: ca-sp-point-montara-light-station
   name: Point Montara Light Station
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Montara
   groups:
@@ -1194,7 +1194,7 @@
 
 - id: ca-sp-pomponio-sb
   name: Pomponio SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: San Gregorio
   groups:
@@ -1207,7 +1207,7 @@
 
 - id: ca-sp-portola-redwoods-sp
   name: Portola Redwoods SP
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: La Honda
   groups:
@@ -1220,7 +1220,7 @@
 
 - id: ca-sp-san-bruno-mountain-sp
   name: San Bruno Mountain SP
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -1233,7 +1233,7 @@
 
 - id: ca-sp-san-gregorio-sb
   name: San Gregorio SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: San Gregorio
   groups:
@@ -1246,7 +1246,7 @@
 
 - id: ca-sp-thornton-sb
   name: Thornton SB
-  category: State Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -1259,7 +1259,7 @@
 
 - id: ca-sp-henry-w-coe-sp
   name: Henry W Coe SP
-  category: State Parks
+  category: Parks & Open Space
   area: Santa Clara County
   city: Morgan Hill
   groups:
@@ -1272,7 +1272,7 @@
 
 - id: ca-sp-martial-cottle-park-sra
   name: Martial Cottle Park SRA
-  category: State Parks
+  category: Parks & Open Space
   area: Santa Clara County
   city: San Jose
   groups:
@@ -1285,7 +1285,7 @@
 
 - id: ca-sp-benicia-capitol-shp
   name: Benicia Capitol SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Solano County
   city: Benicia
   groups:
@@ -1298,7 +1298,7 @@
 
 - id: ca-sp-benicia-sra
   name: Benicia SRA
-  category: State Parks
+  category: Parks & Open Space
   area: Solano County
   city: Benicia
   groups:
@@ -1311,7 +1311,7 @@
 
 - id: ca-sp-armstrong-redwoods-snr
   name: Armstrong Redwoods SNR
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Guerneville
   groups:
@@ -1324,7 +1324,7 @@
 
 - id: ca-sp-austin-creek-sra
   name: Austin Creek SRA
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Guerneville
   groups:
@@ -1337,7 +1337,7 @@
 
 - id: ca-sp-fort-ross-shp
   name: Fort Ross SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Jenner
   groups:
@@ -1350,7 +1350,7 @@
 
 - id: ca-sp-jack-london-shp
   name: Jack London SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Glen Ellen
   groups:
@@ -1363,7 +1363,7 @@
 
 - id: ca-sp-kruse-rhododendron-snr
   name: Kruse Rhododendron SNR
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Cazadero
   groups:
@@ -1376,7 +1376,7 @@
 
 - id: ca-sp-petaluma-adobe-shp
   name: Petaluma Adobe SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Petaluma
   groups:
@@ -1389,7 +1389,7 @@
 
 - id: ca-sp-salt-point-sp
   name: Salt Point SP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Cazadero
   groups:
@@ -1402,7 +1402,7 @@
 
 - id: ca-sp-sonoma-coast-sp
   name: Sonoma Coast SP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Bodega Bay
   groups:
@@ -1415,7 +1415,7 @@
 
 - id: ca-sp-sonoma-shp
   name: Sonoma SHP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Sonoma
   groups:
@@ -1428,7 +1428,7 @@
 
 - id: ca-sp-sugarloaf-ridge-sp
   name: Sugarloaf Ridge SP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Kenwood
   groups:
@@ -1441,7 +1441,7 @@
 
 - id: ca-sp-trione-annadel-sp
   name: Trione Annadel SP
-  category: State Parks
+  category: Parks & Open Space
   area: Sonoma County
   city: Santa Rosa
   groups:
@@ -1459,7 +1459,7 @@
 
 - id: nps-alca
   name: Alcatraz Island
-  category: National Parks
+  category: Parks & Open Space
   area: San Francisco County
   city: San Francisco Bay
   groups:
@@ -1474,7 +1474,7 @@
 
 - id: nps-euon
   name: Eugene O'Neill National Historic Site
-  category: National Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Danville
   groups:
@@ -1489,7 +1489,7 @@
 
 - id: nps-fopo
   name: Fort Point National Historic Site
-  category: National Parks
+  category: Parks & Open Space
   area: San Francisco County
   city: San Francisco
   groups:
@@ -1504,7 +1504,7 @@
 
 - id: nps-goga
   name: Golden Gate National Recreation Area
-  category: National Parks
+  category: Parks & Open Space
   area: San Francisco County
   city: San Francisco
   groups:
@@ -1519,7 +1519,7 @@
 
 - id: nps-jomu
   name: John Muir National Historic Site
-  category: National Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Martinez
   groups:
@@ -1534,7 +1534,7 @@
 
 - id: nps-muwo
   name: Muir Woods National Monument
-  category: National Parks
+  category: Parks & Open Space
   area: Marin County
   city: Mill Valley
   groups:
@@ -1549,7 +1549,7 @@
 
 - id: nps-pore
   name: Point Reyes National Seashore
-  category: National Parks
+  category: Parks & Open Space
   area: Marin County
   city: Point Reyes Station
   groups:
@@ -1564,7 +1564,7 @@
 
 - id: nps-poch
   name: Port Chicago Naval Magazine National Memorial
-  category: National Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Martinez
   groups:
@@ -1579,7 +1579,7 @@
 
 - id: nps-prsf
   name: Presidio of San Francisco
-  category: National Parks
+  category: Parks & Open Space
   area: San Francisco County
   city: San Francisco
   groups:
@@ -1594,7 +1594,7 @@
 
 - id: nps-rori
   name: Rosie the Riveter WWII Home Front National Historical Park
-  category: National Parks
+  category: Parks & Open Space
   area: Contra Costa County
   city: Richmond
   groups:
@@ -1609,7 +1609,7 @@
 
 - id: nps-safr
   name: San Francisco Maritime National Historical Park
-  category: National Parks
+  category: Parks & Open Space
   area: San Francisco County
   city: San Francisco
   groups:
@@ -1716,7 +1716,7 @@
 
 - id: smc-wifi-health-daly-city-youth-clinic
   name: "Health - Daly City Youth Clinic"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Daly City
   groups:
@@ -1791,7 +1791,7 @@
 
 - id: smc-wifi-wic-epa
   name: "WIC - EPA"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -1806,7 +1806,7 @@
 
 - id: smc-wifi-wic-epa
   name: "WIC-EPA"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -1836,7 +1836,7 @@
 
 - id: smc-wifi-health-coastside-clinic
   name: "Health - Coastside Clinic"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -1986,7 +1986,7 @@
 
 - id: smc-wifi-health-sequoia-teen-wellness-center
   name: "Health - Sequoia Teen Wellness Center"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Redwood City
   groups:
@@ -2016,7 +2016,7 @@
 
 - id: smc-wifi-schc-fair-oaks-clinic
   name: "SCHC - Fair Oaks Clinic"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Redwood City
   groups:
@@ -2076,7 +2076,7 @@
 
 - id: smc-wifi-wic-rwc
   name: "WIC - RWC"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Redwood City
   groups:
@@ -2121,7 +2121,7 @@
 
 - id: smc-wifi-smmc-clinics
   name: "SMMC - Clinics"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: San Mateo
   groups:
@@ -2136,7 +2136,7 @@
 
 - id: smc-wifi-wic-san-mateo
   name: "WIC - San Mateo"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: San Mateo
   groups:
@@ -2151,7 +2151,7 @@
 
 - id: smc-wifi-health-ssf-clinic
   name: "Health - SSF Clinic"
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -2179,25 +2179,6 @@
   verified_by: San Mateo County
   verified_date: '2026-01-03'
 
-# San Mateo County Public WiFi
-# Source: San Mateo County Open Data Portal
-# Updated: 2026-01-03
-
-# San Mateo County Public WiFi
-# Source: San Mateo County Open Data Portal
-# Updated: 2026-01-03
-
-# San Mateo County Public WiFi
-# Source: San Mateo County Open Data Portal
-# Updated: 2026-01-03
-
-# San Mateo County Public WiFi
-# Source: San Mateo County Open Data Portal
-# Updated: 2026-01-03
-
-# San Mateo County Public WiFi
-# Source: San Mateo County Open Data Portal
-# Updated: 2026-01-03
 
 - id: brisbane-brisbane-community-pool
   name: "Brisbane Community Pool"
@@ -2292,7 +2273,7 @@
 - id: daly-city-health-daly-city-youth-clinic
   name: "Health - Daly City Youth Clinic"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Daly City
   groups:
@@ -2367,7 +2348,7 @@
 - id: east-palo-alto-wic-epa
   name: "WIC - EPA"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -2382,7 +2363,7 @@
 - id: east-palo-alto-wic-epa
   name: "WIC-EPA"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -2412,7 +2393,7 @@
 - id: half-moon-bay-health-coastside-clinic
   name: "Health - Coastside Clinic"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -2562,7 +2543,7 @@
 - id: redwood-city-health-sequoia-teen-wellness-center
   name: "Health - Sequoia Teen Wellness Center"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Redwood City
   groups:
@@ -2592,7 +2573,7 @@
 - id: redwood-city-schc-fair-oaks-clinic
   name: "SCHC - Fair Oaks Clinic"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Redwood City
   groups:
@@ -2652,7 +2633,7 @@
 - id: redwood-city-wic-rwc
   name: "WIC - RWC"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: Redwood City
   groups:
@@ -2697,7 +2678,7 @@
 - id: san-mateo-smmc-clinics
   name: "SMMC - Clinics"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: San Mateo
   groups:
@@ -2712,7 +2693,7 @@
 - id: san-mateo-wic-san-mateo
   name: "WIC - San Mateo"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: San Mateo
   groups:
@@ -2727,7 +2708,7 @@
 - id: south-san-francisco-health-ssf-clinic
   name: "Health - SSF Clinic"
   sync_source: smc-wifi
-  category: Healthcare
+  category: Health
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -2761,7 +2742,7 @@
 - id: smc-beach
   name: "Beach"
   sync_source: smc-parks
-  category: Beaches
+  category: Parks & Open Space
   area: San Mateo County
   groups:
   - everyone
@@ -2772,7 +2753,7 @@
 - id: smc-big-basin-redwoods-sp
   name: "Big Basin Redwoods Sp"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   groups:
   - everyone
@@ -2783,7 +2764,7 @@
 - id: smc-quiroste-valley-cp
   name: "Quiroste Valley Cp"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   groups:
   - everyone
@@ -2794,7 +2775,7 @@
 - id: atherton-flood-park
   name: "Flood Park"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Atherton
   groups:
@@ -2806,7 +2787,7 @@
 - id: atherton-holbrook-palmer-park
   name: "Holbrook-palmer Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Atherton
   groups:
@@ -2818,7 +2799,7 @@
 - id: belmont-alexander-park
   name: "Alexander Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2830,7 +2811,7 @@
 - id: belmont-barrett-park
   name: "Barrett Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2842,7 +2823,7 @@
 - id: belmont-belameda-park
   name: "Belameda Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2854,7 +2835,7 @@
 - id: belmont-cedar-street-park
   name: "Cedar Street Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2866,7 +2847,7 @@
 - id: belmont-college-view-mini-park
   name: "College View Mini Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2878,7 +2859,7 @@
 - id: belmont-hallmark-park
   name: "Hallmark Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2890,7 +2871,7 @@
 - id: belmont-hidden-canyon-park
   name: "Hidden Canyon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2902,7 +2883,7 @@
 - id: belmont-mcdougal-park
   name: "Mcdougal Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2914,7 +2895,7 @@
 - id: belmont-o-donnell-park
   name: "O'donnell Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2926,7 +2907,7 @@
 - id: belmont-ralston-ranch-park
   name: "Ralston Ranch Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2938,7 +2919,7 @@
 - id: belmont-twin-pines-park
   name: "Twin Pines Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2950,7 +2931,7 @@
 - id: belmont-water-dog-lake-park
   name: "Water Dog Lake Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Belmont
   groups:
@@ -2962,7 +2943,7 @@
 - id: brisbane-brisbane-community-park
   name: "Brisbane Community Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Brisbane
   groups:
@@ -2975,7 +2956,7 @@
 - id: brisbane-firth-park
   name: "Firth Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Brisbane
   groups:
@@ -2987,7 +2968,7 @@
 - id: burlingame-alpine-park
   name: "Alpine Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -2999,7 +2980,7 @@
 - id: burlingame-bayside-park-burlingame
   name: "Bayside Park Burlingame"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3012,7 +2993,7 @@
 - id: burlingame-cuernavaca-park
   name: "Cuernavaca Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3024,7 +3005,7 @@
 - id: burlingame-laguna-park
   name: "Laguna Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3037,7 +3018,7 @@
 - id: burlingame-mills-canyon-park
   name: "Mills Canyon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3049,7 +3030,7 @@
 - id: burlingame-mills-estate-park
   name: "Mills Estate Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3061,7 +3042,7 @@
 - id: burlingame-paloma-park
   name: "Paloma Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3073,7 +3054,7 @@
 - id: burlingame-pershing-park
   name: "Pershing Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3086,7 +3067,7 @@
 - id: burlingame-ray-park
   name: "Ray Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3098,7 +3079,7 @@
 - id: burlingame-victoria-park
   name: "Victoria Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3110,7 +3091,7 @@
 - id: burlingame-village-park
   name: "Village Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3122,7 +3103,7 @@
 - id: burlingame-washington-park
   name: "Washington Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Burlingame
   groups:
@@ -3134,7 +3115,7 @@
 - id: daly-city-arden-park
   name: "Arden Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3146,7 +3127,7 @@
 - id: daly-city-bayshore-heights-park
   name: "Bayshore Heights Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3158,7 +3139,7 @@
 - id: daly-city-frankfort-park
   name: "Frankfort Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3170,7 +3151,7 @@
 - id: daly-city-gellert-park
   name: "Gellert Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3182,7 +3163,7 @@
 - id: daly-city-hillside-park
   name: "Hillside Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3195,7 +3176,7 @@
 - id: daly-city-kelloch-velasco-park
   name: "Kelloch-velasco Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3207,7 +3188,7 @@
 - id: daly-city-lincoln-park
   name: "Lincoln Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3219,7 +3200,7 @@
 - id: daly-city-longview-park
   name: "Longview Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3231,7 +3212,7 @@
 - id: daly-city-marchbank-park
   name: "Marchbank Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3243,7 +3224,7 @@
 - id: daly-city-mission-hills-park
   name: "Mission Hills Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3255,7 +3236,7 @@
 - id: daly-city-northridge-park
   name: "Northridge Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3267,7 +3248,7 @@
 - id: daly-city-palisades-park
   name: "Palisades Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3279,7 +3260,7 @@
 - id: daly-city-polaris-park
   name: "Polaris Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3292,7 +3273,7 @@
 - id: daly-city-westlake-park
   name: "Westlake Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3304,7 +3285,7 @@
 - id: daly-city-westmoor-park
   name: "Westmoor Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3316,7 +3297,7 @@
 - id: daly-city-winston-manor-park
   name: "Winston Manor Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Daly City
   groups:
@@ -3328,7 +3309,7 @@
 - id: east-palo-alto-baylands-nature-preserve
   name: "Baylands Nature Preserve"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -3340,7 +3321,7 @@
 - id: east-palo-alto-bell-street-park
   name: "Bell Street Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -3352,7 +3333,7 @@
 - id: east-palo-alto-jack-farell-park
   name: "Jack Farell Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -3364,7 +3345,7 @@
 - id: east-palo-alto-joel-davis-memorial-park
   name: "Joel Davis Memorial Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -3377,7 +3358,7 @@
 - id: east-palo-alto-martin-luther-king-park
   name: "Martin Luther King Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -3390,7 +3371,7 @@
 - id: east-palo-alto-ravenswood-open-space-preserve
   name: "Ravenswood Open Space Preserve"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: East Palo Alto
   groups:
@@ -3402,7 +3383,7 @@
 - id: el-granada-quarry-park
   name: "Quarry Park"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: El Granada
   groups:
@@ -3415,7 +3396,7 @@
 - id: foster-city-arcturus-park
   name: "Arcturus Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3427,7 +3408,7 @@
 - id: foster-city-boat-park
   name: "Boat Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3439,7 +3420,7 @@
 - id: foster-city-boothbay-park
   name: "Boothbay Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3451,7 +3432,7 @@
 - id: foster-city-catamaran-park
   name: "Catamaran Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3463,7 +3444,7 @@
 - id: foster-city-edgewater-park
   name: "Edgewater Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3475,7 +3456,7 @@
 - id: foster-city-erckenbrack-park
   name: "Erckenbrack Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3487,7 +3468,7 @@
 - id: foster-city-farragut-park
   name: "Farragut Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3499,7 +3480,7 @@
 - id: foster-city-gateshead-park
   name: "Gateshead Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3511,7 +3492,7 @@
 - id: foster-city-gull-park
   name: "Gull Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3523,7 +3504,7 @@
 - id: foster-city-ketch-park
   name: "Ketch Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3535,7 +3516,7 @@
 - id: foster-city-killdeer-park
   name: "Killdeer Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3547,7 +3528,7 @@
 - id: foster-city-leo-j-ryan-park
   name: "Leo J. Ryan Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3560,7 +3541,7 @@
 - id: foster-city-leo-park
   name: "Leo Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3573,7 +3554,7 @@
 - id: foster-city-mariners-island-park
   name: "Mariners Island Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3586,7 +3567,7 @@
 - id: foster-city-marlin-park
   name: "Marlin Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3598,7 +3579,7 @@
 - id: foster-city-pompano-park
   name: "Pompano Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3610,7 +3591,7 @@
 - id: foster-city-port-royal-park
   name: "Port Royal Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3622,7 +3603,7 @@
 - id: foster-city-sea-cloud-park
   name: "Sea Cloud Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3634,7 +3615,7 @@
 - id: foster-city-shad-park
   name: "Shad Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3646,7 +3627,7 @@
 - id: foster-city-sunfish-park
   name: "Sunfish Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3658,7 +3639,7 @@
 - id: foster-city-turnstone-park
   name: "Turnstone Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Foster City
   groups:
@@ -3670,7 +3651,7 @@
 - id: half-moon-bay-frenchmans-creek-common-park
   name: "Frenchmans Creek Common Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -3682,7 +3663,7 @@
 - id: half-moon-bay-john-l-carter-memorial-park
   name: "John L. Carter Memorial Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -3694,7 +3675,7 @@
 - id: half-moon-bay-ocean-view-park
   name: "Ocean View Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -3706,7 +3687,7 @@
 - id: half-moon-bay-smith-field-park
   name: "Smith Field Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Half Moon Bay
   groups:
@@ -3718,7 +3699,7 @@
 - id: hillsborough-vista-park
   name: "Vista Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Hillsborough
   groups:
@@ -3730,7 +3711,7 @@
 - id: la-honda-uninc-bean-hollow-lakes-park
   name: "Bean Hollow Lakes Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: La Honda Uninc
   groups:
@@ -3742,7 +3723,7 @@
 - id: la-honda-uninc-pescadero-creek
   name: "Pescadero Creek"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: La Honda Uninc
   groups:
@@ -3754,7 +3735,7 @@
 - id: loma-mar-heritage-grove
   name: "Heritage Grove"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Loma Mar
   groups:
@@ -3766,7 +3747,7 @@
 - id: loma-mar-sam-mcdonald
   name: "Sam Mcdonald"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Loma Mar
   groups:
@@ -3778,7 +3759,7 @@
 - id: loma-mar-uninc-memorial-park
   name: "Memorial Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Loma Mar Uninc
   groups:
@@ -3790,7 +3771,7 @@
 - id: los-trancos-woods-uninc-los-trancos-open-space
   name: "Los Trancos Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Los Trancos Woods Uninc
   groups:
@@ -3802,7 +3783,7 @@
 - id: menlo-park-bayfront-park-menlo-park
   name: "Bayfront Park Menlo Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3814,7 +3795,7 @@
 - id: menlo-park-burgess-park-recreation-center
   name: "Burgess Park & Recreation Center"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3826,7 +3807,7 @@
 - id: menlo-park-fremont-park
   name: "Fremont Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3838,7 +3819,7 @@
 - id: menlo-park-jack-w-lyle-park
   name: "Jack W. Lyle Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3851,7 +3832,7 @@
 - id: menlo-park-kelly-park
   name: "Kelly Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3863,7 +3844,7 @@
 - id: menlo-park-nealon-park
   name: "Nealon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3876,7 +3857,7 @@
 - id: menlo-park-ravenswood-open-space-preserve
   name: "Ravenswood Open Space Preserve"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3888,7 +3869,7 @@
 - id: menlo-park-san-francisco-bay-national-wildlife-refu
   name: "San Francisco Bay National Wildlife Refuge"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3900,7 +3881,7 @@
 - id: menlo-park-seminary-oaks-park
   name: "Seminary Oaks Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3912,7 +3893,7 @@
 - id: menlo-park-sharon-park
   name: "Sharon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3924,7 +3905,7 @@
 - id: menlo-park-willow-oaks-park
   name: "Willow Oaks Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Menlo Park
   groups:
@@ -3936,7 +3917,7 @@
 - id: millbrae-bayfront-park-millbrae
   name: "Bayfront Park Millbrae"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -3948,7 +3929,7 @@
 - id: millbrae-bayside-park-millbrae
   name: "Bayside Park Millbrae"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -3960,7 +3941,7 @@
 - id: millbrae-central-park-millbrae
   name: "Central Park Millbrae"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -3972,7 +3953,7 @@
 - id: millbrae-green-hills-park
   name: "Green Hills Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -3985,7 +3966,7 @@
 - id: millbrae-josephine-waugh-soroptimist-park
   name: "Josephine Waugh/soroptimist Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -3997,7 +3978,7 @@
 - id: millbrae-lions-park
   name: "Lions Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -4009,7 +3990,7 @@
 - id: millbrae-marina-vista-park
   name: "Marina Vista Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -4021,7 +4002,7 @@
 - id: millbrae-meadows-park
   name: "Meadows Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -4033,7 +4014,7 @@
 - id: millbrae-rotary-park
   name: "Rotary Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -4045,7 +4026,7 @@
 - id: millbrae-schultz-park
   name: "Schultz Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -4057,7 +4038,7 @@
 - id: millbrae-spur-trail-park
   name: "Spur Trail Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Millbrae
   groups:
@@ -4069,7 +4050,7 @@
 - id: moss-beach-pillar-point-bluff
   name: "Pillar Point Bluff"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Moss Beach
   groups:
@@ -4081,7 +4062,7 @@
 - id: moss-beach-uninc-fitzgerald-marine-reserve
   name: "Fitzgerald Marine Reserve"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Moss Beach Uninc
   groups:
@@ -4093,7 +4074,7 @@
 - id: moss-beach-uninc-united-states-lighthouse-reserve
   name: "United States Lighthouse Reserve"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Moss Beach Uninc
   groups:
@@ -4106,7 +4087,7 @@
 - id: pacifica-calera-creek-park
   name: "Calera Creek Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4118,7 +4099,7 @@
 - id: pacifica-edgemar-park
   name: "Edgemar Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4130,7 +4111,7 @@
 - id: pacifica-fairmont-park
   name: "Fairmont Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4142,7 +4123,7 @@
 - id: pacifica-fairmont-west-park
   name: "Fairmont West Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4155,7 +4136,7 @@
 - id: pacifica-fairway-park
   name: "Fairway Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4167,7 +4148,7 @@
 - id: pacifica-fassler-park
   name: "Fassler Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4179,7 +4160,7 @@
 - id: pacifica-frontierland-park
   name: "Frontierland Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4191,7 +4172,7 @@
 - id: pacifica-golden-gate-national-recreation-area-mil
   name: "Golden Gate National Recreation Area Milagra Ridge"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4203,7 +4184,7 @@
 - id: pacifica-imperial-park
   name: "Imperial Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4215,7 +4196,7 @@
 - id: pacifica-oddstad-park
   name: "Oddstad Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4227,7 +4208,7 @@
 - id: pacifica-palmetto-mini-park
   name: "Palmetto Mini Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4240,7 +4221,7 @@
 - id: pacifica-pomo-park
   name: "Pomo Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4252,7 +4233,7 @@
 - id: pacifica-portola-mini-park
   name: "Portola Mini Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4264,7 +4245,7 @@
 - id: pacifica-san-pedro-valley
   name: "San Pedro Valley"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4276,7 +4257,7 @@
 - id: pacifica-sanchez-field-and-art-center
   name: "Sanchez Field And Art Center"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4289,7 +4270,7 @@
 - id: pacifica-sharp-park
   name: "Sharp Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4301,7 +4282,7 @@
 - id: pacifica-sweeny-ridge-reserve
   name: "Sweeny Ridge Reserve"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Pacifica
   groups:
@@ -4313,7 +4294,7 @@
 - id: pescadero-uninc-green-oaks-park
   name: "Green Oaks Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero  Uninc
   groups:
@@ -4325,7 +4306,7 @@
 - id: pescadero-uninc-pescadero-marsh-np
   name: "Pescadero Marsh Np"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Pescadero  Uninc
   groups:
@@ -4337,7 +4318,7 @@
 - id: portola-valley-windy-hill-open-space
   name: "Windy Hill Open Space"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Portola Valley
   groups:
@@ -4349,7 +4330,7 @@
 - id: redwood-city-dolphin-park
   name: "Dolphin Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4361,7 +4342,7 @@
 - id: redwood-city-dove-beeger-park
   name: "Dove Beeger Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4373,7 +4354,7 @@
 - id: redwood-city-duncan-park
   name: "Duncan Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4385,7 +4366,7 @@
 - id: redwood-city-edgewood-park
   name: "Edgewood Park"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4398,7 +4379,7 @@
 - id: redwood-city-fleishman-park
   name: "Fleishman Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4410,7 +4391,7 @@
 - id: redwood-city-hawes-park
   name: "Hawes Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4422,7 +4403,7 @@
 - id: redwood-city-hoover-school-park
   name: "Hoover School Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4434,7 +4415,7 @@
 - id: redwood-city-huddart-park
   name: "Huddart Park"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4447,7 +4428,7 @@
 - id: redwood-city-jardin-de-ninos-park
   name: "Jardin De Ninos Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4459,7 +4440,7 @@
 - id: redwood-city-linden-park
   name: "Linden Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4471,7 +4452,7 @@
 - id: redwood-city-maddux-park
   name: "Maddux Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4484,7 +4465,7 @@
 - id: redwood-city-mariner-park
   name: "Mariner Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4496,7 +4477,7 @@
 - id: redwood-city-marlin-park
   name: "Marlin Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4508,7 +4489,7 @@
 - id: redwood-city-mezes-park
   name: "Mezes Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4520,7 +4501,7 @@
 - id: redwood-city-palm-park
   name: "Palm Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4532,7 +4513,7 @@
 - id: redwood-city-portside-park
   name: "Portside Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4544,7 +4525,7 @@
 - id: redwood-city-red-morton-community-park
   name: "Red Morton Community Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4557,7 +4538,7 @@
 - id: redwood-city-san-francisco-bay-national-wildlife-refu
   name: "San Francisco Bay National Wildlife Refuge"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4569,7 +4550,7 @@
 - id: redwood-city-sandpiper-park
   name: "Sandpiper Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4581,7 +4562,7 @@
 - id: redwood-city-shannon-park
   name: "Shannon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4593,7 +4574,7 @@
 - id: redwood-city-shore-dogs-park
   name: "Shore Dogs Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4606,7 +4587,7 @@
 - id: redwood-city-shorebird-park
   name: "Shorebird Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4618,7 +4599,7 @@
 - id: redwood-city-stafford-park
   name: "Stafford Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4630,7 +4611,7 @@
 - id: redwood-city-stulsaft-park
   name: "Stulsaft Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4642,7 +4623,7 @@
 - id: redwood-city-westwood-park
   name: "Westwood Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Redwood City
   groups:
@@ -4654,7 +4635,7 @@
 - id: san-bruno-7th-avenue-and-walnut-park
   name: "7th Avenue And Walnut Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4666,7 +4647,7 @@
 - id: san-bruno-7th-avenue-park
   name: "7th Avenue Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4678,7 +4659,7 @@
 - id: san-bruno-bayshore-circle-park
   name: "Bayshore Circle Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4690,7 +4671,7 @@
 - id: san-bruno-buckeye-park
   name: "Buckeye Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4702,7 +4683,7 @@
 - id: san-bruno-city-park
   name: "City Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4714,7 +4695,7 @@
 - id: san-bruno-commodore-park
   name: "Commodore Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4726,7 +4707,7 @@
 - id: san-bruno-glenview-park
   name: "Glenview Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4738,7 +4719,7 @@
 - id: san-bruno-grundy-park
   name: "Grundy Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4750,7 +4731,7 @@
 - id: san-bruno-herman-street-park
   name: "Herman Street Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4762,7 +4743,7 @@
 - id: san-bruno-junipero-serra
   name: "Junipero Serra"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4774,7 +4755,7 @@
 - id: san-bruno-lions-park
   name: "Lions Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4786,7 +4767,7 @@
 - id: san-bruno-lomita-park
   name: "Lomita Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4799,7 +4780,7 @@
 - id: san-bruno-monte-verde-park
   name: "Monte Verde Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4812,7 +4793,7 @@
 - id: san-bruno-pacific-heights-park
   name: "Pacific Heights Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4824,7 +4805,7 @@
 - id: san-bruno-ponderosa-park
   name: "Ponderosa Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4837,7 +4818,7 @@
 - id: san-bruno-posy-park
   name: "Posy Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Bruno
   groups:
@@ -4849,7 +4830,7 @@
 - id: san-carlos-arguello-park
   name: "Arguello Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4862,7 +4843,7 @@
 - id: san-carlos-big-canyon-park
   name: "Big Canyon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4874,7 +4855,7 @@
 - id: san-carlos-burton-park
   name: "Burton Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4886,7 +4867,7 @@
 - id: san-carlos-city-hall-park
   name: "City Hall Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4898,7 +4879,7 @@
 - id: san-carlos-crestview-park
   name: "Crestview Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4911,7 +4892,7 @@
 - id: san-carlos-eaton-park
   name: "Eaton Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4923,7 +4904,7 @@
 - id: san-carlos-heather-park
   name: "Heather Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4935,7 +4916,7 @@
 - id: san-carlos-highlands-park
   name: "Highlands Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4947,7 +4928,7 @@
 - id: san-carlos-hillcrest-circle-park
   name: "Hillcrest Circle Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4959,7 +4940,7 @@
 - id: san-carlos-laurel-street-park
   name: "Laurel Street Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4972,7 +4953,7 @@
 - id: san-carlos-laureola-park
   name: "Laureola Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4984,7 +4965,7 @@
 - id: san-carlos-san-carlos-avenue-mini-park
   name: "San Carlos Avenue Mini Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Carlos
   groups:
@@ -4996,7 +4977,7 @@
 - id: san-mateo-bay-marshes-open-space
   name: "Bay Marshes Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5008,7 +4989,7 @@
 - id: san-mateo-bayside-joinville-park
   name: "Bayside/joinville Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5021,7 +5002,7 @@
 - id: san-mateo-beresford-park
   name: "Beresford Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5033,7 +5014,7 @@
 - id: san-mateo-borel-park
   name: "Borel Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5045,7 +5026,7 @@
 - id: san-mateo-casanova-park
   name: "Casanova Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5057,7 +5038,7 @@
 - id: san-mateo-central-park-san-mateo
   name: "Central Park San Mateo"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5069,7 +5050,7 @@
 - id: san-mateo-connie-park
   name: "Connie Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5081,7 +5062,7 @@
 - id: san-mateo-coyote-point-recreation-area
   name: "Coyote Point Recreation Area"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5093,7 +5074,7 @@
 - id: san-mateo-de-anza-historical-park
   name: "De Anza Historical Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5105,7 +5086,7 @@
 - id: san-mateo-east-hillsdale-park
   name: "East Hillsdale Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5117,7 +5098,7 @@
 - id: san-mateo-fiesta-meadows-park
   name: "Fiesta Meadows Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5129,7 +5110,7 @@
 - id: san-mateo-gateway-park
   name: "Gateway Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5141,7 +5122,7 @@
 - id: san-mateo-harbor-view-park
   name: "Harbor View Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5153,7 +5134,7 @@
 - id: san-mateo-indian-springs-park
   name: "Indian Springs Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5165,7 +5146,7 @@
 - id: san-mateo-laguna-vista-park
   name: "Laguna Vista Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5177,7 +5158,7 @@
 - id: san-mateo-lakeshore-park
   name: "Lakeshore Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5189,7 +5170,7 @@
 - id: san-mateo-laurelwood-dam-park
   name: "Laurelwood Dam Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5201,7 +5182,7 @@
 - id: san-mateo-laurelwood-park
   name: "Laurelwood Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5213,7 +5194,7 @@
 - id: san-mateo-laurie-meadows-park
   name: "Laurie Meadows Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5225,7 +5206,7 @@
 - id: san-mateo-los-prados-park
   name: "Los Prados Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5237,7 +5218,7 @@
 - id: san-mateo-martin-luther-king-park
   name: "Martin Luther King Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5249,7 +5230,7 @@
 - id: san-mateo-park
   name: "Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5262,7 +5243,7 @@
 - id: san-mateo-parkside-aquatic-park
   name: "Parkside Aquatic Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5275,7 +5256,7 @@
 - id: san-mateo-ryder-court-park
   name: "Ryder Court Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5287,7 +5268,7 @@
 - id: san-mateo-shoreline-bayfront-ryde-seal-point
   name: "Shoreline Bayfront/ryde/seal Point"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5299,7 +5280,7 @@
 - id: san-mateo-shoreview-park
   name: "Shoreview Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5311,7 +5292,7 @@
 - id: san-mateo-sugarloaf-mountain-open-space
   name: "Sugarloaf Mountain Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5323,7 +5304,7 @@
 - id: san-mateo-sunnybrae-park
   name: "Sunnybrae Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5335,7 +5316,7 @@
 - id: san-mateo-tidelands-park
   name: "Tidelands Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5347,7 +5328,7 @@
 - id: san-mateo-timberland-open-space
   name: "Timberland Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5359,7 +5340,7 @@
 - id: san-mateo-trinta-park
   name: "Trinta Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5372,7 +5353,7 @@
 - id: san-mateo-west-hillsdale-park
   name: "West Hillsdale Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: San Mateo
   groups:
@@ -5384,7 +5365,7 @@
 - id: south-san-francisco-alta-loma-park
   name: "Alta Loma Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5396,7 +5377,7 @@
 - id: south-san-francisco-avalon-memorial-park
   name: "Avalon Memorial Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5409,7 +5390,7 @@
 - id: south-san-francisco-avalon-park
   name: "Avalon Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5422,7 +5403,7 @@
 - id: south-san-francisco-brentwood-park
   name: "Brentwood Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5434,7 +5415,7 @@
 - id: south-san-francisco-buri-buri-park
   name: "Buri Buri Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5446,7 +5427,7 @@
 - id: south-san-francisco-callan-park
   name: "Callan Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5458,7 +5439,7 @@
 - id: south-san-francisco-clay-avenue-park
   name: "Clay Avenue Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5470,7 +5451,7 @@
 - id: south-san-francisco-hampshire-tot-lot
   name: "Hampshire Tot Lot"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5483,7 +5464,7 @@
 - id: south-san-francisco-orange-memorial-park
   name: "Orange Memorial Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5495,7 +5476,7 @@
 - id: south-san-francisco-oyster-point-park
   name: "Oyster Point Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5507,7 +5488,7 @@
 - id: south-san-francisco-paradise-valley-park
   name: "Paradise Valley Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5520,7 +5501,7 @@
 - id: south-san-francisco-point-san-bruno-park
   name: "Point San Bruno Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5532,7 +5513,7 @@
 - id: south-san-francisco-sellick-park
   name: "Sellick Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5544,7 +5525,7 @@
 - id: south-san-francisco-sign-hill-park
   name: "Sign Hill Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5556,7 +5537,7 @@
 - id: south-san-francisco-southwood-playground
   name: "Southwood Playground"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5568,7 +5549,7 @@
 - id: south-san-francisco-westborough-park
   name: "Westborough Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5580,7 +5561,7 @@
 - id: south-san-francisco-zamora-park
   name: "Zamora Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: South San Francisco
   groups:
@@ -5592,7 +5573,7 @@
 - id: unincorporated-ano-nuevo-island
   name: "Ano Nuevo Island"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5604,7 +5585,7 @@
 - id: unincorporated-ano-nuevo-state-reserve
   name: "Ano Nuevo State Reserve"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5616,7 +5597,7 @@
 - id: unincorporated-coal-creek-open-space
   name: "Coal Creek Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5628,7 +5609,7 @@
 - id: unincorporated-la-honda-creek-open-space
   name: "La Honda Creek Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5640,7 +5621,7 @@
 - id: unincorporated-pulgas-ridge-open-space
   name: "Pulgas Ridge Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5652,7 +5633,7 @@
 - id: unincorporated-purisima-creek-redwoods-open-space
   name: "Purisima Creek Redwoods Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5664,7 +5645,7 @@
 - id: unincorporated-russian-ridge-open-space
   name: "Russian Ridge Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5676,7 +5657,7 @@
 - id: unincorporated-san-francisco-state-fish-and-game
   name: "San Francisco / State Fish And Game"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5688,7 +5669,7 @@
 - id: unincorporated-skyline-ridge-open-space
   name: "Skyline Ridge Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Unincorporated
   groups:
@@ -5700,7 +5681,7 @@
 - id: woodside-el-corte-de-madera-open-space
   name: "El Corte De Madera Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Woodside
   groups:
@@ -5712,7 +5693,7 @@
 - id: woodside-garrett-park
   name: "Garrett Park"
   sync_source: smc-parks
-  category: Recreation
+  category: Parks & Open Space
   area: San Mateo County
   city: Woodside
   groups:
@@ -5724,7 +5705,7 @@
 - id: woodside-long-ridge-open-space
   name: "Long Ridge Open Space"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Woodside
   groups:
@@ -5736,7 +5717,7 @@
 - id: woodside-skeggs-point
   name: "Skeggs Point"
   sync_source: smc-parks
-  category: Open Space
+  category: Parks & Open Space
   area: San Mateo County
   city: Woodside
   groups:
@@ -5748,7 +5729,7 @@
 - id: woodside-wunderlich-county-park
   name: "Wunderlich County Park"
   sync_source: smc-parks
-  category: County Parks
+  category: Parks & Open Space
   area: San Mateo County
   city: Woodside
   groups:

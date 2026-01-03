@@ -47,24 +47,11 @@ function generateId(name, city) {
 
 /**
  * Map SMC category to our category
+ * Uses canonical categories from groups.yml
  */
 function mapCategory(smcCategory) {
-  const cat = (smcCategory || '').toUpperCase();
-
-  if (cat.includes('STATE PARK') || cat.includes('STATE BEACH') ||
-      cat.includes('STATE RECREATION') || cat.includes('STATE HISTORIC')) {
-    return 'State Parks';
-  }
-  if (cat.includes('COUNTY PARK') || cat.includes('COUNTY')) {
-    return 'County Parks';
-  }
-  if (cat.includes('BEACH')) {
-    return 'Beaches';
-  }
-  if (cat.includes('OPEN SPACE') || cat.includes('PRESERVE')) {
-    return 'Open Space';
-  }
-  return 'Recreation';
+  // All parks, beaches, open spaces go under "Parks & Open Space"
+  return 'Parks & Open Space';
 }
 
 /**

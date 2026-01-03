@@ -305,7 +305,7 @@
   verified_date: '2025-12-16'
 - id: bacn-emergency-childcare
   name: Bay Area Crisis Nursery - Emergency Childcare
-  category: Childcare Assistance
+  category: Childcare
   area: Contra Costa County
   groups:
   - income-eligible
@@ -336,7 +336,7 @@
   verified_date: '2025-12-16'
 - id: california-state-preschool
   name: California State Preschool Program
-  category: Childcare Assistance
+  category: Childcare
   area: Statewide
   groups:
   - income-eligible
@@ -364,7 +364,7 @@
   verified_date: '2025-12-16'
 - id: calworks-child-care
   name: CalWORKs Child Care
-  category: Childcare Assistance
+  category: Childcare
   area: Statewide
   groups:
   - income-eligible
@@ -392,7 +392,7 @@
   verified_date: '2025-12-16'
 - id: childrens-council-sf
   name: Children's Council San Francisco
-  category: Childcare Assistance
+  category: Childcare
   area: San Francisco
   groups:
   - income-eligible
@@ -422,7 +422,7 @@
   verified_date: '2025-12-16'
 - id: choices-for-children
   name: Choices for Children
-  category: Childcare Assistance
+  category: Childcare
   area: Santa Clara County
   groups:
   - income-eligible
@@ -452,7 +452,7 @@
   verified_date: '2025-12-16'
 - id: head-start
   name: Head Start
-  category: Childcare Assistance
+  category: Childcare
   area: Bay Area-wide
   groups:
   - income-eligible
@@ -480,7 +480,7 @@
   verified_date: '2025-12-16'
 - id: bacn-boutique
   name: Bay Area Crisis Nursery - BACN Boutique
-  category: Clothing Assistance
+  category: Community Services
   area: Contra Costa County
   groups:
   - pregnant
@@ -513,7 +513,7 @@
   verified_date: '2025-12-16'
 - id: bacn-food-pantry-diaper
   name: Bay Area Crisis Nursery - Food Pantry & Diaper Bank
-  category: Clothing Assistance
+  category: Community Services
   area: Contra Costa County
   groups:
   - income-eligible
@@ -543,7 +543,7 @@
   verified_date: '2025-12-16'
 - id: sf-diaper-bank
   name: San Francisco Diaper Bank
-  category: Clothing Assistance
+  category: Community Services
   area: San Francisco
   groups:
   - income-eligible
@@ -571,7 +571,7 @@
   verified_date: '2025-12-16'
 - id: st-anthonys-clothing
   name: St. Anthony's Free Clothing Program
-  category: Clothing Assistance
+  category: Community Services
   area: San Francisco
   groups:
   - everyone

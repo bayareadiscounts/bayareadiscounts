@@ -1,10 +1,15 @@
 ---
+interface Amenity {
+  name: string;
+  link?: string;
+}
+
 interface Props {
   id: string;
   name: string;
   category: string;
   area: string;
-  description: string;
+  description?: string;
   whatTheyOffer?: string;
   howToGetIt?: string;
   phone?: string;
@@ -13,6 +18,12 @@ interface Props {
   groups?: string[];
   verifiedBy?: string;
   verifiedDate?: string;
+  // New fields for parks/places
+  city?: string;
+  address?: string;
+  mapLink?: string;
+  amenities?: Amenity[];
+  feeInfo?: string;
 }
 
 const {
@@ -29,6 +40,11 @@ const {
   groups = [],
   verifiedBy,
   verifiedDate,
+  city,
+  address,
+  mapLink,
+  amenities = [],
+  feeInfo,
 } = Astro.props;
 
 // Format verified date for display
@@ -45,14 +61,25 @@ const categoryColors: Record<string, string> = {
   'Utilities': 'bg-yellow-100 text-yellow-900 dark:bg-yellow-900 dark:text-yellow-100',
   'Transportation': 'bg-purple-100 text-purple-900 dark:bg-purple-900 dark:text-purple-100',
   'Education': 'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100',
-  'Legal': 'bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100',
+  'Legal Services': 'bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100',
   'Finance': 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100',
   'Technology': 'bg-cyan-100 text-cyan-900 dark:bg-cyan-900 dark:text-cyan-100',
   'Recreation': 'bg-orange-100 text-orange-900 dark:bg-orange-900 dark:text-orange-100',
-  'Community': 'bg-pink-100 text-pink-900 dark:bg-pink-900 dark:text-pink-100',
+  'Community Services': 'bg-pink-100 text-pink-900 dark:bg-pink-900 dark:text-pink-100',
+  'Parks & Open Space': 'bg-lime-100 text-lime-900 dark:bg-lime-900 dark:text-lime-100',
+  'Museums': 'bg-violet-100 text-violet-900 dark:bg-violet-900 dark:text-violet-100',
+  'Library Resources': 'bg-amber-100 text-amber-900 dark:bg-amber-900 dark:text-amber-100',
+  'Tax Preparation': 'bg-teal-100 text-teal-900 dark:bg-teal-900 dark:text-teal-100',
+  'Childcare': 'bg-rose-100 text-rose-900 dark:bg-rose-900 dark:text-rose-100',
+  'Pet Resources': 'bg-fuchsia-100 text-fuchsia-900 dark:bg-fuchsia-900 dark:text-fuchsia-100',
+  'Equipment': 'bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-slate-100',
+  'Public Transit': 'bg-sky-100 text-sky-900 dark:bg-sky-900 dark:text-sky-100',
 };
 
 const badgeColor = categoryColors[category] || 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200';
+
+// Display location - prefer city if available, else area
+const displayLocation = city || area;
 ---
 
 <article
@@ -74,16 +101,65 @@ const badgeColor = categoryColors[category] || 'bg-neutral-100 text-neutral-800 
         </span>
       )}
     </div>
-    <span class="text-sm text-neutral-600 dark:text-neutral-300">{area}</span>
+    <span class="text-sm text-neutral-600 dark:text-neutral-300">{displayLocation}</span>
   </div>
 
   <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-primary-700 dark:group-hover:text-primary-300">
     {name}
   </h3>
 
-  <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-    {description}
-  </p>
+  {description && (
+    <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+      {description}
+    </p>
+  )}
+
+  {/* Address with map link */}
+  {address && (
+    <p class="text-sm text-neutral-600 dark:text-neutral-300 mb-2">
+      {mapLink ? (
+        <a href={mapLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-primary-700 dark:hover:text-primary-300">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          {address}
+        </a>
+      ) : (
+        <span class="inline-flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          {address}
+        </span>
+      )}
+    </p>
+  )}
+
+  {/* Fee info */}
+  {feeInfo && (
+    <p class="text-sm text-neutral-600 dark:text-neutral-300 mb-2">
+      <span class="font-medium">💵 {feeInfo}</span>
+    </p>
+  )}
+
+  {/* Amenities */}
+  {amenities.length > 0 && (
+    <div class="flex flex-wrap gap-2 mb-4">
+      {amenities.map((amenity) => (
+        amenity.link ? (
+          <a href={amenity.link} target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-2 py-1 bg-neutral-100 dark:bg-neutral-700 rounded text-xs text-neutral-700 dark:text-neutral-200 hover:bg-neutral-200 dark:hover:bg-neutral-600">
+            {amenity.name}
+          </a>
+        ) : (
+          <span class="inline-flex items-center px-2 py-1 bg-neutral-100 dark:bg-neutral-700 rounded text-xs text-neutral-700 dark:text-neutral-200">
+            {amenity.name}
+          </span>
+        )
+      ))}
+    </div>
+  )}
 
   {whatTheyOffer && (
     <details class="mb-4">

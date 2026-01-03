@@ -9,7 +9,7 @@
 
 - id: federal-federal-emergency-covid-19-funeral-assistance
   name: COVID-19 funeral assistance
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Federal Emergency Management Agency (FEMA)
@@ -34,7 +34,7 @@
 
 - id: federal-social-security-retirement-benefits-for-child
   name: Retirement benefits for child
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -61,7 +61,7 @@
 
 - id: federal-social-security-supplemental-security-income-ssi-for-child
   name: Supplemental Security Income (SSI) for Child
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -89,7 +89,7 @@
 
 - id: federal-centers-for-medicare-with-disability
   name: Medicare with disability
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Centers for Medicare and Medicaid (CMS)
@@ -115,7 +115,7 @@
 
 - id: federal-veterans-affairs-veteran-s-pension-with-disability
   name: Veteran's pension with disability
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -144,7 +144,7 @@
 
 - id: federal-veterans-affairs-veteran-readiness-and-employment-vr-e
   name: Veteran readiness and employment (VR&E)
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -170,7 +170,7 @@
 
 - id: federal-department-of-combat-related-special-compensation-crsc
   name: Combat-Related Special Compensation (CRSC)
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
@@ -196,7 +196,7 @@
 
 - id: federal-social-security-ticket-to-work-program
   name: Ticket to Work Program
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -221,7 +221,7 @@
 
 - id: federal-social-security-supplemental-security-income-ssi
   name: Supplemental Security Income (SSI)
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -247,7 +247,7 @@
 
 - id: federal-social-security-social-security-disability-insurance-for-child-wit
   name: Social Security disability insurance for child with disabilities
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -274,7 +274,7 @@
 
 - id: federal-social-security-social-security-disability-insurance
   name: Social Security Disability Insurance
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -299,7 +299,7 @@
 
 - id: federal-department-of-financial-assistance-and-social-services-fass
   name: Financial Assistance and Social Services (FASS)
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Department of Interior (DOI) - Indian Affairs
@@ -324,7 +324,7 @@
 
 - id: federal-federal-retirement-thrift-savings-plan-tsp
   name: Thrift Savings Plan (TSP)
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Federal Retirement Thrift Investment Board (FRTIB)
@@ -349,7 +349,7 @@
 
 - id: federal-social-security-retirement-benefits-for-parents
   name: Retirement benefits for parents
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -373,7 +373,7 @@
 
 - id: federal-centers-for-medicare-savings-programs-msp
   name: Medicare Savings Programs (MSP)
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Centers for Medicare and Medicaid (CMS)
@@ -399,7 +399,7 @@
 
 - id: federal-veterans-affairs-veteran-s-pension
   name: Veteran's pension
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -427,7 +427,7 @@
 
 - id: federal-social-security-supplemental-security-income-ssi-for-adults
   name: Supplemental Security Income (SSI) for adults
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -453,7 +453,7 @@
 
 - id: federal-social-security-retirement-benefits
   name: Retirement benefits
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -478,7 +478,7 @@
 
 - id: federal-department-of-coal-miner-worker-s-compensation
   name: Coal miner worker's compensation
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Department of Labor (DOL)
@@ -503,7 +503,7 @@
 
 - id: federal-department-of-coal-miner-worker-s-compensation-for-surviving-spo
   name: Coal miner worker's compensation for surviving spouse
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Department of Labor (DOL)
@@ -526,7 +526,7 @@
 
 - id: federal-veterans-affairs-presidential-memorial-certificate
   name: Presidential Memorial Certificate
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -552,7 +552,7 @@
 
 - id: federal-veterans-affairs-veterans-burial-allowance
   name: Veterans burial allowance
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -579,7 +579,7 @@
 
 - id: federal-veterans-affairs-survivors-pension-for-spouse
   name: Survivors pension for spouse
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -605,7 +605,7 @@
 
 - id: federal-veterans-affairs-survivors-pension-for-child-with-disabilities
   name: Survivors pension for child with disabilities
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -633,7 +633,7 @@
 
 - id: federal-veterans-affairs-veterans-medallions
   name: Veterans medallions
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -659,7 +659,7 @@
 
 - id: federal-veterans-affairs-veterans-headstone-and-grave-marker
   name: Veterans headstone and grave marker
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -685,7 +685,7 @@
 
 - id: federal-veterans-affairs-life-insurance-for-survivors-of-veterans
   name: Life insurance for survivors of veterans
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -710,7 +710,7 @@
 
 - id: federal-veterans-affairs-dependency-and-indemnity-compensation-dic
   name: Dependency and Indemnity Compensation (DIC)
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -736,7 +736,7 @@
 
 - id: federal-veterans-affairs-civilian-health-and-medical-program-of-the-va-cham
   name: Civilian Health and Medical Program of the VA (CHAMPVA)
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -762,7 +762,7 @@
 
 - id: federal-department-of-burial-benefits
   name: Burial benefits
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
@@ -788,7 +788,7 @@
 
 - id: federal-social-security-lump-sum-death-benefit
   name: Lump-sum death benefit
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -813,7 +813,7 @@
 
 - id: federal-veterans-affairs-additional-disability-benefits-for-veterans
   name: Additional disability benefits for veterans
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -839,7 +839,7 @@
 
 - id: federal-department-of-financial-assistance-and-social-services-fass-buri
   name: Financial Assistance and Social Services (FASS) - Burial assistance
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Department of Interior (DOI) - Indian Affairs
@@ -861,7 +861,7 @@
 
 - id: federal-social-security-survivors-benefits-for-parents-caring-for-a-child
   name: Survivors benefits for parents caring for a child
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -887,7 +887,7 @@
 
 - id: federal-department-of-annuity-for-military-surviving-spouses
   name: Annuity for military surviving spouses
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
@@ -912,7 +912,7 @@
 
 - id: federal-veterans-affairs-education-benefits-gi-bill-for-survivors
   name: Education benefits (GI Bill) for survivors
-  category: education
+  category: Education
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -938,7 +938,7 @@
 
 - id: federal-social-security-survivors-benefits-for-child-with-disabilities
   name: Survivors benefits for child with disabilities
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -965,7 +965,7 @@
 
 - id: federal-social-security-survivors-benefits-for-spouse-with-disabilities
   name: Survivors benefits for spouse with disabilities
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -992,7 +992,7 @@
 
 - id: federal-department-of-public-safety-officers-educational-assistance-prog
   name: Public safety officers' Educational Assistance Program
-  category: education
+  category: Education
   area: Nationwide
   source: federal
   agency: Department of Justice (DOJ)
@@ -1016,7 +1016,7 @@
 
 - id: federal-department-of-public-safety-officers-death-benefits
   name: Public safety officers' death benefits
-  category: legal
+  category: Legal Services
   area: Nationwide
   source: federal
   agency: Department of Justice (DOJ)
@@ -1039,7 +1039,7 @@
 
 - id: federal-veterans-affairs-burial-flag
   name: Burial flag
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -1063,7 +1063,7 @@
 
 - id: federal-veterans-affairs-home-loan-program-for-survivors
   name: Home loan program for survivors
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -1090,7 +1090,7 @@
 
 - id: federal-social-security-survivors-benefits-for-child
   name: Survivors benefits for child
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1117,7 +1117,7 @@
 
 - id: federal-department-of-survivor-benefit-plan
   name: Survivor benefit plan
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
@@ -1142,7 +1142,7 @@
 
 - id: federal-veterans-affairs-burial-in-va-national-cemetery
   name: Burial in VA national cemetery
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -1167,7 +1167,7 @@
 
 - id: federal-internal-revenue-tax-advantaged-retirement-plans-information
   name: Tax-advantaged retirement plans information
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Internal Revenue Service (IRS)
@@ -1189,7 +1189,7 @@
 
 - id: federal-internal-revenue-tax-relief-programs-for-people-with-disabilities
   name: Tax relief programs for people with disabilities
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Internal Revenue Service (IRS)
@@ -1211,7 +1211,7 @@
 
 - id: federal-social-security-social-security-disability-insurance-for-child
   name: Social Security disability insurance for child
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1237,7 +1237,7 @@
 
 - id: federal-social-security-social-security-disability-insurance-for-parents
   name: Social Security disability insurance for parents
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1261,7 +1261,7 @@
 
 - id: federal-social-security-social-security-disability-insurance-for-spouse
   name: Social Security disability insurance for spouse
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1286,7 +1286,7 @@
 
 - id: federal-social-security-retirement-benefits-for-spouse
   name: Retirement benefits for spouse
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1312,7 +1312,7 @@
 
 - id: federal-social-security-retirement-benefits-for-child-with-disabilities
   name: Retirement benefits for child with disabilities
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1340,7 +1340,7 @@
 
 - id: federal-department-of-public-safety-officers-disability-benefits
   name: Public safety officers' disability benefits
-  category: legal
+  category: Legal Services
   area: Nationwide
   source: federal
   agency: Department of Justice (DOJ)
@@ -1365,7 +1365,7 @@
 
 - id: federal-centers-for-medicare-with-retirement
   name: Medicare with retirement
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Centers for Medicare and Medicaid (CMS)
@@ -1388,7 +1388,7 @@
 
 - id: federal-department-of-concurrent-retirement-and-disability-payments-crdp
   name: Concurrent Retirement and Disability Payments (CRDP)
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
@@ -1415,7 +1415,7 @@
 
 - id: federal-department-of-death-gratuity
   name: Death gratuity
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
@@ -1440,7 +1440,7 @@
 
 - id: federal-veterans-affairs-disability-compensation
   name: Disability compensation
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -1465,7 +1465,7 @@
 
 - id: federal-social-security-extra-help-with-medicare-prescription-drug-plan-pa
   name: Extra help with Medicare prescription drug plan (Part D) costs
-  category: health
+  category: Health
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1491,7 +1491,7 @@
 
 - id: federal-department-of-housing-improvement-program
   name: Housing improvement program
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Department of Interior (DOI) - Indian Affairs
@@ -1515,7 +1515,7 @@
 
 - id: federal-veterans-affairs-survivors-pension-for-child
   name: Survivors pension for child
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
@@ -1543,7 +1543,7 @@
 
 - id: federal-social-security-survivors-benefits-for-parents
   name: Survivors benefits for parents
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1568,7 +1568,7 @@
 
 - id: federal-social-security-survivors-benefits-for-spouse
   name: Survivors benefits for spouse
-  category: finance
+  category: Finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
@@ -1594,7 +1594,7 @@
 
 - id: federal-library-of-braille-and-audio-materials-service
   name: Braille and audio materials service
-  category: education
+  category: Education
   area: Nationwide
   source: federal
   agency: Library of Congress (LOC)
@@ -1616,7 +1616,7 @@
 
 - id: federal-department-of-housing-choice-voucher-section-8
   name: Housing choice voucher (Section 8)
-  category: community
+  category: Community Services
   area: Nationwide
   source: federal
   agency: Department of Housing and Urban Development (HUD)

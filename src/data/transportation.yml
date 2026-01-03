@@ -1,6 +1,6 @@
 - id: ac-transit-stpp
   name: AC Transit
-  category: Public Transit
+  category: Transportation
   area: Alameda County
   groups:
   - youth
@@ -27,7 +27,7 @@
 
 - id: bart-discount
   name: BART
-  category: Public Transit
+  category: Transportation
   area: Bay Area-wide
   groups:
   - everyone
@@ -51,7 +51,7 @@
 
 - id: bart-muni-a-pass
   name: BART + Muni
-  category: Public Transit
+  category: Transportation
   area: San Francisco
   groups:
   - everyone
@@ -100,7 +100,7 @@
 
 - id: caltrain-youth-fares
   name: Caltrain Dollar Fares for Youth
-  category: Public Transit
+  category: Transportation
   area: Bay Area-wide
   groups:
   - youth
@@ -125,7 +125,7 @@
 
 - id: city-coach-solano
   name: City Coach
-  category: Public Transit
+  category: Transportation
   area: Solano County
   groups:
   - college-students
@@ -173,7 +173,7 @@
 
 - id: clipper-start
   name: Clipper START
-  category: Public Transit
+  category: Transportation
   area: Bay Area-wide
   groups:
   - income-eligible
@@ -253,7 +253,7 @@
 
 - id: emery-go-round
   name: Emery Go-Round
-  category: Public Transit
+  category: Transportation
   area: Alameda County
   groups:
   - everyone
@@ -381,7 +381,7 @@
 
 - id: marin-transit-students
   name: Marin Transit
-  category: Public Transit
+  category: Transportation
   area: Marin County
   groups:
   - college-students
@@ -406,7 +406,7 @@
 
 - id: muni-free
   name: Muni
-  category: Public Transit
+  category: Transportation
   area: San Francisco
   groups:
   - youth
@@ -438,7 +438,7 @@
 
 - id: petaluma-transit-free
   name: Petaluma Transit
-  category: Public Transit
+  category: Transportation
   area: Sonoma County
   groups:
   - everyone
@@ -463,7 +463,7 @@
 
 - id: rtc-clipper-card
   name: RTC Clipper Card
-  category: Public Transit
+  category: Transportation
   area: Bay Area-wide
   groups:
   - disability
@@ -514,7 +514,7 @@
 
 - id: samtrans-youth
   name: SamTrans
-  category: Public Transit
+  category: Transportation
   area: San Mateo County
   groups:
   - youth
@@ -540,7 +540,7 @@
 
 - id: santa-rosa-citybus
   name: Santa Rosa CityBus
-  category: Public Transit
+  category: Transportation
   area: Sonoma County
   groups:
   - youth
@@ -572,7 +572,7 @@
 
 - id: senior-clipper-card
   name: Senior Clipper Card
-  category: Public Transit
+  category: Transportation
   area: Bay Area-wide
   groups:
   - seniors

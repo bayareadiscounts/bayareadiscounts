@@ -126,34 +126,43 @@ counties:
     name: Sonoma County
 
 categories:
+  # Assistance & Social Services
   - id: childcare
-    name: Childcare Assistance
+    name: Childcare
     icon: "👶"
-
-  - id: clothing
-    name: Clothing Assistance
-    icon: "👕"
 
   - id: community
     name: Community Services
     icon: "🏘️"
 
+  # Education & Learning
   - id: education
     name: Education
     icon: "📚"
 
-  - id: equipment
-    name: Equipment
-    icon: "🔧"
+  - id: library
+    name: Library Resources
+    icon: "📖"
 
+  # Financial
   - id: finance
     name: Finance
     icon: "💰"
 
+  - id: tax
+    name: Tax Preparation
+    icon: "📋"
+
+  # Food & Basic Needs
   - id: food
     name: Food
     icon: "🍎"
 
+  - id: utilities
+    name: Utilities
+    icon: "💡"
+
+  # Health & Legal
   - id: health
     name: Health
     icon: "🏥"
@@ -162,38 +171,55 @@ categories:
     name: Legal Services
     icon: "⚖️"
 
-  - id: library
-    name: Library Resources
-    icon: "📖"
-
+  # Recreation & Culture
   - id: museums
     name: Museums
     icon: "🏛️"
 
-  - id: pets
-    name: Pet Resources
-    icon: "🐾"
-
-  - id: transit
-    name: Public Transit
-    icon: "🚌"
+  - id: parks
+    name: Parks & Open Space
+    icon: "🌲"
 
   - id: recreation
     name: Recreation
     icon: "⚽"
 
-  - id: tax
-    name: Tax Preparation
-    icon: "📋"
+  # Resources & Equipment
+  - id: equipment
+    name: Equipment
+    icon: "🔧"
+
+  - id: pets
+    name: Pet Resources
+    icon: "🐾"
 
   - id: technology
     name: Technology
     icon: "💻"
 
+  # Transportation
   - id: transportation
     name: Transportation
     icon: "🚗"
 
-  - id: utilities
-    name: Utilities
-    icon: "💡"
+# Sync sources - tracks which entries come from automated API syncs
+# Used by sync scripts to identify and update their entries
+sync_sources:
+  - id: smc-wifi
+    name: San Mateo County Public WiFi
+    api: https://datahub.smcgov.org/resource/3tvp-4cju.json
+    script: scripts/sync-smc-wifi.cjs
+
+  - id: smc-parks
+    name: San Mateo County Parks
+    api: https://data.smcgov.org/resource/bp4f-54r8.json
+    script: scripts/sync-smc-parks.cjs
+
+  - id: nps
+    name: National Park Service
+    api: https://developer.nps.gov/api/v1/parks
+    script: scripts/sync-nps-parks.cjs
+
+  - id: ca-state-parks
+    name: California State Parks
+    script: scripts/sync-ca-state-parks.cjs
