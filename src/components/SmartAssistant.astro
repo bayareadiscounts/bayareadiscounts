@@ -137,6 +137,21 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
   let conversationHistory = [];
   let isLoading = false;
 
+  // Crisis detection keywords
+  const EMERGENCY_KEYWORDS = ['emergency', 'danger', 'hurt', 'attack', 'abuse', 'violence', 'domestic violence', 'unsafe', 'threatened', 'kidnap', 'abduct', 'murder', 'stabbed'];
+  const MENTAL_HEALTH_KEYWORDS = ['suicide', 'suicidal', 'kill myself', 'end my life', "don't want to live", 'want to die', 'self-harm', 'cutting', 'hurting myself', 'crisis', 'desperate', 'depressed', 'depression', 'anxious', 'anxiety', 'worried'];
+
+  function detectCrisis(message) {
+    const lowerMessage = message.toLowerCase();
+    for (const keyword of EMERGENCY_KEYWORDS) {
+      if (lowerMessage.includes(keyword)) return 'emergency';
+    }
+    for (const keyword of MENTAL_HEALTH_KEYWORDS) {
+      if (lowerMessage.includes(keyword)) return 'mentalHealth';
+    }
+    return null;
+  }
+
   // Check if user has used assistant before
   if (localStorage.getItem('assistantUsed')) {
     notificationDot?.remove();
@@ -192,6 +207,12 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     const message = input?.value.trim();
     if (!message || isLoading) return;
 
+    // Check for crisis keywords first
+    const crisisType = detectCrisis(message);
+    if (crisisType) {
+      showCrisisDialog(crisisType);
+    }
+
     // Hide quick prompts after first message
     quickPrompts?.classList.add('hidden');
 
@@ -222,10 +243,9 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
 
       // Update conversation history
       conversationHistory.push({ role: 'user', content: message });
-      conversationHistory.push({ role: 'assistant', content: data.message });
 
-      // Add assistant response with program cards
-      addAssistantResponse(data.message, data.programs || []);
+      // Add program cards (no AI message anymore)
+      addProgramResults(data.programs || [], data.programsFound || 0);
 
     } catch (error) {
       console.error('Assistant error:', error);
@@ -239,6 +259,90 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       isLoading = false;
       sendBtn?.removeAttribute('disabled');
     }
+  }
+
+  function showCrisisDialog(type) {
+    const isEmergency = type === 'emergency';
+    const dialog = document.createElement('div');
+    dialog.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-[100] p-4';
+    dialog.innerHTML = `
+      <div class="bg-white dark:bg-neutral-800 rounded-2xl max-w-md w-full p-6 shadow-2xl">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center ${isEmergency ? 'bg-red-100 dark:bg-red-900/30' : 'bg-blue-100 dark:bg-blue-900/30'}">
+            <svg class="w-6 h-6 ${isEmergency ? 'text-red-600' : 'text-blue-600'}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              ${isEmergency
+                ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>'
+                : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>'}
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold ${isEmergency ? 'text-red-700 dark:text-red-400' : 'text-blue-700 dark:text-blue-400'}">
+            ${isEmergency ? 'Emergency Resources' : 'Crisis Support Available'}
+          </h3>
+        </div>
+        <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+          ${isEmergency
+            ? 'If you or someone else is in immediate danger, please call 911.'
+            : "If you're experiencing a mental health crisis, help is available 24/7."}
+        </p>
+        <div class="space-y-3">
+          ${isEmergency ? `
+            <a href="tel:911" class="flex items-center gap-4 p-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/50 flex items-center justify-center">
+                <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <div class="font-semibold text-neutral-900 dark:text-white">Emergency Services</div>
+                <div class="text-sm text-red-600 dark:text-red-400 font-medium">Call 911</div>
+              </div>
+              <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          ` : `
+            <a href="tel:988" class="flex items-center gap-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <div class="font-semibold text-neutral-900 dark:text-white">988 Suicide & Crisis Lifeline</div>
+                <div class="text-sm text-blue-600 dark:text-blue-400 font-medium">Call or text 988</div>
+              </div>
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="sms:741741&body=HOME" class="flex items-center gap-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <div class="font-semibold text-neutral-900 dark:text-white">Crisis Text Line</div>
+                <div class="text-sm text-blue-600 dark:text-blue-400 font-medium">Text HOME to 741741</div>
+              </div>
+              <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          `}
+        </div>
+        <button type="button" class="w-full mt-4 py-2 text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200" id="crisis-dialog-close">
+          Continue searching
+        </button>
+      </div>
+    `;
+    document.body.appendChild(dialog);
+
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog || e.target.id === 'crisis-dialog-close') {
+        dialog.remove();
+      }
+    });
   }
 
   function addMessage(text, role, isError = false) {
@@ -283,14 +387,18 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     return div.innerHTML.replace(/\n/g, '<br>');
   }
 
-  function addAssistantResponse(message, programs) {
+  function addProgramResults(programs, count) {
     const wrapper = document.createElement('div');
     wrapper.className = 'assistant-message space-y-3';
 
-    // Add the text message
+    // Add result count message
     const messageBubble = document.createElement('div');
     messageBubble.className = 'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
-    messageBubble.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">${escapeHtml(message)}</p>`;
+    if (count === 0) {
+      messageBubble.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">I couldn't find matching programs. Try different keywords or browse by category on the main page.</p>`;
+    } else {
+      messageBubble.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">Found <strong>${count}</strong> program${count !== 1 ? 's' : ''} that may help:</p>`;
+    }
     wrapper.appendChild(messageBubble);
 
     // Add program cards if available
