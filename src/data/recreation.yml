@@ -1585,20 +1585,6 @@
   link_text: Learn More
   verified_by: San Mateo County
   verified_date: '2026-01-03'
-- id: smc-wifi-wic-epa
-  name: WIC-EPA
-  category: Health
-  area: San Mateo County
-  city: East Palo Alto
-  groups:
-    - everyone
-  address: 2160 Euclid Ave, East Palo Alto, CA 94303
-  amenities:
-    - Free WiFi
-  link: https://www.smcgov.org/smc-public-wifi-project
-  link_text: Learn More
-  verified_by: San Mateo County
-  verified_date: '2026-01-03'
 - id: smc-wifi-coastside-hope
   name: Coastside Hope
   category: Technology
@@ -2092,20 +2078,6 @@
   verified_date: '2026-01-03'
 - id: east-palo-alto-wic-epa
   name: WIC - EPA
-  sync_source: smc-wifi
-  category: Health
-  area: San Mateo County
-  city: East Palo Alto
-  groups:
-    - everyone
-  address: 2160 Euclid Ave, East Palo Alto, CA 94303
-  amenities:
-    - name: 🛜 Free WiFi
-      link: https://www.smcgov.org/smc-public-wifi-project
-  verified_by: San Mateo County
-  verified_date: '2026-01-03'
-- id: east-palo-alto-wic-epa
-  name: WIC-EPA
   sync_source: smc-wifi
   category: Health
   area: San Mateo County

@@ -32,7 +32,6 @@
   area: Alameda County
   groups:
   - youth
-  - 🏫
   description: AC Transit (Alameda-Contra Costa Transit District) is the third-largest public bus system in California, serving the East Bay including Oakland, Berkeley, and surrounding cities with local and transbay service.
   what_they_offer: |
     - Student Transit Pass Program (STPP): Free unlimited rides for eligible middle and high school students
@@ -438,10 +437,10 @@
   area: San Francisco
   groups:
   - youth
+  - seniors
   - veterans
   - disability
   - income-eligible
-  - ⚽
   description: San Francisco Municipal Transportation Agency (SFMTA) operates Muni, the city's public transit system including buses, light rail (Metro), cable cars, and historic streetcars. Multiple free and discounted fare programs are available.
   what_they_offer: |
     - Free Muni for Youth (ages 5-18): Free on all Muni except cable cars

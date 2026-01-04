@@ -56,7 +56,6 @@
   category: Pet Resources
   area: Santa Clara County
   groups:
-  - 📍
   - income-eligible
   description: The Humane Society Silicon Valley's Pet Pantry program helps families keep their pets by providing free pet food during times of financial hardship.
   what_they_offer: |
@@ -110,7 +109,6 @@
   category: Pet Resources
   area: Contra Costa County
   groups:
-  - 📍
   - income-eligible
   description: Joybound People & Pets (formerly Tony La Russa's ARF) provides low-cost veterinary care to help Contra Costa County residents keep their pets healthy.
   what_they_offer: |
@@ -138,7 +136,6 @@
   category: Pet Resources
   area: Contra Costa County
   groups:
-  - 📍
   - income-eligible
   description: Joybound's pet food assistance program helps Contra Costa County families keep their pets by providing free food during financial hardship.
   what_they_offer: |
@@ -165,7 +162,6 @@
   category: Pet Resources
   area: Contra Costa County
   groups:
-  - 📍
   - everyone
   description: Joybound holds free vaccination clinics throughout Contra Costa County to help ensure all pets have access to essential preventive care.
   what_they_offer: |
@@ -191,7 +187,6 @@
   category: Pet Resources
   area: Contra Costa County
   groups:
-  - 📍
   - income-eligible
   description: Joybound's Pet Safety Net provides emergency resources to help families keep their pets during times of crisis or financial hardship.
   what_they_offer: |
@@ -219,7 +214,6 @@
   category: Pet Resources
   area: Contra Costa County
   groups:
-  - 📍
   - income-eligible
   - everyone
   description: Joybound offers low-cost spay and neuter services to help reduce pet overpopulation and keep pets healthy.
@@ -492,7 +486,7 @@
   category: Pet Resources
   area: San Francisco
   groups:
-  - 📍
+    - everyone
   description: The SF SPCA offers affordable spay and neuter services with tiered pricing to make sterilization accessible to all San Francisco residents.
   what_they_offer: |
     - Tiered pricing based on ability to pay
@@ -519,7 +513,6 @@
   category: Pet Resources
   area: Bay Area-wide
   groups:
-  - 📍
   - income-eligible
   description: SF Aid for Animals provides financial assistance for urgent veterinary care to low-income Bay Area residents, helping them avoid having to surrender or euthanize pets due to cost.
   what_they_offer: |
