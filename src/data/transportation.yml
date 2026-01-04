@@ -1,3 +1,31 @@
+- id: calvet-troops-to-trucks
+  name: Troops to Trucks (CDL Waiver Program)
+  category: Transportation
+  area: Statewide
+  groups:
+  - veterans
+  description: The California Troops to Trucks program allows qualifying service members and veterans with military driving experience to obtain a commercial driver's license (CDL) without taking the driving skills test. This fast-tracks veterans into high-demand trucking careers.
+  what_they_offer: |
+    - CDL skills test waiver for qualified veterans
+    - Applies to non-passenger commercial vehicles
+    - Faster path to Class A or B commercial license
+    - No need to retake driving portion of CDL test
+    - Leverages existing military driving experience
+  how_to_get_it: |
+    1. Must have military motor vehicle operator experience
+    2. Must have clean driving record (no serious violations in past 2 years)
+    3. Apply at California DMV with military driving documentation
+    4. Provide DD214 showing MOS with driving duties
+    5. Complete written CDL knowledge test
+    6. Skills test is waived - receive CDL
+  phone: '800-777-0133'
+  benefit: CDL skills test waiver for veterans with military driving experience; fast-track to commercial trucking career
+  how_to_use: Apply at DMV with military driving records and DD214
+  timeframe: Ongoing
+  link: https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/commercial-driver-licenses-cdl/
+  link_text: Learn More
+  verified_date: '2026-01-03'
+
 - id: ac-transit-stpp
   name: AC Transit
   category: Transportation

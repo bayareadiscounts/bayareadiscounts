@@ -1,3 +1,89 @@
+- id: calvet-home-loans
+  name: CalVet Home Loans
+  category: Finance
+  area: Statewide
+  groups:
+  - veterans
+  description: CalVet Home Loans provides California veterans with competitive mortgage financing to purchase homes, farms, or manufactured homes. The program often offers below-market interest rates and unique benefits not available through conventional lenders.
+  what_they_offer: |
+    - Competitive fixed interest rates
+    - Low or no down payment options
+    - Disaster protection (fire, earthquake, flood)
+    - Rehabilitation and home improvement loans
+    - Farm and manufactured home loans
+    - No prepayment penalties
+    - Sellers may assist with closing costs
+  how_to_get_it: |
+    1. Must be an eligible California veteran
+    2. Must purchase property in California
+    3. Apply online at CalVet Home Loans website
+    4. Get pre-qualified before house hunting
+    5. Complete application with CalVet-approved lender
+    6. Provide DD214, income verification, and credit check
+  phone: '800-952-5626'
+  benefit: Competitive mortgage rates for California veterans; low/no down payment options; disaster protection included; farm and manufactured home loans available
+  how_to_use: Apply online or call to get pre-qualified
+  timeframe: Ongoing
+  link: https://www.calvet.ca.gov/HomeLoans
+  link_text: Apply Now
+  verified_date: '2026-01-03'
+
+- id: calvet-property-tax-exemption
+  name: Disabled Veteran Property Tax Exemption
+  category: Finance
+  area: Statewide
+  groups:
+  - veterans
+  - disability
+  description: California offers one of the nation's most valuable property tax exemptions for disabled veterans. The exemption can eliminate thousands in annual property taxes based on disability rating and income level.
+  what_they_offer: |
+    - Full or partial property tax exemption
+    - Basic exemption up to $161,083 (2024) for 100% disabled
+    - Low-income exemption up to $241,627 (2024) for qualifying veterans
+    - Applies to primary residence only
+    - Unmarried surviving spouses may also qualify
+    - Annual savings can be thousands of dollars
+  how_to_get_it: |
+    1. Must have service-connected disability from VA
+    2. Must be California resident
+    3. Property must be primary residence
+    4. File claim with County Assessor's Office
+    5. Provide VA disability rating letter and DD214
+    6. Renew annually with county
+  benefit: Property tax exemption up to $241,627 assessed value for disabled veterans; based on disability rating and income
+  how_to_use: File with County Assessor; provide VA disability documentation
+  timeframe: Annual (file by February 15 for full year)
+  link: https://www.boe.ca.gov/proptaxes/dv_exemption.htm
+  link_text: Learn More
+  verified_date: '2026-01-03'
+
+- id: ca-military-retirement-tax-exclusion
+  name: Military Retirement Income Tax Exclusion
+  category: Finance
+  area: Statewide
+  groups:
+  - veterans
+  - seniors
+  description: Starting in 2025, California veterans receiving military retirement pay can exclude up to $20,000 annually from state income taxes. Surviving spouses receiving Survivor Benefit Plan payments also qualify for this new tax break.
+  what_they_offer: |
+    - Exclude up to $20,000 military retirement pay from state taxes
+    - Survivor Benefit Plan payments also eligible
+    - Available to military retirees of all ages
+    - Surviving spouses qualify independently
+    - Reduces California state income tax liability
+  how_to_get_it: |
+    1. Must receive military retirement pay or SBP payments
+    2. Must file California state income tax return
+    3. Claim exclusion on California tax return (Form 540)
+    4. Follow FTB instructions for military retirement exclusion
+    5. Keep documentation of military retirement income
+  benefit: Exclude up to $20,000 of military retirement or Survivor Benefit Plan income from California state taxes annually
+  how_to_use: Claim on California tax return (Form 540)
+  timeframe: Tax year 2025 and beyond
+  link: https://www.ftb.ca.gov/
+  link_text: California FTB
+  verified_date: '2026-01-03'
+
 - id: calable
   name: CalABLE
   category: Finance

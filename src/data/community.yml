@@ -1,3 +1,122 @@
+- id: calvet-benefits-portal
+  name: CalVet Benefits & Services Portal
+  category: Community Services
+  area: Statewide
+  groups:
+  - veterans
+  description: The California Department of Veterans Affairs (CalVet) connects California's 1.6 million veterans and their families to state and federal benefits. The CalVet portal helps veterans discover and apply for housing, education, employment, healthcare, and financial assistance.
+  what_they_offer: |
+    - Personalized benefits eligibility screening
+    - Home loans with competitive rates (CalVet Home Loans)
+    - College fee waivers for dependents (CalVet College Fee Waiver)
+    - Veterans Homes of California (8 locations statewide)
+    - Employment and career services
+    - Claims assistance for VA benefits
+    - Mental health and wellness resources
+    - Veteran ID cards
+  how_to_get_it: |
+    1. Visit calvet.ca.gov or call the CalVet helpline
+    2. Complete the free benefits eligibility screening
+    3. Get personalized recommendations for available programs
+    4. Work with a CalVet representative to apply for benefits
+    5. Visit a County Veterans Service Office (CVSO) for in-person help
+  phone: '844-225-8387'
+  benefit: Free benefits screening and navigation for California veterans and families; access to CalVet home loans, college fee waivers, veterans homes, employment services
+  how_to_use: Call helpline or visit website to start benefits eligibility screening
+  timeframe: Ongoing
+  link: https://www.calvet.ca.gov/
+  link_text: Explore Benefits
+  verified_date: '2026-01-03'
+
+- id: calvet-dvbe
+  name: Disabled Veteran Business Enterprise (DVBE) Program
+  category: Community Services
+  area: Statewide
+  groups:
+  - veterans
+  - disability
+  description: The California Disabled Veteran Business Enterprise (DVBE) program helps veteran-owned businesses win state contracts. Certified DVBE businesses receive preference in state purchasing and contracting, with a goal that 3% of state contracts go to DVBEs.
+  what_they_offer: |
+    - DVBE certification for state contract bidding
+    - 3% statewide participation goal for DVBE contracts
+    - Access to state procurement opportunities
+    - Business development resources
+    - Networking with prime contractors
+    - Technical assistance and training
+    - Bid preference on certain contracts
+  how_to_get_it: |
+    1. Business must be at least 51% owned by service-disabled veteran
+    2. Veteran must have 10% or greater service-connected disability
+    3. Apply through California Department of General Services
+    4. Submit DD214, VA disability rating letter, and business documents
+    5. Complete DVBE application online
+    6. Wait for certification review (typically 30-45 days)
+  phone: '916-375-4940'
+  benefit: DVBE certification gives veteran-owned businesses preference in California state contracts; access 3% statewide participation goal
+  how_to_use: Apply for certification; search for contract opportunities on Cal eProcure
+  timeframe: Ongoing
+  link: https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-702/Certification-Programs/DVBE-Program
+  link_text: Apply for DVBE
+  verified_date: '2026-01-03'
+
+- id: calvet-caltap
+  name: California Transition Assistance Program (CalTAP)
+  category: Community Services
+  area: Statewide
+  groups:
+  - veterans
+  description: CalTAP connects transitioning service members and veterans with their earned federal and state benefits through five pathways - Core Curriculum, Education, Employment, Entrepreneurship, and Service Providers. Since 2017, CalTAP has served over 12,000 veterans at military installations and college campuses.
+  what_they_offer: |
+    - Benefits education and navigation
+    - Employment and career services
+    - Education pathway guidance
+    - Entrepreneurship resources
+    - Connection to local service providers
+    - Continued support as needs change
+  how_to_get_it: |
+    1. Attend a CalTAP workshop at a military installation
+    2. Or visit a CalTAP session at a California college campus
+    3. Complete intake and needs assessment
+    4. Connect with local veteran service providers
+    5. Receive ongoing support and referrals
+  phone: '877-741-8532'
+  benefit: Free transition assistance connecting veterans to benefits, education, employment, and entrepreneurship resources
+  how_to_use: Attend workshop at military installation or college campus
+  timeframe: Ongoing
+  link: https://www.calvet.ca.gov/VetServices/Pages/California-Transition-Assistance-Program.aspx
+  link_text: Learn More
+  verified_date: '2026-01-03'
+
+- id: calvet-vhhp
+  name: Veterans Housing and Homelessness Prevention (VHHP)
+  category: Community Services
+  area: Statewide
+  groups:
+  - veterans
+  - unhoused
+  - income-eligible
+  description: The Veterans Housing and Homelessness Prevention program develops affordable permanent supportive housing for veterans and their families who are experiencing homelessness or have extremely low income. CalVet has awarded $580.5 million to 99 housing projects with over 5,190 units.
+  what_they_offer: |
+    - Affordable permanent housing for veterans
+    - Supportive services included
+    - Priority for homeless and at-risk veterans
+    - Family housing available
+    - Case management and support
+    - Connection to VA benefits
+  how_to_get_it: |
+    1. Contact your local County Veterans Service Office
+    2. Verify veteran status and eligibility
+    3. Complete housing needs assessment
+    4. Get referral to VHHP housing project in your area
+    5. Work with case manager through application process
+  phone: '877-741-8532'
+  benefit: Affordable permanent housing with supportive services for veterans experiencing homelessness or with extremely low income
+  how_to_use: Contact County Veterans Service Office for referral
+  timeframe: Ongoing (waitlists vary by location)
+  link: https://www.calvet.ca.gov/veteran-services-benefits/housing
+  link_text: Learn More
+  verified_date: '2026-01-03'
+
 - id: 211-bay-area
   name: 2-1-1 Bay Area
   category: Community Services
