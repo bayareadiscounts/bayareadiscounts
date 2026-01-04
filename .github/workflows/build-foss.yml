@@ -1,4 +1,4 @@
-name: Release (FOSS)
+name: Build FOSS APK
 
 on:
   workflow_dispatch:
