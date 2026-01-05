@@ -363,17 +363,24 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
           loadingEl.style.display = 'none';
         }
 
-        // Click on cluster to zoom
+        // Click on cluster to zoom in and expand it
         map.on('click', 'clusters', (e) => {
           const features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
+          if (!features.length) return;
+
           const clusterId = features[0].properties?.cluster_id;
           const source = map.getSource('programs') as maplibregl.GeoJSONSource;
+          const clusterCoords = (features[0].geometry as GeoJSON.Point).coordinates as [number, number];
 
           source.getClusterExpansionZoom(clusterId, (err, zoom) => {
             if (err) return;
-            map.easeTo({
-              center: (features[0].geometry as GeoJSON.Point).coordinates as [number, number],
-              zoom: zoom ?? 12
+            // Zoom in at least 1 level more than the expansion zoom for a noticeable effect
+            const targetZoom = Math.min((zoom ?? 12) + 1, 18);
+            map.flyTo({
+              center: clusterCoords,
+              zoom: targetZoom,
+              duration: 500,
+              essential: true
             });
           });
         });
