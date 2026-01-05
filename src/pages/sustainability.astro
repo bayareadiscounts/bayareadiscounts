@@ -8,7 +8,7 @@ const aiProvider = 'Azure OpenAI';
 
 // Azure sustainability stats (from Microsoft's published data)
 const azureStats = {
-  renewableEnergyTarget: 100, // % by 2025
+  renewableEnergy: 100, // % achieved in 2025
   carbonNegativeBy: 2030,
   energyEfficiencyVsOnPrem: 93, // %
   carbonEfficiencyVsOnPrem: 98, // %
@@ -106,19 +106,19 @@ const githubStats = {
         <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M13.05 4.24l-2.93 8.48l8.02 1.42l-.94-9.9h-4.15zm-3.63 10.16L5.31 9.13l-.07 7.93l4.18-2.66zm.93 1.34l-.02.02l4.1 3.08l3.34-1.32l-7.42-1.78z"/>
+              <svg class="w-7 h-7 text-blue-600 dark:text-blue-400" viewBox="0 0 96 96" fill="currentColor">
+                <path d="M54.4 12.3L34.1 52.5l31.3 5.5L61.7 12H54.4zM29 56.1l-16.7-8.7-.3 30.9L29 68.4V56.1zm3.6 5.2l-.1.1 16 12 13-5.1-28.9-7z"/>
               </svg>
             </div>
             <div class="flex-1">
               <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Microsoft Azure Static Web Apps</h3>
               <p class="text-neutral-600 dark:text-neutral-300 text-sm mb-3">
-                Our website is hosted on Azure, which has been carbon neutral since 2012 and is committed to being carbon negative by 2030.
+                Our website is hosted on Azure, which has been carbon neutral since 2012 and achieved 100% renewable energy in 2025.
               </p>
               <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
-                  <div class="font-bold text-green-700 dark:text-green-400">{azureStats.renewableEnergyTarget}%</div>
-                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Renewable by 2025</div>
+                  <div class="font-bold text-green-700 dark:text-green-400">{azureStats.renewableEnergy}%</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Renewable energy</div>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
                   <div class="font-bold text-green-700 dark:text-green-400">{azureStats.energyEfficiencyVsOnPrem}%</div>
@@ -141,14 +141,14 @@ const githubStats = {
         <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.2678-.2246-.2768-.5765-.4024-.9708-.4194l-8.6583-.0932c-.0674 0-.1259-.0303-.1641-.0757-.0381-.0474-.0489-.1032-.0322-.1565.0322-.089.1099-.1553.2029-.1641l8.7359-.0889c.7905-.0399 1.6458-.6737 1.9742-1.4578l.4556-1.1241c.0198-.0471.0299-.0972.0299-.1475 0-.0847-.0286-.1678-.0845-.2352-1.0551-1.2988-2.6503-2.1302-4.4458-2.1302-2.7141 0-5.0121 1.8174-5.7205 4.3021-.4866-.3512-1.0999-.5765-1.7823-.5565-1.2678.0381-2.3012 1.0397-2.3906 2.3053-.0189.2556.0017.5025.0591.7377C1.26 15.6596 0 17.0149 0 18.6651c0 .1475.0085.2925.025.4369.0164.1337.1337.2352.2691.2352h15.6968c.1475 0 .2779-.0991.3175-.2417l.2004-.7508z"/>
+              <svg class="w-7 h-7 text-orange-500 dark:text-orange-400" viewBox="0 0 128 128" fill="currentColor">
+                <path d="M99.4 66.6c-1.2-4.2-4.5-6.7-8.8-6.9l-56.8-.6c-.4 0-.8-.2-1.1-.5-.3-.3-.3-.7-.2-1 .2-.6.7-1 1.3-1.1l57.3-.6c5.2-.3 10.8-4.4 12.9-9.6l3-7.4c.1-.3.2-.6.2-1 0-.6-.2-1.1-.6-1.5-6.9-8.5-17.4-14-29.2-14-17.8 0-32.9 11.9-37.5 28.2-3.2-2.3-7.2-3.8-11.7-3.6-8.3.2-15.1 6.8-15.7 15.1-.1 1.7 0 3.3.4 4.8C5.7 69.5 0 78.4 0 88.6c0 1 .1 1.9.2 2.9.1.9.9 1.5 1.8 1.5h102.9c1 0 1.8-.6 2.1-1.6l1.3-4.9c1-3.3.6-6.4-1-8.3-.8-.9-1.8-1.6-3-1.9l-4.9-1.3z"/>
               </svg>
             </div>
             <div class="flex-1">
               <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Cloudflare CDN & Security</h3>
               <p class="text-neutral-600 dark:text-neutral-300 text-sm mb-3">
-                Cloudflare powers our content delivery with 100% renewable energy. Moving to Cloudflare can reduce network carbon emissions by up to 96%.
+                Cloudflare powers our content delivery with 100% renewable energy and achieved net-zero emissions in 2025.
               </p>
               <div class="grid grid-cols-3 gap-3 text-sm">
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
@@ -160,8 +160,8 @@ const githubStats = {
                   <div class="text-xs text-neutral-500 dark:text-neutral-400">Carbon reduction</div>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
-                  <div class="font-bold text-green-700 dark:text-green-400">2025</div>
-                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Net-zero target</div>
+                  <div class="font-bold text-green-700 dark:text-green-400">Net Zero</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Since 2025</div>
                 </div>
               </div>
             </div>

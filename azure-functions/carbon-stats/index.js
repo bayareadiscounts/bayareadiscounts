@@ -13,8 +13,8 @@ const PROVIDER_STATS = {
   azure: {
     name: 'Microsoft Azure',
     carbonNeutralSince: 2012,
-    renewableEnergyTarget: 100,
-    renewableEnergyTargetYear: 2025,
+    renewableEnergy: 100,
+    renewableEnergySince: 2025,
     carbonNegativeTarget: 2030,
     pueRatio: 1.12,
     energyEfficiencyVsOnPrem: 93,
@@ -26,7 +26,7 @@ const PROVIDER_STATS = {
     renewableEnergy: 100,
     carbonReductionSmallBiz: 96,
     carbonReductionEnterprise: 78,
-    netZeroTarget: 2025,
+    netZeroSince: 2025,
     source: 'https://www.cloudflare.com/impact/'
   },
   github: {
@@ -48,7 +48,7 @@ const PROVIDER_STATS = {
 // Estimated carbon factors (grams CO2e)
 const CARBON_FACTORS = {
   pageViewGrams: 0.2,        // Average static site page view
-  aiQueryGrams: 1.5,         // Claude API call estimate
+  aiQueryGrams: 1.5,         // Azure OpenAI API call estimate
   ciMinuteGrams: 0.4,        // GitHub Actions minute (renewable-offset)
   cdnRequestGrams: 0.0001,   // Cloudflare edge request
 };
