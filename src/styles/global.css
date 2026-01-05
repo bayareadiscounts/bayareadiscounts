@@ -4,6 +4,40 @@
 
 /* BayNavigator Global Styles */
 
+/*
+ * WCAG 2.2 AAA: User Customizable Text Settings
+ * CSS Custom Properties for text customization
+ * Values are set via JavaScript based on user preferences
+ */
+:root {
+  --text-size-scale: 1;
+  --text-line-height: 1.6;
+  --text-letter-spacing: 0em;
+  --text-word-spacing: 0em;
+}
+
+/* Apply text customization to main content */
+main,
+.text-customizable {
+  font-size: calc(1rem * var(--text-size-scale));
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
+  word-spacing: var(--text-word-spacing);
+}
+
+/* Ensure headings scale proportionally */
+main h1 { font-size: calc(2.25rem * var(--text-size-scale)); }
+main h2 { font-size: calc(1.875rem * var(--text-size-scale)); }
+main h3 { font-size: calc(1.5rem * var(--text-size-scale)); }
+main h4 { font-size: calc(1.25rem * var(--text-size-scale)); }
+
+@media (min-width: 768px) {
+  main h1 { font-size: calc(3rem * var(--text-size-scale)); }
+  main h2 { font-size: calc(2.25rem * var(--text-size-scale)); }
+  main h3 { font-size: calc(1.875rem * var(--text-size-scale)); }
+  main h4 { font-size: calc(1.5rem * var(--text-size-scale)); }
+}
+
 @layer base {
   /*
    * WCAG 2.2 AAA: Focus styles for accessibility
@@ -270,5 +304,145 @@
   abbr[title]:hover,
   abbr[title]:focus {
     @apply border-solid;
+  }
+
+  /*
+   * WCAG 2.2 AAA: Enhanced Tooltips
+   * Custom tooltip system for complex UI elements
+   * Accessible via hover and focus, with keyboard dismissal
+   */
+  [data-tooltip] {
+    position: relative;
+    cursor: help;
+  }
+
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background: #1f2937;
+    color: #f9fafb;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    border-radius: 6px;
+    white-space: normal;
+    max-width: 250px;
+    width: max-content;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Tooltip arrow */
+  [data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #1f2937;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+  }
+
+  /* Show tooltip on hover and focus */
+  [data-tooltip]:hover::after,
+  [data-tooltip]:hover::before,
+  [data-tooltip]:focus::after,
+  [data-tooltip]:focus::before,
+  [data-tooltip]:focus-visible::after,
+  [data-tooltip]:focus-visible::before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Tooltip positioning variants */
+  [data-tooltip-position="bottom"]::after {
+    bottom: auto;
+    top: calc(100% + 8px);
+  }
+
+  [data-tooltip-position="bottom"]::before {
+    bottom: auto;
+    top: calc(100% + 2px);
+    border-top-color: transparent;
+    border-bottom-color: #1f2937;
+  }
+
+  [data-tooltip-position="left"]::after {
+    bottom: auto;
+    top: 50%;
+    left: auto;
+    right: calc(100% + 8px);
+    transform: translateY(-50%);
+  }
+
+  [data-tooltip-position="left"]::before {
+    bottom: auto;
+    top: 50%;
+    left: auto;
+    right: calc(100% + 2px);
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-left-color: #1f2937;
+  }
+
+  [data-tooltip-position="right"]::after {
+    bottom: auto;
+    top: 50%;
+    left: calc(100% + 8px);
+    transform: translateY(-50%);
+  }
+
+  [data-tooltip-position="right"]::before {
+    bottom: auto;
+    top: 50%;
+    left: calc(100% + 2px);
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-right-color: #1f2937;
+  }
+
+  /* Dark mode tooltip colors */
+  .dark [data-tooltip]::after {
+    background: #f3f4f6;
+    color: #1f2937;
+  }
+
+  .dark [data-tooltip]::before {
+    border-top-color: #f3f4f6;
+  }
+
+  .dark [data-tooltip-position="bottom"]::before {
+    border-top-color: transparent;
+    border-bottom-color: #f3f4f6;
+  }
+
+  .dark [data-tooltip-position="left"]::before {
+    border-top-color: transparent;
+    border-left-color: #f3f4f6;
+  }
+
+  .dark [data-tooltip-position="right"]::before {
+    border-top-color: transparent;
+    border-right-color: #f3f4f6;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    [data-tooltip]::after,
+    [data-tooltip]::before {
+      transition: none;
+    }
   }
 }

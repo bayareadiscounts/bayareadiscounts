@@ -1,0 +1,303 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+/**
+ * WCAG 2.2 AAA: 3.1.4 Abbreviations
+ * Comprehensive glossary of government program terminology
+ */
+
+// All abbreviation definitions organized by category
+const glossaryData = {
+  'Food & Nutrition': {
+    'SNAP': 'Supplemental Nutrition Assistance Program - Federal program providing food-purchasing assistance for low-income individuals and families.',
+    'WIC': 'Women, Infants, and Children - Federal nutrition program for pregnant women, new mothers, and young children.',
+    'EBT': 'Electronic Benefits Transfer - Card system used to distribute SNAP, WIC, and other benefits.',
+    'CalFresh': 'California Food Stamps Program (SNAP) - California\'s name for the federal SNAP program.',
+  },
+  'Healthcare & Disability': {
+    'SSI': 'Supplemental Security Income - Federal income supplement for aged, blind, and disabled people with little or no income.',
+    'SSDI': 'Social Security Disability Insurance - Federal insurance program for workers who become disabled.',
+    'SSA': 'Social Security Administration - Federal agency administering Social Security programs.',
+    'CMS': 'Centers for Medicare & Medicaid Services - Federal agency managing Medicare, Medicaid, and ACA marketplace.',
+    'CHIP': 'Children\'s Health Insurance Program - Federal-state program providing health coverage to children.',
+    'ACA': 'Affordable Care Act - Federal law expanding healthcare access, also known as Obamacare.',
+    'HHS': 'Department of Health and Human Services - Federal department overseeing health programs.',
+    'Medi-Cal': 'California\'s Medicaid Program - California\'s free or low-cost health coverage for eligible residents.',
+  },
+  'Housing': {
+    'HUD': 'Department of Housing and Urban Development - Federal agency responsible for housing programs.',
+    'LIHTC': 'Low-Income Housing Tax Credit - Federal tax incentive for affordable housing development.',
+    'PHA': 'Public Housing Agency - Local agencies administering HUD housing programs.',
+    'FMR': 'Fair Market Rent - HUD-determined rent levels for Section 8 vouchers.',
+    'AMI': 'Area Median Income - Income metric used to determine program eligibility.',
+  },
+  'Utilities & Energy': {
+    'LIHEAP': 'Low Income Home Energy Assistance Program - Federal program helping families with energy costs.',
+    'CARE': 'California Alternate Rates for Energy - California discount on gas and electric bills.',
+    'FERA': 'Family Electric Rate Assistance - California electric bill discount for moderate-income households.',
+    'PG&E': 'Pacific Gas and Electric Company - Major utility company serving Northern California.',
+  },
+  'Education': {
+    'FAFSA': 'Free Application for Federal Student Aid - Application for federal student financial aid.',
+    'PELL': 'Federal Pell Grant - Need-based federal grant for undergraduate students.',
+    'GED': 'General Educational Development - High school equivalency credential.',
+    'ESL': 'English as a Second Language - Programs teaching English to non-native speakers.',
+  },
+  'Employment & Income': {
+    'EDD': 'Employment Development Department - California agency managing unemployment and disability benefits.',
+    'UI': 'Unemployment Insurance - Benefits for workers who lose their jobs.',
+    'SDI': 'State Disability Insurance - California program providing partial wage replacement.',
+    'PFL': 'Paid Family Leave - California program for time off to care for family members.',
+    'DOL': 'Department of Labor - Federal agency overseeing workplace standards.',
+    'EITC': 'Earned Income Tax Credit - Federal tax credit for low-to-moderate income workers.',
+    'CTC': 'Child Tax Credit - Federal tax credit for families with children.',
+    'VITA': 'Volunteer Income Tax Assistance - Free tax preparation service.',
+  },
+  'Family Assistance': {
+    'TANF': 'Temporary Assistance for Needy Families - Federal-state program providing cash aid to families.',
+    'CalWORKs': 'California Work Opportunity and Responsibility to Kids - California\'s TANF program.',
+  },
+  'Government Agencies': {
+    'IRS': 'Internal Revenue Service - Federal tax collection agency.',
+    'VA': 'Department of Veterans Affairs - Federal agency serving military veterans.',
+    'USDA': 'United States Department of Agriculture - Federal agency overseeing food and farming programs.',
+    'DMV': 'Department of Motor Vehicles - State agency managing driver licenses and vehicle registration.',
+    'NPS': 'National Park Service - Federal agency managing national parks and monuments.',
+    'IMLS': 'Institute of Museum and Library Services - Federal agency supporting museums and libraries.',
+  },
+  'Transportation': {
+    'BART': 'Bay Area Rapid Transit - Regional rail system serving the San Francisco Bay Area.',
+    'Muni': 'San Francisco Municipal Transportation Agency - Public transit system in San Francisco.',
+    'VTA': 'Valley Transportation Authority - Public transit serving Santa Clara County.',
+    'AC Transit': 'Alameda-Contra Costa Transit District - Bus service in the East Bay.',
+    'SamTrans': 'San Mateo County Transit District - Bus service in San Mateo County.',
+    'Caltrain': 'Peninsula Corridor Joint Powers Board - Commuter rail from San Francisco to San Jose.',
+  },
+  'Technology': {
+    'WiFi': 'Wireless Fidelity (Wireless Internet) - Technology for wireless local area networking.',
+    'ACP': 'Affordable Connectivity Program - Federal program providing internet service discounts.',
+  },
+};
+
+// Count total terms
+const totalTerms = Object.values(glossaryData).reduce((acc, cat) => acc + Object.keys(cat).length, 0);
+
+// Get all categories for navigation
+const categories = Object.keys(glossaryData);
+---
+
+<BaseLayout
+  title="Glossary - Government Program Terminology"
+  description="Definitions of common abbreviations and terms used in government benefit programs, healthcare, housing assistance, and social services."
+>
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <Breadcrumb items={[{ label: 'Glossary', href: '/glossary' }]} />
+
+    <!-- Hero Section -->
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-full mb-4">
+        <svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
+        Glossary of Terms
+      </h1>
+      <p class="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto mb-4">
+        Definitions of {totalTerms} common abbreviations and terms used in government benefit programs.
+      </p>
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+        WCAG 2.2 AAA: 3.1.4 Abbreviations - Providing mechanisms for identifying expanded forms of abbreviations.
+      </p>
+    </div>
+
+    <!-- Search Box -->
+    <div class="mb-8">
+      <label for="glossary-search" class="sr-only">Search glossary terms</label>
+      <div class="relative">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input
+          type="search"
+          id="glossary-search"
+          placeholder="Search terms or definitions..."
+          class="w-full pl-10 pr-4 py-3 rounded-lg border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+        />
+      </div>
+      <p id="search-results-count" class="mt-2 text-sm text-neutral-500 dark:text-neutral-400 hidden">
+        Showing <span id="visible-count">0</span> of {totalTerms} terms
+      </p>
+    </div>
+
+    <!-- Quick Navigation -->
+    <nav aria-label="Category navigation" class="mb-8 bg-neutral-50 dark:bg-neutral-800/50 rounded-lg p-4">
+      <h2 class="text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-3">Jump to Category:</h2>
+      <div class="flex flex-wrap gap-2">
+        {categories.map((category) => (
+          <a
+            href={`#${category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+            class="text-sm px-3 py-1.5 rounded-full bg-white dark:bg-neutral-700 text-primary-700 dark:text-primary-300 hover:bg-primary-50 dark:hover:bg-primary-900/30 border border-neutral-200 dark:border-neutral-600 transition-colors"
+          >
+            {category}
+          </a>
+        ))}
+      </div>
+    </nav>
+
+    <!-- Glossary Content -->
+    <div id="glossary-content" class="space-y-8">
+      {Object.entries(glossaryData).map(([category, terms]) => (
+        <section id={category.toLowerCase().replace(/[^a-z0-9]+/g, '-')} class="glossary-section scroll-mt-24">
+          <h2 class="text-xl font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2 sticky top-16 bg-white dark:bg-neutral-900 py-2 -mx-2 px-2 z-10">
+            <span class="w-2 h-2 rounded-full bg-primary-500"></span>
+            {category}
+            <span class="text-sm font-normal text-neutral-500 dark:text-neutral-400">
+              ({Object.keys(terms).length} terms)
+            </span>
+          </h2>
+          <dl class="space-y-3">
+            {Object.entries(terms).map(([abbr, definition]) => (
+              <div class="glossary-term bg-white dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700" data-term={abbr.toLowerCase()} data-definition={definition.toLowerCase()}>
+                <dt class="font-semibold text-neutral-900 dark:text-white mb-1">
+                  <abbr title={definition.split(' - ')[0]} class="no-underline border-none">
+                    {abbr}
+                  </abbr>
+                </dt>
+                <dd class="text-neutral-600 dark:text-neutral-300 text-sm">
+                  {definition}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ))}
+    </div>
+
+    <!-- No Results Message -->
+    <div id="no-results" class="hidden text-center py-12">
+      <svg class="w-16 h-16 mx-auto text-neutral-300 dark:text-neutral-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="text-neutral-500 dark:text-neutral-400">No terms found matching your search.</p>
+      <button id="clear-search" class="mt-4 text-primary-600 dark:text-primary-400 hover:underline">
+        Clear search
+      </button>
+    </div>
+
+    <!-- Back to top -->
+    <div class="mt-12 text-center">
+      <a href="#" class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:underline">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+        Back to top
+      </a>
+    </div>
+
+    <!-- Related Links -->
+    <section class="mt-12 bg-neutral-50 dark:bg-neutral-800/50 rounded-xl p-6">
+      <h2 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Related Resources</h2>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="/directory" class="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg>
+            Browse All Programs
+          </a>
+        </li>
+        <li>
+          <a href="/accessibility" class="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+            Accessibility Statement
+          </a>
+        </li>
+        <li>
+          <a href="https://www.usa.gov/benefit-finder" target="_blank" rel="noopener" class="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            USA.gov Benefits Finder
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    // Search functionality
+    const searchInput = document.getElementById('glossary-search') as HTMLInputElement;
+    const glossaryContent = document.getElementById('glossary-content');
+    const noResults = document.getElementById('no-results');
+    const searchResultsCount = document.getElementById('search-results-count');
+    const visibleCount = document.getElementById('visible-count');
+    const clearSearchBtn = document.getElementById('clear-search');
+    const sections = document.querySelectorAll('.glossary-section');
+    const terms = document.querySelectorAll('.glossary-term');
+
+    function filterTerms(query: string) {
+      const normalizedQuery = query.toLowerCase().trim();
+      let visibleTermsCount = 0;
+
+      if (!normalizedQuery) {
+        // Show all
+        sections.forEach(section => (section as HTMLElement).style.display = '');
+        terms.forEach(term => (term as HTMLElement).style.display = '');
+        noResults?.classList.add('hidden');
+        searchResultsCount?.classList.add('hidden');
+        return;
+      }
+
+      // Filter terms
+      sections.forEach(section => {
+        const sectionTerms = section.querySelectorAll('.glossary-term');
+        let hasVisibleTerms = false;
+
+        sectionTerms.forEach(term => {
+          const termText = term.getAttribute('data-term') || '';
+          const defText = term.getAttribute('data-definition') || '';
+
+          if (termText.includes(normalizedQuery) || defText.includes(normalizedQuery)) {
+            (term as HTMLElement).style.display = '';
+            hasVisibleTerms = true;
+            visibleTermsCount++;
+          } else {
+            (term as HTMLElement).style.display = 'none';
+          }
+        });
+
+        (section as HTMLElement).style.display = hasVisibleTerms ? '' : 'none';
+      });
+
+      // Show/hide no results message
+      if (visibleTermsCount === 0) {
+        noResults?.classList.remove('hidden');
+        glossaryContent?.classList.add('hidden');
+      } else {
+        noResults?.classList.add('hidden');
+        glossaryContent?.classList.remove('hidden');
+      }
+
+      // Update count
+      if (visibleCount) visibleCount.textContent = String(visibleTermsCount);
+      searchResultsCount?.classList.remove('hidden');
+    }
+
+    searchInput?.addEventListener('input', (e) => {
+      filterTerms((e.target as HTMLInputElement).value);
+    });
+
+    clearSearchBtn?.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        filterTerms('');
+        searchInput.focus();
+      }
+    });
+  </script>
+</BaseLayout>

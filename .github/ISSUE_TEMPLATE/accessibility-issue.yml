@@ -1,0 +1,149 @@
+name: Accessibility Issue
+description: Report an accessibility barrier or WCAG compliance issue
+title: "[A11y]: "
+labels: ["accessibility", "a11y"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve accessibility! Bay Navigator is committed to WCAG 2.2 AAA compliance.
+
+        Please provide as much detail as possible so we can address the issue.
+
+  - type: dropdown
+    id: barrier-type
+    attributes:
+      label: Type of Accessibility Barrier
+      description: What type of accessibility issue did you encounter?
+      options:
+        - Screen reader compatibility
+        - Keyboard navigation
+        - Color contrast
+        - Focus management
+        - Touch target size
+        - Motion/animation
+        - Text readability
+        - Form labels/errors
+        - Alternative text (images)
+        - Captions/transcripts
+        - Language/terminology
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: wcag-level
+    attributes:
+      label: WCAG Level (if known)
+      description: Which WCAG level does this potentially affect?
+      options:
+        - Not sure
+        - Level A (essential)
+        - Level AA (standard)
+        - Level AAA (enhanced)
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the accessibility barrier you encountered
+      placeholder: |
+        Example: "The program cards cannot be navigated using Tab key" or "The search button doesn't have visible focus indicator"
+    validations:
+      required: true
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL
+      description: Which page did you encounter this on?
+      placeholder: https://baynavigator.org/directory
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Navigate to the directory page
+        2. Try to Tab through the program cards
+        3. Observe that focus is not visible
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: Focus should be clearly visible on each interactive element
+    validations:
+      required: true
+
+  - type: dropdown
+    id: assistive-tech
+    attributes:
+      label: Assistive Technology Used
+      description: What assistive technology are you using (if any)?
+      options:
+        - None/manual testing
+        - NVDA
+        - JAWS
+        - VoiceOver (macOS)
+        - VoiceOver (iOS)
+        - TalkBack (Android)
+        - Windows Narrator
+        - ZoomText
+        - Dragon NaturallySpeaking
+        - Switch device
+        - Eye tracking
+        - Other (specify in description)
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Version
+      placeholder: Chrome 120, Firefox 121, Safari 17
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: macOS Sonoma, Windows 11, iOS 17
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: How does this barrier affect your ability to use Bay Navigator?
+      placeholder: |
+        Example: "I cannot navigate the directory because..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested Fix (Optional)
+      description: If you have ideas on how to fix this, let us know!
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Follow-up
+      description: May we contact you for more details?
+      options:
+        - label: Yes, you may follow up with me about this issue
+          required: false

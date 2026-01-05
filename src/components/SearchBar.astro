@@ -79,7 +79,12 @@ const sizeClasses = size === 'large'
 
   <!-- AI Toggle Pill -->
   <div class="relative flex items-center justify-end mt-2 gap-2">
-    <span class="text-xs text-neutral-600 dark:text-neutral-300">Smart search</span>
+    <span
+      class="text-xs text-neutral-600 dark:text-neutral-300"
+      data-tooltip="Smart Search uses AI to understand your question and find relevant programs. Turn it off for simple keyword matching."
+      data-tooltip-position="left"
+      tabindex="0"
+    >Smart search</span>
     <button
       type="button"
       id="ai-toggle"
@@ -87,7 +92,8 @@ const sizeClasses = size === 'large'
       role="switch"
       aria-checked="true"
       aria-label="Toggle AI-powered search"
-      title="AI-powered search helps find programs using natural language. Turn off to use keyword search only."
+      data-tooltip="AI-powered search helps find programs using natural language. Turn off to use keyword search only."
+      data-tooltip-position="bottom"
     >
       <span class="ai-toggle-track">
         <span class="ai-toggle-thumb"></span>

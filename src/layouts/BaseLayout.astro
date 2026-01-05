@@ -38,6 +38,26 @@ const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator
         document.documentElement.classList.add('dark');
       }
     </script>
+
+    <!-- Text settings script (runs before render to prevent flash) -->
+    <script is:inline>
+      (function() {
+        var saved = localStorage.getItem('textSettings');
+        if (saved) {
+          try {
+            var settings = JSON.parse(saved);
+            var root = document.documentElement;
+            if (settings.textSize) root.style.setProperty('--text-size-scale', (parseInt(settings.textSize) / 100).toString());
+            var lineHeightMap = { '1': '1.6', '2': '2', '3': '2.5' };
+            var letterSpacingMap = { '1': '0em', '2': '0.05em', '3': '0.1em' };
+            var wordSpacingMap = { '1': '0em', '2': '0.1em', '3': '0.2em' };
+            if (settings.lineHeight) root.style.setProperty('--text-line-height', lineHeightMap[settings.lineHeight] || '1.6');
+            if (settings.letterSpacing) root.style.setProperty('--text-letter-spacing', letterSpacingMap[settings.letterSpacing] || '0em');
+            if (settings.wordSpacing) root.style.setProperty('--text-word-spacing', wordSpacingMap[settings.wordSpacing] || '0em');
+          } catch (e) {}
+        }
+      })();
+    </script>
   </head>
   <body class="min-h-screen flex flex-col">
     <!-- Skip link for accessibility -->
@@ -73,12 +93,137 @@ const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator
             <a href="/eligibility" class="text-neutral-700 dark:text-neutral-300 hover:text-primary-700 dark:hover:text-primary-300 no-underline font-medium">Eligibility</a>
             <a href="/about" class="text-neutral-700 dark:text-neutral-300 hover:text-primary-700 dark:hover:text-primary-300 no-underline font-medium">About</a>
 
+            <!-- Text Settings -->
+            <div class="relative">
+              <button
+                id="text-settings-toggle"
+                type="button"
+                class="p-2 rounded-lg text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                aria-label="Text settings"
+                aria-expanded="false"
+                aria-controls="text-settings-panel"
+                data-tooltip="Adjust font size, line spacing, and more for easier reading"
+                data-tooltip-position="bottom"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </button>
+
+              <!-- Text Settings Panel -->
+              <div
+                id="text-settings-panel"
+                class="hidden absolute right-0 top-full mt-2 w-80 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-neutral-200 dark:border-neutral-700 p-4 z-50"
+                role="dialog"
+                aria-labelledby="text-settings-title"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <h3 id="text-settings-title" class="text-lg font-semibold text-neutral-900 dark:text-white">
+                    Text Settings
+                  </h3>
+                  <button
+                    id="text-settings-reset"
+                    type="button"
+                    class="text-sm text-primary-700 dark:text-primary-300 hover:underline"
+                  >
+                    Reset
+                  </button>
+                </div>
+
+                <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4">
+                  Customize text appearance for easier reading.
+                </p>
+
+                <!-- Font Size -->
+                <div class="mb-4">
+                  <label for="text-size-slider" class="flex items-center justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                    <span>Font Size</span>
+                    <span id="text-size-value" class="text-neutral-500 dark:text-neutral-400">100%</span>
+                  </label>
+                  <input
+                    type="range"
+                    id="text-size-slider"
+                    min="80"
+                    max="150"
+                    value="100"
+                    step="10"
+                    class="w-full h-2 bg-neutral-200 dark:bg-neutral-700 rounded-lg appearance-none cursor-pointer accent-primary-700"
+                    aria-describedby="text-size-desc"
+                  />
+                  <div id="text-size-desc" class="sr-only">Adjust font size from 80% to 150%</div>
+                </div>
+
+                <!-- Line Height -->
+                <div class="mb-4">
+                  <label for="line-height-slider" class="flex items-center justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                    <span>Line Spacing</span>
+                    <span id="line-height-value" class="text-neutral-500 dark:text-neutral-400">Normal</span>
+                  </label>
+                  <input
+                    type="range"
+                    id="line-height-slider"
+                    min="1"
+                    max="3"
+                    value="1"
+                    step="1"
+                    class="w-full h-2 bg-neutral-200 dark:bg-neutral-700 rounded-lg appearance-none cursor-pointer accent-primary-700"
+                    aria-describedby="line-height-desc"
+                  />
+                  <div id="line-height-desc" class="sr-only">Adjust line spacing: Normal, Wide, or Extra Wide</div>
+                </div>
+
+                <!-- Letter Spacing -->
+                <div class="mb-4">
+                  <label for="letter-spacing-slider" class="flex items-center justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                    <span>Letter Spacing</span>
+                    <span id="letter-spacing-value" class="text-neutral-500 dark:text-neutral-400">Normal</span>
+                  </label>
+                  <input
+                    type="range"
+                    id="letter-spacing-slider"
+                    min="1"
+                    max="3"
+                    value="1"
+                    step="1"
+                    class="w-full h-2 bg-neutral-200 dark:bg-neutral-700 rounded-lg appearance-none cursor-pointer accent-primary-700"
+                    aria-describedby="letter-spacing-desc"
+                  />
+                  <div id="letter-spacing-desc" class="sr-only">Adjust letter spacing: Normal, Wide, or Extra Wide</div>
+                </div>
+
+                <!-- Word Spacing -->
+                <div class="mb-2">
+                  <label for="word-spacing-slider" class="flex items-center justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
+                    <span>Word Spacing</span>
+                    <span id="word-spacing-value" class="text-neutral-500 dark:text-neutral-400">Normal</span>
+                  </label>
+                  <input
+                    type="range"
+                    id="word-spacing-slider"
+                    min="1"
+                    max="3"
+                    value="1"
+                    step="1"
+                    class="w-full h-2 bg-neutral-200 dark:bg-neutral-700 rounded-lg appearance-none cursor-pointer accent-primary-700"
+                    aria-describedby="word-spacing-desc"
+                  />
+                  <div id="word-spacing-desc" class="sr-only">Adjust word spacing: Normal, Wide, or Extra Wide</div>
+                </div>
+
+                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-4">
+                  Settings are saved automatically.
+                </p>
+              </div>
+            </div>
+
             <!-- Theme Toggle -->
             <button
               id="theme-toggle"
               type="button"
               class="p-2 rounded-lg text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800"
               aria-label="Toggle dark mode"
+              data-tooltip="Switch between light and dark themes"
+              data-tooltip-position="bottom"
             >
               <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
@@ -193,6 +338,10 @@ const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator
                 <svg class="w-3.5 h-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
                 Accessibility
               </a></li>
+              <li><a href="/glossary" class="text-neutral-300 hover:text-white no-underline flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                Glossary
+              </a></li>
               <li><a href="/credits" class="text-neutral-300 hover:text-white no-underline flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                 Credits
@@ -247,8 +396,145 @@ const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator
         });
       }
 
+      // Text settings
+      function setupTextSettings() {
+        const toggle = document.getElementById('text-settings-toggle');
+        const panel = document.getElementById('text-settings-panel');
+        const resetBtn = document.getElementById('text-settings-reset');
+
+        // Sliders
+        const textSizeSlider = document.getElementById('text-size-slider') as HTMLInputElement;
+        const lineHeightSlider = document.getElementById('line-height-slider') as HTMLInputElement;
+        const letterSpacingSlider = document.getElementById('letter-spacing-slider') as HTMLInputElement;
+        const wordSpacingSlider = document.getElementById('word-spacing-slider') as HTMLInputElement;
+
+        // Value displays
+        const textSizeValue = document.getElementById('text-size-value');
+        const lineHeightValue = document.getElementById('line-height-value');
+        const letterSpacingValue = document.getElementById('letter-spacing-value');
+        const wordSpacingValue = document.getElementById('word-spacing-value');
+
+        // Mapping functions
+        const lineHeightMap: Record<string, { label: string; value: string }> = {
+          '1': { label: 'Normal', value: '1.6' },
+          '2': { label: 'Wide', value: '2' },
+          '3': { label: 'Extra Wide', value: '2.5' }
+        };
+
+        const letterSpacingMap: Record<string, { label: string; value: string }> = {
+          '1': { label: 'Normal', value: '0em' },
+          '2': { label: 'Wide', value: '0.05em' },
+          '3': { label: 'Extra Wide', value: '0.1em' }
+        };
+
+        const wordSpacingMap: Record<string, { label: string; value: string }> = {
+          '1': { label: 'Normal', value: '0em' },
+          '2': { label: 'Wide', value: '0.1em' },
+          '3': { label: 'Extra Wide', value: '0.2em' }
+        };
+
+        // Apply settings to CSS variables
+        function applySettings() {
+          const root = document.documentElement;
+
+          // Font size
+          const textSize = parseInt(textSizeSlider?.value || '100');
+          root.style.setProperty('--text-size-scale', (textSize / 100).toString());
+          if (textSizeValue) textSizeValue.textContent = `${textSize}%`;
+
+          // Line height
+          const lineHeightOption = lineHeightMap[lineHeightSlider?.value || '1'];
+          root.style.setProperty('--text-line-height', lineHeightOption.value);
+          if (lineHeightValue) lineHeightValue.textContent = lineHeightOption.label;
+
+          // Letter spacing
+          const letterSpacingOption = letterSpacingMap[letterSpacingSlider?.value || '1'];
+          root.style.setProperty('--text-letter-spacing', letterSpacingOption.value);
+          if (letterSpacingValue) letterSpacingValue.textContent = letterSpacingOption.label;
+
+          // Word spacing
+          const wordSpacingOption = wordSpacingMap[wordSpacingSlider?.value || '1'];
+          root.style.setProperty('--text-word-spacing', wordSpacingOption.value);
+          if (wordSpacingValue) wordSpacingValue.textContent = wordSpacingOption.label;
+        }
+
+        // Save settings to localStorage
+        function saveSettings() {
+          const settings = {
+            textSize: textSizeSlider?.value || '100',
+            lineHeight: lineHeightSlider?.value || '1',
+            letterSpacing: letterSpacingSlider?.value || '1',
+            wordSpacing: wordSpacingSlider?.value || '1'
+          };
+          localStorage.setItem('textSettings', JSON.stringify(settings));
+        }
+
+        // Load saved settings
+        function loadSettings() {
+          const saved = localStorage.getItem('textSettings');
+          if (saved) {
+            try {
+              const settings = JSON.parse(saved);
+              if (textSizeSlider && settings.textSize) textSizeSlider.value = settings.textSize;
+              if (lineHeightSlider && settings.lineHeight) lineHeightSlider.value = settings.lineHeight;
+              if (letterSpacingSlider && settings.letterSpacing) letterSpacingSlider.value = settings.letterSpacing;
+              if (wordSpacingSlider && settings.wordSpacing) wordSpacingSlider.value = settings.wordSpacing;
+            } catch (e) {
+              console.error('Error loading text settings:', e);
+            }
+          }
+          applySettings();
+        }
+
+        // Toggle panel visibility
+        toggle?.addEventListener('click', () => {
+          const isOpen = !panel?.classList.contains('hidden');
+          panel?.classList.toggle('hidden');
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+        });
+
+        // Close panel when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!toggle?.contains(e.target as Node) && !panel?.contains(e.target as Node)) {
+            panel?.classList.add('hidden');
+            toggle?.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && !panel?.classList.contains('hidden')) {
+            panel?.classList.add('hidden');
+            toggle?.setAttribute('aria-expanded', 'false');
+            toggle?.focus();
+          }
+        });
+
+        // Slider event listeners
+        [textSizeSlider, lineHeightSlider, letterSpacingSlider, wordSpacingSlider].forEach(slider => {
+          slider?.addEventListener('input', () => {
+            applySettings();
+            saveSettings();
+          });
+        });
+
+        // Reset button
+        resetBtn?.addEventListener('click', () => {
+          if (textSizeSlider) textSizeSlider.value = '100';
+          if (lineHeightSlider) lineHeightSlider.value = '1';
+          if (letterSpacingSlider) letterSpacingSlider.value = '1';
+          if (wordSpacingSlider) wordSpacingSlider.value = '1';
+          applySettings();
+          saveSettings();
+        });
+
+        // Load settings on page load
+        loadSettings();
+      }
+
       setupThemeToggle();
       setupMobileMenu();
+      setupTextSettings();
     </script>
 
     <!-- Service Worker Registration -->

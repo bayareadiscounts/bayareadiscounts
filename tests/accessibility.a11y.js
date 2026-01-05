@@ -225,3 +225,165 @@ test.describe('Accessibility - Partnerships Page', () => {
     expect(critical).toHaveLength(0);
   });
 });
+
+test.describe('Accessibility - Glossary Page', () => {
+  test('glossary page should have no critical violations', async ({ page }) => {
+    await page.goto('/glossary');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Glossary');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+
+  test('abbreviations should have title attributes', async ({ page }) => {
+    await page.goto('/glossary');
+    await page.waitForLoadState('networkidle');
+
+    // Check that abbr elements have title attributes
+    const abbrs = page.locator('abbr[title]');
+    const count = await abbrs.count();
+
+    // Should have many abbreviation definitions
+    expect(count).toBeGreaterThan(50);
+  });
+});
+
+test.describe('Accessibility - Sustainability Page', () => {
+  test('sustainability page should have no critical violations', async ({ page }) => {
+    await page.goto('/sustainability');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Sustainability');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+});
+
+test.describe('Accessibility - Accessibility Statement Page', () => {
+  test('accessibility page should have no critical violations', async ({ page }) => {
+    await page.goto('/accessibility');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Accessibility Statement');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+});
+
+test.describe('Accessibility - Download Page', () => {
+  test('download page should have no critical violations', async ({ page }) => {
+    await page.goto('/download');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Download');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+});
+
+test.describe('Accessibility - Legal Pages', () => {
+  test('privacy page should have no critical violations', async ({ page }) => {
+    await page.goto('/privacy');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Privacy');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+
+  test('terms page should have no critical violations', async ({ page }) => {
+    await page.goto('/terms');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Terms');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+
+  test('credits page should have no critical violations', async ({ page }) => {
+    await page.goto('/credits');
+    await page.waitForLoadState('networkidle');
+
+    const { violations } = await checkAccessibility(page, 'Credits');
+
+    const critical = violations.filter(v =>
+      v.impact === 'critical' || v.impact === 'serious'
+    );
+
+    expect(critical).toHaveLength(0);
+  });
+});
+
+test.describe('Accessibility - Focus Management', () => {
+  test('focus should be visible on interactive elements', async ({ page }) => {
+    await page.goto('/directory');
+    await page.waitForLoadState('networkidle');
+
+    // Tab to first interactive element
+    await page.keyboard.press('Tab');
+
+    // Check that focused element is visible
+    const focused = page.locator(':focus');
+    await expect(focused).toBeVisible();
+
+    // Focus indicator should have visible outline or box-shadow
+    const styles = await focused.evaluate((el) => {
+      const computed = window.getComputedStyle(el);
+      return {
+        outline: computed.outline,
+        outlineOffset: computed.outlineOffset,
+        boxShadow: computed.boxShadow,
+      };
+    });
+
+    // Should have outline or box-shadow
+    const hasIndicator =
+      (styles.outline && styles.outline !== 'none' && !styles.outline.includes('0px')) ||
+      (styles.boxShadow && styles.boxShadow !== 'none');
+
+    expect(hasIndicator).toBe(true);
+  });
+
+  test('skip link should work correctly', async ({ page }) => {
+    await page.goto('/');
+
+    // Tab to skip link
+    await page.keyboard.press('Tab');
+
+    const skipLink = page.locator(':focus');
+    const href = await skipLink.getAttribute('href');
+    expect(href).toBe('#main-content');
+
+    // Activate skip link
+    await page.keyboard.press('Enter');
+
+    // Main content should be focused or scroll to it
+    const mainContent = page.locator('#main-content');
+    await expect(mainContent).toBeInViewport();
+  });
+});
