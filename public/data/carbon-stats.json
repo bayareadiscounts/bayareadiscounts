@@ -1,0 +1,92 @@
+{
+  "generated": "2026-01-05T04:00:08.454Z",
+  "period": "last_30_days",
+  "dataFreshness": {
+    "cloudflare": "live",
+    "github": "live",
+    "azure": "estimated"
+  },
+  "summary": {
+    "totalGrossEmissionsKg": "0.830",
+    "renewableEnergyPercent": 100,
+    "netEmissionsKg": "0.000",
+    "greenRating": "A+",
+    "carbonNeutral": true
+  },
+  "usage": {
+    "cdnRequests": 69,
+    "cdnBytesTransferred": 325805,
+    "cdnCacheHitRate": "2.9",
+    "aiQueries": 500,
+    "ciRuns": 100,
+    "ciMinutes": 200,
+    "ciWorkflows": {
+      "Carbon Footprint Tracking": 16,
+      "OSV-Scanner Scheduled": 24,
+      "CodeQL Security Analysis": 5,
+      "Deploy Website (Azure)": 23,
+      "CI": 23,
+      "Test": 4,
+      "Deploy Web App": 3,
+      "Sync NPS Parks Data": 1,
+      "Sync GitHub IPs to Storage": 1
+    }
+  },
+  "emissionsBySource": {
+    "cdn": {
+      "grams": "0.0",
+      "percent": "0.0"
+    },
+    "ai": {
+      "grams": "750.0",
+      "percent": "90.4"
+    },
+    "ci": {
+      "grams": "80.0",
+      "percent": "9.6"
+    }
+  },
+  "providers": {
+    "azure": {
+      "name": "Microsoft Azure",
+      "carbonNeutralSince": 2012,
+      "renewableEnergy": 100,
+      "renewableEnergySince": 2025,
+      "carbonNegativeTarget": 2030
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "renewableEnergy": 100,
+      "netZeroSince": 2025
+    },
+    "github": {
+      "name": "GitHub",
+      "carbonNeutralSince": 2019,
+      "renewableEnergy": 100
+    },
+    "azureOpenAI": {
+      "name": "Azure OpenAI",
+      "model": "GPT-4o-mini",
+      "carbonNeutral": true
+    }
+  },
+  "carbonFactors": {
+    "pageViewGrams": 0.2,
+    "aiQueryGrams": 1.5,
+    "ciMinuteGrams": 0.4,
+    "cdnRequestGrams": 0.0001
+  },
+  "comparison": {
+    "paperFormGrams": 10,
+    "drivingMileGrams": 400,
+    "equivalentMilesDriven": "2.08",
+    "equivalentPaperPages": 83
+  },
+  "notes": [
+    "All infrastructure providers use 100% renewable energy",
+    "Azure has been carbon neutral since 2012",
+    "GitHub Actions runners are powered by renewable energy",
+    "Cloudflare operates a carbon-neutral network",
+    "Usage data is updated daily via GitHub Actions"
+  ]
+}

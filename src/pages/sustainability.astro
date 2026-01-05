@@ -30,8 +30,8 @@ const githubStats = {
 ---
 
 <BaseLayout
-  title="Environmental Sustainability - BayNavigator"
-  description="Learn about BayNavigator's commitment to environmental sustainability and our green software practices."
+  title="Environmental Sustainability - Bay Navigator"
+  description="Learn about Bay Navigator's commitment to environmental sustainability and our green software practices."
 >
   <main class="container mx-auto px-4 py-8 max-w-4xl">
     <!-- Hero Section -->
@@ -46,7 +46,7 @@ const githubStats = {
       </h1>
       <p class="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
         As an environmental nonprofit, we're committed to practicing what we preach.
-        Here's how BayNavigator minimizes its digital carbon footprint.
+        Here's how Bay Navigator minimizes its digital carbon footprint.
       </p>
     </div>
 
@@ -55,45 +55,69 @@ const githubStats = {
       <div class="flex items-center gap-3 mb-4">
         <div id="dashboard-indicator" class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
         <h2 class="text-xl font-semibold text-neutral-900 dark:text-white">Carbon Dashboard</h2>
-        <span id="dashboard-status" class="text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-0.5 rounded-full">Live</span>
+        <span id="dashboard-status" class="text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-0.5 rounded-full">Loading...</span>
       </div>
       <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-        Monthly estimated carbon footprint from our Azure, Cloudflare, and GitHub infrastructure.
+        Real usage data from our Azure, Cloudflare, and GitHub infrastructure over the last 30 days.
         All providers use 100% renewable energy.
       </p>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+
+      <!-- Usage Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-4">
         <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-4">
-          <div id="stat-emissions" class="text-2xl font-bold text-green-600 dark:text-green-400">0</div>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400">Net kg CO₂e / month</div>
+          <div id="stat-cdn-requests" class="text-2xl font-bold text-blue-600 dark:text-blue-400">—</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">CDN Requests</div>
         </div>
         <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-4">
-          <div id="stat-gross" class="text-2xl font-bold text-green-600 dark:text-green-400">~2.8</div>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400">Gross kg (offset)</div>
+          <div id="stat-ai-queries" class="text-2xl font-bold text-purple-600 dark:text-purple-400">—</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">Smart Search Queries</div>
+        </div>
+        <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-4">
+          <div id="stat-ci-runs" class="text-2xl font-bold text-orange-600 dark:text-orange-400">—</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">CI/CD Runs</div>
         </div>
         <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-4">
           <div id="stat-renewable" class="text-2xl font-bold text-green-600 dark:text-green-400">100%</div>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400">Renewable energy</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">Renewable Energy</div>
         </div>
-        <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-4">
-          <div id="stat-rating" class="text-2xl font-bold text-green-600 dark:text-green-400">A+</div>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400">Green rating</div>
+      </div>
+
+      <!-- Carbon Summary -->
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-3">
+          <div id="stat-gross" class="text-xl font-bold text-neutral-600 dark:text-neutral-300">—</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">Gross kg CO₂e</div>
+        </div>
+        <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-3">
+          <div id="stat-emissions" class="text-xl font-bold text-green-600 dark:text-green-400">0</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">Net kg CO₂e</div>
+        </div>
+        <div class="bg-white/50 dark:bg-neutral-800/50 rounded-lg p-3">
+          <div id="stat-rating" class="text-xl font-bold text-green-600 dark:text-green-400">A+</div>
+          <div class="text-xs text-neutral-500 dark:text-neutral-400">Green Rating</div>
         </div>
       </div>
 
       <!-- Emissions breakdown -->
       <div class="mt-4 pt-4 border-t border-green-200 dark:border-green-800">
-        <div class="text-xs text-neutral-500 dark:text-neutral-400 mb-2">Estimated monthly breakdown (grams CO₂e, before offset):</div>
+        <div class="text-xs text-neutral-500 dark:text-neutral-400 mb-2">Emissions breakdown (grams CO₂e, before renewable offset):</div>
         <div class="flex flex-wrap gap-2 text-xs">
-          <span id="breakdown-hosting" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">Hosting: ~2,000g</span>
-          <span id="breakdown-ai" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">Smart Search: ~750g</span>
-          <span id="breakdown-ci" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">CI/CD: ~48g</span>
-          <span id="breakdown-cdn" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">CDN: ~5g</span>
+          <span id="breakdown-cdn" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">CDN: —</span>
+          <span id="breakdown-ai" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">Smart Search: —</span>
+          <span id="breakdown-ci" class="bg-white/70 dark:bg-neutral-800/70 px-2 py-1 rounded">CI/CD: —</span>
         </div>
+      </div>
+
+      <!-- Data sources indicator -->
+      <div class="mt-3 flex flex-wrap gap-2 text-xs">
+        <span id="source-cloudflare" class="bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-0.5 rounded">Cloudflare: —</span>
+        <span id="source-github" class="bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-0.5 rounded">GitHub: —</span>
+        <span id="source-azure" class="bg-neutral-200 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-0.5 rounded">Azure: —</span>
       </div>
 
       <!-- Equivalents -->
       <div class="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-        <span id="stat-equivalents">Equivalent to driving ~0.007 miles or printing ~280 pages—fully offset by renewable energy.</span>
+        <span id="stat-equivalents">Loading real usage data...</span>
       </div>
     </section>
 
@@ -241,7 +265,7 @@ const githubStats = {
           </div>
           <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">Static Site Generation</h3>
           <p class="text-sm text-neutral-600 dark:text-neutral-300">
-            BayNavigator is built with Astro, generating static HTML at build time. This means minimal server processing per request, reducing energy consumption.
+            Bay Navigator is built with Astro, generating static HTML at build time. This means minimal server processing per request, reducing energy consumption.
           </p>
         </div>
 
@@ -314,7 +338,7 @@ const githubStats = {
       <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
         <p class="text-neutral-600 dark:text-neutral-300 mb-6">
           Traditional benefit discovery often involves paper applications, phone calls, and in-person visits.
-          Here's how BayNavigator's digital approach compares:
+          Here's how Bay Navigator's digital approach compares:
         </p>
 
         <div class="space-y-4">
@@ -331,7 +355,7 @@ const githubStats = {
             </div>
           </div>
           <div class="flex items-center gap-4">
-            <div class="w-24 text-sm text-neutral-500 dark:text-neutral-400">BayNavigator</div>
+            <div class="w-24 text-sm text-neutral-500 dark:text-neutral-400">Bay Navigator</div>
             <div class="flex-1 relative">
               <div class="bg-green-500 dark:bg-green-600 rounded-full h-6 w-1/6"></div>
               <div class="absolute inset-y-0 left-2 flex items-center text-xs font-medium text-white">~0.2g CO₂ per visit</div>
@@ -488,58 +512,106 @@ const githubStats = {
   </main>
 
   <script>
-    // Fetch carbon stats from Azure Function API
+    // Fetch carbon stats from static JSON (updated daily via GitHub Actions)
     async function loadCarbonStats() {
+      // Try static file first (faster), fall back to API
+      const STATIC_URL = '/data/carbon-stats.json';
       const API_URL = '/api/carbon-stats';
 
       try {
-        const response = await fetch(API_URL);
-        if (!response.ok) throw new Error('API unavailable');
+        // Try static JSON first, then API as fallback
+        let response = await fetch(STATIC_URL);
+        if (!response.ok) {
+          response = await fetch(API_URL);
+        }
+        if (!response.ok) throw new Error('Stats unavailable');
 
         const data = await response.json();
 
-        // Update dashboard stats
+        // Format numbers for display
+        const formatNumber = (num) => {
+          if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+          if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+          return num.toLocaleString();
+        };
+
+        // Update usage stats
+        const statCdnRequests = document.getElementById('stat-cdn-requests');
+        const statAiQueries = document.getElementById('stat-ai-queries');
+        const statCiRuns = document.getElementById('stat-ci-runs');
+
+        if (statCdnRequests) statCdnRequests.textContent = formatNumber(data.usage.cdnRequests);
+        if (statAiQueries) statAiQueries.textContent = formatNumber(data.usage.aiQueries);
+        if (statCiRuns) statCiRuns.textContent = formatNumber(data.usage.ciRuns);
+
+        // Update carbon stats
         const statEmissions = document.getElementById('stat-emissions');
         const statGross = document.getElementById('stat-gross');
         const statRenewable = document.getElementById('stat-renewable');
         const statRating = document.getElementById('stat-rating');
 
         if (statEmissions) statEmissions.textContent = data.summary.netEmissionsKg;
-        if (statGross) statGross.textContent = `~${data.summary.totalGrossEmissionsKg}`;
+        if (statGross) statGross.textContent = data.summary.totalGrossEmissionsKg;
         if (statRenewable) statRenewable.textContent = `${data.summary.renewableEnergyPercent}%`;
         if (statRating) statRating.textContent = data.summary.greenRating;
 
         // Update breakdown
-        const breakdownHosting = document.getElementById('breakdown-hosting');
+        const breakdownCdn = document.getElementById('breakdown-cdn');
         const breakdownAi = document.getElementById('breakdown-ai');
         const breakdownCi = document.getElementById('breakdown-ci');
-        const breakdownCdn = document.getElementById('breakdown-cdn');
 
-        if (breakdownHosting) breakdownHosting.textContent = `Hosting: ~${data.emissionsBySource.hosting.grams}g`;
-        if (breakdownAi) breakdownAi.textContent = `Smart Search: ~${data.emissionsBySource.ai.grams}g`;
-        if (breakdownCi) breakdownCi.textContent = `CI/CD: ~${data.emissionsBySource.ci.grams}g`;
-        if (breakdownCdn) breakdownCdn.textContent = `CDN: ~${data.emissionsBySource.cdn.grams}g`;
+        if (breakdownCdn) breakdownCdn.textContent = `CDN: ${data.emissionsBySource.cdn.grams}g`;
+        if (breakdownAi) breakdownAi.textContent = `Smart Search: ${data.emissionsBySource.ai.grams}g`;
+        if (breakdownCi) breakdownCi.textContent = `CI/CD: ${data.emissionsBySource.ci.grams}g`;
+
+        // Update data source indicators
+        const sourceCloudflare = document.getElementById('source-cloudflare');
+        const sourceGithub = document.getElementById('source-github');
+        const sourceAzure = document.getElementById('source-azure');
+
+        const liveClass = 'bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200 px-2 py-0.5 rounded';
+        const estimatedClass = 'bg-yellow-200 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200 px-2 py-0.5 rounded';
+
+        if (sourceCloudflare) {
+          sourceCloudflare.textContent = `Cloudflare: ${data.dataFreshness.cloudflare}`;
+          sourceCloudflare.className = data.dataFreshness.cloudflare === 'live' ? liveClass : estimatedClass;
+        }
+        if (sourceGithub) {
+          sourceGithub.textContent = `GitHub: ${data.dataFreshness.github}`;
+          sourceGithub.className = data.dataFreshness.github === 'live' ? liveClass : estimatedClass;
+        }
+        if (sourceAzure) {
+          sourceAzure.textContent = `Azure: ${data.dataFreshness.azure}`;
+          sourceAzure.className = data.dataFreshness.azure === 'live' ? liveClass : estimatedClass;
+        }
 
         // Update equivalents
         const statEquivalents = document.getElementById('stat-equivalents');
         if (statEquivalents) {
-          statEquivalents.textContent = `Equivalent to driving ~${data.comparison.equivalentMilesDriven} miles or printing ~${data.comparison.equivalentPaperPages} pages—fully offset by renewable energy.`;
+          statEquivalents.textContent = `Equivalent to driving ${data.comparison.equivalentMilesDriven} miles or printing ${data.comparison.equivalentPaperPages} pages—fully offset by renewable energy.`;
         }
 
         // Update status indicator
         const dashboardStatus = document.getElementById('dashboard-status');
+        const anyLive = Object.values(data.dataFreshness).some(v => v === 'live');
         if (dashboardStatus) {
-          dashboardStatus.textContent = 'Live';
-          dashboardStatus.className = 'text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-0.5 rounded-full';
+          dashboardStatus.textContent = anyLive ? 'Live Data' : 'Estimated';
+          dashboardStatus.className = anyLive
+            ? 'text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-0.5 rounded-full'
+            : 'text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded-full';
         }
 
       } catch (error) {
         console.log('Using static carbon estimates:', error.message);
-        // Keep the static defaults - they're reasonable estimates
+        // Show fallback values
         const dashboardStatus = document.getElementById('dashboard-status');
         if (dashboardStatus) {
-          dashboardStatus.textContent = 'Estimated';
-          dashboardStatus.className = 'text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded-full';
+          dashboardStatus.textContent = 'Offline';
+          dashboardStatus.className = 'text-xs bg-neutral-100 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-0.5 rounded-full';
+        }
+        const statEquivalents = document.getElementById('stat-equivalents');
+        if (statEquivalents) {
+          statEquivalents.textContent = 'Unable to load live data. All infrastructure uses 100% renewable energy.';
         }
       }
     }
