@@ -1,0 +1,27 @@
+{
+  "id": "nps-fopo",
+  "name": "Fort Point National Historic Site",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Francisco County"
+  ],
+  "city": "San Francisco",
+  "website": "https://www.nps.gov/fopo/index.htm",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "Fort Point National Historic Site, San Francisco, CA, 94129",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "smc-wifi-san-carlos-airport",
+  "name": "San Carlos Airport",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "San Carlos",
+  "website": "https://www.smcgov.org/smc-public-wifi-project",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "620 Airport Way, San Carlos, CA 94070",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

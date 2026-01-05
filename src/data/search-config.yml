@@ -1,0 +1,255 @@
+# Search Enhancement Configuration
+# Used by SearchBar.astro for synonyms, best bets, and type-ahead suggestions
+#
+# This file is processed at build time and embedded in the search component.
+
+# Synonym mappings - when user searches for key, also match values
+# Format: search_term: [synonym1, synonym2, ...]
+synonyms:
+  # Food assistance programs
+  food stamps: [snap, calfresh, ebt, food assistance, grocery help]
+  snap: [food stamps, calfresh, ebt, food assistance]
+  calfresh: [food stamps, snap, ebt, california food assistance]
+  ebt: [food stamps, snap, calfresh, electronic benefits]
+  wic: [women infants children, nutrition, baby food, formula]
+  food bank: [food pantry, free food, groceries, emergency food]
+  food pantry: [food bank, free food, groceries]
+  meals: [food, lunch, dinner, breakfast, eating]
+  hungry: [food, meals, food bank, food stamps]
+
+  # Housing and rent
+  section 8: [housing voucher, rental assistance, hud, housing choice]
+  housing voucher: [section 8, rental assistance, rent help]
+  rent help: [rental assistance, section 8, housing voucher, eviction prevention]
+  rental assistance: [rent help, section 8, housing voucher]
+  homeless: [unhoused, housing, shelter, unsheltered]
+  unhoused: [homeless, housing, shelter]
+  shelter: [homeless, housing, emergency shelter]
+  eviction: [rent help, legal aid, tenant rights, rental assistance]
+
+  # Healthcare
+  medi-cal: [medicaid, health insurance, healthcare, medical]
+  medicaid: [medi-cal, health insurance, healthcare]
+  medicare: [health insurance, senior health, 65, retirement health]
+  health insurance: [medi-cal, medicaid, covered california, healthcare]
+  covered california: [health insurance, aca, obamacare, marketplace]
+  mental health: [counseling, therapy, behavioral health, 988, crisis]
+  doctor: [healthcare, clinic, medical, physician]
+  dental: [dentist, teeth, denti-cal, oral health]
+
+  # Financial assistance
+  welfare: [calworks, tanf, public assistance, cash aid]
+  calworks: [welfare, tanf, cash assistance, public assistance]
+  tanf: [welfare, calworks, temporary assistance]
+  cash aid: [welfare, calworks, emergency cash, financial assistance]
+  utility help: [liheap, care, fera, pgcap, bill assistance, energy assistance]
+  bill help: [utility assistance, liheap, payment assistance]
+  liheap: [utility help, heating, cooling, energy assistance]
+
+  # Disability
+  disability: [ssi, ssdi, disabled, ada, special needs, impairment]
+  ssi: [supplemental security income, disability, disabled]
+  ssdi: [social security disability, disability benefits]
+  blind: [vision, visually impaired, sight, disability]
+  deaf: [hearing, hearing impaired, asl, disability]
+  wheelchair: [mobility, ada, accessible, disability]
+
+  # Seniors
+  senior: [elderly, older adult, 60+, 65+, aging, retiree]
+  elderly: [senior, older adult, aging]
+  retirement: [senior, pension, social security, 65]
+  retiree: [senior, retired, pension, social security]
+
+  # Veterans
+  veteran: [military, armed forces, va, service member, vet]
+  military: [veteran, armed forces, service member]
+  va: [veterans affairs, veteran, military benefits]
+  gi bill: [veteran education, military education, tuition]
+
+  # Families and children
+  childcare: [daycare, preschool, babysitting, child care]
+  daycare: [childcare, preschool, child care]
+  after school: [afterschool, youth programs, tutoring]
+  diapers: [baby, infant, wic, family]
+
+  # Employment
+  job: [employment, work, career, hiring]
+  unemployed: [job seeker, unemployment, laid off, jobless]
+  job training: [career, workforce, skills, employment]
+  resume: [job search, employment, career]
+
+  # Legal
+  legal aid: [lawyer, attorney, legal help, legal services]
+  lawyer: [attorney, legal aid, legal help]
+  immigration: [immigrant, refugee, daca, asylum, visa, citizenship]
+  tenant rights: [renter, eviction, landlord, housing]
+
+  # Education
+  college: [university, higher education, student, tuition]
+  tuition: [college, financial aid, scholarship, education]
+  ged: [high school equivalency, adult education, diploma]
+  esl: [english, language, immigrant, adult education]
+
+  # Transportation
+  bus pass: [transit, muni, bart, transportation, clipper]
+  transit: [bus, muni, bart, transportation, clipper]
+  paratransit: [disability transport, accessible transit, dial-a-ride]
+
+  # Technology
+  internet: [wifi, broadband, connectivity, online]
+  wifi: [internet, free wifi, connectivity]
+  computer: [laptop, device, technology, digital]
+
+  # Identity/Demographics
+  lgbtq: [lgbt, gay, lesbian, bisexual, transgender, queer, pride]
+  lgbt: [lgbtq, gay, lesbian, bisexual, transgender]
+  trans: [transgender, lgbtq, gender]
+  immigrant: [refugee, immigration, undocumented, asylum, newcomer]
+  refugee: [immigrant, asylum, newcomer]
+
+# Best Bets - featured/promoted results for specific queries
+# Format: query_pattern: [program_id1, program_id2, ...]
+# These appear at the top of search results
+best_bets:
+  # Food
+  food:
+    - second-harvest-food-bank
+    - sf-marin-food-bank
+    - calfresh-food-assistance
+    - meals-on-wheels
+  groceries:
+    - calfresh-food-assistance
+    - second-harvest-food-bank
+    - sf-marin-food-bank
+  hungry:
+    - second-harvest-food-bank
+    - sf-marin-food-bank
+    - community-meal-programs
+
+  # Rent/Housing
+  rent:
+    - federal-department-of-housing-choice-voucher-section-8
+    - rental-assistance-program
+    - eviction-prevention
+  eviction:
+    - eviction-defense-collaborative
+    - tenants-union
+    - rental-assistance-program
+  homeless:
+    - coordinated-entry
+    - navigation-centers
+    - shelter-access
+
+  # Healthcare
+  health insurance:
+    - covered-california
+    - medi-cal
+    - federal-centers-for-medicare-with-retirement
+  mental health:
+    - 988-suicide-crisis-lifeline
+    - county-behavioral-health
+    - community-mental-health
+  crisis:
+    - 988-suicide-crisis-lifeline
+    - crisis-text-line
+    - sf-mobile-crisis
+
+  # Utilities
+  utility bill:
+    - care-program-pge
+    - liheap
+    - fera-program
+    - reach-utility-assistance
+  pge:
+    - care-program-pge
+    - fera-program
+    - medical-baseline
+
+  # Seniors
+  senior:
+    - senior-center
+    - meals-on-wheels
+    - federal-social-security-retirement-benefits
+    - federal-centers-for-medicare-with-retirement
+  retirement:
+    - federal-social-security-retirement-benefits
+    - federal-centers-for-medicare-with-retirement
+    - federal-federal-retirement-thrift-savings-plan-tsp
+
+  # Veterans
+  veteran:
+    - va-health-care
+    - federal-veterans-affairs-disability-compensation
+    - calvet-benefits
+    - vet-center
+  military:
+    - va-health-care
+    - federal-veterans-affairs-disability-compensation
+    - federal-veterans-affairs-veteran-readiness-and-employment-vr-e
+
+  # Disability
+  disability:
+    - federal-social-security-supplemental-security-income-ssi
+    - federal-social-security-social-security-disability-insurance
+    - in-home-supportive-services
+    - regional-center
+
+  # Jobs
+  job:
+    - america-works
+    - jobsnow
+    - one-stop-career-center
+    - workforce-development
+
+# Type-ahead suggestions - common searches shown as user types
+# Organized by first letter/word for quick lookup
+suggestions:
+  - food assistance
+  - food bank near me
+  - food stamps application
+  - rent help
+  - rental assistance
+  - utility bill help
+  - health insurance
+  - medi-cal enrollment
+  - mental health services
+  - senior programs
+  - veteran benefits
+  - disability benefits
+  - job training
+  - free legal help
+  - immigration services
+  - childcare assistance
+  - after school programs
+  - bus pass discount
+  - free internet
+  - housing voucher
+  - emergency shelter
+  - cash assistance
+  - calworks
+  - calfresh
+  - covered california
+  - section 8
+  - wic program
+  - meals on wheels
+  - lgbtq resources
+  - youth programs
+  - college financial aid
+
+# Query rewrites - normalize common phrasings to structured searches
+# These help map natural language to effective searches
+query_rewrites:
+  "i need food": "food assistance"
+  "i'm hungry": "food bank"
+  "can't pay rent": "rental assistance"
+  "help with rent": "rental assistance"
+  "can't pay bills": "utility assistance"
+  "help paying bills": "utility bill help"
+  "need a doctor": "healthcare clinic"
+  "feeling depressed": "mental health"
+  "need a job": "job training"
+  "lost my job": "unemployment"
+  "need a lawyer": "legal aid"
+  "being evicted": "eviction prevention"
+  "nowhere to live": "emergency shelter housing"
+  "need health insurance": "covered california medi-cal"

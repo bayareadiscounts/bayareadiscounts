@@ -7,7 +7,6 @@
   "whatTheyOffer": "- Low-cost medical exams and treatments\n- Vaccinations at reduced prices\n- Basic diagnostic services\n- Care for dogs and cats\n- Income-based pricing available\n",
   "howToGetIt": "1. Must be a Contra Costa County resident\n2. Contact Joybound to verify eligibility\n3. Provide proof of income if applying for reduced rates\n4. Schedule appointment for your pet\n5. Pay reduced fee at time of service\n",
   "groups": [
-    "📍",
     "income-eligible"
   ],
   "areas": [
@@ -21,5 +20,8 @@
   "address": "2890 Mitchell Drive, Walnut Creek, CA 94598",
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
 }

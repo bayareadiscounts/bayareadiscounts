@@ -1,0 +1,28 @@
+{
+  "id": "calvet-dvbe",
+  "name": "Disabled Veteran Business Enterprise (DVBE) Program",
+  "category": "community",
+  "description": "DVBE certification gives veteran-owned businesses preference in California state contracts; access 3% statewide participation goal",
+  "fullDescription": "The California Disabled Veteran Business Enterprise (DVBE) program helps veteran-owned businesses win state contracts. Certified DVBE businesses receive preference in state purchasing and contracting, with a goal that 3% of state contracts go to DVBEs.",
+  "whatTheyOffer": "- DVBE certification for state contract bidding\n- 3% statewide participation goal for DVBE contracts\n- Access to state procurement opportunities\n- Business development resources\n- Networking with prime contractors\n- Technical assistance and training\n- Bid preference on certain contracts\n",
+  "howToGetIt": "1. Business must be at least 51% owned by service-disabled veteran\n2. Veteran must have 10% or greater service-connected disability\n3. Apply through California Department of General Services\n4. Submit DD214, VA disability rating letter, and business documents\n5. Complete DVBE application online\n6. Wait for certification review (typically 30-45 days)\n",
+  "groups": [
+    "veterans",
+    "disability"
+  ],
+  "areas": [
+    "Statewide"
+  ],
+  "city": null,
+  "website": "https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-702/Certification-Programs/DVBE-Program",
+  "cost": null,
+  "phone": "916-375-4940",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

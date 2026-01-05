@@ -1,0 +1,27 @@
+{
+  "id": "imls-gallery-route-one",
+  "name": "Gallery Route One",
+  "category": "recreation",
+  "description": "Art museum featuring collections and exhibitions.",
+  "fullDescription": "Art museum featuring collections and exhibitions.",
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Bay Area"
+  ],
+  "city": "Point Reyes Station",
+  "website": "",
+  "cost": null,
+  "phone": "(415) 663-1347",
+  "email": null,
+  "address": "11101 Calfiornia 1",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

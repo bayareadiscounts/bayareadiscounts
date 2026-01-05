@@ -1,0 +1,27 @@
+{
+  "id": "colma-colma-community-center",
+  "name": "Colma Community Center",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Colma",
+  "website": "https://www.colma.ca.gov/locations/colma-community-center/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "1520 Hillside Boulevard, Colma, CA 94014",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

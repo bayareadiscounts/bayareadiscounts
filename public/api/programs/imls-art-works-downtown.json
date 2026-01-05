@@ -1,0 +1,27 @@
+{
+  "id": "imls-art-works-downtown",
+  "name": "Art Works Downtown",
+  "category": "recreation",
+  "description": "Museum with diverse collections and exhibits.",
+  "fullDescription": "Museum with diverse collections and exhibits.",
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Bay Area"
+  ],
+  "city": "San Rafael",
+  "website": "",
+  "cost": null,
+  "phone": "(415) 451-8119",
+  "email": null,
+  "address": "1337 4th St",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

@@ -20,5 +20,34 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [
+    "death",
+    "deceased",
+    "survivor",
+    "survivors",
+    "bereavement",
+    "grief",
+    "widow",
+    "widower",
+    "funeral",
+    "burial",
+    "memorial",
+    "loss of loved one",
+    "passing",
+    "died",
+    "dependents",
+    "beneficiary",
+    "veteran",
+    "military",
+    "service member",
+    "armed forces",
+    "housing assistance",
+    "rental help",
+    "housing voucher"
+  ],
+  "lifeEvents": [
+    "death"
+  ],
+  "agency": "Department of Defense (DOD)",
+  "lastUpdated": "2026-01-05"
 }

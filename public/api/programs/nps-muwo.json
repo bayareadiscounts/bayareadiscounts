@@ -1,0 +1,27 @@
+{
+  "id": "nps-muwo",
+  "name": "Muir Woods National Monument",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Marin County"
+  ],
+  "city": "Mill Valley",
+  "website": "https://www.nps.gov/muwo/index.htm",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "Muir Woods National Monument, Mill Valley, CA, 94941",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

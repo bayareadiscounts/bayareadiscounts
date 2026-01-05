@@ -7,7 +7,7 @@
   "whatTheyOffer": "- Tiered pricing based on ability to pay\n- Spay and neuter for dogs and cats\n- All surgeries include pain medication\n- Post-operative care instructions\n- Some free services for SF residents in need\n",
   "howToGetIt": "1. Must be a San Francisco resident\n2. Call or visit the website to learn about pricing tiers\n3. Schedule an appointment\n4. Bring proof of SF residency\n5. Pay based on your tier at time of service\n",
   "groups": [
-    "📍"
+    "everyone"
   ],
   "areas": [
     "San Francisco"
@@ -20,5 +20,8 @@
   "address": "201 Alabama Street, San Francisco, CA 94103",
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
 }

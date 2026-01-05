@@ -1,0 +1,27 @@
+{
+  "id": "imls-markham-arboretum",
+  "name": "Markham Arboretum",
+  "category": "recreation",
+  "description": "Botanical garden or nature center featuring plants and natural habitats.",
+  "fullDescription": "Botanical garden or nature center featuring plants and natural habitats.",
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Bay Area"
+  ],
+  "city": "Concord",
+  "website": "",
+  "cost": null,
+  "phone": "(925) 681-2968",
+  "email": null,
+  "address": "1202 La Vista Ave",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

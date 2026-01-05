@@ -1,0 +1,27 @@
+{
+  "id": "nps-goga",
+  "name": "Golden Gate National Recreation Area",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Francisco County"
+  ],
+  "city": "San Francisco",
+  "website": "https://www.nps.gov/goga/index.htm",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "Golden Gate National Recreation Area, San Francisco, CA, 94123",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

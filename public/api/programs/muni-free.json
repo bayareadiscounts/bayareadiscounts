@@ -8,10 +8,10 @@
   "howToGetIt": "1. Youth: Apply online at sfmta.com/freemunioryouth\n2. Seniors/Disabled: Apply online with proof of age, disability, and income\n3. Lifeline Pass: Apply through SFMTA with proof of low income\n4. Chase Center: Show your event ticket on game day for free Muni\n5. All programs require Clipper card\n",
   "groups": [
     "youth",
+    "seniors",
     "veterans",
     "disability",
-    "income-eligible",
-    "⚽"
+    "income-eligible"
   ],
   "areas": [
     "San Francisco"
@@ -24,5 +24,8 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
 }

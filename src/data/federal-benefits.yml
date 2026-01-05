@@ -1,6 +1,6 @@
 # Federal Benefits from USAGov
 # Auto-generated from https://www.usa.gov/benefit-finder
-# Last synced: 2026-01-03T03:07:49.187Z
+# Last synced: 2026-01-05T00:42:03.113Z
 #
 # These are federal programs available nationwide, including the Bay Area.
 # Source: USA.gov Benefit Finder API
@@ -9,14 +9,14 @@
 
 - id: federal-federal-emergency-covid-19-funeral-assistance
   name: COVID-19 funeral assistance
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Federal Emergency Management Agency (FEMA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Financial assistance for burial and funeral costs for someone who died of COVID-19. To be eligible, you were not reimbursed for funeral or burial expenses by any organization or agency.
   what_they_offer: >
@@ -31,18 +31,37 @@
     Visit the official website or call for more information.
   link: https://www.fema.gov/disasters/coronavirus/economic/funeral-assistance
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
 
 - id: federal-social-security-retirement-benefits-for-child
   name: Retirement benefits for child
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - families
-    - disability
+    - people-with-disabilities
     - seniors
   description: >
     Replacement income for underaged children of qualified retirees and families receiving retirement benefits. You only need one application to apply for all disability benefits offered by SSA.
@@ -58,19 +77,50 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/retirement/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-social-security-supplemental-security-income-ssi-for-child
   name: Supplemental Security Income (SSI) for Child
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - families
-    - disability
-    - income-eligible
+    - people-with-disabilities
+    - low-income
   description: >
     Monthly cash payments to meet the basic needs of children with disabilities and caretakers with limited income, savings, or other resources. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -86,18 +136,35 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/disability/apply-child.html
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
 
 - id: federal-centers-for-medicare-with-disability
   name: Medicare with disability
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Centers for Medicare and Medicaid (CMS)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
-    - disability
+    - people-with-disabilities
   description: >
     A health insurance program for Americans aged 65 and older, and for people with disabilities.
   what_they_offer: >
@@ -112,19 +179,52 @@
     Visit the official website or call for more information.
   link: https://www.medicare.gov/basics/get-started-with-medicare
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - health insurance
+    - medical coverage
 
 - id: federal-veterans-affairs-veteran-s-pension-with-disability
   name: Veteran's pension with disability
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
-    - disability
-    - income-eligible
+    - people-with-disabilities
+    - low-income
     - veterans
   description: >
     Monthly payments to wartime veterans with specific age, disability, income, or net worth.
@@ -141,17 +241,52 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/pension/how-to-apply/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-veterans-affairs-veteran-readiness-and-employment-vr-e
   name: Veteran readiness and employment (VR&E)
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - veterans
   description: >
     Employment support for service members and veterans with a disability that limits their ability to work.
@@ -167,17 +302,38 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/careers-employment/vocational-rehabilitation/eligibility/
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-department-of-combat-related-special-compensation-crsc
   name: Combat-Related Special Compensation (CRSC)
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - veterans
   description: >
     Pays added benefits to retirees with at least 20 years of service and who receive VA compensation for combat-related disabilities.
@@ -193,17 +349,52 @@
     Visit the official website or call for more information.
   link: https://militarypay.defense.gov/Benefits/New-Retired-Benefits-Program/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-social-security-ticket-to-work-program
   name: Ticket to Work Program
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
   description: >
     Career development for Social Security disability beneficiaries ages 18 to 64 years who would like to work.
   what_they_offer: >
@@ -218,18 +409,49 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/work/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-social-security-supplemental-security-income-ssi
   name: Supplemental Security Income (SSI)
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
-    - income-eligible
+    - people-with-disabilities
+    - low-income
   description: >
     Financial assistance to adults with disabilities, and people 65 and older without disabilities who meet specific financial limits. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -244,17 +466,34 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/ssi/adults.html
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
 
 - id: federal-social-security-social-security-disability-insurance-for-child-wit
   name: Social Security disability insurance for child with disabilities
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - families
   description: >
     Financial assistance to adult children with disabilities who are unable to work and whose parents receive disability benefits. You only need one application to apply for all disability benefits offered by SSA.
@@ -271,17 +510,51 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/disability/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-social-security-social-security-disability-insurance
   name: Social Security Disability Insurance
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
   description: >
     Financial assistance to people with disabilities. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -296,18 +569,49 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/disability/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-department-of-financial-assistance-and-social-services-fass
   name: Financial Assistance and Social Services (FASS)
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Department of Interior (DOI) - Indian Affairs
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - income-eligible
-    - everyone
+    - low-income
+    - native-americans
     - families
   description: >
     Direct assistance to American Indians and Alaska Natives, including financial, child, burial, emergency, and adult care assistance.
@@ -321,15 +625,34 @@
     Visit the official website or call for more information.
   link: https://www.bia.gov/bia/ois/dhs/financial-assistance
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
 
 - id: federal-federal-retirement-thrift-savings-plan-tsp
   name: Thrift Savings Plan (TSP)
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Federal Retirement Thrift Investment Board (FRTIB)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - veterans
   description: >
@@ -346,15 +669,35 @@
     Visit the official website or call for more information.
   link: https://www.tsp.gov/
   link_text: Official Website
+  life_events:
+    - retirement
+  keywords:
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-social-security-retirement-benefits-for-parents
   name: Retirement benefits for parents
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
   description: >
@@ -370,19 +713,70 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/retirement/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-centers-for-medicare-savings-programs-msp
   name: Medicare Savings Programs (MSP)
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Centers for Medicare and Medicaid (CMS)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
-    - disability
-    - income-eligible
+    - people-with-disabilities
+    - low-income
   description: >
     Get help paying Medicare insurance, like deductibles, coinsurance, and copayments.
   what_they_offer: >
@@ -396,20 +790,53 @@
     Visit the official website or call for more information.
   link: https://www.medicare.gov/basics/costs/help/medicare-savings-programs
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - health insurance
+    - medical coverage
 
 - id: federal-veterans-affairs-veteran-s-pension
   name: Veteran's pension
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
-    - income-eligible
+    - low-income
     - veterans
-    - disability
+    - people-with-disabilities
   description: >
     Monthly payments to wartime veterans with specific age, disability, income, or net worth criteria.
   what_they_offer: >
@@ -424,19 +851,54 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/pension/how-to-apply/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-social-security-supplemental-security-income-ssi-for-adults
   name: Supplemental Security Income (SSI) for adults
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
-    - income-eligible
-    - disability
+    - low-income
+    - people-with-disabilities
   description: >
     Financial assistance to meet basic needs for food, clothing, and shelter for people who are older or with disabilities. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -450,17 +912,48 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/ssi/65older.html
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-social-security-retirement-benefits
   name: Retirement benefits
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - seniors
   description: >
     Replacement income for qualified retirees and their families.&nbsp;You only need one application to apply for all disability benefits offered by SSA.
@@ -475,18 +968,49 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/retirement/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-department-of-coal-miner-worker-s-compensation
   name: Coal miner worker's compensation
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Department of Labor (DOL)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
-    - families
+    - people-with-disabilities
+    - survivors
   description: >
     Compensation to coal miners who were totally disabled by black lung disease (pneumoconiosis) or surviving spouses of miners whose deaths are attributable to this disease.&nbsp;Also provides medical coverage for treatment of related lung diseases.
   what_they_offer: >
@@ -500,17 +1024,51 @@
     Visit the official website or call for more information.
   link: https://www.dol.gov/agencies/owcp/dcmwc/filing_guide_miner
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
 
 - id: federal-department-of-coal-miner-worker-s-compensation-for-surviving-spo
   name: Coal miner worker's compensation for surviving spouse
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Department of Labor (DOL)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Compensation to surviving spouses of coal miners totally disabled by or whose deaths are attributable to black lung disease (pneumoconiosis).
   what_they_offer: >
@@ -523,17 +1081,51 @@
     Visit the official website or call for more information.
   link: https://www.dol.gov/agencies/owcp/dcmwc/filing_guide_survivor
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
 
 - id: federal-veterans-affairs-presidential-memorial-certificate
   name: Presidential Memorial Certificate
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     An engraved Presidential Memorial Certificate (PMC) signed by the current president honoring the military service of a veteran or reservist.
@@ -549,17 +1141,58 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/burials-memorials/memorial-items/presidential-memorial-certificates/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-veterans-burial-allowance
   name: Veterans burial allowance
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     Assistance with burial, funeral, and transportation costs of a deceased veteran.
@@ -576,17 +1209,58 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/burials-memorials/veterans-burial-allowance/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-survivors-pension-for-spouse
   name: Survivors pension for spouse
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     Monthly payments to surviving spouses of wartime veterans with certain income and net worth limits.
@@ -602,17 +1276,54 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/pension/survivors-pension/
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-veterans-affairs-survivors-pension-for-child-with-disabilities
   name: Survivors pension for child with disabilities
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
     - veterans
   description: >
@@ -630,17 +1341,69 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/pension/survivors-pension/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-veterans-affairs-veterans-medallions
   name: Veterans medallions
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     A headstone medallion, grave marker, and Presidential Memorial Certificate for eligible veterans buried in a private cemetery.
@@ -656,17 +1419,43 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions/
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-veterans-headstone-and-grave-marker
   name: Veterans headstone and grave marker
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     A headstone, grave or niche marker, or medallion to honor a veteran, service member, or eligible family member.
@@ -682,17 +1471,43 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions/
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-life-insurance-for-survivors-of-veterans
   name: Life insurance for survivors of veterans
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     Payment from a veteran's or service member's life insurance policy.
@@ -707,17 +1522,57 @@
     Visit the official website or call for more information.
   link: https://www.benefits.va.gov/INSURANCE/sglivgli.asp
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-dependency-and-indemnity-compensation-dic
   name: Dependency and Indemnity Compensation (DIC)
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     Tax-free financial assistance to eligible dependents, spouses, or parents of service members and veterans.
@@ -733,17 +1588,58 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/disability/dependency-indemnity-compensation/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-civilian-health-and-medical-program-of-the-va-cham
   name: Civilian Health and Medical Program of the VA (CHAMPVA)
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Health insurance for dependents and surviving spouses covering some health care services, supplies, and pharmacy benefits.
   what_they_offer: >
@@ -759,17 +1655,55 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/health-care/family-caregiver-benefits/champva/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-department-of-burial-benefits
   name: Burial benefits
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
   description: >
     Burial and transport assistance for the deceased, and travel support for the spouse, children, and immediate family members of the service member.
@@ -785,17 +1719,43 @@
     Visit the official website or call for more information.
   link: https://www.militaryonesource.mil/benefits/funeral-and-burial-benefits-for-service-members/
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-social-security-lump-sum-death-benefit
   name: Lump-sum death benefit
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Financial assistance of $255 to surviving spouses of a deceased person who qualified for Social Security benefits.
   what_they_offer: >
@@ -810,17 +1770,50 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/survivors/ifyou.html#h7
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-veterans-affairs-additional-disability-benefits-for-veterans
   name: Additional disability benefits for veterans
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - veterans
   description: >
     Grants for people with a disability related to their military service to support with adaptive-equipment, special vehicles, clothing, dental assistance, and more.
@@ -836,17 +1829,52 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/disability/eligibility/special-claims/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-department-of-financial-assistance-and-social-services-fass-buri
   name: Financial Assistance and Social Services (FASS) - Burial assistance
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Department of Interior (DOI) - Indian Affairs
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Burial assistance for deceased American Indians who do not have resources for funeral expenses or with certain income and net worth limits.
   what_they_offer: >
@@ -858,17 +1886,36 @@
     Visit the official website or call for more information.
   link: https://www.bia.gov/bia/ois/dhs/financial-assistance
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
 
 - id: federal-social-security-survivors-benefits-for-parents-caring-for-a-child
   name: Survivors benefits for parents caring for a child
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
   description: >
     Social Security survivors benefits to the person providing care for the child of a deceased worker.
@@ -884,17 +1931,68 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/forms/ssa-5.html
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-department-of-annuity-for-military-surviving-spouses
   name: Annuity for military surviving spouses
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Financial support for surviving spouses of members of the uniformed services.
   what_they_offer: >
@@ -909,17 +2007,54 @@
     Visit the official website or call for more information.
   link: https://militarypay.defense.gov/Benefits/
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-veterans-affairs-education-benefits-gi-bill-for-survivors
   name: Education benefits (GI Bill) for survivors
-  category: Education
+  category: education
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     VA education benefits or job training for dependents and survivors of a veteran. You must have a high school or GED diploma to be eligible.
@@ -935,17 +2070,58 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/education/survivor-dependent-benefits/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - education benefits
+    - tuition assistance
+    - college
 
 - id: federal-social-security-survivors-benefits-for-child-with-disabilities
   name: Survivors benefits for child with disabilities
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
   description: >
     Social Security survivors benefits to a child, stepchild, grandchild, or adopted child with disabilities of eligible workers. You only need one application to apply for all SSA benefits.
@@ -962,18 +2138,66 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/survivors/ifyou.html#h4
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-social-security-survivors-benefits-for-spouse-with-disabilities
   name: Survivors benefits for spouse with disabilities
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
-    - disability
+    - survivors
+    - people-with-disabilities
   description: >
     Benefits for surviving spouses and certain divorced spouses with disabilities. Eligible survivors must have a disability that prevents them from working for more than a year. You only need one application to apply for all SSA benefits.
   what_they_offer: >
@@ -989,17 +2213,65 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/survivors/ifyou.html#h2
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-department-of-public-safety-officers-educational-assistance-prog
   name: Public safety officers' Educational Assistance Program
-  category: Education
+  category: education
   area: Nationwide
   source: federal
   agency: Department of Justice (DOJ)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
   description: >
     Financial assistance for higher education to spouses and children of police, fire, and emergency public safety officers killed in the line of duty.
@@ -1013,17 +2285,39 @@
     Visit the official website or call for more information.
   link: https://psob.bja.ojp.gov/PSOB_Education2018.pdf
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - education benefits
+    - tuition assistance
+    - college
 
 - id: federal-department-of-public-safety-officers-death-benefits
   name: Public safety officers' death benefits
-  category: Legal Services
+  category: legal
   area: Nationwide
   source: federal
   agency: Department of Justice (DOJ)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     A one-time benefit for survivors of law enforcement officers, firefighters, and other first responders whose deaths were related to an injury sustained during the line of duty.
   what_they_offer: >
@@ -1036,17 +2330,39 @@
     Visit the official website or call for more information.
   link: https://bja.ojp.gov/program/psob/benefits
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-burial-flag
   name: Burial flag
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     A United States flag for the coffin or urn in honor of the military service member.
   what_they_offer: >
@@ -1060,17 +2376,43 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/burials-memorials/memorial-items/burial-flags/
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-home-loan-program-for-survivors
   name: Home loan program for survivors
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     A VA-backed home loan to surviving spouses of veterans.
@@ -1087,17 +2429,55 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/housing-assistance/home-loans/surviving-spouse/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-social-security-survivors-benefits-for-child
   name: Survivors benefits for child
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
   description: >
     Offers Social Security survivors benefits to a child, stepchild, grandchild, or adopted child of eligible workers.
@@ -1114,17 +2494,50 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/survivors/ifyou.html#h4
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-department-of-survivor-benefit-plan
   name: Survivor benefit plan
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Offers up to 55% of a service member's retired pay for survivors of active duty service members and some retired and reserve members.
   what_they_offer: >
@@ -1139,17 +2552,54 @@
     Visit the official website or call for more information.
   link: https://bja.ojp.gov/program/psob/benefits
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-veterans-affairs-burial-in-va-national-cemetery
   name: Burial in VA national cemetery
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - veterans
   description: >
     Burial in VA national cemeteries for eligible veterans, service members, and some family members.
@@ -1164,15 +2614,53 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/burials-memorials/eligibility/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-internal-revenue-tax-advantaged-retirement-plans-information
   name: Tax-advantaged retirement plans information
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Internal Revenue Service (IRS)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
   description: >
@@ -1186,17 +2674,33 @@
     Visit the official website or call for more information.
   link: https://www.irs.gov/retirement-plans
   link_text: Official Website
+  life_events:
+    - retirement
+  keywords:
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-internal-revenue-tax-relief-programs-for-people-with-disabilities
   name: Tax relief programs for people with disabilities
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Internal Revenue Service (IRS)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
   description: >
     Programs that help people with disabilities save money with tax-favored accounts and maintain health, independence, and quality of life
   what_they_offer: >
@@ -1208,18 +2712,35 @@
     Visit the official website or call for more information.
   link: https://www.irs.gov/publications/p907
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
 
 - id: federal-social-security-social-security-disability-insurance-for-child
   name: Social Security disability insurance for child
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - families
-    - disability
+    - people-with-disabilities
   description: >
     Financial assistance to minor children whose parents receive disability benefits. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -1234,17 +2755,51 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/disability/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-social-security-social-security-disability-insurance-for-parents
   name: Social Security disability insurance for parents
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
   description: >
     Financial assistance to people with disabilities and their family members. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -1258,17 +2813,68 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/disability/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-social-security-social-security-disability-insurance-for-spouse
   name: Social Security disability insurance for spouse
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
   description: >
     Financial assistance to people with disabilities and their family. You only need one application to apply for all disability benefits offered by SSA.
   what_they_offer: >
@@ -1283,17 +2889,48 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/disability/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-social-security-retirement-benefits-for-spouse
   name: Retirement benefits for spouse
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - seniors
   description: >
     A replacement income for spouses of qualified retirees. You only need one application to apply for all disability benefits offered by SSA.
@@ -1309,18 +2946,49 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/retirement/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-social-security-retirement-benefits-for-child-with-disabilities
   name: Retirement benefits for child with disabilities
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - families
-    - disability
+    - people-with-disabilities
     - seniors
   description: >
     A replacement income for adult children with disabilities of qualified retirees and families receiving retirement benefits. You only need one application to apply for all disability benefits offered by SSA.
@@ -1337,18 +3005,49 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/retirement/
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-department-of-public-safety-officers-disability-benefits
   name: Public safety officers' disability benefits
-  category: Legal Services
+  category: legal
   area: Nationwide
   source: federal
   agency: Department of Justice (DOJ)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
-    - families
+    - people-with-disabilities
+    - survivors
   description: >
     A one-time benefit to public safety officers who were permanently and totally disabled as a result of an injury while in the line of duty.
   what_they_offer: >
@@ -1362,15 +3061,32 @@
     Visit the official website or call for more information.
   link: https://bja.ojp.gov/program/psob/benefits
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
 
 - id: federal-centers-for-medicare-with-retirement
   name: Medicare with retirement
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Centers for Medicare and Medicaid (CMS)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
   description: >
@@ -1385,18 +3101,51 @@
     Visit the official website or call for more information.
   link: https://www.medicare.gov/basics/get-started-with-medicare
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - health insurance
+    - medical coverage
 
 - id: federal-department-of-concurrent-retirement-and-disability-payments-crdp
   name: Concurrent Retirement and Disability Payments (CRDP)
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
-    - families
+    - people-with-disabilities
+    - survivors
     - seniors
   description: >
     Offsets military retired pay due for VA disability compensation. Eligibility is automatic. No application is needed.
@@ -1412,17 +3161,72 @@
     Visit the official website or call for more information.
   link: https://militarypay.defense.gov/Benefits/New-Retired-Benefits-Program/
   link_text: Official Website
+  life_events:
+    - disability
+    - death
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-department-of-death-gratuity
   name: Death gratuity
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Department of Defense (DOD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Tax free payment of $100,000 to eligible survivors of members of the Armed Forces who died while on active duty or while serving in certain reserve statuses.
   what_they_offer: >
@@ -1437,17 +3241,43 @@
     Visit the official website or call for more information.
   link: https://militarypay.defense.gov/Benefits/Death-Gratuity/
   link_text: Official Website
+  life_events:
+    - death
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - veteran
+    - military
+    - service member
+    - armed forces
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-disability-compensation
   name: Disability compensation
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
     - veterans
   description: >
     A monthly tax-free payment to veterans who got sick or injured while serving in the military or whose service made an existing condition worse.
@@ -1462,19 +3292,40 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/disability/eligibility/
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-social-security-extra-help-with-medicare-prescription-drug-plan-pa
   name: Extra help with Medicare prescription drug plan (Part D) costs
-  category: Health
+  category: health
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
     - seniors
-    - disability
-    - income-eligible
+    - people-with-disabilities
+    - low-income
   description: >
     Helps with the cost of prescription drugs, like deductibles and copays.&nbsp;
   what_they_offer: >
@@ -1488,18 +3339,51 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/medicare/prescriptionhelp.html
   link_text: Official Website
+  life_events:
+    - disability
+    - retirement
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - health insurance
+    - medical coverage
 
 - id: federal-department-of-housing-improvement-program
   name: Housing improvement program
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Department of Interior (DOI) - Indian Affairs
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - income-eligible
-    - everyone
+    - low-income
+    - native-americans
   description: >
     Helps with home repair, renovation, replacement, and new housing for American Indian and Alaska Native individuals and families with no resources for standard housing.
   what_they_offer: >
@@ -1512,17 +3396,21 @@
     Visit the official website or call for more information.
   link: https://www.bia.gov/bia/ois/dhs/housing-improvement-program
   link_text: Official Website
+  keywords:
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-veterans-affairs-survivors-pension-for-child
   name: Survivors pension for child
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Veterans Affairs Department (VA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
     - families
     - veterans
   description: >
@@ -1540,17 +3428,54 @@
     Visit the official website or call for more information.
   link: https://www.va.gov/pension/survivors-pension/
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - veteran
+    - military
+    - service member
+    - armed forces
 
 - id: federal-social-security-survivors-benefits-for-parents
   name: Survivors benefits for parents
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Social Security survivors benefits to parents of eligible workers.
   what_they_offer: >
@@ -1565,17 +3490,53 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/survivors/ifyou.html#h5
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
+    - housing assistance
+    - rental help
+    - housing voucher
 
 - id: federal-social-security-survivors-benefits-for-spouse
   name: Survivors benefits for spouse
-  category: Finance
+  category: finance
   area: Nationwide
   source: federal
   agency: Social Security Administration (SSA)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - families
+    - survivors
   description: >
     Social Security survivors benefits to surviving spouses and certain divorced spouses of eligible workers.
   what_they_offer: >
@@ -1591,17 +3552,50 @@
     Visit the official website or call for more information.
   link: https://www.ssa.gov/benefits/survivors/ifyou.html#h2
   link_text: Official Website
+  life_events:
+    - death
+    - retirement
+  keywords:
+    - death
+    - deceased
+    - survivor
+    - survivors
+    - bereavement
+    - grief
+    - widow
+    - widower
+    - funeral
+    - burial
+    - memorial
+    - loss of loved one
+    - passing
+    - died
+    - dependents
+    - beneficiary
+    - retirement
+    - retired
+    - retiree
+    - pension
+    - senior
+    - elderly
+    - social security
+    - medicare
+    - 65
+    - aging
+    - golden years
+    - fixed income
+    - post-career
 
 - id: federal-library-of-braille-and-audio-materials-service
   name: Braille and audio materials service
-  category: Education
+  category: education
   area: Nationwide
   source: federal
   agency: Library of Congress (LOC)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - disability
+    - people-with-disabilities
   description: >
     Braille and audio materials and services at no cost for people who are blind or have a visual, physical, perceptual, or reading disability.
   what_they_offer: >
@@ -1613,17 +3607,34 @@
     Visit the official website or call for more information.
   link: https://www.loc.gov/nls/enrollment-equipment/apply-for-nls-service/
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
 
 - id: federal-department-of-housing-choice-voucher-section-8
   name: Housing choice voucher (Section 8)
-  category: Community Services
+  category: community
   area: Nationwide
   source: federal
   agency: Department of Housing and Urban Development (HUD)
   verified_by: USA.gov
-  verified_date: '2026-01-03'
+  verified_date: '2026-01-05'
   groups:
-    - income-eligible
+    - low-income
   description: >
     Learn if you are eligible for a Section 8 housing choice voucher to pay rent for private housing. Housing choice vouchers are for families with low incomes, seniors, and people with disabilities.Find your public housing agency to learn if you are eligible and apply.
   what_they_offer: >
@@ -1636,3 +3647,23 @@
     Visit the official website or call for more information.
   link: https://www.usa.gov/housing-voucher-section-8
   link_text: Official Website
+  life_events:
+    - disability
+  keywords:
+    - disability
+    - disabled
+    - impairment
+    - special needs
+    - ada
+    - unable to work
+    - ssdi
+    - ssi
+    - accessibility
+    - chronic illness
+    - blind
+    - deaf
+    - mobility
+    - mental health
+    - housing assistance
+    - rental help
+    - housing voucher

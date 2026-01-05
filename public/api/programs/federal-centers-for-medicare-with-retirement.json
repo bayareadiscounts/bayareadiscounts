@@ -20,5 +20,41 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [
+    "disability",
+    "disabled",
+    "impairment",
+    "special needs",
+    "ada",
+    "unable to work",
+    "ssdi",
+    "ssi",
+    "accessibility",
+    "chronic illness",
+    "blind",
+    "deaf",
+    "mobility",
+    "mental health",
+    "retirement",
+    "retired",
+    "retiree",
+    "pension",
+    "senior",
+    "elderly",
+    "social security",
+    "medicare",
+    65,
+    "aging",
+    "golden years",
+    "fixed income",
+    "post-career",
+    "health insurance",
+    "medical coverage"
+  ],
+  "lifeEvents": [
+    "disability",
+    "retirement"
+  ],
+  "agency": "Centers for Medicare and Medicaid (CMS)",
+  "lastUpdated": "2026-01-05"
 }

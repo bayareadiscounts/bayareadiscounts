@@ -1,0 +1,27 @@
+{
+  "id": "smc-wifi-brisbane-community-pool",
+  "name": "Brisbane Community Pool",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Brisbane",
+  "website": "https://www.smcgov.org/smc-public-wifi-project",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "2 Solano St, Brisbane, CA 94005",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

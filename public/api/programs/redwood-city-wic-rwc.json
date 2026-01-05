@@ -1,0 +1,29 @@
+{
+  "id": "redwood-city-wic-rwc",
+  "name": "WIC - RWC",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone",
+    "pregnant",
+    "families"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Redwood City",
+  "website": "https://www.smchealth.org/wic",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "2342 El Camino Real, Redwood City, CA 94063",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

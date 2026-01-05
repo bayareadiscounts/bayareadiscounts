@@ -22,5 +22,39 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [
+    "disability",
+    "disabled",
+    "impairment",
+    "special needs",
+    "ada",
+    "unable to work",
+    "ssdi",
+    "ssi",
+    "accessibility",
+    "chronic illness",
+    "blind",
+    "deaf",
+    "mobility",
+    "mental health",
+    "retirement",
+    "retired",
+    "retiree",
+    "pension",
+    "senior",
+    "elderly",
+    "social security",
+    "medicare",
+    65,
+    "aging",
+    "golden years",
+    "fixed income",
+    "post-career"
+  ],
+  "lifeEvents": [
+    "disability",
+    "retirement"
+  ],
+  "agency": "Social Security Administration (SSA)",
+  "lastUpdated": "2026-01-05"
 }

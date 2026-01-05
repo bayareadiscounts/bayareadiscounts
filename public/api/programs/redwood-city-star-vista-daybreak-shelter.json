@@ -1,0 +1,29 @@
+{
+  "id": "redwood-city-star-vista-daybreak-shelter",
+  "name": "Star Vista/Daybreak Shelter",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone",
+    "youth",
+    "unhoused"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Redwood City",
+  "website": "https://star-vista.org/daybreak-30/",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "639 Douglas Avenue, Redwood City, CA 94063",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

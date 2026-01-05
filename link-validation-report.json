@@ -1,0 +1,5535 @@
+{
+  "timestamp": "2026-01-05T00:42:42.107Z",
+  "summary": {
+    "total": 613,
+    "federal": 205,
+    "verified": 81,
+    "unverified": 124,
+    "nonGov": 408,
+    "issues": []
+  },
+  "federalLinks": [
+    {
+      "id": "va-vet-centers",
+      "name": "VA Vet Centers",
+      "file": "community.yml",
+      "url": "https://www.va.gov/find-locations",
+      "domain": "va.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "federal-federal-emergency-covid-19-funeral-assistance",
+      "name": "COVID-19 funeral assistance",
+      "file": "federal-benefits.yml",
+      "url": "https://www.fema.gov/disasters/coronavirus/economic/funeral-assistance",
+      "domain": "fema.gov",
+      "source": "federal",
+      "agency": "Federal Emergency Management Agency (FEMA)"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-child",
+      "name": "Retirement benefits for child",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/retirement/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-supplemental-security-income-ssi-for-child",
+      "name": "Supplemental Security Income (SSI) for Child",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/disability/apply-child.html",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-centers-for-medicare-with-disability",
+      "name": "Medicare with disability",
+      "file": "federal-benefits.yml",
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare",
+      "domain": "medicare.gov",
+      "source": "federal",
+      "agency": "Centers for Medicare and Medicaid (CMS)"
+    },
+    {
+      "id": "federal-veterans-affairs-veteran-s-pension-with-disability",
+      "name": "Veteran's pension with disability",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/pension/how-to-apply/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-veteran-readiness-and-employment-vr-e",
+      "name": "Veteran readiness and employment (VR&E)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/careers-employment/vocational-rehabilitation/eligibility/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-department-of-combat-related-special-compensation-crsc",
+      "name": "Combat-Related Special Compensation (CRSC)",
+      "file": "federal-benefits.yml",
+      "url": "https://militarypay.defense.gov/Benefits/New-Retired-Benefits-Program/",
+      "domain": "militarypay.defense.gov",
+      "source": "federal",
+      "agency": "Department of Defense (DOD)"
+    },
+    {
+      "id": "federal-social-security-ticket-to-work-program",
+      "name": "Ticket to Work Program",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/work/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-supplemental-security-income-ssi",
+      "name": "Supplemental Security Income (SSI)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/ssi/adults.html",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for-child-wit",
+      "name": "Social Security disability insurance for child with disabilities",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/disability/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance",
+      "name": "Social Security Disability Insurance",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/disability/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-financial-assistance-and-social-services-fass",
+      "name": "Financial Assistance and Social Services (FASS)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.bia.gov/bia/ois/dhs/financial-assistance",
+      "domain": "bia.gov",
+      "source": "federal",
+      "agency": "Department of Interior (DOI) - Indian Affairs"
+    },
+    {
+      "id": "federal-federal-retirement-thrift-savings-plan-tsp",
+      "name": "Thrift Savings Plan (TSP)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.tsp.gov/",
+      "domain": "tsp.gov",
+      "source": "federal",
+      "agency": "Federal Retirement Thrift Investment Board (FRTIB)"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-parents",
+      "name": "Retirement benefits for parents",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/retirement/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-centers-for-medicare-savings-programs-msp",
+      "name": "Medicare Savings Programs (MSP)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+      "domain": "medicare.gov",
+      "source": "federal",
+      "agency": "Centers for Medicare and Medicaid (CMS)"
+    },
+    {
+      "id": "federal-veterans-affairs-veteran-s-pension",
+      "name": "Veteran's pension",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/pension/how-to-apply/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-social-security-supplemental-security-income-ssi-for-adults",
+      "name": "Supplemental Security Income (SSI) for adults",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/ssi/65older.html",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits",
+      "name": "Retirement benefits",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/retirement/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-coal-miner-worker-s-compensation",
+      "name": "Coal miner worker's compensation",
+      "file": "federal-benefits.yml",
+      "url": "https://www.dol.gov/agencies/owcp/dcmwc/filing_guide_miner",
+      "domain": "dol.gov",
+      "source": "federal",
+      "agency": "Department of Labor (DOL)"
+    },
+    {
+      "id": "federal-department-of-coal-miner-worker-s-compensation-for-surviving-spo",
+      "name": "Coal miner worker's compensation for surviving spouse",
+      "file": "federal-benefits.yml",
+      "url": "https://www.dol.gov/agencies/owcp/dcmwc/filing_guide_survivor",
+      "domain": "dol.gov",
+      "source": "federal",
+      "agency": "Department of Labor (DOL)"
+    },
+    {
+      "id": "federal-veterans-affairs-presidential-memorial-certificate",
+      "name": "Presidential Memorial Certificate",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/burials-memorials/memorial-items/presidential-memorial-certificates/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-veterans-burial-allowance",
+      "name": "Veterans burial allowance",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/burials-memorials/veterans-burial-allowance/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-survivors-pension-for-spouse",
+      "name": "Survivors pension for spouse",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/pension/survivors-pension/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-survivors-pension-for-child-with-disabilities",
+      "name": "Survivors pension for child with disabilities",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/pension/survivors-pension/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-veterans-medallions",
+      "name": "Veterans medallions",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-veterans-headstone-and-grave-marker",
+      "name": "Veterans headstone and grave marker",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-life-insurance-for-survivors-of-veterans",
+      "name": "Life insurance for survivors of veterans",
+      "file": "federal-benefits.yml",
+      "url": "https://www.benefits.va.gov/INSURANCE/sglivgli.asp",
+      "domain": "benefits.va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-dependency-and-indemnity-compensation-dic",
+      "name": "Dependency and Indemnity Compensation (DIC)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/disability/dependency-indemnity-compensation/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-civilian-health-and-medical-program-of-the-va-cham",
+      "name": "Civilian Health and Medical Program of the VA (CHAMPVA)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/health-care/family-caregiver-benefits/champva/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-department-of-burial-benefits",
+      "name": "Burial benefits",
+      "file": "federal-benefits.yml",
+      "url": "https://www.militaryonesource.mil/benefits/funeral-and-burial-benefits-for-service-members/",
+      "domain": "militaryonesource.mil",
+      "source": "federal",
+      "agency": "Department of Defense (DOD)"
+    },
+    {
+      "id": "federal-social-security-lump-sum-death-benefit",
+      "name": "Lump-sum death benefit",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/survivors/ifyou.html#h7",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-veterans-affairs-additional-disability-benefits-for-veterans",
+      "name": "Additional disability benefits for veterans",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/disability/eligibility/special-claims/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-department-of-financial-assistance-and-social-services-fass-buri",
+      "name": "Financial Assistance and Social Services (FASS) - Burial assistance",
+      "file": "federal-benefits.yml",
+      "url": "https://www.bia.gov/bia/ois/dhs/financial-assistance",
+      "domain": "bia.gov",
+      "source": "federal",
+      "agency": "Department of Interior (DOI) - Indian Affairs"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-parents-caring-for-a-child",
+      "name": "Survivors benefits for parents caring for a child",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/forms/ssa-5.html",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-annuity-for-military-surviving-spouses",
+      "name": "Annuity for military surviving spouses",
+      "file": "federal-benefits.yml",
+      "url": "https://militarypay.defense.gov/Benefits/",
+      "domain": "militarypay.defense.gov",
+      "source": "federal",
+      "agency": "Department of Defense (DOD)"
+    },
+    {
+      "id": "federal-veterans-affairs-education-benefits-gi-bill-for-survivors",
+      "name": "Education benefits (GI Bill) for survivors",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/education/survivor-dependent-benefits/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-child-with-disabilities",
+      "name": "Survivors benefits for child with disabilities",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/survivors/ifyou.html#h4",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-spouse-with-disabilities",
+      "name": "Survivors benefits for spouse with disabilities",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/survivors/ifyou.html#h2",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-public-safety-officers-educational-assistance-prog",
+      "name": "Public safety officers' Educational Assistance Program",
+      "file": "federal-benefits.yml",
+      "url": "https://psob.bja.ojp.gov/PSOB_Education2018.pdf",
+      "domain": "psob.bja.ojp.gov",
+      "source": "federal",
+      "agency": "Department of Justice (DOJ)"
+    },
+    {
+      "id": "federal-department-of-public-safety-officers-death-benefits",
+      "name": "Public safety officers' death benefits",
+      "file": "federal-benefits.yml",
+      "url": "https://bja.ojp.gov/program/psob/benefits",
+      "domain": "bja.ojp.gov",
+      "source": "federal",
+      "agency": "Department of Justice (DOJ)"
+    },
+    {
+      "id": "federal-veterans-affairs-burial-flag",
+      "name": "Burial flag",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/burials-memorials/memorial-items/burial-flags/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-veterans-affairs-home-loan-program-for-survivors",
+      "name": "Home loan program for survivors",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/housing-assistance/home-loans/surviving-spouse/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-child",
+      "name": "Survivors benefits for child",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/survivors/ifyou.html#h4",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-survivor-benefit-plan",
+      "name": "Survivor benefit plan",
+      "file": "federal-benefits.yml",
+      "url": "https://bja.ojp.gov/program/psob/benefits",
+      "domain": "bja.ojp.gov",
+      "source": "federal",
+      "agency": "Department of Defense (DOD)"
+    },
+    {
+      "id": "federal-veterans-affairs-burial-in-va-national-cemetery",
+      "name": "Burial in VA national cemetery",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/burials-memorials/eligibility/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-internal-revenue-tax-advantaged-retirement-plans-information",
+      "name": "Tax-advantaged retirement plans information",
+      "file": "federal-benefits.yml",
+      "url": "https://www.irs.gov/retirement-plans",
+      "domain": "irs.gov",
+      "source": "federal",
+      "agency": "Internal Revenue Service (IRS)"
+    },
+    {
+      "id": "federal-internal-revenue-tax-relief-programs-for-people-with-disabilities",
+      "name": "Tax relief programs for people with disabilities",
+      "file": "federal-benefits.yml",
+      "url": "https://www.irs.gov/publications/p907",
+      "domain": "irs.gov",
+      "source": "federal",
+      "agency": "Internal Revenue Service (IRS)"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for-child",
+      "name": "Social Security disability insurance for child",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/disability/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for-parents",
+      "name": "Social Security disability insurance for parents",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/disability/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-social-security-disability-insurance-for-spouse",
+      "name": "Social Security disability insurance for spouse",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/disability/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-spouse",
+      "name": "Retirement benefits for spouse",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/retirement/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-retirement-benefits-for-child-with-disabilities",
+      "name": "Retirement benefits for child with disabilities",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/retirement/",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-public-safety-officers-disability-benefits",
+      "name": "Public safety officers' disability benefits",
+      "file": "federal-benefits.yml",
+      "url": "https://bja.ojp.gov/program/psob/benefits",
+      "domain": "bja.ojp.gov",
+      "source": "federal",
+      "agency": "Department of Justice (DOJ)"
+    },
+    {
+      "id": "federal-centers-for-medicare-with-retirement",
+      "name": "Medicare with retirement",
+      "file": "federal-benefits.yml",
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare",
+      "domain": "medicare.gov",
+      "source": "federal",
+      "agency": "Centers for Medicare and Medicaid (CMS)"
+    },
+    {
+      "id": "federal-department-of-concurrent-retirement-and-disability-payments-crdp",
+      "name": "Concurrent Retirement and Disability Payments (CRDP)",
+      "file": "federal-benefits.yml",
+      "url": "https://militarypay.defense.gov/Benefits/New-Retired-Benefits-Program/",
+      "domain": "militarypay.defense.gov",
+      "source": "federal",
+      "agency": "Department of Defense (DOD)"
+    },
+    {
+      "id": "federal-department-of-death-gratuity",
+      "name": "Death gratuity",
+      "file": "federal-benefits.yml",
+      "url": "https://militarypay.defense.gov/Benefits/Death-Gratuity/",
+      "domain": "militarypay.defense.gov",
+      "source": "federal",
+      "agency": "Department of Defense (DOD)"
+    },
+    {
+      "id": "federal-veterans-affairs-disability-compensation",
+      "name": "Disability compensation",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/disability/eligibility/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-social-security-extra-help-with-medicare-prescription-drug-plan-pa",
+      "name": "Extra help with Medicare prescription drug plan (Part D) costs",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/medicare/prescriptionhelp.html",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-department-of-housing-improvement-program",
+      "name": "Housing improvement program",
+      "file": "federal-benefits.yml",
+      "url": "https://www.bia.gov/bia/ois/dhs/housing-improvement-program",
+      "domain": "bia.gov",
+      "source": "federal",
+      "agency": "Department of Interior (DOI) - Indian Affairs"
+    },
+    {
+      "id": "federal-veterans-affairs-survivors-pension-for-child",
+      "name": "Survivors pension for child",
+      "file": "federal-benefits.yml",
+      "url": "https://www.va.gov/pension/survivors-pension/",
+      "domain": "va.gov",
+      "source": "federal",
+      "agency": "Veterans Affairs Department (VA)"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-parents",
+      "name": "Survivors benefits for parents",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/survivors/ifyou.html#h5",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-social-security-survivors-benefits-for-spouse",
+      "name": "Survivors benefits for spouse",
+      "file": "federal-benefits.yml",
+      "url": "https://www.ssa.gov/benefits/survivors/ifyou.html#h2",
+      "domain": "ssa.gov",
+      "source": "federal",
+      "agency": "Social Security Administration (SSA)"
+    },
+    {
+      "id": "federal-library-of-braille-and-audio-materials-service",
+      "name": "Braille and audio materials service",
+      "file": "federal-benefits.yml",
+      "url": "https://www.loc.gov/nls/enrollment-equipment/apply-for-nls-service/",
+      "domain": "loc.gov",
+      "source": "federal",
+      "agency": "Library of Congress (LOC)"
+    },
+    {
+      "id": "federal-department-of-housing-choice-voucher-section-8",
+      "name": "Housing choice voucher (Section 8)",
+      "file": "federal-benefits.yml",
+      "url": "https://www.usa.gov/housing-voucher-section-8",
+      "domain": "usa.gov",
+      "source": "federal",
+      "agency": "Department of Housing and Urban Development (HUD)"
+    },
+    {
+      "id": "ryan-white-program",
+      "name": "Ryan White HIV/AIDS Program",
+      "file": "health.yml",
+      "url": "https://findhivcare.hrsa.gov/index.html",
+      "domain": "findhivcare.hrsa.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "samhsa-helpline",
+      "name": "SAMHSA National Helpline",
+      "file": "health.yml",
+      "url": "https://www.samhsa.gov/find-help/national-helpline",
+      "domain": "samhsa.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "va-health-benefits",
+      "name": "VA Health Benefits",
+      "file": "health.yml",
+      "url": "https://www.va.gov/health-care",
+      "domain": "va.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "uscis-i-912-fee-waiver",
+      "name": "USCIS I-912 Fee Waiver",
+      "file": "legal.yml",
+      "url": "https://www.uscis.gov/i-912",
+      "domain": "uscis.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "america-the-beautiful-pass",
+      "name": "America the Beautiful — NPS Pass",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/planyourvisit/passes.htm#america-the-beautiful-passes",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-alca",
+      "name": "Alcatraz Island",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/alca/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-euon",
+      "name": "Eugene O'Neill National Historic Site",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/euon/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-fopo",
+      "name": "Fort Point National Historic Site",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/fopo/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-goga",
+      "name": "Golden Gate National Recreation Area",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/goga/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-jomu",
+      "name": "John Muir National Historic Site",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/jomu/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-muwo",
+      "name": "Muir Woods National Monument",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/muwo/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-pore",
+      "name": "Point Reyes National Seashore",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/pore/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-poch",
+      "name": "Port Chicago Naval Magazine National Memorial",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/poch/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-prsf",
+      "name": "Presidio of San Francisco",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/prsf/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-rori",
+      "name": "Rosie the Riveter WWII Home Front National Historical Park",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/rori/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nps-safr",
+      "name": "San Francisco Maritime National Historical Park",
+      "file": "recreation.yml",
+      "url": "https://www.nps.gov/safr/index.htm",
+      "domain": "nps.gov",
+      "source": "local",
+      "agency": null
+    }
+  ],
+  "unverifiedFederalLinks": [
+    {
+      "id": "calvet-benefits-portal",
+      "name": "CalVet Benefits & Services Portal",
+      "file": "community.yml",
+      "url": "https://www.calvet.ca.gov/",
+      "domain": "calvet.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-dvbe",
+      "name": "Disabled Veteran Business Enterprise (DVBE) Program",
+      "file": "community.yml",
+      "url": "https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-702/Certification-Programs/DVBE-Program",
+      "domain": "dgs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-caltap",
+      "name": "California Transition Assistance Program (CalTAP)",
+      "file": "community.yml",
+      "url": "https://www.calvet.ca.gov/VetServices/Pages/California-Transition-Assistance-Program.aspx",
+      "domain": "calvet.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-vhhp",
+      "name": "Veterans Housing and Homelessness Prevention (VHHP)",
+      "file": "community.yml",
+      "url": "https://www.calvet.ca.gov/veteran-services-benefits/housing",
+      "domain": "calvet.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "dolly-parton-library",
+      "name": "Dolly Parton Imagination Library",
+      "file": "community.yml",
+      "url": "https://www.library.ca.gov/services/to-public/imagination-library/",
+      "domain": "library.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calworks-child-care",
+      "name": "CalWORKs Child Care",
+      "file": "community.yml",
+      "url": "https://www.cdss.ca.gov/inforesources/calworks-child-care",
+      "domain": "cdss.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-grants-portal",
+      "name": "California Grants Portal",
+      "file": "community.yml",
+      "url": "https://www.grants.ca.gov/",
+      "domain": "grants.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-jobsnow",
+      "name": "SF JobsNOW!",
+      "file": "community.yml",
+      "url": "https://sf.gov/information/jobsnow-employers",
+      "domain": "sf.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "oewd-citybuild",
+      "name": "CityBuild Academy",
+      "file": "community.yml",
+      "url": "https://sf.gov/citybuild",
+      "domain": "sf.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ihss",
+      "name": "In-Home Supportive Services (IHSS)",
+      "file": "community.yml",
+      "url": "https://www.cdss.ca.gov/in-home-supportive-services",
+      "domain": "cdss.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "chafee-grant",
+      "name": "Chafee Grant for Foster Youth",
+      "file": "community.yml",
+      "url": "https://www.csac.ca.gov/chafee-grant",
+      "domain": "csac.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-college-fee-waiver",
+      "name": "CalVet College Fee Waiver",
+      "file": "education.yml",
+      "url": "https://www.calvet.ca.gov/VetServices/Pages/College-Fee-Waiver.aspx",
+      "domain": "calvet.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-federal-surplus-program",
+      "name": "California Federal Surplus Property Program",
+      "file": "equipment.yml",
+      "url": "https://www.dgs.ca.gov/OFAM/Services/Page-Content/Office-of-Fleet-and-Asset-Management-Services-List-Folder/Apply-or-Renew-as-Federal-Donee-of-Surplus-Property",
+      "domain": "dgs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "city-of-san-jose-surplus",
+      "name": "City of San José Surplus Property Donation Program",
+      "file": "equipment.yml",
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/public-works/surplus-property",
+      "domain": "sanjoseca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "santa-clara-county-surplus-donations",
+      "name": "Santa Clara County Surplus Property Donation Program",
+      "file": "equipment.yml",
+      "url": "https://prc.santaclaracounty.gov/surplus-property-program/request-donations-county-surplus-property",
+      "domain": "prc.santaclaracounty.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-home-loans",
+      "name": "CalVet Home Loans",
+      "file": "finance.yml",
+      "url": "https://www.calvet.ca.gov/HomeLoans",
+      "domain": "calvet.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-property-tax-exemption",
+      "name": "Disabled Veteran Property Tax Exemption",
+      "file": "finance.yml",
+      "url": "https://www.boe.ca.gov/proptaxes/dv_exemption.htm",
+      "domain": "boe.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-military-retirement-tax-exclusion",
+      "name": "Military Retirement Income Tax Exclusion",
+      "file": "finance.yml",
+      "url": "https://www.ftb.ca.gov/",
+      "domain": "ftb.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calable",
+      "name": "CalABLE",
+      "file": "finance.yml",
+      "url": "https://calable.ca.gov/",
+      "domain": "calable.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "irs-vita-locator",
+      "name": "IRS VITA Site Locator",
+      "file": "finance.yml",
+      "url": "https://freetaxassistance.for.irs.gov/s/sitelocator",
+      "domain": "freetaxassistance.for.irs.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sparkpoint-fremont-vita",
+      "name": "SparkPoint Fremont VITA",
+      "file": "finance.yml",
+      "url": "https://www.fremont.gov/government/departments/human-services/human-services-in-the-community/sparkpoint/free-tax-preparation",
+      "domain": "fremont.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ibank-small-business",
+      "name": "Small Business Finance Center (IBank)",
+      "file": "finance.yml",
+      "url": "https://ibank.ca.gov/small-business-finance-center/",
+      "domain": "ibank.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calfresh-online",
+      "name": "CalFresh Online",
+      "file": "food.yml",
+      "url": "https://www.cdss.ca.gov/ebt-online",
+      "domain": "cdss.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calfresh-rmp",
+      "name": "CalFresh Restaurant Meals Program (RMP)",
+      "file": "food.yml",
+      "url": "https://www.cdss.ca.gov/rmp",
+      "domain": "cdss.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "universal-school-meals",
+      "name": "Universal School Meals",
+      "file": "food.yml",
+      "url": "https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp",
+      "domain": "cde.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "wic-program",
+      "name": "WIC – Women, Infants & Children",
+      "file": "food.yml",
+      "url": "https://myfamily.wic.ca.gov/",
+      "domain": "myfamily.wic.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-veterans-homes",
+      "name": "Veterans Homes of California",
+      "file": "health.yml",
+      "url": "https://www.calvet.ca.gov/VetHomes",
+      "domain": "calvet.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "denti-cal",
+      "name": "Denti-Cal",
+      "file": "health.yml",
+      "url": "https://www.dental.dhcs.ca.gov/",
+      "domain": "dental.dhcs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "medi-cal",
+      "name": "Medi-Cal (Medicaid)",
+      "file": "health.yml",
+      "url": "https://www.dhcs.ca.gov/Medi-Cal/Pages/apply.aspx",
+      "domain": "dhcs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "wic-health",
+      "name": "WIC (Women, Infants, Children)",
+      "file": "health.yml",
+      "url": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Program-Landing1.aspx",
+      "domain": "cdph.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calrx-naloxone",
+      "name": "CalRx OTC Naloxone Nasal Spray",
+      "file": "health.yml",
+      "url": "https://calrx.ca.gov/get-naloxone/",
+      "domain": "calrx.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "naloxone-distribution-project",
+      "name": "Naloxone Distribution Project (NDP)",
+      "file": "health.yml",
+      "url": "https://www.dhcs.ca.gov/individuals/Pages/Naloxone_Distribution_Project.aspx",
+      "domain": "dhcs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "adap",
+      "name": "AIDS Drug Assistance Program (ADAP)",
+      "file": "health.yml",
+      "url": "https://www.cdph.ca.gov/Programs/CID/DOA/pages/OA_adap_eligibility.aspx",
+      "domain": "cdph.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "black-infant-health",
+      "name": "Black Infant Health Program",
+      "file": "health.yml",
+      "url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/BIH/Pages/default.aspx",
+      "domain": "cdph.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-home-visiting",
+      "name": "California Home Visiting Program",
+      "file": "health.yml",
+      "url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/default.aspx",
+      "domain": "cdph.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "prep-assistance-program",
+      "name": "PrEP Assistance Program (PrEP-AP)",
+      "file": "health.yml",
+      "url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_adap_enroll_prepAP.aspx",
+      "domain": "cdph.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "every-woman-counts",
+      "name": "Every Woman Counts",
+      "file": "health.yml",
+      "url": "https://www.dhcs.ca.gov/everywomancounts",
+      "domain": "dhcs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpsp",
+      "name": "Comprehensive Perinatal Services Program (CPSP)",
+      "file": "health.yml",
+      "url": "https://www.dhcs.ca.gov/services/Pages/CPSP.aspx",
+      "domain": "dhcs.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "childhood-lead-poisoning-prevention",
+      "name": "Childhood Lead Poisoning Prevention Program",
+      "file": "health.yml",
+      "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/CLPPBhome.aspx",
+      "domain": "cdph.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "myturn",
+      "name": "MyTurn",
+      "file": "health.yml",
+      "url": "https://myturn.ca.gov/",
+      "domain": "myturn.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "court-fee-waivers",
+      "name": "Court Fee Waivers",
+      "file": "legal.yml",
+      "url": "https://selfhelp.courts.ca.gov/fee-waiver",
+      "domain": "selfhelp.courts.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-002",
+      "name": "California State Parks Library Pass",
+      "file": "library_resources.yml",
+      "url": "https://www.library.ca.gov/services/to-libraries/parks-pass/",
+      "domain": "library.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-007",
+      "name": "New York Times Digital Access",
+      "file": "library_resources.yml",
+      "url": "https://www.library.ca.gov/services/to-libraries/nyt/",
+      "domain": "library.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "napa-county-library-databases",
+      "name": "Napa County Library Databases",
+      "file": "library_resources.yml",
+      "url": "https://www.napacounty.gov/919/Databases",
+      "domain": "napacounty.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-state-parks-disabled-discount",
+      "name": "California State Parks Disabled Discount Pass",
+      "file": "recreation.yml",
+      "url": "https://www.parks.ca.gov/?page_id=30959",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-state-parks-distinguished-veteran",
+      "name": "California State Parks Distinguished Veteran Pass",
+      "file": "recreation.yml",
+      "url": "https://www.parks.ca.gov/?page_id=30958",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "golden-bear-pass",
+      "name": "Golden Bear Pass",
+      "file": "recreation.yml",
+      "url": "https://www.parks.ca.gov/?page_id=30960",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "senior-golden-bear-pass",
+      "name": "Senior Golden Bear Pass",
+      "file": "recreation.yml",
+      "url": "https://www.parks.ca.gov/?page_id=30961",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-albany-smr",
+      "name": "Albany SMR",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=22880",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-bethany-reservoir-sra",
+      "name": "Bethany Reservoir SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=562",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-emeryville-crescent-smr",
+      "name": "Emeryville Crescent SMR",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=22881",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-lake-del-valle-sra",
+      "name": "Lake Del Valle SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=537",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-mclaughlin-eastshore-sp-ss",
+      "name": "McLaughlin Eastshore SP SS",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=520",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-robert-w-crown-memorial-sb",
+      "name": "Robert W Crown Memorial SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=526",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-franks-tract-sra",
+      "name": "Franks Tract SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=490",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-marsh-creek-state-park",
+      "name": "Marsh Creek State Park",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=525",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-mount-diablo-sp",
+      "name": "Mount Diablo SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=517",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-angel-island-sp",
+      "name": "Angel Island SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=468",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-china-camp-sp",
+      "name": "China Camp SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=466",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-marconi-conference-center-shp",
+      "name": "Marconi Conference Center SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=467",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-mount-tamalpais-sp",
+      "name": "Mount Tamalpais SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=471",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-olompali-shp",
+      "name": "Olompali SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=465",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-samuel-p-taylor-sp",
+      "name": "Samuel P Taylor SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=469",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-tomales-bay-sp",
+      "name": "Tomales Bay SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=470",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-bale-grist-mill-shp",
+      "name": "Bale Grist Mill SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=482",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-bothe-napa-valley-sp",
+      "name": "Bothe Napa Valley SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=477",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-robert-louis-stevenson-sp",
+      "name": "Robert Louis Stevenson SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=472",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-candlestick-point-sra",
+      "name": "Candlestick Point SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=519",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-ano-nuevo-sp",
+      "name": "Ano Nuevo SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=523",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-bean-hollow-sb",
+      "name": "Bean Hollow SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=527",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-burleigh-h-murray-ranch-prop",
+      "name": "Burleigh H Murray Ranch Prop",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=535",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-butano-sp",
+      "name": "Butano SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=536",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-gray-whale-cove-sb",
+      "name": "Gray Whale Cove SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=528",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-half-moon-bay-sb",
+      "name": "Half Moon Bay SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=531",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-montara-sb",
+      "name": "Montara SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=532",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-pacifica-sb",
+      "name": "Pacifica SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=524",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-pescadero-sb",
+      "name": "Pescadero SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=522",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-pigeon-point-light-station-shp",
+      "name": "Pigeon Point Light Station SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=533",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-pomponio-sb",
+      "name": "Pomponio SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=521",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-portola-redwoods-sp",
+      "name": "Portola Redwoods SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=539",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-san-bruno-mountain-sp",
+      "name": "San Bruno Mountain SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=518",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-san-gregorio-sb",
+      "name": "San Gregorio SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=529",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-thornton-sb",
+      "name": "Thornton SB",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=530",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-henry-w-coe-sp",
+      "name": "Henry W Coe SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=561",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-martial-cottle-park-sra",
+      "name": "Martial Cottle Park SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=23450",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-benicia-capitol-shp",
+      "name": "Benicia Capitol SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=475",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-benicia-sra",
+      "name": "Benicia SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=476",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-armstrong-redwoods-snr",
+      "name": "Armstrong Redwoods SNR",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=450",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-austin-creek-sra",
+      "name": "Austin Creek SRA",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=452",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-fort-ross-shp",
+      "name": "Fort Ross SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=449",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-jack-london-shp",
+      "name": "Jack London SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=478",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-kruse-rhododendron-snr",
+      "name": "Kruse Rhododendron SNR",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=448",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-petaluma-adobe-shp",
+      "name": "Petaluma Adobe SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=474",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-salt-point-sp",
+      "name": "Salt Point SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=453",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-sonoma-coast-sp",
+      "name": "Sonoma Coast SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=451",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-sonoma-shp",
+      "name": "Sonoma SHP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=479",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-sugarloaf-ridge-sp",
+      "name": "Sugarloaf Ridge SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=481",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-trione-annadel-sp",
+      "name": "Trione Annadel SP",
+      "file": "recreation.yml",
+      "url": "http://www.parks.ca.gov/?page_id=480",
+      "domain": "parks.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "colma-colma-community-center",
+      "name": "Colma Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.colma.ca.gov/locations/colma-community-center/",
+      "domain": "colma.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "menlo-park-library-hotspots",
+      "name": "Menlo Park Library Wi-Fi Hotspots",
+      "file": "technology.yml",
+      "url": "https://menlopark.gov/",
+      "domain": "menlopark.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calvet-troops-to-trucks",
+      "name": "Troops to Trucks (CDL Waiver Program)",
+      "file": "transportation.yml",
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/commercial-driver-licenses-cdl/",
+      "domain": "dmv.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bart-discount",
+      "name": "BART",
+      "file": "transportation.yml",
+      "url": "https://www.bart.gov/tickets/discounts",
+      "domain": "bart.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bart-muni-a-pass",
+      "name": "BART + Muni",
+      "file": "transportation.yml",
+      "url": "https://www.bart.gov/tickets/discounts",
+      "domain": "bart.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "dmv-reduced-fee-id",
+      "name": "DMV Reduced-Fee ID Card",
+      "file": "transportation.yml",
+      "url": "https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240",
+      "domain": "sa.dmv.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "liheap",
+      "name": "LIHEAP",
+      "file": "utilities.yml",
+      "url": "https://www.csd.ca.gov/energybills",
+      "domain": "csd.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "medical-baseline",
+      "name": "Medical Baseline Allowance",
+      "file": "utilities.yml",
+      "url": "https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline",
+      "domain": "cpuc.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "baaqmd-clean-cars-ev",
+      "name": "Clean Cars for All - EV",
+      "file": "utilities.yml",
+      "url": "https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all",
+      "domain": "baaqmd.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "baaqmd-clean-cars-fuel-cell",
+      "name": "Clean Cars for All - Fuel Cell Vehicle",
+      "file": "utilities.yml",
+      "url": "https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all",
+      "domain": "baaqmd.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "baaqmd-clean-cars-ebike-transit",
+      "name": "Clean Cars for All - E-Bike & Transit Credit",
+      "file": "utilities.yml",
+      "url": "https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all",
+      "domain": "baaqmd.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "baaqmd-vehicle-buyback",
+      "name": "Vehicle Buy Back Program",
+      "file": "utilities.yml",
+      "url": "https://www.baaqmd.gov/en/funding-and-incentives/residents/vehicle-buy-back-program",
+      "domain": "baaqmd.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "baaqmd-wood-stove",
+      "name": "Wood Stove Replacement Program",
+      "file": "utilities.yml",
+      "url": "https://www.baaqmd.gov/en/funding-and-incentives/residents/clean-heet-program",
+      "domain": "baaqmd.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "carb-ebike-rebate",
+      "name": "E-Bike Rebate",
+      "file": "utilities.yml",
+      "url": "https://ww2.arb.ca.gov/our-work/programs/california-e-bike-incentive-project/about",
+      "domain": "ww2.arb.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-old-vehicle-retirement",
+      "name": "Old Vehicle Retirement",
+      "file": "utilities.yml",
+      "url": "https://www.bar.ca.gov/cap/retirement",
+      "domain": "bar.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "weatherization-assistance",
+      "name": "Weatherization Assistance Program",
+      "file": "utilities.yml",
+      "url": "https://www.csd.ca.gov/Pages/Assistance-HomeEnergyEfficiency.aspx",
+      "domain": "csd.ca.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "recology-discount",
+      "name": "Recology 25% Low-Income Discount Program",
+      "file": "utilities.yml",
+      "url": "https://www.sf.gov/additional-refuse-ratepayer-resources",
+      "domain": "sf.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-rap",
+      "name": "Rate Assistance Program (RAP)",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/rap",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-reap",
+      "name": "Residential Energy Assistance Program (REAP)",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/reap",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-project-pledge",
+      "name": "ProjectPLEDGE",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/projectpledge",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-hpwh-rebate",
+      "name": "Heat Pump Water Heater Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/switch",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-hp-hvac-rebate",
+      "name": "Heat Pump HVAC Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/electrifymyhome",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-gas-meter-removal",
+      "name": "Gas Meter Removal Incentive",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/electrifymyhome",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-ev-charger-mf-rebate",
+      "name": "EV Charger Rebate for Multi-Family and Non-Profits",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/EV",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-transformer-upgrade-rebate",
+      "name": "Transformer Upgrade Rebate Program",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/EV",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-stormwater-rebates",
+      "name": "Stormwater Rebates Program",
+      "file": "utilities.yml",
+      "url": "https://www.paloalto.gov/stormwater",
+      "domain": "paloalto.gov",
+      "source": "local",
+      "agency": null
+    }
+  ],
+  "nonGovLinks": [
+    {
+      "id": "211-bay-area",
+      "name": "2-1-1 Bay Area",
+      "file": "community.yml",
+      "url": "https://211bayarea.org",
+      "domain": "211bayarea.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "czi-community-space",
+      "name": "CZI Community Space",
+      "file": "community.yml",
+      "url": "https://chanzuckerberg.com/communityspace/",
+      "domain": "chanzuckerberg.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "generation-thrive-spaces",
+      "name": "Generation Thrive",
+      "file": "community.yml",
+      "url": "https://community.warriors.com/generation-thrive/spaces/",
+      "domain": "community.warriors.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "google-community-space",
+      "name": "Google Community Space",
+      "file": "community.yml",
+      "url": "https://communityspace.withgoogle.com/",
+      "domain": "communityspace.withgoogle.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ohana-floor-salesforce",
+      "name": "Salesforce Ohana Floor",
+      "file": "community.yml",
+      "url": "https://www.salesforce.com/company/ohana-floors-san-francisco/",
+      "domain": "salesforce.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "season-of-sharing",
+      "name": "Season of Sharing Fund",
+      "file": "community.yml",
+      "url": "https://seasonofsharing.org",
+      "domain": "seasonofsharing.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sobrato-conference-space",
+      "name": "Sobrato Nonprofit Centers Conference Space",
+      "file": "community.yml",
+      "url": "https://www.sobrato.com/sobrato-philanthropies/what-we-do/non-profit-sustainability/conference-space-nonprofit-centers/",
+      "domain": "sobrato.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "tides-converge",
+      "name": "Tides Converge",
+      "file": "community.yml",
+      "url": "https://www.tides.org/social-purpose-real-estate/office-space/",
+      "domain": "tides.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ymca",
+      "name": "YMCA",
+      "file": "community.yml",
+      "url": "https://www.ymca.org/get-involved/join",
+      "domain": "ymca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bacn-emergency-childcare",
+      "name": "Bay Area Crisis Nursery - Emergency Childcare",
+      "file": "community.yml",
+      "url": "https://bayareacrisisnursery.org/programs/emergency-childcare/",
+      "domain": "bayareacrisisnursery.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-state-preschool",
+      "name": "California State Preschool Program",
+      "file": "community.yml",
+      "url": "https://mychildcareplan.org/resource/child-care-subsidy-programs/",
+      "domain": "mychildcareplan.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "childrens-council-sf",
+      "name": "Children's Council San Francisco",
+      "file": "community.yml",
+      "url": "https://www.childrenscouncil.org/families/help-paying-for-child-care/",
+      "domain": "childrenscouncil.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "choices-for-children",
+      "name": "Choices for Children",
+      "file": "community.yml",
+      "url": "https://www.cfcscc.org/our-programs/",
+      "domain": "cfcscc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "head-start",
+      "name": "Head Start",
+      "file": "community.yml",
+      "url": "https://mychildcareplan.org/resource/child-care-subsidy-programs/",
+      "domain": "mychildcareplan.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bacn-boutique",
+      "name": "Bay Area Crisis Nursery - BACN Boutique",
+      "file": "community.yml",
+      "url": "https://bayareacrisisnursery.org/programs/bacn-boutique/",
+      "domain": "bayareacrisisnursery.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bacn-food-pantry-diaper",
+      "name": "Bay Area Crisis Nursery - Food Pantry & Diaper Bank",
+      "file": "community.yml",
+      "url": "https://bayareacrisisnursery.org/",
+      "domain": "bayareacrisisnursery.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-diaper-bank",
+      "name": "San Francisco Diaper Bank",
+      "file": "community.yml",
+      "url": "https://www.sfhsa.org",
+      "domain": "sfhsa.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "st-anthonys-clothing",
+      "name": "St. Anthony's Free Clothing Program",
+      "file": "community.yml",
+      "url": "https://www.stanthonysf.org/services/clothing/shop-for-clothes/",
+      "domain": "stanthonysf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "hip-housing-home-sharing",
+      "name": "HIP Housing Home Sharing Program",
+      "file": "community.yml",
+      "url": "https://hiphousing.org/",
+      "domain": "hiphousing.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lifemoves-services",
+      "name": "LifeMoves Opportunity Services Center",
+      "file": "community.yml",
+      "url": "https://www.lifemoves.org/",
+      "domain": "lifemoves.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "haven-family-house",
+      "name": "Haven Family House (LifeMoves)",
+      "file": "community.yml",
+      "url": "https://www.lifemoves.org/",
+      "domain": "lifemoves.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "friendly-voices-seniors",
+      "name": "Friendly Voices Phone Buddies for Seniors",
+      "file": "community.yml",
+      "url": "https://friendlyvoices.org/",
+      "domain": "friendlyvoices.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cid-housing-modifications",
+      "name": "Housing Accessibility Modifications Program",
+      "file": "community.yml",
+      "url": "https://www.cidsanmateo.org/",
+      "domain": "cidsanmateo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "echo-housing",
+      "name": "ECHO Housing",
+      "file": "community.yml",
+      "url": "https://www.echofairhousing.org/",
+      "domain": "echofairhousing.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-fixit-clinics",
+      "name": "Fixit Clinics",
+      "file": "community.yml",
+      "url": "https://www.smcsustainability.org/waste-reduction/reduce-reuse-repair/fixit-clinics/",
+      "domain": "smcsustainability.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-library-sewing",
+      "name": "San Mateo County Library Open Sewing Programs",
+      "file": "community.yml",
+      "url": "https://www.smcsustainability.org/waste-reduction/reduce-reuse-repair/fixit-clinics/",
+      "domain": "smcsustainability.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "recyclestuff",
+      "name": "Recyclestuff.org",
+      "file": "community.yml",
+      "url": "https://www.recyclestuff.org/",
+      "domain": "recyclestuff.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-refuel-your-fun",
+      "name": "ReFuel Your Fun Program",
+      "file": "community.yml",
+      "url": "https://www.smchealth.org/refuel",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "acs-discovery-shop-menlo",
+      "name": "American Cancer Society Discovery Shop (Menlo Park)",
+      "file": "community.yml",
+      "url": "https://www.cancer.org/involved/donate/more-ways-to-give/discovery-shops.html",
+      "domain": "cancer.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ehp-donations",
+      "name": "Ecumenical Hunger Program Donations",
+      "file": "community.yml",
+      "url": "https://www.ehpcares.org/",
+      "domain": "ehpcares.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "family-connections-donations",
+      "name": "Family Connections Donations",
+      "file": "community.yml",
+      "url": "https://www.familyconnections.org/",
+      "domain": "familyconnections.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "goodwill-sf-sm-marin",
+      "name": "Goodwill Industries (SF, San Mateo, Marin)",
+      "file": "community.yml",
+      "url": "https://sfgoodwill.org/",
+      "domain": "sfgoodwill.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "latino-commission-donations",
+      "name": "Latino Commission Donations",
+      "file": "community.yml",
+      "url": "https://www.thelatincommission.org/",
+      "domain": "thelatincommission.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nine-lives-foundation",
+      "name": "Nine Lives Foundation",
+      "file": "community.yml",
+      "url": "https://ninelivesfoundation.org/",
+      "domain": "ninelivesfoundation.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "parca-thrift-shop",
+      "name": "PARCA Thrift Shop",
+      "file": "community.yml",
+      "url": "https://www.pfrparca.org/",
+      "domain": "pfrparca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "peninsula-humane-society-donations",
+      "name": "Peninsula Humane Society & SPCA Donations",
+      "file": "community.yml",
+      "url": "https://phs-spca.org/",
+      "domain": "phs-spca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pick-of-the-litter",
+      "name": "Pick of the Litter Books",
+      "file": "community.yml",
+      "url": "https://pickofthelitterbooks.org/",
+      "domain": "pickofthelitterbooks.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "puente-de-la-costa-sur",
+      "name": "Puente de la Costa Sur",
+      "file": "community.yml",
+      "url": "https://www.mypuente.org/",
+      "domain": "mypuente.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "st-francis-center-rw",
+      "name": "St. Francis Center (Redwood City)",
+      "file": "community.yml",
+      "url": "https://stfranciscenterrwc.org/",
+      "domain": "stfranciscenterrwc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "st-vincent-de-paul-smc",
+      "name": "St. Vincent de Paul Society (San Mateo County)",
+      "file": "community.yml",
+      "url": "https://www.svdpsm.org/",
+      "domain": "svdpsm.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "samaritan-house-donations",
+      "name": "Samaritan House Thrift Stores",
+      "file": "community.yml",
+      "url": "https://samaritanhousesanmateo.org/",
+      "domain": "samaritanhousesanmateo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "savers-thrift",
+      "name": "Savers Thrift Stores",
+      "file": "community.yml",
+      "url": "https://www.savers.com/",
+      "domain": "savers.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "south-coast-childrens",
+      "name": "South Coast Children's Services",
+      "file": "community.yml",
+      "url": "https://www.southcoastchildrens.org/",
+      "domain": "southcoastchildrens.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "salvation-army-smc",
+      "name": "The Salvation Army (San Mateo County)",
+      "file": "community.yml",
+      "url": "https://www.salvationarmyusa.org/",
+      "domain": "salvationarmyusa.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ucpa-golden-gate",
+      "name": "United Cerebral Palsy Association of the Golden Gate",
+      "file": "community.yml",
+      "url": "https://www.ucpgg.org/",
+      "domain": "ucpgg.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-lgbt-center",
+      "name": "SF LGBT Center",
+      "file": "community.yml",
+      "url": "https://www.sfcenter.org/",
+      "domain": "sfcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "oakland-lgbtq-center",
+      "name": "Oakland LGBTQ Community Center",
+      "file": "community.yml",
+      "url": "https://www.oaklandlgbtqcenter.org/",
+      "domain": "oaklandlgbtqcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pacific-center",
+      "name": "Pacific Center for Human Growth",
+      "file": "community.yml",
+      "url": "https://www.pacificcenter.org/",
+      "domain": "pacificcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "rainbow-community-center",
+      "name": "Rainbow Community Center",
+      "file": "community.yml",
+      "url": "https://www.rainbowcc.org/",
+      "domain": "rainbowcc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "billy-defrank-center",
+      "name": "Billy DeFrank LGBTQ+ Community Center",
+      "file": "community.yml",
+      "url": "https://www.defrankcenter.org/",
+      "domain": "defrankcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "spahr-center",
+      "name": "The Spahr Center",
+      "file": "community.yml",
+      "url": "https://www.thespahrcenter.org/",
+      "domain": "thespahrcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lgbtq-connection-napa",
+      "name": "LGBTQ Connection",
+      "file": "community.yml",
+      "url": "https://lgbtqconnection.org/",
+      "domain": "lgbtqconnection.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "queer-lifespace",
+      "name": "Queer LifeSpace",
+      "file": "community.yml",
+      "url": "https://www.queerlifespace.org/",
+      "domain": "queerlifespace.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lyric-youth",
+      "name": "LYRIC (Lavender Youth Recreation & Information Center)",
+      "file": "community.yml",
+      "url": "https://lyric.org/",
+      "domain": "lyric.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "outlet-peninsula",
+      "name": "Outlet",
+      "file": "community.yml",
+      "url": "https://www.acs-teens.org/what-we-do/outlet/",
+      "domain": "acs-teens.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "api-wellness-transthrive",
+      "name": "API Wellness / TRANS:THRIVE",
+      "file": "community.yml",
+      "url": "https://www.apiwellness.org/",
+      "domain": "apiwellness.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "openhouse-sf",
+      "name": "Openhouse",
+      "file": "community.yml",
+      "url": "https://www.openhousesf.org/",
+      "domain": "openhousesf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pflag-sf",
+      "name": "PFLAG San Francisco",
+      "file": "community.yml",
+      "url": "https://pflagsf.org/",
+      "domain": "pflagsf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "trans-lifeline",
+      "name": "Trans Lifeline",
+      "file": "community.yml",
+      "url": "https://translifeline.org/",
+      "domain": "translifeline.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "trevor-project",
+      "name": "The Trevor Project",
+      "file": "community.yml",
+      "url": "https://www.thetrevorproject.org/",
+      "domain": "thetrevorproject.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lgbt-asylum-project",
+      "name": "The LGBT Asylum Project",
+      "file": "community.yml",
+      "url": "https://www.lgbtasylumproject.org/",
+      "domain": "lgbtasylumproject.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "tgi-justice-project",
+      "name": "TGI Justice Project",
+      "file": "community.yml",
+      "url": "https://tgijp.org/",
+      "domain": "tgijp.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "el-la-para-translatinas",
+      "name": "El/La Para TransLatinas",
+      "file": "community.yml",
+      "url": "https://ellaparatranslatinas.org/",
+      "domain": "ellaparatranslatinas.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "glbt-historical-society",
+      "name": "GLBT Historical Society Museum",
+      "file": "community.yml",
+      "url": "https://www.glbthistory.org/",
+      "domain": "glbthistory.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "id-me-first-responders",
+      "name": "ID.me First Responder Discounts",
+      "file": "community.yml",
+      "url": "https://www.id.me/government",
+      "domain": "id.me",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "govx-first-responder",
+      "name": "GovX First Responder Discounts",
+      "file": "community.yml",
+      "url": "https://www.govx.com/",
+      "domain": "govx.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "verizon-first-responders",
+      "name": "Verizon First Responders Discount",
+      "file": "community.yml",
+      "url": "https://www.verizon.com/featured/first-responders/",
+      "domain": "verizon.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "tmobile-first-responders",
+      "name": "T-Mobile First Responders Discount",
+      "file": "community.yml",
+      "url": "https://www.t-mobile.com/cell-phone-plans/first-responders-background",
+      "domain": "t-mobile.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "apple-first-responders",
+      "name": "Apple First Responders Store",
+      "file": "community.yml",
+      "url": "https://www.apple.com/us-gov/",
+      "domain": "apple.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "exploratorium-teacher-free",
+      "name": "Exploratorium Free Teacher Admission",
+      "file": "community.yml",
+      "url": "https://www.exploratorium.edu/visit/admission",
+      "domain": "exploratorium.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bay-area-writing-project",
+      "name": "Bay Area Writing Project",
+      "file": "community.yml",
+      "url": "https://bawp.berkeley.edu/",
+      "domain": "bawp.berkeley.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "teacher-id-me-discounts",
+      "name": "ID.me Teacher Discounts",
+      "file": "community.yml",
+      "url": "https://www.id.me/teacher-military-discounts",
+      "domain": "id.me",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "the-job-forum",
+      "name": "The Job Forum",
+      "file": "community.yml",
+      "url": "https://thejobforum.org/",
+      "domain": "thejobforum.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "oewd-techsf",
+      "name": "TechSF",
+      "file": "community.yml",
+      "url": "https://techsf.org/",
+      "domain": "techsf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "meda-workforce",
+      "name": "MEDA Workforce Development",
+      "file": "community.yml",
+      "url": "https://medasf.org/programs/workforce-development/",
+      "domain": "medasf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "iiba-immigration",
+      "name": "Immigration Institute of the Bay Area",
+      "file": "community.yml",
+      "url": "https://iibayarea.org/",
+      "domain": "iibayarea.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "eblc-immigration",
+      "name": "East Bay Community Law Center - Immigration",
+      "file": "community.yml",
+      "url": "https://ebclc.org/immigration/",
+      "domain": "ebclc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-hsh",
+      "name": "SF Homelessness and Supportive Housing",
+      "file": "community.yml",
+      "url": "https://hsh.sfgov.org/",
+      "domain": "hsh.sfgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "project-homeless-connect",
+      "name": "Project Homeless Connect",
+      "file": "community.yml",
+      "url": "https://www.projecthomelessconnect.org/",
+      "domain": "projecthomelessconnect.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "family-caregiver-alliance",
+      "name": "Family Caregiver Alliance / Bay Area Caregiver Resource Center",
+      "file": "community.yml",
+      "url": "https://www.caregiver.org/",
+      "domain": "caregiver.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "beyond-emancipation",
+      "name": "Beyond Emancipation",
+      "file": "community.yml",
+      "url": "https://www.beyondemancipation.org/",
+      "domain": "beyondemancipation.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "first-place-for-youth",
+      "name": "First Place for Youth",
+      "file": "community.yml",
+      "url": "https://www.firstplaceforyouth.org/",
+      "domain": "firstplaceforyouth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-casa",
+      "name": "San Francisco CASA",
+      "file": "community.yml",
+      "url": "https://sfcasa.org/",
+      "domain": "sfcasa.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "five-keys",
+      "name": "Five Keys Schools and Programs",
+      "file": "community.yml",
+      "url": "https://www.fivekeyscharter.org/",
+      "domain": "fivekeyscharter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "project-rebound",
+      "name": "Project Rebound",
+      "file": "community.yml",
+      "url": "https://www.calstate.edu/impact-of-the-csu/student-success/project-rebound",
+      "domain": "calstate.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "anti-recidivism-coalition",
+      "name": "Anti-Recidivism Coalition (ARC)",
+      "file": "community.yml",
+      "url": "https://antirecidivism.org/",
+      "domain": "antirecidivism.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "centerforce-reentry",
+      "name": "Centerforce Reentry Services",
+      "file": "community.yml",
+      "url": "https://centerforce.org/",
+      "domain": "centerforce.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "act-fee-waivers",
+      "name": "ACT Fee Waivers",
+      "file": "education.yml",
+      "url": "https://www.act.org/content/act/en/products-and-services/the-act/registration/fees/fee-waivers.html",
+      "domain": "act.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ap-exam-fee-reductions",
+      "name": "AP Exam Fee Reductions",
+      "file": "education.yml",
+      "url": "https://apstudents.collegeboard.org/exam-policies-guidelines/exam-fees",
+      "domain": "apstudents.collegeboard.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-college-promise-grant",
+      "name": "California College Promise Grant (CCPG)",
+      "file": "education.yml",
+      "url": "https://www.cccapply.org/us/money/california-college-promise-grant",
+      "domain": "cccapply.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "common-app-fee-waiver",
+      "name": "Common App Fee Waiver",
+      "file": "education.yml",
+      "url": "https://www.commonapp.org/static/d8d4fe3bc09d9b0a67d715d9bb6b20f9/FY-Apply-College-Application-Fees-Waivers.pdf",
+      "domain": "commonapp.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sat-fee-waivers",
+      "name": "SAT Fee Waivers",
+      "file": "education.yml",
+      "url": "https://satsuite.collegeboard.org/sat/registration/fee-waivers",
+      "domain": "satsuite.collegeboard.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "a-greener-source",
+      "name": "A Greener Source",
+      "file": "equipment.yml",
+      "url": "https://www.agreenersource.com/non-profits/",
+      "domain": "agreenersource.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "alameda-county-property-salvage",
+      "name": "Alameda County Property & Salvage Donations",
+      "file": "equipment.yml",
+      "url": "https://gsa.acgov.org/local-services/property-salvage/donations/",
+      "domain": "gsa.acgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "building-resources",
+      "name": "Building Resources",
+      "file": "equipment.yml",
+      "url": "https://buildingresources.org/",
+      "domain": "buildingresources.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "santa-clara-county-library-surplus",
+      "name": "Santa Clara County Library District Surplus Property Donations",
+      "file": "equipment.yml",
+      "url": "https://sccld.org/surplus-property-donation-program/",
+      "domain": "sccld.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-virtual-warehouse",
+      "name": "San Francisco Virtual Warehouse",
+      "file": "equipment.yml",
+      "url": "https://www.sfenvironment.org/virtual-warehouse-instructions-non-profits-and-schools",
+      "domain": "sfenvironment.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "scrap-sf",
+      "name": "SCRAP (Scroungers' Center for Re-usable Art Parts)",
+      "file": "equipment.yml",
+      "url": "https://www.scrap-sf.org/",
+      "domain": "scrap-sf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-surplus-property",
+      "name": "San Mateo County Surplus Property Program",
+      "file": "equipment.yml",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfwPk-gLzC8SRHZPOj2jCHP9RxJ4ca8zAOoA5FLCl7W2ZJ0Pw/viewform",
+      "domain": "docs.google.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "aarp-tax-aide",
+      "name": "AARP Foundation Tax-Aide",
+      "file": "finance.yml",
+      "url": "https://www.aarp.org/money/taxes/aarp-taxaide/",
+      "domain": "aarp.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "alameda-county-vita",
+      "name": "Alameda County Social Services Agency VITA",
+      "file": "finance.yml",
+      "url": "https://www.alamedacountysocialservices.org/our-services/Work-and-Money/Other-Support/tax-services",
+      "domain": "alamedacountysocialservices.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "community-gatepath-vita",
+      "name": "Community Gatepath (formerly CCRC) VITA",
+      "file": "finance.yml",
+      "url": "https://www.ccscc.org/tax-ez-program",
+      "domain": "ccscc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "csu-east-bay-vita",
+      "name": "CSU East Bay VITA",
+      "file": "finance.yml",
+      "url": "https://www.csueastbay.edu/acct-fin/vita.html",
+      "domain": "csueastbay.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ebaldc-vita",
+      "name": "EBALDC VITA",
+      "file": "finance.yml",
+      "url": "https://ebaldc.org/vita/",
+      "domain": "ebaldc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "samaritan-house-vita",
+      "name": "Samaritan House VITA",
+      "file": "finance.yml",
+      "url": "https://samaritanhousesanmateo.org/article/free-tax-preparation/",
+      "domain": "samaritanhousesanmateo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-state-vita",
+      "name": "SF State VITA",
+      "file": "finance.yml",
+      "url": "https://cob.sfsu.edu/VITA",
+      "domain": "cob.sfsu.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "united-way-bay-area-taxes",
+      "name": "United Way Bay Area",
+      "file": "finance.yml",
+      "url": "https://uwba.org/what-we-do/free-tax-help/",
+      "domain": "uwba.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "baec-entrepreneur-center",
+      "name": "Bay Area Entrepreneur Center",
+      "file": "finance.yml",
+      "url": "https://www.skylinebaec.org/",
+      "domain": "skylinebaec.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-score",
+      "name": "San Francisco SCORE",
+      "file": "finance.yml",
+      "url": "https://sanfrancisco.score.org/",
+      "domain": "sanfrancisco.score.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "san-mateo-sbdc",
+      "name": "San Mateo Small Business Development Center",
+      "file": "finance.yml",
+      "url": "https://www.sanmateosbdc.org/",
+      "domain": "sanmateosbdc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "nova-workforce",
+      "name": "NOVA Workforce Development",
+      "file": "finance.yml",
+      "url": "https://novaworks.org/",
+      "domain": "novaworks.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "alameda-food-bank",
+      "name": "Alameda County Community Food Bank",
+      "file": "food.yml",
+      "url": "https://www.accfb.org/",
+      "domain": "accfb.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "alameda-meals-on-wheels",
+      "name": "Alameda Meals on Wheels",
+      "file": "food.yml",
+      "url": "https://alamedamealsonwheels.org/",
+      "domain": "alamedamealsonwheels.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bernal-heights-brown-bag",
+      "name": "Bernal Heights Neighborhood Center - Brown Bag Program",
+      "file": "food.yml",
+      "url": "https://bhnc.org/",
+      "domain": "bhnc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "food-bank-contra-costa-solano",
+      "name": "Food Bank of Contra Costa & Solano",
+      "file": "food.yml",
+      "url": "https://www.foodbankccs.org/",
+      "domain": "foodbankccs.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "j-sei-meals-on-wheels",
+      "name": "J-Sei Meals on Wheels",
+      "file": "food.yml",
+      "url": "https://www.j-sei.org",
+      "domain": "j-sei.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "market-match",
+      "name": "Market Match",
+      "file": "food.yml",
+      "url": "https://www.marketmatch.org",
+      "domain": "marketmatch.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "mow-contra-costa",
+      "name": "Meals on Wheels Contra Costa",
+      "file": "food.yml",
+      "url": "https://mowcontracosta.org/",
+      "domain": "mowcontracosta.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "mow-diablo-region",
+      "name": "Meals on Wheels Diablo Region",
+      "file": "food.yml",
+      "url": "https://www.mowdiabloregion.org/",
+      "domain": "mowdiabloregion.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "mow-san-francisco",
+      "name": "Meals on Wheels San Francisco",
+      "file": "food.yml",
+      "url": "https://www.mowsf.org/",
+      "domain": "mowsf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "mow-san-mateo",
+      "name": "Meals on Wheels San Mateo County (Peninsula Volunteers)",
+      "file": "food.yml",
+      "url": "https://1pvi.org/mealsonwheels/",
+      "domain": "1pvi.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "project-open-hand",
+      "name": "Project Open Hand",
+      "file": "food.yml",
+      "url": "https://www.openhand.org/",
+      "domain": "openhand.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "rainbow-grocery",
+      "name": "Rainbow Grocery",
+      "file": "food.yml",
+      "url": "https://www.rainbow.coop",
+      "domain": "rainbow.coop",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "second-harvest-silicon-valley",
+      "name": "Second Harvest of Silicon Valley",
+      "file": "food.yml",
+      "url": "https://www.shfb.org/get-food/#tool",
+      "domain": "shfb.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-marin-food-bank",
+      "name": "SF-Marin Food Bank",
+      "file": "food.yml",
+      "url": "https://www.sfmfoodbank.org/",
+      "domain": "sfmfoodbank.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sos-meals-on-wheels",
+      "name": "SOS Meals on Wheels",
+      "file": "food.yml",
+      "url": "https://www.sosmow.org/",
+      "domain": "sosmow.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sourcewise-meals-on-wheels",
+      "name": "Sourcewise Meals on Wheels",
+      "file": "food.yml",
+      "url": "https://mysourcewise.com/programs-services/meals/",
+      "domain": "mysourcewise.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "spectrum-mow",
+      "name": "Spectrum Community Services Meals on Wheels",
+      "file": "food.yml",
+      "url": "https://www.spectrumcs.org/senior-services/meals-on-wheels",
+      "domain": "spectrumcs.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "st-anthonys-dining",
+      "name": "St. Anthony's Dining Room",
+      "file": "food.yml",
+      "url": "https://www.stanthonysf.org/",
+      "domain": "stanthonysf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ymca-food-pantries",
+      "name": "YMCA Food Pantries",
+      "file": "food.yml",
+      "url": "https://www.ymcasf.org/program/food-assistance/",
+      "domain": "ymcasf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ecumenical-hunger-program",
+      "name": "Ecumenical Hunger Program",
+      "file": "food.yml",
+      "url": "https://www.ehpcares.org/",
+      "domain": "ehpcares.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "jfcs-food-pantry",
+      "name": "JFCS Food Pantry",
+      "file": "food.yml",
+      "url": "https://www.jfcs.org/",
+      "domain": "jfcs.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pvi-got-groceries",
+      "name": "Got Groceries Program",
+      "file": "food.yml",
+      "url": "https://1pvi.org/",
+      "domain": "1pvi.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "988-suicide-crisis-lifeline",
+      "name": "988 Suicide & Crisis Lifeline",
+      "file": "health.yml",
+      "url": "https://988lifeline.org",
+      "domain": "988lifeline.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "crisis-text-line",
+      "name": "Crisis Text Line",
+      "file": "health.yml",
+      "url": "https://www.crisistextline.org",
+      "domain": "crisistextline.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "eyecare-america",
+      "name": "EyeCare America",
+      "file": "health.yml",
+      "url": "https://www.aao.org/eyecare-america",
+      "domain": "aao.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "needymeds",
+      "name": "NeedyMeds",
+      "file": "health.yml",
+      "url": "https://www.needymeds.org",
+      "domain": "needymeds.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "planned-parenthood",
+      "name": "Planned Parenthood",
+      "file": "health.yml",
+      "url": "https://www.plannedparenthood.org/health-center/california",
+      "domain": "plannedparenthood.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-bhrs",
+      "name": "Behavioral Health and Recovery Services (BHRS)",
+      "file": "health.yml",
+      "url": "https://www.smchealth.org/bhrs",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-aging-adult-services",
+      "name": "Aging and Adult Services",
+      "file": "health.yml",
+      "url": "https://www.smchealth.org/services-aging-and-adult",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-pregnancy-children-families",
+      "name": "San Mateo County Pregnancy, Children and Families",
+      "file": "health.yml",
+      "url": "https://www.smchealth.org/services-pregnancy-children-families",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "kick-it-california",
+      "name": "Kick It California (Quit Smoking Helpline)",
+      "file": "health.yml",
+      "url": "https://kickitca.org/",
+      "domain": "kickitca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "vaccines-for-children",
+      "name": "Vaccines for Children (VFC) Program",
+      "file": "health.yml",
+      "url": "https://eziz.org/vfc/provider-locations/",
+      "domain": "eziz.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "justice-diversity-center",
+      "name": "Justice & Diversity Center (JDC)",
+      "file": "legal.yml",
+      "url": "https://www.sfbar.org/jdc/jdc-legal-services-programs/",
+      "domain": "sfbar.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "racial-equity-project",
+      "name": "Racial Equity Project (REP)",
+      "file": "legal.yml",
+      "url": "https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/rep/",
+      "domain": "sfbar.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-financial-justice-project",
+      "name": "SF Financial Justice Project",
+      "file": "legal.yml",
+      "url": "https://sfgov.org/financialjustice",
+      "domain": "sfgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-immigrant-support",
+      "name": "San Francisco Immigrant Support",
+      "file": "legal.yml",
+      "url": "https://immigrants.sfgov.org",
+      "domain": "immigrants.sfgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "clsepa-legal-services",
+      "name": "Community Legal Services in East Palo Alto",
+      "file": "legal.yml",
+      "url": "https://clsepa.org/",
+      "domain": "clsepa.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "legal-aid-smc",
+      "name": "Legal Aid Society of San Mateo County",
+      "file": "legal.yml",
+      "url": "https://legalaidsmc.org/",
+      "domain": "legalaidsmc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "project-sentinel-fair-housing",
+      "name": "Project Sentinel Fair Housing",
+      "file": "legal.yml",
+      "url": "https://housing.org/",
+      "domain": "housing.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-001",
+      "name": "Berkeley Tool Lending Library",
+      "file": "library_resources.yml",
+      "url": "https://www.berkeleypubliclibrary.org/locations/tool-lending-library",
+      "domain": "berkeleypubliclibrary.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-003",
+      "name": "Calm Meditation App",
+      "file": "library_resources.yml",
+      "url": "https://smcl.org/get-calm",
+      "domain": "smcl.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-004",
+      "name": "Discover & Go Museum Passes",
+      "file": "library_resources.yml",
+      "url": "https://discoverandgo.org",
+      "domain": "discoverandgo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-005",
+      "name": "Hoopla Digital",
+      "file": "library_resources.yml",
+      "url": "https://www.hoopladigital.com",
+      "domain": "hoopladigital.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lib-006",
+      "name": "Kanopy",
+      "file": "library_resources.yml",
+      "url": "https://www.kanopy.com/signup/find/publiclibrary",
+      "domain": "kanopy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sfpl-elibrary",
+      "name": "SFPL eLibrary",
+      "file": "library_resources.yml",
+      "url": "https://sfpl.org/research-learn/elibrary",
+      "domain": "sfpl.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sfpl-digital-collections",
+      "name": "SF Digital Collections",
+      "file": "library_resources.yml",
+      "url": "https://digitalsf.org/",
+      "domain": "digitalsf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "open-library",
+      "name": "Open Library",
+      "file": "library_resources.yml",
+      "url": "https://openlibrary.org/",
+      "domain": "openlibrary.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "libby-app",
+      "name": "Libby by OverDrive",
+      "file": "library_resources.yml",
+      "url": "https://www.overdrive.com/apps/libby",
+      "domain": "overdrive.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-digital-newspaper-collection",
+      "name": "California Digital Newspaper Collection",
+      "file": "library_resources.yml",
+      "url": "https://cdnc.ucr.edu/cgi-bin/cdnc",
+      "domain": "cdnc.ucr.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "career-online-high-school",
+      "name": "Career Online High School",
+      "file": "library_resources.yml",
+      "url": "https://ca.careeronlinehs.org/",
+      "domain": "ca.careeronlinehs.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "online-archive-of-california",
+      "name": "Online Archive of California",
+      "file": "library_resources.yml",
+      "url": "https://oac.cdlib.org/",
+      "domain": "oac.cdlib.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "alameda-county-library-digital",
+      "name": "Alameda County Library Digital Resources",
+      "file": "library_resources.yml",
+      "url": "https://aclibrary.org/resource/",
+      "domain": "aclibrary.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "oakland-library-digital",
+      "name": "Oakland Public Library Digital Resources",
+      "file": "library_resources.yml",
+      "url": "https://oaklandlibrary.org/resource/",
+      "domain": "oaklandlibrary.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "san-mateo-county-library-digital",
+      "name": "San Mateo County Library Digital Resources",
+      "file": "library_resources.yml",
+      "url": "https://smcl.org/resource/",
+      "domain": "smcl.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "peninsula-library-digital",
+      "name": "Peninsula Library System E-Services",
+      "file": "library_resources.yml",
+      "url": "https://plsinfo.org/e-services/",
+      "domain": "plsinfo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "contra-costa-library-digital",
+      "name": "Contra Costa County Library Digital Resources",
+      "file": "library_resources.yml",
+      "url": "https://ccclib.org/resource/",
+      "domain": "ccclib.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sfpl-services",
+      "name": "San Francisco Public Library Services",
+      "file": "library_resources.yml",
+      "url": "https://sfpl.org/services",
+      "domain": "sfpl.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "santa-clara-county-library-digital",
+      "name": "Santa Clara County Library Digital Resources",
+      "file": "library_resources.yml",
+      "url": "https://sccld.org/resource/",
+      "domain": "sccld.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "marin-county-library-digital",
+      "name": "Marin County Free Library Digital Resources",
+      "file": "library_resources.yml",
+      "url": "https://marinlibrary.org/resource/",
+      "domain": "marinlibrary.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sonoma-county-library-digital",
+      "name": "Sonoma County Library eLibrary",
+      "file": "library_resources.yml",
+      "url": "https://sonomalibrary.org/elibrary/a-z",
+      "domain": "sonomalibrary.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "solano-county-library-digital",
+      "name": "Solano County Library 24/7 Digital Library",
+      "file": "library_resources.yml",
+      "url": "https://solanolibrary.com/247-digital-library/",
+      "domain": "solanolibrary.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "banfield-foundation",
+      "name": "Banfield Foundation - Pet Owner Resources",
+      "file": "pet_resources.yml",
+      "url": "https://www.banfieldfoundation.org/Banfield-Foundation-Resources-for-pet-owners",
+      "domain": "banfieldfoundation.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bebhs-spay-bay",
+      "name": "Berkeley-East Bay Humane Society - Spay the Bay",
+      "file": "pet_resources.yml",
+      "url": "https://berkeleyhumane.org/spay-the-bay/",
+      "domain": "berkeleyhumane.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "hssv-pet-pantry",
+      "name": "HSSV Pet Pantry",
+      "file": "pet_resources.yml",
+      "url": "https://www.hssv.org/pet-pantry/",
+      "domain": "hssv.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "humane-world",
+      "name": "Humane World",
+      "file": "pet_resources.yml",
+      "url": "https://www.humaneworld.org/en/resources/having-trouble-affording-your-pet#finance",
+      "domain": "humaneworld.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "joybound-vet-care",
+      "name": "Joybound People & Pets - Community Veterinary Care",
+      "file": "pet_resources.yml",
+      "url": "https://joybound.org/services/get-help/",
+      "domain": "joybound.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "joybound-pet-food",
+      "name": "Joybound People & Pets - Free Pet Food",
+      "file": "pet_resources.yml",
+      "url": "https://joybound.org/services/get-help/",
+      "domain": "joybound.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "joybound-vaccinations",
+      "name": "Joybound People & Pets - Free Vaccination Clinics",
+      "file": "pet_resources.yml",
+      "url": "https://joybound.org/services/get-help/",
+      "domain": "joybound.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "joybound-pet-safety-net",
+      "name": "Joybound People & Pets - Pet Safety Net",
+      "file": "pet_resources.yml",
+      "url": "https://joybound.org/services/get-help/",
+      "domain": "joybound.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "joybound-spay-neuter",
+      "name": "Joybound People & Pets - Spay/Neuter Clinic",
+      "file": "pet_resources.yml",
+      "url": "https://joybound.org/services/get-help/",
+      "domain": "joybound.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "marin-humane-pet-care",
+      "name": "Marin Humane Society - Pet Care Assistance",
+      "file": "pet_resources.yml",
+      "url": "https://www.marinhumanesociety.org",
+      "domain": "marinhumanesociety.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "muttville-cuddle-club",
+      "name": "Muttville Senior Dog Rescue - Cuddle Club",
+      "file": "pet_resources.yml",
+      "url": "https://muttville.org/seniors_for_seniors#cuddle",
+      "domain": "muttville.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "muttville-seniors-for-seniors",
+      "name": "Muttville Senior Dog Rescue - Seniors for Seniors",
+      "file": "pet_resources.yml",
+      "url": "https://muttville.org/seniors_for_seniors",
+      "domain": "muttville.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "phs-mobile-spay-neuter",
+      "name": "Peninsula Humane Society - Mobile Spay/Neuter Van",
+      "file": "pet_resources.yml",
+      "url": "https://phs-spca.org/spayneuter/mobile/",
+      "domain": "phs-spca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "phs-vaccine-clinics",
+      "name": "Peninsula Humane Society SPCA Low-Cost Vaccine Clinics",
+      "file": "pet_resources.yml",
+      "url": "https://phs-spca.org/spayneuter/",
+      "domain": "phs-spca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pet-help-finder",
+      "name": "Pet Help Finder",
+      "file": "pet_resources.yml",
+      "url": "https://www.pethelpfinder.org/",
+      "domain": "pethelpfinder.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pets-in-need",
+      "name": "Pets in Need - Low-Cost Vet Services",
+      "file": "pet_resources.yml",
+      "url": "https://www.petsinneed.org/communityclinic",
+      "domain": "petsinneed.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pets-of-homeless",
+      "name": "Pets of the Homeless",
+      "file": "pet_resources.yml",
+      "url": "https://petsofthehomeless.org/get-help/find-locations/",
+      "domain": "petsofthehomeless.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-spca-community-clinic",
+      "name": "San Francisco SPCA - Community Clinic",
+      "file": "pet_resources.yml",
+      "url": "https://www.sfspca.org/veterinary-care/community-clinic/",
+      "domain": "sfspca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-spca-spay-neuter",
+      "name": "San Francisco SPCA - Spay/Neuter",
+      "file": "pet_resources.yml",
+      "url": "https://www.sfspca.org",
+      "domain": "sfspca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sf-aid-for-animals",
+      "name": "SF Aid for Animals (SFAFA)",
+      "file": "pet_resources.yml",
+      "url": "https://www.sfafa.org/gethelp",
+      "domain": "sfafa.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "the-pet-fund",
+      "name": "The Pet Fund",
+      "file": "pet_resources.yml",
+      "url": "https://www.thepetfund.com/for-pet-owners/",
+      "domain": "thepetfund.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "vet-billing",
+      "name": "Vet Billing - Payment Plans",
+      "file": "pet_resources.yml",
+      "url": "https://vetbilling.com/find-vet/",
+      "domain": "vetbilling.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "vetco-clinics",
+      "name": "VETCO Clinics",
+      "file": "pet_resources.yml",
+      "url": "https://www.vetcoclinics.com",
+      "domain": "vetcoclinics.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "vip-petcare",
+      "name": "VIP Petcare",
+      "file": "pet_resources.yml",
+      "url": "https://www.vippetcare.com",
+      "domain": "vippetcare.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-state-parks-adventure-pass",
+      "name": "California State Parks Adventure Pass",
+      "file": "recreation.yml",
+      "url": "https://www.reservecalifornia.com/",
+      "domain": "reservecalifornia.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "museums-for-all",
+      "name": "Museums for All",
+      "file": "recreation.yml",
+      "url": "https://museums4all.org",
+      "domain": "museums4all.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "aquarium-of-bay",
+      "name": "Aquarium of the Bay",
+      "file": "recreation.yml",
+      "url": "https://www.aquariumofthebay.org",
+      "domain": "aquariumofthebay.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "asian-art-museum",
+      "name": "Asian Art Museum",
+      "file": "recreation.yml",
+      "url": "https://about.asianart.org/plan-your-visit/",
+      "domain": "about.asianart.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bay-area-discovery-museum",
+      "name": "Bay Area Discovery Museum",
+      "file": "recreation.yml",
+      "url": "https://bayareadiscoverymuseum.org/visit/",
+      "domain": "bayareadiscoverymuseum.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cal-academy",
+      "name": "California Academy of Sciences",
+      "file": "recreation.yml",
+      "url": "https://www.calacademy.org/visit",
+      "domain": "calacademy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "chabot-space-center",
+      "name": "Chabot Space & Science Center",
+      "file": "recreation.yml",
+      "url": "https://chabotspace.org/visit/",
+      "domain": "chabotspace.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cartoon-art-museum",
+      "name": "Cartoon Art Museum",
+      "file": "recreation.yml",
+      "url": "https://www.cartoonart.org/visit",
+      "domain": "cartoonart.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "childrens-creativity-museum",
+      "name": "Children's Creativity Museum",
+      "file": "recreation.yml",
+      "url": "https://creativity.org/hours-admission/",
+      "domain": "creativity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "childrens-discovery-museum-sj",
+      "name": "Children's Discovery Museum",
+      "file": "recreation.yml",
+      "url": "https://www.cdm.org/hours-pricing/#museums-for-all",
+      "domain": "cdm.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "childrens-fairyland",
+      "name": "Children's Fairyland",
+      "file": "recreation.yml",
+      "url": "https://fairyland.org/visit/",
+      "domain": "fairyland.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "exploratorium",
+      "name": "Exploratorium",
+      "file": "recreation.yml",
+      "url": "https://www.exploratorium.edu/visit/reduced-rates",
+      "domain": "exploratorium.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "fine-arts-museums-sf",
+      "name": "Fine Arts Museums of San Francisco",
+      "file": "recreation.yml",
+      "url": "https://www.famsf.org/",
+      "domain": "famsf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "golden-gate-park-gardens",
+      "name": "Gardens of Golden Gate Park",
+      "file": "recreation.yml",
+      "url": "https://gggp.org",
+      "domain": "gggp.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lawrence-hall-science",
+      "name": "Lawrence Hall of Science",
+      "file": "recreation.yml",
+      "url": "https://lawrencehallofscience.org",
+      "domain": "lawrencehallofscience.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "moad-museum",
+      "name": "Museum of the African Diaspora (MoAD)",
+      "file": "recreation.yml",
+      "url": "https://www.moadsf.org/tickets",
+      "domain": "moadsf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "museum-craft-design",
+      "name": "Museum of Craft and Design",
+      "file": "recreation.yml",
+      "url": "https://sfmcd.org/visit/",
+      "domain": "sfmcd.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "oakland-museum",
+      "name": "Oakland Museum of California",
+      "file": "recreation.yml",
+      "url": "https://museumca.org/visit",
+      "domain": "museumca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "oakland-zoo",
+      "name": "Oakland Zoo – Bay to Zoo",
+      "file": "recreation.yml",
+      "url": "https://www.oaklandzoo.org/tickets",
+      "domain": "oaklandzoo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sfmoma",
+      "name": "San Francisco Museum of Modern Art (SFMOMA)",
+      "file": "recreation.yml",
+      "url": "https://www.sfmoma.org/deals-discounts/",
+      "domain": "sfmoma.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sj-museum-art",
+      "name": "San Jose Museum of Art",
+      "file": "recreation.yml",
+      "url": "https://sjmusart.org/visit",
+      "domain": "sjmusart.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "the-tech-interactive",
+      "name": "The Tech Interactive",
+      "file": "recreation.yml",
+      "url": "https://www.thetech.org/visit",
+      "domain": "thetech.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "walt-disney-family-museum",
+      "name": "Walt Disney Family Museum",
+      "file": "recreation.yml",
+      "url": "https://www.waltdisney.org/visit/admission",
+      "domain": "waltdisney.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ca-sp-point-montara-light-station",
+      "name": "Point Montara Light Station",
+      "file": "recreation.yml",
+      "url": "http://www.norcalhostels.org/montara/",
+      "domain": "norcalhostels.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-brisbane-community-pool",
+      "name": "Brisbane Community Pool",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-colma-community-center",
+      "name": "Colma Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-bayshore-community-center",
+      "name": "Bayshore Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-broadmoor-community-center",
+      "name": "Broadmoor Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-daly-city-community-services-center",
+      "name": "Daly City Community Services Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-doelger-senior-center",
+      "name": "Doelger Senior Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-health-daly-city-youth-clinic",
+      "name": "Health - Daly City Youth Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-lincoln-community-center",
+      "name": "Lincoln Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-pacelli-event-center",
+      "name": "Pacelli Event Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-war-memorial-community-center",
+      "name": "War Memorial Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-david-e-lewis-reentry-center",
+      "name": "David E. Lewis Reentry Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-wic-epa",
+      "name": "WIC - EPA",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-coastside-hope",
+      "name": "Coastside Hope",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-health-coastside-clinic",
+      "name": "Health - Coastside Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-cuesta-la-honda-recreation-center",
+      "name": "Cuesta La Honda Recreation Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-puente-de-la-costa-sur-la-honda",
+      "name": "Puente de la Costa Sur, La Honda",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-memorial-park",
+      "name": "Memorial Park",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-fitzgerald-marine-reserve",
+      "name": "Fitzgerald Marine Reserve",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-pillar-ridge-community-center",
+      "name": "Pillar Ridge Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-san-pedro-valley-park",
+      "name": "San Pedro Valley Park",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-puente-de-la-costa-sur-pescadero",
+      "name": "Puente de la Costa Sur, Pescadero",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-portola-community-center",
+      "name": "Portola Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-fair-oaks-community-center",
+      "name": "Fair Oaks Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-health-sequoia-teen-wellness-center",
+      "name": "Health - Sequoia Teen Wellness Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-motorpool",
+      "name": "MotorPool",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-schc-fair-oaks-clinic",
+      "name": "SCHC - Fair Oaks Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-siena-youth-center",
+      "name": "Siena Youth Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-st-francis-center",
+      "name": "St Francis Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-star-vista-daybreak-shelter",
+      "name": "Star Vista/Daybreak Shelter",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-wic-rwc",
+      "name": "WIC - RWC",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-san-carlos-airport",
+      "name": "San Carlos Airport",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-coyote-point-marina",
+      "name": "Coyote Point Marina",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-smmc-clinics",
+      "name": "SMMC - Clinics",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-wic-san-mateo",
+      "name": "WIC - San Mateo",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-health-ssf-clinic",
+      "name": "Health - SSF Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "smc-wifi-ymca-community-resource-center",
+      "name": "YMCA Community Resource Center",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/smc-public-wifi-project",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "brisbane-brisbane-community-pool",
+      "name": "Brisbane Community Pool",
+      "file": "recreation.yml",
+      "url": "https://www.brisbaneca.org/parksrec/page/community-pool",
+      "domain": "brisbaneca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-bayshore-community-center",
+      "name": "Bayshore Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/gallery.aspx?AID=3",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-broadmoor-community-center",
+      "name": "Broadmoor Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/327/Recreation",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-daly-city-community-services-center",
+      "name": "Daly City Community Services Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/327/Recreation",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-doelger-senior-center",
+      "name": "Doelger Senior Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/329/Active-AdultsSeniors",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-health-daly-city-youth-clinic",
+      "name": "Health - Daly City Youth Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/location/daly-city-clinic",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-lincoln-community-center",
+      "name": "Lincoln Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/1098/Lincoln-Park-Community-Center",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-pacelli-event-center",
+      "name": "Pacelli Event Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/327/Recreation",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "daly-city-war-memorial-community-center",
+      "name": "War Memorial Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.dalycity.org/directory.aspx?EID=319",
+      "domain": "dalycity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "east-palo-alto-david-e-lewis-reentry-center",
+      "name": "David E. Lewis Reentry Center",
+      "file": "recreation.yml",
+      "url": "https://www.smc-connect.org/locations/city-of-east-palo-alto/david-lewis-reentry-program-service-connect",
+      "domain": "smc-connect.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "east-palo-alto-wic-epa",
+      "name": "WIC - EPA",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/wic",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "el-granada-coastside-hope",
+      "name": "Coastside Hope",
+      "file": "recreation.yml",
+      "url": "https://coastsidehope.org/",
+      "domain": "coastsidehope.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "half-moon-bay-health-coastside-clinic",
+      "name": "Health - Coastside Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/location/coastside-clinic",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "la-honda-cuesta-la-honda-recreation-center",
+      "name": "Cuesta La Honda Recreation Center",
+      "file": "recreation.yml",
+      "url": "https://www.clhguild.com/",
+      "domain": "clhguild.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "la-honda-puente-de-la-costa-sur-la-honda",
+      "name": "Puente de la Costa Sur, La Honda",
+      "file": "recreation.yml",
+      "url": "https://www.mypuente.org/",
+      "domain": "mypuente.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "loma-mar-memorial-park",
+      "name": "Memorial Park",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/parks/memorial-park",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "moss-beach-fitzgerald-marine-reserve",
+      "name": "Fitzgerald Marine Reserve",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/parks/fitzgerald-marine-reserve",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "moss-beach-pillar-ridge-community-center",
+      "name": "Pillar Ridge Community Center",
+      "file": "recreation.yml",
+      "url": "https://pillarridge.org/",
+      "domain": "pillarridge.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pacifica-san-pedro-valley-park",
+      "name": "San Pedro Valley Park",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/parks/san-pedro-valley-park",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pescadero-puente-de-la-costa-sur-pescadero",
+      "name": "Puente de la Costa Sur, Pescadero",
+      "file": "recreation.yml",
+      "url": "https://www.mypuente.org/",
+      "domain": "mypuente.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "portola-valley-portola-community-center",
+      "name": "Portola Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.portolavalley.net/departments/town-center",
+      "domain": "portolavalley.net",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-fair-oaks-community-center",
+      "name": "Fair Oaks Community Center",
+      "file": "recreation.yml",
+      "url": "https://www.redwoodcity.org/departments/parks-recreation-community-services/facilities/community-centers/fair-oaks-community-center",
+      "domain": "redwoodcity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-health-sequoia-teen-wellness-center",
+      "name": "Health - Sequoia Teen Wellness Center",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/location/sequoia-teen-wellness-center",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-motorpool",
+      "name": "MotorPool",
+      "file": "recreation.yml",
+      "url": "https://www.redwoodcitypar.org/motorpool",
+      "domain": "redwoodcitypar.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-schc-fair-oaks-clinic",
+      "name": "SCHC - Fair Oaks Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.sanmateomedicalcenter.org/locations/fair-oaks-health-center/",
+      "domain": "sanmateomedicalcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-siena-youth-center",
+      "name": "Siena Youth Center",
+      "file": "recreation.yml",
+      "url": "https://www.sienayouthcenter.org/",
+      "domain": "sienayouthcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-st-francis-center",
+      "name": "St Francis Center",
+      "file": "recreation.yml",
+      "url": "https://www.stfrancisrwc.org/",
+      "domain": "stfrancisrwc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-star-vista-daybreak-shelter",
+      "name": "Star Vista/Daybreak Shelter",
+      "file": "recreation.yml",
+      "url": "https://star-vista.org/daybreak-30/",
+      "domain": "star-vista.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-wic-rwc",
+      "name": "WIC - RWC",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/wic",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "san-carlos-san-carlos-airport",
+      "name": "San Carlos Airport",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/sancarlosairport",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "san-mateo-coyote-point-marina",
+      "name": "Coyote Point Marina",
+      "file": "recreation.yml",
+      "url": "https://www.smcgov.org/parks/coyote-point-marina",
+      "domain": "smcgov.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "san-mateo-smmc-clinics",
+      "name": "SMMC - Clinics",
+      "file": "recreation.yml",
+      "url": "https://www.sanmateomedicalcenter.org/",
+      "domain": "sanmateomedicalcenter.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "san-mateo-wic-san-mateo",
+      "name": "WIC - San Mateo",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/wic",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "south-san-francisco-health-ssf-clinic",
+      "name": "Health - SSF Clinic",
+      "file": "recreation.yml",
+      "url": "https://www.smchealth.org/location/south-san-francisco-clinic",
+      "domain": "smchealth.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "south-san-francisco-ymca-community-resource-center",
+      "name": "YMCA Community Resource Center",
+      "file": "recreation.yml",
+      "url": "https://www.ymcasf.org/locations/ymca-community-resource-center",
+      "domain": "ymcasf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "imls-aircraft-carrier-hornet-foundation",
+      "name": "Aircraft Carrier Hornet Foundation",
+      "file": "recreation.yml",
+      "url": "https://uss-hornet.org/",
+      "domain": "uss-hornet.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "imls-charles-m-schulz-museum-and-research-center",
+      "name": "Charles M Schulz Museum and Research Center",
+      "file": "recreation.yml",
+      "url": "https://schulzmuseum.org/",
+      "domain": "schulzmuseum.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "imls-oakland-zoo",
+      "name": "Oakland Zoo",
+      "file": "recreation.yml",
+      "url": "https://www.oaklandzoo.org/",
+      "domain": "oaklandzoo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "imls-rosicrucian-egyptian-museum",
+      "name": "Rosicrucian Egyptian Museum",
+      "file": "recreation.yml",
+      "url": "https://www.egyptianmuseum.org/",
+      "domain": "egyptianmuseum.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "7-eleven-gold-pass",
+      "name": "7-Eleven Gold Pass",
+      "file": "technology.yml",
+      "url": "https://www.7-eleven.com/lp/goldpass",
+      "domain": "7-eleven.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "amazon-prime-access",
+      "name": "Amazon Prime Access",
+      "file": "technology.yml",
+      "url": "https://www.amazon.com/primeaccess",
+      "domain": "amazon.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "att-access",
+      "name": "AT&T Access",
+      "file": "technology.yml",
+      "url": "https://www.att.com/internet/access/",
+      "domain": "att.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "california-lifeline",
+      "name": "California LifeLine Program",
+      "file": "technology.yml",
+      "url": "https://www.californialifeline.com",
+      "domain": "californialifeline.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "good360",
+      "name": "Good360",
+      "file": "technology.yml",
+      "url": "https://good360.org/",
+      "domain": "good360.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "goodstack-nonprofit-discounts",
+      "name": "Goodstack Nonprofit Discounts",
+      "file": "technology.yml",
+      "url": "https://causes.goodstack.io/",
+      "domain": "causes.goodstack.io",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "instacart-ebt",
+      "name": "Instacart for EBT/SNAP",
+      "file": "technology.yml",
+      "url": "https://www.instacart.com/ebt-snap",
+      "domain": "instacart.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "internet-essentials",
+      "name": "Internet Essentials by Xfinity",
+      "file": "technology.yml",
+      "url": "https://www.xfinity.com/learn/internet-service/internet-essentials",
+      "domain": "xfinity.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "kanopy-students",
+      "name": "Kanopy for Students",
+      "file": "technology.yml",
+      "url": "https://www.kanopy.com/signup/find/university",
+      "domain": "kanopy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "tech-exchange",
+      "name": "Tech Exchange",
+      "file": "technology.yml",
+      "url": "https://www.techexchange.org/lowcostcomputers",
+      "domain": "techexchange.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "techsoup-discount-marketplace",
+      "name": "TechSoup Discount Marketplace",
+      "file": "technology.yml",
+      "url": "https://www.techsoup.org/",
+      "domain": "techsoup.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "t-mobile-project-10million",
+      "name": "T-Mobile Project 10Million",
+      "file": "technology.yml",
+      "url": "https://www.t-mobile.com/brand/project-10-million",
+      "domain": "t-mobile.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "walmart-plus-assist",
+      "name": "Walmart+ Assist",
+      "file": "technology.yml",
+      "url": "https://www.walmart.com/plus/assist",
+      "domain": "walmart.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "world-computer-exchange",
+      "name": "World Computer Exchange",
+      "file": "technology.yml",
+      "url": "https://worldcomputerexchange.org/get-computers/",
+      "domain": "worldcomputerexchange.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "spectrum-internet-assist",
+      "name": "Spectrum Internet Assist",
+      "file": "technology.yml",
+      "url": "https://www.spectrum.com/internet/spectrum-internet-assist",
+      "domain": "spectrum.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ac-transit-stpp",
+      "name": "AC Transit",
+      "file": "transportation.yml",
+      "url": "https://www.alamedactc.org/programs-projects/studentpass",
+      "domain": "alamedactc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bike-share-for-all",
+      "name": "Bike Share for All (Bay Wheels)",
+      "file": "transportation.yml",
+      "url": "https://www.lyft.com/bikes/bay-wheels/bike-share-for-all",
+      "domain": "lyft.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "caltrain-youth-fares",
+      "name": "Caltrain Dollar Fares for Youth",
+      "file": "transportation.yml",
+      "url": "https://www.caltrain.com/dollarfares",
+      "domain": "caltrain.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "city-coach-solano",
+      "name": "City Coach",
+      "file": "transportation.yml",
+      "url": "https://citycoach.com/fares/",
+      "domain": "citycoach.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "clipper-baypass",
+      "name": "Clipper BayPass",
+      "file": "transportation.yml",
+      "url": "https://maps.santarosa.edu/clipper-baypass-faq",
+      "domain": "maps.santarosa.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "clipper-start",
+      "name": "Clipper START",
+      "file": "transportation.yml",
+      "url": "https://www.clipperstartcard.com",
+      "domain": "clipperstartcard.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "emergency-ride-home-marin",
+      "name": "Emergency Ride Home",
+      "file": "transportation.yml",
+      "url": "https://marincommutes.org/erh/",
+      "domain": "marincommutes.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "emery-go-round",
+      "name": "Emery Go-Round",
+      "file": "transportation.yml",
+      "url": "https://emerygoround.com",
+      "domain": "emerygoround.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "511-emergency-rides-contra-costa",
+      "name": "511 Emergency Rides",
+      "file": "transportation.yml",
+      "url": "https://511contracosta.org/guaranteed-ride-home/",
+      "domain": "511contracosta.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "511-transit-incentives-contra-costa",
+      "name": "511 Transit Incentives",
+      "file": "transportation.yml",
+      "url": "https://511contracosta.org/transit/transit-offer/",
+      "domain": "511contracosta.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "lime-access",
+      "name": "Lime Access",
+      "file": "transportation.yml",
+      "url": "https://www.li.me/why/community/lime-access",
+      "domain": "li.me",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "low-cost-auto-insurance",
+      "name": "Low Cost Auto Insurance",
+      "file": "transportation.yml",
+      "url": "https://www.mylowcostauto.com",
+      "domain": "mylowcostauto.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "marin-transit-students",
+      "name": "Marin Transit",
+      "file": "transportation.yml",
+      "url": "https://marintransit.org/COM",
+      "domain": "marintransit.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "muni-free",
+      "name": "Muni",
+      "file": "transportation.yml",
+      "url": "https://www.sfmta.com/fares",
+      "domain": "sfmta.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "petaluma-transit-free",
+      "name": "Petaluma Transit",
+      "file": "transportation.yml",
+      "url": "https://transit.cityofpetaluma.net/fares/",
+      "domain": "transit.cityofpetaluma.net",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "rtc-clipper-card",
+      "name": "RTC Clipper Card",
+      "file": "transportation.yml",
+      "url": "https://511.org/transit/rtc-card/eligibility",
+      "domain": "511.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "samtrans",
+      "name": "SamTrans Way2Go Pass",
+      "file": "transportation.yml",
+      "url": "https://skylinecollege.edu/sparkpoint/services/transportation.php",
+      "domain": "skylinecollege.edu",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "samtrans-youth",
+      "name": "SamTrans",
+      "file": "transportation.yml",
+      "url": "https://www.samtrans.com/fares/fare-types",
+      "domain": "samtrans.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "santa-rosa-citybus",
+      "name": "Santa Rosa CityBus",
+      "file": "transportation.yml",
+      "url": "https://srcitybus.org/fares-and-passes/discount-programs/",
+      "domain": "srcitybus.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "senior-clipper-card",
+      "name": "Senior Clipper Card",
+      "file": "transportation.yml",
+      "url": "https://www.clippercard.com/ClipperWeb/discounts.html",
+      "domain": "clippercard.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cid-borrow-battery",
+      "name": "CID Borrow a Backup Battery",
+      "file": "utilities.yml",
+      "url": "https://www.cidsanmateo.org/services/ddar-psps-prepardness.php",
+      "domain": "cidsanmateo.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cleanpowersf",
+      "name": "CleanPowerSF",
+      "file": "utilities.yml",
+      "url": "https://www.cleanpowersf.org",
+      "domain": "cleanpowersf.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ebmud-assistance",
+      "name": "EBMUD Customer Assistance Program",
+      "file": "utilities.yml",
+      "url": "https://www.ebmud.com/customers/account/assistance-programs/",
+      "domain": "ebmud.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pce-ebike-rebate",
+      "name": "E-Bike Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.peninsulacleanenergy.com/residential/rebates-offers/e-bikes/",
+      "domain": "peninsulacleanenergy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pce-heat-pump-rebate",
+      "name": "Heat Pump Heating & Cooling Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.peninsulacleanenergy.com/residential/home-upgrade-services/heating-and-cooling-upgrades/",
+      "domain": "peninsulacleanenergy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pce-home-upgrade-services",
+      "name": "Home Upgrade Services",
+      "file": "utilities.yml",
+      "url": "https://www.peninsulacleanenergy.com/residential/home-electrification/",
+      "domain": "peninsulacleanenergy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pce-used-ev-rebate",
+      "name": "Used Electric Vehicle Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.peninsulacleanenergy.com/residential/rebates-offers/ev-rebate-program/",
+      "domain": "peninsulacleanenergy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pce-water-heater-rebate",
+      "name": "Water Heater Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.peninsulacleanenergy.com/residential/home-upgrade-services/water-heating-upgrades/",
+      "domain": "peninsulacleanenergy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pce-zero-interest-loan",
+      "name": "Zero Interest Loan for Upgrades",
+      "file": "utilities.yml",
+      "url": "https://www.peninsulacleanenergy.com/residential/financing/",
+      "domain": "peninsulacleanenergy.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-amp",
+      "name": "Arrearage Management Plan (AMP)",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/account/billing-and-assistance/financial-assistance/arrearage-management-plan-amp.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-automated-response",
+      "name": "Automated Response Technology Program",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs/automated-response-technology.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-care",
+      "name": "PG&E CARE & FERA",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/care",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpuc-esa",
+      "name": "CPUC Energy Savings Assistance (ESA) Program",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/save-energy-and-money/energy-saving-programs/energy-savings-assistance-program.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-generator-battery-rebate",
+      "name": "Generator & Battery Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/outages-and-safety/outage-preparedness-and-support/general-outage-resources/generator-and-battery-rebate-program.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sgip-home-battery-sgip",
+      "name": "Home Battery Rebate (SGIP)",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/save-energy-and-money/rebates-and-incentives/self-generation-incentive-program.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-induction-test-drive",
+      "name": "Induction Cooktop Test Drive",
+      "file": "utilities.yml",
+      "url": "https://pge-induction.myturn.com/library/?WT.mc_id=Vanity_inductionloaner",
+      "domain": "pge-induction.myturn.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-match-payment",
+      "name": "PG&E Match My Payment Program",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/account/billing-and-assistance/financial-assistance/match-my-payment-program.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-permanent-battery-rebate",
+      "name": "Permanent Battery Storage Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/save-energy-and-money/rebates-and-incentives/permanent-battery-storage-rebate.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-portable-battery",
+      "name": "Portable Battery Program",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/account/billing-and-assistance/financial-assistance/portable-battery-program.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-reach",
+      "name": "Relief for Energy Assistance through Community Help (REACH)",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/account/billing-and-assistance/financial-assistance/relief-for-energy-assistance-through-community-help.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-residential-charging",
+      "name": "Residential Charging Solutions Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/clean-energy/electric-vehicles/getting-started-with-electric-vehicles/residential-charging-solutions-rebate.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-used-ev-rebate",
+      "name": "Used Electric Vehicle Rebate",
+      "file": "utilities.yml",
+      "url": "https://evrebates.pge.com/program-requirements",
+      "domain": "evrebates.pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-v2x-pilot",
+      "name": "Vehicle-to-Everything (V2X) Pilot Program",
+      "file": "utilities.yml",
+      "url": "https://www.pge.com/en/clean-energy/electric-vehicles/getting-started-with-electric-vehicles/vehicle-to-everything-v2x-pilot-programs.html",
+      "domain": "pge.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "pge-wattersaver",
+      "name": "WatterSaver",
+      "file": "utilities.yml",
+      "url": "https://www.watter-saver.com/",
+      "domain": "watter-saver.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "dcap-clean-cars",
+      "name": "Driving Clean Assistance Program: Clean Cars 4 All",
+      "file": "utilities.yml",
+      "url": "https://drivingcleanca.org/about-us/dcap-eligibility/",
+      "domain": "drivingcleanca.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "federal-ev-charger-credit",
+      "name": "Home EV Charger Federal Tax Credit",
+      "file": "utilities.yml",
+      "url": "https://homes.rewiringamerica.org/federal-incentives/30c-ev-charger-tax-credit",
+      "domain": "homes.rewiringamerica.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bayren-ease",
+      "name": "Efficiency and Sustainable Energy (EASE) Home Program",
+      "file": "utilities.yml",
+      "url": "https://www.bayren.org/ease-home",
+      "domain": "bayren.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "bayren-home-assessment",
+      "name": "Home Energy Assessment",
+      "file": "utilities.yml",
+      "url": "https://www.bayren.org/home-energy-score-hes",
+      "domain": "bayren.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "calwater-rebates",
+      "name": "Water Conservation Rebates",
+      "file": "utilities.yml",
+      "url": "https://www.calwater.com/conservation-rebates/",
+      "domain": "calwater.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "energy-smart-homes-electrification",
+      "name": "Whole Building Electrification",
+      "file": "utilities.yml",
+      "url": "https://caenergysmarthomes.com/alterations/",
+      "domain": "caenergysmarthomes.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "golden-state-heat-pump-water",
+      "name": "Heat Pump Water Heater",
+      "file": "utilities.yml",
+      "url": "https://goldenstaterebates.com/goldenstaterebates/rebates/heat-pump-water-heaters/",
+      "domain": "goldenstaterebates.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "golden-state-gas-water-heater",
+      "name": "High Efficiency Gas Water Heater",
+      "file": "utilities.yml",
+      "url": "https://goldenstaterebates.com/goldenstaterebates/rebates/gas-tank-water-heaters/",
+      "domain": "goldenstaterebates.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "golden-state-room-ac",
+      "name": "Room Air Conditioner",
+      "file": "utilities.yml",
+      "url": "https://goldenstaterebates.com/goldenstaterebates/rebates/room-air-conditioners/",
+      "domain": "goldenstaterebates.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "golden-state-smart-thermostat",
+      "name": "Smart Thermostat",
+      "file": "utilities.yml",
+      "url": "https://goldenstaterebates.com/goldenstaterebates/rebates/smart-thermostats/",
+      "domain": "goldenstaterebates.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "ohmconnect",
+      "name": "OhmConnect",
+      "file": "utilities.yml",
+      "url": "https://partners.ohmconnect.com/50-dollars-cca-partners",
+      "domain": "partners.ohmconnect.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "quitcarbon-rebate",
+      "name": "QuitCarbon Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.quitcarbon.com/blog/quitcarbonrebate",
+      "domain": "quitcarbon.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-electrification",
+      "name": "Building Electrification Rebate Program",
+      "file": "utilities.yml",
+      "url": "https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates",
+      "domain": "redwoodcity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-ev-charger",
+      "name": "Electric Vehicle (EV) Charger Rebate Program",
+      "file": "utilities.yml",
+      "url": "https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates",
+      "domain": "redwoodcity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-lawn-equipment",
+      "name": "Electric Lawn Care Equipment Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates",
+      "domain": "redwoodcity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "redwood-city-solar",
+      "name": "Solar Rebate Program",
+      "file": "utilities.yml",
+      "url": "https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates",
+      "domain": "redwoodcity.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "rising-sun-green-house",
+      "name": "Green House Call",
+      "file": "utilities.yml",
+      "url": "https://risingsunopp.org/programs/ghc/",
+      "domain": "risingsunopp.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sfpuc-cap",
+      "name": "SFPUC Customer Assistance Program (CAP)",
+      "file": "utilities.yml",
+      "url": "https://www.sfpuc.org",
+      "domain": "sfpuc.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "thermostat-care-mercury",
+      "name": "Mercury Thermostat Recycling Rebate",
+      "file": "utilities.yml",
+      "url": "https://thermostatcare.org/",
+      "domain": "thermostatcare.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-ebike-rebate",
+      "name": "Electric Bicycle Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-ev-charger-rebate",
+      "name": "EV Charging Station Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-used-ev-rebate",
+      "name": "Income-Qualified Pre-Owned Electric Vehicle Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-induction-cooktop-rebate",
+      "name": "Induction Cooktop, Range & Oven Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-heat-pump-dryer-rebate",
+      "name": "Heat Pump Clothes Dryer Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-electric-dryer-rebate",
+      "name": "Electric Clothes Dryer Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-hpwh-gas-rebate",
+      "name": "Heat Pump Water Heater Rebate (Gas Replacement)",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-hpwh-electric-rebate",
+      "name": "Heat Pump Water Heater Rebate (Electric Replacement)",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-heat-pump-hvac-rebate",
+      "name": "Heat Pump HVAC Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-hvac-tuneup-rebate",
+      "name": "HVAC Tune-Up Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-circuit-pauser-rebate",
+      "name": "Circuit Pauser or Splitter Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-smart-panel-rebate",
+      "name": "Smart Electric Panel Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-panel-upgrade-rebate",
+      "name": "Main Service Panel Upgrade Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-prewire-rebate",
+      "name": "New Circuits for Future Electric Appliances Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-battery-storage-rebate",
+      "name": "Battery Storage Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-hoa-energy-grant",
+      "name": "Energy Efficiency Grant for HOAs",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-income-qualified-solar",
+      "name": "Income-Qualified Solar Grant",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-pool-pump-rebate",
+      "name": "Variable Speed Pool Pump Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "svp-solar-tuneup-rebate",
+      "name": "Solar Tune-Up Rebate",
+      "file": "utilities.yml",
+      "url": "https://www.siliconvalleypower.com/residents/rebates",
+      "domain": "siliconvalleypower.com",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-sj-cares",
+      "name": "SJ Cares Discount",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/discount-programs/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-solar-access",
+      "name": "Solar Access Program",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/discount-programs/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ecohome-hpwh",
+      "name": "EcoHome Heat Pump Water Heater Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ecohome-rebate/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ecohome-hvac",
+      "name": "EcoHome Heat Pump HVAC Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ecohome-rebate/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ecohome-battery",
+      "name": "EcoHome Battery Storage Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ecohome-rebate/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ecohome-panel",
+      "name": "EcoHome Panel Upgrade Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ecohome-rebate/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ecohome-insulation",
+      "name": "EcoHome Attic Insulation Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ecohome-rebate/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ecohome-prewire",
+      "name": "EcoHome Circuit Prewiring Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ecohome-rebate/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ev-new",
+      "name": "New EV Instant Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ev-rebates/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-ev-used",
+      "name": "Used EV Instant Rebate",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/ev-rebates/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-peak-rewards",
+      "name": "Peak Rewards Program",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/peak-rewards-for-all/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-peak-rewards-thermostat",
+      "name": "Peak Rewards for Smart Thermostats",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-peak-rewards-ev-charger",
+      "name": "Peak Rewards for EV Chargers",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "sjce-peak-rewards-battery",
+      "name": "Peak Rewards for Battery Storage",
+      "file": "utilities.yml",
+      "url": "https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/",
+      "domain": "sanjosecleanenergy.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-landscape-conversion",
+      "name": "Landscape Conversion Rebate",
+      "file": "utilities.yml",
+      "url": "https://watersavings.org",
+      "domain": "watersavings.org",
+      "source": "local",
+      "agency": null
+    },
+    {
+      "id": "cpau-graywater-rebate",
+      "name": "Graywater Laundry-to-Landscape Rebate",
+      "file": "utilities.yml",
+      "url": "https://watersavings.org",
+      "domain": "watersavings.org",
+      "source": "local",
+      "agency": null
+    }
+  ],
+  "knownGovtUrls": []
+}

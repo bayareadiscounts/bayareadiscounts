@@ -1,0 +1,27 @@
+{
+  "id": "imls-naturebridge",
+  "name": "Naturebridge",
+  "category": "recreation",
+  "description": "Botanical garden or nature center featuring plants and natural habitats.",
+  "fullDescription": "Botanical garden or nature center featuring plants and natural habitats.",
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Bay Area"
+  ],
+  "city": "San Francisco",
+  "website": "",
+  "cost": null,
+  "phone": "(415) 992-4789",
+  "email": null,
+  "address": "28 Geary Street Suite 650",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

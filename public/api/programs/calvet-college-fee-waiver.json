@@ -1,0 +1,28 @@
+{
+  "id": "calvet-college-fee-waiver",
+  "name": "CalVet College Fee Waiver",
+  "category": "education",
+  "description": "Free tuition and enrollment fees at UC, CSU, and Community Colleges for children, spouses, and domestic partners of eligible veterans",
+  "fullDescription": "The CalVet College Fee Waiver waives enrollment fees and tuition at California public universities (UC, CSU, and Community Colleges) for eligible dependents of disabled or deceased veterans.",
+  "whatTheyOffer": "- Full waiver of enrollment fees at UC, CSU, and Community Colleges\n- Full waiver of state tuition at public universities\n- Covers undergraduate and graduate programs\n- No limit on number of eligible dependents per veteran\n- Renewable each academic year\n- Includes children, spouses, and registered domestic partners\n",
+  "howToGetIt": "1. Veteran must have service-connected disability rating of 0% or higher\n2. Or veteran must have died of service-connected cause\n3. Or veteran must have died during active duty\n4. Dependent submits application through CalVet\n5. Provide DD214, disability rating letter, and proof of relationship\n6. Submit fee waiver certification to school financial aid office\n",
+  "groups": [
+    "veterans",
+    "families"
+  ],
+  "areas": [
+    "Statewide"
+  ],
+  "city": null,
+  "website": "https://www.calvet.ca.gov/VetServices/Pages/College-Fee-Waiver.aspx",
+  "cost": null,
+  "phone": "844-225-8387",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

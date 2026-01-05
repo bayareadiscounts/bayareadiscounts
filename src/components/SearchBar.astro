@@ -1,4 +1,8 @@
 ---
+import yaml from 'js-yaml';
+import fs from 'fs';
+import path from 'path';
+
 interface Props {
   placeholder?: string;
   size?: 'default' | 'large';
@@ -10,6 +14,16 @@ const {
   size = 'default',
   apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assistant'
 } = Astro.props;
+
+// Load search configuration at build time
+let searchConfig = { synonyms: {}, best_bets: {}, suggestions: [], query_rewrites: {} };
+try {
+  const configPath = path.join(process.cwd(), 'src/data/search-config.yml');
+  const configContent = fs.readFileSync(configPath, 'utf8');
+  searchConfig = yaml.load(configContent) as typeof searchConfig;
+} catch (e) {
+  console.warn('Could not load search-config.yml:', e);
+}
 
 const sizeClasses = size === 'large'
   ? 'py-4 pl-12 pr-12 text-lg'
@@ -98,8 +112,20 @@ const sizeClasses = size === 'large'
   </div>
 </div>
 
-<!-- Store API endpoint in data attribute -->
-<div id="search-config" data-api-endpoint={apiEndpoint} class="hidden"></div>
+<!-- Store API endpoint and search config in data attributes -->
+<div id="search-config"
+  data-api-endpoint={apiEndpoint}
+  data-synonyms={JSON.stringify(searchConfig.synonyms || {})}
+  data-best-bets={JSON.stringify(searchConfig.best_bets || {})}
+  data-suggestions={JSON.stringify(searchConfig.suggestions || [])}
+  data-query-rewrites={JSON.stringify(searchConfig.query_rewrites || {})}
+  class="hidden">
+</div>
+
+<!-- Type-ahead dropdown -->
+<div id="typeahead-dropdown" class="typeahead-dropdown hidden">
+  <ul id="typeahead-list" role="listbox" aria-label="Search suggestions"></ul>
+</div>
 
 <script>
   import Fuse from 'fuse.js';
@@ -107,6 +133,168 @@ const sizeClasses = size === 'large'
   // Load config
   const configEl = document.getElementById('search-config');
   const API_ENDPOINT = configEl?.dataset?.apiEndpoint || '';
+
+  // Load search enhancements from build-time config
+  const SYNONYMS: Record<string, string[]> = JSON.parse(configEl?.dataset?.synonyms || '{}');
+  const BEST_BETS: Record<string, string[]> = JSON.parse(configEl?.dataset?.bestBets || '{}');
+  const SUGGESTIONS: string[] = JSON.parse(configEl?.dataset?.suggestions || '[]');
+  const QUERY_REWRITES: Record<string, string> = JSON.parse(configEl?.dataset?.queryRewrites || '{}');
+
+  // Type-ahead elements
+  const typeaheadDropdown = document.getElementById('typeahead-dropdown');
+  const typeaheadList = document.getElementById('typeahead-list');
+  let selectedSuggestionIndex = -1;
+
+  // Expand query with synonyms
+  function expandWithSynonyms(query: string): string[] {
+    const terms = query.toLowerCase().split(/\s+/);
+    const expanded = new Set<string>([query.toLowerCase()]);
+
+    // Check each term and multi-word phrases for synonyms
+    for (const term of terms) {
+      if (SYNONYMS[term]) {
+        SYNONYMS[term].forEach(syn => expanded.add(syn));
+      }
+    }
+
+    // Check for multi-word phrases
+    const queryLower = query.toLowerCase();
+    for (const [phrase, synonyms] of Object.entries(SYNONYMS)) {
+      if (queryLower.includes(phrase)) {
+        synonyms.forEach(syn => expanded.add(syn));
+      }
+    }
+
+    return Array.from(expanded);
+  }
+
+  // Rewrite natural language queries
+  function rewriteQuery(query: string): string {
+    const queryLower = query.toLowerCase().trim();
+
+    // Check for exact rewrites first
+    if (QUERY_REWRITES[queryLower]) {
+      return QUERY_REWRITES[queryLower];
+    }
+
+    // Check for partial matches
+    for (const [pattern, rewrite] of Object.entries(QUERY_REWRITES)) {
+      if (queryLower.includes(pattern)) {
+        return rewrite;
+      }
+    }
+
+    return query;
+  }
+
+  // Get best bets for a query
+  function getBestBets(query: string): string[] {
+    const queryLower = query.toLowerCase().trim();
+    const terms = queryLower.split(/\s+/);
+
+    // Check for exact match first
+    if (BEST_BETS[queryLower]) {
+      return BEST_BETS[queryLower];
+    }
+
+    // Check individual terms
+    for (const term of terms) {
+      if (BEST_BETS[term]) {
+        return BEST_BETS[term];
+      }
+    }
+
+    return [];
+  }
+
+  // Show type-ahead suggestions
+  function showTypeahead(query: string) {
+    if (!typeaheadDropdown || !typeaheadList || query.length < 2) {
+      hideTypeahead();
+      return;
+    }
+
+    const queryLower = query.toLowerCase();
+    const matches = SUGGESTIONS.filter(s =>
+      s.toLowerCase().includes(queryLower)
+    ).slice(0, 6);
+
+    if (matches.length === 0) {
+      hideTypeahead();
+      return;
+    }
+
+    typeaheadList.innerHTML = matches.map((suggestion, i) => `
+      <li role="option"
+          class="typeahead-item ${i === selectedSuggestionIndex ? 'selected' : ''}"
+          data-suggestion="${suggestion}">
+        <svg class="w-4 h-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <span>${highlightMatch(suggestion, query)}</span>
+      </li>
+    `).join('');
+
+    typeaheadDropdown.classList.remove('hidden');
+
+    // Add click handlers
+    typeaheadList.querySelectorAll('.typeahead-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const suggestion = (item as HTMLElement).dataset.suggestion;
+        if (suggestion && searchInput) {
+          (searchInput as HTMLInputElement).value = suggestion;
+          hideTypeahead();
+          performSearch();
+        }
+      });
+    });
+  }
+
+  function hideTypeahead() {
+    typeaheadDropdown?.classList.add('hidden');
+    selectedSuggestionIndex = -1;
+  }
+
+  function highlightMatch(text: string, query: string): string {
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return text.replace(regex, '<strong>$1</strong>');
+  }
+
+  // Handle keyboard navigation for type-ahead
+  function handleTypeaheadKeydown(e: KeyboardEvent) {
+    const items = typeaheadList?.querySelectorAll('.typeahead-item') || [];
+    if (items.length === 0) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      selectedSuggestionIndex = Math.min(selectedSuggestionIndex + 1, items.length - 1);
+      updateTypeaheadSelection(items);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      selectedSuggestionIndex = Math.max(selectedSuggestionIndex - 1, -1);
+      updateTypeaheadSelection(items);
+    } else if (e.key === 'Tab' && selectedSuggestionIndex >= 0) {
+      e.preventDefault();
+      const selected = items[selectedSuggestionIndex] as HTMLElement;
+      const suggestion = selected?.dataset?.suggestion;
+      if (suggestion && searchInput) {
+        (searchInput as HTMLInputElement).value = suggestion;
+        hideTypeahead();
+      }
+    } else if (e.key === 'Escape') {
+      hideTypeahead();
+    }
+  }
+
+  function updateTypeaheadSelection(items: NodeListOf<Element>) {
+    items.forEach((item, i) => {
+      if (i === selectedSuggestionIndex) {
+        item.classList.add('selected');
+      } else {
+        item.classList.remove('selected');
+      }
+    });
+  }
 
   // Check if we're on the homepage (has home-program-card elements)
   const isHomepage = document.querySelectorAll('.home-program-card').length > 0;
@@ -489,19 +677,52 @@ const sizeClasses = size === 'large'
       // Show results section
       homeResultsSection?.classList.remove('hidden');
 
-      // Fuzzy search with Fuse.js
-      const results = fuse.search(query);
-      const matchedIndices = new Set(results.map(r => r.item.index));
+      // Apply search enhancements
+      const rewrittenQuery = rewriteQuery(query);
+      const expandedTerms = expandWithSynonyms(rewrittenQuery);
+      const bestBetIds = new Set(getBestBets(query));
+
+      // Fuzzy search with Fuse.js - search for all expanded terms
+      const allResults = new Map();
+      for (const term of expandedTerms) {
+        const results = fuse.search(term);
+        results.forEach(r => {
+          const existing = allResults.get(r.item.index);
+          if (!existing || r.score < existing.score) {
+            allResults.set(r.item.index, r);
+          }
+        });
+      }
+      const matchedIndices = new Set(allResults.keys());
 
       let visibleCount = 0;
+      const bestBetPrograms: typeof programs = [];
+      const regularPrograms: typeof programs = [];
+
       programs.forEach(p => {
         const matchesSearch = matchedIndices.has(p.index);
-        if (p.wrapper) {
-          if (matchesSearch) {
-            p.wrapper.classList.remove('hidden');
-            visibleCount++;
+        const isBestBet = bestBetIds.has(p.id);
+
+        if (matchesSearch || isBestBet) {
+          if (isBestBet) {
+            bestBetPrograms.push(p);
           } else {
+            regularPrograms.push(p);
+          }
+          if (p.wrapper) {
+            p.wrapper.classList.remove('hidden');
+            // Mark best bets for styling
+            if (isBestBet) {
+              p.wrapper.classList.add('best-bet');
+            } else {
+              p.wrapper.classList.remove('best-bet');
+            }
+            visibleCount++;
+          }
+        } else {
+          if (p.wrapper) {
             p.wrapper.classList.add('hidden');
+            p.wrapper.classList.remove('best-bet');
           }
         }
       });
@@ -516,7 +737,7 @@ const sizeClasses = size === 'large'
         noResultsEl?.classList.add('hidden');
       }
     } else {
-      // Directory page: original behavior
+      // Directory page: original behavior with enhancements
       if (!query) {
         // No search query - show all (respect category filter)
         programs.forEach(p => {
@@ -524,18 +745,43 @@ const sizeClasses = size === 'large'
           // Also respect location filter if active
           const locationHidden = p.element.hasAttribute('data-location-hidden');
           p.element.style.display = (matchesCategory && !locationHidden) ? '' : 'none';
+          p.element.classList.remove('best-bet');
         });
         hideAIIndicator();
       } else {
-        // Fuzzy search with Fuse.js
-        const results = fuse.search(query);
-        const matchedIndices = new Set(results.map(r => r.item.index));
+        // Apply search enhancements
+        const rewrittenQuery = rewriteQuery(query);
+        const expandedTerms = expandWithSynonyms(rewrittenQuery);
+        const bestBetIds = new Set(getBestBets(query));
+
+        // Fuzzy search with Fuse.js - search for all expanded terms
+        const allResults = new Map();
+        for (const term of expandedTerms) {
+          const results = fuse.search(term);
+          results.forEach(r => {
+            const existing = allResults.get(r.item.index);
+            if (!existing || r.score < existing.score) {
+              allResults.set(r.item.index, r);
+            }
+          });
+        }
+        const matchedIndices = new Set(allResults.keys());
 
         programs.forEach(p => {
           const matchesSearch = matchedIndices.has(p.index);
+          const isBestBet = bestBetIds.has(p.id);
           const matchesCategory = activeCategory === 'all' || p.category === activeCategory;
           const locationHidden = p.element.hasAttribute('data-location-hidden');
-          p.element.style.display = (matchesSearch && matchesCategory && !locationHidden) ? '' : 'none';
+          const shouldShow = (matchesSearch || isBestBet) && matchesCategory && !locationHidden;
+
+          p.element.style.display = shouldShow ? '' : 'none';
+
+          // Mark best bets for styling
+          if (isBestBet && shouldShow) {
+            p.element.classList.add('best-bet');
+          } else {
+            p.element.classList.remove('best-bet');
+          }
         });
       }
 
@@ -694,11 +940,44 @@ const sizeClasses = size === 'large'
 
   // Handle Enter key - perform search only on Enter
   searchInput?.addEventListener('keydown', (e) => {
+    // Handle type-ahead keyboard navigation
+    if (typeaheadDropdown && !typeaheadDropdown.classList.contains('hidden')) {
+      handleTypeaheadKeydown(e);
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') return;
+      if (e.key === 'Tab' && selectedSuggestionIndex >= 0) return;
+    }
+
     if (e.key === 'Enter') {
       e.preventDefault();
       clearTimeout(debounceTimer);
       searchHints?.classList.add('hidden');
+      hideTypeahead();
+
+      // If a suggestion is selected, use it
+      if (selectedSuggestionIndex >= 0) {
+        const items = typeaheadList?.querySelectorAll('.typeahead-item') || [];
+        const selected = items[selectedSuggestionIndex] as HTMLElement;
+        if (selected?.dataset?.suggestion) {
+          (searchInput as HTMLInputElement).value = selected.dataset.suggestion;
+        }
+      }
+
       performSearch();
+    } else if (e.key === 'Escape') {
+      hideTypeahead();
+    }
+  });
+
+  // Show type-ahead as user types
+  searchInput?.addEventListener('input', (e) => {
+    const query = (e.target as HTMLInputElement).value;
+    showTypeahead(query);
+  });
+
+  // Hide type-ahead when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput?.contains(e.target as Node) && !typeaheadDropdown?.contains(e.target as Node)) {
+      hideTypeahead();
     }
   });
 
@@ -707,6 +986,7 @@ const sizeClasses = size === 'large'
     btn.addEventListener('click', () => {
       searchInput.value = btn.textContent || '';
       searchHints?.classList.add('hidden');
+      hideTypeahead();
       performSearch();
       searchInput.focus();
     });
@@ -848,5 +1128,43 @@ const sizeClasses = size === 'large'
   @keyframes slideDown {
     from { opacity: 0; transform: translateY(-100%); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Type-ahead Dropdown Styles */
+  .typeahead-dropdown {
+    @apply absolute top-full left-0 right-0 mt-1 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-neutral-200 dark:border-neutral-700 z-50 overflow-hidden;
+  }
+
+  .typeahead-item {
+    @apply flex items-center gap-2 px-4 py-2.5 cursor-pointer transition-colors;
+  }
+
+  .typeahead-item:hover,
+  .typeahead-item.selected {
+    @apply bg-primary-50 dark:bg-primary-900/30;
+  }
+
+  .typeahead-item span {
+    @apply text-sm text-neutral-700 dark:text-neutral-200;
+  }
+
+  .typeahead-item strong {
+    @apply text-primary-600 dark:text-primary-400 font-semibold;
+  }
+
+  /* Best Bet Highlighting */
+  .best-bet {
+    @apply ring-2 ring-primary-400 dark:ring-primary-500 ring-offset-2 dark:ring-offset-neutral-900;
+  }
+
+  .best-bet::before {
+    content: '★ Top Result';
+    @apply absolute -top-2 left-4 text-xs font-semibold text-white bg-primary-500 px-2 py-0.5 rounded-full;
+  }
+
+  /* Ensure cards have relative positioning for the best-bet badge */
+  [data-category].best-bet,
+  .home-program-card.best-bet {
+    @apply relative;
   }
 </style>

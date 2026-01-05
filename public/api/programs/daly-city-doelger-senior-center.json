@@ -1,0 +1,27 @@
+{
+  "id": "daly-city-doelger-senior-center",
+  "name": "Doelger Senior Center",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Daly City",
+  "website": "https://www.dalycity.org/329/Active-AdultsSeniors",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "101 Lake Merced Blvd, Daly City, CA 94015",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

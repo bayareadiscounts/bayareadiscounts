@@ -1,0 +1,27 @@
+{
+  "id": "nps-jomu",
+  "name": "John Muir National Historic Site",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Contra Costa County"
+  ],
+  "city": "Martinez",
+  "website": "https://www.nps.gov/jomu/index.htm",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "4202 Alhambra Ave, Martinez, CA, 94553",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

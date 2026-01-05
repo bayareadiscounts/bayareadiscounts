@@ -1,0 +1,28 @@
+{
+  "id": "calvet-veterans-homes",
+  "name": "Veterans Homes of California",
+  "category": "health",
+  "description": "Residential care at 8 California locations with healthcare, meals, and activities for veterans and spouses",
+  "fullDescription": "The Veterans Homes of California operate 8 residential care facilities across the state providing housing, healthcare, and supportive services to eligible veterans and their spouses.",
+  "whatTheyOffer": "- Long-term residential care (domiciliary and skilled nursing)\n- On-site medical and dental care\n- Physical therapy and rehabilitation\n- Memory care for Alzheimer's/dementia\n- Social and recreational activities\n- Three meals daily\n- Transportation to VA medical appointments\n",
+  "howToGetIt": "1. Must be California veteran with 90+ days active duty\n2. Must have honorable discharge\n3. Apply online or by mail through CalVet\n4. Submit DD214, medical records, and financial info\n5. Complete health assessment\n6. Select preferred home location\n",
+  "groups": [
+    "veterans",
+    "seniors"
+  ],
+  "areas": [
+    "Statewide"
+  ],
+  "city": null,
+  "website": "https://www.calvet.ca.gov/VetHomes",
+  "cost": null,
+  "phone": "800-952-5626",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

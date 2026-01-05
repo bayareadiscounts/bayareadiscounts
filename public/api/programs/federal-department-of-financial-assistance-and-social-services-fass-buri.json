@@ -1,0 +1,46 @@
+{
+  "id": "federal-department-of-financial-assistance-and-social-services-fass-buri",
+  "name": "Financial Assistance and Social Services (FASS) - Burial assistance",
+  "category": "federal-benefits",
+  "description": "Burial assistance for deceased American Indians who do not have resources for funeral expenses or with certain income and net worth limits.\n",
+  "fullDescription": "Burial assistance for deceased American Indians who do not have resources for funeral expenses or with certain income and net worth limits.\n",
+  "whatTheyOffer": "The Bureau of Indian Affairs enhances the quality of life and protects and improves the trust assets of American Indians, Indian tribes, and Alaska Natives.\n",
+  "howToGetIt": "Eligibility requirements:\n- The deceased was a member of a federally recognized American Indian Tribe or an Alaska Native.\n\nVisit the official website or call for more information.\n",
+  "groups": [
+    "survivors"
+  ],
+  "areas": [
+    "Nationwide"
+  ],
+  "city": null,
+  "website": "https://www.bia.gov/bia/ois/dhs/financial-assistance",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "death",
+    "deceased",
+    "survivor",
+    "survivors",
+    "bereavement",
+    "grief",
+    "widow",
+    "widower",
+    "funeral",
+    "burial",
+    "memorial",
+    "loss of loved one",
+    "passing",
+    "died",
+    "dependents",
+    "beneficiary"
+  ],
+  "lifeEvents": [
+    "death"
+  ],
+  "agency": "Department of Interior (DOI) - Indian Affairs",
+  "lastUpdated": "2026-01-05"
+}

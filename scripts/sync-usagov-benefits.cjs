@@ -15,6 +15,26 @@ const yaml = require('js-yaml');
 const USAGOV_API = 'https://www.usa.gov/s3/files/benefit-finder/api/life-event/all_benefits.json';
 const OUTPUT_FILE = path.join(__dirname, '../src/data/federal-benefits.yml');
 
+// Life event keywords - these map to searchable terms users might use
+// Based on USA.gov Benefit Finder's three life event categories
+const LIFE_EVENT_KEYWORDS = {
+  disability: [
+    'disability', 'disabled', 'impairment', 'special needs', 'ada',
+    'unable to work', 'ssdi', 'ssi', 'accessibility', 'chronic illness',
+    'blind', 'deaf', 'mobility', 'mental health'
+  ],
+  death: [
+    'death', 'deceased', 'survivor', 'survivors', 'bereavement', 'grief',
+    'widow', 'widower', 'funeral', 'burial', 'memorial', 'loss of loved one',
+    'passing', 'died', 'dependents', 'beneficiary'
+  ],
+  retirement: [
+    'retirement', 'retired', 'retiree', 'pension', 'senior', 'elderly',
+    'social security', 'medicare', '65', 'aging', 'golden years',
+    'fixed income', 'post-career'
+  ]
+};
+
 // Map USAGov agencies to our category system (fallback)
 const AGENCY_TO_CATEGORY = {
   'Social Security Administration (SSA)': 'finance',
@@ -86,6 +106,73 @@ function stripHtml(html) {
     .replace(/&#39;/g, "'")
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+// Detect which life events apply to a benefit and generate keywords
+function detectLifeEventsAndKeywords(title, summary, eligibility) {
+  const text = `${title} ${summary}`.toLowerCase();
+  const eligibilityText = (eligibility || []).map(e => (e.label || '').toLowerCase()).join(' ');
+  const fullText = `${text} ${eligibilityText}`;
+
+  const detectedEvents = new Set();
+  const keywords = new Set();
+
+  // Check for disability-related content
+  if (fullText.includes('disab') || fullText.includes('impair') ||
+      fullText.includes('unable to work') || fullText.includes('ssdi') ||
+      fullText.includes('blind') || fullText.includes('deaf')) {
+    detectedEvents.add('disability');
+  }
+
+  // Check for death/survivor-related content
+  if (fullText.includes('surviv') || fullText.includes('deceas') ||
+      fullText.includes('death') || fullText.includes('burial') ||
+      fullText.includes('funeral') || fullText.includes('widow') ||
+      fullText.includes('memorial') || fullText.includes('died')) {
+    detectedEvents.add('death');
+  }
+
+  // Check for retirement-related content
+  if (fullText.includes('retire') || fullText.includes('pension') ||
+      fullText.includes('medicare') || fullText.includes('65 years') ||
+      fullText.includes('62 years') || fullText.includes('social security')) {
+    detectedEvents.add('retirement');
+  }
+
+  // Add relevant keywords based on detected events
+  for (const event of detectedEvents) {
+    LIFE_EVENT_KEYWORDS[event].forEach(kw => keywords.add(kw));
+  }
+
+  // Add agency-specific keywords
+  if (fullText.includes('veteran') || fullText.includes('military') || fullText.includes(' va ')) {
+    keywords.add('veteran');
+    keywords.add('military');
+    keywords.add('service member');
+    keywords.add('armed forces');
+  }
+
+  if (fullText.includes('medicare') || fullText.includes('medicaid')) {
+    keywords.add('health insurance');
+    keywords.add('medical coverage');
+  }
+
+  if (fullText.includes('housing') || fullText.includes('section 8') || fullText.includes('rent')) {
+    keywords.add('housing assistance');
+    keywords.add('rental help');
+    keywords.add('housing voucher');
+  }
+
+  if (fullText.includes('education') || fullText.includes('gi bill') || fullText.includes('school')) {
+    keywords.add('education benefits');
+    keywords.add('tuition assistance');
+    keywords.add('college');
+  }
+
+  return {
+    lifeEvents: Array.from(detectedEvents),
+    keywords: Array.from(keywords)
+  };
 }
 
 // Track generated IDs to ensure uniqueness
@@ -162,6 +249,13 @@ function transformBenefit(benefitWrapper) {
                    'community';
   const groups = extractGroups(benefit.eligibility || []);
 
+  // Detect life events and generate searchable keywords
+  const { lifeEvents, keywords } = detectLifeEventsAndKeywords(
+    benefit.title,
+    benefit.summary || '',
+    benefit.eligibility || []
+  );
+
   // Add general groups based on title/summary
   const titleLower = benefit.title.toLowerCase();
   const summaryLower = (benefit.summary || '').toLowerCase();
@@ -205,6 +299,8 @@ function transformBenefit(benefitWrapper) {
     groups: groups.length > 0 ? groups : ['Everyone'],
     source: 'federal',
     agency: agencyTitle,
+    lifeEvents: lifeEvents,
+    keywords: keywords,
   };
 }
 
@@ -279,6 +375,18 @@ ${programs.map(p => {
     lines.push(`  link_text: ${p.linkText}`);
   }
 
+  // Add life events as hidden tags for search
+  if (p.lifeEvents && p.lifeEvents.length > 0) {
+    lines.push(`  life_events:`);
+    p.lifeEvents.forEach(e => lines.push(`    - ${e}`));
+  }
+
+  // Add keywords for enhanced search (hidden from display, used by Fuse.js)
+  if (p.keywords && p.keywords.length > 0) {
+    lines.push(`  keywords:`);
+    p.keywords.forEach(kw => lines.push(`    - ${kw}`));
+  }
+
   return lines.join('\n');
 }).join('\n\n')}
 `;
@@ -290,10 +398,14 @@ ${programs.map(p => {
     // Summary
     const categories = {};
     const groupCounts = {};
+    const lifeEventCounts = {};
     programs.forEach(p => {
       categories[p.category] = (categories[p.category] || 0) + 1;
       p.groups.forEach(g => {
         groupCounts[g] = (groupCounts[g] || 0) + 1;
+      });
+      (p.lifeEvents || []).forEach(e => {
+        lifeEventCounts[e] = (lifeEventCounts[e] || 0) + 1;
       });
     });
 
@@ -306,6 +418,14 @@ ${programs.map(p => {
     Object.entries(groupCounts).sort((a, b) => b[1] - a[1]).forEach(([group, count]) => {
       console.log(`  ${group}: ${count}`);
     });
+
+    console.log('\nBy life event:');
+    Object.entries(lifeEventCounts).sort((a, b) => b[1] - a[1]).forEach(([event, count]) => {
+      console.log(`  ${event}: ${count}`);
+    });
+
+    const keywordCount = programs.reduce((sum, p) => sum + (p.keywords?.length || 0), 0);
+    console.log(`\nTotal searchable keywords added: ${keywordCount}`);
 
     return programs.length;
 

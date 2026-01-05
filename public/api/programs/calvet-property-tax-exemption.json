@@ -1,0 +1,28 @@
+{
+  "id": "calvet-property-tax-exemption",
+  "name": "Disabled Veteran Property Tax Exemption",
+  "category": "finance",
+  "description": "Property tax exemption up to $241,627 assessed value for disabled veterans; based on disability rating and income",
+  "fullDescription": "California offers one of the nation's most valuable property tax exemptions for disabled veterans. The exemption can eliminate thousands in annual property taxes based on disability rating and income level.",
+  "whatTheyOffer": "- Full or partial property tax exemption\n- Basic exemption up to $161,083 (2024) for 100% disabled\n- Low-income exemption up to $241,627 (2024) for qualifying veterans\n- Applies to primary residence only\n- Unmarried surviving spouses may also qualify\n- Annual savings can be thousands of dollars\n",
+  "howToGetIt": "1. Must have service-connected disability from VA\n2. Must be California resident\n3. Property must be primary residence\n4. File claim with County Assessor's Office\n5. Provide VA disability rating letter and DD214\n6. Renew annually with county\n",
+  "groups": [
+    "veterans",
+    "disability"
+  ],
+  "areas": [
+    "Statewide"
+  ],
+  "city": null,
+  "website": "https://www.boe.ca.gov/proptaxes/dv_exemption.htm",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

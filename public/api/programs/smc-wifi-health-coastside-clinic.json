@@ -1,0 +1,27 @@
+{
+  "id": "smc-wifi-health-coastside-clinic",
+  "name": "Health - Coastside Clinic",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Half Moon Bay",
+  "website": "https://www.smcgov.org/smc-public-wifi-project",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "225 Cabrillo Hwy S, Half Moon Bay, CA 94019",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

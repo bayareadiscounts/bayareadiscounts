@@ -1,0 +1,27 @@
+{
+  "id": "ca-sp-marsh-creek-state-park",
+  "name": "Marsh Creek State Park",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Contra Costa County"
+  ],
+  "city": "Brentwood",
+  "website": "http://www.parks.ca.gov/?page_id=525",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "21520 Marsh Creek Road, Brentwood, CA, 94513",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

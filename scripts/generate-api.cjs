@@ -181,6 +181,10 @@ categoryFiles.forEach(file => {
       address: program.address || null,
       requirements: program.requirements || null,
       howToApply: program.how_to_apply || null,
+      // Hidden searchable fields - not displayed but indexed by Fuse.js
+      keywords: program.keywords || [],
+      lifeEvents: program.life_events || [],
+      agency: program.agency || null,
       lastUpdated: new Date().toISOString().split('T')[0]
     };
 

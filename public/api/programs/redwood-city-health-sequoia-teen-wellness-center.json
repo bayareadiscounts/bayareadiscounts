@@ -1,0 +1,28 @@
+{
+  "id": "redwood-city-health-sequoia-teen-wellness-center",
+  "name": "Health - Sequoia Teen Wellness Center",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone",
+    "youth"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Redwood City",
+  "website": "https://www.smchealth.org/location/sequoia-teen-wellness-center",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "200 James Ave, Redwood City, CA 94062",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

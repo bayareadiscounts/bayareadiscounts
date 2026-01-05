@@ -1,0 +1,27 @@
+{
+  "id": "ca-sp-pacifica-sb",
+  "name": "Pacifica SB",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Pacifica",
+  "website": "http://www.parks.ca.gov/?page_id=524",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "500 Crespi Dr, Pacifica, CA, 94044",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

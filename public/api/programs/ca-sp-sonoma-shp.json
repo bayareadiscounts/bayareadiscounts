@@ -1,0 +1,27 @@
+{
+  "id": "ca-sp-sonoma-shp",
+  "name": "Sonoma SHP",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Sonoma County"
+  ],
+  "city": "Sonoma",
+  "website": "http://www.parks.ca.gov/?page_id=479",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "14 East Spain Street, Sonoma, CA, 95476",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

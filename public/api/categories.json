@@ -4,13 +4,13 @@
       "id": "community",
       "name": "Community",
       "icon": "🏘️",
-      "programCount": 96
+      "programCount": 99
     },
     {
       "id": "education",
       "name": "Education",
       "icon": "📚",
-      "programCount": 5
+      "programCount": 6
     },
     {
       "id": "equipment",
@@ -22,7 +22,7 @@
       "id": "finance",
       "name": "Finance",
       "icon": "💰",
-      "programCount": 16
+      "programCount": 19
     },
     {
       "id": "food",
@@ -34,7 +34,7 @@
       "id": "health",
       "name": "Health",
       "icon": "💊",
-      "programCount": 26
+      "programCount": 27
     },
     {
       "id": "legal",
@@ -58,7 +58,7 @@
       "id": "recreation",
       "name": "Recreation",
       "icon": "⚽",
-      "programCount": 28
+      "programCount": 229
     },
     {
       "id": "technology",
@@ -70,7 +70,7 @@
       "id": "transportation",
       "name": "Transportation",
       "icon": "🚌",
-      "programCount": 23
+      "programCount": 24
     },
     {
       "id": "utilities",

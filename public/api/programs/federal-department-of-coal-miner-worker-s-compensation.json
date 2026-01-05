@@ -21,5 +21,42 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [
+    "disability",
+    "disabled",
+    "impairment",
+    "special needs",
+    "ada",
+    "unable to work",
+    "ssdi",
+    "ssi",
+    "accessibility",
+    "chronic illness",
+    "blind",
+    "deaf",
+    "mobility",
+    "mental health",
+    "death",
+    "deceased",
+    "survivor",
+    "survivors",
+    "bereavement",
+    "grief",
+    "widow",
+    "widower",
+    "funeral",
+    "burial",
+    "memorial",
+    "loss of loved one",
+    "passing",
+    "died",
+    "dependents",
+    "beneficiary"
+  ],
+  "lifeEvents": [
+    "disability",
+    "death"
+  ],
+  "agency": "Department of Labor (DOL)",
+  "lastUpdated": "2026-01-05"
 }

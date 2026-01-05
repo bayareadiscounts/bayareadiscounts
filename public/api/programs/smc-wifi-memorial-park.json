@@ -1,0 +1,27 @@
+{
+  "id": "smc-wifi-memorial-park",
+  "name": "Memorial Park",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Loma Mar",
+  "website": "https://www.smcgov.org/smc-public-wifi-project",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "9500 Pescadero Creek Rd, Loma Mar, CA 94021",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

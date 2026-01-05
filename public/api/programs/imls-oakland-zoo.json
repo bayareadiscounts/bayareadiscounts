@@ -1,0 +1,27 @@
+{
+  "id": "imls-oakland-zoo",
+  "name": "Oakland Zoo",
+  "category": "recreation",
+  "description": "Wildlife facility dedicated to animal conservation and education.",
+  "fullDescription": "Wildlife facility dedicated to animal conservation and education.",
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Bay Area"
+  ],
+  "city": "Oakland",
+  "website": "https://www.oaklandzoo.org/",
+  "cost": null,
+  "phone": "(510) 632-9525",
+  "email": null,
+  "address": "9777 Golf Links Road",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

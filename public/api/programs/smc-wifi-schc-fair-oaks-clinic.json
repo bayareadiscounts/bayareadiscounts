@@ -1,0 +1,27 @@
+{
+  "id": "smc-wifi-schc-fair-oaks-clinic",
+  "name": "SCHC - Fair Oaks Clinic",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Redwood City",
+  "website": "https://www.smcgov.org/smc-public-wifi-project",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "2710 Middlefield Rd, Redwood City, CA 94063",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

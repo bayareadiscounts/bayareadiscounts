@@ -20,5 +20,41 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [
+    "death",
+    "deceased",
+    "survivor",
+    "survivors",
+    "bereavement",
+    "grief",
+    "widow",
+    "widower",
+    "funeral",
+    "burial",
+    "memorial",
+    "loss of loved one",
+    "passing",
+    "died",
+    "dependents",
+    "beneficiary",
+    "retirement",
+    "retired",
+    "retiree",
+    "pension",
+    "senior",
+    "elderly",
+    "social security",
+    "medicare",
+    65,
+    "aging",
+    "golden years",
+    "fixed income",
+    "post-career"
+  ],
+  "lifeEvents": [
+    "death",
+    "retirement"
+  ],
+  "agency": "Social Security Administration (SSA)",
+  "lastUpdated": "2026-01-05"
 }

@@ -1,0 +1,27 @@
+{
+  "id": "ca-sp-pescadero-sb",
+  "name": "Pescadero SB",
+  "category": "recreation",
+  "description": "",
+  "fullDescription": null,
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": "Pescadero",
+  "website": "http://www.parks.ca.gov/?page_id=522",
+  "cost": null,
+  "phone": null,
+  "email": null,
+  "address": "13618 Cabrillo Hwy, Pescadero, CA, 94060",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}

@@ -20,5 +20,25 @@
   "address": null,
   "requirements": null,
   "howToApply": null,
-  "lastUpdated": "2026-01-03"
+  "keywords": [
+    "disability",
+    "disabled",
+    "impairment",
+    "special needs",
+    "ada",
+    "unable to work",
+    "ssdi",
+    "ssi",
+    "accessibility",
+    "chronic illness",
+    "blind",
+    "deaf",
+    "mobility",
+    "mental health"
+  ],
+  "lifeEvents": [
+    "disability"
+  ],
+  "agency": "Library of Congress (LOC)",
+  "lastUpdated": "2026-01-05"
 }

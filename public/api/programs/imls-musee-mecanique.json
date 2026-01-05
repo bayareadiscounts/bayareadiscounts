@@ -1,0 +1,27 @@
+{
+  "id": "imls-musee-mecanique",
+  "name": "Musee Mecanique",
+  "category": "recreation",
+  "description": "Museum with diverse collections and exhibits.",
+  "fullDescription": "Museum with diverse collections and exhibits.",
+  "whatTheyOffer": null,
+  "howToGetIt": null,
+  "groups": [
+    "everyone"
+  ],
+  "areas": [
+    "Bay Area"
+  ],
+  "city": "San Francisco",
+  "website": "",
+  "cost": null,
+  "phone": "(415) 346-2000",
+  "email": null,
+  "address": "Pier 45 at the End of Taylor Street Fishermans Wharf",
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-05"
+}
