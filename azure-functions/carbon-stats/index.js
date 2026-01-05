@@ -36,12 +36,12 @@ const PROVIDER_STATS = {
     waterPositiveTarget: 2030,
     source: 'https://github.blog/2021-04-22-environmental-sustainability-github/'
   },
-  anthropic: {
-    name: 'Anthropic Claude',
-    ecoEfficiencyScore: 0.886,
-    cloudProvider: 'Google Cloud',
-    googleCloudRenewable: 100,
-    source: 'https://www.anthropic.com'
+  azureOpenAI: {
+    name: 'Azure OpenAI',
+    model: 'GPT-4o-mini',
+    carbonNeutral: true,
+    runsOnAzure: true,
+    source: 'https://azure.microsoft.com/en-us/products/ai-services/openai-service'
   }
 };
 
@@ -157,7 +157,7 @@ async function getCarbonStats(context) {
       'Azure has been carbon neutral since 2012',
       'GitHub Actions runners are powered by renewable energy',
       'Cloudflare operates a carbon-neutral network',
-      'Claude AI runs on Google Cloud (100% renewable)'
+      'Azure OpenAI runs on carbon-neutral Azure infrastructure'
     ]
   };
 }

@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // Calculate approximate stats
 const hostingProvider = 'Microsoft Azure';
 const cdnProvider = 'Cloudflare';
-const aiProvider = 'Anthropic Claude';
+const aiProvider = 'Azure OpenAI';
 
 // Azure sustainability stats (from Microsoft's published data)
 const azureStats = {
@@ -26,12 +26,6 @@ const cloudflareStats = {
 const githubStats = {
   carbonNeutralSince: 2019,
   waterPositiveBy: 2030,
-};
-
-// Claude AI efficiency (from published research)
-const claudeStats = {
-  ecoEfficiencyScore: 0.886, // Highest among 30 AI models studied
-  cloudProvider: 'Google Cloud (100% renewable)',
 };
 ---
 
@@ -201,27 +195,27 @@ const claudeStats = {
           </div>
         </div>
 
-        <!-- Claude AI -->
+        <!-- Azure OpenAI -->
         <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
           <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-6 h-6 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </div>
             <div class="flex-1">
-              <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Claude AI (Smart Assistant)</h3>
+              <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Azure OpenAI (Smart Assistant)</h3>
               <p class="text-neutral-600 dark:text-neutral-300 text-sm mb-3">
-                Our Smart Assistant uses Claude, which ranked as the most eco-efficient major AI model in a 2025 study of 30 models.
+                Our Smart Assistant uses Azure OpenAI, running on Microsoft's carbon-neutral infrastructure with the same sustainability commitments as Azure.
               </p>
               <div class="grid grid-cols-2 gap-3 text-sm">
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
-                  <div class="font-bold text-green-700 dark:text-green-400">{claudeStats.ecoEfficiencyScore}</div>
-                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Eco-efficiency score</div>
+                  <div class="font-bold text-green-700 dark:text-green-400">Carbon Neutral</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Azure infrastructure</div>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
-                  <div class="font-bold text-green-700 dark:text-green-400">#1</div>
-                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Among 30 AI models</div>
+                  <div class="font-bold text-green-700 dark:text-green-400">GPT-4o-mini</div>
+                  <div class="text-xs text-neutral-500 dark:text-neutral-400">Efficient model</div>
                 </div>
               </div>
             </div>
