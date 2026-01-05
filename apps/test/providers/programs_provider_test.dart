@@ -146,11 +146,12 @@ void main() {
 
   group('SortOption', () {
     test('all sort options are defined', () {
-      expect(SortOption.values.length, 4);
+      expect(SortOption.values.length, 5);
       expect(SortOption.values, contains(SortOption.recentlyVerified));
       expect(SortOption.values, contains(SortOption.nameAsc));
       expect(SortOption.values, contains(SortOption.nameDesc));
       expect(SortOption.values, contains(SortOption.categoryAsc));
+      expect(SortOption.values, contains(SortOption.distanceAsc));
     });
   });
 }
