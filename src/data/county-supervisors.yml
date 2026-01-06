@@ -1,0 +1,259 @@
+# Bay Area County Board of Supervisors
+# Data last updated: 2026-01-06
+# Note: District boundaries updated after 2020 Census redistricting
+#
+# ArcGIS Feature Service URLs for point-in-polygon queries:
+# - San Francisco: https://services.arcgis.com/Zs2aNLFN00jrS4gG/arcgis/rest/services/Current_Supervisor_Districts/FeatureServer/0
+# - San Mateo: https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Supervisor_Districts/FeatureServer/0
+# - Santa Clara: https://services1.arcgis.com/4QPaqCJqF1UIaPbN/arcgis/rest/services/Santa_Clara_County_Supervisorial_Districts/FeatureServer/0
+# - Alameda: https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Board_of_Supervisors_District_Boundaries/FeatureServer/0
+# - Contra Costa: https://services3.arcgis.com/42Dx6OWonqK9LoEE/arcgis/rest/services/BOS_Find_My_Supervisor/FeatureServer/0
+# - Marin: https://gis.marincounty.gov/server/rest/services/PARCEL_BASED/SUPERVISOR_DIST/FeatureServer/0
+# - Sonoma: https://services1.arcgis.com/P5Mv5GY5S66M8Z1Q/arcgis/rest/services/Supervisor_Districts/FeatureServer/0
+# - Napa: https://gis.countyofnapa.org/arcgis/rest/services/Hosted/Supervisor_Districts_2022/FeatureServer/0
+# - Solano: https://services2.arcgis.com/SCn6czzcqKAFwdGU/arcgis/rest/services/BOS_District_Boundaries_2021/FeatureServer/0
+
+counties:
+  san_francisco:
+    name: San Francisco
+    fips: "06075"
+    districts: 11
+    website: https://sfbos.org/
+    arcgis_url: https://services.arcgis.com/Zs2aNLFN00jrS4gG/arcgis/rest/services/Current_Supervisor_Districts/FeatureServer/0
+    district_field: supervisor
+    supervisors:
+      1:
+        name: Connie Chan
+        website: https://sfbos.org/supervisor-chan-district-1
+      2:
+        name: Stephen Sherrill
+        website: https://sfbos.org/supervisor-sherrill-district-2
+      3:
+        name: Danny Sauter
+        website: https://sfbos.org/supervisor-sauter-district-3
+      4:
+        name: Alan Wong
+        website: https://sfbos.org/supervisor-wong-district-4
+      5:
+        name: Bilal Mahmood
+        website: https://sfbos.org/supervisor-mahmood-district-5
+      6:
+        name: Matt Dorsey
+        website: https://sfbos.org/supervisor-dorsey-district-6
+      7:
+        name: Myrna Melgar
+        website: https://sfbos.org/supervisor-melgar-district-7
+      8:
+        name: Rafael Mandelman
+        website: https://sfbos.org/supervisor-mandelman-district-8
+      9:
+        name: Jackie Fielder
+        website: https://sfbos.org/supervisor-fielder-district-9
+      10:
+        name: Shamann Walton
+        website: https://sfbos.org/supervisor-walton-district-10
+      11:
+        name: Chyanne Chen
+        website: https://sfbos.org/supervisor-chen-district-11
+
+  san_mateo:
+    name: San Mateo County
+    fips: "06081"
+    districts: 5
+    website: https://www.smcgov.org/bos
+    arcgis_url: https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Supervisor_Districts/FeatureServer/0
+    district_field: District
+    name_field: Supervisor
+    supervisors:
+      1:
+        name: Jackie Speier
+        website: https://www.smcgov.org/district-1
+      2:
+        name: Noelia Corzo
+        website: https://www.smcgov.org/district-2
+      3:
+        name: Ray Mueller
+        website: https://www.smcgov.org/district-3
+      4:
+        name: Lisa Gauthier
+        website: https://www.smcgov.org/district-4
+      5:
+        name: David Canepa
+        website: https://www.smcgov.org/district-5
+
+  santa_clara:
+    name: Santa Clara County
+    fips: "06085"
+    districts: 5
+    website: https://www.sccgov.org/sites/bos/
+    arcgis_url: https://services1.arcgis.com/4QPaqCJqF1UIaPbN/arcgis/rest/services/Santa_Clara_County_Supervisorial_Districts/FeatureServer/0
+    district_field: DISTRICT
+    supervisors:
+      1:
+        name: Sylvia Arenas
+        website: https://supervisorarenas.org/
+      2:
+        name: Cindy Chavez
+        website: https://www.sccgov.org/sites/d2/
+      3:
+        name: Otto Lee
+        website: https://www.sccgov.org/sites/d3/
+      4:
+        name: Susan Ellenberg
+        website: https://www.sccgov.org/sites/d4/
+      5:
+        name: Joe Simitian
+        website: https://supervisorsimitian.org/
+
+  alameda:
+    name: Alameda County
+    fips: "06001"
+    districts: 5
+    website: https://bos.alamedacountyca.gov/
+    arcgis_url: https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Board_of_Supervisors_District_Boundaries/FeatureServer/0
+    district_field: DISTRICT_ID
+    # DISTRICT_ID values: 644=D1, 645=D2, 646=D3, 647=D4, 648=D5
+    supervisors:
+      1:
+        name: David Haubert
+        website: https://bos.alamedacountyca.gov/district-1/
+      2:
+        name: Elisa Márquez
+        website: https://bos.alamedacountyca.gov/district-2/
+      3:
+        name: Rebecca Kaplan
+        website: https://bos.alamedacountyca.gov/district-3/
+      4:
+        name: Nate Miley
+        website: https://bos.alamedacountyca.gov/district-4/
+      5:
+        name: Keith Carson
+        website: https://bos.alamedacountyca.gov/district-5/
+
+  contra_costa:
+    name: Contra Costa County
+    fips: "06013"
+    districts: 5
+    website: https://www.contracosta.ca.gov/180/Board-of-Supervisors
+    arcgis_url: https://services3.arcgis.com/42Dx6OWonqK9LoEE/arcgis/rest/services/BOS_Find_My_Supervisor/FeatureServer/0
+    district_field: SUP_DIST
+    name_field: SUP_NAME
+    supervisors:
+      1:
+        name: John Gioia
+        phone: "510-942-2220"
+        website: https://www.contracosta.ca.gov/5216/District-1-Supervisor-John-M-Gioia
+      2:
+        name: Candace Andersen
+        phone: "925-655-2300"
+        website: https://www.contracosta.ca.gov/4668/District-2-Supervisor-Candace-Andersen
+      3:
+        name: Diane Burgis
+        phone: "925-655-2330"
+        website: https://www.contracosta.ca.gov/6437/District-3-Supervisor-Diane-Burgis
+      4:
+        name: Ken Carlson
+        phone: "925-655-2350"
+        website: https://www.contracosta.ca.gov/6291/District-4-Supervisor-Ken-Carlson
+      5:
+        name: Federal Glover
+        phone: "925-608-4200"
+        website: https://www.contracosta.ca.gov/781/District-5-Supervisor-Federal-Glover
+
+  marin:
+    name: Marin County
+    fips: "06041"
+    districts: 5
+    website: https://www.marincounty.gov/government/board-of-supervisors
+    arcgis_url: https://gis.marincounty.gov/server/rest/services/PARCEL_BASED/SUPERVISOR_DIST/FeatureServer/0
+    district_field: SUPERVISOR_DIST
+    supervisors:
+      1:
+        name: Mary Sackett
+        website: https://www.marincounty.gov/departments/county-administrator/board-of-supervisors/district-1
+      2:
+        name: Brian Colbert
+        website: https://www.marincounty.gov/departments/county-administrator/board-of-supervisors/district-2
+      3:
+        name: Stephanie Moulton-Peters
+        website: https://www.marincounty.gov/departments/county-administrator/board-of-supervisors/district-3
+      4:
+        name: Dennis Rodoni
+        website: https://www.marincounty.gov/departments/county-administrator/board-of-supervisors/district-4
+      5:
+        name: Eric Lucan
+        website: https://www.marincounty.gov/departments/county-administrator/board-of-supervisors/district-5
+
+  sonoma:
+    name: Sonoma County
+    fips: "06097"
+    districts: 5
+    website: https://sonomacounty.ca.gov/board-of-supervisors
+    arcgis_url: https://services1.arcgis.com/P5Mv5GY5S66M8Z1Q/arcgis/rest/services/Supervisor_Districts/FeatureServer/0
+    district_field: DISTRICT
+    name_field: REP_NAME
+    supervisors:
+      1:
+        name: Rebecca Hermosillo
+        website: https://sonomacounty.ca.gov/first-district
+      2:
+        name: David Rabbitt
+        website: https://sonomacounty.ca.gov/second-district
+      3:
+        name: Chris Coursey
+        website: https://sonomacounty.ca.gov/third-district
+      4:
+        name: James Gore
+        website: https://sonomacounty.ca.gov/fourth-district
+      5:
+        name: Lynda Hopkins
+        website: https://sonomacounty.ca.gov/fifth-district
+
+  napa:
+    name: Napa County
+    fips: "06055"
+    districts: 5
+    website: https://www.countyofnapa.org/193/Board-of-Supervisors
+    arcgis_url: https://gis.countyofnapa.org/arcgis/rest/services/Hosted/Supervisor_Districts_2022/FeatureServer/0
+    district_field: sup_dist
+    name_field: supervisor
+    supervisors:
+      1:
+        name: Joelle Gallagher
+        website: https://www.countyofnapa.org/1350/District-1
+      2:
+        name: Liz Alessio
+        website: https://www.countyofnapa.org/1358/District-2
+      3:
+        name: Anne Cottrell
+        website: https://www.countyofnapa.org/1366/District-3
+      4:
+        name: Amber Manfree
+        website: https://www.countyofnapa.org/1372/District-4
+      5:
+        name: Belia Ramos
+        website: https://www.countyofnapa.org/1379/District-5
+
+  solano:
+    name: Solano County
+    fips: "06095"
+    districts: 5
+    website: https://www.solanocounty.gov/government/board-supervisors
+    arcgis_url: https://services2.arcgis.com/SCn6czzcqKAFwdGU/arcgis/rest/services/BOS_District_Boundaries_2021/FeatureServer/0
+    district_field: district
+    supervisors:
+      1:
+        name: Cassandra James
+        website: https://www.solanocounty.gov/depts/bos/district1/
+      2:
+        name: Monica Brown
+        website: https://www.solanocounty.gov/depts/bos/district2/
+      3:
+        name: Wanda Williams
+        website: https://www.solanocounty.gov/depts/bos/district3/
+      4:
+        name: John Vasquez
+        website: https://www.solanocounty.gov/depts/bos/district4/
+      5:
+        name: Mitch Mashburn
+        website: https://www.solanocounty.gov/depts/bos/district5/
