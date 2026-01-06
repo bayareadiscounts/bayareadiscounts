@@ -107,6 +107,7 @@ resource nic 'Microsoft.Network/networkInterfaces@2023-09-01' = {
 }
 
 // Cloud-init configuration for Tor setup
+// Note: __BACKEND_URL__ is a placeholder that gets replaced with the actual backendUrl parameter
 var cloudInitScript = '''
 #cloud-config
 package_update: true
@@ -142,7 +143,7 @@ write_files:
 
           # Proxy to Bay Navigator
           location / {
-              proxy_pass ${BACKEND_URL};
+              proxy_pass __BACKEND_URL__;
               proxy_http_version 1.1;
               proxy_set_header Host baynavigator.org;
               proxy_set_header X-Real-IP $remote_addr;
@@ -192,9 +193,6 @@ write_files:
     permissions: '0644'
 
 runcmd:
-  # Replace placeholder with actual backend URL
-  - sed -i 's|${BACKEND_URL}|${BACKEND_URL}|g' /etc/nginx/sites-available/tor-proxy
-
   # Enable nginx site
   - ln -sf /etc/nginx/sites-available/tor-proxy /etc/nginx/sites-enabled/
   - rm -f /etc/nginx/sites-enabled/default
@@ -235,7 +233,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2023-09-01' = {
     osProfile: {
       computerName: 'tor-onion'
       adminUsername: adminUsername
-      customData: base64(replace(cloudInitScript, '${BACKEND_URL}', backendUrl))
+      customData: base64(replace(cloudInitScript, '__BACKEND_URL__', backendUrl))
       linuxConfiguration: {
         disablePasswordAuthentication: true
         ssh: {
