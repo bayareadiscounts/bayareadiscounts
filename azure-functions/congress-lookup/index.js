@@ -448,8 +448,8 @@ function getPartyAbbrev(partyName) {
 async function geocodeAddress(street, city, zip, context) {
   try {
     // Step 1: Census Geocoder for address coordinates, congressional district, and county
-    // layers=54 = Congressional Districts, layers=84 = Counties
-    const censusUrl = `${CENSUS_GEOCODER_BASE}?street=${encodeURIComponent(street)}&city=${encodeURIComponent(city)}&state=CA&zip=${zip}&benchmark=Public_AR_Current&vintage=Current_Current&layers=54,84&format=json`;
+    // layers=all returns all geographies including Counties
+    const censusUrl = `${CENSUS_GEOCODER_BASE}?street=${encodeURIComponent(street)}&city=${encodeURIComponent(city)}&state=CA&zip=${zip}&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json`;
     context.log('Fetching Census Geocoder:', censusUrl);
 
     const censusResponse = await fetch(censusUrl);
