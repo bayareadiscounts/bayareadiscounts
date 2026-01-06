@@ -1,13 +1,15 @@
 /**
  * Smart Assistant Azure Function with RAG (Retrieval-Augmented Generation)
- * Searches Azure AI Search for relevant programs, then uses Azure OpenAI for response
+ * Uses Cloudflare Workers AI (Llama 3.1 8B) for keyword extraction
+ * Searches Azure AI Search for relevant programs
  */
 
-const AZURE_OPENAI_ENDPOINT = process.env.AZURE_OPENAI_ENDPOINT;
-const AZURE_OPENAI_KEY = process.env.AZURE_OPENAI_KEY;
-const AZURE_OPENAI_DEPLOYMENT = process.env.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-mini';
-const API_VERSION = '2024-02-15-preview';
+// Cloudflare Workers AI configuration
+const CF_ACCOUNT_ID = process.env.CF_ACCOUNT_ID;
+const CF_API_TOKEN = process.env.CF_API_TOKEN;
+const CF_MODEL = '@cf/meta/llama-3.1-8b-instruct';
 
+// Azure AI Search configuration (kept for program search)
 const AZURE_SEARCH_ENDPOINT = process.env.AZURE_SEARCH_ENDPOINT || 'https://baynavigator-search.search.windows.net';
 const AZURE_SEARCH_KEY = process.env.AZURE_SEARCH_KEY;
 const SEARCH_INDEX = 'programs';
@@ -366,7 +368,7 @@ async function searchPrograms(query, location = null) {
 }
 
 /**
- * Use AI to extract search keywords from natural language query
+ * Use Cloudflare Workers AI (Llama 3.1 8B) to extract search keywords from natural language query
  * This function is ONLY called when Smart Search is enabled by the user.
  * If Smart Search is off (or offline), the client uses local fuzzy search instead.
  */
@@ -379,13 +381,13 @@ async function extractSearchQuery(userMessage, conversationHistory = []) {
     return expandQueryWithSynonyms(userMessage);
   }
 
-  // Fallback if OpenAI not configured (shouldn't happen in production)
-  if (!AZURE_OPENAI_ENDPOINT || !AZURE_OPENAI_KEY) {
-    console.log('OpenAI not configured, falling back to synonym expansion');
+  // Fallback if Cloudflare Workers AI not configured
+  if (!CF_ACCOUNT_ID || !CF_API_TOKEN) {
+    console.log('Cloudflare Workers AI not configured, falling back to synonym expansion');
     return expandQueryWithSynonyms(userMessage);
   }
 
-  const url = `${AZURE_OPENAI_ENDPOINT}/openai/deployments/${AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=${API_VERSION}`;
+  const url = `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/run/${CF_MODEL}`;
 
   const extractionPrompt = `You help extract search keywords from natural language queries about assistance programs.
 
@@ -412,25 +414,29 @@ Return ONLY the keywords separated by spaces, nothing else:`;
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'api-key': AZURE_OPENAI_KEY
+        'Authorization': `Bearer ${CF_API_TOKEN}`
       },
       body: JSON.stringify({
-        messages: [{ role: 'user', content: extractionPrompt }],
+        messages: [
+          { role: 'system', content: 'You extract search keywords from queries. Return only space-separated keywords, nothing else.' },
+          { role: 'user', content: extractionPrompt }
+        ],
         max_tokens: 60,
         temperature: 0.1, // Very low for consistent extraction
       })
     });
 
     if (!response.ok) {
-      console.error('Keyword extraction failed, using synonym expansion');
+      const errorText = await response.text();
+      console.error('Cloudflare Workers AI error:', errorText);
       return expandQueryWithSynonyms(userMessage);
     }
 
     const data = await response.json();
-    const keywords = data.choices?.[0]?.message?.content?.trim() || '';
+    const keywords = data.result?.response?.trim() || '';
 
     if (keywords) {
-      console.log(`AI extracted keywords: "${keywords}"`);
+      console.log(`Llama 3.1 extracted keywords: "${keywords}"`);
       return keywords;
     }
 
@@ -464,13 +470,16 @@ module.exports = async function (context, req) {
   };
 
   try {
-    // Validate configuration
-    if (!AZURE_OPENAI_ENDPOINT || !AZURE_OPENAI_KEY) {
+    // Validate configuration (Cloudflare Workers AI for LLM, Azure Search for retrieval)
+    if (!CF_ACCOUNT_ID || !CF_API_TOKEN) {
+      console.log('Cloudflare Workers AI not configured, will use synonym expansion fallback');
+    }
+    if (!AZURE_SEARCH_KEY) {
       context.res = {
         status: 503,
         headers: corsHeaders,
         body: JSON.stringify({
-          error: 'Smart assistant is not configured. Please try again later.'
+          error: 'Smart assistant search is not configured. Please try again later.'
         })
       };
       return;
