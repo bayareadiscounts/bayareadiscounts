@@ -702,3 +702,186 @@
   link: https://myturn.ca.gov/
   link_text: Find Vaccines
   verified_date: '2025-12-29'
+
+# Bay Area County Behavioral Health Provider Directories
+# These are official county directories for finding mental health and substance use providers
+
+- id: sf-behavioral-health-directory
+  name: SF Mental Health & Substance Use Provider Directory
+  category: Health
+  area: San Francisco
+  groups:
+    - everyone
+  description: San Francisco's official directory of mental health and substance use disorder treatment providers, maintained by the Department of Public Health Behavioral Health Services.
+  what_they_offer: |
+    - Searchable mental health provider listings
+    - Substance use disorder treatment facilities
+    - Crisis services information
+    - Community-based mental health clinics
+    - Medi-Cal and uninsured services
+  how_to_get_it: Visit the online directory or call the 24/7 Access Line at 888-246-3333 for help finding services and scheduling assessments.
+  phone: '888-246-3333'
+  timeframe: 24/7 Access Line
+  link: https://www.sf.gov/mental-health-and-substance-use-disorder-provider-directories
+  link_text: Search Directory
+  verified_date: '2026-01-05'
+
+- id: smc-behavioral-health-directory
+  name: San Mateo County Behavioral Health Provider Directory
+  category: Health
+  area: San Mateo County
+  groups:
+    - everyone
+  description: San Mateo County's official directory of behavioral health providers, including mental health clinics, substance use treatment programs, and crisis services throughout the county.
+  what_they_offer: |
+    - Mental health provider listings
+    - Substance use treatment facilities
+    - Youth and family services
+    - Older adult behavioral health
+    - Crisis intervention resources
+  how_to_get_it: Visit the online directory or call the Access Call Center at 1-800-686-0101 for help finding providers and getting assessed for services.
+  phone: '1-800-686-0101'
+  timeframe: Ongoing
+  link: https://www.smchealth.org/bhrsproviders
+  link_text: Search Directory
+  verified_date: '2026-01-05'
+
+- id: santa-clara-behavioral-health-directory
+  name: Santa Clara County Behavioral Health Provider Directory
+  category: Health
+  area: Santa Clara County
+  groups:
+    - everyone
+  description: Santa Clara County's official searchable directory of behavioral health providers, updated monthly with mental health clinics, substance use programs, and community services.
+  what_they_offer: |
+    - Online searchable provider database
+    - Mental health outpatient clinics
+    - Substance use disorder treatment
+    - Children's mental health services
+    - Crisis and emergency services
+  how_to_get_it: Search the online directory or call 1-800-704-0900 for help accessing mental health and substance use services in Santa Clara County.
+  phone: '1-800-704-0900'
+  timeframe: Ongoing
+  link: https://bhdservices.sccgov.org/
+  link_text: Search Directory
+  verified_date: '2026-01-05'
+
+- id: alameda-behavioral-health-directory
+  name: Alameda County Behavioral Health Provider Directory
+  category: Health
+  area: Alameda County
+  groups:
+    - everyone
+  description: Alameda County Behavioral Health's official provider directory, listing mental health clinics, substance use treatment facilities, and community resources throughout the East Bay.
+  what_they_offer: |
+    - Mental health provider listings
+    - Substance use treatment programs
+    - Crisis services information
+    - Peer support programs
+    - Transitional age youth services
+  how_to_get_it: Search the online directory or call the Mental Health Access Line at 1-800-491-9099. For substance use services, call 1-844-682-7215.
+  phone: '1-800-491-9099'
+  timeframe: Ongoing
+  link: https://www.acbhcs.org/provider-directory/
+  link_text: Search Directory
+  verified_date: '2026-01-05'
+
+- id: contra-costa-behavioral-health-directory
+  name: Contra Costa County Mental Health Provider Directory
+  category: Health
+  area: Contra Costa County
+  groups:
+    - everyone
+  description: Contra Costa County's official mental health provider directory, updated weekly with licensed clinics, treatment programs, and crisis services for county residents.
+  what_they_offer: |
+    - Weekly updated provider listings
+    - Mental health treatment facilities
+    - Substance use disorder services
+    - Children and youth services
+    - Crisis and emergency contacts
+  how_to_get_it: Search the online directory or call the 24/7 Access Line at 1-888-678-7277. For crisis support, call the A3 Miles Hall Crisis Center at 844-844-5544.
+  phone: '1-888-678-7277'
+  timeframe: 24/7 Access Line
+  link: https://cchealth.org/mentalhealth/provider/
+  link_text: Search Directory
+  verified_date: '2026-01-05'
+
+- id: marin-behavioral-health-directory
+  name: Marin County Behavioral Health Provider Directory
+  category: Health
+  area: Marin County
+  groups:
+    - everyone
+  description: Marin County Behavioral Health and Recovery Services' official provider directory, including Medi-Cal mental health providers and Drug Medi-Cal substance use treatment facilities.
+  what_they_offer: |
+    - Medi-Cal mental health provider listings
+    - Drug Medi-Cal substance use providers
+    - Community mental health services
+    - Crisis intervention resources
+    - Recovery support services
+  how_to_get_it: View the online provider directories or call the Access Line at 888-818-1115 for help finding mental health and substance use services in Marin County.
+  phone: '888-818-1115'
+  timeframe: Ongoing
+  link: https://www.marinbhrs.org/clients-caregivers/marin-county-medi-cal-provider-directory
+  link_text: View Directory
+  verified_date: '2026-01-05'
+
+- id: sonoma-behavioral-health-directory
+  name: Sonoma County Behavioral Health Provider Directory
+  category: Health
+  area: Sonoma County
+  groups:
+    - everyone
+  description: Sonoma County's official behavioral health provider directories, listing mental health clinics and substance use disorder treatment providers serving county residents.
+  what_they_offer: |
+    - Mental health provider directory (PDF)
+    - Substance use treatment directory (PDF)
+    - Community mental health centers
+    - Crisis services information
+    - Recovery resources
+  how_to_get_it: Download the provider directories from the county website or call 1-800-870-8786 for help finding mental health and substance use services in Sonoma County.
+  phone: '1-800-870-8786'
+  timeframe: Ongoing
+  link: https://sonomacounty.ca.gov/health-and-human-services/health-services/divisions/behavioral-health/services/mental-health-services
+  link_text: View Directories
+  verified_date: '2026-01-05'
+
+- id: napa-behavioral-health-directory
+  name: Napa County Behavioral Health Provider Directory
+  category: Health
+  area: Napa County
+  groups:
+    - everyone
+  description: Napa County's official partners and providers directory for behavioral health services, including mental health treatment facilities and substance use programs.
+  what_they_offer: |
+    - Mental health provider listings
+    - Substance use treatment providers
+    - Crisis services information
+    - Community resources
+    - Recovery support programs
+  how_to_get_it: View the online directory or call the Access Line at 1-800-648-8650. For 24-hour crisis support, call 707-253-4711.
+  phone: '1-800-648-8650'
+  timeframe: Ongoing
+  link: https://www.countyofnapa.org/3758/Partners-and-Providers-Directory
+  link_text: View Directory
+  verified_date: '2026-01-05'
+
+- id: solano-behavioral-health-directory
+  name: Solano County Behavioral Health Provider Directory
+  category: Health
+  area: Solano County
+  groups:
+    - everyone
+  description: Solano County Behavioral Health's official provider directory, listing mental health clinics and substance use treatment facilities serving residents throughout the county.
+  what_they_offer: |
+    - Mental health provider listings
+    - Substance use treatment providers
+    - Access to services information
+    - Crisis resources
+    - Recovery programs
+  how_to_get_it: View the online directory or call the Access Line at 1-800-547-0495 (Monday-Friday, 8am-5pm) or email BHAccess@SolanoCounty.com.
+  phone: '1-800-547-0495'
+  timeframe: Mon-Fri 8am-5pm
+  link: https://www.solanocounty.com/depts/bh/qi/pd.asp
+  link_text: View Directory
+  verified_date: '2026-01-05'

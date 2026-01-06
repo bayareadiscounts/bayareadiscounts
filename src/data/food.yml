@@ -552,3 +552,43 @@
   link: https://1pvi.org/
   link_text: Learn More
   verified_date: "2025-12-25"
+
+# Farmers Market Directories
+
+- id: usda-farmers-market-directory
+  name: USDA Farmers Market Directory
+  category: Food
+  area: Nationwide
+  groups:
+    - everyone
+  description: The USDA's national directory of over 7,000 farmers markets across the United States, searchable by location to find fresh, locally-grown produce and farm products near you.
+  what_they_offer: |
+    - Searchable database of 7,000+ farmers markets
+    - Market locations, hours, and directions
+    - Products sold at each market
+    - Accepted payment methods (cash, credit, SNAP/EBT)
+    - Seasonal availability information
+  how_to_get_it: Visit the USDA Local Food Portal and search by your city, state, or ZIP code to find farmers markets near you. Filter by products, payment options, and more.
+  timeframe: Seasonal (most markets spring-fall)
+  link: https://www.usdalocalfoodportal.com/
+  link_text: Find Markets
+  verified_date: "2026-01-05"
+
+- id: cdfa-certified-farmers-markets
+  name: California Certified Farmers' Markets
+  category: Food
+  area: Statewide
+  groups:
+    - everyone
+  description: The official California Department of Food and Agriculture directory of 750+ certified farmers' markets statewide, where California farmers sell directly to consumers.
+  what_they_offer: |
+    - 750+ certified farmers' markets in California
+    - Direct-from-farm produce and products
+    - Markets listed by county
+    - Certification ensures products are California-grown
+    - Many markets accept CalFresh EBT and Market Match
+  how_to_get_it: View the CDFA directory to find certified farmers' markets in your county. Markets are certified to ensure products come directly from California farms.
+  timeframe: Year-round (varies by market)
+  link: https://www.cdfa.ca.gov/is/docs/CurrentMrktsCounty.pdf
+  link_text: View Directory (PDF)
+  verified_date: "2026-01-05"
