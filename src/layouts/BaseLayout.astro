@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import yaml from 'js-yaml';
+import fs from 'fs';
+import path from 'path';
 
 interface Props {
   title: string;
@@ -8,6 +11,17 @@ interface Props {
 
 const { title, description = 'Free and low-cost resources across the San Francisco Bay Area' } = Astro.props;
 const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator`;
+
+// Load site config for Tor address
+let onionAddress = '';
+try {
+  const configPath = path.join(process.cwd(), 'src/data/site-config.yml');
+  const configContent = fs.readFileSync(configPath, 'utf8');
+  const config = yaml.load(configContent) as { onion_address?: string };
+  onionAddress = config?.onion_address || '';
+} catch (e) {
+  // Config file not found or invalid
+}
 ---
 
 <!DOCTYPE html>
@@ -66,13 +80,27 @@ const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator
 
     <!-- Official Banner -->
     <div class="official-banner">
-      <div class="container-page flex items-center gap-2">
-        <svg class="w-4 h-4 text-primary-700 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-          <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM9 9a1 1 0 112 0v4a1 1 0 11-2 0V9zm1-3a1 1 0 100-2 1 1 0 000 2z"/>
-        </svg>
-        <span class="text-neutral-700 dark:text-neutral-300">
-          <strong class="font-semibold">Bay Navigator</strong> is a community-maintained resource by <a href="https://baytides.org" class="font-medium">Bay Tides</a>
-        </span>
+      <div class="container-page flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-primary-700 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM9 9a1 1 0 112 0v4a1 1 0 11-2 0V9zm1-3a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+          <span class="text-neutral-700 dark:text-neutral-300">
+            <strong class="font-semibold">Bay Navigator</strong> is a community-maintained resource by <a href="https://baytides.org" class="font-medium">Bay Tides</a>
+          </span>
+        </div>
+        {onionAddress && (
+          <a
+            href={`http://${onionAddress}`}
+            class="hidden sm:flex items-center gap-1.5 text-xs text-purple-900 dark:text-purple-300 hover:underline font-medium"
+            title="Access Bay Navigator via Tor for enhanced privacy"
+          >
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            .onion
+          </a>
+        )}
       </div>
     </div>
 
@@ -387,7 +415,7 @@ const fullTitle = title === 'Home' ? 'Bay Navigator' : `${title} | Bay Navigator
             &copy; {new Date().getFullYear()} Bay Tides. Open source under MIT license.
           </p>
           <p class="text-neutral-300 text-sm">
-            Made with care in the San Francisco Bay Area
+            Made with 💚 in the San Francisco Bay Area
           </p>
         </div>
       </div>
