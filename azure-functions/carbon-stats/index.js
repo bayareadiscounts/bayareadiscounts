@@ -36,10 +36,21 @@ const PROVIDER_STATS = {
     waterPositiveTarget: 2030,
     source: 'https://github.blog/2021-04-22-environmental-sustainability-github/'
   },
+  cloudflareAI: {
+    name: 'Cloudflare Workers AI',
+    model: 'Llama 3.1 8B',
+    use: 'Smart Search',
+    renewableEnergy: 100,
+    netZeroSince: 2025,
+    runsOnCloudflare: true,
+    source: 'https://www.cloudflare.com/impact/'
+  },
   azureOpenAI: {
     name: 'Azure OpenAI',
     model: 'GPT-4o-mini',
+    use: 'Simple Language (Accessibility)',
     carbonNeutral: true,
+    renewableEnergy: 100,
     runsOnAzure: true,
     source: 'https://azure.microsoft.com/en-us/products/ai-services/openai-service'
   }
@@ -47,17 +58,19 @@ const PROVIDER_STATS = {
 
 // Carbon factors (grams CO2e) - based on industry research
 const CARBON_FACTORS = {
-  pageViewGrams: 0.2,        // Average static site page view
-  aiQueryGrams: 1.5,         // Azure OpenAI API call estimate
-  ciMinuteGrams: 0.4,        // GitHub Actions minute (renewable-offset)
-  cdnRequestGrams: 0.0001,   // Cloudflare edge request
+  pageViewGrams: 0.2,          // Average static site page view
+  smartSearchQueryGrams: 0.5,  // Cloudflare Workers AI (Llama 3.1 8B) - smaller model on edge
+  simpleLangQueryGrams: 1.5,   // Azure OpenAI (GPT-4o-mini) - runs weekly for accessibility
+  ciMinuteGrams: 0.4,          // GitHub Actions minute (renewable-offset)
+  cdnRequestGrams: 0.0001,     // Cloudflare edge request
 };
 
 // Configuration
 const CONFIG = {
   cloudflare: {
     zoneId: process.env.CLOUDFLARE_ZONE_ID || '623dc74f7c22e80f38af3b02dcfc934d',
-    apiToken: process.env.CLOUDFLARE_API_TOKEN
+    apiToken: process.env.CLOUDFLARE_API_TOKEN,
+    accountId: process.env.CF_ACCOUNT_ID // For Workers AI analytics
   },
   github: {
     owner: 'baytides',
@@ -227,8 +240,76 @@ async function getGitHubStats(context) {
 }
 
 /**
- * Get Azure OpenAI usage via Azure Monitor metrics
- * Note: This requires the function to have managed identity with Monitor Reader role
+ * Get Cloudflare Workers AI usage via Cloudflare Analytics API
+ * Note: Cloudflare Workers AI analytics are available via the GraphQL API
+ */
+async function getCloudflareAIStats(context) {
+  if (!CONFIG.cloudflare.apiToken || !CONFIG.cloudflare.accountId) {
+    context.log.warn('Cloudflare API token or account ID not configured for AI stats');
+    return null;
+  }
+
+  try {
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    const dateFilter = thirtyDaysAgo.toISOString().split('T')[0];
+
+    // Query Workers Analytics for AI inference requests
+    const query = `{
+      viewer {
+        accounts(filter: {accountTag: "${CONFIG.cloudflare.accountId}"}) {
+          workersInvocationsAdaptive(
+            limit: 1000
+            filter: {
+              date_gt: "${dateFilter}"
+              scriptName: "smart-assistant"
+            }
+          ) {
+            sum {
+              requests
+              subrequests
+            }
+            dimensions {
+              date
+            }
+          }
+        }
+      }
+    }`;
+
+    const response = await fetch('https://api.cloudflare.com/client/v4/graphql', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${CONFIG.cloudflare.apiToken}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ query })
+    });
+
+    const data = await response.json();
+
+    if (data.errors) {
+      context.log.warn('Cloudflare AI analytics error:', data.errors);
+      return null;
+    }
+
+    const invocations = data.data?.viewer?.accounts?.[0]?.workersInvocationsAdaptive || [];
+    const totalCalls = invocations.reduce((sum, day) => sum + (day.sum?.requests || 0), 0);
+
+    return {
+      totalCalls,
+      daysIncluded: invocations.length,
+      source: 'cloudflare_workers_analytics'
+    };
+  } catch (error) {
+    context.log.error('Cloudflare AI stats fetch error:', error);
+    return null;
+  }
+}
+
+/**
+ * Get Azure OpenAI usage (for Simple Language accessibility feature)
+ * This runs weekly via GitHub Actions, so usage is relatively low
  */
 async function getAzureOpenAIStats(context) {
   try {
@@ -288,9 +369,10 @@ async function getCarbonStats(context) {
   const now = new Date();
 
   // Fetch real data from all sources in parallel
-  const [cloudflareStats, githubStats, azureStats] = await Promise.all([
+  const [cloudflareStats, githubStats, cloudflareAIStats, azureOpenAIStats] = await Promise.all([
     getCloudflareStats(context),
     getGitHubStats(context),
+    getCloudflareAIStats(context),
     getAzureOpenAIStats(context)
   ]);
 
@@ -298,7 +380,8 @@ async function getCarbonStats(context) {
   const usage = {
     cdnRequests: cloudflareStats?.requests ?? 50000,
     cdnBytesTransferred: cloudflareStats?.bytesTransferred ?? 0,
-    aiQueries: azureStats?.totalCalls ?? 500,
+    smartSearchQueries: cloudflareAIStats?.totalCalls ?? 500,     // Cloudflare Workers AI
+    simpleLangQueries: azureOpenAIStats?.totalCalls ?? 10,        // Azure OpenAI (weekly)
     ciRuns: githubStats?.totalRuns ?? 30,
     ciMinutes: githubStats?.estimatedMinutes ?? 120
   };
@@ -306,14 +389,16 @@ async function getCarbonStats(context) {
   // Track data sources
   const dataSources = {
     cloudflare: cloudflareStats ? 'live' : 'estimated',
-    github: githubStats ? 'live' : 'estimated',
-    azure: azureStats ? 'live' : 'estimated'
+    cloudflareAI: cloudflareAIStats ? 'live' : 'estimated',
+    azureOpenAI: azureOpenAIStats ? 'live' : 'estimated',
+    github: githubStats ? 'live' : 'estimated'
   };
 
   // Calculate emissions (all offset by renewable energy commitments)
   const grossEmissions = {
     cdn: usage.cdnRequests * CARBON_FACTORS.cdnRequestGrams,
-    ai: usage.aiQueries * CARBON_FACTORS.aiQueryGrams,
+    smartSearch: usage.smartSearchQueries * CARBON_FACTORS.smartSearchQueryGrams,
+    simpleLang: usage.simpleLangQueries * CARBON_FACTORS.simpleLangQueryGrams,
     ci: usage.ciMinutes * CARBON_FACTORS.ciMinuteGrams
   };
 
@@ -342,7 +427,9 @@ async function getCarbonStats(context) {
       cdnRequests: usage.cdnRequests,
       cdnBytesTransferred: usage.cdnBytesTransferred,
       cdnCacheHitRate: cloudflareStats?.cacheHitRate ?? null,
-      aiQueries: usage.aiQueries,
+      aiQueries: usage.smartSearchQueries + usage.simpleLangQueries, // Combined for dashboard
+      smartSearchQueries: usage.smartSearchQueries,   // Cloudflare Workers AI
+      simpleLangQueries: usage.simpleLangQueries,     // Azure OpenAI
       ciRuns: usage.ciRuns,
       ciMinutes: usage.ciMinutes,
       ciWorkflows: githubStats?.workflowBreakdown ?? null
@@ -354,9 +441,15 @@ async function getCarbonStats(context) {
         grams: grossEmissions.cdn.toFixed(1),
         percent: totalGrossGrams > 0 ? ((grossEmissions.cdn / totalGrossGrams) * 100).toFixed(1) : '0'
       },
-      ai: {
-        grams: grossEmissions.ai.toFixed(1),
-        percent: totalGrossGrams > 0 ? ((grossEmissions.ai / totalGrossGrams) * 100).toFixed(1) : '0'
+      smartSearch: {
+        grams: grossEmissions.smartSearch.toFixed(1),
+        percent: totalGrossGrams > 0 ? ((grossEmissions.smartSearch / totalGrossGrams) * 100).toFixed(1) : '0',
+        provider: 'Cloudflare Workers AI (Llama 3.1 8B)'
+      },
+      simpleLang: {
+        grams: grossEmissions.simpleLang.toFixed(1),
+        percent: totalGrossGrams > 0 ? ((grossEmissions.simpleLang / totalGrossGrams) * 100).toFixed(1) : '0',
+        provider: 'Azure OpenAI (GPT-4o-mini)'
       },
       ci: {
         grams: grossEmissions.ci.toFixed(1),
@@ -384,8 +477,9 @@ async function getCarbonStats(context) {
       'All infrastructure providers use 100% renewable energy',
       'Azure has been carbon neutral since 2012',
       'GitHub Actions runners are powered by renewable energy',
-      'Cloudflare operates a carbon-neutral network',
-      'Azure OpenAI runs on carbon-neutral Azure infrastructure',
+      'Cloudflare operates a carbon-neutral network (net-zero since 2025)',
+      'Smart Search uses Cloudflare Workers AI (Llama 3.1 8B) on edge',
+      'Simple Language (accessibility) uses Azure OpenAI (GPT-4o-mini) weekly',
       'Usage data is refreshed hourly from live APIs'
     ]
   };

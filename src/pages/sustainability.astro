@@ -5,7 +5,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 // Calculate approximate stats
 const hostingProvider = 'Microsoft Azure';
 const cdnProvider = 'Cloudflare';
-const aiProvider = 'Azure OpenAI';
+const aiProvider = 'Cloudflare Workers AI';
 
 // Azure sustainability stats (from Microsoft's published data)
 const azureStats = {
@@ -47,7 +47,7 @@ const githubStats = {
         Environmental Sustainability
       </h1>
       <p class="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-        As an environmental nonprofit, we're committed to practicing what we preach.
+        As an environmental nonprofit, Bay Tides is committed to practicing what we preach.
         Here's how Bay Navigator minimizes its digital carbon footprint.
       </p>
     </div>
@@ -170,9 +170,10 @@ const githubStats = {
         <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-7 h-7" viewBox="0 0 64 64">
-                <path fill="#F6821F" d="M45.8 43.9l1.4-4.6c.4-1.2.2-2.3-.4-3.1-.6-.8-1.6-1.2-2.8-1.3l-25-.3c-.2 0-.3-.1-.3-.2-.1-.1-.1-.2 0-.3.1-.2.2-.3.4-.3l25.2-.3c2.4-.1 4.9-2 5.8-4.3l1.2-3c.1-.2.1-.4.1-.5 0-.2-.1-.4-.2-.6-3.2-4-8.1-6.6-13.6-6.6-8.3 0-15.3 5.5-17.5 13.1-1.5-1.1-3.4-1.7-5.5-1.7-4.1 0-7.5 2.8-8.4 6.6C2.4 38.5 0 42.5 0 47c0 .4 0 .9.1 1.3.1.4.4.7.8.7h42.9c.5 0 .9-.3 1-.8l.5-2.3c.3-1.1.2-2.1-.3-2.8-.3-.4-.7-.8-1.2-1l2-1.8z"/>
-                <path fill="#FAAD3F" d="M52.4 27.3c-.4 0-.7 0-1.1.1-.2 0-.4.2-.4.4l-.8 4.4c-.4 1.2-.2 2.3.4 3.1.6.8 1.6 1.2 2.8 1.3l5.3.1c.2 0 .3.1.3.2.1.1.1.2 0 .3-.1.2-.2.3-.4.3l-5.5.1c-2.4.1-4.9 2-5.8 4.3l-.4 1.1c-.1.2 0 .4.2.5.6.2 1.2.3 1.9.3 6.3 0 11.5-5.1 11.5-11.5 0-2.7-2.2-4.9-4.9-4.9l-3.1-.1z"/>
+              <svg class="w-7 h-7" viewBox="0 0 32 32">
+                <path d="M8.16 23h21.177v-5.86l-4.023-2.307-.694-.3-16.46.113z" fill="#fff"/>
+                <path d="M22.012 22.222c.197-.675.122-1.294-.206-1.754-.3-.422-.807-.666-1.416-.694l-11.545-.15c-.075 0-.14-.038-.178-.094s-.047-.13-.028-.206c.038-.113.15-.197.272-.206l11.648-.15c1.38-.066 2.88-1.182 3.404-2.55l.666-1.735a.38.38 0 0 0 .02-.225c-.75-3.395-3.78-5.927-7.4-5.927-3.34 0-6.17 2.157-7.184 5.15-.657-.488-1.5-.75-2.392-.666-1.604.16-2.9 1.444-3.048 3.048a3.58 3.58 0 0 0 .084 1.191A4.84 4.84 0 0 0 0 22.1c0 .234.02.47.047.703.02.113.113.197.225.197H21.58a.29.29 0 0 0 .272-.206l.16-.572z" fill="#f38020"/>
+                <path d="M25.688 14.803l-.32.01c-.075 0-.14.056-.17.13l-.45 1.566c-.197.675-.122 1.294.206 1.754.3.422.807.666 1.416.694l2.457.15c.075 0 .14.038.178.094s.047.14.028.206c-.038.113-.15.197-.272.206l-2.56.15c-1.388.066-2.88 1.182-3.404 2.55l-.188.478c-.038.094.028.188.13.188h8.797a.23.23 0 0 0 .225-.169A6.41 6.41 0 0 0 32 21.106a6.32 6.32 0 0 0-6.312-6.302" fill="#faae40"/>
               </svg>
             </div>
             <div class="flex-1">
@@ -225,18 +226,47 @@ const githubStats = {
           </div>
         </div>
 
+        <!-- Cloudflare Workers AI -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-7 h-7" viewBox="0 0 32 32">
+                <path d="M8.16 23h21.177v-5.86l-4.023-2.307-.694-.3-16.46.113z" fill="#fff"/>
+                <path d="M22.012 22.222c.197-.675.122-1.294-.206-1.754-.3-.422-.807-.666-1.416-.694l-11.545-.15c-.075 0-.14-.038-.178-.094s-.047-.13-.028-.206c.038-.113.15-.197.272-.206l11.648-.15c1.38-.066 2.88-1.182 3.404-2.55l.666-1.735a.38.38 0 0 0 .02-.225c-.75-3.395-3.78-5.927-7.4-5.927-3.34 0-6.17 2.157-7.184 5.15-.657-.488-1.5-.75-2.392-.666-1.604.16-2.9 1.444-3.048 3.048a3.58 3.58 0 0 0 .084 1.191A4.84 4.84 0 0 0 0 22.1c0 .234.02.47.047.703.02.113.113.197.225.197H21.58a.29.29 0 0 0 .272-.206l.16-.572z" fill="#f38020"/>
+                <path d="M25.688 14.803l-.32.01c-.075 0-.14.056-.17.13l-.45 1.566c-.197.675-.122 1.294.206 1.754.3.422.807.666 1.416.694l2.457.15c.075 0 .14.038.178.094s.047.14.028.206c-.038.113-.15.197-.272.206l-2.56.15c-1.388.066-2.88 1.182-3.404 2.55l-.188.478c-.038.094.028.188.13.188h8.797a.23.23 0 0 0 .225-.169A6.41 6.41 0 0 0 32 21.106a6.32 6.32 0 0 0-6.312-6.302" fill="#faae40"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Cloudflare Workers AI (Smart Search)</h3>
+              <p class="text-neutral-600 dark:text-neutral-300 text-sm mb-3">
+                Our Smart Search uses Cloudflare Workers AI with the Llama 3.1 8B model, running on Cloudflare's carbon-neutral edge network with 100% renewable energy.
+              </p>
+              <div class="grid grid-cols-2 gap-3 text-sm">
+                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
+                  <div class="font-bold text-green-900 dark:text-green-100">Net Zero</div>
+                  <div class="text-xs text-neutral-600 dark:text-neutral-300">Since 2025</div>
+                </div>
+                <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
+                  <div class="font-bold text-green-900 dark:text-green-100">Llama 3.1 8B</div>
+                  <div class="text-xs text-neutral-600 dark:text-neutral-300">Efficient open model</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Azure OpenAI -->
         <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
           <div class="flex items-start gap-4">
             <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
             <div class="flex-1">
-              <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Azure OpenAI (Smart Search)</h3>
+              <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">Azure OpenAI (Accessibility)</h3>
               <p class="text-neutral-600 dark:text-neutral-300 text-sm mb-3">
-                Our Smart Search uses Azure OpenAI, running on Microsoft's carbon-neutral infrastructure with the same sustainability commitments as Azure.
+                Our Simple Language accessibility feature uses Azure OpenAI (GPT-4o-mini) weekly to simplify complex words for users with lower literacy, running on Microsoft's carbon-neutral infrastructure.
               </p>
               <div class="grid grid-cols-2 gap-3 text-sm">
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
@@ -244,8 +274,8 @@ const githubStats = {
                   <div class="text-xs text-neutral-600 dark:text-neutral-300">Azure infrastructure</div>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/20 rounded-lg p-2 text-center">
-                  <div class="font-bold text-green-900 dark:text-green-100">GPT-4o-mini</div>
-                  <div class="text-xs text-neutral-600 dark:text-neutral-300">Efficient model</div>
+                  <div class="font-bold text-green-900 dark:text-green-100">Weekly</div>
+                  <div class="text-xs text-neutral-600 dark:text-neutral-300">Minimal usage</div>
                 </div>
               </div>
             </div>
@@ -513,13 +543,17 @@ const githubStats = {
         if (statRenewable) statRenewable.textContent = `${data.summary.renewableEnergyPercent}%`;
         if (statRating) statRating.textContent = data.summary.greenRating;
 
-        // Update breakdown
+        // Update breakdown - now includes Smart Search and Simple Language AI separately
         const breakdownCdn = document.getElementById('breakdown-cdn');
         const breakdownAi = document.getElementById('breakdown-ai');
         const breakdownCi = document.getElementById('breakdown-ci');
 
         if (breakdownCdn) breakdownCdn.textContent = `CDN: ${data.emissionsBySource.cdn.grams}g`;
-        if (breakdownAi) breakdownAi.textContent = `Smart Search: ${data.emissionsBySource.ai.grams}g`;
+        // Combine both AI services for the breakdown display
+        const smartSearchGrams = parseFloat(data.emissionsBySource.smartSearch?.grams || data.emissionsBySource.ai?.grams || '0');
+        const simpleLangGrams = parseFloat(data.emissionsBySource.simpleLang?.grams || '0');
+        const totalAiGrams = (smartSearchGrams + simpleLangGrams).toFixed(1);
+        if (breakdownAi) breakdownAi.textContent = `AI: ${totalAiGrams}g`;
         if (breakdownCi) breakdownCi.textContent = `CI/CD: ${data.emissionsBySource.ci.grams}g`;
 
         // Update data source indicators
