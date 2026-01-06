@@ -35,7 +35,7 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
           <input
             type="text"
             id="location-search"
-            placeholder="Search city or ZIP code..."
+            placeholder="Search address, city, or ZIP..."
             class="w-48 sm:w-64 px-3 py-2 bg-transparent text-sm text-neutral-700 dark:text-neutral-200 placeholder-neutral-400 focus:outline-none"
             autocomplete="off"
           />
@@ -842,7 +842,7 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
     const suggestionsEl = document.getElementById('search-suggestions');
 
     interface SearchResult {
-      type: 'city' | 'zip';
+      type: 'city' | 'zip' | 'address';
       name: string;
       displayName: string;
       lat: number;
@@ -850,8 +850,16 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
       county?: string;
     }
 
-    // Search for matching cities and ZIP codes
-    function searchLocations(query: string): SearchResult[] {
+    // Bay Area bounding box for Nominatim queries
+    const BAY_AREA_BOUNDS = {
+      minLat: 36.8,
+      maxLat: 38.9,
+      minLon: -123.5,
+      maxLon: -121.0
+    };
+
+    // Search for matching cities and ZIP codes (local lookup)
+    function searchLocationsLocal(query: string): SearchResult[] {
       const results: SearchResult[] = [];
       const q = query.toLowerCase().trim();
 
@@ -899,14 +907,129 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
       }).slice(0, 8); // Limit to 8 results
     }
 
+    // Check if query looks like a street address (has number at start or contains street terms)
+    function looksLikeAddress(query: string): boolean {
+      const q = query.trim().toLowerCase();
+      // Starts with a number (like "123 Main St")
+      if (/^\d+\s/.test(q)) return true;
+      // Contains common street terms
+      const streetTerms = ['street', 'st', 'avenue', 'ave', 'road', 'rd', 'boulevard', 'blvd', 'drive', 'dr', 'lane', 'ln', 'way', 'court', 'ct', 'place', 'pl', 'circle', 'cir', 'highway', 'hwy'];
+      return streetTerms.some(term => q.includes(` ${term}`) || q.includes(` ${term},`) || q.endsWith(` ${term}`));
+    }
+
+    // Geocode address using Nominatim API
+    async function geocodeAddress(query: string): Promise<SearchResult[]> {
+      const results: SearchResult[] = [];
+
+      try {
+        // Add "Bay Area, CA" to help narrow results
+        const searchQuery = query.includes('CA') || query.includes('California')
+          ? query
+          : `${query}, Bay Area, CA`;
+
+        const url = new URL('https://nominatim.openstreetmap.org/search');
+        url.searchParams.set('format', 'json');
+        url.searchParams.set('q', searchQuery);
+        url.searchParams.set('countrycodes', 'us');
+        url.searchParams.set('limit', '5');
+        url.searchParams.set('addressdetails', '1');
+        // Restrict to Bay Area bounding box
+        url.searchParams.set('viewbox', `${BAY_AREA_BOUNDS.minLon},${BAY_AREA_BOUNDS.minLat},${BAY_AREA_BOUNDS.maxLon},${BAY_AREA_BOUNDS.maxLat}`);
+        url.searchParams.set('bounded', '1');
+
+        const response = await fetch(url.toString(), {
+          headers: {
+            'User-Agent': 'BayNavigator/1.0 (https://baynavigator.org)'
+          }
+        });
+
+        if (!response.ok) return results;
+
+        const data = await response.json();
+
+        for (const item of data) {
+          const lat = parseFloat(item.lat);
+          const lon = parseFloat(item.lon);
+
+          // Validate within Bay Area bounds
+          if (lat >= BAY_AREA_BOUNDS.minLat && lat <= BAY_AREA_BOUNDS.maxLat &&
+              lon >= BAY_AREA_BOUNDS.minLon && lon <= BAY_AREA_BOUNDS.maxLon) {
+            results.push({
+              type: 'address',
+              name: item.display_name.split(',')[0], // First part of address
+              displayName: item.display_name,
+              lat: lat,
+              lng: lon
+            });
+          }
+        }
+      } catch (error) {
+        console.error('Geocoding error:', error);
+      }
+
+      return results;
+    }
+
+    // Combined search function
+    async function searchLocations(query: string): Promise<SearchResult[]> {
+      const q = query.trim();
+      if (!q) return [];
+
+      // First, get local results (cities and ZIP codes)
+      const localResults = searchLocationsLocal(q);
+
+      // If query looks like an address and local results are sparse, try geocoding
+      if (looksLikeAddress(q) || (localResults.length === 0 && q.length >= 5)) {
+        const addressResults = await geocodeAddress(q);
+        // Combine results: local first, then addresses
+        return [...localResults.slice(0, 3), ...addressResults].slice(0, 8);
+      }
+
+      return localResults;
+    }
+
     // Render search suggestions
-    function renderSuggestions(results: SearchResult[]) {
+    function renderSuggestions(results: SearchResult[], isLoading = false) {
       if (!suggestionsEl) return;
+
+      if (isLoading) {
+        suggestionsEl.innerHTML = `
+          <div class="px-4 py-3 text-sm text-neutral-500 dark:text-neutral-400 flex items-center gap-2">
+            <svg class="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke-width="4" class="opacity-25"></circle>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 12a8 8 0 018-8" class="opacity-75"></path>
+            </svg>
+            Searching...
+          </div>
+        `;
+        suggestionsEl.classList.remove('hidden');
+        return;
+      }
 
       if (results.length === 0) {
         suggestionsEl.classList.add('hidden');
         return;
       }
+
+      // Get icon for result type
+      const getIcon = (type: string) => {
+        switch (type) {
+          case 'city':
+            return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>';
+          case 'zip':
+            return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>';
+          case 'address':
+            return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>';
+          default:
+            return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>';
+        }
+      };
+
+      // Truncate long display names for addresses
+      const truncateDisplayName = (name: string, maxLen = 60) => {
+        if (name.length <= maxLen) return name;
+        return name.substring(0, maxLen) + '...';
+      };
 
       suggestionsEl.innerHTML = results.map((result, index) => `
         <button
@@ -915,14 +1038,12 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
           data-lat="${result.lat}"
           data-lng="${result.lng}"
           data-name="${result.name}"
+          data-type="${result.type}"
         >
           <svg class="w-4 h-4 text-neutral-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            ${result.type === 'city'
-              ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>'
-              : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>'
-            }
+            ${getIcon(result.type)}
           </svg>
-          <span class="text-neutral-700 dark:text-neutral-200">${result.displayName}</span>
+          <span class="text-neutral-700 dark:text-neutral-200 truncate">${truncateDisplayName(result.displayName)}</span>
         </button>
       `).join('');
 
@@ -984,9 +1105,11 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
 
     // Handle search input
     let searchDebounce: ReturnType<typeof setTimeout> | null = null;
+    let currentSearchQuery = '';
 
     searchInput?.addEventListener('input', (e) => {
       const query = (e.target as HTMLInputElement).value;
+      currentSearchQuery = query;
 
       // Show/hide clear button
       if (clearSearch) {
@@ -999,22 +1122,35 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
 
       // Debounce search
       if (searchDebounce) clearTimeout(searchDebounce);
-      searchDebounce = setTimeout(() => {
-        const results = searchLocations(query);
-        renderSuggestions(results);
-      }, 150);
+
+      // Show loading state for address-like queries
+      if (query.trim().length >= 3 && looksLikeAddress(query)) {
+        renderSuggestions([], true);
+      }
+
+      searchDebounce = setTimeout(async () => {
+        if (query !== currentSearchQuery) return; // Query changed, skip
+        const results = await searchLocations(query);
+        if (query === currentSearchQuery) { // Still the current query
+          renderSuggestions(results);
+        }
+      }, looksLikeAddress(query) ? 400 : 150); // Longer debounce for address queries
     });
 
     // Handle keyboard navigation
-    searchInput?.addEventListener('keydown', (e) => {
+    searchInput?.addEventListener('keydown', async (e) => {
       if (e.key === 'Escape') {
         suggestionsEl?.classList.add('hidden');
         searchInput.blur();
       } else if (e.key === 'Enter') {
+        e.preventDefault();
         const query = searchInput.value.trim();
-        const results = searchLocations(query);
+        renderSuggestions([], true); // Show loading
+        const results = await searchLocations(query);
         if (results.length > 0) {
           flyToLocation(results[0].lat, results[0].lng, results[0].name);
+        } else {
+          renderSuggestions([]); // Hide if no results
         }
       }
     });
@@ -1046,11 +1182,18 @@ const pmtilesUrl = import.meta.env.PUBLIC_PMTILES_URL || 'https://baytidesstorag
     });
 
     // Show suggestions when focusing on search input with existing value
-    searchInput?.addEventListener('focus', () => {
+    searchInput?.addEventListener('focus', async () => {
       const query = searchInput.value;
       if (query) {
-        const results = searchLocations(query);
-        renderSuggestions(results);
+        // For quick focus, use local results first
+        const localResults = searchLocationsLocal(query);
+        if (localResults.length > 0) {
+          renderSuggestions(localResults);
+        } else if (query.length >= 3) {
+          // Try full search with geocoding
+          const results = await searchLocations(query);
+          renderSuggestions(results);
+        }
       }
     });
 
