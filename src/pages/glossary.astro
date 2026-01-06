@@ -77,6 +77,11 @@ const glossaryData = {
   'Technology': {
     'WiFi': 'Wireless Fidelity (Wireless Internet) - Technology for wireless local area networking.',
     'ACP': 'Affordable Connectivity Program - Federal program providing internet service discounts.',
+    'FCC': 'Federal Communications Commission - Federal agency regulating communications including broadband access.',
+  },
+  'Veterans Services': {
+    'DAV': 'Disabled American Veterans - Nonprofit organization providing services to disabled veterans.',
+    'GI Bill': 'Servicemen\'s Readjustment Act - Federal education benefits for veterans.',
   },
 };
 
@@ -181,14 +186,14 @@ const categories = Object.keys(glossaryData);
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
       <p class="text-neutral-600 dark:text-neutral-300">No terms found matching your search.</p>
-      <button id="clear-search" class="mt-4 text-primary-600 dark:text-primary-400 hover:underline">
+      <button id="clear-search" class="mt-4 text-primary-700 dark:text-primary-300 hover:underline">
         Clear search
       </button>
     </div>
 
     <!-- Back to top -->
     <div class="mt-12 text-center">
-      <a href="#" class="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:underline">
+      <a href="#" class="inline-flex items-center gap-2 text-primary-700 dark:text-primary-300 hover:underline">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
@@ -201,7 +206,7 @@ const categories = Object.keys(glossaryData);
       <h2 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Related Resources</h2>
       <ul class="space-y-2 text-sm">
         <li>
-          <a href="/directory" class="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2">
+          <a href="/directory" class="text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
             </svg>
@@ -209,7 +214,7 @@ const categories = Object.keys(glossaryData);
           </a>
         </li>
         <li>
-          <a href="/accessibility" class="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2">
+          <a href="/accessibility" class="text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -218,7 +223,7 @@ const categories = Object.keys(glossaryData);
           </a>
         </li>
         <li>
-          <a href="https://www.usa.gov/benefit-finder" target="_blank" rel="noopener" class="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2">
+          <a href="https://www.usa.gov/benefit-finder" target="_blank" rel="noopener" class="text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
