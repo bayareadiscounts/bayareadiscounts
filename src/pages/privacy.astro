@@ -229,7 +229,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 Bay Navigator includes an optional AI-powered search feature that helps you find programs using natural language queries (e.g., "I'm a senior who needs help with utility bills"). Here's how it works:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
-                <li><strong>When AI is used:</strong> Complex or natural language queries are sent to our Azure Function for processing. Simple keyword searches (like "food" or "healthcare") use local fuzzy search and never contact any server.</li>
+                <li><strong>When AI is used:</strong> Complex or natural language queries are sent to Cloudflare for processing. Simple keyword searches (like "food" or "healthcare") use local fuzzy search and never contact any server.</li>
                 <li><strong>Offline mode:</strong> When you're offline, AI search is automatically disabled. All searches use local fuzzy matching instead—no failed requests, no errors.</li>
                 <li><strong>No storage:</strong> We do not store your search queries on our servers. Queries are processed and immediately discarded.</li>
                 <li><strong>No identifiers:</strong> Searches are not linked to any personal identifier, account, or session.</li>
@@ -492,7 +492,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                   </svg>
                 </div>
-                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Mobile Apps</h2>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Mobile and Desktop Apps</h2>
               </div>
               <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -500,7 +500,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             </summary>
             <div class="px-6 pb-6">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                Our mobile apps (iOS and Android) follow the same privacy principles:
+                Our mobile and desktop applications (iOS, Android, Mac, Windows, Linux, and Vision OS) follow the same privacy principles:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 list-disc pl-5">
                 <li>No account required</li>
@@ -553,6 +553,39 @@ import Breadcrumb from '../components/Breadcrumb.astro';
               </p>
               <p class="text-neutral-600 dark:text-neutral-300">
                 We implement reasonable security measures to protect against unauthorized access. Our website uses HTTPS encryption for all connections. However, no method of transmission over the Internet is 100% secure.
+              </p>
+            </div>
+          </details>
+
+                    <details class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
+            <summary class="flex items-center justify-between p-6 cursor-pointer">
+              <div class="flex items-center gap-3">
+                <div class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Legal Process Guidelines</h2>
+              </div>
+              <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+                Bay Tides complies with applicable law and with valid, court-issued legal process, including subpoenas, warrants, and court orders, when such requests are properly served and legally binding. If we receive a request related to Bay Navigator, we review it for validity, scope, and whether it requires any action by Bay Tides.
+              </p>
+              <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+                <strong>No user accounts, no user profiles, no personal data:</strong> Bay Navigator is intentionally designed so that we do not collect or store personally identifiable information about users. We do not require accounts, and we do not maintain records that connect a specific person to specific searches, favorites, or activity. Because of this design, Bay Tides generally has no user-specific personal information to provide in response to legal requests.
+              </p>
+              <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+                <strong>What we can provide (if required):</strong> In some situations, we may be required to confirm basic information about the service itself, such as how Bay Navigator works, the date ranges we operate, or the fact that we do not maintain user accounts or store user queries. We do not create, retain, or reconstruct personal data for the purpose of responding to requests.
+              </p>
+              <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+                <strong>Infrastructure logs and third parties:</strong> Like most websites, Bay Navigator is delivered through third-party infrastructure providers that may generate standard technical logs for security and reliability (for example, IP addresses, user agent strings, timestamps, and request paths). These logs are typically controlled and retained by those providers under their own policies, and Bay Tides may not have access to them beyond what is necessary to operate and secure the service. Any legal requests directed at those providers are handled by them.
+              </p>
+              <p class="text-neutral-600 dark:text-neutral-300">
+                <strong>User notice:</strong> If we are legally permitted to do so, we may attempt to provide notice of a request. In many cases, legal restrictions may prevent notice, and because Bay Navigator does not use accounts or collect contact information, we may not have a practical way to notify affected users.
               </p>
             </div>
           </details>
