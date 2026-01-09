@@ -11,6 +11,9 @@ import 'providers/programs_provider.dart';
 import 'providers/theme_provider.dart';
 import 'providers/settings_provider.dart';
 import 'providers/user_prefs_provider.dart';
+import 'providers/safety_provider.dart';
+import 'widgets/quick_exit_detector.dart';
+import 'widgets/safety_widgets.dart';
 import 'screens/for_you_screen.dart';
 import 'screens/directory_screen.dart';
 import 'screens/favorites_screen.dart';
@@ -69,6 +72,7 @@ class BayAreaDiscountsApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ThemeProvider()..initialize()),
         ChangeNotifierProvider(create: (_) => SettingsProvider()..initialize()),
         ChangeNotifierProvider(create: (_) => UserPrefsProvider()..initialize()),
+        ChangeNotifierProvider(create: (_) => SafetyProvider()..initialize()),
       ],
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, child) {
@@ -526,6 +530,17 @@ class MainNavigationState extends State<MainNavigation> {
         ],
       );
     }
+
+    // Add incognito mode indicator
+    scaffold = Column(
+      children: [
+        const IncognitoIndicator(),
+        Expanded(child: scaffold),
+      ],
+    );
+
+    // Wrap with quick exit detector for shake/triple-tap
+    scaffold = QuickExitDetector(child: scaffold);
 
     // Wrap with keyboard shortcuts
     scaffold = Shortcuts(

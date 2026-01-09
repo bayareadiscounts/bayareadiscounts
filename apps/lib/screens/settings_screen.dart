@@ -10,7 +10,9 @@ import '../providers/programs_provider.dart';
 import '../providers/theme_provider.dart';
 import '../providers/settings_provider.dart';
 import '../providers/user_prefs_provider.dart';
+import '../providers/safety_provider.dart';
 import '../services/privacy_service.dart';
+import '../services/safety_service.dart';
 import '../config/theme.dart';
 import 'profiles_screen.dart';
 
@@ -670,10 +672,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ],
             ),
 
-            // Private Calling Section
+            // Call Relay Section
             _buildSection(
               context,
-              title: 'Private Calling',
+              title: 'Call Relay',
               children: [
                 Consumer<SettingsProvider>(
                   builder: (context, settings, child) {
@@ -683,7 +685,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         Padding(
                           padding: const EdgeInsets.all(16),
                           child: Text(
-                            'Choose how to make calls from the app. Using a VoIP app can help keep calls off your carrier logs.',
+                            'Choose how to make calls from the app. VoIP apps may keep calls off your carrier logs.',
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
@@ -776,6 +778,166 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   ),
                                 ),
                               );
+                            }
+                          },
+                        ),
+                      ],
+                    );
+                  },
+                ),
+              ],
+            ),
+
+            // Safety Features Section (for vulnerable users)
+            _buildSection(
+              context,
+              title: 'Safety Features',
+              children: [
+                Consumer<SafetyProvider>(
+                  builder: (context, safety, child) {
+                    return Column(
+                      children: [
+                        // Info text
+                        Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Text(
+                            'Privacy and safety features for users in sensitive situations. All safety settings stay on your device.',
+                            style: theme.textTheme.bodySmall,
+                          ),
+                        ),
+                        _buildDivider(context),
+
+                        // Quick Exit toggle
+                        _buildSwitchRow(
+                          context,
+                          label: 'Quick Exit',
+                          subtitle: 'Shake device or triple-tap to instantly leave app',
+                          value: safety.quickExitEnabled,
+                          onChanged: (value) async {
+                            HapticFeedback.lightImpact();
+                            await safety.setQuickExitEnabled(value);
+                          },
+                        ),
+
+                        // Quick Exit destination
+                        if (safety.quickExitEnabled) ...[
+                          _buildDivider(context),
+                          _buildButton(
+                            context,
+                            icon: '🚪',
+                            label: 'Exit Destination',
+                            value: _getQuickExitDestinationName(safety.quickExitUrl),
+                            onTap: () {
+                              HapticFeedback.lightImpact();
+                              _showQuickExitDestinationDialog(context);
+                            },
+                          ),
+                        ],
+
+                        _buildDivider(context),
+
+                        // Incognito Mode toggle
+                        _buildSwitchRow(
+                          context,
+                          label: 'Incognito Mode',
+                          subtitle: 'Don\'t save search or browsing history',
+                          value: safety.incognitoModeEnabled,
+                          onChanged: (value) async {
+                            HapticFeedback.lightImpact();
+                            await safety.setIncognitoModeEnabled(value);
+                            if (value && mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Incognito mode enabled. History will not be saved.'),
+                                ),
+                              );
+                            }
+                          },
+                        ),
+
+                        _buildDivider(context),
+
+                        // Safety Tips toggle
+                        _buildSwitchRow(
+                          context,
+                          label: 'Safety Tips',
+                          subtitle: 'Show safety tips for sensitive programs',
+                          value: safety.showSafetyTips,
+                          onChanged: (value) async {
+                            HapticFeedback.lightImpact();
+                            await safety.setShowSafetyTips(value);
+                          },
+                        ),
+
+                        _buildDivider(context),
+
+                        // Network Privacy Warnings toggle
+                        _buildSwitchRow(
+                          context,
+                          label: 'Network Warnings',
+                          subtitle: 'Warn when on public WiFi or monitored networks',
+                          value: safety.networkWarningsEnabled,
+                          onChanged: (value) async {
+                            HapticFeedback.lightImpact();
+                            await safety.setNetworkWarningsEnabled(value);
+                          },
+                        ),
+
+                        _buildDivider(context),
+
+                        // Disguised App Icon
+                        _buildButton(
+                          context,
+                          icon: '🎭',
+                          label: 'Disguise App',
+                          value: safety.disguisedModeEnabled
+                              ? safety.currentDisguisedIcon?.name ?? 'Enabled'
+                              : 'Off',
+                          onTap: () {
+                            HapticFeedback.lightImpact();
+                            _showDisguisedIconDialog(context);
+                          },
+                        ),
+
+                        _buildDivider(context),
+
+                        // Clear History button
+                        _buildButton(
+                          context,
+                          label: 'Clear All History',
+                          isDanger: true,
+                          onTap: () async {
+                            HapticFeedback.lightImpact();
+                            final confirmed = await showDialog<bool>(
+                              context: context,
+                              builder: (dialogContext) => AlertDialog(
+                                title: const Text('Clear All History'),
+                                content: const Text(
+                                  'This will delete all search history and recent programs. This cannot be undone.',
+                                ),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(dialogContext, false),
+                                    child: const Text('Cancel'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(dialogContext, true),
+                                    style: TextButton.styleFrom(
+                                      foregroundColor: AppColors.danger,
+                                    ),
+                                    child: const Text('Clear'),
+                                  ),
+                                ],
+                              ),
+                            );
+
+                            if (confirmed == true && context.mounted) {
+                              await safety.clearAllHistory();
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(content: Text('History cleared')),
+                                );
+                              }
                             }
                           },
                         ),
@@ -1361,6 +1523,195 @@ class _SettingsScreenState extends State<SettingsScreen> {
               );
             },
           ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext),
+            child: const Text('Cancel'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ============================================
+  // SAFETY FEATURE DIALOGS
+  // ============================================
+
+  String _getQuickExitDestinationName(String url) {
+    for (final dest in SafetyService.defaultDestinations) {
+      if (dest.url == url) {
+        return dest.name;
+      }
+    }
+    return 'Custom';
+  }
+
+  void _showQuickExitDestinationDialog(BuildContext context) {
+    final safety = context.read<SafetyProvider>();
+    final theme = Theme.of(context);
+
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Quick Exit Destination'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Choose where to go when quick exit is triggered:',
+              style: theme.textTheme.bodySmall,
+            ),
+            const SizedBox(height: 16),
+            ...SafetyService.defaultDestinations.map((dest) {
+              final isSelected = safety.quickExitUrl == dest.url;
+              return ListTile(
+                leading: Icon(
+                  isSelected
+                      ? Icons.radio_button_checked
+                      : Icons.radio_button_unchecked,
+                  color: isSelected ? AppColors.primary : null,
+                ),
+                title: Text(dest.name),
+                subtitle: Text(
+                  dest.description,
+                  style: theme.textTheme.bodySmall,
+                ),
+                onTap: () async {
+                  HapticFeedback.lightImpact();
+                  await safety.setQuickExitUrl(dest.url);
+                  if (dialogContext.mounted) {
+                    Navigator.pop(dialogContext);
+                  }
+                },
+              );
+            }),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext),
+            child: const Text('Cancel'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showDisguisedIconDialog(BuildContext context) {
+    final safety = context.read<SafetyProvider>();
+    final theme = Theme.of(context);
+
+    showDialog(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Disguise App'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Change the app icon and name to make it look like a different app. The app will appear as your chosen disguise in your app drawer.',
+              style: theme.textTheme.bodySmall,
+            ),
+            const SizedBox(height: 8),
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.warning.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.info_outline, size: 16, color: AppColors.warning),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Some devices may require an app restart.',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: AppColors.warning,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+
+            // Show current state
+            if (safety.disguisedModeEnabled && safety.currentDisguisedIcon != null) ...[
+              ListTile(
+                leading: Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: safety.currentDisguisedIcon!.backgroundColor,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(
+                    safety.currentDisguisedIcon!.iconData,
+                    color: Colors.white,
+                    size: 24,
+                  ),
+                ),
+                title: Text(
+                  'Current: ${safety.currentDisguisedIcon!.name}',
+                  style: const TextStyle(fontWeight: FontWeight.w600),
+                ),
+                trailing: TextButton(
+                  onPressed: () async {
+                    final result = await safety.resetToDefaultIcon();
+                    if (dialogContext.mounted) {
+                      Navigator.pop(dialogContext);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(result.message)),
+                      );
+                    }
+                  },
+                  child: const Text('Reset'),
+                ),
+              ),
+              const Divider(),
+            ],
+
+            // Disguise options
+            ...SafetyService.disguisedIcons.map((icon) {
+              final isSelected = safety.currentDisguisedIcon?.id == icon.id;
+              return ListTile(
+                leading: Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: icon.backgroundColor,
+                    borderRadius: BorderRadius.circular(8),
+                    border: isSelected
+                        ? Border.all(color: AppColors.primary, width: 2)
+                        : null,
+                  ),
+                  child: Icon(
+                    icon.iconData,
+                    color: Colors.white,
+                    size: 24,
+                  ),
+                ),
+                title: Text(icon.name),
+                trailing: isSelected
+                    ? Icon(Icons.check, color: AppColors.primary)
+                    : null,
+                onTap: () async {
+                  HapticFeedback.lightImpact();
+                  final result = await safety.applyDisguisedIcon(icon);
+                  if (dialogContext.mounted) {
+                    Navigator.pop(dialogContext);
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text(result.message)),
+                    );
+                  }
+                },
+              );
+            }),
+          ],
         ),
         actions: [
           TextButton(

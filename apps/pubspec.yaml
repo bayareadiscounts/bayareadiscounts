@@ -32,6 +32,10 @@ dependencies:
   package_info_plus: ^9.0.0
   path_provider: ^2.1.5
 
+  # Safety features
+  sensors_plus: ^7.0.0
+  connectivity_plus: ^6.1.4
+
   # Location (privacy-first, on-device only)
   geolocator: ^14.0.0
 
