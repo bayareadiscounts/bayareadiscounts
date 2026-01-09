@@ -5,18 +5,28 @@
  */
 
 // Cache version - updated automatically at build time
-const CACHE_VERSION = '2025-01-09';
+const CACHE_VERSION = '2026-01-09';
 const STATIC_CACHE = `baynavigator-static-${CACHE_VERSION}`;
 const API_CACHE = `baynavigator-api-${CACHE_VERSION}`;
 const IMAGE_CACHE = `baynavigator-images-${CACHE_VERSION}`;
 
-// Static assets to cache on install
+// Static assets to cache on install (include both with and without trailing slash)
 const STATIC_ASSETS = [
   '/',
   '/about',
+  '/about/',
   '/directory',
+  '/directory/',
   '/eligibility',
+  '/eligibility/',
   '/map',
+  '/map/',
+  '/favorites',
+  '/favorites/',
+  '/glossary',
+  '/glossary/',
+  '/findmyrep',
+  '/findmyrep/',
   '/assets/images/logo/logo.webp',
   '/assets/images/favicons/favicon-192.webp',
   '/assets/images/favicons/favicon-512.webp',

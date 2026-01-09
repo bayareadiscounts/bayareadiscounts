@@ -185,11 +185,34 @@ test('partnerships page loads', async ({ page }) => {
 });
 
 test('dark mode toggle works', async ({ page }) => {
+  // Use desktop viewport to test desktop theme toggle
+  await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/', { waitUntil: 'domcontentloaded' });
 
-  // Click theme toggle
+  // Click theme toggle (desktop)
   const themeToggle = page.locator('#theme-toggle');
   await themeToggle.click();
+
+  // Check that dark class is added to html
+  const isDark = await page.evaluate(() => document.documentElement.classList.contains('dark'));
+  expect(isDark).toBe(true);
+});
+
+test('dark mode toggle works on mobile', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 667 });
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+
+  // Open mobile menu first
+  const menuBtn = page.locator('#mobile-menu-btn');
+  await menuBtn.click();
+
+  // Wait for mobile menu to be visible
+  const mobileMenu = page.locator('#mobile-menu');
+  await expect(mobileMenu).toBeVisible();
+
+  // Click mobile theme toggle
+  const themeToggleMobile = page.locator('#theme-toggle-mobile');
+  await themeToggleMobile.click();
 
   // Check that dark class is added to html
   const isDark = await page.evaluate(() => document.documentElement.classList.contains('dark'));

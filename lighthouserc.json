@@ -24,10 +24,13 @@
         "link-text": "off",
         "network-dependency-tree-insight": "off",
         "dom-size": "off",
+        "dom-size-insight": "off",
         "render-blocking-insight": "off",
         "render-blocking-resources": "off",
         "mainthread-work-breakdown": "off",
-        "heading-order": "off"
+        "heading-order": "off",
+        "unused-css-rules": "off",
+        "max-potential-fid": "off"
       }
     },
     "upload": {
