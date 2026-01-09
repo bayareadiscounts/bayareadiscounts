@@ -16,7 +16,7 @@
 counties:
   san_francisco:
     name: San Francisco
-    fips: "06075"
+    fips: '06075'
     districts: 11
     website: https://sfbos.org/
     arcgis_url: https://services.arcgis.com/Zs2aNLFN00jrS4gG/arcgis/rest/services/Current_Supervisor_Districts/FeatureServer/0
@@ -58,7 +58,7 @@ counties:
 
   san_mateo:
     name: San Mateo County
-    fips: "06081"
+    fips: '06081'
     districts: 5
     website: https://www.smcgov.org/bos
     arcgis_url: https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Supervisor_Districts/FeatureServer/0
@@ -83,7 +83,7 @@ counties:
 
   santa_clara:
     name: Santa Clara County
-    fips: "06085"
+    fips: '06085'
     districts: 5
     website: https://www.sccgov.org/sites/bos/
     arcgis_url: https://services1.arcgis.com/4QPaqCJqF1UIaPbN/arcgis/rest/services/Santa_Clara_County_Supervisorial_Districts/FeatureServer/0
@@ -107,7 +107,7 @@ counties:
 
   alameda:
     name: Alameda County
-    fips: "06001"
+    fips: '06001'
     districts: 5
     website: https://bos.alamedacountyca.gov/
     arcgis_url: https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Board_of_Supervisors_District_Boundaries/FeatureServer/0
@@ -132,7 +132,7 @@ counties:
 
   contra_costa:
     name: Contra Costa County
-    fips: "06013"
+    fips: '06013'
     districts: 5
     website: https://www.contracosta.ca.gov/180/Board-of-Supervisors
     arcgis_url: https://services3.arcgis.com/42Dx6OWonqK9LoEE/arcgis/rest/services/BOS_Find_My_Supervisor/FeatureServer/0
@@ -141,28 +141,28 @@ counties:
     supervisors:
       1:
         name: John Gioia
-        phone: "510-942-2220"
+        phone: '510-942-2220'
         website: https://www.contracosta.ca.gov/5216/District-1-Supervisor-John-M-Gioia
       2:
         name: Candace Andersen
-        phone: "925-655-2300"
+        phone: '925-655-2300'
         website: https://www.contracosta.ca.gov/4668/District-2-Supervisor-Candace-Andersen
       3:
         name: Diane Burgis
-        phone: "925-655-2330"
+        phone: '925-655-2330'
         website: https://www.contracosta.ca.gov/6437/District-3-Supervisor-Diane-Burgis
       4:
         name: Ken Carlson
-        phone: "925-655-2350"
+        phone: '925-655-2350'
         website: https://www.contracosta.ca.gov/6291/District-4-Supervisor-Ken-Carlson
       5:
         name: Federal Glover
-        phone: "925-608-4200"
+        phone: '925-608-4200'
         website: https://www.contracosta.ca.gov/781/District-5-Supervisor-Federal-Glover
 
   marin:
     name: Marin County
-    fips: "06041"
+    fips: '06041'
     districts: 5
     website: https://www.marincounty.gov/government/board-of-supervisors
     arcgis_url: https://gis.marincounty.gov/server/rest/services/PARCEL_BASED/SUPERVISOR_DIST/FeatureServer/0
@@ -186,7 +186,7 @@ counties:
 
   sonoma:
     name: Sonoma County
-    fips: "06097"
+    fips: '06097'
     districts: 5
     website: https://sonomacounty.ca.gov/board-of-supervisors
     arcgis_url: https://services1.arcgis.com/P5Mv5GY5S66M8Z1Q/arcgis/rest/services/Supervisor_Districts/FeatureServer/0
@@ -211,7 +211,7 @@ counties:
 
   napa:
     name: Napa County
-    fips: "06055"
+    fips: '06055'
     districts: 5
     website: https://www.countyofnapa.org/193/Board-of-Supervisors
     arcgis_url: https://gis.countyofnapa.org/arcgis/rest/services/Hosted/Supervisor_Districts_2022/FeatureServer/0
@@ -236,7 +236,7 @@ counties:
 
   solano:
     name: Solano County
-    fips: "06095"
+    fips: '06095'
     districts: 5
     website: https://www.solanocounty.gov/government/board-supervisors
     arcgis_url: https://services2.arcgis.com/SCn6czzcqKAFwdGU/arcgis/rest/services/BOS_District_Boundaries_2021/FeatureServer/0

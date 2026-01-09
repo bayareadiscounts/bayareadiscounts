@@ -23,7 +23,7 @@
   timeframe: Ongoing
   link: https://selfhelp.courts.ca.gov/fee-waiver
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: justice-diversity-center
   name: Justice & Diversity Center (JDC)
   category: Legal Services
@@ -50,7 +50,7 @@
   timeframe: Ongoing
   link: https://www.sfbar.org/jdc/jdc-legal-services-programs/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: racial-equity-project
   name: Racial Equity Project (REP)
   category: Legal Services
@@ -75,7 +75,7 @@
   timeframe: Ongoing
   link: https://www.sfbar.org/jdc/jdc-legal-services-programs/corp/rep/
   link_text: Apply for Support
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sf-financial-justice-project
   name: SF Financial Justice Project
   category: Legal Services
@@ -101,7 +101,7 @@
   timeframe: Ongoing
   link: https://sfgov.org/financialjustice
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sf-immigrant-support
   name: San Francisco Immigrant Support
   category: Legal Services
@@ -128,7 +128,7 @@
   timeframe: Ongoing
   link: https://immigrants.sfgov.org
   link_text: Find Provider
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: uscis-i-912-fee-waiver
   name: USCIS I-912 Fee Waiver
   category: Legal Services
@@ -154,7 +154,7 @@
   timeframe: Case-by-case
   link: https://www.uscis.gov/i-912
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: clsepa-legal-services
   name: Community Legal Services in East Palo Alto
   category: Legal Services
@@ -183,7 +183,7 @@
   timeframe: Ongoing
   link: https://clsepa.org/
   link_text: Get Help
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4726443
   longitude: -122.1328995
 - id: legal-aid-smc
@@ -212,7 +212,7 @@
   timeframe: Ongoing
   link: https://legalaidsmc.org/
   link_text: Get Help
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: project-sentinel-fair-housing
   name: Project Sentinel Fair Housing
   category: Legal Services
@@ -239,6 +239,6 @@
   timeframe: Ongoing
   link: https://housing.org/
   link_text: Get Help
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.3525215
   longitude: -121.9539898

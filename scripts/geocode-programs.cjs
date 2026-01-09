@@ -23,7 +23,15 @@ const DATA_DIR = path.join(__dirname, '../src/data');
 const CACHE_FILE = path.join(__dirname, '../.data/geocode-cache.json');
 
 // Files that are not program data
-const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml', 'search-config.yml', 'county-supervisors.yml', 'site-config.yml'];
+const NON_PROGRAM_FILES = [
+  'cities.yml',
+  'groups.yml',
+  'zipcodes.yml',
+  'suppressed.yml',
+  'search-config.yml',
+  'county-supervisors.yml',
+  'site-config.yml',
+];
 
 // Rate limit: 1 request per second (Nominatim policy)
 const RATE_LIMIT_MS = 1100;
@@ -33,7 +41,7 @@ const BAY_AREA_BOUNDS = {
   minLat: 36.8,
   maxLat: 38.9,
   minLng: -123.5,
-  maxLng: -121.0
+  maxLng: -121.0,
 };
 
 // Load or create cache
@@ -56,7 +64,7 @@ function saveCache() {
 }
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /**
@@ -77,42 +85,48 @@ async function geocodeAddress(address) {
   return new Promise((resolve) => {
     const options = {
       headers: {
-        'User-Agent': 'BayNavigator/1.0 (https://baynavigator.org; contact@baynavigator.org)'
-      }
+        'User-Agent': 'BayNavigator/1.0 (https://baynavigator.org; contact@baynavigator.org)',
+      },
     };
 
-    https.get(url, options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const results = JSON.parse(data);
-          if (results && results.length > 0) {
-            const lat = parseFloat(results[0].lat);
-            const lng = parseFloat(results[0].lon);
+    https
+      .get(url, options, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            const results = JSON.parse(data);
+            if (results && results.length > 0) {
+              const lat = parseFloat(results[0].lat);
+              const lng = parseFloat(results[0].lon);
 
-            // Validate within Bay Area bounds
-            if (lat >= BAY_AREA_BOUNDS.minLat && lat <= BAY_AREA_BOUNDS.maxLat &&
-                lng >= BAY_AREA_BOUNDS.minLng && lng <= BAY_AREA_BOUNDS.maxLng) {
-              const coords = [lng, lat]; // GeoJSON format
-              geocodeCache[cacheKey] = coords;
-              resolve(coords);
+              // Validate within Bay Area bounds
+              if (
+                lat >= BAY_AREA_BOUNDS.minLat &&
+                lat <= BAY_AREA_BOUNDS.maxLat &&
+                lng >= BAY_AREA_BOUNDS.minLng &&
+                lng <= BAY_AREA_BOUNDS.maxLng
+              ) {
+                const coords = [lng, lat]; // GeoJSON format
+                geocodeCache[cacheKey] = coords;
+                resolve(coords);
+              } else {
+                // Outside Bay Area - might be wrong result
+                geocodeCache[cacheKey] = null;
+                resolve(null);
+              }
             } else {
-              // Outside Bay Area - might be wrong result
               geocodeCache[cacheKey] = null;
               resolve(null);
             }
-          } else {
-            geocodeCache[cacheKey] = null;
+          } catch (e) {
             resolve(null);
           }
-        } catch (e) {
-          resolve(null);
-        }
+        });
+      })
+      .on('error', () => {
+        resolve(null);
       });
-    }).on('error', () => {
-      resolve(null);
-    });
   });
 }
 
@@ -123,8 +137,12 @@ function hasCoordinates(program) {
   if (program.latitude && program.longitude) {
     const lat = parseFloat(program.latitude);
     const lng = parseFloat(program.longitude);
-    if (lat >= BAY_AREA_BOUNDS.minLat && lat <= BAY_AREA_BOUNDS.maxLat &&
-        lng >= BAY_AREA_BOUNDS.minLng && lng <= BAY_AREA_BOUNDS.maxLng) {
+    if (
+      lat >= BAY_AREA_BOUNDS.minLat &&
+      lat <= BAY_AREA_BOUNDS.maxLat &&
+      lng >= BAY_AREA_BOUNDS.minLng &&
+      lng <= BAY_AREA_BOUNDS.maxLng
+    ) {
       return true;
     }
   }
@@ -134,8 +152,9 @@ function hasCoordinates(program) {
 async function main() {
   console.log('🌍 Geocoding program addresses...\n');
 
-  const categoryFiles = fs.readdirSync(DATA_DIR)
-    .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
+  const categoryFiles = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
   let totalPrograms = 0;
   let withCoords = 0;
@@ -192,7 +211,7 @@ async function main() {
       const yamlOutput = yaml.dump(programs, {
         lineWidth: -1,
         quotingType: '"',
-        forceQuotes: false
+        forceQuotes: false,
       });
       fs.writeFileSync(filePath, yamlOutput);
     }

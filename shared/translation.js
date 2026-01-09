@@ -23,7 +23,7 @@ async function translateTexts(options) {
     endpoint = DEFAULT_TRANSLATE_ENDPOINT,
     fetchFn = typeof fetch !== 'undefined' ? fetch : null,
     cache = null,
-    cacheTtlMs = 1000 * 60 * 60 * 24 * 7
+    cacheTtlMs = 1000 * 60 * 60 * 24 * 7,
   } = options || {};
 
   if (!Array.isArray(texts) || texts.length === 0) throw new Error('texts array is required');
@@ -40,7 +40,7 @@ async function translateTexts(options) {
   const res = await fetchFn(endpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ texts, targetLang, sourceLang })
+    body: JSON.stringify({ texts, targetLang, sourceLang }),
   });
 
   if (!res.ok) {

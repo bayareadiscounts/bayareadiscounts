@@ -1,592 +1,187 @@
 {
-  "801 jefferson avenue, redwood city, ca 94063": [
-    -122.227942,
-    37.4860773
-  ],
-  "san francisco, ca": [
-    -122.4075201,
-    37.7879363
-  ],
-  "salesforce tower, 415 mission street, san francisco, ca 94105": [
-    -122.3969321,
-    37.7897744
-  ],
-  "the presidio, san francisco, ca": [
-    -122.4645889,
-    37.7987456
-  ],
-  "1506 mendocino drive, concord, ca 94521": [
-    -121.9979519,
-    37.9672133
-  ],
-  "445 church street, san francisco, ca 94114": [
-    -122.428483,
-    37.763705
-  ],
+  "801 jefferson avenue, redwood city, ca 94063": [-122.227942, 37.4860773],
+  "san francisco, ca": [-122.4075201, 37.7879363],
+  "salesforce tower, 415 mission street, san francisco, ca 94105": [-122.3969321, 37.7897744],
+  "the presidio, san francisco, ca": [-122.4645889, 37.7987456],
+  "1506 mendocino drive, concord, ca 94521": [-121.9979519, 37.9672133],
+  "445 church street, san francisco, ca 94114": [-122.428483, 37.763705],
   "111 w. st. john street, suite 1100, san jose, ca 95113": null,
-  "150 golden gate avenue, san francisco, ca 94102": [
-    -122.4132276,
-    37.782217
-  ],
-  "364 s. railroad avenue, san mateo, ca 94401": [
-    -122.3210686,
-    37.565602
-  ],
-  "menlo park, ca": [
-    -122.177992,
-    37.4519671
-  ],
+  "150 golden gate avenue, san francisco, ca 94102": [-122.4132276, 37.782217],
+  "364 s. railroad avenue, san mateo, ca 94401": [-122.3210686, 37.565602],
+  "menlo park, ca": [-122.177992, 37.4519671],
   "2001 winward way, suite 103, san mateo, ca 94404": null,
-  "891 santa cruz avenue, menlo park, ca 94025": [
-    -122.1861304,
-    37.4495374
-  ],
-  "2411 pulgas avenue, east palo alto, ca 94303": [
-    -122.1306312,
-    37.4705872
-  ],
-  "109 s. claremont street, san mateo, ca 94401": [
-    -122.3222638,
-    37.5680575
-  ],
-  "3137 jefferson avenue, redwood city, ca 94062": [
-    -122.2466094,
-    37.4696951
-  ],
-  "1101 el camino real, san bruno, ca 94066": [
-    -122.4202598,
-    37.6353699
-  ],
-  "1450 rollins road, burlingame, ca 94010": [
-    -122.3685574,
-    37.5925546
-  ],
-  "1101 california drive, burlingame, ca 94010": [
-    -122.361699,
-    37.586709
-  ],
-  "620 north street, pescadero, ca 94060": [
-    -122.3776484,
-    37.2564652
-  ],
-  "139 elm street, redwood city, ca 94062": [
-    -122.2256829,
-    37.4814937
-  ],
-  "1800 market st, san francisco, ca 94102": [
-    -122.4241156,
-    37.7716509
-  ],
-  "3207 lakeshore ave, oakland, ca 94610": [
-    -122.2470874,
-    37.8092703
-  ],
-  "2712 telegraph ave, berkeley, ca 94705": [
-    -122.2593638,
-    37.8610967
-  ],
+  "891 santa cruz avenue, menlo park, ca 94025": [-122.1861304, 37.4495374],
+  "2411 pulgas avenue, east palo alto, ca 94303": [-122.1306312, 37.4705872],
+  "109 s. claremont street, san mateo, ca 94401": [-122.3222638, 37.5680575],
+  "3137 jefferson avenue, redwood city, ca 94062": [-122.2466094, 37.4696951],
+  "1101 el camino real, san bruno, ca 94066": [-122.4202598, 37.6353699],
+  "1450 rollins road, burlingame, ca 94010": [-122.3685574, 37.5925546],
+  "1101 california drive, burlingame, ca 94010": [-122.361699, 37.586709],
+  "620 north street, pescadero, ca 94060": [-122.3776484, 37.2564652],
+  "139 elm street, redwood city, ca 94062": [-122.2256829, 37.4814937],
+  "1800 market st, san francisco, ca 94102": [-122.4241156, 37.7716509],
+  "3207 lakeshore ave, oakland, ca 94610": [-122.2470874, 37.8092703],
+  "2712 telegraph ave, berkeley, ca 94705": [-122.2593638, 37.8610967],
   "2118 willow pass rd, suite 500, concord, ca 94520": null,
-  "938 the alameda, san jose, ca 95126": [
-    -121.9080075,
-    37.3313299
-  ],
-  "910 irwin st, san rafael, ca 94901": [
-    -122.5208051,
-    37.9714225
-  ],
-  "780 lincoln ave, napa, ca 94559": [
-    -122.2882034,
-    38.3098108
-  ],
-  "127 collingwood st, san francisco, ca 94114": [
-    -122.4358628,
-    37.7603772
-  ],
+  "938 the alameda, san jose, ca 95126": [-121.9080075, 37.3313299],
+  "910 irwin st, san rafael, ca 94901": [-122.5208051, 37.9714225],
+  "780 lincoln ave, napa, ca 94559": [-122.2882034, 38.3098108],
+  "127 collingwood st, san francisco, ca 94114": [-122.4358628, 37.7603772],
   "multiple locations in redwood city, mountain view, san mateo": null,
-  "726 polk st, san francisco, ca 94109": [
-    -122.4194107,
-    37.7837324
-  ],
-  "65 laguna st, san francisco, ca 94102": [
-    -122.4253678,
-    37.7712334
-  ],
-  "584 castro st": [
-    -122.4352061,
-    37.7595967
-  ],
-  "370 turk st,": [
-    -122.4152584,
-    37.7828731
-  ],
+  "726 polk st, san francisco, ca 94109": [-122.4194107, 37.7837324],
+  "65 laguna st, san francisco, ca 94102": [-122.4253678, 37.7712334],
+  "584 castro st": [-122.4352061, 37.7595967],
+  "370 turk st,": [-122.4152584, 37.7828731],
   "2940 16th st, suite 319, san francisco, ca 94103": null,
-  "4127 18th st, san francisco, ca 94114": [
-    -122.435607,
-    37.7607664
-  ],
-  "pier 15, san francisco, ca 94111": [
-    -122.3973665,
-    37.8016231
-  ],
+  "4127 18th st, san francisco, ca 94114": [-122.435607, 37.7607664],
+  "pier 15, san francisco, ca 94111": [-122.3973665, 37.8016231],
   "uc berkeley, graduate school of education": null,
   "2301 mission st, suite 301, san francisco, ca 94110": null,
   "1063 market st, suite 400, san francisco, ca 94103": null,
-  "2921 adeline st, berkeley, ca 94703": [
-    -122.2683904,
-    37.8558152
-  ],
-  "121 7th st, san francisco, ca 94103": [
-    -122.4098301,
-    37.778881
-  ],
+  "2921 adeline st, berkeley, ca 94703": [-122.2683904, 37.8558152],
+  "121 7th st, san francisco, ca 94103": [-122.4098301, 37.778881],
   "785 market st, suite 750, san francisco, ca 94103": null,
   "505 14th st, suite 900, oakland, ca 94612": null,
   "426 17th st, suite 200, oakland, ca 94612": null,
   "870 market st, suite 1065, san francisco, ca 94102": null,
-  "70 oak grove st, san francisco, ca 94107": [
-    -122.4021838,
-    37.7771703
-  ],
-  "30799 wiegman rd, hayward, ca 94544": [
-    -122.0618595,
-    37.6164565
-  ],
-  "701 amador street, san francisco, ca 94124": [
-    -122.3852748,
-    37.7456694
-  ],
-  "1625 exposition blvd, sacramento, ca 95815": [
-    -121.4315147,
-    38.5953023
-  ],
-  "801 toland street, san francisco, ca 94124": [
-    -122.3997848,
-    37.7413758
-  ],
-  "4031 pacific blvd, san mateo, ca 94403": [
-    -122.2971526,
-    37.5379257
-  ],
-  "39155 liberty street, fremont, ca 94538": [
-    -121.9832571,
-    37.5507982
-  ],
+  "70 oak grove st, san francisco, ca 94107": [-122.4021838, 37.7771703],
+  "30799 wiegman rd, hayward, ca 94544": [-122.0618595, 37.6164565],
+  "701 amador street, san francisco, ca 94124": [-122.3852748, 37.7456694],
+  "1625 exposition blvd, sacramento, ca 95815": [-121.4315147, 38.5953023],
+  "801 toland street, san francisco, ca 94124": [-122.3997848, 37.7413758],
+  "4031 pacific blvd, san mateo, ca 94403": [-122.2971526, 37.5379257],
+  "39155 liberty street, fremont, ca 94538": [-121.9832571, 37.5507982],
   "3300 college drive, building 1, san bruno, ca 94066": null,
   "505 w. olive avenue, suite 550, sunnyvale, ca 94086": null,
-  "515 cortland avenue, san francisco, ca 94110": [
-    -122.4161433,
-    37.7391861
-  ],
-  "1745 folsom street, san francisco, ca 94103": [
-    -122.4150751,
-    37.7691367
-  ],
+  "515 cortland avenue, san francisco, ca 94110": [-122.4161433, 37.7391861],
+  "1745 folsom street, san francisco, ca 94103": [-122.4150751, 37.7691367],
   "301 battery street, 3rd floor, san francisco, ca 94111": null,
-  "1861 bay road, east palo alto, ca 94303": [
-    -122.1328995,
-    37.4726443
-  ],
+  "1861 bay road, east palo alto, ca 94303": [-122.1328995, 37.4726443],
   "330 twin dolphin drive, suite 123, redwood city, ca 94065": null,
-  "1490 el camino real, santa clara, ca 95050": [
-    -121.9539898,
-    37.3525215
-  ],
-  "1901 russell street, berkeley, ca 94703": [
-    -122.2709969,
-    37.856374
-  ],
-  "2700 ninth street, berkeley, ca 94710": [
-    -122.291021,
-    37.8571686
-  ],
-  "901 ames avenue, milpitas, ca 95035": [
-    -121.887582,
-    37.4217456
-  ],
-  "2890 mitchell drive, walnut creek, ca 94598": [
-    -122.0206915,
-    37.9330006
-  ],
-  "171 bel marin keys blvd, novato, ca 94949": [
-    -122.5367087,
-    38.0682551
-  ],
-  "255 alabama street, san francisco, ca 94103": [
-    -122.4120821,
-    37.765762
-  ],
-  "12 airport blvd, san mateo, ca 94401": [
-    -122.328231,
-    37.5859249
-  ],
+  "1490 el camino real, santa clara, ca 95050": [-121.9539898, 37.3525215],
+  "1901 russell street, berkeley, ca 94703": [-122.2709969, 37.856374],
+  "2700 ninth street, berkeley, ca 94710": [-122.291021, 37.8571686],
+  "901 ames avenue, milpitas, ca 95035": [-121.887582, 37.4217456],
+  "2890 mitchell drive, walnut creek, ca 94598": [-122.0206915, 37.9330006],
+  "171 bel marin keys blvd, novato, ca 94949": [-122.5367087, 38.0682551],
+  "255 alabama street, san francisco, ca 94103": [-122.4120821, 37.765762],
+  "12 airport blvd, san mateo, ca 94401": [-122.328231, 37.5859249],
   "871 fifth avenue, redwood city, ca 94063": null,
-  "201 alabama street, san francisco, ca 94103": [
-    -122.4124314,
-    37.7672325
-  ],
-  "200 larkin street, san francisco, ca 94102": [
-    -122.4159878,
-    37.7802982
-  ],
-  "781 beach street, san francisco, ca 94109": [
-    -122.4217874,
-    37.8063768
-  ],
-  "180 woz way, san jose, ca 95110": [
-    -121.8917556,
-    37.3267053
-  ],
-  "699 bellevue avenue, oakland, ca 94610": [
-    -122.2602497,
-    37.8088234
-  ],
+  "201 alabama street, san francisco, ca 94103": [-122.4124314, 37.7672325],
+  "200 larkin street, san francisco, ca 94102": [-122.4159878, 37.7802982],
+  "781 beach street, san francisco, ca 94109": [-122.4217874, 37.8063768],
+  "180 woz way, san jose, ca 95110": [-121.8917556, 37.3267053],
+  "699 bellevue avenue, oakland, ca 94610": [-122.2602497, 37.8088234],
   "50 hagiwara tea garden drive, san francisco, ca 94118 (de young)": null,
   "2569 third street, san francisco, ca 94107": null,
-  "9777 golf links road, oakland, ca 94605": [
-    -122.139591,
-    37.7531488
-  ],
+  "9777 golf links road, oakland, ca 94605": [-122.139591, 37.7531488],
   "151 third street, san francisco, ca 94103": null,
-  "110 south market street, san jose, ca 95113": [
-    -121.890042,
-    37.3336702
-  ],
-  "201 south market street, san jose, ca 95113": [
-    -121.8901566,
-    37.331404
-  ],
+  "110 south market street, san jose, ca 95113": [-121.890042, 37.3336702],
+  "201 south market street, san jose, ca 95113": [-121.8901566, 37.331404],
   "104 montgomery street, presidio of san francisco, ca 94129": null,
-  "2 solano st, brisbane, ca 94005": [
-    -122.4059267,
-    37.6851947
-  ],
-  "1520 hillside boulevard, colma, ca 94014": [
-    -122.4560704,
-    37.6818856
-  ],
-  "450 martin street, daly city, ca 94014": [
-    -122.4196574,
-    37.7022201
-  ],
-  "501 87th street, daly city, ca 94015": [
-    -122.4864797,
-    37.6938484
-  ],
-  "350 90th street, daly city, ca 94015": [
-    -122.473362,
-    37.6911884
-  ],
-  "101 lake merced blvd, daly city, ca 94015": [
-    -122.4857777,
-    37.7044364
-  ],
-  "2778 junipero serra blvd, daly city, ca 94015": [
-    -122.4711283,
-    37.6906253
-  ],
-  "901 brunswick street, daly city, ca 94104": [
-    -122.452115,
-    37.707466
-  ],
-  "145 lake merced blvd, daly city, ca 94015": [
-    -122.485715,
-    37.7031628
-  ],
-  "6655 mission st, daly city, ca 94014": [
-    -122.4632763,
-    37.7024484
-  ],
-  "2277 university avenue, east palo alto, ca 94303": [
-    -122.1415815,
-    37.4678219
-  ],
-  "2160 euclid ave, east palo alto, ca 94303": [
-    -122.143454,
-    37.4651494
-  ],
-  "99 avenue alhambra, el granada, ca 94018": [
-    -122.4816254,
-    37.5058988
-  ],
-  "225 cabrillo hwy s, half moon bay, ca 94019": [
-    -122.4334399,
-    37.465896
-  ],
-  "120 scenic drive, la honda, ca 94020": [
-    -122.2682761,
-    37.3191123
-  ],
-  "8865 la honda road, la honda, ca 94020": [
-    -122.2747076,
-    37.3201355
-  ],
-  "9500 pescadero creek rd, loma mar, ca 94021": [
-    -122.2934134,
-    37.2775403
-  ],
-  "200 nevada avenue, moss beach, ca 94038": [
-    -122.516552,
-    37.524155
-  ],
+  "2 solano st, brisbane, ca 94005": [-122.4059267, 37.6851947],
+  "1520 hillside boulevard, colma, ca 94014": [-122.4560704, 37.6818856],
+  "450 martin street, daly city, ca 94014": [-122.4196574, 37.7022201],
+  "501 87th street, daly city, ca 94015": [-122.4864797, 37.6938484],
+  "350 90th street, daly city, ca 94015": [-122.473362, 37.6911884],
+  "101 lake merced blvd, daly city, ca 94015": [-122.4857777, 37.7044364],
+  "2778 junipero serra blvd, daly city, ca 94015": [-122.4711283, 37.6906253],
+  "901 brunswick street, daly city, ca 94104": [-122.452115, 37.707466],
+  "145 lake merced blvd, daly city, ca 94015": [-122.485715, 37.7031628],
+  "6655 mission st, daly city, ca 94014": [-122.4632763, 37.7024484],
+  "2277 university avenue, east palo alto, ca 94303": [-122.1415815, 37.4678219],
+  "2160 euclid ave, east palo alto, ca 94303": [-122.143454, 37.4651494],
+  "99 avenue alhambra, el granada, ca 94018": [-122.4816254, 37.5058988],
+  "225 cabrillo hwy s, half moon bay, ca 94019": [-122.4334399, 37.465896],
+  "120 scenic drive, la honda, ca 94020": [-122.2682761, 37.3191123],
+  "8865 la honda road, la honda, ca 94020": [-122.2747076, 37.3201355],
+  "9500 pescadero creek rd, loma mar, ca 94021": [-122.2934134, 37.2775403],
+  "200 nevada avenue, moss beach, ca 94038": [-122.516552, 37.524155],
   "164 culebra street, moss beach, ca 94038": null,
   "600 oddstadd blvd, pacifica, ca 94044": null,
   "620 north avenue, pescadero, ca 94060": null,
   "765 portola valley rd, portola valley, ca 94028": null,
-  "2600 middlefield road, redwood city, ca 94063": [
-    -122.213323,
-    37.477871
-  ],
-  "200 james ave, redwood city, ca 94062": [
-    -122.2352813,
-    37.483
-  ],
-  "501 winslow st, redwood city, ca 94063": [
-    -122.2311606,
-    37.4890185
-  ],
-  "2710 middlefield rd, redwood city, ca 94063": [
-    -122.216232,
-    37.479721
-  ],
+  "2600 middlefield road, redwood city, ca 94063": [-122.213323, 37.477871],
+  "200 james ave, redwood city, ca 94062": [-122.2352813, 37.483],
+  "501 winslow st, redwood city, ca 94063": [-122.2311606, 37.4890185],
+  "2710 middlefield rd, redwood city, ca 94063": [-122.216232, 37.479721],
   "2625 marlborough avenue, redwood city, ca 94063": null,
-  "151 buckingham ave, redwood city, ca 94063": [
-    -122.2143155,
-    37.4735714
-  ],
-  "639 douglas avenue, redwood city, ca 94063": [
-    -122.2108924,
-    37.4809234
-  ],
-  "2342 el camino real, redwood city, ca 94063": [
-    -122.2197996,
-    37.4752005
-  ],
-  "620 airport way, san carlos, ca 94070": [
-    -122.2516496,
-    37.514865
-  ],
-  "1201 e poplar ave, san mateo, ca 94401": [
-    -122.324034,
-    37.580653
-  ],
-  "222 w. 39th avenue san mateo, san mateo, ca 94403": [
-    -122.3002086,
-    37.5309039
-  ],
-  "477 9th ave, san mateo, ca 94402": [
-    -122.3174136,
-    37.5622691
-  ],
-  "306 s spruce ave, south san francisco, ca 94080": [
-    -122.4218167,
-    37.6459105
-  ],
-  "1486 huntington ave, south san francisco, ca 94080": [
-    -122.4220483,
-    37.6446852
-  ],
-  "707 w hornet ave": [
-    -122.3028775,
-    37.7727402
-  ],
-  "55 music concourse drive": [
-    -122.4660927,
-    37.7698266
-  ],
-  "856 folsom st": [
-    -122.4024901,
-    37.7810891
-  ],
+  "151 buckingham ave, redwood city, ca 94063": [-122.2143155, 37.4735714],
+  "639 douglas avenue, redwood city, ca 94063": [-122.2108924, 37.4809234],
+  "2342 el camino real, redwood city, ca 94063": [-122.2197996, 37.4752005],
+  "620 airport way, san carlos, ca 94070": [-122.2516496, 37.514865],
+  "1201 e poplar ave, san mateo, ca 94401": [-122.324034, 37.580653],
+  "222 w. 39th avenue san mateo, san mateo, ca 94403": [-122.3002086, 37.5309039],
+  "477 9th ave, san mateo, ca 94402": [-122.3174136, 37.5622691],
+  "306 s spruce ave, south san francisco, ca 94080": [-122.4218167, 37.6459105],
+  "1486 huntington ave, south san francisco, ca 94080": [-122.4220483, 37.6446852],
+  "707 w hornet ave": [-122.3028775, 37.7727402],
+  "55 music concourse drive": [-122.4660927, 37.7698266],
+  "856 folsom st": [-122.4024901, 37.7810891],
   "2440 sand hill rd": null,
   "991 tyler street #114": null,
-  "48 wharf rd": [
-    -122.6848127,
-    37.9100883
-  ],
-  "25800 carlos bee blvd": [
-    -122.0719959,
-    37.6610808
-  ],
-  "2301 hardies ln": [
-    -122.735717,
-    38.4602345
-  ],
+  "48 wharf rd": [-122.6848127, 37.9100883],
+  "25800 carlos bee blvd": [-122.0719959, 37.6610808],
+  "2301 hardies ln": [-122.735717, 38.4602345],
   "po box 12323": null,
-  "5200 carneros hwy": [
-    -122.350731,
-    38.256474
-  ],
+  "5200 carneros hwy": [-122.350731, 38.256474],
   "345 st gertrude avenue": null,
-  "5710 hollis st": [
-    -122.2888147,
-    37.8386014
-  ],
+  "5710 hollis st": [-122.2888147, 37.8386014],
   "1408 mission avenue at e street": null,
   "11101 calfiornia 1": null,
-  "1540 marchbanks drive": [
-    -122.0445866,
-    37.9185343
-  ],
-  "900 dornan dr": [
-    -122.3835547,
-    37.9152529
-  ],
-  "1300 senter road": [
-    -121.8629016,
-    37.3258672
-  ],
-  "944 simmonds rd": [
-    -122.5221461,
-    37.8296267
-  ],
-  "608 commercial street": [
-    -122.4036121,
-    37.794275
-  ],
+  "1540 marchbanks drive": [-122.0445866, 37.9185343],
+  "900 dornan dr": [-122.3835547, 37.9152529],
+  "1300 senter road": [-121.8629016, 37.3258672],
+  "944 simmonds rd": [-122.5221461, 37.8296267],
+  "608 commercial street": [-122.4036121, 37.794275],
   "375 g street": null,
   "101 howard st ste 480": null,
-  "2400 london ranch road": [
-    -122.546779,
-    38.354318
-  ],
-  "52 zacate pl fremont": [
-    -121.9595021,
-    37.5642479
-  ],
-  "3506a mount diablo boulevard": [
-    -122.0585435,
-    37.8977312
-  ],
-  "315 potrero ave": [
-    -122.4072793,
-    37.7655321
-  ],
-  "2155 third street": [
-    -121.7685757,
-    37.6796552
-  ],
-  "940 powell street": [
-    -122.4091282,
-    37.793648
-  ],
+  "2400 london ranch road": [-122.546779, 38.354318],
+  "52 zacate pl fremont": [-121.9595021, 37.5642479],
+  "3506a mount diablo boulevard": [-122.0585435, 37.8977312],
+  "315 potrero ave": [-122.4072793, 37.7655321],
+  "2155 third street": [-121.7685757, 37.6796552],
+  "940 powell street": [-122.4091282, 37.793648],
   "2 marina boulevard building e": null,
   "1202 la vista ave": null,
   "2 marina boulevard building d": null,
   "pier 45 at the end of taylor street fishermans wharf": null,
-  "2 marina blvd building c": [
-    -122.4314174,
-    37.8069681
-  ],
-  "893 folsom street": [
-    -122.4030802,
-    37.7803911
-  ],
-  "2450 sutter street": [
-    -122.4409355,
-    37.7854732
-  ],
-  "6449 cavedale rd": [
-    -122.4750979,
-    38.3894166
-  ],
+  "2 marina blvd building c": [-122.4314174, 37.8069681],
+  "893 folsom street": [-122.4030802, 37.7803911],
+  "2450 sutter street": [-122.4409355, 37.7854732],
+  "6449 cavedale rd": [-122.4750979, 38.3894166],
   "55 presidents circle": null,
   "department of art and art history san jose state university one washington square": null,
-  "pier 45 fishermans wharf": [
-    -122.4173154,
-    37.8097743
-  ],
+  "pier 45 fishermans wharf": [-122.4173154, 37.8097743],
   "28 geary street suite 650": null,
-  "9777 golf links road": [
-    -122.1478481,
-    37.7509305
-  ],
-  "37974 shinn street": [
-    -121.9844941,
-    37.5669046
-  ],
+  "9777 golf links road": [-122.1478481, 37.7509305],
+  "37974 shinn street": [-121.9844941, 37.5669046],
   "1777 california drive": null,
   "447 sutter street; 5th floor social hall": null,
-  "10000 skyline blvd": [
-    -122.503052,
-    37.7254162
-  ],
-  "10979 san pablo ave": [
-    -122.3127829,
-    37.9169145
-  ],
+  "10000 skyline blvd": [-122.503052, 37.7254162],
+  "10979 san pablo ave": [-122.3127829, 37.9169145],
   "133 willis avenue mineola": null,
   "1500 fulton rd": null,
-  "1342 naglee avenue": [
-    -121.9221987,
-    37.3337346
-  ],
+  "1342 naglee avenue": [-121.9221987, 37.3337346],
   "401 1st st #205": null,
-  "1 zoo road": [
-    -122.500579,
-    37.731184
-  ],
-  "1220-b linda mar blvd": [
-    -122.4941167,
-    37.5891523
-  ],
-  "3361 mission st": [
-    -122.4214076,
-    37.7428145
-  ],
-  "50 mark west springs rd": [
-    -122.749307,
-    38.4930374
-  ],
+  "1 zoo road": [-122.500579, 37.731184],
+  "1220-b linda mar blvd": [-122.4941167, 37.5891523],
+  "3361 mission st": [-122.4214076, 37.7428145],
+  "50 mark west springs rd": [-122.749307, 38.4930374],
   "551 broadwa": null,
-  "1451 middlefield": [
-    -122.1444282,
-    37.4434284
-  ],
-  "570 east remington drive": [
-    -122.0254814,
-    37.3564687
-  ],
+  "1451 middlefield": [-122.1444282, 37.4434284],
+  "570 east remington drive": [-122.0254814, 37.3564687],
   "one avenue of the palms rm 111": null,
-  "2100 bridgeway": [
-    -122.4948555,
-    37.8635594
-  ],
-  "2626 bancroft way": [
-    -122.2110224,
-    37.7711735
-  ],
-  "2500 huston ct": [
-    -121.4352817,
-    38.5792981
-  ],
+  "2100 bridgeway": [-122.4948555, 37.8635594],
+  "2626 bancroft way": [-122.2110224, 37.7711735],
+  "2500 huston ct": [-121.4352817, 38.5792981],
   "4201b central parkway": null,
-  "1966 sir francis drake blvd": [
-    -122.5897105,
-    37.9878802
-  ],
-  "2371 filbert street, oakland, ca 94607": [
-    -122.2804425,
-    37.8161631
-  ],
-  "800 alma street, menlo park, ca 94025": [
-    -122.1789573,
-    37.4531439
-  ],
-  "1600 franklin street, oakland, ca 94612": [
-    -122.2685498,
-    37.8054359
-  ],
-  "1300 park avenue, emeryville, ca 94608": [
-    -122.286036,
-    37.831262
-  ],
-  "600 morgan street, santa rosa, ca 95401": [
-    -122.7197253,
-    38.440655
-  ],
-  "375 11th street, oakland, ca 94607": [
-    -122.27085,
-    37.8012392
-  ],
+  "1966 sir francis drake blvd": [-122.5897105, 37.9878802],
+  "2371 filbert street, oakland, ca 94607": [-122.2804425, 37.8161631],
+  "800 alma street, menlo park, ca 94025": [-122.1789573, 37.4531439],
+  "1600 franklin street, oakland, ca 94612": [-122.2685498, 37.8054359],
+  "1300 park avenue, emeryville, ca 94608": [-122.286036, 37.831262],
+  "600 morgan street, santa rosa, ca 95401": [-122.7197253, 38.440655],
+  "375 11th street, oakland, ca 94607": [-122.27085, 37.8012392],
   "375 beale street, suite 600, san francisco, ca 94105": null
 }

@@ -3,19 +3,27 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 ---
 
-<BaseLayout title="Partnership Guidelines" description="Listing requirements, content policies, and standards for Bay Navigator partnerships.">
+<BaseLayout
+  title="Partnership Guidelines"
+  description="Listing requirements, content policies, and standards for Bay Navigator partnerships."
+>
   <!-- Header Section -->
-  <section class="bg-gradient-to-b from-primary-50 to-white dark:from-neutral-800 dark:to-neutral-900 py-12">
+  <section
+    class="bg-gradient-to-b from-primary-50 to-white dark:from-neutral-800 dark:to-neutral-900 py-12"
+  >
     <div class="container-page">
-      <Breadcrumb items={[
-        { label: 'Partnerships', href: '/partnerships' },
-        { label: 'Guidelines', href: '/partnerships/guidelines' }
-      ]} />
+      <Breadcrumb
+        items={[
+          { label: 'Partnerships', href: '/partnerships' },
+          { label: 'Guidelines', href: '/partnerships/guidelines' },
+        ]}
+      />
       <h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
         Partnership Guidelines
       </h1>
       <p class="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl">
-        Standards and policies for organizations listed on Bay Navigator. These guidelines ensure our platform remains a trusted, objective resource for Bay Area residents.
+        Standards and policies for organizations listed on Bay Navigator. These guidelines ensure
+        our platform remains a trusted, objective resource for Bay Area residents.
       </p>
     </div>
   </section>
@@ -24,27 +32,59 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
   <section class="section bg-neutral-50 dark:bg-neutral-800 py-8">
     <div class="container-page">
       <div class="flex flex-wrap gap-3">
-        <a href="#public-benefit-standards" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
+        <a
+          href="#public-benefit-standards"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+        >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            ></path>
           </svg>
           501(c)(3) Standards
         </a>
-        <a href="#private-companies" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
+        <a
+          href="#private-companies"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+        >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
           </svg>
           Private Companies
         </a>
-        <a href="#religious-organizations" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
+        <a
+          href="#religious-organizations"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+        >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+            ></path>
           </svg>
           Religious Organizations
         </a>
-        <a href="#non-discrimination-policy" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
+        <a
+          href="#non-discrimination-policy"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+        >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+            ></path>
           </svg>
           Non-Discrimination
         </a>
@@ -55,62 +95,116 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
   <!-- 501(c)(3) Public Benefit Standards -->
   <section class="section" id="public-benefit-standards">
     <div class="container-page">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
-          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-          501(c)(3) Public Benefit Standards
-        </h2>
+      <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
+        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          ></path>
+        </svg>
+        501(c)(3) Public Benefit Standards
+      </h2>
 
-        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl border border-blue-200 dark:border-blue-800 p-6 mb-6">
-          <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-            Bay Navigator is a project of <strong class="text-neutral-900 dark:text-white">Bay Tides</strong>, a 501(c)(3) public charity. The project's mission is to connect Bay Area residents to essential services and public benefits. To maintain our tax-exempt status and fulfill our charitable purpose, all listed programs must meet these standards.
-          </p>
-          <p class="text-sm text-neutral-600 dark:text-neutral-300">
-            These requirements apply equally to all partners—government agencies, nonprofits, community organizations, private companies, and religious organizations.
-          </p>
-        </div>
+      <div
+        class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl border border-blue-200 dark:border-blue-800 p-6 mb-6"
+      >
+        <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+          Bay Navigator is a project of <strong class="text-neutral-900 dark:text-white"
+            >Bay Tides</strong
+          >, a 501(c)(3) public charity. The project's mission is to connect Bay Area residents to
+          essential services and public benefits. To maintain our tax-exempt status and fulfill our
+          charitable purpose, all listed programs must meet these standards.
+        </p>
+        <p class="text-sm text-neutral-600 dark:text-neutral-300">
+          These requirements apply equally to all partners—government agencies, nonprofits,
+          community organizations, private companies, and religious organizations.
+        </p>
+      </div>
 
-        <div class="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 mb-6">
-          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Public Benefit Requirements</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              <span class="text-neutral-600 dark:text-neutral-300">
-                <strong class="text-neutral-900 dark:text-white">Genuine public benefit:</strong> Programs must serve the public interest, not primarily advance private, commercial, or ideological interests
-              </span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              <span class="text-neutral-600 dark:text-neutral-300">
-                <strong class="text-neutral-900 dark:text-white">Unconditional access:</strong> Services must be accessible without conditions that advance private, commercial, or religious interests
-              </span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              <span class="text-neutral-600 dark:text-neutral-300">
-                <strong class="text-neutral-900 dark:text-white">Mission alignment:</strong> Programs must align with our mission of connecting residents to essential services
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
-          <div class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+      <div
+        class="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 mb-6"
+      >
+        <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">
+          Public Benefit Requirements
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <svg
+              class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
             </svg>
-            <p class="text-sm text-amber-800 dark:text-amber-200">
-              <strong>Legal basis:</strong> These standards ensure Bay Navigator remains a trusted, objective resource while maintaining compliance with federal 501(c)(3) requirements for public charities.
-            </p>
-          </div>
+            <span class="text-neutral-600 dark:text-neutral-300">
+              <strong class="text-neutral-900 dark:text-white">Genuine public benefit:</strong> Programs
+              must serve the public interest, not primarily advance private, commercial, or ideological
+              interests
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg
+              class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-neutral-600 dark:text-neutral-300">
+              <strong class="text-neutral-900 dark:text-white">Unconditional access:</strong> Services
+              must be accessible without conditions that advance private, commercial, or religious interests
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg
+              class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-neutral-600 dark:text-neutral-300">
+              <strong class="text-neutral-900 dark:text-white">Mission alignment:</strong> Programs must
+              align with our mission of connecting residents to essential services
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4"
+      >
+        <div class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+            ></path>
+          </svg>
+          <p class="text-sm text-amber-800 dark:text-amber-200">
+            <strong>Legal basis:</strong> These standards ensure Bay Navigator remains a trusted, objective
+            resource while maintaining compliance with federal 501(c)(3) requirements for public charities.
+          </p>
         </div>
+      </div>
     </div>
   </section>
 
@@ -119,437 +213,797 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
     <div class="container-page">
       <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
         <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          ></path>
         </svg>
         Private & For-Profit Companies
       </h2>
-        <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-          We accept limited listings for discounts or services from private and for-profit companies, provided they meet our strict standards. We do not accept payment for listings.
-        </p>
+      <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+        We accept limited listings for discounts or services from private and for-profit companies,
+        provided they meet our strict standards. We do not accept payment for listings.
+      </p>
 
-        <!-- Dos and Don'ts Side by Side -->
-        <div class="grid lg:grid-cols-2 gap-6 mb-6">
-          <!-- Requirements (Dos) -->
-          <div class="bg-white dark:bg-neutral-900 rounded-xl border border-green-200 dark:border-green-800 p-6">
-            <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
-              <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              Requirements
-            </h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Bay Area presence:</strong> Notable presence in or services to the SF Bay Area
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Genuine value:</strong> Real, tangible benefits—not marketing promotions or trials
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Accurate information:</strong> Keep listing info current; honor advertised terms
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Price transparency:</strong> Disclose exact dollar amounts for any fees
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Verification disclosure:</strong> Clearly state if ID.me, SheerID, etc. is required
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Ongoing programs:</strong> Routine or recurring (seasonal like "tax season" OK)
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Public interest:</strong> Genuinely serve the public good
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Non-discrimination:</strong> Available to all within stated eligibility categories
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Direct links only:</strong> Clean URLs without tracking or shorteners
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Not Allowed (Don'ts) -->
-          <div class="bg-white dark:bg-neutral-900 rounded-xl border border-red-200 dark:border-red-800 p-6">
-            <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
-              <svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
-              </svg>
-              Not Allowed
-            </h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Paid memberships:</strong> No discounts requiring AARP, AAA, Costco, etc.
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Tracking/affiliate URLs:</strong> No UTMs, referral codes, or link shorteners
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Bait-and-switch:</strong> No advertising benefits that differ from what's offered
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Predatory services:</strong> No payday loans, debt scams, or hidden fees
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Data harvesting:</strong> No services primarily collecting info for marketing
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Misrepresentation:</strong> No claiming to be government/nonprofit when you're not
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">MLM/pyramid schemes:</strong> No multi-level marketing or "business opportunities"
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Limited-time promos:</strong> No flash sales, holiday deals, or short-term campaigns
-                </span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                <span class="text-neutral-600 dark:text-neutral-300">
-                  <strong class="text-neutral-900 dark:text-white">Platform manipulation:</strong> No gaming search, rankings, or API abuse
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-4">
-          <div class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      <!-- Dos and Don'ts Side by Side -->
+      <div class="grid lg:grid-cols-2 gap-6 mb-6">
+        <!-- Requirements (Dos) -->
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-green-200 dark:border-green-800 p-6"
+        >
+          <h3
+            class="text-lg font-semibold text-neutral-900 dark:text-white mb-4 flex items-center gap-2"
+          >
+            <svg
+              class="w-5 h-5 text-green-600 dark:text-green-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <p class="text-sm text-amber-800 dark:text-amber-200">
-              <strong>Note:</strong> Listings from private companies do not receive verified badges.
-            </p>
-          </div>
-        </div>
-
-        <div class="bg-neutral-100 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-lg p-4 mb-4">
-          <div class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-            </svg>
-            <p class="text-sm text-neutral-700 dark:text-neutral-300">
-              <strong>Editorial discretion:</strong> We reserve the right to decline, modify, or remove any listing at any time, with or without notice, for any reason. Submission does not guarantee inclusion.
-            </p>
-          </div>
-        </div>
-
-        <div class="bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg p-4">
-          <div class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-primary-600 dark:text-primary-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-            </svg>
-            <p class="text-sm text-neutral-700 dark:text-neutral-300">
-              <strong>Acknowledgment:</strong> By submitting a listing—whether directly via email, through GitHub, or via API—authorized representatives acknowledge and agree to our <a href="/terms" class="text-primary-700 dark:text-primary-300 hover:underline font-medium">Terms of Service</a>, listing requirements, content standards, and <a href="#non-discrimination-policy" class="text-primary-700 dark:text-primary-300 hover:underline font-medium">Non-Discrimination Policy</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Religious Organizations -->
-  <section class="section" id="religious-organizations">
-    <div class="container-page">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
-          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-          </svg>
-          Religious Organizations
-        </h2>
-
-        <div class="bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-xl border border-purple-200 dark:border-purple-800 p-6 mb-6">
-          <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-            <strong class="text-neutral-900 dark:text-white">Religious organizations are welcome to list programs</strong> that provide genuine public benefits to Bay Area residents. However, consistent with our 501(c)(3) obligations, programs must be accessible without religious participation or proselytization.
-          </p>
-          <p class="text-sm text-neutral-600 dark:text-neutral-300">
-            This is a public benefits guide. When someone needs food, healthcare, or other essential services, they should access them without religious conditions.
-          </p>
-        </div>
-
-        <!-- Secular Service Delivery Requirement -->
-        <div class="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 mb-6">
-          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Secular Service Delivery Requirement</h3>
-          <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-            Programs listed on Bay Navigator must be accessible to the public without religious participation, observation, or material distribution.
-          </p>
-
-          <div class="grid lg:grid-cols-2 gap-6">
-            <!-- Acceptable -->
-            <div class="bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 p-4">
-              <h4 class="font-semibold text-green-800 dark:text-green-200 mb-3 flex items-center gap-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Acceptable
-              </h4>
-              <ul class="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-                <li class="flex items-start gap-2">
-                  <span class="text-green-500 mt-1">•</span>
-                  Religious organizations may operate programs and identify their religious affiliation
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-green-500 mt-1">•</span>
-                  Programs may be held at houses of worship (churches, mosques, temples, synagogues)
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-green-500 mt-1">•</span>
-                  Staff and volunteers may identify their religious affiliation when asked
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-green-500 mt-1">•</span>
-                  Religious symbols and décor may be present in the facility
-                </li>
-              </ul>
-            </div>
-
-            <!-- Not Allowed -->
-            <div class="bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 p-4">
-              <h4 class="font-semibold text-red-800 dark:text-red-200 mb-3 flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-                Not Allowed
-              </h4>
-              <ul class="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-                <li class="flex items-start gap-2">
-                  <span class="text-red-500 mt-1">•</span>
-                  Requiring attendance at religious services, prayer, or worship to access programs
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-red-500 mt-1">•</span>
-                  Distributing religious materials (pamphlets, scriptures, tracts) alongside services
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-red-500 mt-1">•</span>
-                  Including religious materials in donated items (hidden or visible)
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-red-500 mt-1">•</span>
-                  Requiring religious declarations, conversions, or statements of faith
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-red-500 mt-1">•</span>
-                  Using service delivery as an opportunity for proselytization or evangelism
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
-          <div class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <div>
-              <p class="text-sm text-blue-800 dark:text-blue-200 font-medium">Religious Freedom & Editorial Standards</p>
-              <p class="text-sm text-neutral-600 dark:text-neutral-300 mt-1">
-                Religious organizations are welcome to list programs that meet these standards. This policy does not restrict religious practice—it ensures that public benefit programs remain accessible without religious participation. Listing on Bay Navigator is voluntary; organizations that wish to combine service delivery with religious activities are free to do so outside our directory.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-neutral-100 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-lg p-4">
-          <div class="flex items-start gap-3">
-            <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-            </svg>
-            <p class="text-sm text-neutral-700 dark:text-neutral-300">
-              <strong>Enforcement:</strong> Reports of religious material distribution or participation requirements may result in removal from the directory. See our <a href="#non-discrimination-policy" class="text-primary-700 dark:text-primary-300 hover:underline font-medium">reporting process</a> below.
-            </p>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- Non-Discrimination Policy -->
-  <section class="section bg-neutral-50 dark:bg-neutral-800" id="non-discrimination-policy">
-    <div class="container-page">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
-          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-          </svg>
-          Non-Discrimination Policy
-        </h2>
-
-        <div class="bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 rounded-xl border border-primary-200 dark:border-primary-800 p-6 mb-6">
-          <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-            <strong class="text-neutral-900 dark:text-white">Bay Navigator prohibits discrimination.</strong> As a free community service committed to serving all Bay Area residents, we maintain strict standards to ensure our platform remains inclusive and welcoming to everyone.
-          </p>
-          <p class="text-neutral-700 dark:text-neutral-300">
-            All programs and services listed on Bay Navigator must be provided without discrimination based on race, color, religion, sex, sexual orientation, gender identity or expression, national origin, ancestry, age, disability, veteran status, genetic information, marital status, citizenship, or any other characteristic protected by law.
-          </p>
-        </div>
-
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 mb-6">
-          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Our Commitment</h3>
+            Requirements
+          </h3>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               <span class="text-neutral-600 dark:text-neutral-300">
-                We only list programs that serve all eligible individuals equally
+                <strong class="text-neutral-900 dark:text-white">Bay Area presence:</strong> Notable presence
+                in or services to the SF Bay Area
               </span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               <span class="text-neutral-600 dark:text-neutral-300">
-                We design our platform to be accessible to people of all abilities
+                <strong class="text-neutral-900 dark:text-white">Genuine value:</strong> Real, tangible
+                benefits—not marketing promotions or trials
               </span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               <span class="text-neutral-600 dark:text-neutral-300">
-                We provide information in plain language to serve all literacy levels
+                <strong class="text-neutral-900 dark:text-white">Accurate information:</strong> Keep listing
+                info current; honor advertised terms
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Price transparency:</strong> Disclose
+                exact dollar amounts for any fees
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Verification disclosure:</strong> Clearly
+                state if ID.me, SheerID, etc. is required
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Ongoing programs:</strong> Routine or
+                recurring (seasonal like "tax season" OK)
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Public interest:</strong> Genuinely serve
+                the public good
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Non-discrimination:</strong> Available
+                to all within stated eligibility categories
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Direct links only:</strong> Clean URLs
+                without tracking or shorteners
               </span>
             </li>
           </ul>
         </div>
 
-        <div class="bg-red-50 dark:bg-red-900/20 rounded-xl border border-red-200 dark:border-red-800 p-6">
-          <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
-            <svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+        <!-- Not Allowed (Don'ts) -->
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-red-200 dark:border-red-800 p-6"
+        >
+          <h3
+            class="text-lg font-semibold text-neutral-900 dark:text-white mb-4 flex items-center gap-2"
+          >
+            <svg
+              class="w-5 h-5 text-red-600 dark:text-red-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+              ></path>
             </svg>
-            Reporting & Enforcement
+            Not Allowed
           </h3>
-          <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-            If we directly or indirectly receive reports of actions that violate our guidelines—including discrimination, religious proselytization during service delivery, or misrepresentation—we reserve the right to investigate such claims as they pertain to the organization's listing on our platform.
-          </p>
-          <p class="text-neutral-700 dark:text-neutral-300 mb-4">
-            Following an investigation, we may, in our sole discretion:
-          </p>
-          <ul class="space-y-2 mb-4">
-            <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
-              <span class="text-red-500">•</span>
-              <span>Temporarily suspend the listing pending review</span>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Paid memberships:</strong> No discounts
+                requiring AARP, AAA, Costco, etc.
+              </span>
             </li>
-            <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
-              <span class="text-red-500">•</span>
-              <span>Permanently remove the listing from Bay Navigator</span>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Tracking/affiliate URLs:</strong> No
+                UTMs, referral codes, or link shorteners
+              </span>
             </li>
-            <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
-              <span class="text-red-500">•</span>
-              <span>Decline future listing requests from the organization</span>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Bait-and-switch:</strong> No advertising
+                benefits that differ from what's offered
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Predatory services:</strong> No payday
+                loans, debt scams, or hidden fees
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Data harvesting:</strong> No services
+                primarily collecting info for marketing
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Misrepresentation:</strong> No claiming
+                to be government/nonprofit when you're not
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">MLM/pyramid schemes:</strong> No multi-level
+                marketing or "business opportunities"
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Limited-time promos:</strong> No flash
+                sales, holiday deals, or short-term campaigns
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="text-neutral-600 dark:text-neutral-300">
+                <strong class="text-neutral-900 dark:text-white">Platform manipulation:</strong> No gaming
+                search, rankings, or API abuse
+              </span>
             </li>
           </ul>
-          <p class="text-sm text-neutral-600 dark:text-neutral-300">
-            To report a concern, please email <a href="mailto:hello@baytides.org" class="text-primary-700 dark:text-primary-300 hover:underline font-medium">hello@baytides.org</a> with details about the program and the nature of your concern.
+        </div>
+      </div>
+
+      <div
+        class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-4"
+      >
+        <div class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <p class="text-sm text-amber-800 dark:text-amber-200">
+            <strong>Note:</strong> Listings from private companies do not receive verified badges.
           </p>
         </div>
-    </div>
-  </section>
+      </div>
 
-  <!-- CTA -->
-  <section class="section">
-    <div class="container-page">
-      <div class="text-center">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">
-          Ready to Partner?
-        </h2>
-        <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-          Now that you understand our guidelines, submit a partnership inquiry to get started.
-        </p>
-        <a href="/partnerships#inquiry-form" class="btn-primary inline-flex items-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+      <div
+        class="bg-neutral-100 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-lg p-4 mb-4"
+      >
+        <div class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-neutral-600 dark:text-neutral-400 mt-0.5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            ></path>
           </svg>
-          Submit Partnership Inquiry
-        </a>
+          <p class="text-sm text-neutral-700 dark:text-neutral-300">
+            <strong>Editorial discretion:</strong> We reserve the right to decline, modify, or remove
+            any listing at any time, with or without notice, for any reason. Submission does not guarantee
+            inclusion.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg p-4"
+      >
+        <div class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-primary-600 dark:text-primary-400 mt-0.5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            ></path>
+          </svg>
+          <p class="text-sm text-neutral-700 dark:text-neutral-300">
+            <strong>Acknowledgment:</strong> By submitting a listing—whether directly via email, through
+            GitHub, or via API—authorized representatives acknowledge and agree to our <a
+              href="/terms"
+              class="text-primary-700 dark:text-primary-300 hover:underline font-medium"
+              >Terms of Service</a
+            >, listing requirements, content standards, and <a
+              href="#non-discrimination-policy"
+              class="text-primary-700 dark:text-primary-300 hover:underline font-medium"
+              >Non-Discrimination Policy</a
+            >.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<!-- Religious Organizations -->
+<section class="section" id="religious-organizations">
+  <div class="container-page">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
+      <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        ></path>
+      </svg>
+      Religious Organizations
+    </h2>
+
+    <div
+      class="bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-xl border border-purple-200 dark:border-purple-800 p-6 mb-6"
+    >
+      <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+        <strong class="text-neutral-900 dark:text-white"
+          >Religious organizations are welcome to list programs</strong
+        > that provide genuine public benefits to Bay Area residents. However, consistent with our 501(c)(3)
+        obligations, programs must be accessible without religious participation or proselytization.
+      </p>
+      <p class="text-sm text-neutral-600 dark:text-neutral-300">
+        This is a public benefits guide. When someone needs food, healthcare, or other essential
+        services, they should access them without religious conditions.
+      </p>
+    </div>
+
+    <!-- Secular Service Delivery Requirement -->
+    <div
+      class="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 mb-6"
+    >
+      <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">
+        Secular Service Delivery Requirement
+      </h3>
+      <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+        Programs listed on Bay Navigator must be accessible to the public without religious
+        participation, observation, or material distribution.
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-6">
+        <!-- Acceptable -->
+        <div
+          class="bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800 p-4"
+        >
+          <h4 class="font-semibold text-green-800 dark:text-green-200 mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Acceptable
+          </h4>
+          <ul class="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">•</span>
+              Religious organizations may operate programs and identify their religious affiliation
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">•</span>
+              Programs may be held at houses of worship (churches, mosques, temples, synagogues)
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">•</span>
+              Staff and volunteers may identify their religious affiliation when asked
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">•</span>
+              Religious symbols and décor may be present in the facility
+            </li>
+          </ul>
+        </div>
+
+        <!-- Not Allowed -->
+        <div
+          class="bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 p-4"
+        >
+          <h4 class="font-semibold text-red-800 dark:text-red-200 mb-3 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            Not Allowed
+          </h4>
+          <ul class="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">•</span>
+              Requiring attendance at religious services, prayer, or worship to access programs
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">•</span>
+              Distributing religious materials (pamphlets, scriptures, tracts) alongside services
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">•</span>
+              Including religious materials in donated items (hidden or visible)
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">•</span>
+              Requiring religious declarations, conversions, or statements of faith
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">•</span>
+              Using service delivery as an opportunity for proselytization or evangelism
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6"
+    >
+      <div class="flex items-start gap-3">
+        <svg
+          class="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <div>
+          <p class="text-sm text-blue-800 dark:text-blue-200 font-medium">
+            Religious Freedom & Editorial Standards
+          </p>
+          <p class="text-sm text-neutral-600 dark:text-neutral-300 mt-1">
+            Religious organizations are welcome to list programs that meet these standards. This
+            policy does not restrict religious practice—it ensures that public benefit programs
+            remain accessible without religious participation. Listing on Bay Navigator is
+            voluntary; organizations that wish to combine service delivery with religious activities
+            are free to do so outside our directory.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-neutral-100 dark:bg-neutral-700 border border-neutral-300 dark:border-neutral-600 rounded-lg p-4"
+    >
+      <div class="flex items-start gap-3">
+        <svg
+          class="w-5 h-5 text-neutral-600 dark:text-neutral-400 mt-0.5 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+          ></path>
+        </svg>
+        <p class="text-sm text-neutral-700 dark:text-neutral-300">
+          <strong>Enforcement:</strong> Reports of religious material distribution or participation requirements
+          may result in removal from the directory. See our <a
+            href="#non-discrimination-policy"
+            class="text-primary-700 dark:text-primary-300 hover:underline font-medium"
+            >reporting process</a
+          > below.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Non-Discrimination Policy -->
+<section class="section bg-neutral-50 dark:bg-neutral-800" id="non-discrimination-policy">
+  <div class="container-page">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 flex items-center gap-2">
+      <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+        ></path>
+      </svg>
+      Non-Discrimination Policy
+    </h2>
+
+    <div
+      class="bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 rounded-xl border border-primary-200 dark:border-primary-800 p-6 mb-6"
+    >
+      <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+        <strong class="text-neutral-900 dark:text-white"
+          >Bay Navigator prohibits discrimination.</strong
+        > As a free community service committed to serving all Bay Area residents, we maintain strict
+        standards to ensure our platform remains inclusive and welcoming to everyone.
+      </p>
+      <p class="text-neutral-700 dark:text-neutral-300">
+        All programs and services listed on Bay Navigator must be provided without discrimination
+        based on race, color, religion, sex, sexual orientation, gender identity or expression,
+        national origin, ancestry, age, disability, veteran status, genetic information, marital
+        status, citizenship, or any other characteristic protected by law.
+      </p>
+    </div>
+
+    <div
+      class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 mb-6"
+    >
+      <h3 class="text-lg font-semibold text-neutral-900 dark:text-white mb-4">Our Commitment</h3>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-neutral-600 dark:text-neutral-300">
+            We only list programs that serve all eligible individuals equally
+          </span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-neutral-600 dark:text-neutral-300">
+            We design our platform to be accessible to people of all abilities
+          </span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg
+            class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-neutral-600 dark:text-neutral-300">
+            We provide information in plain language to serve all literacy levels
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="bg-red-50 dark:bg-red-900/20 rounded-xl border border-red-200 dark:border-red-800 p-6"
+    >
+      <h3
+        class="text-lg font-semibold text-neutral-900 dark:text-white mb-4 flex items-center gap-2"
+      >
+        <svg
+          class="w-5 h-5 text-red-600 dark:text-red-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+          ></path>
+        </svg>
+        Reporting & Enforcement
+      </h3>
+      <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+        If we directly or indirectly receive reports of actions that violate our
+        guidelines—including discrimination, religious proselytization during service delivery, or
+        misrepresentation—we reserve the right to investigate such claims as they pertain to the
+        organization's listing on our platform.
+      </p>
+      <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+        Following an investigation, we may, in our sole discretion:
+      </p>
+      <ul class="space-y-2 mb-4">
+        <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
+          <span class="text-red-500">•</span>
+          <span>Temporarily suspend the listing pending review</span>
+        </li>
+        <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
+          <span class="text-red-500">•</span>
+          <span>Permanently remove the listing from Bay Navigator</span>
+        </li>
+        <li class="flex items-start gap-2 text-neutral-700 dark:text-neutral-300">
+          <span class="text-red-500">•</span>
+          <span>Decline future listing requests from the organization</span>
+        </li>
+      </ul>
+      <p class="text-sm text-neutral-600 dark:text-neutral-300">
+        To report a concern, please email <a
+          href="mailto:hello@baytides.org"
+          class="text-primary-700 dark:text-primary-300 hover:underline font-medium"
+          >hello@baytides.org</a
+        > with details about the program and the nature of your concern.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container-page">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Ready to Partner?</h2>
+      <p class="text-neutral-600 dark:text-neutral-300 mb-6">
+        Now that you understand our guidelines, submit a partnership inquiry to get started.
+      </p>
+      <a href="/partnerships#inquiry-form" class="btn-primary inline-flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+        Submit Partnership Inquiry
+      </a>
+    </div>
+  </div>
+</section>

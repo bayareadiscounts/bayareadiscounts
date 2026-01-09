@@ -5,7 +5,7 @@
 
 <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
   title="Explanation of WCAG 2 Level AAA conformance">
-  <img height="32" width="88"
+<img height="32" width="88"
      src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA"
      alt="Level AAA conformance, W3C WAI Web Content Accessibility Guidelines 2.2">
 </a>
@@ -13,6 +13,7 @@
 **[BayNavigator.org](https://baynavigator.org)** — A searchable directory of free and low-cost programs across the San Francisco Bay Area.
 
 Find benefits and discounts for:
+
 - 💳 Income-eligible (e.g., SNAP/EBT and Medi-Cal recipients)
 - 👵 Seniors (65+)
 - 🧒 Youth
@@ -28,6 +29,7 @@ Find benefits and discounts for:
 ## 🎯 Project Goals
 
 This community-driven resource aims to:
+
 - **Improve awareness** of local programs and benefits
 - **Support financial accessibility** across the Bay Area
 - **Reduce stigma** around using assistance programs
@@ -59,6 +61,7 @@ Bay Navigator provides static JSON API files for accessing program data:
 **Base URL:** `https://baynavigator.org/api/`
 
 **Endpoints:**
+
 - `/api/programs.json` - All programs (600+ total)
 - `/api/programs/{id}.json` - Individual program by ID
 - `/api/categories.json` - All categories
@@ -67,6 +70,7 @@ Bay Navigator provides static JSON API files for accessing program data:
 - `/api/metadata.json` - API metadata
 
 **Features:**
+
 - ⚡ Fast (CDN-cached, ~10-50ms response time)
 - 🌍 Global CDN via Azure Static Web Apps
 - 💰 Free to use
@@ -74,10 +78,11 @@ Bay Navigator provides static JSON API files for accessing program data:
 - 📊 Updated automatically via GitHub Actions
 
 **Example:**
+
 ```javascript
 fetch('https://baynavigator.org/api/programs.json')
-  .then(res => res.json())
-  .then(data => console.log(`Found ${data.total} programs`));
+  .then((res) => res.json())
+  .then((data) => console.log(`Found ${data.total} programs`));
 ```
 
 ---
@@ -94,6 +99,7 @@ fetch('https://baynavigator.org/api/programs.json')
 ## Tech Stack
 
 **Built with:**
+
 - [Astro](https://astro.build/) - Static site generator
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/) - Hosting and deployment
@@ -103,6 +109,7 @@ fetch('https://baynavigator.org/api/programs.json')
 - Responsive design - Mobile-first, optimized for all devices including Apple Vision Pro
 
 **Key Components:**
+
 - `src/data/` - Program data organized by category (YAML files)
 - `api/` - Static JSON API endpoints (auto-generated)
 - `scripts/` - Build scripts including API generator and data sync scripts
@@ -147,11 +154,13 @@ baynavigator/
 ## 🎯 Scope & Focus
 
 **This resource focuses on Bay Area programs.** National or statewide programs are included when they:
+
 - Have specific Bay Area locations or chapters
 - Provide significant value to Bay Area residents
 - Are widely used and impactful (e.g., Museums for All)
 
 **Geographic priority:**
+
 1. **Bay Area-specific** programs (preferred)
 2. **California statewide** programs available to Bay Area residents
 3. **National programs** with Bay Area presence or significant local impact
@@ -165,8 +174,10 @@ We welcome contributions! There are two ways to help:
 > **Note:** By submitting a listing—whether via pull request, issue, email, or API—authorized representatives acknowledge and agree to our [Terms of Service](https://baynavigator.org/terms), [Partnership Requirements](https://baynavigator.org/partnerships), and [Non-Discrimination Policy](https://baynavigator.org/partnerships#non-discrimination-policy).
 
 ### For Everyone: Submit a Program
+
 **Found a resource that should be listed?**
 👉 [Open an issue](../../issues/new) with:
+
 - Program/service name
 - Who it helps (eligibility)
 - What benefit it provides
@@ -175,6 +186,7 @@ We welcome contributions! There are two ways to help:
 - Any deadlines or special requirements
 
 ### For Technical Contributors
+
 **Want to add programs directly or improve the site?**  
 👉 See **[CONTRIBUTING.md](./docs/CONTRIBUTING.md)** for detailed technical instructions
 
@@ -234,14 +246,14 @@ Programs are stored in YAML files under `src/data/`. Each program follows this f
 - id: unique-program-id
   name: Program Name
   category: Category Name
-  area: Geographic Area        # County, "Bay Area", "Statewide", or "Nationwide"
-  city: City Name              # Optional: specific city
+  area: Geographic Area # County, "Bay Area", "Statewide", or "Nationwide"
+  city: City Name # Optional: specific city
   groups:
-    - income-eligible          # Eligibility groups
+    - income-eligible # Eligibility groups
     - seniors
     - everyone
   description: Brief description of the program
-  what_they_offer: |           # Detailed benefits (optional)
+  what_they_offer: | # Detailed benefits (optional)
     - Benefit 1
     - Benefit 2
   how_to_get_it: Steps to access the program (optional)
@@ -251,6 +263,7 @@ Programs are stored in YAML files under `src/data/`. Each program follows this f
 ```
 
 ### Available Categories:
+
 - Childcare
 - Community Services
 - Education
@@ -270,6 +283,7 @@ Programs are stored in YAML files under `src/data/`. Each program follows this f
 - Utilities
 
 ### Eligibility Groups:
+
 - `income-eligible` - 💳 SNAP/EBT/Medi-Cal recipients
 - `seniors` - 👵 Seniors (60+)
 - `youth` - 🧒 Youth
@@ -293,6 +307,7 @@ Programs are stored in YAML files under `src/data/`. Each program follows this f
 ## 🔄 Maintenance & Updates
 
 This is a **community-maintained project**. Programs are verified periodically, but:
+
 - ⚠️ **Always check the official website** for the most current information
 - 📅 Availability and eligibility requirements can change
 - 🔗 If you find outdated info, please [open an issue](../../issues/new)
@@ -314,6 +329,7 @@ This is a **community-maintained project**. Programs are verified periodically, 
 ## 🙏 Acknowledgments
 
 This project is maintained by volunteers who believe in making community resources more accessible. Special thanks to:
+
 - All contributors who submit programs and updates
 - Organizations providing these valuable services
 - The open-source community for the tools that make this possible
@@ -329,11 +345,13 @@ This project uses a dual-license model to ensure proper attribution while maximi
 All code, including HTML, CSS, JavaScript, Jekyll templates, and configuration files, is licensed under the **MIT License**.
 
 **You are free to:**
+
 - Use the code commercially
 - Modify and distribute
 - Use privately
 
 **Requirements:**
+
 - Include the MIT license and copyright notice
 - Provide attribution to Bay Navigator
 
@@ -344,15 +362,18 @@ See [LICENSE](./LICENSE) for full details.
 All program data in `src/data/` is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
 **You are free to:**
+
 - Share and redistribute the data
 - Adapt and build upon the data
 
 **Requirements:**
+
 - Give appropriate credit to Bay Navigator
 - Provide a link to the license
 - Indicate if changes were made
 
 **Suggested attribution:**
+
 ```
 Program data from Bay Navigator (https://baynavigator.org)
 licensed under CC BY 4.0
@@ -365,6 +386,7 @@ See [LICENSE-DATA](./LICENSE-DATA) for full details.
 ### Why Dual License?
 
 This approach ensures:
+
 - **Credit where credit is due** - Both licenses require attribution
 - **Maximum community benefit** - Other cities can create similar resources
 - **Commercial use allowed** - Apps, tools, and services can be built using our work

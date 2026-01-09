@@ -33,7 +33,7 @@ class ApiClient {
       method: options.method || 'GET',
       headers,
       signal: options.signal,
-      body: options.body ? JSON.stringify(options.body) : undefined
+      body: options.body ? JSON.stringify(options.body) : undefined,
     });
 
     if (res.status === 304) {

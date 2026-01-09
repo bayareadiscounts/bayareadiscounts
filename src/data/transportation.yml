@@ -24,7 +24,7 @@
   timeframe: Ongoing
   link: https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/commercial-driver-licenses-cdl/
   link_text: Learn More
-  verified_date: "2026-01-03"
+  verified_date: '2026-01-03'
 - id: ac-transit-stpp
   name: AC Transit
   category: Transportation
@@ -43,12 +43,12 @@
     4. Contact your school's administration for enrollment details
   phone: 510-891-4777
   address: 1600 Franklin Street, Oakland, CA 94612
-  benefit: "Student Transit Pass Program: free unlimited rides for eligible middle and high school students"
+  benefit: 'Student Transit Pass Program: free unlimited rides for eligible middle and high school students'
   how_to_use: Apply through eligible schools
   timeframe: Ongoing
   link: https://www.alamedactc.org/programs-projects/studentpass
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.8054359
   longitude: -122.2685498
 - id: bart-discount
@@ -68,12 +68,12 @@
     3. Choose an amount to automatically add when balance is low
     4. Discount is applied automatically to each Autoload transaction
   phone: 510-464-6000
-  benefit: "High-Value Discount: ~6.25% off when using Autoload"
+  benefit: 'High-Value Discount: ~6.25% off when using Autoload'
   how_to_use: Set Autoload in Clipper
   timeframe: Ongoing
   link: https://www.bart.gov/tickets/discounts
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bart-muni-a-pass
   name: BART + Muni
   category: Transportation
@@ -91,12 +91,12 @@
     3. Pass is valid for one calendar month
     4. Tap Clipper card when boarding Muni or entering BART
   phone: 877-878-8883
-  benefit: "\"A\" Fast Pass: Unlimited Muni + BART rides within SF"
+  benefit: '"A" Fast Pass: Unlimited Muni + BART rides within SF'
   how_to_use: Buy discounted pass from Clipper
   timeframe: Monthly
   link: https://www.bart.gov/tickets/discounts
   link_text: Buy Pass
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bike-share-for-all
   name: Bike Share for All (Bay Wheels)
   category: Transportation
@@ -120,7 +120,7 @@
   timeframe: Ongoing
   link: https://www.lyft.com/bikes/bay-wheels/bike-share-for-all
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: caltrain-youth-fares
   name: Caltrain Dollar Fares for Youth
   category: Transportation
@@ -144,7 +144,7 @@
   timeframe: Ongoing
   link: https://www.caltrain.com/dollarfares
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: city-coach-solano
   name: City Coach
   category: Transportation
@@ -166,7 +166,7 @@
   timeframe: Ongoing
   link: https://citycoach.com/fares/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: clipper-baypass
   name: Clipper BayPass
   category: Transportation
@@ -190,7 +190,7 @@
   timeframe: Ongoing
   link: https://maps.santarosa.edu/clipper-baypass-faq
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: clipper-start
   name: Clipper START
   category: Transportation
@@ -215,7 +215,7 @@
   timeframe: Ongoing
   link: https://www.clipperstartcard.com
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: dmv-reduced-fee-id
   name: DMV Reduced-Fee ID Card
   category: Transportation
@@ -240,7 +240,7 @@
   timeframe: Ongoing
   link: https://sa.dmv.ca.gov/DMV/ukp.aspx?pid=1&ruleid=240
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: emergency-ride-home-marin
   name: Emergency Ride Home
   category: Transportation
@@ -265,7 +265,7 @@
   timeframe: Ongoing
   link: https://marincommutes.org/erh/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: emery-go-round
   name: Emery Go-Round
   category: Transportation
@@ -291,7 +291,7 @@
   timeframe: Ongoing
   link: https://emerygoround.com
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.831262
   longitude: -122.286036
 - id: 511-emergency-rides-contra-costa
@@ -316,7 +316,7 @@
   timeframe: Ongoing
   link: https://511contracosta.org/guaranteed-ride-home/
   link_text: Register
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: 511-transit-incentives-contra-costa
   name: 511 Transit Incentives
   category: Transportation
@@ -339,7 +339,7 @@
   timeframe: Ongoing
   link: https://511contracosta.org/transit/transit-offer/
   link_text: Claim offer
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: lime-access
   name: Lime Access
   category: Transportation
@@ -363,7 +363,7 @@
   timeframe: Ongoing
   link: https://www.li.me/why/community/lime-access
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: low-cost-auto-insurance
   name: Low Cost Auto Insurance
   category: Transportation
@@ -389,7 +389,7 @@
   timeframe: Ongoing
   link: https://www.mylowcostauto.com
   link_text: Enroll
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: marin-transit-students
   name: Marin Transit
   category: Transportation
@@ -413,7 +413,7 @@
   timeframe: School-year durations apply
   link: https://marintransit.org/COM
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: muni-free
   name: Muni
   category: Transportation
@@ -437,13 +437,13 @@
     3. Lifeline Pass: Apply through SFMTA with proof of low income
     4. Chase Center: Show your event ticket on game day for free Muni
     5. All programs require Clipper card
-  phone: "311"
+  phone: '311'
   benefit: Free Muni for youth (excludes cable cars), income-eligible seniors/people with disabilities, Access Pass, Lifeline Pass, free with Chase Center event ticket
   how_to_use: Online enrollment or show ticket/ID
   timeframe: Ongoing; some seasonal
   link: https://www.sfmta.com/fares
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: petaluma-transit-free
   name: Petaluma Transit
   category: Transportation
@@ -467,7 +467,7 @@
   timeframe: Ongoing
   link: https://transit.cityofpetaluma.net/fares/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: rtc-clipper-card
   name: RTC Clipper Card
   category: Transportation
@@ -492,7 +492,7 @@
   timeframe: Ongoing
   link: https://511.org/transit/rtc-card/eligibility
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: samtrans
   name: SamTrans Way2Go Pass
   category: Transportation
@@ -516,7 +516,7 @@
   timeframe: Academic year
   link: https://skylinecollege.edu/sparkpoint/services/transportation.php
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: samtrans-youth
   name: SamTrans
   category: Transportation
@@ -536,12 +536,12 @@
     4. Load pass onto Clipper card
     5. Valid June 1 through August 31
   phone: 650-508-6200
-  benefit: "Summer Youth Pass: unlimited local bus rides June–August"
+  benefit: 'Summer Youth Pass: unlimited local bus rides June–August'
   how_to_use: Buy pass before summer
   timeframe: Seasonal
   link: https://www.samtrans.com/fares/fare-types
   link_text: Buy Pass
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: santa-rosa-citybus
   name: Santa Rosa CityBus
   category: Transportation
@@ -571,7 +571,7 @@
   timeframe: Ongoing
   link: https://srcitybus.org/fares-and-passes/discount-programs/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 38.440655
   longitude: -122.7197253
 - id: senior-clipper-card
@@ -598,7 +598,7 @@
   timeframe: Ongoing
   link: https://www.clippercard.com/ClipperWeb/discounts.html
   link_text: Visit website
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bay-area-park-ride
   name: Bay Area Park & Ride Lots
   category: Transportation
@@ -623,7 +623,7 @@
   timeframe: Ongoing
   link: https://511.org/carpool/park-n-ride
   link_text: Find Lots
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: express-lanes-start
   name: I-880/I-80 Express Lanes START Program
   category: Transportation
@@ -648,7 +648,7 @@
   timeframe: Ongoing
   link: https://www.expresslanesstart.org/s/
   link_text: Apply Now
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: smc-101-express-lanes-go-card
   name: San Mateo 101 Express Lanes Go Card
   category: Transportation
@@ -671,7 +671,7 @@
   timeframe: Ongoing
   link: https://101expresslanes.org/program/equity-program
   link_text: Apply Now
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: bay-area-casual-carpool
   name: Bay Area Casual Carpool
   category: Transportation
@@ -696,7 +696,7 @@
   timeframe: Weekday commute hours
   link: https://511.org/carpool/casual
   link_text: Find Locations
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: bay-area-vanpool
   name: Bay Area Vanpool Program
   category: Transportation
@@ -722,7 +722,7 @@
   timeframe: Ongoing
   link: https://511.org/vanpool
   link_text: Find Vanpool
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: bay-area-biking-maps
   name: Bay Area Biking Maps & Trails
   category: Transportation
@@ -748,7 +748,7 @@
   timeframe: Ongoing
   link: https://511.org/biking/maps-n-trails
   link_text: View Maps
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: guaranteed-ride-home
   name: Guaranteed Ride Home
   category: Transportation
@@ -773,7 +773,7 @@
   timeframe: Ongoing
   link: https://511.org/carpool/guaranteed-ride-home
   link_text: Register Now
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: commute-rewards
   name: Bay Area Commute Rewards
   category: Transportation
@@ -798,7 +798,7 @@
   timeframe: Ongoing
   link: https://511.org/carpool/rewards
   link_text: Find Program
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: safe-routes-to-school
   name: Bay Area Safe Routes to School
   category: Transportation
@@ -825,7 +825,7 @@
   timeframe: School year
   link: https://sparetheairyouth.org/about/safe-routes-to-school
   link_text: Find Program
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 - id: bay-area-cycling-organizations
   name: Bay Area Bicycle Coalitions
   category: Transportation
@@ -851,7 +851,7 @@
   timeframe: Ongoing
   link: https://511.org/biking/cycling-organizations
   link_text: Find Coalition
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 # BikeLink Bike Lockers - Overview Program
 - id: bikelink-bike-lockers
   name: BikeLink Bike Lockers
@@ -877,7 +877,7 @@
   timeframe: Ongoing
   link: https://www.bikelink.org/maps
   link_text: Find Lockers
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
 # Bikeep Smart Bike Racks - Overview Program
 - id: bikeep-smart-racks
   name: Bikeep Free Bike Parking at BART
@@ -903,7 +903,7 @@
   timeframe: Ongoing
   link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   link_text: Register
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
 # BikeLink Station Locations (synced from BART API)
 - id: bart-civic-center
   name: Civic Center/UN Plaza BART
@@ -918,7 +918,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.779732
   longitude: -122.414123
@@ -935,7 +935,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.792874
   longitude: -122.39702
@@ -952,7 +952,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with free Bikeep smart bike racks. Register at bikehub.com and use your Clipper card.
   latitude: 37.765062
   longitude: -122.419694
@@ -969,7 +969,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with free Bikeep smart bike racks. Register at bikehub.com and use your Clipper card.
   latitude: 37.75247
   longitude: -122.418143
@@ -988,7 +988,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink lockers (5¢/hour) and free Bikeep smart racks.
   latitude: 37.803768
   longitude: -122.27145
@@ -1007,7 +1007,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink lockers (5¢/hour) and free Bikeep smart racks.
   latitude: 37.829065
   longitude: -122.26704
@@ -1024,7 +1024,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.797027
   longitude: -122.26518
@@ -1041,7 +1041,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.804872
   longitude: -122.29514
@@ -1058,7 +1058,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.774836
   longitude: -122.224175
@@ -1075,7 +1075,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.852803
   longitude: -122.270062
@@ -1092,7 +1092,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.873967
   longitude: -122.28344
@@ -1109,7 +1109,7 @@
     - name: 🚲 BikeLink Lockers
       link: https://www.bikelink.org/maps
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink secure bike lockers available 24/7 at 5¢/hour.
   latitude: 37.870104
   longitude: -122.268133
@@ -1128,7 +1128,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink lockers (5¢/hour) and free Bikeep smart racks.
   latitude: 37.973737
   longitude: -122.029095
@@ -1147,7 +1147,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink lockers (5¢/hour) and free Bikeep smart racks.
   latitude: 37.928468
   longitude: -122.056012
@@ -1166,7 +1166,7 @@
     - name: 🚲 Free Bikeep Racks
       link: https://www.bikehub.com/articles/bikeep-bike-racks-pg1209.htm
   verified_by: BART
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: BART station with BikeLink lockers (5¢/hour) and free Bikeep smart racks.
   latitude: 37.59063
   longitude: -122.017388
@@ -1196,7 +1196,7 @@
   timeframe: Ongoing
   link: https://www.caltrain.com/stations-zones
   link_text: View Stations
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
 # Caltrain Station Locations (from caltrain.com)
 - id: caltrain-san-francisco
   name: San Francisco Caltrain
@@ -1217,7 +1217,7 @@
     - name: ♻️ Recycling
       link: https://www.caltrain.com/rider-information/recycling
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain terminal in San Francisco with free bike valet, restrooms, recycling, and accessibility features. Zone 1.
   latitude: 37.776404
   longitude: -122.394911
@@ -1236,7 +1236,7 @@
     - name: 🅿️ Street Parking
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and bike racks. Stairs only (not wheelchair accessible). Zone 1.
   latitude: 37.756972
   longitude: -122.392492
@@ -1257,7 +1257,7 @@
     - name: 🅿️ Parking (11 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with elevator, BikeLink e-lockers, and limited parking. Zone 1.
   latitude: 37.70766
   longitude: -122.401665
@@ -1278,7 +1278,7 @@
     - name: 🅿️ Parking (178 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with elevator, BikeLink e-lockers, and parking. Zone 1.
   latitude: 37.63046
   longitude: -122.411709
@@ -1301,7 +1301,7 @@
     - name: 🚇 BART Connection
       link: https://www.bart.gov/stations/mlbr
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain/BART transfer station with elevator, bike racks, and parking. Zone 2.
   latitude: 37.5999
   longitude: -122.38675
@@ -1322,7 +1322,7 @@
     - name: 🅿️ Parking (68 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking. Zone 2.
   latitude: 37.57985
   longitude: -122.34418
@@ -1343,7 +1343,7 @@
     - name: 🅿️ Parking (42 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with elevator, BikeLink e-lockers, and parking. Zone 2.
   latitude: 37.56824
   longitude: -122.3239
@@ -1364,7 +1364,7 @@
     - name: 🅿️ Parking
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking lots. Zone 2.
   latitude: 37.542393
   longitude: -122.301612
@@ -1385,7 +1385,7 @@
     - name: 🅿️ Parking (375 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with elevator, BikeLink e-lockers, and large parking lot. Zone 2.
   latitude: 37.52133
   longitude: -122.2763
@@ -1406,7 +1406,7 @@
     - name: 🅿️ Parking (251 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking. Zone 2.
   latitude: 37.508033
   longitude: -122.2602
@@ -1429,7 +1429,7 @@
     - name: 🚻 Restrooms
       link: https://www.caltrain.com/rider-information/restrooms
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers, large parking, and pilot restroom program. Zone 2.
   latitude: 37.485865
   longitude: -122.2315
@@ -1450,7 +1450,7 @@
     - name: 🅿️ Parking (150 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking. Zone 3.
   latitude: 37.4548
   longitude: -122.18245
@@ -1473,7 +1473,7 @@
     - name: 🚻 Restrooms
       link: https://www.caltrain.com/rider-information/restrooms
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Major Caltrain hub with BikeLink e-lockers, large parking, and pilot restroom program. Zone 3.
   latitude: 37.44322
   longitude: -122.16429
@@ -1494,7 +1494,7 @@
     - name: 🅿️ Parking (185 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking. Zone 3.
   latitude: 37.428834
   longitude: -122.14113
@@ -1515,7 +1515,7 @@
     - name: 🅿️ Parking (199 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking. Zone 3.
   latitude: 37.407239
   longitude: -122.107116
@@ -1538,7 +1538,7 @@
     - name: 🚈 VTA Light Rail
       link: https://www.vta.org/go/light-rail
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers, parking, and VTA light rail connection. Zone 3.
   latitude: 37.395067
   longitude: -122.07722
@@ -1561,7 +1561,7 @@
     - name: 🚻 Restrooms
       link: https://www.caltrain.com/rider-information/restrooms
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers, large parking, and pilot restroom program. Zone 3.
   latitude: 37.378934
   longitude: -122.0315
@@ -1582,7 +1582,7 @@
     - name: 🅿️ Parking (122 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers and parking. Zone 4.
   latitude: 37.3707
   longitude: -121.9969
@@ -1605,7 +1605,7 @@
     - name: 🚆 ACE/Capitol Corridor
       link: https://acerail.com
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with BikeLink e-lockers, parking, and ACE/Capitol Corridor connection. Zone 4.
   latitude: 37.353384
   longitude: -121.936465
@@ -1632,7 +1632,7 @@
     - name: 🚆 ACE/Capitol Corridor/Amtrak
       link: https://acerail.com
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Major transit hub with elevator, BikeLink e-lockers, restrooms, VTA light rail, and Amtrak connections. Zone 4.
   latitude: 37.329694
   longitude: -121.903208
@@ -1655,7 +1655,7 @@
     - name: 🚈 VTA Light Rail
       link: https://www.vta.org/go/light-rail
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with elevator, BikeLink e-lockers, free parking, and VTA light rail connection. Zone 4.
   latitude: 37.31269
   longitude: -121.8847
@@ -1676,7 +1676,7 @@
     - name: 🅿️ Free Parking (379 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with VTA bike lockers and free parking. Weekday commute service only. Zone 5.
   latitude: 37.284016
   longitude: -121.841899
@@ -1697,7 +1697,7 @@
     - name: 🅿️ Free Parking (425 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with VTA bike lockers and free parking. Weekday commute service only. Zone 5.
   latitude: 37.252606
   longitude: -121.797907
@@ -1718,7 +1718,7 @@
     - name: 🅿️ Free Parking (486 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain station with VTA bike lockers and free parking. Weekday commute service only. Zone 6.
   latitude: 37.129644
   longitude: -121.650558
@@ -1739,7 +1739,7 @@
     - name: 🅿️ Free Parking (471 spaces)
       link: https://www.caltrain.com/rider-information/parking
   verified_by: Caltrain
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   description: Caltrain southern terminus with VTA bike lockers and free parking. Weekday commute service only. Zone 6.
   latitude: 37.004466
   longitude: -121.566727

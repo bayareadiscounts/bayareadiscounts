@@ -3,7 +3,7 @@
  * Single onboarding flow for the entire site
  */
 
-(function() {
+(function () {
   'use strict';
 
   let currentStep = 1;
@@ -33,7 +33,7 @@
     { id: 'foster-youth', name: 'Foster Youth', icon: '🏡' },
     { id: 'reentry', name: 'Formerly Incarcerated', icon: '🔓' },
     { id: 'nonprofits', name: 'Nonprofits', icon: '🤝' },
-    { id: 'everyone', name: 'Everyone', icon: '🌎' }
+    { id: 'everyone', name: 'Everyone', icon: '🌎' },
   ];
 
   const DEFAULT_COUNTIES = [
@@ -45,7 +45,7 @@
     { id: 'marin', name: 'Marin County' },
     { id: 'napa', name: 'Napa County' },
     { id: 'solano', name: 'Solano County' },
-    { id: 'sonoma', name: 'Sonoma County' }
+    { id: 'sonoma', name: 'Sonoma County' },
   ];
 
   /**
@@ -158,19 +158,21 @@
           <p class="onboarding-description">Select all that apply to see relevant programs.</p>
 
           <div class="onboarding-grid" role="group" aria-label="Select groups that apply to you">
-            ${GROUPS.map(g => `
+            ${GROUPS.map(
+              (g) => `
               <label class="onboarding-option ${prefs.groups.includes(g.id) ? 'selected' : ''}">
                 <input type="checkbox" name="groups" value="${g.id}" ${prefs.groups.includes(g.id) ? 'checked' : ''}>
                 <span class="onboarding-option-icon">${g.icon}</span>
                 <span class="onboarding-option-label">${g.name}</span>
               </label>
-            `).join('')}
+            `
+            ).join('')}
           </div>
         </div>
       `;
 
       // Add click handlers for checkboxes (multiple selection)
-      body.querySelectorAll('.onboarding-option').forEach(option => {
+      body.querySelectorAll('.onboarding-option').forEach((option) => {
         const checkbox = option.querySelector('input[type="checkbox"]');
 
         option.addEventListener('click', (e) => {
@@ -189,7 +191,6 @@
           option.classList.toggle('selected', checkbox.checked);
         });
       });
-
     } else if (currentStep === 2) {
       // Step 2: Select county
       body.innerHTML = `
@@ -198,12 +199,14 @@
           <p class="onboarding-description">This helps us show programs in your area. Bay Area-wide and statewide programs are always included.</p>
 
           <div class="onboarding-county-grid" role="radiogroup" aria-label="Select your county">
-            ${COUNTIES.map(c => `
+            ${COUNTIES.map(
+              (c) => `
               <label class="onboarding-county-option ${prefs.county === c.id ? 'selected' : ''}">
                 <input type="radio" name="county" value="${c.id}" ${prefs.county === c.id ? 'checked' : ''}>
                 <span class="onboarding-county-label">${c.name}</span>
               </label>
-            `).join('')}
+            `
+            ).join('')}
             <label class="onboarding-county-option ${prefs.county === 'none' || !prefs.county ? 'selected' : ''}">
               <input type="radio" name="county" value="none" ${prefs.county === 'none' || !prefs.county ? 'checked' : ''}>
               <span class="onboarding-county-label">Skip / Not in Bay Area</span>
@@ -213,12 +216,12 @@
       `;
 
       // Add click handlers
-      body.querySelectorAll('.onboarding-county-option').forEach(option => {
+      body.querySelectorAll('.onboarding-county-option').forEach((option) => {
         option.addEventListener('click', (e) => {
           if (e.target.tagName !== 'INPUT') {
             option.querySelector('input').checked = true;
           }
-          body.querySelectorAll('.onboarding-county-option').forEach(o => {
+          body.querySelectorAll('.onboarding-county-option').forEach((o) => {
             o.classList.toggle('selected', o.querySelector('input').checked);
           });
         });
@@ -235,7 +238,7 @@
 
     if (currentStep === 1) {
       const checked = modal.querySelectorAll('input[name="groups"]:checked');
-      const groups = Array.from(checked).map(cb => cb.value);
+      const groups = Array.from(checked).map((cb) => cb.value);
       if (window.Preferences) {
         window.Preferences.setGroups(groups);
       }
@@ -296,9 +299,11 @@
     close();
 
     // Dispatch completion event
-    document.dispatchEvent(new CustomEvent('onboardingComplete', {
-      detail: { groups: prefs.groups, county: prefs.county }
-    }));
+    document.dispatchEvent(
+      new CustomEvent('onboardingComplete', {
+        detail: { groups: prefs.groups, county: prefs.county },
+      })
+    );
 
     // Apply filters if on main page
     applyFilters(prefs.groups, prefs.county);
@@ -314,8 +319,10 @@
         window.searchFilter.resetFilters();
 
         // Apply group filters
-        groups.forEach(group => {
-          const btn = document.querySelector(`[data-filter-type="groups"][data-filter-value="${group}"]`);
+        groups.forEach((group) => {
+          const btn = document.querySelector(
+            `[data-filter-type="groups"][data-filter-value="${group}"]`
+          );
           if (btn && !btn.classList.contains('active')) {
             btn.click();
           }
@@ -327,22 +334,24 @@
           // Map county ID to display name
           const countyMap = {
             'san-francisco': 'San Francisco',
-            'alameda': 'Alameda County',
+            alameda: 'Alameda County',
             'contra-costa': 'Contra Costa County',
             'san-mateo': 'San Mateo County',
             'santa-clara': 'Santa Clara County',
-            'marin': 'Marin County',
-            'napa': 'Napa County',
-            'solano': 'Solano County',
-            'sonoma': 'Sonoma County'
+            marin: 'Marin County',
+            napa: 'Napa County',
+            solano: 'Solano County',
+            sonoma: 'Sonoma County',
           };
           if (countyMap[county]) {
             areas.push(countyMap[county]);
           }
         }
 
-        areas.forEach(area => {
-          const btn = document.querySelector(`[data-filter-type="area"][data-filter-value="${area}"]`);
+        areas.forEach((area) => {
+          const btn = document.querySelector(
+            `[data-filter-type="area"][data-filter-value="${area}"]`
+          );
           if (btn && !btn.classList.contains('active')) {
             btn.click();
           }
@@ -436,7 +445,6 @@
   window.Onboarding = {
     open,
     close,
-    shouldAutoShow
+    shouldAutoShow,
   };
-
 })();

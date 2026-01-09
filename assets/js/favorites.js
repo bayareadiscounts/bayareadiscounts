@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   const STORAGE_KEY = 'bayarea_favorites';
@@ -6,12 +6,18 @@
   const favorites = {
     favorites: [],
     list() {
-      return this.favorites.map(id => {
-        const el = document.querySelector(`.program-card[data-program-id="${id}"]`) || document.querySelector(`[data-program-id="${id}"]`);
-        const title = el?.querySelector('.program-name')?.textContent?.trim() || (window.i18n ? i18n.t('favorites.empty') : 'Saved program');
+      return this.favorites.map((id) => {
+        const el =
+          document.querySelector(`.program-card[data-program-id="${id}"]`) ||
+          document.querySelector(`[data-program-id="${id}"]`);
+        const title =
+          el?.querySelector('.program-name')?.textContent?.trim() ||
+          (window.i18n ? i18n.t('favorites.empty') : 'Saved program');
         const linkEl = el?.querySelector('.program-link');
         const url = linkEl?.getAttribute('href') || '#';
-        const linkText = linkEl?.textContent?.trim() || (window.i18n ? i18n.t('program.learn_more') : 'View program');
+        const linkText =
+          linkEl?.textContent?.trim() ||
+          (window.i18n ? i18n.t('program.learn_more') : 'View program');
         return { id, title, url, linkText };
       });
     },
@@ -37,7 +43,7 @@
     toggle(id) {
       if (!id) return;
       if (this.isFavorite(id)) {
-        this.favorites = this.favorites.filter(f => f !== id);
+        this.favorites = this.favorites.filter((f) => f !== id);
       } else {
         this.favorites.push(id);
       }
@@ -64,7 +70,7 @@
       }
     },
     wireButtons() {
-      document.querySelectorAll('.favorite-toggle').forEach(btn => {
+      document.querySelectorAll('.favorite-toggle').forEach((btn) => {
         const id = btn.dataset.programId;
         const isFav = this.isFavorite(id);
         btn.classList.toggle('active', isFav);
@@ -76,7 +82,7 @@
     updateUI() {
       this.wireButtons();
       this.updateCountDisplay();
-    }
+    },
   };
 
   favorites.load();

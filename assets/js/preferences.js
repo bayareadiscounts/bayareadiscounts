@@ -3,7 +3,7 @@
  * Single source of truth for user preferences across the entire site
  */
 
-(function() {
+(function () {
   'use strict';
 
   const STORAGE_KEY = 'baynavigator_preferences';
@@ -15,7 +15,7 @@
     groups: [],
     county: null,
     completedOnboarding: false,
-    lastUpdated: null
+    lastUpdated: null,
   };
 
   let currentPrefs = null;
@@ -84,9 +84,11 @@
       currentPrefs = prefs;
 
       // Dispatch event for other components
-      document.dispatchEvent(new CustomEvent('preferencesChanged', {
-        detail: { ...prefs }
-      }));
+      document.dispatchEvent(
+        new CustomEvent('preferencesChanged', {
+          detail: { ...prefs },
+        })
+      );
 
       return true;
     } catch (e) {
@@ -136,7 +138,7 @@
       ...get(),
       groups: groups || [],
       county: county || null,
-      completedOnboarding: true
+      completedOnboarding: true,
     });
   }
 
@@ -168,9 +170,11 @@
       localStorage.removeItem('bad_wizard_progress');
       localStorage.removeItem('user-preferences');
 
-      document.dispatchEvent(new CustomEvent('preferencesChanged', {
-        detail: { ...currentPrefs }
-      }));
+      document.dispatchEvent(
+        new CustomEvent('preferencesChanged', {
+          detail: { ...currentPrefs },
+        })
+      );
       return true;
     } catch (e) {
       return false;
@@ -215,7 +219,7 @@
       save(migrated);
 
       // Clean up old keys
-      oldKeys.forEach(key => {
+      oldKeys.forEach((key) => {
         try {
           localStorage.removeItem(key);
         } catch (e) {
@@ -226,7 +230,7 @@
   }
 
   // Initialize on load
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     migrateAllOldData();
     load();
   });
@@ -242,7 +246,6 @@
     completeOnboarding,
     hasCompletedOnboarding,
     hasPreferences,
-    reset
+    reset,
   };
-
 })();

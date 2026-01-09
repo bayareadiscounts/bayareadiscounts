@@ -52,22 +52,24 @@ function fetchFromBART(cmd, params = {}) {
       cmd,
       key: BART_API_KEY,
       json: 'y',
-      ...params
+      ...params,
     }).toString();
 
     const url = `${BART_API_BASE}/stn.aspx?${queryParams}`;
 
-    https.get(url, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch (e) {
-          reject(new Error(`Failed to parse response: ${e.message}`));
-        }
-      });
-    }).on('error', reject);
+    https
+      .get(url, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            resolve(JSON.parse(data));
+          } catch (e) {
+            reject(new Error(`Failed to parse response: ${e.message}`));
+          }
+        });
+      })
+      .on('error', reject);
   });
 }
 
@@ -96,11 +98,11 @@ function getAreaFromStation(station) {
 
   const cityMap = {
     'San Francisco': 'San Francisco',
-    'Oakland': 'City of Oakland',
-    'Berkeley': 'City of Berkeley',
-    'Fremont': 'City of Fremont',
+    Oakland: 'City of Oakland',
+    Berkeley: 'City of Berkeley',
+    Fremont: 'City of Fremont',
     'Union City': 'Alameda County',
-    'Concord': 'Contra Costa County',
+    Concord: 'Contra Costa County',
     'Walnut Creek': 'Contra Costa County',
     'Pleasant Hill': 'Contra Costa County',
   };
@@ -132,7 +134,7 @@ async function syncBikeParkingData() {
   const allStationAbbrs = [...new Set([...BIKELINK_STATIONS, ...BIKEEP_STATIONS])];
 
   for (const abbr of allStationAbbrs) {
-    const station = stations.find(s => s.abbr === abbr);
+    const station = stations.find((s) => s.abbr === abbr);
     if (!station) {
       console.log(`Warning: Station ${abbr} not found in BART API`);
       continue;
@@ -143,7 +145,7 @@ async function syncBikeParkingData() {
     try {
       accessInfo = await getStationAccess(abbr);
       // Small delay to be nice to the API
-      await new Promise(r => setTimeout(r, 200));
+      await new Promise((r) => setTimeout(r, 200));
     } catch (e) {
       console.log(`Warning: Could not get access info for ${abbr}: ${e.message}`);
       accessInfo = {};
@@ -159,7 +161,10 @@ async function syncBikeParkingData() {
       area: getAreaFromStation(station),
       hasBikeStation: accessInfo.bike_station_flag === '1',
       hasBikeRacks: accessInfo.bike_flag === '1',
-      lockerInfo: typeof accessInfo.lockers === 'string' ? accessInfo.lockers : JSON.stringify(accessInfo.lockers || ''),
+      lockerInfo:
+        typeof accessInfo.lockers === 'string'
+          ? accessInfo.lockers
+          : JSON.stringify(accessInfo.lockers || ''),
     };
 
     if (BIKELINK_STATIONS.includes(abbr)) {
@@ -176,7 +181,9 @@ async function syncBikeParkingData() {
     console.log(`  Bike Racks: ${stationInfo.hasBikeRacks ? 'Yes' : 'No'}`);
     if (stationInfo.lockerInfo && stationInfo.lockerInfo !== '""') {
       const lockerText = String(stationInfo.lockerInfo);
-      console.log(`  Lockers: ${lockerText.length > 80 ? lockerText.substring(0, 80) + '...' : lockerText}`);
+      console.log(
+        `  Lockers: ${lockerText.length > 80 ? lockerText.substring(0, 80) + '...' : lockerText}`
+      );
     }
     console.log('');
   }
@@ -186,7 +193,9 @@ async function syncBikeParkingData() {
 
   console.log('BikeLink Stations:');
   for (const s of bikeLinkData) {
-    console.log(`  - ${s.name}: ${s.hasBikeStation ? 'Confirmed bike station' : 'NOT a bike station'}`);
+    console.log(
+      `  - ${s.name}: ${s.hasBikeStation ? 'Confirmed bike station' : 'NOT a bike station'}`
+    );
   }
 
   console.log('\nBikeep Stations:');
@@ -201,11 +210,18 @@ async function syncBikeParkingData() {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  fs.writeFileSync(outputPath, JSON.stringify({
-    lastSync: new Date().toISOString(),
-    bikeLink: bikeLinkData,
-    bikeep: bikeepData
-  }, null, 2));
+  fs.writeFileSync(
+    outputPath,
+    JSON.stringify(
+      {
+        lastSync: new Date().toISOString(),
+        bikeLink: bikeLinkData,
+        bikeep: bikeepData,
+      },
+      null,
+      2
+    )
+  );
 
   console.log(`\nData written to ${outputPath}`);
   console.log('Review the data and manually update transportation.yml if needed.');
@@ -220,7 +236,7 @@ if (require.main === module) {
       console.log('\nSync complete!');
       process.exit(0);
     })
-    .catch(err => {
+    .catch((err) => {
       console.error('Sync failed:', err);
       process.exit(1);
     });

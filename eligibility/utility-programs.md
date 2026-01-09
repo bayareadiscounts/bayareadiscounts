@@ -94,15 +94,16 @@ CARE provides a **20-35% discount** on electricity and natural gas bills for inc
 
 **2026 Income Limits:**
 
-| Household Size | Maximum Annual Income |
-|----------------|----------------------|
-| 1-2 persons | $42,000 |
-| 3 persons | $53,000 |
-| 4 persons | $64,000 |
-| 5 persons | $75,000 |
-| Each additional | +$11,000 |
+| Household Size  | Maximum Annual Income |
+| --------------- | --------------------- |
+| 1-2 persons     | $42,000               |
+| 3 persons       | $53,000               |
+| 4 persons       | $64,000               |
+| 5 persons       | $75,000               |
+| Each additional | +$11,000              |
 
 **How to Apply (PG&E):**
+
 - Online: [pge.com/care](https://www.pge.com/care)
 - Phone: 1-866-743-2273
 - Application mailed with your bill
@@ -123,13 +124,13 @@ FERA provides an **18% discount on electricity** for households with 3+ members 
 
 **2026 Income Limits:**
 
-| Household Size | Minimum Income | Maximum Income |
-|----------------|----------------|----------------|
-| 3 persons | $53,001 | $66,000 |
-| 4 persons | $64,001 | $80,000 |
-| 5 persons | $75,001 | $94,000 |
-| 6 persons | $86,001 | $108,000 |
-| Each additional | +$11,000 | +$14,000 |
+| Household Size  | Minimum Income | Maximum Income |
+| --------------- | -------------- | -------------- |
+| 3 persons       | $53,001        | $66,000        |
+| 4 persons       | $64,001        | $80,000        |
+| 5 persons       | $75,001        | $94,000        |
+| 6 persons       | $86,001        | $108,000       |
+| Each additional | +$11,000       | +$14,000       |
 
 **Note:** FERA is only for electricity (not gas) and requires a household of 3 or more.
 
@@ -148,6 +149,7 @@ FERA provides an **18% discount on electricity** for households with 3+ members 
 If someone in your household has a qualifying medical condition requiring extra energy use, you may receive **additional energy at the lowest rate**.
 
 **Qualifying Conditions Include:**
+
 - Life support equipment (ventilators, dialysis machines)
 - Conditions requiring heating or cooling for life support
 - Conditions requiring electric medical equipment
@@ -169,23 +171,25 @@ If someone in your household has a qualifying medical condition requiring extra 
 LIHEAP provides **one-time payments** to help with energy bills and weatherization.
 
 **Types of Assistance:**
+
 - **HEAP:** Help paying energy bills
 - **LIWP:** Home weatherization improvements (insulation, appliances, etc.)
 - **ECIP:** Crisis assistance for disconnection or emergency
 
 **Eligibility:**
+
 - Income at or below 60% of State Median Income
 - Higher priority for elderly, disabled, and families with young children
 
 **2026 Income Limits (60% SMI):**
 
 | Household Size | Maximum Annual Income |
-|----------------|----------------------|
-| 1 person | $38,000 |
-| 2 persons | $50,000 |
-| 3 persons | $61,000 |
-| 4 persons | $73,000 |
-| 5 persons | $84,000 |
+| -------------- | --------------------- |
+| 1 person       | $38,000               |
+| 2 persons      | $50,000               |
+| 3 persons      | $61,000               |
+| 4 persons      | $73,000               |
+| 5 persons      | $84,000               |
 
   </div>
 </details>
@@ -200,6 +204,7 @@ LIHEAP provides **one-time payments** to help with energy bills and weatherizati
 Free energy-efficient upgrades for income-eligible households.
 
 **What's Included:**
+
 - Energy-efficient lighting (LED bulbs)
 - Efficient refrigerators (if yours is old/inefficient)
 - Weatherization (weather stripping, caulking)
@@ -321,17 +326,20 @@ Most Bay Area water utilities offer their own low-income discount programs.
 
 **EBMUD (East Bay Municipal Utility District)**
 Customer Assistance Program (CAP)
+
 - 50% discount on water/wastewater bills
 - Eligibility: 200% FPL or program participation (CalFresh, Medi-Cal, etc.)
 - Apply: [ebmud.com/cap](https://www.ebmud.com/customers/account/customer-assistance-program/) or (866) 403-2683
 
 **SFPUC (San Francisco Public Utilities Commission)**
 Water & Power Discount Programs
+
 - Matches CARE eligibility for water discount
 - Apply: [sfpuc.org/accounts-services/discount-programs](https://sfpuc.org/accounts-services/discount-programs)
 
 **San Jose Water**
 WRAP (Water Rate Assistance Program)
+
 - 15% discount on water bills
 - Eligibility: CARE participants automatically qualify
 - Apply: [sjwater.com/customer-service/assistance-programs](https://www.sjwater.com/customer-service/assistance-programs)
@@ -357,6 +365,7 @@ Lifeline provides discounted phone service for low-income households.
 **Discount:** Up to $9.25/month off phone service (landline or wireless).
 
 **Eligibility:**
+
 - Income at or below 135% FPL, OR
 - Participation in: Medi-Cal, CalFresh, SSI, CalWORKs, Federal Public Housing Assistance, Veterans Pension/Survivor Benefit, Tribal programs
 
@@ -375,21 +384,25 @@ Lifeline provides discounted phone service for low-income households.
   <div class="expandable-content">
 
 **Comcast Internet Essentials**
+
 - $9.95/month for 50 Mbps
 - Eligibility: Participation in government assistance programs
 - [internetessentials.com](https://www.internetessentials.com)
 
 **AT&T Access**
+
 - $30/month (may be free with discounts)
 - Eligibility: Participation in SNAP, SSI, or other programs
 - [att.com/internet/access](https://www.att.com/internet/access/)
 
 **Spectrum Internet Assist**
+
 - $17.99/month for 30 Mbps
 - Eligibility: SSI, Medicaid, or similar programs
 - [spectrum.com/internet/spectrum-internet-assist](https://www.spectrum.com/internet/spectrum-internet-assist)
 
 **Starry Connect** (select buildings in Bay Area)
+
 - Free or low-cost internet in participating buildings
 - [starry.com/starryconnect](https://starry.com/starryconnect)
 
@@ -477,15 +490,15 @@ If you're struggling to pay utility bills:
 
 ## Summary of Programs
 
-| Program | Discount | Eligibility | Contact |
-|---------|----------|-------------|---------|
-| CARE | 20-35% off gas/electric | Income or program-based | PG&E: 1-866-743-2273 |
-| FERA | 18% off electric | 3+ person household, income-based | PG&E: 1-866-743-2273 |
-| Medical Baseline | Extra energy at lowest rate | Medical need | PG&E: 1-800-743-5000 |
-| LIHEAP | One-time bill payment | 60% SMI or below | Local Community Action Agency |
-| ESA | Free efficiency upgrades | Same as CARE | PG&E: 1-800-933-9555 |
-| Lifeline | $9.25/month off phone | 135% FPL or programs | Your phone carrier |
-| Internet Essentials | $9.95/month internet | Program participation | Comcast |
+| Program             | Discount                    | Eligibility                       | Contact                       |
+| ------------------- | --------------------------- | --------------------------------- | ----------------------------- |
+| CARE                | 20-35% off gas/electric     | Income or program-based           | PG&E: 1-866-743-2273          |
+| FERA                | 18% off electric            | 3+ person household, income-based | PG&E: 1-866-743-2273          |
+| Medical Baseline    | Extra energy at lowest rate | Medical need                      | PG&E: 1-800-743-5000          |
+| LIHEAP              | One-time bill payment       | 60% SMI or below                  | Local Community Action Agency |
+| ESA                 | Free efficiency upgrades    | Same as CARE                      | PG&E: 1-800-933-9555          |
+| Lifeline            | $9.25/month off phone       | 135% FPL or programs              | Your phone carrier            |
+| Internet Essentials | $9.95/month internet        | Program participation             | Comcast                       |
 
 ---
 

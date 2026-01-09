@@ -235,7 +235,7 @@ export const CATEGORY_IDS = [
   'utilities',
 ] as const;
 
-export type CategoryId = typeof CATEGORY_IDS[number];
+export type CategoryId = (typeof CATEGORY_IDS)[number];
 
 export const GROUP_IDS = [
   'income-eligible',
@@ -259,7 +259,7 @@ export const GROUP_IDS = [
   'everyone',
 ] as const;
 
-export type GroupId = typeof GROUP_IDS[number];
+export type GroupId = (typeof GROUP_IDS)[number];
 
 export const AREA_TYPES = {
   'San Francisco': 'county',
@@ -272,8 +272,8 @@ export const AREA_TYPES = {
   'Solano County': 'county',
   'Sonoma County': 'county',
   'Bay Area': 'region',
-  'Statewide': 'state',
-  'Nationwide': 'nationwide',
+  Statewide: 'state',
+  Nationwide: 'nationwide',
 } as const;
 
 export type AreaName = keyof typeof AREA_TYPES;

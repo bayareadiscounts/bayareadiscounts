@@ -9,8 +9,9 @@ The utility bar now uses a **clean language selection modal** that redirects to 
 ### Why This Approach?
 
 For **static Jekyll sites** like Bay Navigator, full Azure AI Translator integration requires:
+
 - Server-side rendering or middleware
-- API key management 
+- API key management
 - Translating all content on every page load
 - Caching strategy for performance
 
@@ -30,6 +31,7 @@ The current solution provides:
 The translate button opens a modal with 12 language options. Clicking a language redirects to a translated version of the page (or back to original English).
 
 **Supported Languages:**
+
 - 🇺🇸 English (US) - Return to original page
 - 🇪🇸 Spanish (Español)
 - 🇨🇳 Chinese Simplified (简体中文)
@@ -52,6 +54,7 @@ For a **more Azure-native solution**, you can use Azure AI Translator API with s
 ### Prerequisites
 
 1. **Azure Translator Resource**
+
    ```bash
    # Create Azure Translator resource
    az cognitiveservices account create \
@@ -60,7 +63,7 @@ For a **more Azure-native solution**, you can use Azure AI Translator API with s
      --kind TextTranslation \
      --sku F0 \
      --location westus2
-   
+
    # Get API key
    az cognitiveservices account keys list \
      --name baynavigator-translator \
@@ -95,8 +98,8 @@ module.exports = async function (context, req) {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type',
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   };
 
   if (req.method === 'OPTIONS') {
@@ -106,7 +109,7 @@ module.exports = async function (context, req) {
 
   try {
     const { text, targetLang } = req.body;
-    
+
     if (!text || !targetLang) {
       context.res.status = 400;
       context.res.body = { error: 'Missing text or targetLang' };
@@ -117,29 +120,24 @@ module.exports = async function (context, req) {
     const region = process.env.AZURE_TRANSLATOR_REGION;
     const endpoint = process.env.AZURE_TRANSLATOR_ENDPOINT;
 
-    const response = await axios.post(
-      `${endpoint}/translate`,
-      [{ text }],
-      {
-        params: {
-          'api-version': '3.0',
-          'to': targetLang
-        },
-        headers: {
-          'Ocp-Apim-Subscription-Key': key,
-          'Ocp-Apim-Subscription-Region': region,
-          'Content-type': 'application/json',
-          'X-ClientTraceId': crypto.randomUUID()
-        }
-      }
-    );
+    const response = await axios.post(`${endpoint}/translate`, [{ text }], {
+      params: {
+        'api-version': '3.0',
+        to: targetLang,
+      },
+      headers: {
+        'Ocp-Apim-Subscription-Key': key,
+        'Ocp-Apim-Subscription-Region': region,
+        'Content-type': 'application/json',
+        'X-ClientTraceId': crypto.randomUUID(),
+      },
+    });
 
     context.res.status = 200;
     context.res.body = {
       translatedText: response.data[0].translations[0].text,
-      detectedLanguage: response.data[0].detectedLanguage
+      detectedLanguage: response.data[0].detectedLanguage,
     };
-
   } catch (error) {
     context.log.error('Translation error:', error);
     context.res.status = 500;
@@ -165,9 +163,9 @@ async function translateText(text, targetLang) {
     const response = await fetch('https://your-function-app.azurewebsites.net/api/translate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, targetLang })
+      body: JSON.stringify({ text, targetLang }),
     });
-    
+
     const data = await response.json();
     return data.translatedText;
   } catch (error) {
@@ -207,9 +205,9 @@ baynavigator/
 
 ```yaml
 # _config.yml
-languages: ["en", "es", "zh-Hans", "tl", "vi", "ko", "ru", "ar", "fa", "ja", "fr", "hi"]
-default_lang: "en"
-exclude_from_localization: ["images", "css", "js"]
+languages: ['en', 'es', 'zh-Hans', 'tl', 'vi', 'ko', 'ru', 'ar', 'fa', 'ja', 'fr', 'hi']
+default_lang: 'en'
+exclude_from_localization: ['images', 'css', 'js']
 ```
 
 ### Routing in Azure Static Web Apps
@@ -233,25 +231,25 @@ exclude_from_localization: ["images", "css", "js"]
 
 ## 💰 Cost Comparison
 
-| Solution | Free Tier | Cost After Free Tier |
-|----------|-----------|---------------------|
-| **Google Translate URL Proxy** | Unlimited | Free forever |
-| **Azure AI Translator** | 2M chars/month | $10 per 1M chars |
-| **Azure Static Web Apps (pre-translated)** | Included | Storage + bandwidth |
+| Solution                                   | Free Tier      | Cost After Free Tier |
+| ------------------------------------------ | -------------- | -------------------- |
+| **Google Translate URL Proxy**             | Unlimited      | Free forever         |
+| **Azure AI Translator**                    | 2M chars/month | $10 per 1M chars     |
+| **Azure Static Web Apps (pre-translated)** | Included       | Storage + bandwidth  |
 
 ---
 
 ## 📊 Feature Comparison
 
-| Feature | Current (URL Proxy) | Azure AI Translator | Pre-translated Static |
-|---------|---------------------|---------------------|----------------------|
-| **Implementation Complexity** | ✅ Very Simple | ⚠️ Moderate | ❌ Complex |
-| **Translation Quality** | ✅ Excellent | ✅ Excellent | ✅ Perfect (human) |
-| **SEO Friendly** | ⚠️ Limited | ⚠️ Limited | ✅ Excellent |
-| **Offline Support** | ❌ No | ❌ No | ✅ Yes (with PWA) |
-| **Real-time Updates** | ✅ Instant | ✅ Instant | ❌ Requires rebuild |
-| **Cost** | ✅ Free | ⚠️ Usage-based | ✅ Free (storage only) |
-| **Customization** | ⚠️ Limited | ✅ Full control | ✅ Full control |
+| Feature                       | Current (URL Proxy) | Azure AI Translator | Pre-translated Static  |
+| ----------------------------- | ------------------- | ------------------- | ---------------------- |
+| **Implementation Complexity** | ✅ Very Simple      | ⚠️ Moderate         | ❌ Complex             |
+| **Translation Quality**       | ✅ Excellent        | ✅ Excellent        | ✅ Perfect (human)     |
+| **SEO Friendly**              | ⚠️ Limited          | ⚠️ Limited          | ✅ Excellent           |
+| **Offline Support**           | ❌ No               | ❌ No               | ✅ Yes (with PWA)      |
+| **Real-time Updates**         | ✅ Instant          | ✅ Instant          | ❌ Requires rebuild    |
+| **Cost**                      | ✅ Free             | ⚠️ Usage-based      | ✅ Free (storage only) |
+| **Customization**             | ⚠️ Limited          | ✅ Full control     | ✅ Full control        |
 
 ---
 
@@ -266,12 +264,14 @@ exclude_from_localization: ["images", "css", "js"]
 5. **Fast for users** - Redirects to cached translated pages
 
 **Consider Azure AI Translator if:**
+
 - You need to translate user-generated content (comments, reviews)
 - You want to translate dynamic search results in real-time
 - You need offline translation capability
 - You want to customize translation memory or glossaries
 
 **Consider pre-translated static pages if:**
+
 - You want perfect SEO for multilingual content
 - You have budget for professional translation services
 - You need to comply with specific accessibility requirements per language
@@ -292,13 +292,13 @@ If you do use Azure AI Translator:
 ```javascript
 // ❌ NEVER DO THIS (exposes API key)
 fetch('https://api.cognitive.microsofttranslator.com/translate', {
-  headers: { 'Ocp-Apim-Subscription-Key': 'your-key-here' }
+  headers: { 'Ocp-Apim-Subscription-Key': 'your-key-here' },
 });
 
 // ✅ ALWAYS DO THIS (proxy through Azure Function)
 fetch('https://your-function-app.azurewebsites.net/api/translate', {
   method: 'POST',
-  body: JSON.stringify({ text: 'Hello', targetLang: 'es' })
+  body: JSON.stringify({ text: 'Hello', targetLang: 'es' }),
 });
 ```
 

@@ -17,23 +17,37 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           <h1 class="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
             Privacy Policy
           </h1>
-          <p class="text-neutral-600 dark:text-neutral-300">
-            Last updated: January 7, 2026
-          </p>
+          <p class="text-neutral-600 dark:text-neutral-300">Last updated: January 7, 2026</p>
         </div>
 
         <!-- TL;DR Summary Card -->
-        <div class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/30 dark:to-primary-800/20 rounded-2xl p-6 md:p-8 mb-10 border border-primary-200 dark:border-primary-800">
+        <div
+          class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/30 dark:to-primary-800/20 rounded-2xl p-6 md:p-8 mb-10 border border-primary-200 dark:border-primary-800"
+        >
           <div class="flex items-start gap-4">
             <div class="bg-white dark:bg-neutral-800 p-3 rounded-xl shadow-sm flex-shrink-0">
-              <svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              <svg
+                class="w-8 h-8 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
               </svg>
             </div>
             <div>
-              <h2 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">The Short Version</h2>
+              <h2 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">
+                The Short Version
+              </h2>
               <p class="text-neutral-700 dark:text-neutral-300">
-                We don't track you. We don't collect personal information. We don't use cookies for tracking. We don't sell any data. This site is open source so you can verify this yourself.
+                We don't track you. We don't collect personal information. We don't use cookies for
+                tracking. We don't sell any data. This site is open source so you can verify this
+                yourself.
               </p>
             </div>
           </div>
@@ -41,19 +55,27 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
         <!-- Privacy Stats Row -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">0</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Tracking Cookies</div>
           </div>
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">0</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Third-Party Ads</div>
           </div>
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">0</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Data Sold</div>
           </div>
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">100%</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Open Source</div>
           </div>
@@ -62,53 +84,116 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 1: Information We Collect -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-green-100 dark:bg-green-900/30 w-10 h-10 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+              <div
+                class="bg-green-100 dark:bg-green-900/30 w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                 </svg>
               </div>
-              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Information We Collect</h2>
+              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+                Information We Collect
+              </h2>
             </div>
             <div class="grid sm:grid-cols-2 gap-3">
               <div class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300">No account required</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  >No account required</span
+                >
               </div>
               <div class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300">No tracking cookies</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  >No tracking cookies</span
+                >
               </div>
               <div class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300">No personal identifiers</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  >No personal identifiers</span
+                >
               </div>
               <div class="flex items-center gap-2">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300">No third-party trackers</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  >No third-party trackers</span
+                >
               </div>
             </div>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
             <div class="mt-4 pl-6 border-l-2 border-neutral-200 dark:border-neutral-700">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                <strong>We do not collect personal information.</strong> Bay Navigator is designed to respect your privacy:
+                <strong>We do not collect personal information.</strong> Bay Navigator is designed to
+                respect your privacy:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
                 <li>No account creation required</li>
@@ -125,36 +210,88 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 2: Local Storage -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-blue-100 dark:bg-blue-900/30 w-10 h-10 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              <div
+                class="bg-blue-100 dark:bg-blue-900/30 w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  ></path>
                 </svg>
               </div>
               <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Local Storage</h2>
             </div>
-            <p class="text-neutral-600 dark:text-neutral-400 mb-4">Data stays on your device and never leaves:</p>
+            <p class="text-neutral-600 dark:text-neutral-400 mb-4">
+              Data stays on your device and never leaves:
+            </p>
             <div class="flex flex-wrap gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  ></path></svg
+                >
                 Theme preference
               </span>
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg
+                >
                 Favorites
               </span>
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg
+                >
                 Recent searches
               </span>
             </div>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
@@ -168,7 +305,8 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 <li><strong>Recent searches</strong> (only in the mobile app)</li>
               </ul>
               <p class="text-neutral-600 dark:text-neutral-300">
-                This data never leaves your device and is not sent to any server. This data is not processed ephemerally—it persists on your device until you clear it.
+                This data never leaves your device and is not sent to any server. This data is not
+                processed ephemerally—it persists on your device until you clear it.
               </p>
             </div>
           </details>
@@ -177,78 +315,184 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 3: AI-Powered Search -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl p-6 border border-indigo-200 dark:border-indigo-800 mb-4">
+          <div
+            class="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl p-6 border border-indigo-200 dark:border-indigo-800 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-white dark:bg-neutral-800 w-10 h-10 rounded-lg flex items-center justify-center shadow-sm">
-                <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              <div
+                class="bg-white dark:bg-neutral-800 w-10 h-10 rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <svg
+                  class="w-5 h-5 text-indigo-600 dark:text-indigo-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  ></path>
                 </svg>
               </div>
               <h2 class="text-xl font-bold text-neutral-900 dark:text-white">AI-Powered Search</h2>
             </div>
             <div class="grid sm:grid-cols-2 gap-3">
               <div class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300"><strong>Not stored</strong> — Queries are processed and discarded</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  ><strong>Not stored</strong> — Queries are processed and discarded</span
+                >
               </div>
               <div class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300"><strong>Not for training</strong> — Never trains AI models</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  ><strong>Not for training</strong> — Never trains AI models</span
+                >
               </div>
               <div class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300"><strong>No identifiers</strong> — Not linked to you</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  ><strong>No identifiers</strong> — Not linked to you</span
+                >
               </div>
               <div class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <svg
+                  class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300"><strong>Encrypted</strong> — AES-256 at rest</span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  ><strong>Encrypted</strong> — AES-256 at rest</span
+                >
               </div>
             </div>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-4 bg-white/50 dark:bg-neutral-800/50 rounded-lg p-3">
+            <p
+              class="text-sm text-neutral-600 dark:text-neutral-400 mt-4 bg-white/50 dark:bg-neutral-800/50 rounded-lg p-3"
+            >
               <strong>To avoid AI entirely:</strong> Toggle off "Smart Search" or use Bay Navigator offline.
             </p>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
             <div class="mt-4 pl-6 border-l-2 border-neutral-200 dark:border-neutral-700">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                Bay Navigator includes an optional AI-powered search feature that helps you find programs using natural language queries (e.g., "I'm a senior who needs help with utility bills"). Here's how it works:
+                Bay Navigator includes an optional AI-powered search feature that helps you find
+                programs using natural language queries (e.g., "I'm a senior who needs help with
+                utility bills"). Here's how it works:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
-                <li><strong>When AI is used:</strong> Complex or natural language queries are sent to Cloudflare for processing. Simple keyword searches (like "food" or "healthcare") use local fuzzy search and never contact any server.</li>
-                <li><strong>Offline mode:</strong> When you're offline, AI search is automatically disabled. All searches use local fuzzy matching instead—no failed requests, no errors.</li>
-                <li><strong>No storage:</strong> We do not store your search queries on our servers. Queries are processed and immediately discarded.</li>
-                <li><strong>No identifiers:</strong> Searches are not linked to any personal identifier, account, or session.</li>
-                <li><strong>Third-party processing:</strong> AI queries are processed by Cloudflare Workers AI using Meta's Llama 3.1 model. Cloudflare processes data in accordance with their privacy policies.</li>
+                <li>
+                  <strong>When AI is used:</strong> Complex or natural language queries are sent to Cloudflare
+                  for processing. Simple keyword searches (like "food" or "healthcare") use local fuzzy
+                  search and never contact any server.
+                </li>
+                <li>
+                  <strong>Offline mode:</strong> When you're offline, AI search is automatically disabled.
+                  All searches use local fuzzy matching instead—no failed requests, no errors.
+                </li>
+                <li>
+                  <strong>No storage:</strong> We do not store your search queries on our servers. Queries
+                  are processed and immediately discarded.
+                </li>
+                <li>
+                  <strong>No identifiers:</strong> Searches are not linked to any personal identifier,
+                  account, or session.
+                </li>
+                <li>
+                  <strong>Third-party processing:</strong> AI queries are processed by Cloudflare Workers
+                  AI using Meta's Llama 3.1 model. Cloudflare processes data in accordance with their
+                  privacy policies.
+                </li>
               </ul>
 
-              <h4 class="font-semibold text-neutral-900 dark:text-white mt-6 mb-3">Cloudflare Workers AI Data Handling</h4>
+              <h4 class="font-semibold text-neutral-900 dark:text-white mt-6 mb-3">
+                Cloudflare Workers AI Data Handling
+              </h4>
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                When you use the AI-powered search, your queries are processed by <a href="https://developers.cloudflare.com/workers-ai/privacy/" class="text-primary-700 dark:text-primary-300">Cloudflare Workers AI</a> using the Llama 3.1 8B model. Cloudflare provides the following guarantees:
+                When you use the AI-powered search, your queries are processed by <a
+                  href="https://developers.cloudflare.com/workers-ai/privacy/"
+                  class="text-primary-700 dark:text-primary-300">Cloudflare Workers AI</a
+                > using the Llama 3.1 8B model. Cloudflare provides the following guarantees:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
-                <li><strong>Not used for training:</strong> Your prompts and responses are never used to train AI models.</li>
-                <li><strong>Not stored:</strong> Cloudflare does not log or store inference data beyond what's needed to process your request.</li>
-                <li><strong>Open source model:</strong> Llama 3.1 is an open-source model from Meta, running on Cloudflare's infrastructure.</li>
-                <li><strong>Privacy-first infrastructure:</strong> Cloudflare is committed to privacy and does not sell user data.</li>
-                <li><strong>Geographic distribution:</strong> Requests are processed at the nearest Cloudflare edge location for low latency.</li>
+                <li>
+                  <strong>Not used for training:</strong> Your prompts and responses are never used to
+                  train AI models.
+                </li>
+                <li>
+                  <strong>Not stored:</strong> Cloudflare does not log or store inference data beyond
+                  what's needed to process your request.
+                </li>
+                <li>
+                  <strong>Open source model:</strong> Llama 3.1 is an open-source model from Meta, running
+                  on Cloudflare's infrastructure.
+                </li>
+                <li>
+                  <strong>Privacy-first infrastructure:</strong> Cloudflare is committed to privacy and
+                  does not sell user data.
+                </li>
+                <li>
+                  <strong>Geographic distribution:</strong> Requests are processed at the nearest Cloudflare
+                  edge location for low latency.
+                </li>
               </ul>
               <p class="text-neutral-600 dark:text-neutral-300">
-                For more details, see <a href="https://developers.cloudflare.com/workers-ai/privacy/" class="text-primary-700 dark:text-primary-300">Cloudflare Workers AI Privacy documentation</a>.
+                For more details, see <a
+                  href="https://developers.cloudflare.com/workers-ai/privacy/"
+                  class="text-primary-700 dark:text-primary-300"
+                  >Cloudflare Workers AI Privacy documentation</a
+                >.
               </p>
             </div>
           </details>
@@ -257,41 +501,96 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 4: Hosting and Infrastructure -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-purple-100 dark:bg-purple-900/30 w-10 h-10 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+              <div
+                class="bg-purple-100 dark:bg-purple-900/30 w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-purple-600 dark:text-purple-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                  ></path>
                 </svg>
               </div>
-              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Hosting & Infrastructure</h2>
+              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+                Hosting & Infrastructure
+              </h2>
             </div>
             <div class="flex flex-wrap gap-3">
-              <div class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-700 px-3 py-2 rounded-lg">
-                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C6.16 2 1 6.48 1 12c0 4.97 4.02 9.05 9 9.85v-7.09h-2.7v-2.76H10V9.74c0-2.67 1.59-4.14 4.02-4.14 1.16 0 2.38.21 2.38.21v2.62h-1.34c-1.32 0-1.73.82-1.73 1.66V12h2.95l-.47 2.76h-2.48v7.09c4.98-.8 9-4.88 9-9.85 0-5.52-5.16-10-11.33-10z"/></svg>
-                <span class="text-sm text-neutral-700 dark:text-neutral-300">Azure Static Web Apps</span>
+              <div
+                class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-700 px-3 py-2 rounded-lg"
+              >
+                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"
+                  ><path
+                    d="M12.5 2C6.16 2 1 6.48 1 12c0 4.97 4.02 9.05 9 9.85v-7.09h-2.7v-2.76H10V9.74c0-2.67 1.59-4.14 4.02-4.14 1.16 0 2.38.21 2.38.21v2.62h-1.34c-1.32 0-1.73.82-1.73 1.66V12h2.95l-.47 2.76h-2.48v7.09c4.98-.8 9-4.88 9-9.85 0-5.52-5.16-10-11.33-10z"
+                  ></path></svg
+                >
+                <span class="text-sm text-neutral-700 dark:text-neutral-300"
+                  >Azure Static Web Apps</span
+                >
               </div>
-              <div class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-700 px-3 py-2 rounded-lg">
-                <svg class="w-5 h-5 text-orange-500" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 9.4c-.13-.22-.33-.4-.56-.52a1.47 1.47 0 00-.74-.19c-.32 0-.6.07-.84.22-.24.15-.44.35-.58.62-.15.26-.26.57-.33.92-.07.35-.11.72-.11 1.12 0 .4.04.77.11 1.12.07.35.18.65.33.92.14.26.34.47.58.62.24.15.52.22.84.22.27 0 .51-.06.74-.19.23-.13.43-.31.56-.53l1.44.96c-.29.42-.68.75-1.15.98-.47.24-.99.36-1.59.36-.61 0-1.17-.11-1.68-.34a3.94 3.94 0 01-1.28-.94c-.35-.4-.62-.88-.81-1.43-.19-.55-.29-1.15-.29-1.8 0-.66.1-1.27.29-1.82.19-.55.46-1.03.81-1.43.35-.4.78-.71 1.28-.94.5-.22 1.06-.34 1.68-.34.6 0 1.12.12 1.59.36.47.24.86.57 1.15.98l-1.44.96zm5.2-1.26h-2.1v7.12h1.8v-2.64h.3c.37 0 .68-.04.92-.11.24-.08.43-.18.57-.31.14-.13.24-.28.3-.46.06-.18.09-.37.09-.58v-.18c0-.21-.03-.4-.09-.58a1.16 1.16 0 00-.3-.46c-.14-.13-.33-.23-.57-.31-.24-.08-.55-.11-.92-.11zm-.3 2.86h-.3v-1.4h.3c.32 0 .54.05.67.16.13.1.2.28.2.54 0 .26-.07.44-.2.55-.13.1-.35.15-.67.15z"/></svg>
+              <div
+                class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-700 px-3 py-2 rounded-lg"
+              >
+                <svg class="w-5 h-5 text-orange-500" viewBox="0 0 24 24" fill="currentColor"
+                  ><path
+                    d="M16.5 9.4c-.13-.22-.33-.4-.56-.52a1.47 1.47 0 00-.74-.19c-.32 0-.6.07-.84.22-.24.15-.44.35-.58.62-.15.26-.26.57-.33.92-.07.35-.11.72-.11 1.12 0 .4.04.77.11 1.12.07.35.18.65.33.92.14.26.34.47.58.62.24.15.52.22.84.22.27 0 .51-.06.74-.19.23-.13.43-.31.56-.53l1.44.96c-.29.42-.68.75-1.15.98-.47.24-.99.36-1.59.36-.61 0-1.17-.11-1.68-.34a3.94 3.94 0 01-1.28-.94c-.35-.4-.62-.88-.81-1.43-.19-.55-.29-1.15-.29-1.8 0-.66.1-1.27.29-1.82.19-.55.46-1.03.81-1.43.35-.4.78-.71 1.28-.94.5-.22 1.06-.34 1.68-.34.6 0 1.12.12 1.59.36.47.24.86.57 1.15.98l-1.44.96zm5.2-1.26h-2.1v7.12h1.8v-2.64h.3c.37 0 .68-.04.92-.11.24-.08.43-.18.57-.31.14-.13.24-.28.3-.46.06-.18.09-.37.09-.58v-.18c0-.21-.03-.4-.09-.58a1.16 1.16 0 00-.3-.46c-.14-.13-.33-.23-.57-.31-.24-.08-.55-.11-.92-.11zm-.3 2.86h-.3v-1.4h.3c.32 0 .54.05.67.16.13.1.2.28.2.54 0 .26-.07.44-.2.55-.13.1-.35.15-.67.15z"
+                  ></path></svg
+                >
                 <span class="text-sm text-neutral-700 dark:text-neutral-300">Cloudflare CDN</span>
               </div>
-              <div class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-700 px-3 py-2 rounded-lg">
-                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <div
+                class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-700 px-3 py-2 rounded-lg"
+              >
+                <svg
+                  class="w-5 h-5 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  ></path></svg
+                >
                 <span class="text-sm text-neutral-700 dark:text-neutral-300">HTTPS Encrypted</span>
               </div>
             </div>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
             <div class="mt-4 pl-6 border-l-2 border-neutral-200 dark:border-neutral-700">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                Bay Navigator is hosted on Microsoft Azure Static Web Apps and uses Cloudflare for content delivery and security. Standard server logs may include:
+                Bay Navigator is hosted on Microsoft Azure Static Web Apps and uses Cloudflare for
+                content delivery and security. Standard server logs may include:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
                 <li>IP addresses (for security and rate limiting)</li>
@@ -299,7 +598,9 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 <li>Pages visited and timestamps</li>
               </ul>
               <p class="text-neutral-600 dark:text-neutral-300">
-                These logs are used for security purposes only and are not used to identify or track individuals. Logs are retained according to Microsoft Azure and Cloudflare's standard retention policies.
+                These logs are used for security purposes only and are not used to identify or track
+                individuals. Logs are retained according to Microsoft Azure and Cloudflare's
+                standard retention policies.
               </p>
             </div>
           </details>
@@ -308,35 +609,80 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 5: Analytics -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-teal-100 dark:bg-teal-900/30 w-10 h-10 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              <div
+                class="bg-teal-100 dark:bg-teal-900/30 w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-teal-600 dark:text-teal-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
                 </svg>
               </div>
-              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Privacy-First Analytics</h2>
+              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+                Privacy-First Analytics
+              </h2>
             </div>
-            <p class="text-neutral-600 dark:text-neutral-400 mb-3">Self-hosted Plausible Analytics collects only aggregate data:</p>
+            <p class="text-neutral-600 dark:text-neutral-400 mb-3">
+              Self-hosted Plausible Analytics collects only aggregate data:
+            </p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm">Country</span>
-              <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm">Device type</span>
-              <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm">OS</span>
-              <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm">Browser</span>
+              <span
+                class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm"
+                >Country</span
+              >
+              <span
+                class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm"
+                >Device type</span
+              >
+              <span
+                class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm"
+                >OS</span
+              >
+              <span
+                class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-900 dark:text-teal-100 rounded-full text-sm"
+                >Browser</span
+              >
             </div>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300 mt-3">No cookies. No personal data. Cannot identify individuals.</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300 mt-3">
+              No cookies. No personal data. Cannot identify individuals.
+            </p>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
             <div class="mt-4 pl-6 border-l-2 border-neutral-200 dark:border-neutral-700">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                We use a self-hosted instance of Plausible Analytics to collect de-identified, aggregate usage data. This helps us understand how Bay Navigator is used without tracking individuals. We collect only:
+                We use a self-hosted instance of Plausible Analytics to collect de-identified,
+                aggregate usage data. This helps us understand how Bay Navigator is used without
+                tracking individuals. We collect only:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
                 <li>Country accessed from</li>
@@ -345,7 +691,9 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 <li>Browser type and version</li>
               </ul>
               <p class="text-neutral-600 dark:text-neutral-300">
-                Plausible does not use cookies, does not collect personal data, and does not track users across sites. All data is aggregated and cannot be used to identify individuals.
+                Plausible does not use cookies, does not collect personal data, and does not track
+                users across sites. All data is aggregated and cannot be used to identify
+                individuals.
               </p>
             </div>
           </details>
@@ -354,42 +702,97 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 6: Maps and Location -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-green-100 dark:bg-green-900/30 w-10 h-10 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <div
+                class="bg-green-100 dark:bg-green-900/30 w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
               </div>
               <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Maps & Location</h2>
             </div>
             <div class="space-y-3">
               <div class="flex items-start gap-3 bg-green-50 dark:bg-green-900/20 rounded-lg p-3">
-                <svg class="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <svg
+                  class="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 <div>
-                  <strong class="text-neutral-900 dark:text-white text-sm">Your GPS stays on your device</strong>
-                  <p class="text-xs text-neutral-600 dark:text-neutral-400">Distance calculations happen locally, never sent to servers</p>
+                  <strong class="text-neutral-900 dark:text-white text-sm"
+                    >Your GPS stays on your device</strong
+                  >
+                  <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                    Distance calculations happen locally, never sent to servers
+                  </p>
                 </div>
               </div>
               <div class="flex items-start gap-3 bg-green-50 dark:bg-green-900/20 rounded-lg p-3">
-                <svg class="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <svg
+                  class="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 <div>
-                  <strong class="text-neutral-900 dark:text-white text-sm">Self-hosted map tiles</strong>
-                  <p class="text-xs text-neutral-600 dark:text-neutral-400">Protomaps served from our infrastructure, no Google Maps</p>
+                  <strong class="text-neutral-900 dark:text-white text-sm"
+                    >Self-hosted map tiles</strong
+                  >
+                  <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                    Protomaps served from our infrastructure, no Google Maps
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
@@ -398,9 +801,26 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 Bay Navigator uses privacy-respecting mapping services:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
-                <li><strong>Map tiles:</strong> Our interactive map uses <a href="https://protomaps.com/" class="text-primary-700 dark:text-primary-300">Protomaps</a> for map tiles, served from our own infrastructure. No third-party map providers are contacted.</li>
-                <li><strong>Directions links:</strong> When you click "Get Directions" for a program, we use <a href="https://duckduckgo.com/" class="text-primary-700 dark:text-primary-300">DuckDuckGo Maps</a> (powered by Apple Maps) rather than Google Maps. DuckDuckGo does not track users or build advertising profiles.</li>
-                <li><strong>Location features:</strong> If you enable location-based sorting, your GPS coordinates are used entirely on your device to calculate distances. Your location is never sent to our servers or any third party.</li>
+                <li>
+                  <strong>Map tiles:</strong> Our interactive map uses <a
+                    href="https://protomaps.com/"
+                    class="text-primary-700 dark:text-primary-300">Protomaps</a
+                  > for map tiles, served from our own infrastructure. No third-party map providers are
+                  contacted.
+                </li>
+                <li>
+                  <strong>Directions links:</strong> When you click "Get Directions" for a program, we
+                  use <a
+                    href="https://duckduckgo.com/"
+                    class="text-primary-700 dark:text-primary-300">DuckDuckGo Maps</a
+                  > (powered by Apple Maps) rather than Google Maps. DuckDuckGo does not track users or
+                  build advertising profiles.
+                </li>
+                <li>
+                  <strong>Location features:</strong> If you enable location-based sorting, your GPS coordinates
+                  are used entirely on your device to calculate distances. Your location is never sent
+                  to our servers or any third party.
+                </li>
               </ul>
             </div>
           </details>
@@ -409,21 +829,39 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <!-- Section 7: Your Rights -->
         <section class="mb-12">
           <!-- Visual Summary -->
-          <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-xl p-6 border border-amber-200 dark:border-amber-800 mb-4">
+          <div
+            class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-xl p-6 border border-amber-200 dark:border-amber-800 mb-4"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="bg-white dark:bg-neutral-800 w-10 h-10 rounded-lg flex items-center justify-center shadow-sm">
-                <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              <div
+                class="bg-white dark:bg-neutral-800 w-10 h-10 rounded-lg flex items-center justify-center shadow-sm"
+              >
+                <svg
+                  class="w-5 h-5 text-amber-600 dark:text-amber-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
                 </svg>
               </div>
-              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Your Privacy Rights (CCPA/CPRA)</h2>
+              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+                Your Privacy Rights (CCPA/CPRA)
+              </h2>
             </div>
             <div class="grid sm:grid-cols-2 gap-3">
               <div class="flex items-start gap-2">
                 <span class="text-lg">🗑️</span>
                 <div>
                   <strong class="text-sm text-neutral-900 dark:text-white">Right to Delete</strong>
-                  <p class="text-xs text-neutral-600 dark:text-neutral-400">Clear browser/app data</p>
+                  <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                    Clear browser/app data
+                  </p>
                 </div>
               </div>
               <div class="flex items-start gap-2">
@@ -437,46 +875,84 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 <span class="text-lg">🔕</span>
                 <div>
                   <strong class="text-sm text-neutral-900 dark:text-white">DNT Honored</strong>
-                  <p class="text-xs text-neutral-600 dark:text-neutral-400">We don't track anyway</p>
+                  <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                    We don't track anyway
+                  </p>
                 </div>
               </div>
               <div class="flex items-start gap-2">
                 <span class="text-lg">👶</span>
                 <div>
                   <strong class="text-sm text-neutral-900 dark:text-white">COPPA Compliant</strong>
-                  <p class="text-xs text-neutral-600 dark:text-neutral-400">No data from children</p>
+                  <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                    No data from children
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <!-- Legal Text -->
           <details class="group">
-            <summary class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline">
-              <svg class="w-4 h-4 group-open:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            <summary
+              class="flex items-center gap-2 text-sm text-primary-700 dark:text-primary-300 cursor-pointer hover:underline"
+            >
+              <svg
+                class="w-4 h-4 group-open:rotate-90 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
               </svg>
               Read full legal text
             </summary>
             <div class="mt-4 pl-6 border-l-2 border-neutral-200 dark:border-neutral-700">
-              <h4 class="font-semibold text-neutral-900 dark:text-white mb-3">California Privacy Rights (CCPA/CPRA)</h4>
+              <h4 class="font-semibold text-neutral-900 dark:text-white mb-3">
+                California Privacy Rights (CCPA/CPRA)
+              </h4>
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                If you are a California resident, the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) provide you with specific rights. Because Bay Navigator does not collect personal information, most rights do not apply:
+                If you are a California resident, the California Consumer Privacy Act (CCPA) and
+                California Privacy Rights Act (CPRA) provide you with specific rights. Because Bay
+                Navigator does not collect personal information, most rights do not apply:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 mb-4 list-disc pl-5">
-                <li><strong>Right to Know:</strong> We do not collect personal information that would be subject to disclosure requests.</li>
-                <li><strong>Right to Delete:</strong> No personal information is stored on our servers. Local data can be deleted by clearing browser/app data.</li>
-                <li><strong>Right to Opt-Out of Sale:</strong> We do not sell personal information to third parties.</li>
-                <li><strong>Right to Non-Discrimination:</strong> We do not discriminate against users who exercise their privacy rights.</li>
+                <li>
+                  <strong>Right to Know:</strong> We do not collect personal information that would be
+                  subject to disclosure requests.
+                </li>
+                <li>
+                  <strong>Right to Delete:</strong> No personal information is stored on our servers.
+                  Local data can be deleted by clearing browser/app data.
+                </li>
+                <li>
+                  <strong>Right to Opt-Out of Sale:</strong> We do not sell personal information to third
+                  parties.
+                </li>
+                <li>
+                  <strong>Right to Non-Discrimination:</strong> We do not discriminate against users who
+                  exercise their privacy rights.
+                </li>
               </ul>
 
-              <h4 class="font-semibold text-neutral-900 dark:text-white mt-6 mb-3">Do Not Track Signals</h4>
+              <h4 class="font-semibold text-neutral-900 dark:text-white mt-6 mb-3">
+                Do Not Track Signals
+              </h4>
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                Bay Navigator honors Do Not Track (DNT) browser signals. Because we do not track users, no action is required—our default behavior is already privacy-respecting.
+                Bay Navigator honors Do Not Track (DNT) browser signals. Because we do not track
+                users, no action is required—our default behavior is already privacy-respecting.
               </p>
 
-              <h4 class="font-semibold text-neutral-900 dark:text-white mt-6 mb-3">Children's Privacy (COPPA)</h4>
+              <h4 class="font-semibold text-neutral-900 dark:text-white mt-6 mb-3">
+                Children's Privacy (COPPA)
+              </h4>
               <p class="text-neutral-600 dark:text-neutral-300">
-                Bay Navigator does not knowingly collect any personal information from children under 13, in compliance with COPPA. Since we don't collect personal information from any user, this applies universally.
+                Bay Navigator does not knowingly collect any personal information from children
+                under 13, in compliance with COPPA. Since we don't collect personal information from
+                any user, this applies universally.
               </p>
             </div>
           </details>
@@ -484,23 +960,49 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
         <!-- Additional Sections -->
         <section class="mb-12">
-          <details class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
+          <details
+            class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <summary class="flex items-center justify-between p-6 cursor-pointer">
               <div class="flex items-center gap-3">
-                <div class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                <div
+                  class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-neutral-600 dark:text-neutral-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    ></path>
                   </svg>
                 </div>
-                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Mobile and Desktop Apps</h2>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">
+                  Mobile and Desktop Apps
+                </h2>
               </div>
-              <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <svg
+                class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
               </svg>
             </summary>
             <div class="px-6 pb-6">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                Our mobile and desktop applications (iOS, Android, Mac, Windows, Linux, and Vision OS) follow the same privacy principles:
+                Our mobile and desktop applications (iOS, Android, Mac, Windows, Linux, and Vision
+                OS) follow the same privacy principles:
               </p>
               <ul class="text-neutral-600 dark:text-neutral-300 space-y-2 list-disc pl-5">
                 <li>No account required</li>
@@ -512,122 +1014,262 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             </div>
           </details>
 
-          <details class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
+          <details
+            class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <summary class="flex items-center justify-between p-6 cursor-pointer">
               <div class="flex items-center gap-3">
-                <div class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                <div
+                  class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-neutral-600 dark:text-neutral-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    ></path>
                   </svg>
                 </div>
-                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">External Links</h2>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">
+                  External Links
+                </h2>
               </div>
-              <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <svg
+                class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
               </svg>
             </summary>
             <div class="px-6 pb-6">
               <p class="text-neutral-600 dark:text-neutral-300">
-                Bay Navigator links to external websites for program information. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies before providing any personal information.
+                Bay Navigator links to external websites for program information. We are not
+                responsible for the privacy practices of these external sites. We encourage you to
+                review their privacy policies before providing any personal information.
               </p>
             </div>
           </details>
 
-          <details class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
+          <details
+            class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <summary class="flex items-center justify-between p-6 cursor-pointer">
               <div class="flex items-center gap-3">
-                <div class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <div
+                  class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-neutral-600 dark:text-neutral-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Data Retention & Security</h2>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">
+                  Data Retention & Security
+                </h2>
               </div>
-              <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <svg
+                class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
               </svg>
             </summary>
             <div class="px-6 pb-6">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                We do not retain personal data on our servers. Server logs are retained by Microsoft Azure according to their standard policies. Data stored locally on your device (preferences, favorites) persists until you clear it.
+                We do not retain personal data on our servers. Server logs are retained by Microsoft
+                Azure according to their standard policies. Data stored locally on your device
+                (preferences, favorites) persists until you clear it.
               </p>
               <p class="text-neutral-600 dark:text-neutral-300">
-                We implement reasonable security measures to protect against unauthorized access. Our website uses HTTPS encryption for all connections. However, no method of transmission over the Internet is 100% secure.
+                We implement reasonable security measures to protect against unauthorized access.
+                Our website uses HTTPS encryption for all connections. However, no method of
+                transmission over the Internet is 100% secure.
               </p>
             </div>
           </details>
 
-                    <details class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4">
+          <details
+            class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-4"
+          >
             <summary class="flex items-center justify-between p-6 cursor-pointer">
               <div class="flex items-center gap-3">
-                <div class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <div
+                  class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-neutral-600 dark:text-neutral-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Legal Process Guidelines</h2>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">
+                  Legal Process Guidelines
+                </h2>
               </div>
-              <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <svg
+                class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
               </svg>
             </summary>
             <div class="px-6 pb-6">
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                Bay Tides complies with applicable law and with valid, court-issued legal process, including subpoenas, warrants, and court orders, when such requests are properly served and legally binding. If we receive a request related to Bay Navigator, we review it for validity, scope, and whether it requires any action by Bay Tides.
+                Bay Tides complies with applicable law and with valid, court-issued legal process,
+                including subpoenas, warrants, and court orders, when such requests are properly
+                served and legally binding. If we receive a request related to Bay Navigator, we
+                review it for validity, scope, and whether it requires any action by Bay Tides.
               </p>
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                <strong>No user accounts, no user profiles, no personal data:</strong> Bay Navigator is intentionally designed so that we do not collect or store personally identifiable information about users. We do not require accounts, and we do not maintain records that connect a specific person to specific searches, favorites, or activity. Because of this design, Bay Tides generally has no user-specific personal information to provide in response to legal requests.
+                <strong>No user accounts, no user profiles, no personal data:</strong> Bay Navigator is
+                intentionally designed so that we do not collect or store personally identifiable information
+                about users. We do not require accounts, and we do not maintain records that connect a
+                specific person to specific searches, favorites, or activity. Because of this design,
+                Bay Tides generally has no user-specific personal information to provide in response to
+                legal requests.
               </p>
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                <strong>What we can provide (if required):</strong> In some situations, we may be required to confirm basic information about the service itself, such as how Bay Navigator works, the date ranges we operate, or the fact that we do not maintain user accounts or store user queries. We do not create, retain, or reconstruct personal data for the purpose of responding to requests.
+                <strong>What we can provide (if required):</strong> In some situations, we may be required
+                to confirm basic information about the service itself, such as how Bay Navigator works,
+                the date ranges we operate, or the fact that we do not maintain user accounts or store
+                user queries. We do not create, retain, or reconstruct personal data for the purpose of
+                responding to requests.
               </p>
               <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-                <strong>Infrastructure logs and third parties:</strong> Bay Navigator is delivered through third-party infrastructure providers that may maintain standard technical logs for security and reliability (for example, IP addresses, user agent strings, timestamps, and request paths). These logs are typically controlled and retained by those providers under their own policies, and Bay Tides does not have direct access to these records. Any legal requests directed at those providers are handled by them.
+                <strong>Infrastructure logs and third parties:</strong> Bay Navigator is delivered through
+                third-party infrastructure providers that may maintain standard technical logs for security
+                and reliability (for example, IP addresses, user agent strings, timestamps, and request
+                paths). These logs are typically controlled and retained by those providers under their
+                own policies, and Bay Tides does not have direct access to these records. Any legal requests
+                directed at those providers are handled by them.
               </p>
               <p class="text-neutral-600 dark:text-neutral-300">
-                <strong>User notice:</strong> When legally permitted, Bay Tides will attempt to provide notice of a request to affected users. Since Bay Navigator does not use accounts or collect contact information, we may not have a way to provide such notice.
+                <strong>User notice:</strong> When legally permitted, Bay Tides will attempt to provide
+                notice of a request to affected users. Since Bay Navigator does not use accounts or collect
+                contact information, we may not have a way to provide such notice.
               </p>
             </div>
           </details>
 
-          <details class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700">
+          <details
+            class="group bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700"
+          >
             <summary class="flex items-center justify-between p-6 cursor-pointer">
               <div class="flex items-center gap-3">
-                <div class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                <div
+                  class="bg-neutral-100 dark:bg-neutral-700 w-10 h-10 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-5 h-5 text-neutral-600 dark:text-neutral-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                    ></path>
                   </svg>
                 </div>
-                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">Changes to This Policy</h2>
+                <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">
+                  Changes to This Policy
+                </h2>
               </div>
-              <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <svg
+                class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
               </svg>
             </summary>
             <div class="px-6 pb-6">
               <p class="text-neutral-600 dark:text-neutral-300">
-                If we make changes to this privacy policy, we will update the "Last updated" date at the top. Significant changes will be announced on our GitHub repository. We encourage you to review this policy periodically.
+                If we make changes to this privacy policy, we will update the "Last updated" date at
+                the top. Significant changes will be announced on our GitHub repository. We
+                encourage you to review this policy periodically.
               </p>
             </div>
           </details>
         </section>
 
         <!-- Contact CTA -->
-        <div class="text-center bg-neutral-50 dark:bg-neutral-800/50 rounded-2xl p-8 border border-neutral-200 dark:border-neutral-700 mb-8">
+        <div
+          class="text-center bg-neutral-50 dark:bg-neutral-800/50 rounded-2xl p-8 border border-neutral-200 dark:border-neutral-700 mb-8"
+        >
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Questions?</h2>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6 max-w-lg mx-auto">
             Have privacy concerns or want to exercise your rights? We're here to help.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="mailto:privacy@baytides.org" class="inline-flex items-center gap-2 bg-primary-700 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-primary-800 transition-colors no-underline">
+            <a
+              href="mailto:privacy@baytides.org"
+              class="inline-flex items-center gap-2 bg-primary-700 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-primary-800 transition-colors no-underline"
+            >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
               </svg>
               Email Us
             </a>
-            <a href="https://github.com/baytides/baynavigator/issues" class="inline-flex items-center gap-2 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-medium px-5 py-2.5 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors no-underline">
+            <a
+              href="https://github.com/baytides/baynavigator/issues"
+              class="inline-flex items-center gap-2 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-medium px-5 py-2.5 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors no-underline"
+            >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
               </svg>
               GitHub
             </a>
@@ -635,17 +1277,28 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         </div>
 
         <!-- Open Source Badge -->
-        <div class="bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 rounded-xl p-6 text-center mb-8">
+        <div
+          class="bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 rounded-xl p-6 text-center mb-8"
+        >
           <div class="flex items-center justify-center gap-2 mb-2">
-            <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            <svg
+              class="w-6 h-6 text-neutral-700 dark:text-neutral-300"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              ></path>
             </svg>
             <span class="font-semibold text-neutral-900 dark:text-white">Open Source</span>
           </div>
           <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
             Verify our privacy practices yourself at
           </p>
-          <a href="https://github.com/baytides/baynavigator" class="text-primary-700 dark:text-primary-300 font-medium hover:underline">
+          <a
+            href="https://github.com/baytides/baynavigator"
+            class="text-primary-700 dark:text-primary-300 font-medium hover:underline"
+          >
             github.com/baytides/baynavigator
           </a>
         </div>
@@ -653,7 +1306,11 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         <div class="text-center">
           <a href="/" class="btn-secondary inline-flex items-center">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
             Back to Programs
           </a>

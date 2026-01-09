@@ -63,29 +63,29 @@ class KeyboardShortcuts {
         display: `${modKey}+K`,
         displayParts: isMac ? ['⌘', 'K'] : ['Ctrl', 'K'],
         action: 'focusSearch',
-        note: null
+        note: null,
       },
       darkmode: {
         keys: isMac ? ['metaKey', 'shiftKey', 'd'] : ['ctrlKey', 'shiftKey', 'd'],
         display: `${modKey}+${shiftKey}+D`,
         displayParts: isMac ? ['⌘', '⇧', 'D'] : ['Ctrl', 'Shift', 'D'],
         action: 'toggleDarkMode',
-        note: null
+        note: null,
       },
       help: {
         keys: ['?'],
         display: '?',
         displayParts: ['?'],
         action: 'showHelp',
-        note: null
+        note: null,
       },
       searchAlt: {
         keys: ['/'],
         display: '/',
         displayParts: ['/'],
         action: 'focusSearch',
-        note: null
-      }
+        note: null,
+      },
     };
 
     // Browser-specific conflicts and notes
@@ -98,32 +98,32 @@ class KeyboardShortcuts {
     const notes = {
       brave: {
         conflicts: [],
-        note: `Brave: All shortcuts work. ${modKey}+K opens search.`
+        note: `Brave: All shortcuts work. ${modKey}+K opens search.`,
       },
       chrome: {
         conflicts: [],
-        note: `Chrome: All shortcuts work.`
+        note: `Chrome: All shortcuts work.`,
       },
       firefox: {
         conflicts: ['search'],
-        note: `Firefox: ${modKey}+K may focus browser search. Use / instead.`
+        note: `Firefox: ${modKey}+K may focus browser search. Use / instead.`,
       },
       safari: {
         conflicts: [],
-        note: `Safari: All shortcuts work.`
+        note: `Safari: All shortcuts work.`,
       },
       edge: {
         conflicts: [],
-        note: `Edge: All shortcuts work.`
+        note: `Edge: All shortcuts work.`,
       },
       opera: {
         conflicts: [],
-        note: `Opera: All shortcuts work.`
+        note: `Opera: All shortcuts work.`,
       },
       vivaldi: {
         conflicts: [],
-        note: `Vivaldi: All shortcuts work.`
-      }
+        note: `Vivaldi: All shortcuts work.`,
+      },
     };
 
     return notes[this.browser] || { conflicts: [], note: '' };
@@ -141,15 +141,17 @@ class KeyboardShortcuts {
       const keyEl = el.querySelector('.sidebar-shortcut-key');
       if (keyEl) {
         // Build the key display with proper styling
-        keyEl.innerHTML = shortcut.displayParts.map(part => {
-          if (part === '⌘') return '<span class="kbd-symbol">⌘</span>';
-          if (part === '⇧') return '<span class="kbd-symbol">⇧</span>';
-          if (part === '⌥') return '<span class="kbd-symbol">⌥</span>';
-          if (part === 'Ctrl') return '<span class="kbd-text">Ctrl</span>';
-          if (part === 'Shift') return '<span class="kbd-text">Shift</span>';
-          if (part === 'Alt') return '<span class="kbd-text">Alt</span>';
-          return `<span class="kbd-key">${part}</span>`;
-        }).join('<span class="kbd-plus">+</span>');
+        keyEl.innerHTML = shortcut.displayParts
+          .map((part) => {
+            if (part === '⌘') return '<span class="kbd-symbol">⌘</span>';
+            if (part === '⇧') return '<span class="kbd-symbol">⇧</span>';
+            if (part === '⌥') return '<span class="kbd-symbol">⌥</span>';
+            if (part === 'Ctrl') return '<span class="kbd-text">Ctrl</span>';
+            if (part === 'Shift') return '<span class="kbd-text">Shift</span>';
+            if (part === 'Alt') return '<span class="kbd-text">Alt</span>';
+            return `<span class="kbd-key">${part}</span>`;
+          })
+          .join('<span class="kbd-plus">+</span>');
 
         // Check for browser conflicts
         if (this.browserNotes.conflicts.includes(name)) {
@@ -175,7 +177,11 @@ class KeyboardShortcuts {
   init() {
     document.addEventListener('keydown', (e) => {
       // Don't trigger if user is typing in an input
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+      if (
+        e.target.tagName === 'INPUT' ||
+        e.target.tagName === 'TEXTAREA' ||
+        e.target.tagName === 'SELECT'
+      ) {
         // Allow Escape to blur input
         if (e.key === 'Escape') {
           e.target.blur();
@@ -220,7 +226,8 @@ class KeyboardShortcuts {
   }
 
   focusSearch() {
-    const searchInput = document.getElementById('search-input') || document.getElementById('search');
+    const searchInput =
+      document.getElementById('search-input') || document.getElementById('search');
     if (searchInput) {
       searchInput.focus();
       searchInput.select();
@@ -243,14 +250,16 @@ class KeyboardShortcuts {
     localStorage.setItem('theme-preference', next);
 
     // Apply theme
-    const isDark = next === 'dark' || (next === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const isDark =
+      next === 'dark' ||
+      (next === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
     document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
 
     // Update sidebar theme label if it exists
     const themeLabel = document.getElementById('theme-label');
     if (themeLabel) {
-      const labels = { 'auto': 'System', 'light': 'Light', 'dark': 'Dark' };
+      const labels = { auto: 'System', light: 'Light', dark: 'Dark' };
       themeLabel.textContent = labels[next] || 'System';
     }
 
@@ -263,9 +272,11 @@ class KeyboardShortcuts {
 
   handleEscape() {
     // Close any open modals first
-    const openModals = document.querySelectorAll('.modal.show, .modal.open, [role="dialog"][open], #accessibility-panel.open');
+    const openModals = document.querySelectorAll(
+      '.modal.show, .modal.open, [role="dialog"][open], #accessibility-panel.open'
+    );
     if (openModals.length > 0) {
-      openModals.forEach(modal => {
+      openModals.forEach((modal) => {
         modal.classList.remove('show', 'open');
         if (modal.hasAttribute('open')) {
           modal.removeAttribute('open');
@@ -291,7 +302,8 @@ class KeyboardShortcuts {
     }
 
     // Also clear search input
-    const searchInput = document.getElementById('search-input') || document.getElementById('search');
+    const searchInput =
+      document.getElementById('search-input') || document.getElementById('search');
     if (searchInput) {
       searchInput.value = '';
       searchInput.dispatchEvent(new Event('input', { bubbles: true }));
@@ -315,6 +327,6 @@ class KeyboardShortcuts {
 }
 
 // Initialize keyboard shortcuts
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   window.keyboardShortcuts = new KeyboardShortcuts();
 });

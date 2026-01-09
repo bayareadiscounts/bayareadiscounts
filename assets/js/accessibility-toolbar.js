@@ -4,7 +4,7 @@
    with persistent localStorage preferences
    ============================================ */
 
-(function() {
+(function () {
   'use strict';
 
   // Default settings
@@ -14,7 +14,7 @@
     dyslexiaFont: false,
     focusMode: false,
     keyboardNavHelper: false,
-    simpleLanguage: false
+    simpleLanguage: false,
   };
 
   // Load saved settings or use defaults
@@ -48,7 +48,7 @@
     panel.setAttribute('aria-labelledby', 'a11y-title');
     panel.setAttribute('aria-hidden', 'true');
     panel.setAttribute('inert', '');
-    
+
     panel.innerHTML = `
       <button class="a11y-close" aria-label="Close accessibility options">×</button>
       <h3 id="a11y-title">♿ Accessibility Options</h3>
@@ -118,7 +118,7 @@
 
       <button class="a11y-reset" id="reset-settings">Reset to Defaults</button>
     `;
-    
+
     // Set up buttons
     if (globalButton) {
       globalButton.setAttribute('aria-label', 'Open accessibility options');
@@ -188,8 +188,10 @@
 
     // Close on outside click
     document.addEventListener('click', (e) => {
-      const clickedGlobal = globalButton && (e.target === globalButton || globalButton.contains(e.target));
-      const clickedWizard = wizardButton && (e.target === wizardButton || wizardButton.contains(e.target));
+      const clickedGlobal =
+        globalButton && (e.target === globalButton || globalButton.contains(e.target));
+      const clickedWizard =
+        wizardButton && (e.target === wizardButton || wizardButton.contains(e.target));
       if (!panel.contains(e.target) && !clickedGlobal && !clickedWizard) {
         closePanelWithButton(activeButton, panel);
       }
@@ -252,7 +254,7 @@
 
   function setupToggle(elementId, settingKey, callback) {
     const toggle = document.getElementById(elementId);
-    
+
     // Click handler
     toggle.addEventListener('click', () => {
       settings[settingKey] = !settings[settingKey];
@@ -261,7 +263,7 @@
       callback(settings[settingKey]);
       saveSettings();
     });
-    
+
     // Keyboard handler (Enter/Space)
     toggle.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
@@ -310,7 +312,7 @@
       saveSettings();
       applySettings();
       updateUI();
-      
+
       announce('All accessibility settings reset to defaults');
     }
   }
@@ -318,7 +320,7 @@
   function applySettings() {
     // Apply font size
     document.documentElement.style.fontSize = settings.fontSize + '%';
-    
+
     // Apply toggles
     document.body.classList.toggle('high-contrast', settings.highContrast);
     document.body.classList.toggle('dyslexia-font', settings.dyslexiaFont);
@@ -333,7 +335,7 @@
     if (fontDisplay) {
       fontDisplay.textContent = settings.fontSize + '%';
     }
-    
+
     // Update toggle switches
     updateToggleUI('high-contrast-toggle', settings.highContrast);
     updateToggleUI('dyslexia-font-toggle', settings.dyslexiaFont);
@@ -369,19 +371,19 @@
       const toggle = document.getElementById('simple-language-toggle');
       if (toggle) toggle.click();
     }
-    
+
     // Alt + +: Increase font size
     if (e.altKey && (e.key === '+' || e.key === '=')) {
       e.preventDefault();
       adjustFontSize(10);
     }
-    
+
     // Alt + -: Decrease font size
     if (e.altKey && e.key === '-') {
       e.preventDefault();
       adjustFontSize(-10);
     }
-    
+
     // Alt + C: Toggle high contrast
     if (e.altKey && e.key === 'c') {
       e.preventDefault();
@@ -394,7 +396,7 @@
   function announce(message) {
     const announcer = document.getElementById('a11y-announcer') || createAnnouncer();
     announcer.textContent = message;
-    
+
     // Clear after announcement
     setTimeout(() => {
       announcer.textContent = '';
@@ -422,8 +424,8 @@
   function trackA11yEvent(action, label) {
     if (typeof gtag !== 'undefined') {
       gtag('event', action, {
-        'event_category': 'Accessibility',
-        'event_label': label
+        event_category: 'Accessibility',
+        event_label: label,
       });
     }
   }
@@ -433,7 +435,6 @@
     getSettings: () => ({ ...settings }),
     resetSettings,
     adjustFontSize,
-    announce
+    announce,
   };
-
 })();

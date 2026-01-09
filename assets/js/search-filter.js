@@ -56,7 +56,7 @@ function fuzzyMatch(text, query) {
   const matchRatio = matchedChars / query.length;
   const positionPenalty = (textIndex - matchedChars) / text.length;
 
-  return Math.max(0, (matchRatio * 50) + consecutiveBonus - (positionPenalty * 20));
+  return Math.max(0, matchRatio * 50 + consecutiveBonus - positionPenalty * 20);
 }
 
 /**
@@ -80,7 +80,7 @@ const RecentSearches = {
 
     let searches = this.get();
     // Remove if already exists
-    searches = searches.filter(s => s.toLowerCase() !== query.toLowerCase());
+    searches = searches.filter((s) => s.toLowerCase() !== query.toLowerCase());
     // Add to front
     searches.unshift(query);
     // Keep only MAX_ITEMS
@@ -99,7 +99,7 @@ const RecentSearches = {
     } catch (e) {
       // Ignore
     }
-  }
+  },
 };
 
 class DiscountSearchFilter {
@@ -108,7 +108,7 @@ class DiscountSearchFilter {
     this.filteredPrograms = [];
     this.searchIndex = new Map();
     this.currentSort = 'name-asc';
-    
+
     this.options = {
       containerSelector: options.containerSelector || '#search-results',
       searchInputSelector: options.searchInputSelector || '#search-input',
@@ -116,7 +116,7 @@ class DiscountSearchFilter {
       resultsSelector: options.resultsSelector || '#search-results',
       sortSelectSelector: options.sortSelectSelector || '#sort-select',
       minChars: options.minChars || 1,
-      ...options
+      ...options,
     };
 
     this.init();
@@ -169,7 +169,7 @@ class DiscountSearchFilter {
     const categoryCounts = {};
     const groupsCounts = {};
 
-    this.programs.forEach(program => {
+    this.programs.forEach((program) => {
       // Category counts
       if (program.category) {
         categoryCounts[program.category] = (categoryCounts[program.category] || 0) + 1;
@@ -178,7 +178,7 @@ class DiscountSearchFilter {
       // Groups counts (formerly eligibility)
       if (program.groups) {
         const groupsList = program.groups.split(' ');
-        groupsList.forEach(group => {
+        groupsList.forEach((group) => {
           if (group.trim()) {
             groupsCounts[group.trim()] = (groupsCounts[group.trim()] || 0) + 1;
           }
@@ -187,7 +187,7 @@ class DiscountSearchFilter {
     });
 
     // Update category count badges
-    document.querySelectorAll('.filter-count[data-count-for]').forEach(badge => {
+    document.querySelectorAll('.filter-count[data-count-for]').forEach((badge) => {
       const countFor = badge.getAttribute('data-count-for');
       const count = categoryCounts[countFor] || groupsCounts[countFor] || 0;
       badge.textContent = count > 0 ? count : '';
@@ -227,7 +227,7 @@ class DiscountSearchFilter {
     // If there's a query, show matching suggestions
     if (query.length >= 1) {
       const matchingPrograms = this.programs
-        .filter(p => p.name.toLowerCase().includes(query))
+        .filter((p) => p.name.toLowerCase().includes(query))
         .slice(0, 5);
 
       if (matchingPrograms.length === 0 && recentSearches.length === 0) {
@@ -262,8 +262,10 @@ class DiscountSearchFilter {
     }
 
     let html = '<div class="suggestions-section">';
-    html += '<div class="suggestions-header"><span class="suggestions-label">Recent Searches</span>';
-    html += '<button class="clear-recent" type="button" aria-label="Clear recent searches">Clear</button></div>';
+    html +=
+      '<div class="suggestions-header"><span class="suggestions-label">Recent Searches</span>';
+    html +=
+      '<button class="clear-recent" type="button" aria-label="Clear recent searches">Clear</button></div>';
 
     recentSearches.forEach((search, index) => {
       html += `<button class="suggestion-item" data-type="recent" data-value="${this.escapeHtml(search)}" role="option" tabindex="-1">
@@ -289,7 +291,7 @@ class DiscountSearchFilter {
     }
 
     // Add click handlers for suggestion items
-    this.suggestionsEl.querySelectorAll('.suggestion-item').forEach(item => {
+    this.suggestionsEl.querySelectorAll('.suggestion-item').forEach((item) => {
       item.addEventListener('click', (e) => {
         e.preventDefault();
         const value = item.getAttribute('data-value');
@@ -366,7 +368,7 @@ class DiscountSearchFilter {
   buildSearchIndex() {
     const cards = document.querySelectorAll('#search-results [data-program]');
 
-    cards.forEach(card => {
+    cards.forEach((card) => {
       const programData = {
         id: card.getAttribute('data-program-id') || Math.random(),
         name: card.getAttribute('data-program-name') || '',
@@ -377,7 +379,7 @@ class DiscountSearchFilter {
         benefit: card.querySelector('[data-benefit]')?.textContent || '',
         verifiedDate: card.querySelector('.verified-badge')?.getAttribute('data-verified') || '',
         element: card,
-        visible: true
+        visible: true,
       };
 
       // Build searchable text
@@ -412,7 +414,7 @@ class DiscountSearchFilter {
     }
 
     // Score and filter programs using fuzzy matching
-    const scoredPrograms = this.programs.map(program => {
+    const scoredPrograms = this.programs.map((program) => {
       const indexed = this.searchIndex.get(program.id);
       if (!indexed) return { program, score: 0 };
 
@@ -428,9 +430,9 @@ class DiscountSearchFilter {
 
     // Filter to programs with positive scores and sort by score
     this.filteredPrograms = scoredPrograms
-      .filter(item => item.score > 0)
+      .filter((item) => item.score > 0)
       .sort((a, b) => b.score - a.score)
-      .map(item => item.program);
+      .map((item) => item.program);
 
     // Save to recent searches (debounced - only after typing stops)
     if (query.length >= 2) {
@@ -458,7 +460,7 @@ class DiscountSearchFilter {
 
     const lowerQuery = query.toLowerCase();
 
-    this.filteredPrograms.forEach(program => {
+    this.filteredPrograms.forEach((program) => {
       const nameEl = program.element.querySelector('.program-name');
       const benefitEl = program.element.querySelector('[data-benefit]');
 
@@ -499,7 +501,7 @@ class DiscountSearchFilter {
    * Clear all search highlights
    */
   clearHighlights() {
-    document.querySelectorAll('[data-original-text]').forEach(el => {
+    document.querySelectorAll('[data-original-text]').forEach((el) => {
       el.textContent = el.getAttribute('data-original-text');
       el.removeAttribute('data-original-text');
     });
@@ -528,7 +530,7 @@ class DiscountSearchFilter {
 
     // Handle "All" buttons as exclusive per type
     if (isAllButton) {
-      document.querySelectorAll(`[data-filter-type="${filterType}"]`).forEach(b => {
+      document.querySelectorAll(`[data-filter-type="${filterType}"]`).forEach((b) => {
         b.classList.remove('active');
         b.setAttribute('aria-pressed', 'false');
       });
@@ -545,7 +547,9 @@ class DiscountSearchFilter {
       btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
 
       // If nothing remains active for this type, restore the "All" state
-      const remainingActive = document.querySelectorAll(`[data-filter-type="${filterType}"].active:not([data-all="true"])`);
+      const remainingActive = document.querySelectorAll(
+        `[data-filter-type="${filterType}"].active:not([data-all="true"])`
+      );
       if (remainingActive.length === 0 && allBtn) {
         allBtn.classList.add('active');
         allBtn.setAttribute('aria-pressed', 'true');
@@ -553,7 +557,7 @@ class DiscountSearchFilter {
     }
 
     const activeFilters = this.getActiveFilters();
-    const hasActiveFilters = Object.values(activeFilters).some(list => list.length > 0);
+    const hasActiveFilters = Object.values(activeFilters).some((list) => list.length > 0);
 
     // If no filters are active, show everything
     if (!hasActiveFilters) {
@@ -564,14 +568,12 @@ class DiscountSearchFilter {
     }
 
     // Filter programs based on active filters
-    this.filteredPrograms = this.programs.filter(program => {
+    this.filteredPrograms = this.programs.filter((program) => {
       let match = true;
 
       // Check groups filters (formerly eligibility)
       if (activeFilters.groups.length > 0) {
-        const hasGroup = activeFilters.groups.some(group =>
-          program.groups.includes(group)
-        );
+        const hasGroup = activeFilters.groups.some((group) => program.groups.includes(group));
         match = match && hasGroup;
       }
 
@@ -582,12 +584,14 @@ class DiscountSearchFilter {
 
       // Check area filters
       if (activeFilters.area.length > 0) {
-        const hasArea = activeFilters.area.some(area => {
+        const hasArea = activeFilters.area.some((area) => {
           // "Other" matches Bay Area-wide, Statewide, or Nationwide programs
           if (area === 'Other') {
-            return program.area.includes('Bay Area') ||
-                   program.area.includes('Statewide') ||
-                   program.area.includes('Nationwide');
+            return (
+              program.area.includes('Bay Area') ||
+              program.area.includes('Statewide') ||
+              program.area.includes('Nationwide')
+            );
           }
           // For specific counties, also include Bay Area-wide, Statewide, and Nationwide programs
           // since those apply to everyone in that county
@@ -595,9 +599,11 @@ class DiscountSearchFilter {
             return true;
           }
           // Also show broader programs that apply to all counties
-          if (program.area.includes('Bay Area') ||
-              program.area.includes('Statewide') ||
-              program.area.includes('Nationwide')) {
+          if (
+            program.area.includes('Bay Area') ||
+            program.area.includes('Statewide') ||
+            program.area.includes('Nationwide')
+          ) {
             return true;
           }
           return false;
@@ -640,7 +646,7 @@ class DiscountSearchFilter {
     this.filteredPrograms.sort((a, b) => {
       let compareA, compareB;
 
-      switch(field) {
+      switch (field) {
         case 'name':
           compareA = a.name.toLowerCase();
           compareB = b.name.toLowerCase();
@@ -671,10 +677,10 @@ class DiscountSearchFilter {
    */
   render() {
     // First, hide all programs
-    this.programs.forEach(program => {
+    this.programs.forEach((program) => {
       program.element.style.display = 'none';
     });
-    
+
     // Then show filtered programs in sorted order
     this.filteredPrograms.forEach((program, index) => {
       program.element.style.display = '';
@@ -688,7 +694,9 @@ class DiscountSearchFilter {
       empty = document.createElement('div');
       empty.id = emptyId;
       empty.className = 'no-results';
-      const text = window.i18n ? i18n.t('results.none') : 'No programs found. Try clearing filters.';
+      const text = window.i18n
+        ? i18n.t('results.none')
+        : 'No programs found. Try clearing filters.';
       empty.innerHTML = `<p>${text}</p>`;
       this.resultsContainer?.parentNode?.insertBefore(empty, this.resultsContainer);
     }
@@ -705,7 +713,7 @@ class DiscountSearchFilter {
   resetResults() {
     this.filteredPrograms = [...this.programs];
 
-    this.programs.forEach(program => {
+    this.programs.forEach((program) => {
       program.element.style.display = '';
     });
 
@@ -721,14 +729,16 @@ class DiscountSearchFilter {
    */
   resetFilters() {
     // Clear all filter buttons
-    document.querySelectorAll(this.options.filterButtonsSelector).forEach(btn => {
+    document.querySelectorAll(this.options.filterButtonsSelector).forEach((btn) => {
       btn.classList.remove('active');
     });
 
     // Reactivate each "All" button to show defaults
-    document.querySelectorAll(`${this.options.filterButtonsSelector}[data-all="true"]`).forEach(btn => {
-      btn.classList.add('active');
-    });
+    document
+      .querySelectorAll(`${this.options.filterButtonsSelector}[data-all="true"]`)
+      .forEach((btn) => {
+        btn.classList.add('active');
+      });
 
     // Clear search input
     if (this.searchInput) {
@@ -737,7 +747,7 @@ class DiscountSearchFilter {
 
     // Reset to show all programs
     this.filteredPrograms = [...this.programs];
-    
+
     // Render all programs
     this.sortPrograms();
     this.render();
@@ -751,7 +761,7 @@ class DiscountSearchFilter {
     const filtersByType = {};
     const filterButtons = document.querySelectorAll(this.options.filterButtonsSelector);
 
-    filterButtons.forEach(btn => {
+    filterButtons.forEach((btn) => {
       const type = btn.getAttribute('data-filter-type');
       const isAll = btn.getAttribute('data-all') === 'true';
       if (!type) return;
@@ -765,7 +775,7 @@ class DiscountSearchFilter {
       }
     });
 
-    ['groups', 'category', 'area'].forEach(type => {
+    ['groups', 'category', 'area'].forEach((type) => {
       if (!filtersByType[type]) {
         filtersByType[type] = [];
       }
@@ -773,7 +783,7 @@ class DiscountSearchFilter {
 
     return filtersByType;
   }
-  
+
   /**
    * Show/hide search UI
    */
@@ -792,7 +802,7 @@ class DiscountSearchFilter {
     if (countEl) {
       const total = this.programs.length;
       const showing = this.filteredPrograms.length;
-      
+
       if (showing === total) {
         countEl.textContent = `Showing all ${total} programs`;
       } else {
@@ -808,7 +818,7 @@ document.addEventListener('DOMContentLoaded', () => {
     containerSelector: '.programs-container',
     searchInputSelector: '#search-input',
     filterButtonsSelector: '.filter-btn',
-    resultsSelector: '#search-results'
+    resultsSelector: '#search-results',
   });
 
   // Restore filters/search from URL parameters
@@ -826,10 +836,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Apply filters for groups, category, area
-    ['groups', 'category', 'area'].forEach(type => {
+    ['groups', 'category', 'area'].forEach((type) => {
       const val = state[type];
       if (!val) return;
-      const btn = document.querySelector(`[data-filter-type="${type}"][data-filter-value="${val}"]`);
+      const btn = document.querySelector(
+        `[data-filter-type="${type}"][data-filter-value="${val}"]`
+      );
       if (btn) {
         btn.click();
       }

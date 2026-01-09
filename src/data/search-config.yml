@@ -239,17 +239,17 @@ suggestions:
 # Query rewrites - normalize common phrasings to structured searches
 # These help map natural language to effective searches
 query_rewrites:
-  "i need food": "food assistance"
-  "i'm hungry": "food bank"
-  "can't pay rent": "rental assistance"
-  "help with rent": "rental assistance"
-  "can't pay bills": "utility assistance"
-  "help paying bills": "utility bill help"
-  "need a doctor": "healthcare clinic"
-  "feeling depressed": "mental health"
-  "need a job": "job training"
-  "lost my job": "unemployment"
-  "need a lawyer": "legal aid"
-  "being evicted": "eviction prevention"
-  "nowhere to live": "emergency shelter housing"
-  "need health insurance": "covered california medi-cal"
+  'i need food': 'food assistance'
+  "i'm hungry": 'food bank'
+  "can't pay rent": 'rental assistance'
+  'help with rent': 'rental assistance'
+  "can't pay bills": 'utility assistance'
+  'help paying bills': 'utility bill help'
+  'need a doctor': 'healthcare clinic'
+  'feeling depressed': 'mental health'
+  'need a job': 'job training'
+  'lost my job': 'unemployment'
+  'need a lawyer': 'legal aid'
+  'being evicted': 'eviction prevention'
+  'nowhere to live': 'emergency shelter housing'
+  'need health insurance': 'covered california medi-cal'

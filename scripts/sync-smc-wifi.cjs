@@ -18,17 +18,19 @@ const SMC_DATA_URL = 'https://datahub.smcgov.org/resource/3tvp-4cju.json';
  */
 function fetchWifiData() {
   return new Promise((resolve, reject) => {
-    https.get(SMC_DATA_URL, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch (e) {
-          reject(new Error(`Failed to parse response: ${e.message}`));
-        }
-      });
-    }).on('error', reject);
+    https
+      .get(SMC_DATA_URL, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            resolve(JSON.parse(data));
+          } catch (e) {
+            reject(new Error(`Failed to parse response: ${e.message}`));
+          }
+        });
+      })
+      .on('error', reject);
   });
 }
 
@@ -54,16 +56,32 @@ function isPublicLocation(location) {
 
   // Include community centers, parks, libraries, clinics
   const publicKeywords = [
-    'community center', 'park', 'library', 'pool', 'marina',
-    'senior center', 'youth center', 'shelter', 'clinic',
-    'airport', 'recreation', 'reserve'
+    'community center',
+    'park',
+    'library',
+    'pool',
+    'marina',
+    'senior center',
+    'youth center',
+    'shelter',
+    'clinic',
+    'airport',
+    'recreation',
+    'reserve',
   ];
 
   // Exclude internal government buildings
   const excludeKeywords = [
-    'motor pool', 'data center', 'human resources', 'sheriff',
-    'probation', 'county center', 'mtu', 'admin wing',
-    'nursing wing', 'd & t'
+    'motor pool',
+    'data center',
+    'human resources',
+    'sheriff',
+    'probation',
+    'county center',
+    'mtu',
+    'admin wing',
+    'nursing wing',
+    'd & t',
   ];
 
   // Check exclusions first
@@ -101,13 +119,15 @@ function getCategoryForLocation(name) {
   const lowerName = name.toLowerCase();
 
   // Recreation facilities
-  if (lowerName.includes('community center') ||
-      lowerName.includes('senior center') ||
-      lowerName.includes('youth center') ||
-      lowerName.includes('recreation') ||
-      lowerName.includes('park') ||
-      lowerName.includes('pool') ||
-      lowerName.includes('marina')) {
+  if (
+    lowerName.includes('community center') ||
+    lowerName.includes('senior center') ||
+    lowerName.includes('youth center') ||
+    lowerName.includes('recreation') ||
+    lowerName.includes('park') ||
+    lowerName.includes('pool') ||
+    lowerName.includes('marina')
+  ) {
     return 'Recreation';
   }
 
@@ -141,12 +161,14 @@ function formatWifiForYaml(location) {
     city: location.city,
     groups: ['everyone'],
     address: address,
-    amenities: [{
-      name: '🛜 Free WiFi',
-      link: 'https://www.smcgov.org/smc-public-wifi-project'
-    }],
+    amenities: [
+      {
+        name: '🛜 Free WiFi',
+        link: 'https://www.smcgov.org/smc-public-wifi-project',
+      },
+    ],
     verified_by: 'San Mateo County',
-    verified_date: new Date().toISOString().split('T')[0]
+    verified_date: new Date().toISOString().split('T')[0],
   };
 }
 
@@ -185,7 +207,7 @@ async function main() {
     console.log(`Filtered to ${publicLocations.length} public-facing locations`);
 
     // Format for output
-    const formattedLocations = publicLocations.map(loc => {
+    const formattedLocations = publicLocations.map((loc) => {
       const formatted = formatWifiForYaml(loc);
       console.log(`  - ${loc.location} (${loc.city})`);
       return formatted;
@@ -202,7 +224,7 @@ async function main() {
     yamlOutput += '# Source: San Mateo County Open Data Portal\n';
     yamlOutput += `# Updated: ${new Date().toISOString().split('T')[0]}\n\n`;
 
-    formattedLocations.forEach(loc => {
+    formattedLocations.forEach((loc) => {
       yamlOutput += locationToYaml(loc) + '\n';
     });
 
@@ -218,12 +240,19 @@ async function main() {
 
     // Also save as JSON for reference
     const jsonPath = path.join(exportDir, 'smc-public-wifi.json');
-    fs.writeFileSync(jsonPath, JSON.stringify({
-      source: 'San Mateo County Open Data Portal',
-      url: 'https://datahub.smcgov.org/Government/Public-Wifi-Locations-and-Status-Filter/3tvp-4cju',
-      updated: new Date().toISOString(),
-      locations: formattedLocations
-    }, null, 2));
+    fs.writeFileSync(
+      jsonPath,
+      JSON.stringify(
+        {
+          source: 'San Mateo County Open Data Portal',
+          url: 'https://datahub.smcgov.org/Government/Public-Wifi-Locations-and-Status-Filter/3tvp-4cju',
+          updated: new Date().toISOString(),
+          locations: formattedLocations,
+        },
+        null,
+        2
+      )
+    );
     console.log(`Saved JSON to: ${jsonPath}`);
 
     // Update recreation.yml
@@ -276,7 +305,8 @@ async function main() {
       if (nextEntryMatch) {
         endIndex = markerIndex + nextEntryMatch.index;
       }
-      recreationContent = recreationContent.slice(0, markerIndex) + recreationContent.slice(endIndex);
+      recreationContent =
+        recreationContent.slice(0, markerIndex) + recreationContent.slice(endIndex);
     }
 
     // Clean up any trailing whitespace and add new section
@@ -286,7 +316,6 @@ async function main() {
     console.log(`Updated: ${recreationPath}`);
 
     console.log('\nDone!');
-
   } catch (error) {
     console.error('Error:', error.message);
     process.exit(1);

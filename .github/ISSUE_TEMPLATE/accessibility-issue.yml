@@ -1,7 +1,7 @@
 name: Accessibility Issue
 description: Report an accessibility barrier or WCAG compliance issue
-title: "[A11y]: "
-labels: ["accessibility", "a11y"]
+title: '[A11y]: '
+labels: ['accessibility', 'a11y']
 body:
   - type: markdown
     attributes:

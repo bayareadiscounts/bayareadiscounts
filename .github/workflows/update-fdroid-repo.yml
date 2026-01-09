@@ -3,7 +3,7 @@ name: F-Droid Repo Update
 # Generates F-Droid repository index files
 on:
   workflow_run:
-    workflows: ["Release"]
+    workflows: ['Release']
     types:
       - completed
   workflow_dispatch:

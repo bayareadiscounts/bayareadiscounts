@@ -5,6 +5,7 @@ This document outlines the accessibility features implemented in the Bay Navigat
 ## WCAG 2.2 AAA Compliance
 
 ### Visual Accessibility
+
 - **High Contrast Mode**: Comprehensive high contrast styling that works across all color themes (light, dark, auto)
   - Accessible via the Accessibility Toolbar (♿ button, top-left)
   - Overrides all CSS custom properties with AAA-compliant colors
@@ -24,6 +25,7 @@ This document outlines the accessibility features implemented in the Bay Navigat
   - Accessible via Utility Bar theme selector
 
 ### Interaction Accessibility
+
 - **Touch Targets**: All interactive elements meet WCAG 2.5.5 AAA minimum size (44×44px)
   - Utility bar buttons
   - Accessibility toolbar controls
@@ -43,6 +45,7 @@ This document outlines the accessibility features implemented in the Bay Navigat
   - Additional 6px shadow for visibility
 
 ### Screen Reader Support
+
 - Proper ARIA labels on all interactive elements
 - ARIA live regions for dynamic content
 - Screen reader-only text for context
@@ -52,9 +55,11 @@ This document outlines the accessibility features implemented in the Bay Navigat
 ## WCAG 3.0 Draft Features
 
 ### APCA Contrast Checker
+
 The Advanced Perceptual Contrast Algorithm (APCA) is implemented as a progressive enhancement for WCAG 3.0 compatibility.
 
 **JavaScript API** (available globally as `window.APCA`):
+
 ```javascript
 // Calculate APCA Lc value
 const lc = window.APCA.calculate(textColor, bgColor);
@@ -73,6 +78,7 @@ const rgb = window.APCA.parseColor('#00acc1');
 ```
 
 **APCA Conformance Levels**:
+
 - **AAA+** (Lc ≥ 90): Excellent contrast for all text sizes
 - **AAA** (Lc ≥ 75): Very good contrast, suitable for body text (12px+)
 - **AA** (Lc ≥ 60): Good contrast for regular body text (14px+)
@@ -99,18 +105,21 @@ All preferences are saved to localStorage and persist across sessions.
 The site uses CSS custom properties for theming:
 
 **Light Mode Variables**:
+
 - Background: `--bg-main: white`
 - Text: `--text-primary: #24292e`
 - Links: `--text-link: #00838f`
 - Borders: `--border-color: #e1e4e8`
 
 **Dark Mode Variables**:
+
 - Background: `--bg-main: #0d1117`
 - Text: `--text-primary: #e8eef5`
 - Links: `--text-link: #79d8eb`
 - Borders: `--border-color: #30363d`
 
 **High Contrast Overrides**:
+
 - Light: Pure black text (#000) on white background
 - Dark: Pure white text (#fff) on black background
 - Links: Blue (#0000ff) in light mode, Yellow (#ffff00) in dark mode
@@ -118,6 +127,7 @@ The site uses CSS custom properties for theming:
 ## Testing Accessibility
 
 ### Manual Testing
+
 1. Navigate using only keyboard (Tab, Shift+Tab, Enter, Escape)
 2. Toggle high contrast mode and verify all content is visible
 3. Test with screen reader (NVDA, JAWS, VoiceOver)
@@ -125,21 +135,26 @@ The site uses CSS custom properties for theming:
 5. Test color themes (light, dark, auto)
 
 ### Automated Testing
+
 Use the APCA checker to scan for contrast issues:
+
 ```javascript
 const issues = window.APCA.scanPage();
-console.table(issues.map(i => ({
-  element: i.element.tagName,
-  text: i.element.textContent.substring(0, 50),
-  lc: i.lc.toFixed(2),
-  passes: i.rating.passes,
-  rating: i.rating.rating
-})));
+console.table(
+  issues.map((i) => ({
+    element: i.element.tagName,
+    text: i.element.textContent.substring(0, 50),
+    lc: i.lc.toFixed(2),
+    passes: i.rating.passes,
+    rating: i.rating.rating,
+  }))
+);
 ```
 
 ## Browser Support
 
 All accessibility features are tested and supported in:
+
 - Chrome/Edge 90+
 - Firefox 88+
 - Safari 14+
@@ -151,11 +166,13 @@ Progressive enhancement ensures graceful degradation in older browsers.
 ## Recent Updates (December 2025)
 
 ### Enhancements
+
 1. **PWA install moved to utility bar**: Cleaner mobile experience with install button in utility bar instead of footer/floating pill
 2. **Theme override system**: Manual light/dark/auto theme selection in utility bar
 3. **Text spacing toggle**: WCAG 2.1.4 AAA compliant text spacing available in utility bar
 
 ### Bug Fixes
+
 1. **Dark mode gradient typo**: Corrected hex color `#0d2626a15` → `#0d262615`
 2. **Spacing toggle visual state**: Added visual styling synchronization on page load
 3. **Focus trap in step-flow modal**: Implemented keyboard navigation containment
@@ -170,6 +187,7 @@ Progressive enhancement ensures graceful degradation in older browsers.
 ## Reporting Accessibility Issues
 
 If you encounter any accessibility barriers, please report them via:
+
 - GitHub Issues: [github.com/baytides/baynavigator/issues](https://github.com/baytides/baynavigator/issues)
 - Email: [accessibility contact through the site]
 

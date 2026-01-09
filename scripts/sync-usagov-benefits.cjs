@@ -19,26 +19,60 @@ const OUTPUT_FILE = path.join(__dirname, '../src/data/federal-benefits.yml');
 // Based on USA.gov Benefit Finder's three life event categories
 const LIFE_EVENT_KEYWORDS = {
   disability: [
-    'disability', 'disabled', 'impairment', 'special needs', 'ada',
-    'unable to work', 'ssdi', 'ssi', 'accessibility', 'chronic illness',
-    'blind', 'deaf', 'mobility', 'mental health'
+    'disability',
+    'disabled',
+    'impairment',
+    'special needs',
+    'ada',
+    'unable to work',
+    'ssdi',
+    'ssi',
+    'accessibility',
+    'chronic illness',
+    'blind',
+    'deaf',
+    'mobility',
+    'mental health',
   ],
   death: [
-    'death', 'deceased', 'survivor', 'survivors', 'bereavement', 'grief',
-    'widow', 'widower', 'funeral', 'burial', 'memorial', 'loss of loved one',
-    'passing', 'died', 'dependents', 'beneficiary'
+    'death',
+    'deceased',
+    'survivor',
+    'survivors',
+    'bereavement',
+    'grief',
+    'widow',
+    'widower',
+    'funeral',
+    'burial',
+    'memorial',
+    'loss of loved one',
+    'passing',
+    'died',
+    'dependents',
+    'beneficiary',
   ],
   retirement: [
-    'retirement', 'retired', 'retiree', 'pension', 'senior', 'elderly',
-    'social security', 'medicare', '65', 'aging', 'golden years',
-    'fixed income', 'post-career'
-  ]
+    'retirement',
+    'retired',
+    'retiree',
+    'pension',
+    'senior',
+    'elderly',
+    'social security',
+    'medicare',
+    '65',
+    'aging',
+    'golden years',
+    'fixed income',
+    'post-career',
+  ],
 };
 
 // Map USAGov agencies to our category system (fallback)
 const AGENCY_TO_CATEGORY = {
   'Social Security Administration (SSA)': 'Finance',
-  'Veterans Affairs Department (VA)': 'Finance',  // Default, overridden by keywords
+  'Veterans Affairs Department (VA)': 'Finance', // Default, overridden by keywords
   'Department of Defense (DOD)': 'Finance',
   'Centers for Medicare and Medicaid (CMS)': 'Health',
   'Federal Emergency Management Agency (FEMA)': 'Community Services',
@@ -72,14 +106,25 @@ function categorizeByKeywords(title, summary) {
   const text = `${title} ${summary}`.toLowerCase();
 
   // Health/Medical
-  if (text.includes('medicare') || text.includes('medicaid') || text.includes('health') ||
-      text.includes('medical') || text.includes('champva') || text.includes('prescription')) {
+  if (
+    text.includes('medicare') ||
+    text.includes('medicaid') ||
+    text.includes('health') ||
+    text.includes('medical') ||
+    text.includes('champva') ||
+    text.includes('prescription')
+  ) {
     return 'Health';
   }
 
   // Education
-  if (text.includes('education') || text.includes('gi bill') || text.includes('school') ||
-      text.includes('braille') || text.includes('library')) {
+  if (
+    text.includes('education') ||
+    text.includes('gi bill') ||
+    text.includes('school') ||
+    text.includes('braille') ||
+    text.includes('library')
+  ) {
     return 'Education';
   }
 
@@ -89,9 +134,15 @@ function categorizeByKeywords(title, summary) {
   }
 
   // Community services (burial, emergency, social services)
-  if (text.includes('burial') || text.includes('funeral') || text.includes('cemetery') ||
-      text.includes('headstone') || text.includes('grave') || text.includes('memorial') ||
-      text.includes('flag')) {
+  if (
+    text.includes('burial') ||
+    text.includes('funeral') ||
+    text.includes('cemetery') ||
+    text.includes('headstone') ||
+    text.includes('grave') ||
+    text.includes('memorial') ||
+    text.includes('flag')
+  ) {
     return 'Community Services';
   }
 
@@ -107,7 +158,7 @@ function formatBenefitName(title, agencyTitle) {
   // Capitalize title properly
   let formattedTitle = title
     .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
 
   // Fix common plural/clarity issues
@@ -126,14 +177,14 @@ function formatBenefitName(title, agencyTitle) {
 
 // Map eligibility criteria to our target groups (using group IDs from groups.yml)
 const CRITERIA_TO_GROUPS = {
-  'applicant_served_in_active_military': 'veterans',
-  'applicant_service_disability': 'veterans',
-  'applicant_disability': 'disability',
-  'applicant_ability_to_work': 'disability',
-  'applicant_american_indian': 'everyone',  // No specific group, use everyone
-  'applicant_income': 'income-eligible',
-  'applicant_dolo': 'families',  // Survivors → families (closest match)
-  'deceased_': 'families',       // Survivors → families (closest match)
+  applicant_served_in_active_military: 'veterans',
+  applicant_service_disability: 'veterans',
+  applicant_disability: 'disability',
+  applicant_ability_to_work: 'disability',
+  applicant_american_indian: 'everyone', // No specific group, use everyone
+  applicant_income: 'income-eligible',
+  applicant_dolo: 'families', // Survivors → families (closest match)
+  deceased_: 'families', // Survivors → families (closest match)
 };
 
 function stripHtml(html) {
@@ -152,37 +203,53 @@ function stripHtml(html) {
 // Detect which life events apply to a benefit and generate keywords
 function detectLifeEventsAndKeywords(title, summary, eligibility) {
   const text = `${title} ${summary}`.toLowerCase();
-  const eligibilityText = (eligibility || []).map(e => (e.label || '').toLowerCase()).join(' ');
+  const eligibilityText = (eligibility || []).map((e) => (e.label || '').toLowerCase()).join(' ');
   const fullText = `${text} ${eligibilityText}`;
 
   const detectedEvents = new Set();
   const keywords = new Set();
 
   // Check for disability-related content
-  if (fullText.includes('disab') || fullText.includes('impair') ||
-      fullText.includes('unable to work') || fullText.includes('ssdi') ||
-      fullText.includes('blind') || fullText.includes('deaf')) {
+  if (
+    fullText.includes('disab') ||
+    fullText.includes('impair') ||
+    fullText.includes('unable to work') ||
+    fullText.includes('ssdi') ||
+    fullText.includes('blind') ||
+    fullText.includes('deaf')
+  ) {
     detectedEvents.add('disability');
   }
 
   // Check for death/survivor-related content
-  if (fullText.includes('surviv') || fullText.includes('deceas') ||
-      fullText.includes('death') || fullText.includes('burial') ||
-      fullText.includes('funeral') || fullText.includes('widow') ||
-      fullText.includes('memorial') || fullText.includes('died')) {
+  if (
+    fullText.includes('surviv') ||
+    fullText.includes('deceas') ||
+    fullText.includes('death') ||
+    fullText.includes('burial') ||
+    fullText.includes('funeral') ||
+    fullText.includes('widow') ||
+    fullText.includes('memorial') ||
+    fullText.includes('died')
+  ) {
     detectedEvents.add('death');
   }
 
   // Check for retirement-related content
-  if (fullText.includes('retire') || fullText.includes('pension') ||
-      fullText.includes('medicare') || fullText.includes('65 years') ||
-      fullText.includes('62 years') || fullText.includes('social security')) {
+  if (
+    fullText.includes('retire') ||
+    fullText.includes('pension') ||
+    fullText.includes('medicare') ||
+    fullText.includes('65 years') ||
+    fullText.includes('62 years') ||
+    fullText.includes('social security')
+  ) {
     detectedEvents.add('retirement');
   }
 
   // Add relevant keywords based on detected events
   for (const event of detectedEvents) {
-    LIFE_EVENT_KEYWORDS[event].forEach(kw => keywords.add(kw));
+    LIFE_EVENT_KEYWORDS[event].forEach((kw) => keywords.add(kw));
   }
 
   // Add agency-specific keywords
@@ -204,7 +271,11 @@ function detectLifeEventsAndKeywords(title, summary, eligibility) {
     keywords.add('housing voucher');
   }
 
-  if (fullText.includes('education') || fullText.includes('gi bill') || fullText.includes('school')) {
+  if (
+    fullText.includes('education') ||
+    fullText.includes('gi bill') ||
+    fullText.includes('school')
+  ) {
     keywords.add('education benefits');
     keywords.add('tuition assistance');
     keywords.add('college');
@@ -212,7 +283,7 @@ function detectLifeEventsAndKeywords(title, summary, eligibility) {
 
   return {
     lifeEvents: Array.from(detectedEvents),
-    keywords: Array.from(keywords)
+    keywords: Array.from(keywords),
   };
 }
 
@@ -285,9 +356,8 @@ function transformBenefit(benefitWrapper) {
 
   // First try keyword-based categorization, then fall back to agency mapping
   const summary = stripHtml(benefit.summary || '');
-  const category = categorizeByKeywords(benefit.title, summary) ||
-                   AGENCY_TO_CATEGORY[agencyTitle] ||
-                   'community';
+  const category =
+    categorizeByKeywords(benefit.title, summary) || AGENCY_TO_CATEGORY[agencyTitle] || 'community';
   const groups = extractGroups(benefit.eligibility || []);
 
   // Detect life events and generate searchable keywords
@@ -304,35 +374,49 @@ function transformBenefit(benefitWrapper) {
   if (titleLower.includes('veteran') || summaryLower.includes('veteran')) {
     if (!groups.includes('veterans')) groups.push('veterans');
   }
-  if (titleLower.includes('disability') || titleLower.includes('disabled') || summaryLower.includes('disability')) {
+  if (
+    titleLower.includes('disability') ||
+    titleLower.includes('disabled') ||
+    summaryLower.includes('disability')
+  ) {
     if (!groups.includes('disability')) groups.push('disability');
   }
-  if (titleLower.includes('senior') || titleLower.includes('retire') || titleLower.includes('medicare')) {
+  if (
+    titleLower.includes('senior') ||
+    titleLower.includes('retire') ||
+    titleLower.includes('medicare')
+  ) {
     if (!groups.includes('seniors')) groups.push('seniors');
   }
   if (titleLower.includes('child') || summaryLower.includes('child')) {
     if (!groups.includes('families')) groups.push('families');
   }
-  if (titleLower.includes('survivor') || summaryLower.includes('survivor') || summaryLower.includes('death')) {
-    if (!groups.includes('families')) groups.push('families');  // Survivors → families
+  if (
+    titleLower.includes('survivor') ||
+    summaryLower.includes('survivor') ||
+    summaryLower.includes('death')
+  ) {
+    if (!groups.includes('families')) groups.push('families'); // Survivors → families
   }
 
   // Build eligibility description
   const eligibilityItems = (benefit.eligibility || [])
-    .map(e => e.label)
+    .map((e) => e.label)
     .filter(Boolean)
     .slice(0, 5);
 
-  const howToGetIt = eligibilityItems.length > 0
-    ? `Eligibility requirements:\n${eligibilityItems.map(e => `- ${e}`).join('\n')}\n\nVisit the official website or call for more information.`
-    : 'Visit the official website or call for more information about eligibility and how to apply.';
+  const howToGetIt =
+    eligibilityItems.length > 0
+      ? `Eligibility requirements:\n${eligibilityItems.map((e) => `- ${e}`).join('\n')}\n\nVisit the official website or call for more information.`
+      : 'Visit the official website or call for more information about eligibility and how to apply.';
 
   return {
     id: generateId(benefit.title, agencyTitle),
     name: formatBenefitName(benefit.title, agencyTitle),
     category: category,
     area: 'Nationwide',
-    description: stripHtml(benefit.summary) || `Federal benefit program administered by ${agencyTitle}.`,
+    description:
+      stripHtml(benefit.summary) || `Federal benefit program administered by ${agencyTitle}.`,
     whatTheyOffer: stripHtml(agency.summary || agency.lede || ''),
     howToGetIt: howToGetIt,
     link: benefit.SourceLink || '',
@@ -359,9 +443,7 @@ async function syncBenefits() {
 
     console.log(`Found ${benefits.length} federal benefits`);
 
-    const programs = benefits
-      .map(transformBenefit)
-      .filter(Boolean);
+    const programs = benefits.map(transformBenefit).filter(Boolean);
 
     console.log(`Transformed ${programs.length} programs`);
 
@@ -378,62 +460,65 @@ async function syncBenefits() {
 #
 # DO NOT EDIT MANUALLY - This file is regenerated by sync-usagov-benefits.cjs
 
-${programs.map(p => {
-  // Helper to quote strings that need it
-  const quote = (s) => (s && (s.includes(':') || s.includes('#'))) ? `"${s.replace(/"/g, '\\"')}"` : s;
+${programs
+  .map((p) => {
+    // Helper to quote strings that need it
+    const quote = (s) =>
+      s && (s.includes(':') || s.includes('#')) ? `"${s.replace(/"/g, '\\"')}"` : s;
 
-  const lines = [
-    `- id: ${p.id}`,
-    `  name: ${quote(p.name)}`,
-    `  category: ${p.category}`,
-    `  area: ${p.area}`,
-    `  source: federal`,
-    `  agency: ${quote(p.agency)}`,
-    `  verified_by: USA.gov`,
-    `  verified_date: '${syncDate}'`,
-  ];
+    const lines = [
+      `- id: ${p.id}`,
+      `  name: ${quote(p.name)}`,
+      `  category: ${p.category}`,
+      `  area: ${p.area}`,
+      `  source: federal`,
+      `  agency: ${quote(p.agency)}`,
+      `  verified_by: USA.gov`,
+      `  verified_date: '${syncDate}'`,
+    ];
 
-  if (p.groups && p.groups.length > 0) {
-    lines.push(`  groups:`);
-    // Groups should already be in correct ID format (lowercase with hyphens)
-    p.groups.forEach(g => lines.push(`    - ${g}`));
-  }
+    if (p.groups && p.groups.length > 0) {
+      lines.push(`  groups:`);
+      // Groups should already be in correct ID format (lowercase with hyphens)
+      p.groups.forEach((g) => lines.push(`    - ${g}`));
+    }
 
-  // Use > for folded scalar (single line)
-  lines.push(`  description: >`);
-  lines.push(`    ${p.description}`);
+    // Use > for folded scalar (single line)
+    lines.push(`  description: >`);
+    lines.push(`    ${p.description}`);
 
-  if (p.whatTheyOffer) {
-    lines.push(`  what_they_offer: >`);
-    lines.push(`    ${p.whatTheyOffer}`);
-  }
+    if (p.whatTheyOffer) {
+      lines.push(`  what_they_offer: >`);
+      lines.push(`    ${p.whatTheyOffer}`);
+    }
 
-  if (p.howToGetIt) {
-    lines.push(`  how_to_get_it: |`);
-    p.howToGetIt.split('\n').forEach(line => {
-      lines.push(`    ${line}`);
-    });
-  }
+    if (p.howToGetIt) {
+      lines.push(`  how_to_get_it: |`);
+      p.howToGetIt.split('\n').forEach((line) => {
+        lines.push(`    ${line}`);
+      });
+    }
 
-  if (p.link) {
-    lines.push(`  link: ${p.link}`);
-    lines.push(`  link_text: ${p.linkText}`);
-  }
+    if (p.link) {
+      lines.push(`  link: ${p.link}`);
+      lines.push(`  link_text: ${p.linkText}`);
+    }
 
-  // Add life events as hidden tags for search
-  if (p.lifeEvents && p.lifeEvents.length > 0) {
-    lines.push(`  life_events:`);
-    p.lifeEvents.forEach(e => lines.push(`    - ${e}`));
-  }
+    // Add life events as hidden tags for search
+    if (p.lifeEvents && p.lifeEvents.length > 0) {
+      lines.push(`  life_events:`);
+      p.lifeEvents.forEach((e) => lines.push(`    - ${e}`));
+    }
 
-  // Add keywords for enhanced search (hidden from display, used by Fuse.js)
-  if (p.keywords && p.keywords.length > 0) {
-    lines.push(`  keywords:`);
-    p.keywords.forEach(kw => lines.push(`    - ${kw}`));
-  }
+    // Add keywords for enhanced search (hidden from display, used by Fuse.js)
+    if (p.keywords && p.keywords.length > 0) {
+      lines.push(`  keywords:`);
+      p.keywords.forEach((kw) => lines.push(`    - ${kw}`));
+    }
 
-  return lines.join('\n');
-}).join('\n\n')}
+    return lines.join('\n');
+  })
+  .join('\n\n')}
 `;
 
     // Write to file
@@ -444,36 +529,41 @@ ${programs.map(p => {
     const categories = {};
     const groupCounts = {};
     const lifeEventCounts = {};
-    programs.forEach(p => {
+    programs.forEach((p) => {
       categories[p.category] = (categories[p.category] || 0) + 1;
-      p.groups.forEach(g => {
+      p.groups.forEach((g) => {
         groupCounts[g] = (groupCounts[g] || 0) + 1;
       });
-      (p.lifeEvents || []).forEach(e => {
+      (p.lifeEvents || []).forEach((e) => {
         lifeEventCounts[e] = (lifeEventCounts[e] || 0) + 1;
       });
     });
 
     console.log('\nBy category:');
-    Object.entries(categories).sort((a, b) => b[1] - a[1]).forEach(([cat, count]) => {
-      console.log(`  ${cat}: ${count}`);
-    });
+    Object.entries(categories)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([cat, count]) => {
+        console.log(`  ${cat}: ${count}`);
+      });
 
     console.log('\nBy target group:');
-    Object.entries(groupCounts).sort((a, b) => b[1] - a[1]).forEach(([group, count]) => {
-      console.log(`  ${group}: ${count}`);
-    });
+    Object.entries(groupCounts)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([group, count]) => {
+        console.log(`  ${group}: ${count}`);
+      });
 
     console.log('\nBy life event:');
-    Object.entries(lifeEventCounts).sort((a, b) => b[1] - a[1]).forEach(([event, count]) => {
-      console.log(`  ${event}: ${count}`);
-    });
+    Object.entries(lifeEventCounts)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([event, count]) => {
+        console.log(`  ${event}: ${count}`);
+      });
 
     const keywordCount = programs.reduce((sum, p) => sum + (p.keywords?.length || 0), 0);
     console.log(`\nTotal searchable keywords added: ${keywordCount}`);
 
     return programs.length;
-
   } catch (error) {
     console.error('Error syncing benefits:', error);
     process.exit(1);

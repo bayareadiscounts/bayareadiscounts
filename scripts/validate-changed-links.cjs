@@ -32,13 +32,21 @@ const colors = {
 };
 
 const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
-const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml', 'search-config.yml', 'county-supervisors.yml', 'site-config.yml'];
+const NON_PROGRAM_FILES = [
+  'cities.yml',
+  'groups.yml',
+  'zipcodes.yml',
+  'suppressed.yml',
+  'search-config.yml',
+  'county-supervisors.yml',
+  'site-config.yml',
+];
 
 // Link severity levels
 const SEVERITY = {
-  federal: 'high',      // .gov, .mil - critical
-  partner: 'medium',    // .org, .edu - important
-  other: 'low'          // .com, etc. - informational
+  federal: 'high', // .gov, .mil - critical
+  partner: 'medium', // .org, .edu - important
+  other: 'low', // .com, etc. - informational
 };
 
 function getSeverity(url) {
@@ -59,9 +67,10 @@ function getChangedFiles(mode = 'branch') {
     if (mode === 'staged') {
       diff = execSync('git diff --cached --name-only', { encoding: 'utf-8' });
     } else if (mode === 'all') {
-      return fs.readdirSync(DATA_DIR)
-        .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f))
-        .map(f => path.join('src/data', f));
+      return fs
+        .readdirSync(DATA_DIR)
+        .filter((f) => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f))
+        .map((f) => path.join('src/data', f));
     } else {
       // Compare with origin/main or main
       try {
@@ -70,11 +79,15 @@ function getChangedFiles(mode = 'branch') {
         diff = execSync('git diff main --name-only', { encoding: 'utf-8' });
       }
     }
-    return diff.trim().split('\n').filter(f =>
-      f.startsWith('src/data/') &&
-      f.endsWith('.yml') &&
-      !NON_PROGRAM_FILES.includes(path.basename(f))
-    );
+    return diff
+      .trim()
+      .split('\n')
+      .filter(
+        (f) =>
+          f.startsWith('src/data/') &&
+          f.endsWith('.yml') &&
+          !NON_PROGRAM_FILES.includes(path.basename(f))
+      );
   } catch (err) {
     console.log(`${colors.yellow}⚠${colors.reset} Could not get git diff: ${err.message}`);
     return [];
@@ -101,7 +114,7 @@ function extractLinks(filePath) {
           url,
           program: program.name || program.id,
           file: path.basename(filePath),
-          severity: getSeverity(url)
+          severity: getSeverity(url),
         });
       }
     }
@@ -125,9 +138,9 @@ async function checkLink(url, retries = 2) {
         signal: controller.signal,
         headers: {
           'User-Agent': 'Mozilla/5.0 (compatible; BayNavigator-LinkValidator/1.0)',
-          'Accept': 'text/html,application/xhtml+xml'
+          Accept: 'text/html,application/xhtml+xml',
         },
-        redirect: 'follow'
+        redirect: 'follow',
       });
 
       clearTimeout(timeout);
@@ -142,9 +155,9 @@ async function checkLink(url, retries = 2) {
           signal: controller2.signal,
           headers: {
             'User-Agent': 'Mozilla/5.0 (compatible; BayNavigator-LinkValidator/1.0)',
-            'Accept': 'text/html,application/xhtml+xml'
+            Accept: 'text/html,application/xhtml+xml',
           },
-          redirect: 'follow'
+          redirect: 'follow',
         });
 
         clearTimeout(timeout2);
@@ -155,18 +168,18 @@ async function checkLink(url, retries = 2) {
         status: response.status,
         ok: response.ok,
         redirected: response.redirected,
-        finalUrl: response.url !== url ? response.url : null
+        finalUrl: response.url !== url ? response.url : null,
       };
     } catch (err) {
       if (attempt < retries) {
-        await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+        await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
         continue;
       }
       return {
         url,
         status: 0,
         ok: false,
-        error: err.name === 'AbortError' ? 'Timeout' : err.message
+        error: err.name === 'AbortError' ? 'Timeout' : err.message,
       };
     }
   }
@@ -176,13 +189,13 @@ async function main() {
   const args = process.argv.slice(2);
   const checkAll = args.includes('--all');
   const checkStaged = args.includes('--staged');
-  const severityFilter = args.find(a => a.startsWith('--severity='))?.split('=')[1];
+  const severityFilter = args.find((a) => a.startsWith('--severity='))?.split('=')[1];
 
   console.log(`\n${colors.bold}Bay Navigator Link Validation${colors.reset}`);
   console.log('═'.repeat(50) + '\n');
 
   // Get files to check
-  const mode = checkAll ? 'all' : (checkStaged ? 'staged' : 'branch');
+  const mode = checkAll ? 'all' : checkStaged ? 'staged' : 'branch';
   const changedFiles = getChangedFiles(mode);
 
   if (changedFiles.length === 0) {
@@ -190,7 +203,9 @@ async function main() {
     process.exit(0);
   }
 
-  console.log(`${colors.blue}ℹ${colors.reset} Checking ${changedFiles.length} file(s): ${changedFiles.map(f => path.basename(f)).join(', ')}\n`);
+  console.log(
+    `${colors.blue}ℹ${colors.reset} Checking ${changedFiles.length} file(s): ${changedFiles.map((f) => path.basename(f)).join(', ')}\n`
+  );
 
   // Extract all links
   const allLinks = [];
@@ -201,7 +216,7 @@ async function main() {
 
   // Filter by severity if specified
   const linksToCheck = severityFilter
-    ? allLinks.filter(l => l.severity === severityFilter)
+    ? allLinks.filter((l) => l.severity === severityFilter)
     : allLinks;
 
   console.log(`${colors.blue}ℹ${colors.reset} Found ${linksToCheck.length} link(s) to validate\n`);
@@ -213,9 +228,9 @@ async function main() {
 
   // Group by severity
   const bySeverity = {
-    federal: linksToCheck.filter(l => l.severity === 'federal'),
-    partner: linksToCheck.filter(l => l.severity === 'partner'),
-    other: linksToCheck.filter(l => l.severity === 'other')
+    federal: linksToCheck.filter((l) => l.severity === 'federal'),
+    partner: linksToCheck.filter((l) => l.severity === 'partner'),
+    other: linksToCheck.filter((l) => l.severity === 'other'),
   };
 
   console.log(`   Federal (.gov/.mil): ${bySeverity.federal.length}`);
@@ -229,7 +244,9 @@ async function main() {
   for (const link of linksToCheck) {
     checked++;
     const progress = `[${checked}/${linksToCheck.length}]`;
-    process.stdout.write(`${colors.dim}${progress}${colors.reset} Checking ${link.url.slice(0, 50)}...`);
+    process.stdout.write(
+      `${colors.dim}${progress}${colors.reset} Checking ${link.url.slice(0, 50)}...`
+    );
 
     const result = await checkLink(link.url);
 
@@ -239,22 +256,30 @@ async function main() {
     if (result.ok) {
       results.valid.push({ ...link, ...result });
       if (result.redirected && result.finalUrl) {
-        console.log(`${colors.yellow}↪${colors.reset} ${progress} ${link.program}: redirected to ${result.finalUrl.slice(0, 50)}`);
+        console.log(
+          `${colors.yellow}↪${colors.reset} ${progress} ${link.program}: redirected to ${result.finalUrl.slice(0, 50)}`
+        );
         results.warnings.push({ ...link, ...result, warning: 'Redirected' });
       }
     } else {
       const icon = link.severity === 'federal' ? colors.red + '✗' : colors.yellow + '⚠';
-      console.log(`${icon}${colors.reset} ${progress} ${link.program}: ${result.status || result.error} (${link.url.slice(0, 50)})`);
+      console.log(
+        `${icon}${colors.reset} ${progress} ${link.program}: ${result.status || result.error} (${link.url.slice(0, 50)})`
+      );
 
       if (link.severity === 'federal') {
         results.invalid.push({ ...link, ...result });
       } else {
-        results.warnings.push({ ...link, ...result, warning: `HTTP ${result.status || result.error}` });
+        results.warnings.push({
+          ...link,
+          ...result,
+          warning: `HTTP ${result.status || result.error}`,
+        });
       }
     }
 
     // Rate limit
-    await new Promise(r => setTimeout(r, 100));
+    await new Promise((r) => setTimeout(r, 100));
   }
 
   // Summary
@@ -262,7 +287,9 @@ async function main() {
   console.log(`${colors.bold}Summary${colors.reset}\n`);
   console.log(`   Valid: ${colors.green}${results.valid.length}${colors.reset}`);
   console.log(`   Warnings: ${colors.yellow}${results.warnings.length}${colors.reset}`);
-  console.log(`   Invalid: ${results.invalid.length > 0 ? colors.red : colors.green}${results.invalid.length}${colors.reset}`);
+  console.log(
+    `   Invalid: ${results.invalid.length > 0 ? colors.red : colors.green}${results.invalid.length}${colors.reset}`
+  );
 
   if (results.invalid.length > 0) {
     console.log(`\n${colors.red}${colors.bold}✗ Link validation failed${colors.reset}`);
@@ -276,14 +303,16 @@ async function main() {
   }
 
   if (results.warnings.length > 0) {
-    console.log(`\n${colors.yellow}⚠ ${results.warnings.length} warning(s) - review recommended${colors.reset}`);
+    console.log(
+      `\n${colors.yellow}⚠ ${results.warnings.length} warning(s) - review recommended${colors.reset}`
+    );
   }
 
   console.log(`\n${colors.green}${colors.bold}✓ Link validation passed${colors.reset}`);
   process.exit(0);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(`${colors.red}Error:${colors.reset}`, err);
   process.exit(1);
 });

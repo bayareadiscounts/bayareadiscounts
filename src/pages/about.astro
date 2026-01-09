@@ -9,7 +9,9 @@ import yaml from 'js-yaml';
 const siteConfigPath = path.join(process.cwd(), 'src/data/site-config.yml');
 let onionAddress = '';
 try {
-  const siteConfig = yaml.load(fs.readFileSync(siteConfigPath, 'utf-8')) as { onion_address?: string };
+  const siteConfig = yaml.load(fs.readFileSync(siteConfigPath, 'utf-8')) as {
+    onion_address?: string;
+  };
   onionAddress = siteConfig?.onion_address || '';
 } catch (e) {
   // Config file might not exist yet
@@ -17,9 +19,22 @@ try {
 
 // Count total programs dynamically at build time
 const dataDir = path.join(process.cwd(), 'src/data');
-const dataFiles = ['recreation.yml', 'transportation.yml', 'food.yml', 'health.yml', 'utilities.yml',
-                   'education.yml', 'finance.yml', 'legal.yml', 'technology.yml', 'community.yml',
-                   'equipment.yml', 'library_resources.yml', 'pet_resources.yml', 'federal-benefits.yml'];
+const dataFiles = [
+  'recreation.yml',
+  'transportation.yml',
+  'food.yml',
+  'health.yml',
+  'utilities.yml',
+  'education.yml',
+  'finance.yml',
+  'legal.yml',
+  'technology.yml',
+  'community.yml',
+  'equipment.yml',
+  'library_resources.yml',
+  'pet_resources.yml',
+  'federal-benefits.yml',
+];
 
 let programCount = 0;
 for (const file of dataFiles) {
@@ -55,17 +70,32 @@ const displayCount = Math.floor(programCount / 50) * 50;
         </div>
 
         <!-- Simple Summary Card -->
-        <div class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/30 dark:to-primary-800/20 rounded-2xl p-6 md:p-8 mb-12 border border-primary-200 dark:border-primary-800">
+        <div
+          class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/30 dark:to-primary-800/20 rounded-2xl p-6 md:p-8 mb-12 border border-primary-200 dark:border-primary-800"
+        >
           <div class="flex items-start gap-4">
             <div class="bg-white dark:bg-neutral-800 p-3 rounded-xl shadow-sm">
-              <svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <svg
+                class="w-8 h-8 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
             <div>
-              <h2 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">In Plain English</h2>
+              <h2 class="text-lg font-semibold text-neutral-900 dark:text-white mb-2">
+                In Plain English
+              </h2>
               <p class="text-neutral-700 dark:text-neutral-300">
-                This website lists free and discounted programs in the Bay Area. It's made by Bay Tides, a nonprofit that protects the San Francisco Bay. We don't charge anything, we don't sell your information, and we don't get paid for any listings.
+                This website lists free and discounted programs in the Bay Area. It's made by Bay
+                Tides, a nonprofit that protects the San Francisco Bay. We don't charge anything, we
+                don't sell your information, and we don't get paid for any listings.
               </p>
             </div>
           </div>
@@ -73,19 +103,29 @@ const displayCount = Math.floor(programCount / 50) * 50;
 
         <!-- Stats Row -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
-            <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">{displayCount}+</div>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
+            <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">
+              {displayCount}+
+            </div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Programs Listed</div>
           </div>
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">9</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Bay Area Counties</div>
           </div>
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">100%</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Verified</div>
           </div>
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-4 text-center border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">$0</div>
             <div class="text-sm text-neutral-600 dark:text-neutral-400">Cost to Use</div>
           </div>
@@ -93,307 +133,687 @@ const displayCount = Math.floor(programCount / 50) * 50;
 
         <!-- Why We Built This -->
         <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="flex items-center gap-3 mb-4">
               <div class="bg-green-100 dark:bg-green-900/30 p-2 rounded-lg">
-                <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <svg
+                  class="w-6 h-6 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
                 </svg>
               </div>
               <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Why We Built This</h2>
             </div>
             <p class="text-neutral-600 dark:text-neutral-300">
-              Cost often determines choices. When sustainable options are more expensive, people pick what they can afford. The programs listed here help close that gap.
+              Cost often determines choices. When sustainable options are more expensive, people
+              pick what they can afford. The programs listed here help close that gap.
             </p>
           </div>
 
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700">
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-6 border border-neutral-200 dark:border-neutral-700"
+          >
             <div class="flex items-center gap-3 mb-4">
               <div class="bg-blue-100 dark:bg-blue-900/30 p-2 rounded-lg">
-                <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                <svg
+                  class="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
                 </svg>
               </div>
               <h2 class="text-xl font-bold text-neutral-900 dark:text-white">Who This Is For</h2>
             </div>
             <p class="text-neutral-600 dark:text-neutral-300">
-              Anyone in the Bay Area who wants to save money. Low-income households, seniors, veterans, students, people with disabilities, families—there are programs for everyone.
+              Anyone in the Bay Area who wants to save money. Low-income households, seniors,
+              veterans, students, people with disabilities, families—there are programs for
+              everyone.
             </p>
           </div>
         </div>
 
         <!-- Environmental Benefits -->
-        <div class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-6 md:p-8 mb-12 border border-green-200 dark:border-green-800">
+        <div
+          class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-6 md:p-8 mb-12 border border-green-200 dark:border-green-800"
+        >
           <div class="flex items-center gap-3 mb-6">
             <div class="bg-white dark:bg-neutral-800 p-2 rounded-lg shadow-sm">
-              <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              <svg
+                class="w-6 h-6 text-green-600 dark:text-green-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
               </svg>
             </div>
-            <h2 class="text-xl font-bold text-neutral-900 dark:text-white">The Environmental Case</h2>
+            <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+              The Environmental Case
+            </h2>
           </div>
-          <p class="text-neutral-700 dark:text-neutral-300 mb-4">Many of these programs have environmental benefits:</p>
+          <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+            Many of these programs have environmental benefits:
+          </p>
           <div class="grid sm:grid-cols-2 gap-3">
             <div class="flex items-start gap-2">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <span class="text-neutral-700 dark:text-neutral-300"><strong>Transit discounts</strong> reduce car trips</span>
+              <span class="text-neutral-700 dark:text-neutral-300"
+                ><strong>Transit discounts</strong> reduce car trips</span
+              >
             </div>
             <div class="flex items-start gap-2">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <span class="text-neutral-700 dark:text-neutral-300"><strong>Libraries</strong> mean less manufactured waste</span>
+              <span class="text-neutral-700 dark:text-neutral-300"
+                ><strong>Libraries</strong> mean less manufactured waste</span
+              >
             </div>
             <div class="flex items-start gap-2">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <span class="text-neutral-700 dark:text-neutral-300"><strong>Food assistance</strong> reduces food waste</span>
+              <span class="text-neutral-700 dark:text-neutral-300"
+                ><strong>Food assistance</strong> reduces food waste</span
+              >
             </div>
             <div class="flex items-start gap-2">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <span class="text-neutral-700 dark:text-neutral-300"><strong>Utility programs</strong> improve efficiency</span>
+              <span class="text-neutral-700 dark:text-neutral-300"
+                ><strong>Utility programs</strong> improve efficiency</span
+              >
             </div>
             <div class="flex items-start gap-2">
-              <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              <svg
+                class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <span class="text-neutral-700 dark:text-neutral-300"><strong>Free park access</strong> connects people to nature</span>
+              <span class="text-neutral-700 dark:text-neutral-300"
+                ><strong>Free park access</strong> connects people to nature</span
+              >
             </div>
           </div>
         </div>
 
         <!-- Our Principles - Icon Grid -->
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 text-center">Our Principles</h2>
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6 text-center">
+          Our Principles
+        </h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-            <div class="bg-purple-100 dark:bg-purple-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-              <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+          >
+            <div
+              class="bg-purple-100 dark:bg-purple-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3"
+            >
+              <svg
+                class="w-5 h-5 text-purple-600 dark:text-purple-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                ></path>
               </svg>
             </div>
             <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">Privacy-first</h3>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">No tracking, no cookies, no personal data collection. Works offline.</p>
-            {onionAddress && (
-              <div class="mt-2 text-xs">
-                <p class="text-purple-900 dark:text-purple-300 font-mono break-all">
-                  <span class="font-sans font-medium">Tor:</span> {onionAddress}
-                </p>
-                <p class="text-neutral-600 dark:text-neutral-300 mt-1">
-                  Access via <a href="https://www.torproject.org/download/" target="_blank" rel="noopener" class="underline hover:text-purple-700 dark:hover:text-purple-300">Tor Browser</a> for extra privacy. Your IP address is never logged.
-                </p>
-              </div>
-            )}
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              No tracking, no cookies, no personal data collection. Works offline.
+            </p>
+            {
+              onionAddress && (
+                <div class="mt-2 text-xs">
+                  <p class="text-purple-900 dark:text-purple-300 font-mono break-all">
+                    <span class="font-sans font-medium">Tor:</span> {onionAddress}
+                  </p>
+                  <p class="text-neutral-600 dark:text-neutral-300 mt-1">
+                    Access via{' '}
+                    <a
+                      href="https://www.torproject.org/download/"
+                      target="_blank"
+                      rel="noopener"
+                      class="underline hover:text-purple-700 dark:hover:text-purple-300"
+                    >
+                      Tor Browser
+                    </a>{' '}
+                    for extra privacy. Your IP address is never logged.
+                  </p>
+                </div>
+              )
+            }
           </div>
 
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-            <div class="bg-yellow-100 dark:bg-yellow-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-              <svg class="w-5 h-5 text-yellow-600 dark:text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+          >
+            <div
+              class="bg-yellow-100 dark:bg-yellow-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3"
+            >
+              <svg
+                class="w-5 h-5 text-yellow-600 dark:text-yellow-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
               </svg>
             </div>
             <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">No paid listings</h3>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">We never take money for placement or inclusion.</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              We never take money for placement or inclusion.
+            </p>
           </div>
 
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-            <div class="bg-blue-100 dark:bg-blue-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-              <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+          >
+            <div
+              class="bg-blue-100 dark:bg-blue-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3"
+            >
+              <svg
+                class="w-5 h-5 text-blue-600 dark:text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
             <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">Accessible</h3>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 Level AAA compliant. <a href="/accessibility" class="text-primary-700 dark:text-primary-300 hover:underline">Learn more</a></p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 Level AAA compliant.
+              <a
+                href="/accessibility"
+                class="text-primary-700 dark:text-primary-300 hover:underline">Learn more</a
+              >
+            </p>
           </div>
 
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-            <div class="bg-green-100 dark:bg-green-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-              <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+          >
+            <div
+              class="bg-green-100 dark:bg-green-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3"
+            >
+              <svg
+                class="w-5 h-5 text-green-600 dark:text-green-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
               </svg>
             </div>
-            <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">Community maintained</h3>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">Updated regularly. Corrections welcome.</p>
+            <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">
+              Community maintained
+            </h3>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              Updated regularly. Corrections welcome.
+            </p>
           </div>
 
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-            <div class="bg-orange-100 dark:bg-orange-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-              <svg class="w-5 h-5 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+          >
+            <div
+              class="bg-orange-100 dark:bg-orange-900/30 w-10 h-10 rounded-lg flex items-center justify-center mb-3"
+            >
+              <svg
+                class="w-5 h-5 text-orange-600 dark:text-orange-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                ></path>
               </svg>
             </div>
             <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">Disaster-ready</h3>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">After your first visit, all data is cached offline for emergencies.</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              After your first visit, all data is cached offline for emergencies.
+            </p>
           </div>
 
-          <div class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors">
-            <div class="bg-gray-100 dark:bg-gray-700 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
-              <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          <div
+            class="bg-white dark:bg-neutral-800 rounded-xl p-5 border border-neutral-200 dark:border-neutral-700 hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
+          >
+            <div
+              class="bg-gray-100 dark:bg-gray-700 w-10 h-10 rounded-lg flex items-center justify-center mb-3"
+            >
+              <svg
+                class="w-5 h-5 text-gray-600 dark:text-gray-300"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
               </svg>
             </div>
             <h3 class="font-semibold text-neutral-900 dark:text-white mb-1">Open source</h3>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400"><a href="https://github.com/baytides/baynavigator" class="text-primary-700 dark:text-primary-300 hover:underline font-medium">View on GitHub</a></p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              <a
+                href="https://github.com/baytides/baynavigator"
+                class="text-primary-700 dark:text-primary-300 hover:underline font-medium"
+                >View on GitHub</a
+              >
+            </p>
           </div>
         </div>
 
         <!-- How We're Different - Comparison Table -->
-        <div class="bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 overflow-hidden mb-12">
-          <div class="bg-neutral-50 dark:bg-neutral-900 px-6 py-4 border-b border-neutral-200 dark:border-neutral-700">
+        <div
+          class="bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 overflow-hidden mb-12"
+        >
+          <div
+            class="bg-neutral-50 dark:bg-neutral-900 px-6 py-4 border-b border-neutral-200 dark:border-neutral-700"
+          >
             <h2 class="text-xl font-bold text-neutral-900 dark:text-white">How We're Different</h2>
             <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-1">
-              Compare to other directories like <a href="https://211bayarea.org" class="text-primary-700 dark:text-primary-300 hover:underline font-medium">211 Bay Area</a>
+              Compare to other directories like <a
+                href="https://211bayarea.org"
+                class="text-primary-700 dark:text-primary-300 hover:underline font-medium"
+                >211 Bay Area</a
+              >
             </p>
           </div>
           <div class="divide-y divide-neutral-200 dark:divide-neutral-700">
             <div class="flex items-start gap-4 p-4">
               <div class="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-lg flex-shrink-0">
-                <svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                <svg
+                  class="w-5 h-5 text-primary-600 dark:text-primary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
                 </svg>
               </div>
               <div>
-                <h3 class="font-semibold text-neutral-900 dark:text-white">Zero burden on agencies</h3>
-                <p class="text-sm text-neutral-600 dark:text-neutral-400">We pull from existing government open data APIs. Organizations don't need to apply or submit forms.</p>
+                <h3 class="font-semibold text-neutral-900 dark:text-white">
+                  Zero burden on agencies
+                </h3>
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  We pull from existing government open data APIs. Organizations don't need to apply
+                  or submit forms.
+                </p>
               </div>
             </div>
             <div class="flex items-start gap-4 p-4">
               <div class="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-lg flex-shrink-0">
-                <svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                <svg
+                  class="w-5 h-5 text-primary-600 dark:text-primary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                  ></path>
                 </svg>
               </div>
               <div>
-                <h3 class="font-semibold text-neutral-900 dark:text-white">Federal benefits included</h3>
-                <p class="text-sm text-neutral-600 dark:text-neutral-400">We integrate USA.gov's Benefit Finder data for nationwide programs.</p>
+                <h3 class="font-semibold text-neutral-900 dark:text-white">
+                  Federal benefits included
+                </h3>
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  We integrate USA.gov's Benefit Finder data for nationwide programs.
+                </p>
               </div>
             </div>
             <div class="flex items-start gap-4 p-4">
               <div class="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-lg flex-shrink-0">
-                <svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                <svg
+                  class="w-5 h-5 text-primary-600 dark:text-primary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  ></path>
                 </svg>
               </div>
               <div>
                 <h3 class="font-semibold text-neutral-900 dark:text-white">AI-powered search</h3>
-                <p class="text-sm text-neutral-600 dark:text-neutral-400">Natural language queries like "I'm a 68-year-old senior who needs help with bills" work seamlessly.</p>
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  Natural language queries like "I'm a 68-year-old senior who needs help with bills"
+                  work seamlessly.
+                </p>
               </div>
             </div>
             <div class="flex items-start gap-4 p-4">
               <div class="bg-primary-100 dark:bg-primary-900/30 p-2 rounded-lg flex-shrink-0">
-                <svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"/>
+                <svg
+                  class="w-5 h-5 text-primary-600 dark:text-primary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"
+                  ></path>
                 </svg>
               </div>
               <div>
                 <h3 class="font-semibold text-neutral-900 dark:text-white">Offline-first</h3>
-                <p class="text-sm text-neutral-600 dark:text-neutral-400">Works without internet once installed—critical during emergencies when networks are down.</p>
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  Works without internet once installed—critical during emergencies when networks
+                  are down.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- The Data Problem - Collapsible Section -->
-        <details class="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-12 group">
+        <details
+          class="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 mb-12 group"
+        >
           <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
             <div class="flex items-center gap-3">
               <div class="bg-red-100 dark:bg-red-900/30 p-2 rounded-lg">
-                <svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                <svg
+                  class="w-5 h-5 text-red-600 dark:text-red-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  ></path>
                 </svg>
               </div>
-              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">The Problem with Social Services Data</h2>
+              <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+                The Problem with Social Services Data
+              </h2>
             </div>
-            <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            <svg
+              class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"></path>
             </svg>
           </summary>
           <div class="px-6 pb-6 pt-2">
-            <p class="text-neutral-600 dark:text-neutral-300 mb-4">Finding help shouldn't be this hard. But the landscape of social services information is broken:</p>
+            <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+              Finding help shouldn't be this hard. But the landscape of social services information
+              is broken:
+            </p>
             <ul class="text-neutral-600 dark:text-neutral-300 space-y-3 mb-6">
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span><strong>Outdated information</strong> — Phone numbers disconnect, programs end, eligibility changes—but listings stay up.</span>
+                <span
+                  ><strong>Outdated information</strong> — Phone numbers disconnect, programs end, eligibility
+                  changes—but listings stay up.</span
+                >
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span><strong>Abandoned projects</strong> — Well-meaning efforts launch with grants, then go dark when funding ends.</span>
+                <span
+                  ><strong>Abandoned projects</strong> — Well-meaning efforts launch with grants, then
+                  go dark when funding ends.</span
+                >
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span><strong>Paywalled APIs</strong> — Comprehensive databases charge thousands annually for access.</span>
+                <span
+                  ><strong>Paywalled APIs</strong> — Comprehensive databases charge thousands annually
+                  for access.</span
+                >
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                <svg
+                  class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span><strong>Siloed data</strong> — Each county maintains its own list with no single source.</span>
+                <span
+                  ><strong>Siloed data</strong> — Each county maintains its own list with no single source.</span
+                >
               </li>
             </ul>
             <div class="bg-primary-50 dark:bg-primary-900/20 rounded-lg p-4">
               <h3 class="font-semibold text-neutral-900 dark:text-white mb-2">Our Approach</h3>
               <p class="text-sm text-neutral-600 dark:text-neutral-300">
-                Every program is manually verified. We check that links work, phone numbers connect, and eligibility requirements are current. We'd rather list fewer verified programs than thousands of questionable ones.
+                Every program is manually verified. We check that links work, phone numbers connect,
+                and eligibility requirements are current. We'd rather list fewer verified programs
+                than thousands of questionable ones.
               </p>
             </div>
           </div>
         </details>
 
         <!-- About Bay Tides -->
-        <div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-6 md:p-8 mb-12 text-white">
+        <div
+          class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-6 md:p-8 mb-12 text-white"
+        >
           <div class="flex flex-col md:flex-row md:items-center gap-6">
             <div class="flex-1">
               <h2 class="text-2xl font-bold mb-3">About Bay Tides</h2>
               <p class="text-primary-100 mb-4">
-                Bay Tides is a 501(c)(3) nonprofit founded in 2023 in Redwood City, California. We work to protect the Bay Area's shoreline through education, advocacy, and hands-on conservation.
+                Bay Tides is a 501(c)(3) nonprofit founded in 2023 in Redwood City, California. We
+                work to protect the Bay Area's shoreline through education, advocacy, and hands-on
+                conservation.
               </p>
-              <a href="https://baytides.org" class="inline-flex items-center gap-2 bg-white text-primary-700 font-medium px-4 py-2 rounded-lg hover:bg-primary-50 transition-colors no-underline">
+              <a
+                href="https://baytides.org"
+                class="inline-flex items-center gap-2 bg-white text-primary-700 font-medium px-4 py-2 rounded-lg hover:bg-primary-50 transition-colors no-underline"
+              >
                 Learn More
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
             </div>
             <div class="hidden md:block">
-              <svg class="w-32 h-32 text-primary-400 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.98 14H22c0-3.17-1.54-5.98-3.91-7.74l.12-.08A8.43 8.43 0 0022 14h-.02zM5.91 6.26l.12.08C3.54 8.02 2 10.83 2 14h.02A8.43 8.43 0 015.91 6.26zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-3.45 2.2-6.38 5.27-7.5.33-.12.68-.21 1.03-.28.35-.07.7-.12 1.07-.15.21-.02.42-.03.63-.03s.42.01.63.03c.37.03.72.08 1.07.15.35.07.7.16 1.03.28C17.8 5.62 20 8.55 20 12c0 4.41-3.59 8-8 8z"/>
+              <svg
+                class="w-32 h-32 text-primary-400 opacity-50"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21.98 14H22c0-3.17-1.54-5.98-3.91-7.74l.12-.08A8.43 8.43 0 0022 14h-.02zM5.91 6.26l.12.08C3.54 8.02 2 10.83 2 14h.02A8.43 8.43 0 015.91 6.26zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-3.45 2.2-6.38 5.27-7.5.33-.12.68-.21 1.03-.28.35-.07.7-.12 1.07-.15.21-.02.42-.03.63-.03s.42.01.63.03c.37.03.72.08 1.07.15.35.07.7.16 1.03.28C17.8 5.62 20 8.55 20 12c0 4.41-3.59 8-8 8z"
+                ></path>
               </svg>
             </div>
           </div>
         </div>
 
         <!-- Get Involved CTA -->
-        <div class="text-center bg-neutral-50 dark:bg-neutral-800/50 rounded-2xl p-8 border border-neutral-200 dark:border-neutral-700">
+        <div
+          class="text-center bg-neutral-50 dark:bg-neutral-800/50 rounded-2xl p-8 border border-neutral-200 dark:border-neutral-700"
+        >
           <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Get Involved</h2>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6 max-w-lg mx-auto">
             Want to help? Report errors, suggest programs, or support our work.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://github.com/baytides/baynavigator/issues" class="inline-flex items-center gap-2 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-medium px-5 py-2.5 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors no-underline">
+            <a
+              href="https://github.com/baytides/baynavigator/issues"
+              class="inline-flex items-center gap-2 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-medium px-5 py-2.5 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors no-underline"
+            >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
               </svg>
               Report Issue
             </a>
-            <a href="https://baytides.org/donate" class="inline-flex items-center gap-2 bg-primary-700 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-primary-800 transition-colors no-underline">
+            <a
+              href="https://baytides.org/donate"
+              class="inline-flex items-center gap-2 bg-primary-700 text-white font-medium px-5 py-2.5 rounded-lg hover:bg-primary-800 transition-colors no-underline"
+            >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
               </svg>
               Donate
             </a>
-            <a href="https://baytides.org/events" class="inline-flex items-center gap-2 bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white font-medium px-5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-600 transition-colors no-underline">
+            <a
+              href="https://baytides.org/events"
+              class="inline-flex items-center gap-2 bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white font-medium px-5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-600 transition-colors no-underline"
+            >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
               </svg>
               Volunteer
             </a>
@@ -403,7 +823,11 @@ const displayCount = Math.floor(programCount / 50) * 50;
         <div class="mt-12 text-center">
           <a href="/" class="btn-secondary inline-flex items-center">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
             Back to All Programs
           </a>

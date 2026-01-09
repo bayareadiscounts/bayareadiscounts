@@ -23,17 +23,19 @@ const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID; // Channel ID (e.g., C012
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
-    client.get(url, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch (e) {
-          reject(new Error(`Failed to parse JSON from ${url}`));
-        }
-      });
-    }).on('error', reject);
+    client
+      .get(url, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            resolve(JSON.parse(data));
+          } catch (e) {
+            reject(new Error(`Failed to parse JSON from ${url}`));
+          }
+        });
+      })
+      .on('error', reject);
   });
 }
 
@@ -49,28 +51,32 @@ function checkUrl(url, timeout = 10000) {
       const parsedUrl = new URL(url);
       const client = parsedUrl.protocol === 'https:' ? https : http;
 
-      const req = client.get(url, {
-        timeout,
-        headers: {
-          'User-Agent': 'BayNavigator-LinkChecker/1.0'
-        }
-      }, (res) => {
-        const duration = Date.now() - startTime;
-        const result = {
-          url,
-          status: res.statusCode,
-          ok: res.statusCode >= 200 && res.statusCode < 400,
-          duration,
-          redirectUrl: res.headers.location || null
-        };
+      const req = client.get(
+        url,
+        {
+          timeout,
+          headers: {
+            'User-Agent': 'BayNavigator-LinkChecker/1.0',
+          },
+        },
+        (res) => {
+          const duration = Date.now() - startTime;
+          const result = {
+            url,
+            status: res.statusCode,
+            ok: res.statusCode >= 200 && res.statusCode < 400,
+            duration,
+            redirectUrl: res.headers.location || null,
+          };
 
-        // Handle redirects as OK
-        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-          result.ok = true;
-        }
+          // Handle redirects as OK
+          if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+            result.ok = true;
+          }
 
-        resolve(result);
-      });
+          resolve(result);
+        }
+      );
 
       req.on('error', (error) => {
         resolve({
@@ -78,7 +84,7 @@ function checkUrl(url, timeout = 10000) {
           status: 0,
           ok: false,
           error: error.message,
-          duration: Date.now() - startTime
+          duration: Date.now() - startTime,
         });
       });
 
@@ -89,7 +95,7 @@ function checkUrl(url, timeout = 10000) {
           status: 0,
           ok: false,
           error: 'Timeout',
-          duration: timeout
+          duration: timeout,
         });
       });
     } catch (error) {
@@ -98,7 +104,7 @@ function checkUrl(url, timeout = 10000) {
         status: 0,
         ok: false,
         error: `Invalid URL: ${error.message}`,
-        duration: 0
+        duration: 0,
       });
     }
   });
@@ -115,37 +121,40 @@ async function sendSlackNotification(text, blocks = null) {
   const payload = JSON.stringify({
     channel: SLACK_CHANNEL_ID,
     text: text,
-    ...(blocks && { blocks })
+    ...(blocks && { blocks }),
   });
 
   return new Promise((resolve) => {
-    const req = https.request({
-      hostname: 'slack.com',
-      path: '/api/chat.postMessage',
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${SLACK_BOT_TOKEN}`,
-        'Content-Type': 'application/json; charset=utf-8',
-        'Content-Length': Buffer.byteLength(payload)
-      }
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const response = JSON.parse(data);
-          if (response.ok) {
-            console.log('Slack notification sent successfully');
-            resolve(true);
-          } else {
-            console.log(`Slack API error: ${response.error}`);
+    const req = https.request(
+      {
+        hostname: 'slack.com',
+        path: '/api/chat.postMessage',
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${SLACK_BOT_TOKEN}`,
+          'Content-Type': 'application/json; charset=utf-8',
+          'Content-Length': Buffer.byteLength(payload),
+        },
+      },
+      (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            const response = JSON.parse(data);
+            if (response.ok) {
+              console.log('Slack notification sent successfully');
+              resolve(true);
+            } else {
+              console.log(`Slack API error: ${response.error}`);
+              resolve(false);
+            }
+          } catch {
             resolve(false);
           }
-        } catch {
-          resolve(false);
-        }
-      });
-    });
+        });
+      }
+    );
 
     req.on('error', (err) => {
       console.log(`Slack request error: ${err.message}`);
@@ -171,12 +180,15 @@ async function createGitHubIssue(brokenLinks) {
 
 The weekly link checker found **${brokenLinks.length}** broken link(s):
 
-${brokenLinks.map(link =>
-    `### ${link.programName}
+${brokenLinks
+  .map(
+    (link) =>
+      `### ${link.programName}
 - **ID:** \`${link.programId}\`
 - **URL:** ${link.url}
 - **Error:** ${link.error || `HTTP ${link.status}`}`
-  ).join('\n\n')}
+  )
+  .join('\n\n')}
 
 ---
 *This issue was automatically created by the Azure Functions link checker.*
@@ -185,39 +197,42 @@ ${brokenLinks.map(link =>
   const payload = JSON.stringify({
     title,
     body,
-    labels: ['broken-link', 'automated']
+    labels: ['broken-link', 'automated'],
   });
 
   return new Promise((resolve) => {
-    const req = https.request({
-      hostname: 'api.github.com',
-      path: `/repos/${GITHUB_REPO}/issues`,
-      method: 'POST',
-      headers: {
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'User-Agent': 'BayNavigator-LinkChecker',
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(payload),
-        'Accept': 'application/vnd.github.v3+json'
-      }
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        if (res.statusCode === 201) {
-          try {
-            const issue = JSON.parse(data);
-            console.log(`GitHub issue created: ${issue.html_url}`);
-            resolve(true);
-          } catch {
-            resolve(true);
+    const req = https.request(
+      {
+        hostname: 'api.github.com',
+        path: `/repos/${GITHUB_REPO}/issues`,
+        method: 'POST',
+        headers: {
+          Authorization: `token ${GITHUB_TOKEN}`,
+          'User-Agent': 'BayNavigator-LinkChecker',
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(payload),
+          Accept: 'application/vnd.github.v3+json',
+        },
+      },
+      (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          if (res.statusCode === 201) {
+            try {
+              const issue = JSON.parse(data);
+              console.log(`GitHub issue created: ${issue.html_url}`);
+              resolve(true);
+            } catch {
+              resolve(true);
+            }
+          } else {
+            console.log(`GitHub issue creation failed: ${res.statusCode} - ${data}`);
+            resolve(false);
           }
-        } else {
-          console.log(`GitHub issue creation failed: ${res.statusCode} - ${data}`);
-          resolve(false);
-        }
-      });
-    });
+        });
+      }
+    );
 
     req.on('error', (err) => {
       console.log(`GitHub request error: ${err.message}`);
@@ -263,18 +278,20 @@ module.exports = async function (context, timer) {
               programName: program.name,
               url: program.link,
               status: result.status,
-              error: result.error
+              error: result.error,
             };
           }
           return null;
         })
       );
 
-      brokenLinks.push(...results.filter(r => r !== null));
+      brokenLinks.push(...results.filter((r) => r !== null));
 
       // Progress log every 50 programs
       if ((i + batchSize) % 50 === 0 || i + batchSize >= programs.length) {
-        context.log(`Checked ${Math.min(i + batchSize, programs.length)}/${programs.length} programs`);
+        context.log(
+          `Checked ${Math.min(i + batchSize, programs.length)}/${programs.length} programs`
+        );
       }
     }
 
@@ -295,22 +312,29 @@ module.exports = async function (context, timer) {
         [
           {
             type: 'header',
-            text: { type: 'plain_text', text: '🔗 Broken Links Report', emoji: true }
+            text: { type: 'plain_text', text: '🔗 Broken Links Report', emoji: true },
           },
           {
             type: 'section',
             text: {
               type: 'mrkdwn',
-              text: brokenLinks.slice(0, 10).map(l => `• *${l.programName}*: ${l.error || `HTTP ${l.status}`}`).join('\n')
-            }
+              text: brokenLinks
+                .slice(0, 10)
+                .map((l) => `• *${l.programName}*: ${l.error || `HTTP ${l.status}`}`)
+                .join('\n'),
+            },
           },
           {
             type: 'context',
-            elements: [{ type: 'mrkdwn', text: `Check GitHub issues for full report • ${brokenLinks.length} total broken` }]
-          }
+            elements: [
+              {
+                type: 'mrkdwn',
+                text: `Check GitHub issues for full report • ${brokenLinks.length} total broken`,
+              },
+            ],
+          },
         ]
       );
-
     } else {
       context.log('All links are healthy!');
 
@@ -320,19 +344,19 @@ module.exports = async function (context, timer) {
         [
           {
             type: 'header',
-            text: { type: 'plain_text', text: '✅ Link Check Passed', emoji: true }
+            text: { type: 'plain_text', text: '✅ Link Check Passed', emoji: true },
           },
           {
             type: 'section',
             text: {
               type: 'mrkdwn',
-              text: `All *${programs.length}* program links are working correctly.`
-            }
+              text: `All *${programs.length}* program links are working correctly.`,
+            },
           },
           {
             type: 'context',
-            elements: [{ type: 'mrkdwn', text: `Completed in ${duration}s` }]
-          }
+            elements: [{ type: 'mrkdwn', text: `Completed in ${duration}s` }],
+          },
         ]
       );
     }
@@ -343,16 +367,15 @@ module.exports = async function (context, timer) {
         success: true,
         checked: programs.length,
         broken: brokenLinks.length,
-        duration: `${duration}s`
-      }
+        duration: `${duration}s`,
+      },
     };
-
   } catch (error) {
     context.log.error('Link checker failed:', error);
 
     context.res = {
       status: 500,
-      body: { success: false, error: error.message }
+      body: { success: false, error: error.message },
     };
   }
 };

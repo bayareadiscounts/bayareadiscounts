@@ -7,5 +7,5 @@ module.exports = {
   ApiClient,
   DEFAULT_BASE_URL,
   translateTexts,
-  DEFAULT_TRANSLATE_ENDPOINT
+  DEFAULT_TRANSLATE_ENDPOINT,
 };

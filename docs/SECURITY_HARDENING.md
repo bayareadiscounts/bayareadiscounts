@@ -5,22 +5,26 @@
 ### 1. API Management Protection ✅
 
 **Subscription Keys Required**
+
 - All API endpoints now require `Ocp-Apim-Subscription-Key` header
 - Prevents anonymous abuse of APIs
 - 10,000 requests/day limit per subscription
 
 **Security Headers**
+
 - `X-Content-Type-Options: nosniff` - Prevents MIME type sniffing
 - `X-Frame-Options: DENY` - Prevents clickjacking
 - `Strict-Transport-Security` - Forces HTTPS for 1 year
 - Removes server identification headers
 
 **Request Validation**
+
 - POST requests must have `Content-Type: application/json`
 - 30-second timeout prevents long-running attacks
 - Error messages sanitized (no stack traces leaked)
 
 **CORS Restrictions**
+
 - Only allowed origins: baynavigator.org domains + Azure endpoints
 - Strict method allowlist: GET, POST, OPTIONS only
 - Limited headers: Content-Type, Accept, Accept-Language
@@ -28,6 +32,7 @@
 ### 2. Azure Key Vault ✅
 
 **Network Isolation**
+
 - Default action: Deny all traffic
 - Allowlist: Azure Services only + your current IP
 - All secrets accessed via managed identity (no passwords)
@@ -35,6 +40,7 @@
 ### 3. Azure Redis Cache ✅
 
 **Firewall Rules**
+
 - Only Azure Services can connect (0.0.0.0/32)
 - TLS 1.2+ required
 - Non-SSL port disabled
@@ -43,6 +49,7 @@
 ### 4. Azure Functions ✅
 
 **Protocol Security**
+
 - HTTPS-only enforced
 - FTP/FTPS disabled
 - Remote debugging disabled
@@ -51,6 +58,7 @@
 ### 5. Cosmos DB ✅
 
 **Network Security**
+
 - Public network access: Disabled
 - Only accessible via Azure services
 - Managed identity authentication
@@ -59,6 +67,7 @@
 ### 6. Static Web App ✅
 
 **Security Headers** (via staticwebapp.config.json)
+
 - Content Security Policy (CSP) configured
 - X-Frame-Options: DENY
 - X-Content-Type-Options: nosniff
@@ -67,12 +76,14 @@
 - Permissions-Policy: Disables camera, microphone, geolocation
 
 **Response Overrides**
+
 - 401 responses masked as 404 (security through obscurity)
 - Custom 404 page
 
 ### 7. Azure Front Door ✅
 
 **Built-in Protection**
+
 - DDoS protection (layer 3/4 and 7)
 - HTTPS redirect enforced
 - Health probes prevent serving unhealthy origins
@@ -84,17 +95,17 @@
 
 ### Attack Surface Reduced
 
-| Vector | Before | After | Status |
-|--------|--------|-------|--------|
-| Anonymous API Access | ✗ Open | ✅ Requires subscription key | Secured |
-| Rate Limiting | ✗ None | ✅ 10,000/day per key | Secured |
-| Key Vault Access | ✗ Public | ✅ Azure Services only | Secured |
-| Redis Access | ✗ Public | ✅ Azure Services only | Secured |
-| Cosmos DB Access | ✗ Public | ✅ Disabled | Secured |
-| FTP Access | ✗ Enabled | ✅ Disabled | Secured |
-| HTTP Traffic | ✗ Allowed | ✅ Forced HTTPS | Secured |
-| Error Details | ✗ Leaked | ✅ Sanitized | Secured |
-| Server Headers | ✗ Exposed | ✅ Removed | Secured |
+| Vector               | Before    | After                        | Status  |
+| -------------------- | --------- | ---------------------------- | ------- |
+| Anonymous API Access | ✗ Open    | ✅ Requires subscription key | Secured |
+| Rate Limiting        | ✗ None    | ✅ 10,000/day per key        | Secured |
+| Key Vault Access     | ✗ Public  | ✅ Azure Services only       | Secured |
+| Redis Access         | ✗ Public  | ✅ Azure Services only       | Secured |
+| Cosmos DB Access     | ✗ Public  | ✅ Disabled                  | Secured |
+| FTP Access           | ✗ Enabled | ✅ Disabled                  | Secured |
+| HTTP Traffic         | ✗ Allowed | ✅ Forced HTTPS              | Secured |
+| Error Details        | ✗ Leaked  | ✅ Sanitized                 | Secured |
+| Server Headers       | ✗ Exposed | ✅ Removed                   | Secured |
 
 ### OWASP Top 10 Coverage
 
@@ -156,6 +167,7 @@
 ### Getting a Subscription Key
 
 **For Your Website:**
+
 ```bash
 # Create subscription for your static web app
 az apim subscription create \
@@ -175,6 +187,7 @@ az apim subscription show \
 ```
 
 **For Third-Party Developers:**
+
 1. They request a key via email
 2. You create subscription: `az apim subscription create ...`
 3. Send them the key securely
@@ -186,9 +199,9 @@ az apim subscription show \
 // In your website's JavaScript
 fetch('https://baynavigator-api.azure-api.net/programs', {
   headers: {
-    'Ocp-Apim-Subscription-Key': 'YOUR_SUBSCRIPTION_KEY'
-  }
-})
+    'Ocp-Apim-Subscription-Key': 'YOUR_SUBSCRIPTION_KEY',
+  },
+});
 ```
 
 ### Managing Subscriptions
@@ -298,6 +311,7 @@ npm outdated
 ### If API Key Compromised
 
 1. **Immediately suspend subscription:**
+
    ```bash
    az apim subscription update \
      --subscription-id "<compromised-id>" \
@@ -305,6 +319,7 @@ npm outdated
    ```
 
 2. **Review access logs:**
+
    ```bash
    az monitor app-insights query \
      --app baynavigator-insights-prod \
@@ -312,6 +327,7 @@ npm outdated
    ```
 
 3. **Generate new key:**
+
    ```bash
    az apim subscription regenerate-primary-key --subscription-id "<id>"
    ```
@@ -363,6 +379,5 @@ npm outdated
 
 ---
 
-*Last Updated: December 19, 2025*  
-*Security Audit: Passed ✅*
-
+_Last Updated: December 19, 2025_  
+_Security Audit: Passed ✅_

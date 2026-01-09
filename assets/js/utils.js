@@ -5,7 +5,7 @@
  * This consolidates duplicate code and provides a single source of truth.
  */
 
-(function() {
+(function () {
   'use strict';
 
   // ============================================================
@@ -195,7 +195,7 @@
       zIndex: '10001',
       boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
       opacity: '0',
-      transition: 'opacity 0.3s ease'
+      transition: 'opacity 0.3s ease',
     });
 
     // Type-specific colors
@@ -203,7 +203,7 @@
       info: { bg: '#1f2937', color: '#f3f4f6' },
       success: { bg: '#22c55e', color: '#ffffff' },
       error: { bg: '#ef4444', color: '#ffffff' },
-      warning: { bg: '#f59e0b', color: '#1f2937' }
+      warning: { bg: '#f59e0b', color: '#1f2937' },
     };
     const { bg, color } = colors[type] || colors.info;
     toast.style.background = bg;
@@ -250,7 +250,7 @@
     announce,
 
     // Notification utilities
-    showToast
+    showToast,
   };
 
   // Dispatch event when ready

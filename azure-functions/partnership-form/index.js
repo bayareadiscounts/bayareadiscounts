@@ -5,7 +5,7 @@ const corsHeaders = {
   'Access-Control-Allow-Origin': 'https://baynavigator.org',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
-  'Access-Control-Max-Age': '86400'
+  'Access-Control-Max-Age': '86400',
 };
 
 // Rate limiting: simple in-memory store (resets on function restart)
@@ -61,7 +61,7 @@ module.exports = async function (context, req) {
   if (req.method === 'OPTIONS') {
     context.res = {
       status: 204,
-      headers: corsHeaders
+      headers: corsHeaders,
     };
     return;
   }
@@ -75,8 +75,8 @@ module.exports = async function (context, req) {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         success: false,
-        error: 'Too many submissions. Please try again later.'
-      })
+        error: 'Too many submissions. Please try again later.',
+      }),
     };
     return;
   }
@@ -111,7 +111,7 @@ module.exports = async function (context, req) {
       context.res = {
         status: 400,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ success: false, errors })
+        body: JSON.stringify({ success: false, errors }),
       };
       return;
     }
@@ -169,12 +169,16 @@ module.exports = async function (context, req) {
       <div class="value"><a href="mailto:${escapeHtml(contactEmail)}">${escapeHtml(contactEmail)}</a></div>
     </div>
 
-    ${contactPhone ? `
+    ${
+      contactPhone
+        ? `
     <div class="field">
       <div class="label">Phone</div>
       <div class="value">${escapeHtml(contactPhone)}</div>
     </div>
-    ` : ''}
+    `
+        : ''
+    }
 
     <h2 style="margin-top: 24px; color: #374151;">Message</h2>
     <div class="message">${escapeHtml(message).replace(/\n/g, '<br>')}</div>
@@ -229,12 +233,12 @@ Submitted at: ${new Date().toISOString()}
       content: {
         subject: `Partnership Inquiry: ${orgName}`,
         plainText: emailText,
-        html: emailHtml
+        html: emailHtml,
       },
       recipients: {
-        to: [{ address: recipientEmail }]
+        to: [{ address: recipientEmail }],
       },
-      replyTo: [{ address: contactEmail, displayName: contactName }]
+      replyTo: [{ address: contactEmail, displayName: contactName }],
     };
 
     const poller = await emailClient.beginSend(emailMessage);
@@ -246,13 +250,12 @@ Submitted at: ${new Date().toISOString()}
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         body: JSON.stringify({
           success: true,
-          message: 'Thank you! Your partnership inquiry has been submitted.'
-        })
+          message: 'Thank you! Your partnership inquiry has been submitted.',
+        }),
       };
     } else {
       throw new Error(`Email sending failed with status: ${result.status}`);
     }
-
   } catch (error) {
     context.log.error('Partnership form error:', error);
 
@@ -261,8 +264,8 @@ Submitted at: ${new Date().toISOString()}
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         success: false,
-        error: 'An error occurred. Please try again or email us directly.'
-      })
+        error: 'An error occurred. Please try again or email us directly.',
+      }),
     };
   }
 };
@@ -274,7 +277,7 @@ function escapeHtml(str) {
     '<': '&lt;',
     '>': '&gt;',
     '"': '&quot;',
-    "'": '&#39;'
+    "'": '&#39;',
   };
-  return str.replace(/[&<>"']/g, char => htmlEntities[char]);
+  return str.replace(/[&<>"']/g, (char) => htmlEntities[char]);
 }

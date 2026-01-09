@@ -16,11 +16,11 @@ const results = JSON.parse(fs.readFileSync(RESULTS_FILE, 'utf8'));
 
 // Get all verified programs (including those that got 403 but we manually verified)
 const verifiedIds = new Set([
-  ...results.verified.map(p => p.id),
-  ...results.redirected.map(p => p.id),
+  ...results.verified.map((p) => p.id),
+  ...results.redirected.map((p) => p.id),
   // Manually verified (got 403 from bot check but work for humans)
   'imls-museo-italo-americano',
-  'imls-u-s-army-corps-of-engineers-bay-model-visitor-cent'
+  'imls-u-s-army-corps-of-engineers-bay-model-visitor-cent',
 ]);
 
 // Current date in YYYY-MM format
@@ -53,14 +53,19 @@ for (const [file, ids] of Object.entries(byFile)) {
   }
 
   if (updated > 0) {
-    fs.writeFileSync(filePath, yaml.dump(programs, {
-      lineWidth: -1,
-      quotingType: '"',
-      forceQuotes: false
-    }));
+    fs.writeFileSync(
+      filePath,
+      yaml.dump(programs, {
+        lineWidth: -1,
+        quotingType: '"',
+        forceQuotes: false,
+      })
+    );
     console.log(`✅ ${file}: Updated ${updated} programs`);
     totalUpdated += updated;
   }
 }
 
-console.log(`\n📊 Total: ${totalUpdated} programs updated with verification date ${verificationDate}`);
+console.log(
+  `\n📊 Total: ${totalUpdated} programs updated with verification date ${verificationDate}`
+);

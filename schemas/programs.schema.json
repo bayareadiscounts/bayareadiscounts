@@ -43,7 +43,22 @@
         },
         "category": {
           "type": "string",
-          "enum": ["community", "education", "equipment", "finance", "food", "health", "legal", "library_resources", "pet_resources", "recreation", "technology", "transportation", "utilities", "federal-benefits"],
+          "enum": [
+            "community",
+            "education",
+            "equipment",
+            "finance",
+            "food",
+            "health",
+            "legal",
+            "library_resources",
+            "pet_resources",
+            "recreation",
+            "technology",
+            "transportation",
+            "utilities",
+            "federal-benefits"
+          ],
           "description": "Program category"
         },
         "description": {
@@ -66,7 +81,27 @@
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["income-eligible", "seniors", "youth", "college-students", "veterans", "families", "disability", "lgbtq", "first-responders", "teachers", "unemployed", "immigrants", "unhoused", "pregnant", "caregivers", "foster-youth", "reentry", "nonprofits", "everyone"]
+            "enum": [
+              "income-eligible",
+              "seniors",
+              "youth",
+              "college-students",
+              "veterans",
+              "families",
+              "disability",
+              "lgbtq",
+              "first-responders",
+              "teachers",
+              "unemployed",
+              "immigrants",
+              "unhoused",
+              "pregnant",
+              "caregivers",
+              "foster-youth",
+              "reentry",
+              "nonprofits",
+              "everyone"
+            ]
           },
           "description": "Eligible groups for this program"
         },

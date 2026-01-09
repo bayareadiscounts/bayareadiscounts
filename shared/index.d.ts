@@ -78,7 +78,16 @@ export interface ApiResponse<T> {
 
 export class ApiClient {
   constructor(options?: ApiClientOptions);
-  request<T = any>(path: string, options?: { method?: string; params?: Record<string, any>; headers?: Record<string, string>; body?: any; signal?: AbortSignal }): Promise<ApiResponse<T>>;
+  request<T = any>(
+    path: string,
+    options?: {
+      method?: string;
+      params?: Record<string, any>;
+      headers?: Record<string, string>;
+      body?: any;
+      signal?: AbortSignal;
+    }
+  ): Promise<ApiResponse<T>>;
   getPrograms(params?: Record<string, any>): Promise<ApiResponse<ProgramsResponse>>;
   getProgramById(id: string): Promise<ApiResponse<Program>>;
   getCategories(): Promise<ApiResponse<CategoriesResponse>>;

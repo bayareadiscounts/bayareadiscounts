@@ -113,13 +113,17 @@ async function processUrls(urls) {
 
   for (let i = 0; i < urls.length; i += CONCURRENT_REQUESTS) {
     const batch = urls.slice(i, i + CONCURRENT_REQUESTS);
-    const batchResults = await Promise.all(batch.map(({ url, program, file }) =>
-      checkUrl(url).then((result) => ({ ...result, program, file }))
-    ));
+    const batchResults = await Promise.all(
+      batch.map(({ url, program, file }) =>
+        checkUrl(url).then((result) => ({ ...result, program, file }))
+      )
+    );
     results.push(...batchResults);
 
     // Progress indicator
-    process.stdout.write(`\rChecking links: ${Math.min(i + CONCURRENT_REQUESTS, urls.length)}/${urls.length}`);
+    process.stdout.write(
+      `\rChecking links: ${Math.min(i + CONCURRENT_REQUESTS, urls.length)}/${urls.length}`
+    );
   }
 
   console.log(''); // New line after progress
@@ -131,9 +135,9 @@ async function processUrls(urls) {
  */
 function loadProgramUrls() {
   const dataDir = path.join(__dirname, '..', 'src', 'data');
-  const files = fs.readdirSync(dataDir).filter(
-    (f) => (f.endsWith('.yml') || f.endsWith('.yaml')) && !NON_PROGRAM_FILES.includes(f)
-  );
+  const files = fs
+    .readdirSync(dataDir)
+    .filter((f) => (f.endsWith('.yml') || f.endsWith('.yaml')) && !NON_PROGRAM_FILES.includes(f));
 
   const urls = [];
 

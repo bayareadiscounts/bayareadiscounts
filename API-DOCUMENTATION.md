@@ -1,4 +1,5 @@
 # Bay Navigator API Documentation
+
 ## For Mobile App Development
 
 This document outlines the API endpoints needed for the mobile app to interact with the Bay Navigator platform.
@@ -8,7 +9,9 @@ This document outlines the API endpoints needed for the mobile app to interact w
 ## Current Architecture
 
 ### Data Source
+
 Currently, program data is stored as **static YAML files** in `_data/programs/`:
+
 - `arts-culture.yml`
 - `education.yml`
 - `food.yml`
@@ -21,6 +24,7 @@ Currently, program data is stored as **static YAML files** in `_data/programs/`:
 Jekyll processes these files and generates static HTML pages.
 
 ### For Mobile App
+
 The mobile app needs a **REST API** to fetch this data dynamically. We'll need to create Azure Functions to serve this data.
 
 ---
@@ -28,6 +32,7 @@ The mobile app needs a **REST API** to fetch this data dynamically. We'll need t
 ## Recommended API Endpoints
 
 ### Base URL
+
 ```
 Production: https://baynavigator.org/api
 Development: http://localhost:7071/api
@@ -38,11 +43,13 @@ Development: http://localhost:7071/api
 ## Endpoints
 
 ### 1. Get All Programs
+
 **GET** `/programs`
 
 Retrieves all programs across all categories.
 
 **Query Parameters:**
+
 - `search` (string, optional) - Filter by keyword in name or description
 - `eligibility` (string[], optional) - Filter by eligibility (comma-separated)
 - `category` (string[], optional) - Filter by category (comma-separated)
@@ -51,6 +58,7 @@ Retrieves all programs across all categories.
 - `offset` (number, optional) - Pagination offset (default: 0)
 
 **Response:**
+
 ```json
 {
   "total": 245,
@@ -73,6 +81,7 @@ Retrieves all programs across all categories.
 ```
 
 **Example Request:**
+
 ```bash
 curl "https://baynavigator.org/api/programs?eligibility=low-income&area=San%20Francisco&limit=20"
 ```
@@ -80,14 +89,17 @@ curl "https://baynavigator.org/api/programs?eligibility=low-income&area=San%20Fr
 ---
 
 ### 2. Get Single Program
+
 **GET** `/programs/{id}`
 
 Retrieves details for a specific program.
 
 **Path Parameters:**
+
 - `id` (string, required) - Program identifier
 
 **Response:**
+
 ```json
 {
   "id": "sfmta-muni-lifeline",
@@ -109,11 +121,13 @@ Retrieves details for a specific program.
 ```
 
 **Example Request:**
+
 ```bash
 curl "https://baynavigator.org/api/programs/sfmta-muni-lifeline"
 ```
 
 **Error Response:**
+
 ```json
 {
   "error": "Not Found",
@@ -125,11 +139,13 @@ curl "https://baynavigator.org/api/programs/sfmta-muni-lifeline"
 ---
 
 ### 3. Get Categories
+
 **GET** `/categories`
 
 Retrieves all program categories.
 
 **Response:**
+
 ```json
 {
   "categories": [
@@ -152,11 +168,13 @@ Retrieves all program categories.
 ---
 
 ### 4. Get Eligibility Types
+
 **GET** `/eligibility`
 
 Retrieves all eligibility types.
 
 **Response:**
+
 ```json
 {
   "eligibility": [
@@ -181,11 +199,13 @@ Retrieves all eligibility types.
 ---
 
 ### 5. Get Areas
+
 **GET** `/areas`
 
 Retrieves all service areas.
 
 **Response:**
+
 ```json
 {
   "areas": [
@@ -214,11 +234,13 @@ Retrieves all service areas.
 ---
 
 ### 6. Search Programs
+
 **POST** `/programs/search`
 
 Advanced search with complex filtering.
 
 **Request Body:**
+
 ```json
 {
   "query": "transit pass",
@@ -244,6 +266,7 @@ Advanced search with complex filtering.
 
 **Response:**
 Same as GET `/programs` but with search relevance scores:
+
 ```json
 {
   "total": 12,
@@ -263,16 +286,19 @@ Same as GET `/programs` but with search relevance scores:
 ---
 
 ### 7. Get User Favorites (Future)
+
 **GET** `/users/{userId}/favorites`
 
 Retrieves saved programs for a user.
 
 **Headers:**
+
 ```
 Authorization: Bearer {access_token}
 ```
 
 **Response:**
+
 ```json
 {
   "userId": "user-123",
@@ -288,11 +314,13 @@ Authorization: Bearer {access_token}
 ---
 
 ### 8. Add to Favorites (Future)
+
 **POST** `/users/{userId}/favorites`
 
 Saves a program to user's favorites.
 
 **Request Body:**
+
 ```json
 {
   "programId": "sfmta-muni-lifeline"
@@ -300,6 +328,7 @@ Saves a program to user's favorites.
 ```
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -311,11 +340,13 @@ Saves a program to user's favorites.
 ---
 
 ### 9. Health Check
+
 **GET** `/health`
 
 Checks API health status.
 
 **Response:**
+
 ```json
 {
   "status": "healthy",
@@ -333,40 +364,43 @@ Checks API health status.
 ## Data Models
 
 ### Program Object
+
 ```typescript
 interface Program {
-  id: string;                    // Unique identifier (kebab-case)
-  name: string;                  // Program name
-  category: CategoryId;          // Category identifier
-  description: string;           // Brief description
-  eligibility: EligibilityId[];  // Who can use it
-  areas: AreaId[];              // Where it's available
-  website: string;              // Official website URL
-  cost?: string;                // Cost information
-  requirements?: string[];      // Eligibility requirements
-  howToApply?: string;         // Application instructions
-  phone?: string;              // Contact phone
-  email?: string;              // Contact email
-  lastUpdated: string;         // ISO 8601 date
-  relatedPrograms?: string[];  // Related program IDs
+  id: string; // Unique identifier (kebab-case)
+  name: string; // Program name
+  category: CategoryId; // Category identifier
+  description: string; // Brief description
+  eligibility: EligibilityId[]; // Who can use it
+  areas: AreaId[]; // Where it's available
+  website: string; // Official website URL
+  cost?: string; // Cost information
+  requirements?: string[]; // Eligibility requirements
+  howToApply?: string; // Application instructions
+  phone?: string; // Contact phone
+  email?: string; // Contact email
+  lastUpdated: string; // ISO 8601 date
+  relatedPrograms?: string[]; // Related program IDs
 }
 ```
 
 ### Category Object
+
 ```typescript
 interface Category {
-  id: string;          // Category identifier
-  name: string;        // Display name
+  id: string; // Category identifier
+  name: string; // Display name
   programCount: number;
-  icon?: string;       // Emoji or icon identifier
+  icon?: string; // Emoji or icon identifier
 }
 ```
 
 ### Eligibility Object
+
 ```typescript
 interface Eligibility {
-  id: string;          // Eligibility identifier
-  name: string;        // Display name
+  id: string; // Eligibility identifier
+  name: string; // Display name
   description: string;
   programCount: number;
   icon?: string;
@@ -374,10 +408,11 @@ interface Eligibility {
 ```
 
 ### Area Object
+
 ```typescript
 interface Area {
-  id: string;          // Area identifier
-  name: string;        // Display name
+  id: string; // Area identifier
+  name: string; // Display name
   type: 'county' | 'region' | 'state' | 'nationwide';
   programCount: number;
 }
@@ -388,15 +423,18 @@ interface Area {
 ## Implementation Plan
 
 ### Phase 1: Static JSON API (Quick Start)
+
 Use GitHub Actions to convert YAML to JSON and deploy as static files.
 
 **Advantages:**
+
 - ✅ No server costs
 - ✅ Fast implementation (1-2 days)
 - ✅ Globally cached via CDN
 - ✅ No authentication needed
 
 **Structure:**
+
 ```
 /api/
   programs.json           # All programs
@@ -408,6 +446,7 @@ Use GitHub Actions to convert YAML to JSON and deploy as static files.
 ```
 
 **GitHub Action:**
+
 ```yaml
 name: Generate API
 on:
@@ -432,15 +471,18 @@ jobs:
 ---
 
 ### Phase 2: Azure Functions API (Advanced)
+
 Create serverless API with dynamic filtering and search.
 
 **Advantages:**
+
 - ✅ Dynamic filtering
 - ✅ Advanced search
 - ✅ User authentication support
 - ✅ Usage analytics
 
 **Azure Function Structure:**
+
 ```
 azure-functions/
   GetPrograms/
@@ -454,10 +496,11 @@ azure-functions/
 ```
 
 **Example Azure Function (TypeScript):**
+
 ```typescript
 // azure-functions/GetPrograms/index.ts
-import { AzureFunction, Context, HttpRequest } from "@azure/functions";
-import programs from "../data/programs.json";
+import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+import programs from '../data/programs.json';
 
 const httpTrigger: AzureFunction = async function (
   context: Context,
@@ -469,32 +512,29 @@ const httpTrigger: AzureFunction = async function (
 
   // Filter by search term
   if (search) {
-    filtered = filtered.filter(p =>
-      p.name.toLowerCase().includes(search.toLowerCase()) ||
-      p.description.toLowerCase().includes(search.toLowerCase())
+    filtered = filtered.filter(
+      (p) =>
+        p.name.toLowerCase().includes(search.toLowerCase()) ||
+        p.description.toLowerCase().includes(search.toLowerCase())
     );
   }
 
   // Filter by eligibility
   if (eligibility) {
     const eligArray = eligibility.split(',');
-    filtered = filtered.filter(p =>
-      p.eligibility.some(e => eligArray.includes(e))
-    );
+    filtered = filtered.filter((p) => p.eligibility.some((e) => eligArray.includes(e)));
   }
 
   // Filter by category
   if (category) {
     const catArray = category.split(',');
-    filtered = filtered.filter(p => catArray.includes(p.category));
+    filtered = filtered.filter((p) => catArray.includes(p.category));
   }
 
   // Filter by area
   if (area) {
     const areaArray = area.split(',');
-    filtered = filtered.filter(p =>
-      p.areas.some(a => areaArray.includes(a))
-    );
+    filtered = filtered.filter((p) => p.areas.some((a) => areaArray.includes(a)));
   }
 
   // Pagination
@@ -504,15 +544,15 @@ const httpTrigger: AzureFunction = async function (
   context.res = {
     status: 200,
     headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*"
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
     },
     body: {
       total,
       count: paginated.length,
       offset,
-      programs: paginated
-    }
+      programs: paginated,
+    },
   };
 };
 
@@ -647,11 +687,13 @@ export function ProgramsScreen() {
 ## Rate Limiting & Caching
 
 ### Recommended Limits
+
 - **Anonymous users:** 100 requests/hour
 - **Authenticated users:** 500 requests/hour
 - **Mobile app:** 1000 requests/hour (with API key)
 
 ### Caching Strategy
+
 ```typescript
 // Client-side caching
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
@@ -679,6 +721,7 @@ class CachedAPI extends BayNavigatorAPI {
 ## Error Handling
 
 ### Standard Error Response
+
 ```json
 {
   "error": "Bad Request",
@@ -693,6 +736,7 @@ class CachedAPI extends BayNavigatorAPI {
 ```
 
 ### HTTP Status Codes
+
 - `200` - Success
 - `400` - Bad Request (invalid parameters)
 - `401` - Unauthorized (missing/invalid auth token)
@@ -706,6 +750,7 @@ class CachedAPI extends BayNavigatorAPI {
 ## Security
 
 ### CORS Configuration
+
 ```json
 {
   "cors": {
@@ -723,6 +768,7 @@ class CachedAPI extends BayNavigatorAPI {
 ```
 
 ### API Key Authentication (Optional)
+
 ```typescript
 // Request header
 headers: {
@@ -735,6 +781,7 @@ headers: {
 ## Testing
 
 ### Example Test Cases
+
 ```typescript
 describe('Programs API', () => {
   it('should return all programs', async () => {
@@ -744,11 +791,9 @@ describe('Programs API', () => {
 
   it('should filter by eligibility', async () => {
     const response = await api.getPrograms({
-      eligibility: ['low-income']
+      eligibility: ['low-income'],
     });
-    expect(response.programs.every(p =>
-      p.eligibility.includes('low-income')
-    )).toBe(true);
+    expect(response.programs.every((p) => p.eligibility.includes('low-income'))).toBe(true);
   });
 
   it('should paginate results', async () => {

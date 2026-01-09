@@ -23,7 +23,7 @@
   timeframe: During PSPS events
   link: https://www.cidsanmateo.org/services/ddar-psps-prepardness.php
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: cleanpowersf
   name: CleanPowerSF
   category: Utilities
@@ -48,7 +48,7 @@
   timeframe: Limited funding
   link: https://www.cleanpowersf.org
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: ebmud-assistance
   name: EBMUD Customer Assistance Program
   category: Utilities
@@ -74,7 +74,7 @@
   timeframe: Ongoing
   link: https://www.ebmud.com/customers/account/assistance-programs/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.8012392
   longitude: -122.27085
 - id: liheap
@@ -101,7 +101,7 @@
   timeframe: Funding cycles
   link: https://www.csd.ca.gov/energybills
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: medical-baseline
   name: Medical Baseline Allowance
   category: Utilities
@@ -126,7 +126,7 @@
   timeframe: Ongoing
   link: https://www.cpuc.ca.gov/consumer-support/financial-assistance-savings-and-discounts/medical-baseline
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pce-ebike-rebate
   name: E-Bike Rebate
   category: Utilities
@@ -151,7 +151,7 @@
   timeframe: Ongoing
   link: https://www.peninsulacleanenergy.com/residential/rebates-offers/e-bikes/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pce-heat-pump-rebate
   name: Heat Pump Heating & Cooling Rebate
   category: Utilities
@@ -179,7 +179,7 @@
   timeframe: Ongoing
   link: https://www.peninsulacleanenergy.com/residential/home-upgrade-services/heating-and-cooling-upgrades/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pce-home-upgrade-services
   name: Home Upgrade Services
   category: Utilities
@@ -208,7 +208,7 @@
   timeframe: Ongoing
   link: https://www.peninsulacleanenergy.com/residential/home-electrification/
   link_text: Check Eligibility
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pce-used-ev-rebate
   name: Used Electric Vehicle Rebate
   category: Utilities
@@ -235,7 +235,7 @@
   timeframe: Ongoing
   link: https://www.peninsulacleanenergy.com/residential/rebates-offers/ev-rebate-program/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pce-water-heater-rebate
   name: Water Heater Rebate
   category: Utilities
@@ -264,7 +264,7 @@
   timeframe: Ongoing
   link: https://www.peninsulacleanenergy.com/residential/home-upgrade-services/water-heating-upgrades/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pce-zero-interest-loan
   name: Zero Interest Loan for Upgrades
   category: Utilities
@@ -293,7 +293,7 @@
   timeframe: Ongoing
   link: https://www.peninsulacleanenergy.com/residential/financing/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-amp
   name: Arrearage Management Plan (AMP)
   category: Utilities
@@ -320,7 +320,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/account/billing-and-assistance/financial-assistance/arrearage-management-plan-amp.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-automated-response
   name: Automated Response Technology Program
   category: Utilities
@@ -347,7 +347,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs/automated-response-technology.html
   link_text: Enroll
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-care
   name: PG&E CARE & FERA
   category: Utilities
@@ -374,7 +374,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/care
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: cpuc-esa
   name: CPUC Energy Savings Assistance (ESA) Program
   category: Utilities
@@ -403,7 +403,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/save-energy-and-money/energy-saving-programs/energy-savings-assistance-program.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-generator-battery-rebate
   name: Generator & Battery Rebate
   category: Utilities
@@ -430,7 +430,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/outages-and-safety/outage-preparedness-and-support/general-outage-resources/generator-and-battery-rebate-program.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sgip-home-battery-sgip
   name: Home Battery Rebate (SGIP)
   category: Utilities
@@ -457,7 +457,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/save-energy-and-money/rebates-and-incentives/self-generation-incentive-program.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-induction-test-drive
   name: Induction Cooktop Test Drive
   category: Utilities
@@ -484,7 +484,7 @@
   timeframe: Ongoing
   link: https://pge-induction.myturn.com/library/?WT.mc_id=Vanity_inductionloaner
   link_text: Request
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-match-payment
   name: PG&E Match My Payment Program
   category: Utilities
@@ -511,7 +511,7 @@
   timeframe: While funds last
   link: https://www.pge.com/en/account/billing-and-assistance/financial-assistance/match-my-payment-program.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-permanent-battery-rebate
   name: Permanent Battery Storage Rebate
   category: Utilities
@@ -538,7 +538,7 @@
   timeframe: Funds exhausted; check back in 2026
   link: https://www.pge.com/en/save-energy-and-money/rebates-and-incentives/permanent-battery-storage-rebate.html
   link_text: Check Status
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-portable-battery
   name: Portable Battery Program
   category: Utilities
@@ -565,7 +565,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/account/billing-and-assistance/financial-assistance/portable-battery-program.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-reach
   name: Relief for Energy Assistance through Community Help (REACH)
   category: Utilities
@@ -592,7 +592,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/account/billing-and-assistance/financial-assistance/relief-for-energy-assistance-through-community-help.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-residential-charging
   name: Residential Charging Solutions Rebate
   category: Utilities
@@ -619,7 +619,7 @@
   timeframe: While funds last
   link: https://www.pge.com/en/clean-energy/electric-vehicles/getting-started-with-electric-vehicles/residential-charging-solutions-rebate.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-used-ev-rebate
   name: Used Electric Vehicle Rebate
   category: Utilities
@@ -646,7 +646,7 @@
   timeframe: Ongoing
   link: https://evrebates.pge.com/program-requirements
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-v2x-pilot
   name: Vehicle-to-Everything (V2X) Pilot Program
   category: Utilities
@@ -673,7 +673,7 @@
   timeframe: Ongoing
   link: https://www.pge.com/en/clean-energy/electric-vehicles/getting-started-with-electric-vehicles/vehicle-to-everything-v2x-pilot-programs.html
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pge-wattersaver
   name: WatterSaver
   category: Utilities
@@ -699,7 +699,7 @@
   timeframe: Program on hold; sign up for notifications
   link: https://www.watter-saver.com/
   link_text: Get Notified
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: baaqmd-clean-cars-ev
   name: Clean Cars for All - EV
   category: Utilities
@@ -727,7 +727,7 @@
   timeframe: While funding lasts
   link: https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: baaqmd-clean-cars-fuel-cell
   name: Clean Cars for All - Fuel Cell Vehicle
   category: Utilities
@@ -755,7 +755,7 @@
   timeframe: While funding lasts
   link: https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: baaqmd-clean-cars-ebike-transit
   name: Clean Cars for All - E-Bike & Transit Credit
   category: Utilities
@@ -783,7 +783,7 @@
   timeframe: While funding lasts
   link: https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: baaqmd-vehicle-buyback
   name: Vehicle Buy Back Program
   category: Utilities
@@ -811,7 +811,7 @@
   timeframe: Ongoing
   link: https://www.baaqmd.gov/en/funding-and-incentives/residents/vehicle-buy-back-program
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: baaqmd-wood-stove
   name: Wood Stove Replacement Program
   category: Utilities
@@ -840,7 +840,7 @@
   timeframe: Reopens January 13, 2026
   link: https://www.baaqmd.gov/en/funding-and-incentives/residents/clean-heet-program
   link_text: Sign Up for Notifications
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: carb-ebike-rebate
   name: E-Bike Rebate
   category: Utilities
@@ -866,7 +866,7 @@
   timeframe: Limited vouchers; sign up for notifications
   link: https://ww2.arb.ca.gov/our-work/programs/california-e-bike-incentive-project/about
   link_text: Sign Up
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: ca-old-vehicle-retirement
   name: Old Vehicle Retirement
   category: Utilities
@@ -893,9 +893,9 @@
   timeframe: Ongoing
   link: https://www.bar.ca.gov/cap/retirement
   link_text: Check Eligibility
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: dcap-clean-cars
-  name: "Driving Clean Assistance Program: Clean Cars 4 All"
+  name: 'Driving Clean Assistance Program: Clean Cars 4 All'
   category: Utilities
   area: Statewide
   groups:
@@ -919,7 +919,7 @@
   timeframe: Ongoing
   link: https://drivingcleanca.org/about-us/dcap-eligibility/
   link_text: Check Eligibility
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: federal-ev-charger-credit
   name: Home EV Charger Federal Tax Credit
   category: Utilities
@@ -945,7 +945,7 @@
   timeframe: Through June 30, 2026
   link: https://homes.rewiringamerica.org/federal-incentives/30c-ev-charger-tax-credit
   link_text: Check Eligibility
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: weatherization-assistance
   name: Weatherization Assistance Program
   category: Utilities
@@ -972,7 +972,7 @@
   timeframe: Ongoing
   link: https://www.csd.ca.gov/Pages/Assistance-HomeEnergyEfficiency.aspx
   link_text: Check Availability
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bayren-ease
   name: Efficiency and Sustainable Energy (EASE) Home Program
   category: Utilities
@@ -1000,7 +1000,7 @@
   timeframe: Ongoing
   link: https://www.bayren.org/ease-home
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bayren-home-assessment
   name: Home Energy Assessment
   category: Utilities
@@ -1028,7 +1028,7 @@
   timeframe: Ongoing
   link: https://www.bayren.org/home-energy-score-hes
   link_text: Find an Assessor
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: calwater-rebates
   name: Water Conservation Rebates
   category: Utilities
@@ -1056,7 +1056,7 @@
   timeframe: Ongoing
   link: https://www.calwater.com/conservation-rebates/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: energy-smart-homes-electrification
   name: Whole Building Electrification
   category: Utilities
@@ -1083,7 +1083,7 @@
   timeframe: Ongoing
   link: https://caenergysmarthomes.com/alterations/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: golden-state-heat-pump-water
   name: Heat Pump Water Heater
   category: Utilities
@@ -1109,7 +1109,7 @@
   timeframe: Ongoing
   link: https://goldenstaterebates.com/goldenstaterebates/rebates/heat-pump-water-heaters/
   link_text: Find Retailer
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: golden-state-gas-water-heater
   name: High Efficiency Gas Water Heater
   category: Utilities
@@ -1135,7 +1135,7 @@
   timeframe: Ongoing
   link: https://goldenstaterebates.com/goldenstaterebates/rebates/gas-tank-water-heaters/
   link_text: Find Retailer
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: golden-state-room-ac
   name: Room Air Conditioner
   category: Utilities
@@ -1161,7 +1161,7 @@
   timeframe: Ongoing
   link: https://goldenstaterebates.com/goldenstaterebates/rebates/room-air-conditioners/
   link_text: Find Retailer
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: golden-state-smart-thermostat
   name: Smart Thermostat
   category: Utilities
@@ -1187,7 +1187,7 @@
   timeframe: Ongoing
   link: https://goldenstaterebates.com/goldenstaterebates/rebates/smart-thermostats/
   link_text: Find Retailer
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: ohmconnect
   name: OhmConnect
   category: Utilities
@@ -1213,7 +1213,7 @@
   timeframe: Ongoing
   link: https://partners.ohmconnect.com/50-dollars-cca-partners
   link_text: Sign Up
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: quitcarbon-rebate
   name: QuitCarbon Rebate
   category: Utilities
@@ -1240,7 +1240,7 @@
   timeframe: Ongoing
   link: https://www.quitcarbon.com/blog/quitcarbonrebate
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: recology-discount
   name: Recology 25% Low-Income Discount Program
   category: Utilities
@@ -1266,7 +1266,7 @@
   timeframe: Ongoing
   link: https://www.sf.gov/additional-refuse-ratepayer-resources
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: redwood-city-electrification
   name: Building Electrification Rebate Program
   category: Utilities
@@ -1294,7 +1294,7 @@
   timeframe: Ongoing
   link: https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: redwood-city-ev-charger
   name: Electric Vehicle (EV) Charger Rebate Program
   category: Utilities
@@ -1321,7 +1321,7 @@
   timeframe: Ongoing
   link: https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: redwood-city-lawn-equipment
   name: Electric Lawn Care Equipment Rebate
   category: Utilities
@@ -1348,7 +1348,7 @@
   timeframe: Ongoing
   link: https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: redwood-city-solar
   name: Solar Rebate Program
   category: Utilities
@@ -1375,7 +1375,7 @@
   timeframe: Ongoing
   link: https://www.redwoodcity.org/departments/public-works/environmental-initiatives/environmental-initiatives-rebates
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: rising-sun-green-house
   name: Green House Call
   category: Utilities
@@ -1402,7 +1402,7 @@
   timeframe: While funds last
   link: https://risingsunopp.org/programs/ghc/
   link_text: Complete the Survey
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sfpuc-cap
   name: SFPUC Customer Assistance Program (CAP)
   category: Utilities
@@ -1429,7 +1429,7 @@
   timeframe: Ongoing
   link: https://www.sfpuc.org
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: thermostat-care-mercury
   name: Mercury Thermostat Recycling Rebate
   category: Utilities
@@ -1455,7 +1455,7 @@
   timeframe: Ongoing
   link: https://thermostatcare.org/
   link_text: Find Location
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: svp-ebike-rebate
   name: Electric Bicycle Rebate
   category: Utilities
@@ -1482,7 +1482,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-ev-charger-rebate
   name: EV Charging Station Rebate
   category: Utilities
@@ -1509,7 +1509,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-used-ev-rebate
   name: Income-Qualified Pre-Owned Electric Vehicle Rebate
   category: Utilities
@@ -1536,7 +1536,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-induction-cooktop-rebate
   name: Induction Cooktop, Range & Oven Rebate
   category: Utilities
@@ -1563,7 +1563,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-heat-pump-dryer-rebate
   name: Heat Pump Clothes Dryer Rebate
   category: Utilities
@@ -1590,7 +1590,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-electric-dryer-rebate
   name: Electric Clothes Dryer Rebate
   category: Utilities
@@ -1617,7 +1617,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-hpwh-gas-rebate
   name: Heat Pump Water Heater Rebate (Gas Replacement)
   category: Utilities
@@ -1644,7 +1644,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-hpwh-electric-rebate
   name: Heat Pump Water Heater Rebate (Electric Replacement)
   category: Utilities
@@ -1671,7 +1671,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-heat-pump-hvac-rebate
   name: Heat Pump HVAC Rebate
   category: Utilities
@@ -1698,7 +1698,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-hvac-tuneup-rebate
   name: HVAC Tune-Up Rebate
   category: Utilities
@@ -1725,7 +1725,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-circuit-pauser-rebate
   name: Circuit Pauser or Splitter Rebate
   category: Utilities
@@ -1752,7 +1752,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-smart-panel-rebate
   name: Smart Electric Panel Rebate
   category: Utilities
@@ -1779,7 +1779,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-panel-upgrade-rebate
   name: Main Service Panel Upgrade Rebate
   category: Utilities
@@ -1806,7 +1806,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-prewire-rebate
   name: New Circuits for Future Electric Appliances Rebate
   category: Utilities
@@ -1833,7 +1833,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-battery-storage-rebate
   name: Battery Storage Rebate
   category: Utilities
@@ -1860,7 +1860,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-hoa-energy-grant
   name: Energy Efficiency Grant for HOAs
   category: Utilities
@@ -1887,7 +1887,7 @@
   timeframe: Biannual application deadlines
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-income-qualified-solar
   name: Income-Qualified Solar Grant
   category: Utilities
@@ -1914,7 +1914,7 @@
   timeframe: While funds last
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-pool-pump-rebate
   name: Variable Speed Pool Pump Rebate
   category: Utilities
@@ -1941,7 +1941,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: svp-solar-tuneup-rebate
   name: Solar Tune-Up Rebate
   category: Utilities
@@ -1968,7 +1968,7 @@
   timeframe: Ongoing
   link: https://www.siliconvalleypower.com/residents/rebates
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-sj-cares
   name: SJ Cares Discount
   category: Utilities
@@ -1995,7 +1995,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/discount-programs/
   link_text: Learn More
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-solar-access
   name: Solar Access Program
   category: Utilities
@@ -2022,7 +2022,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/discount-programs/
   link_text: Check Eligibility
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ecohome-hpwh
   name: EcoHome Heat Pump Water Heater Rebate
   category: Utilities
@@ -2049,7 +2049,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ecohome-rebate/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ecohome-hvac
   name: EcoHome Heat Pump HVAC Rebate
   category: Utilities
@@ -2076,7 +2076,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ecohome-rebate/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ecohome-battery
   name: EcoHome Battery Storage Rebate
   category: Utilities
@@ -2103,7 +2103,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ecohome-rebate/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ecohome-panel
   name: EcoHome Panel Upgrade Rebate
   category: Utilities
@@ -2130,7 +2130,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ecohome-rebate/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ecohome-insulation
   name: EcoHome Attic Insulation Rebate
   category: Utilities
@@ -2157,7 +2157,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ecohome-rebate/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ecohome-prewire
   name: EcoHome Circuit Prewiring Rebate
   category: Utilities
@@ -2184,7 +2184,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ecohome-rebate/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ev-new
   name: New EV Instant Rebate
   category: Utilities
@@ -2211,7 +2211,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ev-rebates/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-ev-used
   name: Used EV Instant Rebate
   category: Utilities
@@ -2238,7 +2238,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/ev-rebates/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-peak-rewards
   name: Peak Rewards Program
   category: Utilities
@@ -2265,7 +2265,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/peak-rewards-for-all/
   link_text: Enroll
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-peak-rewards-thermostat
   name: Peak Rewards for Smart Thermostats
   category: Utilities
@@ -2292,7 +2292,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/
   link_text: Enroll
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-peak-rewards-ev-charger
   name: Peak Rewards for EV Chargers
   category: Utilities
@@ -2319,7 +2319,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/
   link_text: Enroll
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sjce-peak-rewards-battery
   name: Peak Rewards for Battery Storage
   category: Utilities
@@ -2346,7 +2346,7 @@
   timeframe: Ongoing
   link: https://sanjosecleanenergy.org/peak-rewards-for-smart-homes/
   link_text: Enroll
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-rap
   name: Rate Assistance Program (RAP)
   category: Utilities
@@ -2374,7 +2374,7 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/rap
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-reap
   name: Residential Energy Assistance Program (REAP)
   category: Utilities
@@ -2401,7 +2401,7 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/reap
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-project-pledge
   name: ProjectPLEDGE
   category: Utilities
@@ -2428,7 +2428,7 @@
   timeframe: While funds last
   link: https://www.paloalto.gov/projectpledge
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-hpwh-rebate
   name: Heat Pump Water Heater Rebate
   category: Utilities
@@ -2455,7 +2455,7 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/switch
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-hp-hvac-rebate
   name: Heat Pump HVAC Rebate
   category: Utilities
@@ -2482,7 +2482,7 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/electrifymyhome
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-gas-meter-removal
   name: Gas Meter Removal Incentive
   category: Utilities
@@ -2509,7 +2509,7 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/electrifymyhome
   link_text: Learn More
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-ev-charger-mf-rebate
   name: EV Charger Rebate for Multi-Family and Non-Profits
   category: Utilities
@@ -2536,7 +2536,7 @@
   timeframe: While funds last
   link: https://www.paloalto.gov/EV
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-transformer-upgrade-rebate
   name: Transformer Upgrade Rebate Program
   category: Utilities
@@ -2563,7 +2563,7 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/EV
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-landscape-conversion
   name: Landscape Conversion Rebate
   category: Utilities
@@ -2590,7 +2590,7 @@
   timeframe: Ongoing
   link: https://watersavings.org
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-graywater-rebate
   name: Graywater Laundry-to-Landscape Rebate
   category: Utilities
@@ -2617,7 +2617,7 @@
   timeframe: Ongoing
   link: https://watersavings.org
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cpau-stormwater-rebates
   name: Stormwater Rebates Program
   category: Utilities
@@ -2644,4 +2644,4 @@
   timeframe: Ongoing
   link: https://www.paloalto.gov/stormwater
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'

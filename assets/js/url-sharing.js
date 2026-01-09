@@ -9,34 +9,37 @@ class URLSharing {
   getInitialState() {
     const parseList = (val) => {
       if (!val) return [];
-      return val.split(',').map(v => v.trim()).filter(Boolean);
+      return val
+        .split(',')
+        .map((v) => v.trim())
+        .filter(Boolean);
     };
 
     return {
       search: this.params.get('q') || '',
       eligibility: parseList(this.params.get('eligibility')),
       category: parseList(this.params.get('category')),
-      area: parseList(this.params.get('area'))
+      area: parseList(this.params.get('area')),
     };
   }
 
   // Update URL when filters change (without page reload)
   updateURL(filters) {
     const params = new URLSearchParams();
-    
+
     if (filters.search) params.set('q', filters.search);
-    const toListString = (val) => Array.isArray(val) ? val.join(',') : (val || '');
+    const toListString = (val) => (Array.isArray(val) ? val.join(',') : val || '');
     const elig = toListString(filters.eligibility);
     const cat = toListString(filters.category);
     const area = toListString(filters.area);
     if (elig) params.set('eligibility', elig);
     if (cat) params.set('category', cat);
     if (area) params.set('area', area);
-    
+
     const newURL = params.toString()
       ? `${window.location.pathname}?${params.toString()}`
       : window.location.pathname;
-    
+
     window.history.replaceState({}, '', newURL);
   }
 

@@ -77,6 +77,7 @@ This guide explains who qualifies for military and veteran discounts, how eligib
 **Definition:** Currently serving full-time in one of the U.S. uniformed services.
 
 **Uniformed Services Include:**
+
 - U.S. Army
 - U.S. Navy
 - U.S. Marine Corps
@@ -87,10 +88,12 @@ This guide explains who qualifies for military and veteran discounts, how eligib
 - Commissioned Corps of NOAA
 
 **Also Includes:**
+
 - Active Guard and Reserve (AGR) members receiving federal pay
 - National Guard members on federal active duty (Title 10 or Title 32)
 
 **Common Proof:**
+
 - Common Access Card (CAC)
 - Military ID card
 - Leave and Earnings Statement (LES)
@@ -108,15 +111,18 @@ This guide explains who qualifies for military and veteran discounts, how eligib
 **Federal Definition:** Under [38 U.S.C. § 101(2)](https://www.law.cornell.edu/uscode/text/38/101), a veteran is "a person who served in the active military, naval, air, or space service, and who was discharged or released therefrom under conditions other than dishonorable."
 
 **Key Requirements:**
+
 1. Served on active duty (not just training)
 2. Discharged under conditions other than dishonorable
 
 **Discharge Types That Qualify:**
+
 - Honorable Discharge
 - General Discharge (Under Honorable Conditions)
 - In some cases, Other Than Honorable (OTH) may qualify for certain VA benefits
 
 **Common Proof:**
+
 - DD-214 (Certificate of Release or Discharge from Active Duty)
 - VA Health ID Card
 - Veteran Health Identification Card (VHIC)
@@ -135,11 +141,13 @@ This guide explains who qualifies for military and veteran discounts, how eligib
 National Guard members serve under a dual state-federal system and may or may not qualify as veterans depending on their service.
 
 **Qualifies as Veteran If:**
+
 - Activated for federal duty under Title 10 (180+ days outside of training), OR
 - Completed 20+ years of qualifying service (as of 2016 federal law change), OR
 - Injured or contracted a condition during training
 
 **May Not Qualify as Veteran If:**
+
 - Only served traditional weekend/annual training
 - Only activated under State Active Duty (SAD) orders
 
@@ -158,6 +166,7 @@ National Guard members serve under a dual state-federal system and may or may no
 Similar to National Guard, Reserve members' veteran status depends on activation.
 
 **Components:**
+
 - Army Reserve
 - Navy Reserve
 - Marine Corps Reserve
@@ -165,6 +174,7 @@ Similar to National Guard, Reserve members' veteran status depends on activation
 - Coast Guard Reserve
 
 **Qualifies as Veteran If:**
+
 - Served 180+ days on active duty (not counting training), OR
 - Completed 20+ years of qualifying service, OR
 - Injured during active duty for training or inactive duty training
@@ -185,6 +195,7 @@ Full-time Reserve members (AGR) serve on continuous active duty and are eligible
 Many discount programs extend eligibility to family members of service members and veterans.
 
 **Typically Eligible:**
+
 - Spouses of active duty service members
 - Spouses of veterans (some programs require service-connected disability or deceased veteran)
 - Dependent children (typically under 21, or under 23 if full-time student)
@@ -193,6 +204,7 @@ Many discount programs extend eligibility to family members of service members a
 **DEERS Enrollment:** Eligible family members are enrolled in the Defense Enrollment Eligibility Reporting System (DEERS) and may receive military ID cards.
 
 **Proof of Eligibility:**
+
 - Uniformed Services ID Card
 - DEERS enrollment verification
 - Marriage certificate + spouse's military documentation

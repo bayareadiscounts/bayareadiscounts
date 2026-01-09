@@ -20,7 +20,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-        if: false  # Disabled - use publish profile instead
+        if: false # Disabled - use publish profile instead
 
       - name: Run IP sync
         run: |

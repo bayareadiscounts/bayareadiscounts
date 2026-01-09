@@ -7,8 +7,8 @@
   category: Health
   area: Statewide
   groups:
-  - veterans
-  - seniors
+    - veterans
+    - seniors
   description: The Veterans Homes of California operate 8 residential care facilities across the state providing housing, healthcare, and supportive services to eligible veterans and their spouses.
   what_they_offer: |
     - Long-term residential care (domiciliary and skilled nursing)
@@ -38,7 +38,7 @@
   category: Health
   area: Nationwide
   groups:
-  - everyone
+    - everyone
   description: The 988 Suicide & Crisis Lifeline is a national network of local crisis
     centers providing free, confidential emotional support 24/7 to people in suicidal
     crisis or emotional distress.
@@ -61,7 +61,7 @@
   category: Health
   area: Nationwide
   groups:
-  - everyone
+    - everyone
   description: Crisis Text Line is a free, 24/7 text-based mental health support service
     connecting people in crisis with trained volunteer counselors through text messages.
   what_they_offer: |
@@ -309,7 +309,7 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
+    - income-eligible
   description: Denti-Cal is California's Medicaid dental program, providing comprehensive
     dental care to Medi-Cal beneficiaries at no cost, helping ensure oral health for
     low-income individuals and families.
@@ -333,7 +333,7 @@
   category: Health
   area: Nationwide
   groups:
-  - seniors
+    - seniors
   description: EyeCare America is a public service program of the American Academy
     of Ophthalmology providing eye care to seniors through volunteer ophthalmologists
     who donate their services.
@@ -357,7 +357,7 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
+    - income-eligible
   description: Medi-Cal is California's Medicaid program, providing free or low-cost
     health coverage to millions of Californians including low-income adults, families,
     seniors, pregnant women, and people with disabilities.
@@ -384,7 +384,7 @@
   category: Health
   area: Nationwide
   groups:
-  - everyone
+    - everyone
   description: NeedyMeds is a nonprofit providing a comprehensive database of patient
     assistance programs, helping people find affordable medications and healthcare
     services regardless of insurance status.
@@ -408,8 +408,8 @@
   category: Health
   area: Nationwide
   groups:
-  - income-eligible
-  - everyone
+    - income-eligible
+    - everyone
   description: Planned Parenthood is a trusted healthcare provider offering sexual
     and reproductive health services on a sliding fee scale, ensuring care is accessible
     regardless of insurance status or ability to pay.
@@ -436,7 +436,7 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
+    - income-eligible
   description: The Ryan White HIV/AIDS Program provides comprehensive care and support
     services for people living with HIV who are uninsured or underinsured, filling
     gaps in care not covered by other sources.
@@ -462,7 +462,7 @@
   category: Health
   area: Nationwide
   groups:
-  - everyone
+    - everyone
   description: SAMHSA's National Helpline is a free, confidential, 24/7 treatment
     referral and information service for individuals and families facing mental health
     and/or substance use disorders.
@@ -488,7 +488,7 @@
   category: Health
   area: Nationwide
   groups:
-  - veterans
+    - veterans
   description: VA Health Benefits provide comprehensive healthcare services to eligible
     veterans through the Veterans Health Administration, the nation's largest integrated
     healthcare system.
@@ -515,9 +515,9 @@
   category: Health
   area: Statewide
   groups:
-  - pregnant
-  - income-eligible
-  - families
+    - pregnant
+    - income-eligible
+    - families
   description: WIC is a nutrition program providing healthy food, nutrition education,
     breastfeeding support, and healthcare referrals to pregnant and postpartum women,
     infants, and children under 5 in California.
@@ -543,7 +543,7 @@
   category: Health
   area: San Mateo County
   groups:
-  - everyone
+    - everyone
   description: San Mateo County Behavioral Health and Recovery Services provides mental
     health and substance use treatment, prevention, and recovery services to residents
     of all ages in San Mateo County.
@@ -570,9 +570,9 @@
   category: Health
   area: San Mateo County
   groups:
-  - caregivers
-  - seniors
-  - disability
+    - caregivers
+    - seniors
+    - disability
   description: San Mateo County Aging and Adult Services provides protective services,
     in-home care, and nutrition programs to help older adults and people with disabilities
     live safely and independently.
@@ -598,9 +598,9 @@
   category: Health
   area: San Mateo County
   groups:
-  - pregnant
-  - income-eligible
-  - families
+    - pregnant
+    - income-eligible
+    - families
   description: San Mateo County's Family Health Services provides prenatal care, home
     visiting, and child health programs to support healthy pregnancies and child development
     for families throughout the county.
@@ -626,7 +626,7 @@
   category: Health
   area: Statewide
   groups:
-  - everyone
+    - everyone
   description: CalRx is California's initiative to make naloxone, a life-saving medication
     that reverses opioid overdoses, affordable and accessible to all residents without
     a prescription.
@@ -650,7 +650,7 @@
   category: Health
   area: Statewide
   groups:
-  - nonprofits
+    - nonprofits
   description: California's Naloxone Distribution Project provides free naloxone and
     fentanyl test strips to eligible nonprofit organizations working to prevent opioid
     overdose deaths in their communities.
@@ -673,7 +673,7 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
+    - income-eligible
   description: California's AIDS Drug Assistance Program provides life-saving HIV/AIDS
     medications and health insurance assistance to low-income Californians living
     with HIV who lack adequate coverage.
@@ -697,7 +697,7 @@
   category: Health
   area: Statewide
   groups:
-  - everyone
+    - everyone
   description: Kick It California is the state's free quit smoking and tobacco helpline,
     offering personalized coaching, a mobile app, and resources to help Californians
     quit tobacco, vaping, and marijuana.
@@ -724,8 +724,8 @@
   category: Health
   area: Statewide
   groups:
-  - pregnant
-  - families
+    - pregnant
+    - families
   description: The Black Infant Health Program is California's community-based program
     providing group support and education to Black women and birthing people during
     pregnancy and the first year of their baby's life.
@@ -751,9 +751,9 @@
   category: Health
   area: Statewide
   groups:
-  - pregnant
-  - income-eligible
-  - families
+    - pregnant
+    - income-eligible
+    - families
   description: The California Home Visiting Program provides free, voluntary home
     visits to pregnant women and families with young children, offering parenting
     support, health education, and connections to community resources.
@@ -779,8 +779,8 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
-  - families
+    - income-eligible
+    - families
   description: The Vaccines for Children program provides free vaccines to children
     18 and under who might not otherwise be vaccinated because of inability to pay,
     ensuring all children have access to life-saving immunizations.
@@ -804,8 +804,8 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
-  - everyone
+    - income-eligible
+    - everyone
   description: California's PrEP Assistance Program makes HIV prevention medication
     accessible to residents who might not otherwise afford it, covering the cost of
     PrEP medication, doctor visits, and lab tests.
@@ -830,7 +830,7 @@
   category: Health
   area: Statewide
   groups:
-  - income-eligible
+    - income-eligible
   description: Every Woman Counts provides free breast and cervical cancer screenings
     to uninsured and underinsured California women, helping detect cancer early when
     treatment is most effective.
@@ -856,9 +856,9 @@
   category: Health
   area: Statewide
   groups:
-  - pregnant
-  - income-eligible
-  - families
+    - pregnant
+    - income-eligible
+    - families
   description: The Comprehensive Perinatal Services Program provides enhanced prenatal
     and postpartum care to Medi-Cal recipients, offering additional support services
     beyond standard obstetric care to improve birth outcomes.
@@ -884,7 +884,7 @@
   category: Health
   area: Statewide
   groups:
-  - families
+    - families
   description: California's Childhood Lead Poisoning Prevention Program provides screening,
     case management, and environmental investigation to protect children from lead
     exposure, which can cause learning disabilities and developmental delays.
@@ -909,7 +909,7 @@
   category: Health
   area: Statewide
   groups:
-  - everyone
+    - everyone
   description: MyTurn is California's official vaccine scheduling and digital record
     system, making it easy to find vaccine appointments, access your immunization
     records, and stay up to date on recommended vaccines.

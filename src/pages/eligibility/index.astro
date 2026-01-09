@@ -49,89 +49,127 @@ const guides = [
     <div class="container-page">
       <div class="max-w-4xl mx-auto">
         <!-- Simple Summary -->
-        <div class="bg-primary-50 dark:bg-primary-900/20 border-l-4 border-primary-500 p-4 rounded-r-lg mb-8">
+        <div
+          class="bg-primary-50 dark:bg-primary-900/20 border-l-4 border-primary-500 p-4 rounded-r-lg mb-8"
+        >
           <p class="text-neutral-700 dark:text-neutral-300">
-            These guides help you understand if you qualify for discount programs. Pick a guide that matches your situation to learn about eligibility requirements and how to apply.
+            These guides help you understand if you qualify for discount programs. Pick a guide that
+            matches your situation to learn about eligibility requirements and how to apply.
           </p>
         </div>
 
-        <h1 class="text-4xl font-bold text-neutral-900 dark:text-white mb-4">
-          Eligibility Guides
-        </h1>
+        <h1 class="text-4xl font-bold text-neutral-900 dark:text-white mb-4">Eligibility Guides</h1>
         <p class="text-lg text-neutral-600 dark:text-neutral-300 mb-8">
-          These guides explain who qualifies for each category, how to verify your status, and where to apply across the Bay Area.
+          These guides explain who qualifies for each category, how to verify your status, and where
+          to apply across the Bay Area.
         </p>
 
         <hr class="my-8 border-neutral-200 dark:border-neutral-700" />
 
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
-          Choose a Guide
-        </h2>
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Choose a Guide</h2>
 
         <div class="grid md:grid-cols-2 gap-4 mb-12">
-          {guides.map((guide) => (
-            <a
-              href={guide.href}
-              class="card flex items-center gap-4 no-underline hover:no-underline group"
-            >
-              <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-                {guide.icon === 'credit-card' && (
-                  <svg class="w-6 h-6 text-primary-700 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <rect x="2" y="5" width="20" height="14" rx="2" stroke-width="2"/>
-                    <line x1="2" y1="10" x2="22" y2="10" stroke-width="2"/>
-                  </svg>
-                )}
-                {guide.icon === 'shield' && (
-                  <svg class="w-6 h-6 text-primary-700 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  </svg>
-                )}
-                {guide.icon === 'graduation' && (
-                  <svg class="w-6 h-6 text-primary-700 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-width="2" d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                    <path stroke-width="2" d="M6 12v5c3 3 9 3 12 0v-5"/>
-                  </svg>
-                )}
-                {guide.icon === 'user' && (
-                  <svg class="w-6 h-6 text-primary-700 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-width="2" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                    <circle cx="12" cy="7" r="4" stroke-width="2"/>
-                  </svg>
-                )}
-                {guide.icon === 'accessibility' && (
-                  <svg class="w-6 h-6 text-primary-700 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="10" stroke-width="2"/>
-                    <path stroke-width="2" d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                    <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2"/>
-                    <line x1="15" y1="9" x2="15.01" y2="9" stroke-width="2"/>
-                  </svg>
-                )}
-                {guide.icon === 'bolt' && (
-                  <svg class="w-6 h-6 text-primary-700 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-width="2"/>
-                  </svg>
-                )}
-              </div>
-              <div class="flex-1 min-w-0">
-                <h3 class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">
-                  {guide.title}
-                </h3>
-                <p class="text-sm text-neutral-600 dark:text-neutral-300">
-                  {guide.description}
-                </p>
-              </div>
-              <svg class="w-5 h-5 text-neutral-400 group-hover:text-primary-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-              </svg>
-            </a>
-          ))}
+          {
+            guides.map((guide) => (
+              <a
+                href={guide.href}
+                class="card flex items-center gap-4 no-underline hover:no-underline group"
+              >
+                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  {guide.icon === 'credit-card' && (
+                    <svg
+                      class="w-6 h-6 text-primary-700 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect x="2" y="5" width="20" height="14" rx="2" stroke-width="2" />
+                      <line x1="2" y1="10" x2="22" y2="10" stroke-width="2" />
+                    </svg>
+                  )}
+                  {guide.icon === 'shield' && (
+                    <svg
+                      class="w-6 h-6 text-primary-700 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                  )}
+                  {guide.icon === 'graduation' && (
+                    <svg
+                      class="w-6 h-6 text-primary-700 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-width="2" d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path stroke-width="2" d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                  )}
+                  {guide.icon === 'user' && (
+                    <svg
+                      class="w-6 h-6 text-primary-700 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-width="2" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" stroke-width="2" />
+                    </svg>
+                  )}
+                  {guide.icon === 'accessibility' && (
+                    <svg
+                      class="w-6 h-6 text-primary-700 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle cx="12" cy="12" r="10" stroke-width="2" />
+                      <path stroke-width="2" d="M8 14s1.5 2 4 2 4-2 4-2" />
+                      <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2" />
+                      <line x1="15" y1="9" x2="15.01" y2="9" stroke-width="2" />
+                    </svg>
+                  )}
+                  {guide.icon === 'bolt' && (
+                    <svg
+                      class="w-6 h-6 text-primary-700 dark:text-primary-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-width="2" />
+                    </svg>
+                  )}
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h3 class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">
+                    {guide.title}
+                  </h3>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300">{guide.description}</p>
+                </div>
+                <svg
+                  class="w-5 h-5 text-neutral-400 group-hover:text-primary-600 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            ))
+          }
         </div>
 
         <hr class="my-8 border-neutral-200 dark:border-neutral-700" />
 
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
-          Quick Links
-        </h2>
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-6">Quick Links</h2>
 
         <div class="grid md:grid-cols-3 gap-4 mb-8">
           <a
@@ -142,7 +180,9 @@ const guides = [
           >
             <span class="text-2xl">🌐</span>
             <div>
-              <div class="font-semibold text-neutral-900 dark:text-white">Apply for benefits online</div>
+              <div class="font-semibold text-neutral-900 dark:text-white">
+                Apply for benefits online
+              </div>
               <div class="text-sm text-neutral-600 dark:text-neutral-300">BenefitsCal.com</div>
             </div>
           </a>
@@ -183,7 +223,11 @@ const guides = [
           <a href="/" class="btn-primary">
             Browse All Programs
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
           </a>
         </div>

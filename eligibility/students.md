@@ -50,6 +50,7 @@ This guide explains what qualifies as student status for discount programs and h
         <span class="checklist-label">I have proof of enrollment (ID, .edu email, or enrollment letter)</span>
       </li>
     </ul>
+
   </div>
 </div>
 
@@ -195,6 +196,7 @@ This guide explains what qualifies as student status for discount programs and h
 Students enrolled at least half-time in higher education must meet an exemption to receive CalFresh:
 
 **Common Exemptions:**
+
 - Working 20+ hours per week
 - Participating in work-study
 - Caring for a child under 6

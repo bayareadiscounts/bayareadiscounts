@@ -3,8 +3,8 @@
   category: Education
   area: Statewide
   groups:
-  - veterans
-  - families
+    - veterans
+    - families
   description: The CalVet College Fee Waiver waives enrollment fees and tuition at California public universities (UC, CSU, and Community Colleges) for eligible dependents of disabled or deceased veterans.
   what_they_offer: |
     - Full waiver of enrollment fees at UC, CSU, and Community Colleges
@@ -33,7 +33,7 @@
   category: Education
   area: Nationwide
   groups:
-  - income-eligible
+    - income-eligible
   description: The ACT offers fee waivers for students from low-income families, removing financial barriers to college entrance testing.
   what_they_offer: |
     - Two free ACT tests (with or without writing)
@@ -61,7 +61,7 @@
   category: Education
   area: Nationwide
   groups:
-  - income-eligible
+    - income-eligible
   description: The College Board offers significant fee reductions on AP (Advanced Placement) exams for students with demonstrated financial need.
   what_they_offer: |
     - $37 College Board fee reduction per AP exam
@@ -88,7 +88,7 @@
   category: Education
   area: Statewide
   groups:
-  - income-eligible
+    - income-eligible
   description: The California College Promise Grant (formerly BOG Fee Waiver) waives enrollment fees at all 116 California Community Colleges for eligible students.
   what_they_offer: |
     - Waiver of enrollment fees ($46 per unit)
@@ -114,7 +114,7 @@
   category: Education
   area: Nationwide
   groups:
-  - income-eligible
+    - income-eligible
   description: The Common Application offers fee waivers that eliminate college application fees at over 900 participating colleges for students with financial need.
   what_they_offer: |
     - Waived application fees at participating colleges
@@ -140,7 +140,7 @@
   category: Education
   area: Nationwide
   groups:
-  - income-eligible
+    - income-eligible
   description: The College Board offers SAT fee waivers for low-income 11th and 12th grade students, covering test fees and providing additional benefits.
   what_they_offer: |
     - Two free SAT tests (with or without Essay)

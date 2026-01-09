@@ -11,34 +11,78 @@ const assert = require('node:assert');
 // Valid values for testing (subset of actual values)
 const VALID_VALUES = {
   validGroups: [
-    'income-eligible', 'seniors', 'youth', 'college-students', 'veterans',
-    'families', 'disability', 'lgbtq', 'first-responders', 'teachers',
-    'unemployed', 'immigrants', 'unhoused', 'pregnant', 'caregivers',
-    'foster-youth', 'reentry', 'nonprofits', 'everyone'
+    'income-eligible',
+    'seniors',
+    'youth',
+    'college-students',
+    'veterans',
+    'families',
+    'disability',
+    'lgbtq',
+    'first-responders',
+    'teachers',
+    'unemployed',
+    'immigrants',
+    'unhoused',
+    'pregnant',
+    'caregivers',
+    'foster-youth',
+    'reentry',
+    'nonprofits',
+    'everyone',
   ],
   validCategories: [
-    'Community', 'Education', 'Equipment', 'Finance', 'Food',
-    'Health', 'Legal', 'Library Resources', 'Pet Resources',
-    'Recreation', 'Technology', 'Transportation', 'Utilities'
+    'Community',
+    'Education',
+    'Equipment',
+    'Finance',
+    'Food',
+    'Health',
+    'Legal',
+    'Library Resources',
+    'Pet Resources',
+    'Recreation',
+    'Technology',
+    'Transportation',
+    'Utilities',
   ],
   validCategoryIds: [
-    'community', 'education', 'equipment', 'finance', 'food',
-    'health', 'legal', 'library_resources', 'pet_resources',
-    'recreation', 'technology', 'transportation', 'utilities'
+    'community',
+    'education',
+    'equipment',
+    'finance',
+    'food',
+    'health',
+    'legal',
+    'library_resources',
+    'pet_resources',
+    'recreation',
+    'technology',
+    'transportation',
+    'utilities',
   ],
   validAreas: [
-    'San Francisco', 'Alameda County', 'Contra Costa County',
-    'Marin County', 'Napa County', 'San Mateo County',
-    'Santa Clara County', 'Solano County', 'Sonoma County',
-    'Bay Area', 'Statewide', 'California', 'Nationwide', 'National'
-  ]
+    'San Francisco',
+    'Alameda County',
+    'Contra Costa County',
+    'Marin County',
+    'Napa County',
+    'San Mateo County',
+    'Santa Clara County',
+    'Solano County',
+    'Sonoma County',
+    'Bay Area',
+    'Statewide',
+    'California',
+    'Nationwide',
+    'National',
+  ],
 };
 
 // Required fields for every program
 const REQUIRED_FIELDS = ['id', 'name', 'category', 'groups', 'link'];
 
 describe('validate-data.cjs', () => {
-
   describe('URL validation', () => {
     it('should accept valid URLs', () => {
       const validUrls = [
@@ -74,13 +118,7 @@ describe('validate-data.cjs', () => {
 
   describe('ID format validation', () => {
     it('should accept valid ID formats', () => {
-      const validIds = [
-        'food-bank',
-        'senior-services-sf',
-        'calfresh',
-        'program-123',
-        'a-b-c',
-      ];
+      const validIds = ['food-bank', 'senior-services-sf', 'calfresh', 'program-123', 'a-b-c'];
 
       for (const id of validIds) {
         assert.strictEqual(isValidIdFormat(id), true, `Should accept: ${id}`);
@@ -126,9 +164,9 @@ describe('validate-data.cjs', () => {
 
       const errors = validateRequiredFields(invalidProgram);
       assert.strictEqual(errors.length, 3);
-      assert.ok(errors.some(e => e.includes('category')));
-      assert.ok(errors.some(e => e.includes('groups')));
-      assert.ok(errors.some(e => e.includes('link')));
+      assert.ok(errors.some((e) => e.includes('category')));
+      assert.ok(errors.some((e) => e.includes('groups')));
+      assert.ok(errors.some((e) => e.includes('link')));
     });
   });
 
@@ -201,8 +239,8 @@ describe('validate-data.cjs', () => {
     it('should reject coordinates outside Bay Area', () => {
       const invalidCoords = [
         { lat: 34.0522, lng: -118.2437 }, // Los Angeles
-        { lat: 40.7128, lng: -74.0060 },  // New York
-        { lat: 0, lng: 0 },               // Null Island
+        { lat: 40.7128, lng: -74.006 }, // New York
+        { lat: 0, lng: 0 }, // Null Island
       ];
 
       for (const { lat, lng } of invalidCoords) {

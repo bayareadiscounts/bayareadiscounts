@@ -21,8 +21,10 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 // GSA data sources (raw GitHub URLs for CSV files)
-const FEDERAL_INDEX_URL = 'https://raw.githubusercontent.com/GSA/federal-website-index/main/data/site-scanning-target-url-list.csv';
-const GOVT_URLS_FEDERAL = 'https://raw.githubusercontent.com/GSA/govt-urls/main/1_govt_urls_full.csv';
+const FEDERAL_INDEX_URL =
+  'https://raw.githubusercontent.com/GSA/federal-website-index/main/data/site-scanning-target-url-list.csv';
+const GOVT_URLS_FEDERAL =
+  'https://raw.githubusercontent.com/GSA/govt-urls/main/1_govt_urls_full.csv';
 
 const DATA_DIR = path.join(__dirname, '../src/data');
 const REPORT_FILE = path.join(__dirname, '../link-validation-report.json');
@@ -30,9 +32,9 @@ const REPORT_FILE = path.join(__dirname, '../link-validation-report.json');
 // Parse a simple CSV (handles quoted fields)
 function parseCSV(text) {
   const lines = text.trim().split('\n');
-  const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+  const headers = lines[0].split(',').map((h) => h.trim().replace(/^"|"$/g, ''));
 
-  return lines.slice(1).map(line => {
+  return lines.slice(1).map((line) => {
     const values = [];
     let current = '';
     let inQuotes = false;
@@ -82,10 +84,19 @@ function isFederalDomain(domain) {
 // Load all program links from YAML files
 function loadProgramLinks() {
   const links = [];
-  const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml', 'search-config.yml', 'county-supervisors.yml', 'site-config.yml'];
+  const NON_PROGRAM_FILES = [
+    'cities.yml',
+    'groups.yml',
+    'zipcodes.yml',
+    'suppressed.yml',
+    'search-config.yml',
+    'county-supervisors.yml',
+    'site-config.yml',
+  ];
 
-  const files = fs.readdirSync(DATA_DIR)
-    .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
+  const files = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
   for (const file of files) {
     const content = fs.readFileSync(path.join(DATA_DIR, file), 'utf8');
@@ -101,7 +112,7 @@ function loadProgramLinks() {
           url: url,
           domain: extractDomain(url),
           source: program.source || 'local',
-          agency: program.agency || null
+          agency: program.agency || null,
         });
       }
     }
@@ -115,8 +126,8 @@ async function fetchWithRetry(url, retries = 3) {
     try {
       const response = await fetch(url, {
         headers: {
-          'User-Agent': 'BayNavigator-LinkValidator/1.0'
-        }
+          'User-Agent': 'BayNavigator-LinkValidator/1.0',
+        },
       });
       if (response.ok) {
         return await response.text();
@@ -125,7 +136,7 @@ async function fetchWithRetry(url, retries = 3) {
     } catch (error) {
       if (i === retries - 1) throw error;
       console.warn(`  ⚠️  Retry ${i + 1}/${retries} for ${url}`);
-      await new Promise(r => setTimeout(r, 1000 * (i + 1)));
+      await new Promise((r) => setTimeout(r, 1000 * (i + 1)));
     }
   }
   return null;
@@ -146,7 +157,7 @@ async function validateLinks() {
     const federalCSV = await fetchWithRetry(FEDERAL_INDEX_URL);
     if (federalCSV) {
       const records = parseCSV(federalCSV);
-      records.forEach(r => {
+      records.forEach((r) => {
         // The GSA CSV uses 'initial_url' or 'base_domain' fields
         const domain = extractDomain(r.initial_url) || r.base_domain;
         if (domain) federalSites.add(domain.toLowerCase().replace(/^www\./, ''));
@@ -164,7 +175,7 @@ async function validateLinks() {
     const govtCSV = await fetchWithRetry(GOVT_URLS_FEDERAL);
     if (govtCSV) {
       const records = parseCSV(govtCSV);
-      records.forEach(r => {
+      records.forEach((r) => {
         const domain = r.Website || r.website || r.Domain || r.domain;
         if (domain) govtUrls.add(domain.toLowerCase().replace(/^www\./, ''));
       });
@@ -185,12 +196,12 @@ async function validateLinks() {
       verified: 0,
       unverified: 0,
       nonGov: 0,
-      issues: []
+      issues: [],
     },
     federalLinks: [],
     unverifiedFederalLinks: [],
     nonGovLinks: [],
-    knownGovtUrls: []
+    knownGovtUrls: [],
   };
 
   for (const link of programLinks) {
@@ -199,7 +210,7 @@ async function validateLinks() {
         type: 'invalid_url',
         program: link.name,
         file: link.file,
-        url: link.url
+        url: link.url,
       });
       continue;
     }
@@ -236,14 +247,14 @@ async function validateLinks() {
 
   if (report.summary.issues.length > 0) {
     console.log(`\n⚠️  Issues found: ${report.summary.issues.length}`);
-    report.summary.issues.forEach(issue => {
+    report.summary.issues.forEach((issue) => {
       console.log(`   - ${issue.type}: ${issue.program} (${issue.file})`);
     });
   }
 
   if (report.unverifiedFederalLinks.length > 0) {
     console.log('\n⚠️  Federal links not in GSA index (may be subdomains or new sites):');
-    report.unverifiedFederalLinks.slice(0, 10).forEach(link => {
+    report.unverifiedFederalLinks.slice(0, 10).forEach((link) => {
       console.log(`   - ${link.domain} (${link.name})`);
     });
     if (report.unverifiedFederalLinks.length > 10) {
@@ -268,9 +279,9 @@ async function checkLinkStatus(url) {
       method: 'HEAD',
       signal: controller.signal,
       headers: {
-        'User-Agent': 'BayNavigator-LinkValidator/1.0'
+        'User-Agent': 'BayNavigator-LinkValidator/1.0',
       },
-      redirect: 'follow'
+      redirect: 'follow',
     });
 
     clearTimeout(timeout);
@@ -279,21 +290,23 @@ async function checkLinkStatus(url) {
       status: response.status,
       ok: response.ok,
       redirected: response.redirected,
-      finalUrl: response.url
+      finalUrl: response.url,
     };
   } catch (error) {
     return {
       status: 0,
       ok: false,
-      error: error.message
+      error: error.message,
     };
   }
 }
 
 // Run validation
-validateLinks().then(report => {
-  process.exit(report.summary.issues.length > 0 ? 1 : 0);
-}).catch(error => {
-  console.error('Error:', error);
-  process.exit(1);
-});
+validateLinks()
+  .then((report) => {
+    process.exit(report.summary.issues.length > 0 ? 1 : 0);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    process.exit(1);
+  });

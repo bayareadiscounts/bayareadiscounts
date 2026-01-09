@@ -24,43 +24,47 @@ const TEMP_DIR = path.join(DATA_DIR, 'temp');
 
 // Bay Area counties with their OpenAddresses IDs
 const BAY_AREA_COUNTIES = {
-  'alameda': 627,
-  'contra_costa': 661,
-  'marin': 640,
-  'napa': 636,
-  'san_francisco': 700,
-  'san_mateo': 660,
-  'santa_clara': 721,
-  'solano': 659,
-  'sonoma': 675
+  alameda: 627,
+  contra_costa: 661,
+  marin: 640,
+  napa: 636,
+  san_francisco: 700,
+  san_mateo: 660,
+  santa_clara: 721,
+  solano: 659,
+  sonoma: 675,
 };
 
 // Also include some city-specific data for better coverage
 const CITY_SOURCES = {
-  'city_of_santa_clara': 609
+  city_of_santa_clara: 609,
 };
 
 async function downloadFile(url, destPath) {
   return new Promise((resolve, reject) => {
     const file = createWriteStream(destPath);
-    https.get(url, (response) => {
-      if (response.statusCode === 302 || response.statusCode === 301) {
-        // Follow redirect
-        https.get(response.headers.location, (redirected) => {
-          redirected.pipe(file);
+    https
+      .get(url, (response) => {
+        if (response.statusCode === 302 || response.statusCode === 301) {
+          // Follow redirect
+          https
+            .get(response.headers.location, (redirected) => {
+              redirected.pipe(file);
+              file.on('finish', () => {
+                file.close();
+                resolve();
+              });
+            })
+            .on('error', reject);
+        } else {
+          response.pipe(file);
           file.on('finish', () => {
             file.close();
             resolve();
           });
-        }).on('error', reject);
-      } else {
-        response.pipe(file);
-        file.on('finish', () => {
-          file.close();
-          resolve();
-        });
-      }
-    }).on('error', reject);
+        }
+      })
+      .on('error', reject);
   });
 }
 
@@ -68,7 +72,7 @@ async function processCSV(csvPath, addressIndex) {
   const fileStream = createReadStream(csvPath);
   const rl = readline.createInterface({
     input: fileStream,
-    crlfDelay: Infinity
+    crlfDelay: Infinity,
   });
 
   let headers = null;
@@ -76,7 +80,7 @@ async function processCSV(csvPath, addressIndex) {
 
   for await (const line of rl) {
     if (!headers) {
-      headers = line.split(',').map(h => h.trim().toLowerCase());
+      headers = line.split(',').map((h) => h.trim().toLowerCase());
       continue;
     }
 
@@ -96,7 +100,8 @@ async function processCSV(csvPath, addressIndex) {
 
     if (!isNaN(lon) && !isNaN(lat) && number && street) {
       // Create normalized address key
-      const normalizedStreet = street.toUpperCase()
+      const normalizedStreet = street
+        .toUpperCase()
         .replace(/\./g, '')
         .replace(/\bSTREET\b/g, 'ST')
         .replace(/\bAVENUE\b/g, 'AVE')

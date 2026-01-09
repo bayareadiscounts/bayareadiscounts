@@ -71,11 +71,13 @@ This guide explains eligibility for disability-related discounts and services, i
 SSDI provides monthly benefits to people who have worked and paid Social Security taxes but can no longer work due to a qualifying disability.
 
 **Eligibility:**
+
 - Must have a medical condition expected to last at least one year or result in death
 - Must be unable to perform substantial gainful activity (SGA)
 - Must have earned enough work credits (typically 20 credits in the last 10 years)
 
 **2026 Benefit Amounts:**
+
 - Average monthly benefit: ~$1,580
 - Maximum monthly benefit: ~$3,900
 
@@ -96,12 +98,14 @@ SSDI provides monthly benefits to people who have worked and paid Social Securit
 SSI provides monthly cash assistance to people with disabilities (and seniors 65+) who have limited income and resources.
 
 **Eligibility:**
+
 - Blind or have a qualifying disability
 - Limited income (varies by living situation)
 - Limited resources (under $2,000 individual / $3,000 couple)
 - U.S. citizen or qualifying non-citizen
 
 **2026 Benefit Amounts:**
+
 - Federal: $967/month individual, $1,450/month couple
 - California adds a state supplement increasing total benefits
 
@@ -119,13 +123,13 @@ SSI provides monthly cash assistance to people with disabilities (and seniors 65
   </summary>
   <div class="expandable-content">
 
-| Feature | SSDI | SSI |
-|---------|------|-----|
-| Based on | Work history | Financial need |
-| Work credits required? | Yes | No |
-| Asset limits? | No | Yes |
-| Health coverage | Medicare (after 24 months) | Medi-Cal (immediate) |
-| Can receive both? | Yes, if you meet both requirements | Yes |
+| Feature                | SSDI                               | SSI                  |
+| ---------------------- | ---------------------------------- | -------------------- |
+| Based on               | Work history                       | Financial need       |
+| Work credits required? | Yes                                | No                   |
+| Asset limits?          | No                                 | Yes                  |
+| Health coverage        | Medicare (after 24 months)         | Medi-Cal (immediate) |
+| Can receive both?      | Yes, if you meet both requirements | Yes                  |
 
   </div>
 </details>
@@ -144,12 +148,14 @@ SSI provides monthly cash assistance to people with disabilities (and seniors 65
 California's Medicaid program provides comprehensive health coverage.
 
 **Eligibility Pathways:**
+
 - Receiving SSI (automatic enrollment)
 - Low income with disability
 - Working Disabled Program (higher income limits for those who work)
 - Aged & Disabled Federal Poverty Level program
 
 **What's Covered:**
+
 - Doctor and hospital visits
 - Prescription drugs
 - Mental health services
@@ -172,6 +178,7 @@ California's Medicaid program provides comprehensive health coverage.
 IHSS helps people with disabilities remain safely in their homes by providing paid caregivers.
 
 **Services Include:**
+
 - Housecleaning, laundry, meal preparation
 - Personal care (bathing, dressing, grooming)
 - Accompaniment to medical appointments
@@ -179,6 +186,7 @@ IHSS helps people with disabilities remain safely in their homes by providing pa
 - Paramedical services (under nurse supervision)
 
 **Eligibility:**
+
 - Must be on Medi-Cal
 - Must meet functional needs assessment
 
@@ -197,6 +205,7 @@ IHSS helps people with disabilities remain safely in their homes by providing pa
 California's 21 Regional Centers provide services to people with developmental disabilities.
 
 **Who Qualifies:**
+
 - Intellectual disability
 - Cerebral palsy
 - Epilepsy
@@ -204,6 +213,7 @@ California's 21 Regional Centers provide services to people with developmental d
 - Other conditions requiring similar services (diagnosed before age 18)
 
 **Services Include:**
+
 - Case management and care coordination
 - Early intervention services for infants/toddlers
 - Day programs and supported employment
@@ -279,19 +289,23 @@ California's 21 Regional Centers provide services to people with developmental d
 Different discount programs accept different proof:
 
 **SSI/SSDI Recipients:**
+
 - Social Security award letter
 - Medicare card (for SSDI after 24 months)
 - Monthly benefit statement from SSA
 
 **Veterans with Service-Connected Disabilities:**
+
 - VA disability rating letter
 - Veteran Health ID Card (VHIC)
 
 **Regional Center Clients:**
+
 - Individual Program Plan (IPP)
 - Regional Center ID or eligibility letter
 
 **Other Disabilities:**
+
 - State Disabled Parking Placard (DMV form REG 195)
 - Doctor's verification letter
 - DMV Disabled Person ID card
@@ -351,12 +365,14 @@ Provides discounted fares across multiple Bay Area transit agencies.
   <div class="expandable-content">
 
 **America the Beautiful Access Pass**
+
 - Free lifetime pass for U.S. citizens with permanent disabilities
 - Covers entrance fees at federal recreation sites
 - 50% discount on some amenity fees
 - [nps.gov/subjects/accessibility/access-pass.htm](https://www.nps.gov/subjects/accessibility/access-pass.htm)
 
 **California State Parks Disabled Discount Pass**
+
 - 50% discount on camping and day use
 - Must have permanent disability
 - [parks.ca.gov](https://www.parks.ca.gov/?page_id=1049)
@@ -373,6 +389,7 @@ Provides discounted fares across multiple Bay Area transit agencies.
 
 **National Relay Service**
 Free service for deaf, hard of hearing, or speech-disabled individuals.
+
 - TTY: 711
 - [fcc.gov/trs](https://www.fcc.gov/trs)
 
@@ -442,6 +459,7 @@ See the [Utility Programs Guide]({{ site.baseurl }}/eligibility/utility-programs
 </div>
 
 **Filing Complaints:**
+
 - Employment: [EEOC.gov](https://www.eeoc.gov/)
 - Public services: [ada.gov](https://www.ada.gov/)
 - California: [DFEH](https://calcivilrights.ca.gov/)

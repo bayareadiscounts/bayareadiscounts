@@ -224,7 +224,9 @@ function validateProgram(
   }
   if (program.longitude !== undefined && program.longitude !== null) {
     if (!isValidLongitude(program.longitude)) {
-      errors.push(`Invalid longitude: "${program.longitude}" (should be -124 to -121 for Bay Area)`);
+      errors.push(
+        `Invalid longitude: "${program.longitude}" (should be -124 to -121 for Bay Area)`
+      );
     }
   }
 
@@ -358,7 +360,9 @@ function main(): void {
   // Load suppressed IDs
   const suppressedIds = loadSuppressedIds();
   if (suppressedIds.size > 0) {
-    console.log(`${colors.blue}✓${colors.reset} Loaded ${suppressedIds.size} suppressed program IDs\n`);
+    console.log(
+      `${colors.blue}✓${colors.reset} Loaded ${suppressedIds.size} suppressed program IDs\n`
+    );
   } else {
     console.log('');
   }
@@ -407,7 +411,9 @@ function main(): void {
 
       if (showWarnings) {
         for (const warning of results.warnings) {
-          console.log(`  ${colors.yellow}WARN${colors.reset}  [${warning.program}]: ${warning.message}`);
+          console.log(
+            `  ${colors.yellow}WARN${colors.reset}  [${warning.program}]: ${warning.message}`
+          );
         }
       }
     }
@@ -430,8 +436,12 @@ function main(): void {
   if (totalSkipped > 0) {
     console.log(`Skipped:        ${colors.blue}${totalSkipped}${colors.reset} (suppressed)`);
   }
-  console.log(`Errors:         ${totalErrors > 0 ? colors.red : colors.green}${totalErrors}${colors.reset}`);
-  console.log(`Warnings:       ${totalWarnings > 0 ? colors.yellow : colors.green}${totalWarnings}${colors.reset}`);
+  console.log(
+    `Errors:         ${totalErrors > 0 ? colors.red : colors.green}${totalErrors}${colors.reset}`
+  );
+  console.log(
+    `Warnings:       ${totalWarnings > 0 ? colors.yellow : colors.green}${totalWarnings}${colors.reset}`
+  );
   console.log(
     `Duplicates:     ${duplicatesFound.length > 0 ? colors.red : colors.green}${duplicatesFound.length}${colors.reset}`
   );

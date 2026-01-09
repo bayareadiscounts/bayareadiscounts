@@ -18,7 +18,7 @@ import { translateTexts } from '../shared/translation';
 const cache = createCache({
   storage: window.localStorage,
   maxEntries: 50,
-  ttlMs: 1000 * 60 * 60 * 24 * 7
+  ttlMs: 1000 * 60 * 60 * 24 * 7,
 });
 
 const api = new ApiClient({ cache });
@@ -45,12 +45,16 @@ import { createCache } from '../shared/cache';
 
 const storage = new MMKV();
 const storageAdapter = {
-  getItem: key => storage.getString(key),
+  getItem: (key) => storage.getString(key),
   setItem: (key, value) => storage.set(key, value),
-  removeItem: key => storage.delete(key)
+  removeItem: (key) => storage.delete(key),
 };
 
-const cache = createCache({ storage: storageAdapter, maxEntries: 50, ttlMs: 1000 * 60 * 60 * 24 * 7 });
+const cache = createCache({
+  storage: storageAdapter,
+  maxEntries: 50,
+  ttlMs: 1000 * 60 * 60 * 24 * 7,
+});
 const api = new ApiClient({ cache, fetchFn: fetch });
 
 const { data } = await api.getPrograms({ area: 'San Francisco' });

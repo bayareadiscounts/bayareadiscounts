@@ -133,34 +133,34 @@ Ranked Results
 
 ### Frontend
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| Web Framework | Astro 5 | Static site generation |
-| Styling | Tailwind CSS 3 | Utility-first CSS |
-| Maps | MapLibre GL | Open-source mapping |
-| Tiles | PMTiles | Efficient map tiles |
-| Search | Fuse.js | Client-side fuzzy search |
-| Testing | Playwright | E2E and accessibility tests |
+| Component     | Technology     | Purpose                     |
+| ------------- | -------------- | --------------------------- |
+| Web Framework | Astro 5        | Static site generation      |
+| Styling       | Tailwind CSS 3 | Utility-first CSS           |
+| Maps          | MapLibre GL    | Open-source mapping         |
+| Tiles         | PMTiles        | Efficient map tiles         |
+| Search        | Fuse.js        | Client-side fuzzy search    |
+| Testing       | Playwright     | E2E and accessibility tests |
 
 ### Mobile/Desktop
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| Framework | Flutter | Cross-platform UI |
-| State | Provider | Reactive state management |
-| Navigation | go_router | Declarative routing |
-| Location | Geolocator | Privacy-first GPS |
-| Crash Reports | Sentry | Error tracking (opt-in) |
+| Component     | Technology | Purpose                   |
+| ------------- | ---------- | ------------------------- |
+| Framework     | Flutter    | Cross-platform UI         |
+| State         | Provider   | Reactive state management |
+| Navigation    | go_router  | Declarative routing       |
+| Location      | Geolocator | Privacy-first GPS         |
+| Crash Reports | Sentry     | Error tracking (opt-in)   |
 
 ### Backend
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| Compute | Azure Functions | Serverless execution |
-| AI/LLM | Cloudflare Workers AI | Smart search keywords |
-| Search | Azure AI Search | Program indexing |
-| CDN | Azure Static Web Apps | Global distribution |
-| Analytics | Plausible CE | Privacy-first analytics |
+| Component | Technology            | Purpose                 |
+| --------- | --------------------- | ----------------------- |
+| Compute   | Azure Functions       | Serverless execution    |
+| AI/LLM    | Cloudflare Workers AI | Smart search keywords   |
+| Search    | Azure AI Search       | Program indexing        |
+| CDN       | Azure Static Web Apps | Global distribution     |
+| Analytics | Plausible CE          | Privacy-first analytics |
 
 ## Key Design Decisions
 
@@ -176,10 +176,11 @@ Programs are stored in human-readable YAML files rather than a database:
   description: Monthly grocery benefits
   link: https://www.getcalfresh.org
   verified_by: USA.gov
-  verified_date: "2025-01-01"
+  verified_date: '2025-01-01'
 ```
 
 **Benefits:**
+
 - Version-controlled with Git history
 - Human-readable and editable
 - No database maintenance
@@ -191,6 +192,7 @@ Programs are stored in human-readable YAML files rather than a database:
 JSON APIs are pre-generated at build time rather than served dynamically:
 
 **Benefits:**
+
 - Zero runtime database queries
 - Global CDN caching
 - Works offline after first load
@@ -238,13 +240,13 @@ Both web and mobile apps consume the same JSON API:
 
 ### CI/CD Workflows
 
-| Workflow | Trigger | Purpose |
-|----------|---------|---------|
-| `ci.yml` | PR | Lint, test, validate |
-| `deploy.yml` | Push to main | Deploy to Azure |
-| `release.yml` | Tag | Build mobile releases |
-| `codeql.yml` | Schedule | Security scanning |
-| `update-carbon-stats.yml` | Daily | Refresh sustainability data |
+| Workflow                  | Trigger      | Purpose                     |
+| ------------------------- | ------------ | --------------------------- |
+| `ci.yml`                  | PR           | Lint, test, validate        |
+| `deploy.yml`              | Push to main | Deploy to Azure             |
+| `release.yml`             | Tag          | Build mobile releases       |
+| `codeql.yml`              | Schedule     | Security scanning           |
+| `update-carbon-stats.yml` | Daily        | Refresh sustainability data |
 
 ### Infrastructure
 

@@ -11,7 +11,8 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const SEARCH_ENDPOINT = process.env.AZURE_SEARCH_ENDPOINT || 'https://baynavigator-search.search.windows.net';
+const SEARCH_ENDPOINT =
+  process.env.AZURE_SEARCH_ENDPOINT || 'https://baynavigator-search.search.windows.net';
 const SEARCH_KEY = process.env.AZURE_SEARCH_KEY;
 const INDEX_NAME = 'programs';
 
@@ -27,8 +28,8 @@ const areaMapping = {
   'Solano County': 'solano-county',
   'Sonoma County': 'sonoma-county',
   'Bay Area': 'bay-area',
-  'Statewide': 'statewide',
-  'Nationwide': 'nationwide',
+  Statewide: 'statewide',
+  Nationwide: 'nationwide',
 };
 
 async function loadPrograms() {
@@ -38,9 +39,7 @@ async function loadPrograms() {
   // Skip non-program files
   const skipFiles = ['groups.yml', 'cities.yml'];
 
-  const files = fs.readdirSync(dataDir).filter(f =>
-    f.endsWith('.yml') && !skipFiles.includes(f)
-  );
+  const files = fs.readdirSync(dataDir).filter((f) => f.endsWith('.yml') && !skipFiles.includes(f));
 
   for (const file of files) {
     const content = fs.readFileSync(path.join(dataDir, file), 'utf8');
@@ -59,7 +58,7 @@ function transformProgram(program) {
   let areas = [];
   if (program.area) {
     const areaNames = Array.isArray(program.area) ? program.area : [program.area];
-    areas = areaNames.map(name => areaMapping[name] || name.toLowerCase().replace(/\s+/g, '-'));
+    areas = areaNames.map((name) => areaMapping[name] || name.toLowerCase().replace(/\s+/g, '-'));
   }
 
   return {
@@ -96,7 +95,7 @@ async function uploadToSearch(documents) {
           'api-key': SEARCH_KEY,
         },
         body: JSON.stringify({
-          value: batch.map(doc => ({
+          value: batch.map((doc) => ({
             '@search.action': 'mergeOrUpload',
             ...doc,
           })),
@@ -110,7 +109,7 @@ async function uploadToSearch(documents) {
     }
 
     const result = await response.json();
-    uploaded += result.value.filter(r => r.status).length;
+    uploaded += result.value.filter((r) => r.status).length;
     console.log(`Uploaded ${uploaded}/${documents.length} documents...`);
   }
 
@@ -136,7 +135,7 @@ async function main() {
   console.log(`Successfully synced ${uploaded} programs to search index`);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('Error:', err);
   process.exit(1);
 });

@@ -3,124 +3,256 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 ---
 
-<BaseLayout title="Partnerships" description="Partner with Bay Navigator to share your program data and reach more people in need across the San Francisco Bay Area.">
+<BaseLayout
+  title="Partnerships"
+  description="Partner with Bay Navigator to share your program data and reach more people in need across the San Francisco Bay Area."
+>
   <!-- Header Section -->
-  <section class="bg-gradient-to-b from-primary-50 to-white dark:from-neutral-800 dark:to-neutral-900 py-12">
+  <section
+    class="bg-gradient-to-b from-primary-50 to-white dark:from-neutral-800 dark:to-neutral-900 py-12"
+  >
     <div class="container-page">
       <Breadcrumb items={[{ label: 'Partnerships', href: '/partnerships' }]} />
       <h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
         Partner With Us
       </h1>
       <p class="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl">
-        Help us connect more Bay Area residents to the programs and services they need. We welcome partnerships with government agencies, nonprofits, and community organizations.
+        Help us connect more Bay Area residents to the programs and services they need. We welcome
+        partnerships with government agencies, nonprofits, and community organizations.
       </p>
     </div>
   </section>
 
   <!-- Value Proposition Section -->
-  <section class="section bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-neutral-800 dark:via-neutral-900 dark:to-neutral-800">
+  <section
+    class="section bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-neutral-800 dark:via-neutral-900 dark:to-neutral-800"
+  >
     <div class="container-page">
       <div class="text-center mb-12">
         <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-4">
           Why Partner with Bay Navigator?
         </h2>
         <p class="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-          Promote your services on a modern platform built with the highest standards for privacy, accessibility, and sustainability.
+          Promote your services on a modern platform built with the highest standards for privacy,
+          accessibility, and sustainability.
         </p>
       </div>
 
       <!-- Key Value Props -->
       <div class="grid lg:grid-cols-3 gap-8 mb-12 items-stretch">
         <!-- Value Prop 1: Privacy & Standards -->
-        <div class="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-          <div class="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/50 dark:to-primary-800/50 rounded-xl flex items-center justify-center mb-6 flex-shrink-0">
-            <svg class="w-7 h-7 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900/50 dark:to-primary-800/50 rounded-xl flex items-center justify-center mb-6 flex-shrink-0"
+          >
+            <svg
+              class="w-7 h-7 text-primary-600 dark:text-primary-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-3">Industry-Leading Standards</h3>
+          <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-3">
+            Industry-Leading Standards
+          </h3>
           <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-            Promote your services on a sophisticated yet simple platform with some of the highest user privacy, transparency, accessibility, and environmental sustainability standards on the web.
+            Promote your services on a sophisticated yet simple platform with some of the highest
+            user privacy, transparency, accessibility, and environmental sustainability standards on
+            the web.
           </p>
           <ul class="space-y-2 text-sm">
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-primary-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <a href="/privacy" class="hover:text-primary-600 dark:hover:text-primary-400">Privacy-first design</a> — no tracking, no ads
+              <a href="/privacy" class="hover:text-primary-600 dark:hover:text-primary-400"
+                >Privacy-first design</a
+              > — no tracking, no ads
             </li>
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-primary-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <a href="/accessibility" class="hover:text-primary-600 dark:hover:text-primary-400">WCAG 2.2 AAA accessibility</a>
+              <a href="/accessibility" class="hover:text-primary-600 dark:hover:text-primary-400"
+                >WCAG 2.2 AAA accessibility</a
+              >
             </li>
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-primary-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <a href="/sustainability" class="hover:text-primary-600 dark:hover:text-primary-400">100% renewable-powered infrastructure</a>
+              <a href="/sustainability" class="hover:text-primary-600 dark:hover:text-primary-400"
+                >100% renewable-powered infrastructure</a
+              >
             </li>
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-primary-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
-              <a href="https://github.com/baytides/baynavigator" target="_blank" rel="noopener noreferrer" class="hover:text-primary-600 dark:hover:text-primary-400">Open source & transparent</a>
+              <a
+                href="https://github.com/baytides/baynavigator"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-primary-600 dark:hover:text-primary-400"
+                >Open source & transparent</a
+              >
             </li>
           </ul>
         </div>
 
         <!-- Value Prop 2: Multi-Platform -->
-        <div class="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-          <div class="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/50 dark:to-blue-800/50 rounded-xl flex items-center justify-center mb-6 flex-shrink-0">
-            <svg class="w-7 h-7 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/50 dark:to-blue-800/50 rounded-xl flex items-center justify-center mb-6 flex-shrink-0"
+          >
+            <svg
+              class="w-7 h-7 text-blue-600 dark:text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-3">Reach Users Everywhere</h3>
+          <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-3">
+            Reach Users Everywhere
+          </h3>
           <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-            Native apps for every major platform plus PWA and offline support ensure all users can access the directory anytime, anywhere — even without internet.
+            Native apps for every major platform plus PWA and offline support ensure all users can
+            access the directory anytime, anywhere — even without internet.
           </p>
           <div class="grid grid-cols-3 gap-3">
             <!-- iOS - Apple logo -->
-            <div class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-              <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            <div
+              class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                ></path>
               </svg>
               <span class="text-xs text-neutral-600 dark:text-neutral-400">iOS</span>
             </div>
             <!-- Android - Robot head -->
-            <div class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-              <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.463 11.463 0 00-8.94 0L5.65 5.67c-.19-.29-.54-.38-.84-.22-.3.16-.42.54-.26.85L6.4 9.48A10.78 10.78 0 003 18h18a10.78 10.78 0 00-3.4-8.52zM8.5 14c-.83 0-1.5-.67-1.5-1.5S7.67 11 8.5 11s1.5.67 1.5 1.5S9.33 14 8.5 14zm7 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+            <div
+              class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.463 11.463 0 00-8.94 0L5.65 5.67c-.19-.29-.54-.38-.84-.22-.3.16-.42.54-.26.85L6.4 9.48A10.78 10.78 0 003 18h18a10.78 10.78 0 00-3.4-8.52zM8.5 14c-.83 0-1.5-.67-1.5-1.5S7.67 11 8.5 11s1.5.67 1.5 1.5S9.33 14 8.5 14zm7 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+                ></path>
               </svg>
               <span class="text-xs text-neutral-600 dark:text-neutral-400">Android</span>
             </div>
             <!-- Mac - Apple logo (same as iOS, represents macOS) -->
-            <div class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-              <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            <div
+              class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                ></path>
               </svg>
               <span class="text-xs text-neutral-600 dark:text-neutral-400">Mac</span>
             </div>
             <!-- Windows - 4-pane window logo -->
-            <div class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-              <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.2L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22l-10-1.91V13.1l10 .15z"/>
+            <div
+              class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.2L20 3zM3 13l6 .09v6.81l-6-1.15V13zm17 .25V22l-10-1.91V13.1l10 .15z"
+                ></path>
               </svg>
               <span class="text-xs text-neutral-600 dark:text-neutral-400">Windows</span>
             </div>
             <!-- Linux - Tux penguin -->
-            <div class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-              <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.504 0c-.155 0-.311.004-.466.013a6.5 6.5 0 00-1.545.193 5.2 5.2 0 00-.98.356c-.31.145-.615.34-.913.563-.597.448-1.058 1.067-1.455 1.734-.786 1.32-1.191 2.962-1.37 4.614-.173 1.6-.158 3.238.024 4.678.174 1.374.516 2.576 1.023 3.426a5.44 5.44 0 00.283.416l-.031.03c-.19.186-.322.405-.397.656-.074.249-.083.51-.037.764.047.254.152.496.313.715.082.11.178.217.29.31l-.03.031a3.02 3.02 0 00-.69.864 2.4 2.4 0 00-.236.68 2.2 2.2 0 00.015.735c.063.32.198.621.384.887.37.527.93.864 1.526 1.013.596.148 1.224.1 1.77-.126a2.77 2.77 0 00.552-.286l.025.025c.274.222.59.4.93.528a3.8 3.8 0 001.07.238 4.2 4.2 0 001.066-.061 3.7 3.7 0 00.971-.318c.354-.164.676-.38.96-.64l.022-.022c.156.1.33.183.513.245a2.4 2.4 0 001.137.078c.37-.055.722-.194 1.02-.405.594-.423.989-1.06 1.112-1.757a2.5 2.5 0 00-.233-1.474 2.5 2.5 0 00-.297-.443l.029-.03c.197-.193.362-.417.49-.664.255-.494.378-1.053.313-1.6-.044-.368-.15-.726-.313-1.06l.024-.024c.234-.08.46-.19.67-.328a2.9 2.9 0 00.556-.49 2.6 2.6 0 00.4-.587c.193-.41.305-.865.348-1.32.053-.562-.022-1.137-.209-1.662-.231-.649-.612-1.225-1.09-1.678a4.25 4.25 0 00-1.03-.723c-.402-.208-.83-.36-1.27-.44a5.7 5.7 0 00-1.335-.089c-.132.006-.263.017-.393.032l-.024-.024a4.87 4.87 0 00-.393-.564 5.35 5.35 0 00-1.215-1.134 5.3 5.3 0 00-.764-.457A4.9 4.9 0 0014.1.34a6 6 0 00-.871-.17A6.7 6.7 0 0012.504 0z"/>
+            <div
+              class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12.504 0c-.155 0-.311.004-.466.013a6.5 6.5 0 00-1.545.193 5.2 5.2 0 00-.98.356c-.31.145-.615.34-.913.563-.597.448-1.058 1.067-1.455 1.734-.786 1.32-1.191 2.962-1.37 4.614-.173 1.6-.158 3.238.024 4.678.174 1.374.516 2.576 1.023 3.426a5.44 5.44 0 00.283.416l-.031.03c-.19.186-.322.405-.397.656-.074.249-.083.51-.037.764.047.254.152.496.313.715.082.11.178.217.29.31l-.03.031a3.02 3.02 0 00-.69.864 2.4 2.4 0 00-.236.68 2.2 2.2 0 00.015.735c.063.32.198.621.384.887.37.527.93.864 1.526 1.013.596.148 1.224.1 1.77-.126a2.77 2.77 0 00.552-.286l.025.025c.274.222.59.4.93.528a3.8 3.8 0 001.07.238 4.2 4.2 0 001.066-.061 3.7 3.7 0 00.971-.318c.354-.164.676-.38.96-.64l.022-.022c.156.1.33.183.513.245a2.4 2.4 0 001.137.078c.37-.055.722-.194 1.02-.405.594-.423.989-1.06 1.112-1.757a2.5 2.5 0 00-.233-1.474 2.5 2.5 0 00-.297-.443l.029-.03c.197-.193.362-.417.49-.664.255-.494.378-1.053.313-1.6-.044-.368-.15-.726-.313-1.06l.024-.024c.234-.08.46-.19.67-.328a2.9 2.9 0 00.556-.49 2.6 2.6 0 00.4-.587c.193-.41.305-.865.348-1.32.053-.562-.022-1.137-.209-1.662-.231-.649-.612-1.225-1.09-1.678a4.25 4.25 0 00-1.03-.723c-.402-.208-.83-.36-1.27-.44a5.7 5.7 0 00-1.335-.089c-.132.006-.263.017-.393.032l-.024-.024a4.87 4.87 0 00-.393-.564 5.35 5.35 0 00-1.215-1.134 5.3 5.3 0 00-.764-.457A4.9 4.9 0 0014.1.34a6 6 0 00-.871-.17A6.7 6.7 0 0012.504 0z"
+                ></path>
               </svg>
               <span class="text-xs text-neutral-600 dark:text-neutral-400">Linux</span>
             </div>
             <!-- visionOS - Apple Vision Pro style goggles -->
-            <div class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-              <svg class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M2.5 9.5C2.5 7.01 4.51 5 7 5h10c2.49 0 4.5 2.01 4.5 4.5v5c0 2.49-2.01 4.5-4.5 4.5H7c-2.49 0-4.5-2.01-4.5-4.5v-5zM7 7a2.5 2.5 0 00-2.5 2.5v5A2.5 2.5 0 007 17h10a2.5 2.5 0 002.5-2.5v-5A2.5 2.5 0 0017 7H7zm.5 5a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0zm7 0a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z"/>
+            <div
+              class="flex flex-col items-center p-3 bg-neutral-50 dark:bg-neutral-800 rounded-lg"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-700 dark:text-neutral-300 mb-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2.5 9.5C2.5 7.01 4.51 5 7 5h10c2.49 0 4.5 2.01 4.5 4.5v5c0 2.49-2.01 4.5-4.5 4.5H7c-2.49 0-4.5-2.01-4.5-4.5v-5zM7 7a2.5 2.5 0 00-2.5 2.5v5A2.5 2.5 0 007 17h10a2.5 2.5 0 002.5-2.5v-5A2.5 2.5 0 0017 7H7zm.5 5a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0zm7 0a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z"
+                ></path>
               </svg>
               <span class="text-xs text-neutral-600 dark:text-neutral-400">visionOS</span>
             </div>
@@ -128,7 +260,10 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           <div class="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
             <div class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300">
               <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               PWA + offline support on all platforms
             </div>
@@ -136,38 +271,81 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         </div>
 
         <!-- Value Prop 3: Data Control -->
-        <div class="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-          <div class="w-14 h-14 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900/50 dark:to-green-800/50 rounded-xl flex items-center justify-center mb-6 flex-shrink-0">
-            <svg class="w-7 h-7 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900/50 dark:to-green-800/50 rounded-xl flex items-center justify-center mb-6 flex-shrink-0"
+          >
+            <svg
+              class="w-7 h-7 text-green-600 dark:text-green-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+              ></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-3">Full Data Control</h3>
           <p class="text-neutral-600 dark:text-neutral-300 mb-4">
-            For API partners, you maintain complete control over the data you present to users. Update on your terms using your existing platforms — we sync automatically.
+            For API partners, you maintain complete control over the data you present to users.
+            Update on your terms using your existing platforms — we sync automatically.
           </p>
           <ul class="space-y-2 text-sm">
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-green-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               Your data, your control
             </li>
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-green-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               Automatic sync with your existing systems
             </li>
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-green-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               No duplicate data entry required
             </li>
             <li class="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-              <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <svg
+                class="w-4 h-4 text-green-500 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
               Real-time updates across all platforms
             </li>
@@ -177,39 +355,87 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
       <!-- Additional Benefits Row -->
       <div class="grid md:grid-cols-3 gap-6 items-stretch">
-        <div class="flex items-start gap-4 p-5 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 h-full">
-          <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-            <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+        <div
+          class="flex items-start gap-4 p-5 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 h-full"
+        >
+          <div
+            class="w-10 h-10 bg-amber-100 dark:bg-amber-900/50 rounded-lg flex items-center justify-center flex-shrink-0"
+          >
+            <svg
+              class="w-5 h-5 text-amber-600 dark:text-amber-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
             </svg>
           </div>
           <div>
             <h4 class="font-semibold text-neutral-900 dark:text-white mb-1">Reach More People</h4>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">Your programs are discovered by Bay Area residents searching for assistance.</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              Your programs are discovered by Bay Area residents searching for assistance.
+            </p>
           </div>
         </div>
 
-        <div class="flex items-start gap-4 p-5 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 h-full">
-          <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-            <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+        <div
+          class="flex items-start gap-4 p-5 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 h-full"
+        >
+          <div
+            class="w-10 h-10 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center flex-shrink-0"
+          >
+            <svg
+              class="w-5 h-5 text-purple-600 dark:text-purple-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              ></path>
             </svg>
           </div>
           <div>
             <h4 class="font-semibold text-neutral-900 dark:text-white mb-1">Verified Badge</h4>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">Programs from official sources display a verification badge, building trust.</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              Programs from official sources display a verification badge, building trust.
+            </p>
           </div>
         </div>
 
-        <div class="flex items-start gap-4 p-5 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 h-full">
-          <div class="w-10 h-10 bg-red-100 dark:bg-red-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-            <svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        <div
+          class="flex items-start gap-4 p-5 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 h-full"
+        >
+          <div
+            class="w-10 h-10 bg-red-100 dark:bg-red-900/50 rounded-lg flex items-center justify-center flex-shrink-0"
+          >
+            <svg
+              class="w-5 h-5 text-red-600 dark:text-red-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
             </svg>
           </div>
           <div>
             <h4 class="font-semibold text-neutral-900 dark:text-white mb-1">100% Free</h4>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">No fees, no subscriptions. Ever. We're a 501(c)(3) public charity.</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              No fees, no subscriptions. Ever. We're a 501(c)(3) public charity.
+            </p>
           </div>
         </div>
       </div>
@@ -223,68 +449,125 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         How to Share Your Data
       </h2>
       <p class="text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl">
-        Choose the method that works best for your organization. All three options result in your programs being listed on Bay Navigator.
+        Choose the method that works best for your organization. All three options result in your
+        programs being listed on Bay Navigator.
       </p>
 
       <div class="grid md:grid-cols-3 gap-6 items-stretch">
         <!-- Option 1: API Integration -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors h-full flex flex-col">
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors h-full flex flex-col"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-5 h-5 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            <div
+              class="w-10 h-10 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">API Integration</h3>
           </div>
           <p class="text-neutral-600 dark:text-neutral-300 mb-4 flex-grow">
-            If you have an existing public API with program data, we can integrate it directly. Your data stays up-to-date automatically.
+            If you have an existing public API with program data, we can integrate it directly. Your
+            data stays up-to-date automatically.
           </p>
           <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800 mt-auto">
             <p class="text-sm text-neutral-600 dark:text-neutral-300">
-              <span class="font-medium text-neutral-900 dark:text-white">Ideal for:</span> Government agencies, large nonprofits
+              <span class="font-medium text-neutral-900 dark:text-white">Ideal for:</span> Government
+              agencies, large nonprofits
             </p>
           </div>
         </div>
 
         <!-- Option 2: Data Submission -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors h-full flex flex-col">
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors h-full flex flex-col"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            <div
+              class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-blue-600 dark:text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">Data Submission</h3>
           </div>
           <p class="text-neutral-600 dark:text-neutral-300 mb-4 flex-grow">
-            Submit your program information via spreadsheet or structured data format. We'll import and maintain it for you.
+            Submit your program information via spreadsheet or structured data format. We'll import
+            and maintain it for you.
           </p>
           <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800 mt-auto">
             <p class="text-sm text-neutral-600 dark:text-neutral-300">
-              <span class="font-medium text-neutral-900 dark:text-white">Ideal for:</span> Community orgs, smaller nonprofits
+              <span class="font-medium text-neutral-900 dark:text-white">Ideal for:</span> Community orgs,
+              smaller nonprofits
             </p>
           </div>
         </div>
 
         <!-- Option 3: GitHub Contribution -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors h-full flex flex-col">
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors h-full flex flex-col"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-neutral-700 dark:text-neutral-300" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+            <div
+              class="w-10 h-10 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-neutral-700 dark:text-neutral-300"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"></path>
               </svg>
             </div>
-            <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">GitHub Contribution</h3>
+            <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">
+              GitHub Contribution
+            </h3>
           </div>
           <p class="text-neutral-600 dark:text-neutral-300 mb-4 flex-grow">
-            Add programs directly to our open-source repository via pull request. Perfect for technical contributors.
+            Add programs directly to our open-source repository via pull request. Perfect for
+            technical contributors.
           </p>
           <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800 mt-auto">
-            <a href="https://github.com/baytides/baynavigator/blob/main/docs/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="text-sm text-primary-700 dark:text-primary-300 hover:underline font-medium inline-flex items-center gap-1">
+            <a
+              href="https://github.com/baytides/baynavigator/blob/main/docs/CONTRIBUTING.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-primary-700 dark:text-primary-300 hover:underline font-medium inline-flex items-center gap-1"
+            >
               View contributing guide
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
               </svg>
             </a>
           </div>
@@ -300,16 +583,28 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         What Information We Need
       </h2>
       <p class="text-neutral-600 dark:text-neutral-300 mb-8 max-w-2xl">
-        For each program, we collect the following information to help users find and access services.
+        For each program, we collect the following information to help users find and access
+        services.
       </p>
 
       <div class="grid md:grid-cols-3 gap-6 max-w-5xl items-stretch">
         <!-- Required -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-green-300 dark:hover:border-green-700 transition-colors h-full flex flex-col">
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-green-300 dark:hover:border-green-700 transition-colors h-full flex flex-col"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-green-100 dark:bg-green-900/50 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            <div
+              class="w-10 h-10 bg-green-100 dark:bg-green-900/50 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-green-600 dark:text-green-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">Required</h3>
@@ -339,11 +634,24 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         </div>
 
         <!-- Recommended -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-blue-300 dark:hover:border-blue-700 transition-colors h-full flex flex-col">
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-blue-300 dark:hover:border-blue-700 transition-colors h-full flex flex-col"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            <div
+              class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-blue-600 dark:text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">Recommended</h3>
@@ -369,11 +677,24 @@ import Breadcrumb from '../components/Breadcrumb.astro';
         </div>
 
         <!-- Optional -->
-        <div class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors h-full flex flex-col">
+        <div
+          class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors h-full flex flex-col"
+        >
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            <div
+              class="w-10 h-10 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 text-neutral-600 dark:text-neutral-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">Optional</h3>
@@ -409,64 +730,153 @@ import Breadcrumb from '../components/Breadcrumb.astro';
           Listing Guidelines & Policies
         </h2>
         <p class="text-neutral-600 dark:text-neutral-300 mb-8">
-          Before submitting your program, please review our partnership guidelines to ensure your listing meets our standards.
+          Before submitting your program, please review our partnership guidelines to ensure your
+          listing meets our standards.
         </p>
 
         <div class="grid sm:grid-cols-2 gap-6">
-          <a href="/partnerships/guidelines#public-benefit-standards" class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+          <a
+            href="/partnerships/guidelines#public-benefit-standards"
+            class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              <div
+                class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
                 </svg>
               </div>
-              <h3 class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">501(c)(3) Standards</h3>
+              <h3
+                class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400"
+              >
+                501(c)(3) Standards
+              </h3>
             </div>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">Public benefit requirements for all listings</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              Public benefit requirements for all listings
+            </p>
           </a>
 
-          <a href="/partnerships/guidelines#private-companies" class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+          <a
+            href="/partnerships/guidelines#private-companies"
+            class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/50 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              <div
+                class="w-10 h-10 bg-amber-100 dark:bg-amber-900/50 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-amber-600 dark:text-amber-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
                 </svg>
               </div>
-              <h3 class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">Private Companies</h3>
+              <h3
+                class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400"
+              >
+                Private Companies
+              </h3>
             </div>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">Requirements for for-profit listings</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              Requirements for for-profit listings
+            </p>
           </a>
 
-          <a href="/partnerships/guidelines#religious-organizations" class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+          <a
+            href="/partnerships/guidelines#religious-organizations"
+            class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              <div
+                class="w-10 h-10 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-purple-600 dark:text-purple-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  ></path>
                 </svg>
               </div>
-              <h3 class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">Religious Organizations</h3>
+              <h3
+                class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400"
+              >
+                Religious Organizations
+              </h3>
             </div>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">Secular service delivery requirements</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              Secular service delivery requirements
+            </p>
           </a>
 
-          <a href="/partnerships/guidelines#non-discrimination-policy" class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group">
+          <a
+            href="/partnerships/guidelines#non-discrimination-policy"
+            class="bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 hover:border-primary-300 dark:hover:border-primary-700 transition-colors group"
+          >
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-green-100 dark:bg-green-900/50 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              <div
+                class="w-10 h-10 bg-green-100 dark:bg-green-900/50 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
                 </svg>
               </div>
-              <h3 class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">Non-Discrimination</h3>
+              <h3
+                class="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400"
+              >
+                Non-Discrimination
+              </h3>
             </div>
-            <p class="text-sm text-neutral-600 dark:text-neutral-300">Equal access for all eligible individuals</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-300">
+              Equal access for all eligible individuals
+            </p>
           </a>
         </div>
 
         <div class="mt-6">
-          <a href="/partnerships/guidelines" class="inline-flex items-center gap-2 text-primary-700 dark:text-primary-300 hover:underline font-medium">
+          <a
+            href="/partnerships/guidelines"
+            class="inline-flex items-center gap-2 text-primary-700 dark:text-primary-300 hover:underline font-medium"
+          >
             View all partnership guidelines
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+              ></path>
             </svg>
           </a>
         </div>
@@ -478,15 +888,21 @@ import Breadcrumb from '../components/Breadcrumb.astro';
   <section class="section">
     <div class="container-page">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">
-          Ready to Partner?
-        </h2>
+        <h2 class="text-2xl font-bold text-neutral-900 dark:text-white mb-4">Ready to Partner?</h2>
         <p class="text-neutral-600 dark:text-neutral-300 mb-8">
-          Fill out our partnership inquiry form and we'll get back to you to discuss how we can work together to help Bay Area residents.
+          Fill out our partnership inquiry form and we'll get back to you to discuss how we can work
+          together to help Bay Area residents.
         </p>
-        <a href="/partnerships/contact" class="btn-primary py-3 px-8 text-lg font-semibold inline-flex items-center gap-2">
+        <a
+          href="/partnerships/contact"
+          class="btn-primary py-3 px-8 text-lg font-semibold inline-flex items-center gap-2"
+        >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
           </svg>
           Start Partnership Inquiry
         </a>

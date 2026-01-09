@@ -21,47 +21,137 @@ const BAY_AREA_CITIES = new Set([
   // San Francisco
   'san francisco',
   // San Mateo County
-  'daly city', 'san mateo', 'redwood city', 'menlo park', 'palo alto', 'pacifica',
-  'foster city', 'burlingame', 'san bruno', 'south san francisco', 'half moon bay',
-  'belmont', 'san carlos', 'hillsborough', 'atherton', 'woodside', 'portola valley',
-  'east palo alto', 'millbrae', 'brisbane', 'colma', 'moss beach', 'montara',
+  'daly city',
+  'san mateo',
+  'redwood city',
+  'menlo park',
+  'palo alto',
+  'pacifica',
+  'foster city',
+  'burlingame',
+  'san bruno',
+  'south san francisco',
+  'half moon bay',
+  'belmont',
+  'san carlos',
+  'hillsborough',
+  'atherton',
+  'woodside',
+  'portola valley',
+  'east palo alto',
+  'millbrae',
+  'brisbane',
+  'colma',
+  'moss beach',
+  'montara',
   // Santa Clara County
-  'san jose', 'santa clara', 'sunnyvale', 'mountain view', 'cupertino', 'milpitas',
-  'los gatos', 'campbell', 'saratoga', 'gilroy', 'morgan hill', 'los altos',
-  'los altos hills', 'monte sereno', 'stanford',
+  'san jose',
+  'santa clara',
+  'sunnyvale',
+  'mountain view',
+  'cupertino',
+  'milpitas',
+  'los gatos',
+  'campbell',
+  'saratoga',
+  'gilroy',
+  'morgan hill',
+  'los altos',
+  'los altos hills',
+  'monte sereno',
+  'stanford',
   // Alameda County
-  'oakland', 'berkeley', 'fremont', 'hayward', 'san leandro', 'alameda', 'livermore',
-  'pleasanton', 'dublin', 'union city', 'newark', 'emeryville', 'albany', 'piedmont',
-  'castro valley', 'san lorenzo',
+  'oakland',
+  'berkeley',
+  'fremont',
+  'hayward',
+  'san leandro',
+  'alameda',
+  'livermore',
+  'pleasanton',
+  'dublin',
+  'union city',
+  'newark',
+  'emeryville',
+  'albany',
+  'piedmont',
+  'castro valley',
+  'san lorenzo',
   // Contra Costa County
-  'richmond', 'concord', 'walnut creek', 'antioch', 'pittsburg', 'brentwood',
-  'danville', 'san ramon', 'martinez', 'pleasant hill', 'el cerrito', 'orinda',
-  'lafayette', 'moraga', 'hercules', 'pinole', 'el sobrante', 'clayton',
+  'richmond',
+  'concord',
+  'walnut creek',
+  'antioch',
+  'pittsburg',
+  'brentwood',
+  'danville',
+  'san ramon',
+  'martinez',
+  'pleasant hill',
+  'el cerrito',
+  'orinda',
+  'lafayette',
+  'moraga',
+  'hercules',
+  'pinole',
+  'el sobrante',
+  'clayton',
   // Marin County
-  'san rafael', 'novato', 'sausalito', 'mill valley', 'tiburon', 'corte madera',
-  'larkspur', 'san anselmo', 'fairfax', 'ross', 'belvedere', 'stinson beach',
-  'bolinas', 'point reyes station',
+  'san rafael',
+  'novato',
+  'sausalito',
+  'mill valley',
+  'tiburon',
+  'corte madera',
+  'larkspur',
+  'san anselmo',
+  'fairfax',
+  'ross',
+  'belvedere',
+  'stinson beach',
+  'bolinas',
+  'point reyes station',
   // Sonoma County
-  'santa rosa', 'petaluma', 'rohnert park', 'windsor', 'healdsburg', 'sonoma',
-  'sebastopol', 'cotati', 'cloverdale', 'bodega bay', 'guerneville', 'glen ellen',
+  'santa rosa',
+  'petaluma',
+  'rohnert park',
+  'windsor',
+  'healdsburg',
+  'sonoma',
+  'sebastopol',
+  'cotati',
+  'cloverdale',
+  'bodega bay',
+  'guerneville',
+  'glen ellen',
   // Napa County
-  'napa', 'american canyon', 'st helena', 'calistoga', 'yountville',
+  'napa',
+  'american canyon',
+  'st helena',
+  'calistoga',
+  'yountville',
   // Solano County
-  'vallejo', 'fairfield', 'vacaville', 'benicia', 'suisun city', 'dixon', 'rio vista'
+  'vallejo',
+  'fairfield',
+  'vacaville',
+  'benicia',
+  'suisun city',
+  'dixon',
+  'rio vista',
 ]);
 
 // Map IMLS museum types to our categories
 function getCategory(type) {
   const typeMap = {
     'ART MUSEUM': 'Museums',
-    'CHILDREN\'S MUSEUM': 'Museums',
+    "CHILDREN'S MUSEUM": 'Museums',
     'GENERAL MUSEUM': 'Museums',
     'HISTORY MUSEUM': 'Museums',
     'NATURAL HISTORY MUSEUM': 'Museums',
     'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM': 'Museums',
     'ZOO, AQUARIUM, OR WILDLIFE CONSERVATION': 'Recreation',
     'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER': 'Parks & Open Space',
-    'HISTORIC PRESERVATION': 'Museums'
+    'HISTORIC PRESERVATION': 'Museums',
   };
   return typeMap[type] || 'Museums';
 }
@@ -70,14 +160,20 @@ function getCategory(type) {
 function getDescription(type, name) {
   const descriptions = {
     'ART MUSEUM': 'Art museum featuring collections and exhibitions.',
-    'CHILDREN\'S MUSEUM': 'Interactive museum designed for children and families with hands-on exhibits.',
+    "CHILDREN'S MUSEUM":
+      'Interactive museum designed for children and families with hands-on exhibits.',
     'GENERAL MUSEUM': 'Museum with diverse collections and exhibits.',
     'HISTORY MUSEUM': 'Museum dedicated to preserving and presenting local and regional history.',
-    'NATURAL HISTORY MUSEUM': 'Museum featuring natural history exhibits including geology, biology, and paleontology.',
-    'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM': 'Science and technology museum with interactive exhibits and educational programs.',
-    'ZOO, AQUARIUM, OR WILDLIFE CONSERVATION': 'Wildlife facility dedicated to animal conservation and education.',
-    'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER': 'Botanical garden or nature center featuring plants and natural habitats.',
-    'HISTORIC PRESERVATION': 'Historic site or organization dedicated to preserving local heritage.'
+    'NATURAL HISTORY MUSEUM':
+      'Museum featuring natural history exhibits including geology, biology, and paleontology.',
+    'SCIENCE & TECHNOLOGY MUSEUM OR PLANETARIUM':
+      'Science and technology museum with interactive exhibits and educational programs.',
+    'ZOO, AQUARIUM, OR WILDLIFE CONSERVATION':
+      'Wildlife facility dedicated to animal conservation and education.',
+    'ARBORETUM, BOTANICAL GARDEN, OR NATURE CENTER':
+      'Botanical garden or nature center featuring plants and natural habitats.',
+    'HISTORIC PRESERVATION':
+      'Historic site or organization dedicated to preserving local heritage.',
   };
   return descriptions[type] || 'Cultural institution serving the community.';
 }
@@ -87,7 +183,7 @@ function formatPhone(phone) {
   if (!phone) return null;
   const digits = phone.replace(/\D/g, '');
   if (digits.length === 10) {
-    return `(${digits.slice(0,3)}) ${digits.slice(3,6)}-${digits.slice(6)}`;
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
   }
   return phone;
 }
@@ -97,10 +193,42 @@ function toTitleCase(str) {
   if (!str) return str;
 
   // Words that should stay lowercase (unless first word)
-  const lowercase = new Set(['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'in', 'nor', 'of', 'on', 'or', 'so', 'the', 'to', 'up', 'yet']);
+  const lowercase = new Set([
+    'a',
+    'an',
+    'and',
+    'as',
+    'at',
+    'but',
+    'by',
+    'for',
+    'in',
+    'nor',
+    'of',
+    'on',
+    'or',
+    'so',
+    'the',
+    'to',
+    'up',
+    'yet',
+  ]);
 
   // Acronyms and special cases to preserve
-  const preserve = new Set(['UC', 'SFO', 'SFMOMA', 'NASA', 'USS', 'USA', 'US', 'SF', 'CA', 'II', 'III', 'IV']);
+  const preserve = new Set([
+    'UC',
+    'SFO',
+    'SFMOMA',
+    'NASA',
+    'USS',
+    'USA',
+    'US',
+    'SF',
+    'CA',
+    'II',
+    'III',
+    'IV',
+  ]);
 
   return str
     .toLowerCase()
@@ -112,15 +240,18 @@ function toTitleCase(str) {
 
       // Handle hyphenated words
       if (word.includes('-')) {
-        return word.split('-').map(part =>
-          part.charAt(0).toUpperCase() + part.slice(1)
-        ).join('-');
+        return word
+          .split('-')
+          .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+          .join('-');
       }
 
       // Handle apostrophes (like "children's")
       if (word.includes("'")) {
         const parts = word.split("'");
-        return parts[0].charAt(0).toUpperCase() + parts[0].slice(1) + "'" + parts.slice(1).join("'");
+        return (
+          parts[0].charAt(0).toUpperCase() + parts[0].slice(1) + "'" + parts.slice(1).join("'")
+        );
       }
 
       // Keep articles lowercase unless first word
@@ -205,7 +336,9 @@ async function main() {
   // Check if CSV exists
   if (!fs.existsSync(csvPath)) {
     console.error('Museum CSV not found. Please download from Kaggle first.');
-    console.error('Run: kaggle datasets download imls/museum-directory -p data-exports/gov-datasets/ --unzip');
+    console.error(
+      'Run: kaggle datasets download imls/museum-directory -p data-exports/gov-datasets/ --unzip'
+    );
     process.exit(1);
   }
 
@@ -236,7 +369,7 @@ async function main() {
         zip: row[13],
         phone: row[14],
         lat: row[15],
-        lng: row[16]
+        lng: row[16],
       });
     }
   }
@@ -312,7 +445,7 @@ async function main() {
         groups: ['everyone'],
         sync_source: 'imls-museums',
         imls_id: museum.museumId,
-        description: getDescription(museum.type, titleName)
+        description: getDescription(museum.type, titleName),
       };
 
       // Add address if available
@@ -336,7 +469,7 @@ async function main() {
 
   // Remove old IMLS-only entries (those with sync_source: imls-museums)
   // but keep manually curated entries that were enhanced
-  const filteredData = existingData.filter(item => item.sync_source !== 'imls-museums');
+  const filteredData = existingData.filter((item) => item.sync_source !== 'imls-museums');
 
   // Add new entries
   const newData = [...filteredData, ...newEntries];
@@ -346,7 +479,7 @@ async function main() {
     lineWidth: -1,
     noRefs: true,
     quotingType: "'",
-    forceQuotes: false
+    forceQuotes: false,
   });
 
   fs.writeFileSync(recreationPath, yamlContent);
@@ -359,13 +492,15 @@ async function main() {
   // Summary by category for new entries
   if (newEntries.length > 0) {
     const byType = {};
-    newEntries.forEach(e => {
+    newEntries.forEach((e) => {
       byType[e.category] = (byType[e.category] || 0) + 1;
     });
     console.log('\nNew entries by category:');
-    Object.entries(byType).sort((a,b) => b[1] - a[1]).forEach(([cat, count]) => {
-      console.log(`  ${cat}: ${count}`);
-    });
+    Object.entries(byType)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([cat, count]) => {
+        console.log(`  ${cat}: ${count}`);
+      });
   }
 }
 

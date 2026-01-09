@@ -93,11 +93,17 @@ runGate('Validate API metadata', () => {
   const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
 
   if (!metadata.totalPrograms || metadata.totalPrograms === 0) {
-    return { passed: false, message: 'totalPrograms is 0 or missing - catastrophic data loss detected' };
+    return {
+      passed: false,
+      message: 'totalPrograms is 0 or missing - catastrophic data loss detected',
+    };
   }
 
   if (metadata.totalPrograms < 100) {
-    return { passed: false, message: `totalPrograms is only ${metadata.totalPrograms} - expected at least 100` };
+    return {
+      passed: false,
+      message: `totalPrograms is only ${metadata.totalPrograms} - expected at least 100`,
+    };
   }
 
   return { passed: true, message: `${metadata.totalPrograms} programs` };
@@ -113,7 +119,7 @@ runGate('Validate API schema', () => {
     return { passed: true, message: 'No schemas directory (skipped)' };
   }
 
-  const schemaFiles = fs.readdirSync(schemaDir).filter(f => f.endsWith('.schema.json'));
+  const schemaFiles = fs.readdirSync(schemaDir).filter((f) => f.endsWith('.schema.json'));
   if (schemaFiles.length === 0) {
     return { passed: true, message: 'No schema files (skipped)' };
   }
@@ -206,7 +212,7 @@ runGate('Generate GeoJSON', () => {
 console.log('\n' + '═'.repeat(50));
 console.log(`${colors.bold}Summary${colors.reset}\n`);
 
-const passed = gates.filter(g => g.passed).length;
+const passed = gates.filter((g) => g.passed).length;
 const total = gates.length;
 const totalDuration = gates.reduce((acc, g) => acc + g.duration, 0);
 
@@ -216,7 +222,7 @@ console.log(`Duration: ${(totalDuration / 1000).toFixed(1)}s`);
 if (failed) {
   console.log(`\n${colors.red}${colors.bold}✗ CI Gate Failed${colors.reset}`);
   console.log('\nFailed gates:');
-  for (const gate of gates.filter(g => !g.passed)) {
+  for (const gate of gates.filter((g) => !g.passed)) {
     console.log(`  ${colors.red}•${colors.reset} ${gate.name}: ${gate.error}`);
   }
   process.exit(1);

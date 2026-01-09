@@ -61,7 +61,7 @@ jobs:
 
       - name: Sign the app
         env:
-          SIGNING_IDENTITY: "Developer ID Application: Save the Shores, Inc. (C5U8Z5536K)"
+          SIGNING_IDENTITY: 'Developer ID Application: Save the Shores, Inc. (C5U8Z5536K)'
         run: |
           APP_PATH="build/macos/Build/Products/Release/Bay Navigator.app"
           codesign --deep --force --verify --verbose --sign "$SIGNING_IDENTITY" "$APP_PATH"

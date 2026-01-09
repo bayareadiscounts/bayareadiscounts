@@ -8,7 +8,13 @@ const fs = require('fs');
 const path = require('path');
 
 const inputPath = path.join(__dirname, '..', 'data-exports', 'city-councils', 'cicero-data.json');
-const outputPath = path.join(__dirname, '..', 'data-exports', 'city-councils', 'city-councils-processed.json');
+const outputPath = path.join(
+  __dirname,
+  '..',
+  'data-exports',
+  'city-councils',
+  'city-councils-processed.json'
+);
 
 const data = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
 
@@ -18,17 +24,13 @@ const processed = {
     lastUpdated: new Date().toISOString().split('T')[0],
     source: 'Cicero Data (cicerodata.com)',
     totalCities: 0,
-    totalOfficials: 0
+    totalOfficials: 0,
   },
-  cities: {}
+  cities: {},
 };
 
 // County Supervisor patterns to exclude
-const supervisorPatterns = [
-  /supervisor/i,
-  /board of supervisors/i,
-  /county.*supervisor/i
-];
+const supervisorPatterns = [/supervisor/i, /board of supervisors/i, /county.*supervisor/i];
 
 function isCityOfficial(official) {
   const title = official.title || '';
@@ -67,22 +69,22 @@ for (const [cityName, cityData] of Object.entries(data)) {
       type: 'unknown',
       members: [],
       website: null,
-      note: 'No city council data available from Cicero'
+      note: 'No city council data available from Cicero',
     };
   } else {
     // Determine if district-based or at-large
-    const hasMayor = cityOfficials.some(o => /mayor/i.test(o.title));
-    const hasDistricts = cityOfficials.some(o => /district\s*\d/i.test(o.districtName || ''));
+    const hasMayor = cityOfficials.some((o) => /mayor/i.test(o.title));
+    const hasDistricts = cityOfficials.some((o) => /district\s*\d/i.test(o.districtName || ''));
 
-    const members = cityOfficials.map(o => ({
+    const members = cityOfficials.map((o) => ({
       name: o.name,
       title: normalizeTitle(o.title),
-      district: hasDistricts ? (o.districtName?.match(/district\s*(\d+)/i)?.[1] || null) : null,
+      district: hasDistricts ? o.districtName?.match(/district\s*(\d+)/i)?.[1] || null : null,
       party: o.party,
       email: o.email,
       phone: o.phone,
       website: o.website,
-      photoUrl: o.photoUrl
+      photoUrl: o.photoUrl,
     }));
 
     processed.cities[cityName] = {
@@ -92,7 +94,7 @@ for (const [cityName, cityData] of Object.entries(data)) {
       type: hasDistricts ? 'district' : 'at-large',
       totalSeats: members.length,
       members,
-      website: null // Would need to look up city websites
+      website: null, // Would need to look up city websites
     };
 
     processed.metadata.totalOfficials += members.length;

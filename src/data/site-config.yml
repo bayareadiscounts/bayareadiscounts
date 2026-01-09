@@ -4,4 +4,4 @@
 # Tor Hidden Service (.onion) address
 # Updated automatically when the Tor VM is deployed
 # Leave empty if not yet configured
-onion_address: "7u42bzioq3cbud5rmey3sfx4odvjfryjifwx4ozonihdtdrykwjifkad.onion"
+onion_address: '7u42bzioq3cbud5rmey3sfx4odvjfryjifwx4ozonihdtdrykwjifkad.onion'

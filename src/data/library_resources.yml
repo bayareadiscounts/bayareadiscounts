@@ -24,7 +24,7 @@
   timeframe: Ongoing
   link: https://www.berkeleypubliclibrary.org/locations/tool-lending-library
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.856374
   longitude: -122.2709969
 - id: lib-002
@@ -50,7 +50,7 @@
   timeframe: Ongoing (funded through 2026)
   link: https://www.library.ca.gov/services/to-libraries/parks-pass/
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: lib-003
   name: Calm Meditation App
   category: Library Resources
@@ -75,7 +75,7 @@
   timeframe: Ongoing
   link: https://smcl.org/get-calm
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: lib-004
   name: Discover & Go Museum Passes
   category: Library Resources
@@ -100,7 +100,7 @@
   timeframe: Pass release cycles vary
   link: https://discoverandgo.org
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: lib-005
   name: Hoopla Digital
   category: Library Resources
@@ -125,7 +125,7 @@
   timeframe: Ongoing
   link: https://www.hoopladigital.com
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: lib-006
   name: Kanopy
   category: Library Resources
@@ -150,7 +150,7 @@
   timeframe: Ongoing
   link: https://www.kanopy.com/signup/find/publiclibrary
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: lib-007
   name: New York Times Digital Access
   category: Library Resources
@@ -175,7 +175,7 @@
   timeframe: 72-hour passes, renewable
   link: https://www.library.ca.gov/services/to-libraries/nyt/
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sfpl-elibrary
   name: SFPL eLibrary
   category: Library Resources
@@ -202,7 +202,7 @@
   timeframe: Ongoing
   link: https://sfpl.org/research-learn/elibrary
   link_text: Browse eLibrary
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: sfpl-digital-collections
   name: SF Digital Collections
   category: Library Resources
@@ -226,7 +226,7 @@
   timeframe: Ongoing
   link: https://digitalsf.org/
   link_text: Explore Collections
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: open-library
   name: Open Library
   category: Library Resources
@@ -252,7 +252,7 @@
   timeframe: Ongoing
   link: https://openlibrary.org/
   link_text: Browse Library
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: libby-app
   name: Libby by OverDrive
   category: Library Resources
@@ -278,7 +278,7 @@
   timeframe: Ongoing
   link: https://www.overdrive.com/apps/libby
   link_text: Get Libby
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: california-digital-newspaper-collection
   name: California Digital Newspaper Collection
   category: Library Resources
@@ -302,7 +302,7 @@
   timeframe: Ongoing
   link: https://cdnc.ucr.edu/cgi-bin/cdnc
   link_text: Search Newspapers
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: career-online-high-school
   name: Career Online High School
   category: Library Resources
@@ -329,7 +329,7 @@
   timeframe: Ongoing
   link: https://ca.careeronlinehs.org/
   link_text: Learn More
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: online-archive-of-california
   name: Online Archive of California
   category: Library Resources
@@ -354,7 +354,7 @@
   timeframe: Ongoing
   link: https://oac.cdlib.org/
   link_text: Browse Collections
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: alameda-county-library-digital
   name: Alameda County Library Digital Resources
   category: Library Resources
@@ -381,7 +381,7 @@
   timeframe: Ongoing
   link: https://aclibrary.org/resource/
   link_text: Browse Resources
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: oakland-library-digital
   name: Oakland Public Library Digital Resources
   category: Library Resources
@@ -408,7 +408,7 @@
   timeframe: Ongoing
   link: https://oaklandlibrary.org/resource/
   link_text: Browse Resources
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: san-mateo-county-library-digital
   name: San Mateo County Library Digital Resources
   category: Library Resources
@@ -435,7 +435,7 @@
   timeframe: Ongoing
   link: https://smcl.org/resource/
   link_text: Browse Resources
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: peninsula-library-digital
   name: Peninsula Library System E-Services
   category: Library Resources
@@ -461,7 +461,7 @@
   timeframe: Ongoing
   link: https://plsinfo.org/e-services/
   link_text: Browse E-Services
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: contra-costa-library-digital
   name: Contra Costa County Library Digital Resources
   category: Library Resources
@@ -488,7 +488,7 @@
   timeframe: Ongoing
   link: https://ccclib.org/resource/
   link_text: Browse Resources
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: sfpl-services
   name: San Francisco Public Library Services
   category: Library Resources
@@ -515,7 +515,7 @@
   timeframe: Ongoing
   link: https://sfpl.org/services
   link_text: Browse Services
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: santa-clara-county-library-digital
   name: Santa Clara County Library Digital Resources
   category: Library Resources
@@ -542,7 +542,7 @@
   timeframe: Ongoing
   link: https://sccld.org/resource/
   link_text: Browse Resources
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: marin-county-library-digital
   name: Marin County Free Library Digital Resources
   category: Library Resources
@@ -569,7 +569,7 @@
   timeframe: Ongoing
   link: https://marinlibrary.org/resource/
   link_text: Browse Resources
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: sonoma-county-library-digital
   name: Sonoma County Library eLibrary
   category: Library Resources
@@ -596,7 +596,7 @@
   timeframe: Ongoing
   link: https://sonomalibrary.org/elibrary/a-z
   link_text: Browse eLibrary
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: solano-county-library-digital
   name: Solano County Library 24/7 Digital Library
   category: Library Resources
@@ -623,7 +623,7 @@
   timeframe: Ongoing
   link: https://solanolibrary.com/247-digital-library/
   link_text: Browse Digital Library
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: napa-county-library-databases
   name: Napa County Library Databases
   category: Library Resources
@@ -650,4 +650,4 @@
   timeframe: Ongoing
   link: https://www.napacounty.gov/919/Databases
   link_text: Browse Databases
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'

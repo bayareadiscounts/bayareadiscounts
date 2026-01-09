@@ -53,6 +53,7 @@ This guide covers California's major public assistance programs that qualify you
         <span class="checklist-label">I have a Social Security Number (or have applied for one)</span>
       </li>
     </ul>
+
   </div>
 </div>
 
@@ -70,6 +71,7 @@ This guide covers California's major public assistance programs that qualify you
 Medi-Cal is California's Medicaid program providing free or low-cost health coverage to eligible residents.
 
 **Who May Qualify:**
+
 - Adults with income at or below 138% of the Federal Poverty Level (FPL)
 - Children in families with income up to 266% FPL
 - Pregnant individuals with income up to 213% FPL
@@ -91,6 +93,7 @@ Medi-Cal is California's Medicaid program providing free or low-cost health cove
 CalFresh is California's implementation of the federal Supplemental Nutrition Assistance Program (SNAP), providing monthly food benefits on an Electronic Benefit Transfer (EBT) card.
 
 **Who May Qualify:**
+
 - Households with gross monthly income at or below 200% FPL
 - U.S. citizens or qualified immigrants
 - Must meet work requirements if able-bodied adult without dependents (ABAWD)
@@ -112,6 +115,7 @@ CalFresh is California's implementation of the federal Supplemental Nutrition As
 California Work Opportunity and Responsibility to Kids (CalWORKs) provides temporary cash assistance and services to families with children.
 
 **Who May Qualify:**
+
 - Families with children under 18 (or 18 if still in high school)
 - Pregnant individuals
 - Must meet income and asset limits

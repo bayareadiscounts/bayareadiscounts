@@ -6,7 +6,7 @@ function createCache(options = {}) {
     maxEntries = 50,
     ttlMs = 1000 * 60 * 60 * 24 * 7,
     storage = null,
-    namespace = 'shared-cache'
+    namespace = 'shared-cache',
   } = options;
 
   const memory = new Map();
@@ -38,7 +38,7 @@ function createCache(options = {}) {
   function prune(entries) {
     const sorted = entries.sort((a, b) => b.ts - a.ts);
     const toRemove = sorted.slice(maxEntries);
-    toRemove.forEach(entry => {
+    toRemove.forEach((entry) => {
       memory.delete(entry.key);
       if (storage) storage.removeItem(entry.key);
     });
@@ -82,7 +82,7 @@ function createCache(options = {}) {
       try {
         storage.setItem(key, JSON.stringify(entry));
         const idx = readIndex();
-        const existing = idx.findIndex(e => e.key === key);
+        const existing = idx.findIndex((e) => e.key === key);
         if (existing >= 0) {
           idx[existing].ts = entry.ts;
         } else {
@@ -100,7 +100,7 @@ function createCache(options = {}) {
     if (storage) {
       try {
         storage.removeItem(key);
-        writeIndex(readIndex().filter(e => e.key !== key));
+        writeIndex(readIndex().filter((e) => e.key !== key));
       } catch (err) {
         // ignore
       }
@@ -112,7 +112,7 @@ function createCache(options = {}) {
     if (storage) {
       try {
         const idx = readIndex();
-        idx.forEach(entry => storage.removeItem(entry.key));
+        idx.forEach((entry) => storage.removeItem(entry.key));
         storage.removeItem(indexKey);
       } catch (err) {
         // ignore
@@ -126,7 +126,7 @@ function createCache(options = {}) {
       memoryEntries: memory.size,
       storedEntries: idx.length,
       ttlMs,
-      maxEntries
+      maxEntries,
     };
   }
 

@@ -51,6 +51,7 @@ az deployment group create \
 ```
 
 **What this creates:**
+
 - ✅ Cosmos DB account, database, and container
 - ✅ Azure Functions app
 - ✅ Storage account
@@ -63,6 +64,7 @@ az deployment group create \
 The Function App now uses **Managed Identity** (Azure AD) for authentication. No keys required!
 
 Your Function App has been automatically assigned:
+
 - ✅ **Cosmos DB Data Contributor** role on Cosmos DB
 - ✅ **Cognitive Services User** role on Translator
 - ✅ **Storage Account Key Operator** role on storage accounts
@@ -124,6 +126,7 @@ You should see JSON responses with your program data!
 ### Step 9: Configure GitHub Actions (5 minutes)
 
 1. **Get Function App Publish Profile:**
+
    ```bash
    az functionapp deployment list-publishing-profiles \
      --resource-group baynavigator-rg \
@@ -136,11 +139,11 @@ You should see JSON responses with your program data!
    - Click "New repository secret"
    - Add these secrets:
 
-   | Secret Name | Value |
-   |-------------|-------|
-   | `AZURE_FUNCTION_APP_NAME` | Your function app name |
+   | Secret Name                          | Value                         |
+   | ------------------------------------ | ----------------------------- |
+   | `AZURE_FUNCTION_APP_NAME`            | Your function app name        |
    | `AZURE_FUNCTION_APP_PUBLISH_PROFILE` | XML output from command above |
-   | `AZURE_RESOURCE_GROUP` | `baynavigator-rg` |
+   | `AZURE_RESOURCE_GROUP`               | `baynavigator-rg`             |
 
 3. **Test GitHub Actions:**
    - Go to Actions tab in GitHub
@@ -193,6 +196,7 @@ Or visit: [Azure Portal](https://portal.azure.com) → Your Function App → Mon
    - See `AZURE_INTEGRATION.md` for examples
 
 2. **Set up alerts**
+
    ```bash
    # Get notified if monthly cost exceeds $1
    az monitor metrics alert create \
@@ -213,7 +217,9 @@ Or visit: [Azure Portal](https://portal.azure.com) → Your Function App → Mon
 ## 🐛 Troubleshooting
 
 ### Issue: "Deployment failed"
+
 **Check:**
+
 ```bash
 # View deployment errors
 az deployment group show \
@@ -223,12 +229,15 @@ az deployment group show \
 ```
 
 ### Issue: "Migration failed"
+
 **Common causes:**
+
 - Wrong Cosmos DB credentials
 - Cosmos DB not ready yet (wait 5 minutes)
 - Network/firewall issues
 
 **Solution:**
+
 ```bash
 # Verify connection
 az cosmosdb show \
@@ -237,7 +246,9 @@ az cosmosdb show \
 ```
 
 ### Issue: "Function app not responding"
+
 **Solution:**
+
 ```bash
 # Restart function app
 az functionapp restart \
@@ -249,8 +260,10 @@ func azure functionapp logstream <function-app-name>
 ```
 
 ### Issue: "CORS errors"
+
 **Solution:**
 Update allowed origins in `infrastructure/bicep/main.bicep`:
+
 ```bicep
 cors: {
   allowedOrigins: [
@@ -260,6 +273,7 @@ cors: {
   ]
 }
 ```
+
 Then redeploy infrastructure.
 
 ## 💰 Cost Management
@@ -283,6 +297,7 @@ az consumption budget create \
 ### Stay in Free Tier
 
 Your deployment should use:
+
 - Cosmos DB: <100 RU/s (free tier: 1000 RU/s)
 - Functions: <10k executions/day (free tier: 1M/month)
 - Storage: <100 MB (free tier: 5 GB)
@@ -319,6 +334,7 @@ Before going to production:
 ## 🎉 Success!
 
 You've successfully deployed Bay Navigator to Azure! Your app is now:
+
 - ✅ Scalable (handles any traffic)
 - ✅ Fast (global CDN + serverless)
 - ✅ Reliable (99.9% uptime SLA)

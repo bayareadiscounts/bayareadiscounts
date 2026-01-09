@@ -32,12 +32,13 @@ cat tor-vm-key
 
 ### 2. Add GitHub Secrets
 
-| Secret | Description |
-|--------|-------------|
-| `TOR_VM_SSH_PUBLIC_KEY` | Contents of `tor-vm-key.pub` |
+| Secret                   | Description                                              |
+| ------------------------ | -------------------------------------------------------- |
+| `TOR_VM_SSH_PUBLIC_KEY`  | Contents of `tor-vm-key.pub`                             |
 | `TOR_VM_SSH_PRIVATE_KEY` | Contents of `tor-vm-key` (for retrieving .onion address) |
 
 The workflow also uses existing Azure OIDC secrets:
+
 - `AZURE_CLIENT_ID`
 - `AZURE_TENANT_ID`
 - `AZURE_SUBSCRIPTION_ID`
@@ -52,6 +53,7 @@ The workflow also uses existing Azure OIDC secrets:
 4. Click **Run workflow**
 
 The deployment takes ~5 minutes. Cloud-init will:
+
 - Install Tor and nginx
 - Configure the hidden service
 - Generate your unique .onion address
@@ -62,12 +64,14 @@ The deployment takes ~5 minutes. Cloud-init will:
 After deployment completes, wait 2-3 minutes, then:
 
 **Option A: Via GitHub Actions**
+
 1. Go to **Actions** → **Deploy Tor Hidden Service VM**
 2. Click **Run workflow**
 3. Select action: **get-onion-address**
 4. Check the workflow summary for your address
 
 **Option B: Via SSH**
+
 ```bash
 # SSH to the VM
 ssh azureuser@baynavigator-tor-<unique-id>.westus2.cloudapp.azure.com
@@ -103,18 +107,19 @@ sudo cat /var/lib/tor/baynavigator/hs_ed25519_secret_key | base64
 
 ## Cost
 
-| Resource | Monthly Cost |
-|----------|--------------|
-| B1s VM | ~$4-7 |
-| Managed Disk (30GB) | ~$1.20 |
-| Public IP | ~$3 |
-| **Total** | **~$8-11/month** |
+| Resource            | Monthly Cost     |
+| ------------------- | ---------------- |
+| B1s VM              | ~$4-7            |
+| Managed Disk (30GB) | ~$1.20           |
+| Public IP           | ~$3              |
+| **Total**           | **~$8-11/month** |
 
 ## Maintenance
 
 The VM runs unattended with automatic security updates via Ubuntu's `unattended-upgrades`.
 
 To check service status:
+
 ```bash
 ssh azureuser@<vm-fqdn>
 sudo systemctl status tor
@@ -122,6 +127,7 @@ sudo systemctl status nginx
 ```
 
 To view Tor logs:
+
 ```bash
 sudo journalctl -u tor -f
 ```

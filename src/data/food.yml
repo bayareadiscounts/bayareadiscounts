@@ -18,7 +18,7 @@
   timeframe: Ongoing
   link: https://www.accfb.org/
   link_text: Find Food
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: alameda-meals-on-wheels
   name: Alameda Meals on Wheels
   category: Food
@@ -39,7 +39,7 @@
   timeframe: Ongoing
   link: https://alamedamealsonwheels.org/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bernal-heights-brown-bag
   name: Bernal Heights Neighborhood Center - Brown Bag Program
   category: Food
@@ -61,7 +61,7 @@
   timeframe: Ongoing
   link: https://bhnc.org/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7391861
   longitude: -122.4161433
 - id: calfresh-online
@@ -81,7 +81,7 @@
   timeframe: Ongoing
   link: https://www.cdss.ca.gov/ebt-online
   link_text: Get Started
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: calfresh-rmp
   name: CalFresh Restaurant Meals Program (RMP)
   category: Food
@@ -102,7 +102,7 @@
   timeframe: Ongoing
   link: https://www.cdss.ca.gov/rmp
   link_text: Find Restaurants
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: food-bank-contra-costa-solano
   name: Food Bank of Contra Costa & Solano
   category: Food
@@ -123,7 +123,7 @@
   timeframe: Ongoing
   link: https://www.foodbankccs.org/
   link_text: Find Food
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: j-sei-meals-on-wheels
   name: J-Sei Meals on Wheels
   category: Food
@@ -142,7 +142,7 @@
   timeframe: Ongoing
   link: https://www.j-sei.org
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: market-match
   name: Market Match
   category: Food
@@ -160,7 +160,7 @@
   timeframe: Ongoing
   link: https://www.marketmatch.org
   link_text: Find Markets
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: mow-contra-costa
   name: Meals on Wheels Contra Costa
   category: Food
@@ -180,7 +180,7 @@
   timeframe: Ongoing
   link: https://mowcontracosta.org/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: mow-diablo-region
   name: Meals on Wheels Diablo Region
   category: Food
@@ -200,7 +200,7 @@
   timeframe: Ongoing
   link: https://www.mowdiabloregion.org/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: mow-san-francisco
   name: Meals on Wheels San Francisco
   category: Food
@@ -221,7 +221,7 @@
   timeframe: Ongoing
   link: https://www.mowsf.org/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: mow-san-mateo
   name: Meals on Wheels San Mateo County (Peninsula Volunteers)
   category: Food
@@ -242,7 +242,7 @@
   timeframe: Ongoing
   link: https://1pvi.org/mealsonwheels/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: project-open-hand
   name: Project Open Hand
   category: Food
@@ -265,7 +265,7 @@
   timeframe: Ongoing
   link: https://www.openhand.org/
   link_text: Get Meals
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: rainbow-grocery
   name: Rainbow Grocery
   category: Food
@@ -288,7 +288,7 @@
   timeframe: Ongoing
   link: https://www.rainbow.coop
   link_text: Visit Store
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7691367
   longitude: -122.4150751
 - id: second-harvest-silicon-valley
@@ -313,7 +313,7 @@
   timeframe: Ongoing
   link: https://www.shfb.org/get-food/#tool
   link_text: Find Food
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sf-marin-food-bank
   name: SF-Marin Food Bank
   category: Food
@@ -335,7 +335,7 @@
   timeframe: Ongoing
   link: https://www.sfmfoodbank.org/
   link_text: Find Food
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sos-meals-on-wheels
   name: SOS Meals on Wheels
   category: Food
@@ -356,7 +356,7 @@
   timeframe: Ongoing
   link: https://www.sosmow.org/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sourcewise-meals-on-wheels
   name: Sourcewise Meals on Wheels
   category: Food
@@ -377,7 +377,7 @@
   timeframe: Ongoing
   link: https://mysourcewise.com/programs-services/meals/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: spectrum-mow
   name: Spectrum Community Services Meals on Wheels
   category: Food
@@ -397,7 +397,7 @@
   timeframe: Ongoing
   link: https://www.spectrumcs.org/senior-services/meals-on-wheels
   link_text: Contact
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: st-anthonys-dining
   name: St. Anthony's Dining Room
   category: Food
@@ -419,7 +419,7 @@
   timeframe: Ongoing
   link: https://www.stanthonysf.org/
   link_text: Visit
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.782217
   longitude: -122.4132276
 - id: universal-school-meals
@@ -441,7 +441,7 @@
   timeframe: Ongoing (school year)
   link: https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: wic-program
   name: WIC – Women, Infants & Children
   category: Food
@@ -465,7 +465,7 @@
   timeframe: Ongoing
   link: https://myfamily.wic.ca.gov/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: ymca-food-pantries
   name: YMCA Food Pantries
   category: Food
@@ -486,7 +486,7 @@
   timeframe: Ongoing
   link: https://www.ymcasf.org/program/food-assistance/
   link_text: Find Location
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: ecumenical-hunger-program
   name: Ecumenical Hunger Program
   category: Food
@@ -509,7 +509,7 @@
   timeframe: Ongoing
   link: https://www.ehpcares.org/
   link_text: Schedule Appointment
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4705872
   longitude: -122.1306312
 - id: jfcs-food-pantry
@@ -532,7 +532,7 @@
   timeframe: Ongoing
   link: https://www.jfcs.org/
   link_text: Learn More
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: pvi-got-groceries
   name: Got Groceries Program
   category: Food
@@ -551,7 +551,7 @@
   timeframe: Wednesdays
   link: https://1pvi.org/
   link_text: Learn More
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 
 # Farmers Market Directories
 
@@ -572,7 +572,7 @@
   timeframe: Seasonal (most markets spring-fall)
   link: https://www.usdalocalfoodportal.com/
   link_text: Find Markets
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'
 
 - id: cdfa-certified-farmers-markets
   name: California Certified Farmers' Markets
@@ -591,4 +591,4 @@
   timeframe: Year-round (varies by market)
   link: https://www.cdfa.ca.gov/is/docs/CurrentMrktsCounty.pdf
   link_text: View Directory (PDF)
-  verified_date: "2026-01-05"
+  verified_date: '2026-01-05'

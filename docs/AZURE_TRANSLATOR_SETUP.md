@@ -80,10 +80,13 @@ Use `AzureWebJobsStorage` and `FUNCTIONS_WORKER_RUNTIME` as usual. To run Transl
 > Note: The Function code now requests an AAD token for `https://cognitiveservices.azure.com/.default` and sends `Authorization: Bearer <token>`. Subscription keys are no longer used.
 
 ---
+
     "AZURE_TRANSLATOR_ENDPOINT": "https://api.cognitive.microsofttranslator.com"
-  }
+
 }
-```
+}
+
+````
 
 3. Replace `YOUR_KEY_HERE` with your actual key from Step 2
 
@@ -113,7 +116,7 @@ az functionapp config appsettings set \
     AZURE_TRANSLATOR_KEY="YOUR_KEY_HERE" \
     AZURE_TRANSLATOR_REGION="westus2" \
     AZURE_TRANSLATOR_ENDPOINT="https://api.cognitive.microsofttranslator.com"
-```
+````
 
 ---
 
@@ -127,6 +130,7 @@ az functionapp config appsettings set \
 3. Replace `YOUR_FUNCTION_APP` with your actual Function App name
 
 **Example:**
+
 ```javascript
 this.apiEndpoint = apiEndpoint || 'https://baynavigator-api.azurewebsites.net/api/translate';
 ```
@@ -138,12 +142,14 @@ this.apiEndpoint = apiEndpoint || 'https://baynavigator-api.azurewebsites.net/ap
 ### Local Testing
 
 1. Start Azure Functions locally:
+
    ```bash
    cd azure-functions
    func start
    ```
 
 2. Test the translate endpoint:
+
    ```bash
    curl -X POST http://localhost:7071/api/translate \
      -H "Content-Type: application/json" \
@@ -168,6 +174,7 @@ this.apiEndpoint = apiEndpoint || 'https://baynavigator-api.azurewebsites.net/ap
 ### Production Testing
 
 1. Build and serve your site:
+
    ```bash
    bundle exec jekyll build
    bundle exec jekyll serve
@@ -204,16 +211,19 @@ this.apiEndpoint = apiEndpoint || 'https://baynavigator-api.azurewebsites.net/ap
 ## 💰 Cost Information
 
 ### Free Tier (F0)
+
 - **Included**: 2 million characters per month
 - **Cost**: $0
 
 ### Standard Tier (S1) - If you exceed free tier
+
 - **First 2M characters**: Included in $10/month base fee
 - **Additional characters**: $10 per 1 million characters
 
 ### Example Costs
 
 For a typical page with ~5,000 characters:
+
 - **Free tier**: 400 page translations per month
 - **Standard tier**: Unlimited for ~$10/month + overages
 
@@ -224,12 +234,14 @@ For a typical page with ~5,000 characters:
 ## 🔐 Security Best Practices
 
 ### ✅ DO:
+
 - Store API keys in Azure Function App Settings (environment variables)
 - Use the Azure Functions proxy (never expose keys to client-side)
 - Monitor usage regularly
 - Rotate API keys periodically
 
 ### ❌ DON'T:
+
 - Commit API keys to git
 - Expose API keys in client-side JavaScript
 - Share API keys publicly
@@ -265,6 +277,7 @@ Then update your Function App settings with the new key.
 ### "Translation service error"
 
 **Solutions**:
+
 1. Check your API key is correct
 2. Verify the region matches your resource (e.g., `westus2`)
 3. Check Azure Translator resource is active
@@ -273,6 +286,7 @@ Then update your Function App settings with the new key.
 ### "Translation failed. Please try again."
 
 **Solutions**:
+
 1. Open browser console (F12) to see detailed error
 2. Check network tab for failed requests
 3. Verify Function App URL is correct in `azure-translator.js`
@@ -312,6 +326,7 @@ The client automatically caches translations in memory. To improve performance:
 ## 🌍 Supported Languages
 
 Currently configured languages:
+
 - 🇺🇸 English (en)
 - 🇪🇸 Spanish (es)
 - 🇨🇳 Chinese Simplified (zh-Hans)
@@ -373,6 +388,7 @@ Before going live, verify:
 Your site now has privacy-focused, server-side translation powered by Azure AI Translator!
 
 Users can:
+
 - Translate the entire site into 12 languages
 - Have their language preference remembered
 - Get high-quality translations without being tracked

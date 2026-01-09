@@ -68,28 +68,36 @@
       "short_name": "Search",
       "description": "Search all available programs",
       "url": "/?focus=search",
-      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+      "icons": [
+        { "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }
+      ]
     },
     {
       "name": "Food Assistance",
       "short_name": "Food",
       "description": "Find food banks and meal programs",
       "url": "/#food",
-      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+      "icons": [
+        { "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }
+      ]
     },
     {
       "name": "Utility Help",
       "short_name": "Utilities",
       "description": "Get help with bills",
       "url": "/#utilities",
-      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+      "icons": [
+        { "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }
+      ]
     },
     {
       "name": "Eligibility Guides",
       "short_name": "Eligibility",
       "description": "Check what you qualify for",
       "url": "/eligibility",
-      "icons": [{ "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }]
+      "icons": [
+        { "src": "/assets/images/favicons/favicon-96.webp", "sizes": "96x96", "type": "image/webp" }
+      ]
     }
   ],
   "share_target": {

@@ -9,7 +9,7 @@
    const issues = window.APCA.scanPage();
    ============================================ */
 
-(function() {
+(function () {
   'use strict';
 
   // APCA Constants (SAPC-8 G-series)
@@ -27,7 +27,7 @@
     loWoBoffset: 0.027,
     deltaYmin: 0.0005,
     loClip: 0.1,
-    mFactor: 1.94685544331710
+    mFactor: 1.9468554433171,
   };
 
   /**
@@ -45,9 +45,7 @@
 
     // Apply sRGB transformation
     function sRGBTransform(chan) {
-      return (chan <= 0.04045)
-        ? chan / 12.92
-        : Math.pow((chan + 0.055) / 1.055, 2.4);
+      return chan <= 0.04045 ? chan / 12.92 : Math.pow((chan + 0.055) / 1.055, 2.4);
     }
 
     rsRGB = sRGBTransform(rsRGB);
@@ -55,7 +53,7 @@
     bsRGB = sRGBTransform(bsRGB);
 
     // Calculate luminance (Y)
-    return (0.2126729 * rsRGB) + (0.7151522 * gsRGB) + (0.0721750 * bsRGB);
+    return 0.2126729 * rsRGB + 0.7151522 * gsRGB + 0.072175 * bsRGB;
   }
 
   /**
@@ -77,7 +75,7 @@
       return {
         r: parseInt(match[1]),
         g: parseInt(match[2]),
-        b: parseInt(match[3])
+        b: parseInt(match[3]),
       };
     }
     return null;
@@ -103,8 +101,8 @@
     let bgY = sRGBtoY(bg.r, bg.g, bg.b);
 
     // Soft clamp black levels
-    txtY = (txtY > SA98G.blkThrs) ? txtY : txtY + Math.pow(SA98G.blkThrs - txtY, SA98G.blkClmp);
-    bgY = (bgY > SA98G.blkThrs) ? bgY : bgY + Math.pow(SA98G.blkThrs - bgY, SA98G.blkClmp);
+    txtY = txtY > SA98G.blkThrs ? txtY : txtY + Math.pow(SA98G.blkThrs - txtY, SA98G.blkClmp);
+    bgY = bgY > SA98G.blkThrs ? bgY : bgY + Math.pow(SA98G.blkThrs - bgY, SA98G.blkClmp);
 
     // Calculate the SAPC/APCA contrast
     let SAPC = 0.0;
@@ -118,11 +116,11 @@
     if (bgY > txtY) {
       // Dark text on light background
       SAPC = (Math.pow(bgY, SA98G.normBG) - Math.pow(txtY, SA98G.normTXT)) * SA98G.scaleBoW;
-      outputContrast = (SAPC < SA98G.loClip) ? 0.0 : SAPC - SA98G.loBoWoffset;
+      outputContrast = SAPC < SA98G.loClip ? 0.0 : SAPC - SA98G.loBoWoffset;
     } else {
       // Light text on dark background
       SAPC = (Math.pow(bgY, SA98G.revBG) - Math.pow(txtY, SA98G.revTXT)) * SA98G.scaleWoB;
-      outputContrast = (SAPC > -SA98G.loClip) ? 0.0 : SAPC + SA98G.loWoBoffset;
+      outputContrast = SAPC > -SA98G.loClip ? 0.0 : SAPC + SA98G.loWoBoffset;
     }
 
     return outputContrast * 100;
@@ -141,27 +139,46 @@
     // APCA conformance levels (approximate)
     // These are based on WCAG 3 draft specifications
     const levels = [
-      { threshold: 90, level: 'AAA+', fontSize: 'any', message: 'Excellent contrast for all text sizes' },
-      { threshold: 75, level: 'AAA', fontSize: '12px+', message: 'Very good contrast, suitable for body text' },
-      { threshold: 60, level: 'AA', fontSize: '14px+', message: 'Good contrast for regular body text' },
+      {
+        threshold: 90,
+        level: 'AAA+',
+        fontSize: 'any',
+        message: 'Excellent contrast for all text sizes',
+      },
+      {
+        threshold: 75,
+        level: 'AAA',
+        fontSize: '12px+',
+        message: 'Very good contrast, suitable for body text',
+      },
+      {
+        threshold: 60,
+        level: 'AA',
+        fontSize: '14px+',
+        message: 'Good contrast for regular body text',
+      },
       { threshold: 45, level: 'A', fontSize: '18px+', message: 'Adequate for large text only' },
-      { threshold: 30, level: 'Sub', fontSize: '24px+', message: 'Only suitable for very large text' },
-      { threshold: 0, level: 'Fail', fontSize: 'none', message: 'Insufficient contrast' }
+      {
+        threshold: 30,
+        level: 'Sub',
+        fontSize: '24px+',
+        message: 'Only suitable for very large text',
+      },
+      { threshold: 0, level: 'Fail', fontSize: 'none', message: 'Insufficient contrast' },
     ];
 
     for (const level of levels) {
       if (absLc >= level.threshold) {
-        const passes = (
-          (absLc >= 75) ||
+        const passes =
+          absLc >= 75 ||
           (absLc >= 60 && fontSize >= 14) ||
-          (absLc >= 45 && (fontSize >= 18 || (fontSize >= 14 && isBold)))
-        );
+          (absLc >= 45 && (fontSize >= 18 || (fontSize >= 14 && isBold)));
 
         return {
           rating: level.level,
           passes: passes,
           message: level.message,
-          lc: lc.toFixed(2)
+          lc: lc.toFixed(2),
         };
       }
     }
@@ -170,7 +187,7 @@
       rating: 'Fail',
       passes: false,
       message: 'Insufficient contrast',
-      lc: lc.toFixed(2)
+      lc: lc.toFixed(2),
     };
   }
 
@@ -197,7 +214,7 @@
       fontSize: fontSize,
       fontWeight: fontWeight,
       lc: lc,
-      rating: rating
+      rating: rating,
     };
   }
 
@@ -207,9 +224,11 @@
    */
   function scanPageContrast() {
     const issues = [];
-    const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, button, label, span, div');
+    const elements = document.querySelectorAll(
+      'p, h1, h2, h3, h4, h5, h6, a, button, label, span, div'
+    );
 
-    elements.forEach(el => {
+    elements.forEach((el) => {
       // Skip if element has no visible text
       if (!el.textContent.trim()) return;
 
@@ -228,9 +247,8 @@
     getRating: getAPCARating,
     checkElement: checkElementContrast,
     scanPage: scanPageContrast,
-    parseColor: parseColor
+    parseColor: parseColor,
   };
 
   console.log('[APCA] WCAG 3.0 APCA Contrast Checker loaded');
-
 })();

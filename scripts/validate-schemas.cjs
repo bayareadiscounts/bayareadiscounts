@@ -63,7 +63,9 @@ function validateAgainstSchema(data, schema, path = '') {
   // Check minLength (for strings)
   if (schema.minLength !== undefined && typeof data === 'string') {
     if (data.length < schema.minLength) {
-      errors.push(`${path}: string length ${data.length} is less than minLength ${schema.minLength}`);
+      errors.push(
+        `${path}: string length ${data.length} is less than minLength ${schema.minLength}`
+      );
     }
   }
 
@@ -95,9 +97,7 @@ function validateAgainstSchema(data, schema, path = '') {
     // Only validate first few items to avoid huge output
     const itemsToCheck = Math.min(data.length, 5);
     for (let i = 0; i < itemsToCheck; i++) {
-      const itemSchema = schema.items.$ref
-        ? resolveRef(schema.items.$ref, schema)
-        : schema.items;
+      const itemSchema = schema.items.$ref ? resolveRef(schema.items.$ref, schema) : schema.items;
       const itemErrors = validateAgainstSchema(data[i], itemSchema, `${path}[${i}]`);
       errors.push(...itemErrors);
     }
@@ -119,7 +119,7 @@ function resolveRef(ref, rootSchema) {
 let totalErrors = 0;
 let filesValidated = 0;
 
-const schemaFiles = fs.readdirSync(SCHEMAS_DIR).filter(f => f.endsWith('.schema.json'));
+const schemaFiles = fs.readdirSync(SCHEMAS_DIR).filter((f) => f.endsWith('.schema.json'));
 
 for (const schemaFile of schemaFiles) {
   const apiFile = schemaFile.replace('.schema.json', '.json');
@@ -160,7 +160,9 @@ for (const schemaFile of schemaFiles) {
 console.log(`\n${colors.bold}Summary${colors.reset}`);
 console.log(`─────────────────────────────`);
 console.log(`Files validated: ${filesValidated}`);
-console.log(`Total errors: ${totalErrors > 0 ? colors.red : colors.green}${totalErrors}${colors.reset}`);
+console.log(
+  `Total errors: ${totalErrors > 0 ? colors.red : colors.green}${totalErrors}${colors.reset}`
+);
 
 if (totalErrors > 0) {
   console.log(`\n${colors.red}✗ Schema validation failed${colors.reset}`);

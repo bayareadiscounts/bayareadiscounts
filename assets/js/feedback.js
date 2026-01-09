@@ -2,17 +2,17 @@
  * Bay Navigator - Simple Feedback System
  * Allows users to submit feedback via pre-filled GitHub Issues
  */
-(function() {
+(function () {
   'use strict';
 
   const GITHUB_REPO = 'baytides/baynavigator';
 
   const feedbackTypes = {
-    'general': { label: 'General Feedback', ghLabel: 'feedback' },
-    'bug': { label: 'Bug Report', ghLabel: 'bug' },
+    general: { label: 'General Feedback', ghLabel: 'feedback' },
+    bug: { label: 'Bug Report', ghLabel: 'bug' },
     'program-issue': { label: 'Program Data Issue', ghLabel: 'data' },
-    'feature': { label: 'Feature Request', ghLabel: 'enhancement' },
-    'accessibility': { label: 'Accessibility Issue', ghLabel: 'accessibility' }
+    feature: { label: 'Feature Request', ghLabel: 'enhancement' },
+    accessibility: { label: 'Accessibility Issue', ghLabel: 'accessibility' },
   };
 
   const Feedback = {
@@ -146,7 +146,7 @@ ${text}
       const params = new URLSearchParams({
         title: title,
         body: body,
-        labels: feedbackType.ghLabel
+        labels: feedbackType.ghLabel,
       });
 
       const url = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
@@ -175,7 +175,7 @@ ${text}
 
     init() {
       this.createButton();
-    }
+    },
   };
 
   // Initialize when DOM is ready

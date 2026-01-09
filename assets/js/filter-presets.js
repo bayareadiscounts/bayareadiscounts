@@ -2,7 +2,7 @@
  * Bay Navigator - Saved Filter Presets
  * Allows users to save and quickly apply filter combinations
  */
-(function() {
+(function () {
   'use strict';
 
   const STORAGE_KEY = 'bayarea_filter_presets';
@@ -46,7 +46,7 @@
         id: Date.now().toString(),
         name: name.trim(),
         filters: filters,
-        createdAt: new Date().toISOString()
+        createdAt: new Date().toISOString(),
       };
 
       this.presets.unshift(preset);
@@ -57,14 +57,14 @@
     },
 
     delete(id) {
-      this.presets = this.presets.filter(p => p.id !== id);
+      this.presets = this.presets.filter((p) => p.id !== id);
       this.save();
       this.updateUI();
       this.dispatchUpdate();
     },
 
     apply(id) {
-      const preset = this.presets.find(p => p.id === id);
+      const preset = this.presets.find((p) => p.id === id);
       if (!preset) return;
 
       // Reset all filters first
@@ -82,10 +82,12 @@
       }
 
       // Apply filter buttons
-      ['eligibility', 'category', 'area'].forEach(type => {
+      ['eligibility', 'category', 'area'].forEach((type) => {
         const values = preset.filters[type] || [];
-        values.forEach(value => {
-          const btn = document.querySelector(`[data-filter-type="${type}"][data-filter-value="${value}"]`);
+        values.forEach((value) => {
+          const btn = document.querySelector(
+            `[data-filter-type="${type}"][data-filter-value="${value}"]`
+          );
           if (btn && !btn.classList.contains('active')) {
             btn.click();
           }
@@ -100,7 +102,7 @@
         search: '',
         eligibility: [],
         category: [],
-        area: []
+        area: [],
       };
 
       // Get search term
@@ -110,7 +112,7 @@
       }
 
       // Get active filters
-      document.querySelectorAll('.filter-btn.active:not([data-all="true"])').forEach(btn => {
+      document.querySelectorAll('.filter-btn.active:not([data-all="true"])').forEach((btn) => {
         const type = btn.getAttribute('data-filter-type');
         const value = btn.getAttribute('data-filter-value');
         if (type && value && filters[type]) {
@@ -123,10 +125,12 @@
 
     hasActiveFilters() {
       const filters = this.getCurrentFilters();
-      return filters.search ||
-             filters.eligibility.length > 0 ||
-             filters.category.length > 0 ||
-             filters.area.length > 0;
+      return (
+        filters.search ||
+        filters.eligibility.length > 0 ||
+        filters.category.length > 0 ||
+        filters.area.length > 0
+      );
     },
 
     showToast(message) {
@@ -248,7 +252,7 @@
       }
 
       let html = '<ul class="presets-list" role="listbox">';
-      this.presets.forEach(preset => {
+      this.presets.forEach((preset) => {
         const filterSummary = this.getFilterSummary(preset.filters);
         html += `
           <li class="preset-item" role="option">
@@ -269,7 +273,7 @@
       dropdown.innerHTML = html;
 
       // Wire up event listeners
-      dropdown.querySelectorAll('.preset-apply-btn').forEach(btn => {
+      dropdown.querySelectorAll('.preset-apply-btn').forEach((btn) => {
         btn.addEventListener('click', () => {
           const id = btn.getAttribute('data-preset-id');
           this.apply(id);
@@ -277,7 +281,7 @@
         });
       });
 
-      dropdown.querySelectorAll('.preset-delete-btn').forEach(btn => {
+      dropdown.querySelectorAll('.preset-delete-btn').forEach((btn) => {
         btn.addEventListener('click', (e) => {
           e.stopPropagation();
           const id = btn.getAttribute('data-preset-id');
@@ -384,7 +388,7 @@
       this.load();
       this.createUI();
       this.updateUI();
-    }
+    },
   };
 
   // Initialize when DOM is ready

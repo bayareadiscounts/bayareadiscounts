@@ -9,6 +9,7 @@ Utility scripts for maintaining Bay Navigator.
 **Purpose:** Syncs National Park Service (NPS) data for Bay Area parks.
 
 **Usage:**
+
 ```bash
 NPS_API_KEY="your-key" node scripts/sync-nps-parks.cjs
 ```
@@ -22,6 +23,7 @@ NPS_API_KEY="your-key" node scripts/sync-nps-parks.cjs
 **Purpose:** Imports museum data from the IMLS (Institute of Museum and Library Services) Museum Directory dataset.
 
 **Usage:**
+
 ```bash
 # First download the dataset from Kaggle
 kaggle datasets download imls/museum-directory -p data-exports/gov-datasets/ --unzip
@@ -33,6 +35,7 @@ node scripts/sync-imls-museums.cjs
 **Data source:** [IMLS Museum Directory (Kaggle)](https://www.kaggle.com/datasets/imls/museum-directory)
 
 **Features:**
+
 - Filters to Bay Area museums only
 - Merges with existing manually-curated entries
 - Converts names/addresses to Title Case
@@ -48,6 +51,7 @@ node scripts/sync-imls-museums.cjs
 **Purpose:** Syncs San Mateo County parks data from the county open data portal.
 
 **Usage:**
+
 ```bash
 node scripts/sync-smc-parks.cjs
 ```
@@ -61,6 +65,7 @@ node scripts/sync-smc-parks.cjs
 **Purpose:** Syncs San Mateo County public WiFi locations.
 
 **Usage:**
+
 ```bash
 node scripts/sync-smc-wifi.cjs
 ```
@@ -74,6 +79,7 @@ node scripts/sync-smc-wifi.cjs
 **Purpose:** Syncs federal benefits data from USA.gov.
 
 **Usage:**
+
 ```bash
 node scripts/sync-usagov-benefits.cjs
 ```
@@ -87,6 +93,7 @@ node scripts/sync-usagov-benefits.cjs
 **Purpose:** Syncs program data to Azure Cognitive Search for enhanced search capabilities.
 
 **Usage:**
+
 ```bash
 AZURE_SEARCH_KEY="your-key" node scripts/sync-search-index.cjs
 ```
@@ -100,15 +107,18 @@ AZURE_SEARCH_KEY="your-key" node scripts/sync-search-index.cjs
 **Purpose:** Generates static JSON API files from YAML program data.
 
 **Usage:**
+
 ```bash
 node scripts/generate-api.cjs
 ```
 
 **When to use:**
+
 - Runs automatically via GitHub Actions when `_data/programs/` changes
 - Can be run manually to preview API changes locally
 
 **Features:**
+
 - Reads all YAML files from `src/data/` (Jekyll data directory)
 - Generates individual program JSON files in `api/programs/`
 - Generates category and eligibility indexes
@@ -126,11 +136,13 @@ Static JSON files in the `api/` directory that are served alongside the Jekyll s
 **Purpose:** Single authoritative CI gate command that runs all critical validations.
 
 **Usage:**
+
 ```bash
 npm run verify:gate
 ```
 
 **What it checks:**
+
 - YAML data validation
 - API file generation
 - Minimum program count (>100)
@@ -146,11 +158,13 @@ npm run verify:gate
 **Purpose:** One-command bootstrap for new contributors.
 
 **Usage:**
+
 ```bash
 npm run setup
 ```
 
 **What it does:**
+
 - Checks Node.js, npm, Git prerequisites
 - Verifies project structure
 - Installs dependencies
@@ -165,6 +179,7 @@ npm run setup
 **Purpose:** Fast link validation for PRs - only checks links in changed files.
 
 **Usage:**
+
 ```bash
 node scripts/validate-changed-links.cjs          # Check changes vs main
 node scripts/validate-changed-links.cjs --all    # Check all links
@@ -172,6 +187,7 @@ node scripts/validate-changed-links.cjs --staged # Check staged files
 ```
 
 **Features:**
+
 - HEAD request with GET fallback
 - Retries on failure
 - Severity levels (federal > partner > other)
@@ -184,11 +200,13 @@ node scripts/validate-changed-links.cjs --staged # Check staged files
 **Purpose:** Validates generated API files against JSON schemas.
 
 **Usage:**
+
 ```bash
 node scripts/validate-schemas.cjs
 ```
 
 **Features:**
+
 - Checks all files in `schemas/` against `public/api/`
 - Validates required fields, types, patterns
 
@@ -201,6 +219,7 @@ node scripts/validate-schemas.cjs
 **Purpose:** Generates favicon and app icons from source logo.
 
 **Usage:**
+
 ```bash
 ./scripts/generate-icons.sh
 ```
@@ -214,11 +233,13 @@ node scripts/validate-schemas.cjs
 **Purpose:** Bulk add or update `verified_date` field in YAML files.
 
 **Usage:**
+
 ```bash
 python3 scripts/add_verification_dates.py
 ```
 
 **When to use:**
+
 - After bulk verification of programs
 - When updating verification dates for all programs
 - Data cleanup tasks
@@ -232,6 +253,7 @@ python3 scripts/add_verification_dates.py
 **Purpose:** Checks for duplicate program entries across YAML files.
 
 **Usage:**
+
 ```bash
 node scripts/check-duplicates.cjs
 ```
@@ -243,6 +265,7 @@ node scripts/check-duplicates.cjs
 **Purpose:** Filters school data to Bay Area institutions only.
 
 **Usage:**
+
 ```bash
 node scripts/filter-bay-area-schools.cjs
 ```
@@ -254,6 +277,7 @@ node scripts/filter-bay-area-schools.cjs
 **Purpose:** Cleans up old GitHub deployments.
 
 **Usage:**
+
 ```bash
 ./scripts/cleanup-deployments.sh
 ```
@@ -265,6 +289,7 @@ node scripts/filter-bay-area-schools.cjs
 **Purpose:** Syncs GitHub IP ranges for Azure Static Web Apps security configuration.
 
 **Usage:**
+
 ```bash
 ./scripts/sync-github-ips.sh
 ```
@@ -278,6 +303,7 @@ See [GITHUB_IP_SYNC.md](./GITHUB_IP_SYNC.md) for details.
 **Purpose:** Updates git commit dates (utility for maintenance).
 
 **Usage:**
+
 ```bash
 ./scripts/update-git-date.sh
 ```

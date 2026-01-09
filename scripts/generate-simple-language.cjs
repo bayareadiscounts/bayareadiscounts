@@ -20,11 +20,7 @@ const AZURE_OPENAI_DEPLOYMENT = process.env.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-m
 const AZURE_OPENAI_API_VERSION = '2024-02-15-preview';
 
 // Directories to scan for user-facing content
-const CONTENT_DIRS = [
-  'src/pages',
-  'src/components',
-  'src/data'
-];
+const CONTENT_DIRS = ['src/pages', 'src/components', 'src/data'];
 
 // File extensions to scan
 const FILE_EXTENSIONS = ['.astro', '.yml', '.yaml', '.md'];
@@ -32,145 +28,313 @@ const FILE_EXTENSIONS = ['.astro', '.yml', '.yaml', '.md'];
 // Words to skip (common simple words, proper nouns, technical terms that can't be simplified)
 const SKIP_WORDS = new Set([
   // Common words
-  'the', 'and', 'for', 'are', 'but', 'not', 'you', 'all', 'can', 'had', 'her',
-  'was', 'one', 'our', 'out', 'day', 'get', 'has', 'him', 'his', 'how', 'its',
-  'may', 'new', 'now', 'old', 'see', 'way', 'who', 'boy', 'did', 'own', 'say',
-  'she', 'too', 'use', 'your', 'each', 'from', 'have', 'been', 'call', 'come',
-  'could', 'first', 'into', 'just', 'know', 'like', 'look', 'make', 'more',
-  'need', 'over', 'only', 'other', 'people', 'some', 'take', 'than', 'that',
-  'them', 'then', 'there', 'these', 'they', 'this', 'time', 'very', 'want',
-  'well', 'what', 'when', 'which', 'will', 'with', 'work', 'year', 'about',
-  'after', 'back', 'being', 'between', 'both', 'down', 'even', 'find', 'good',
-  'great', 'here', 'help', 'home', 'last', 'left', 'life', 'little', 'live',
-  'long', 'made', 'might', 'most', 'much', 'must', 'name', 'never', 'next',
-  'number', 'part', 'place', 'right', 'same', 'school', 'should', 'small',
-  'still', 'such', 'thing', 'think', 'through', 'under', 'while', 'world',
-  'would', 'write', 'years',
+  'the',
+  'and',
+  'for',
+  'are',
+  'but',
+  'not',
+  'you',
+  'all',
+  'can',
+  'had',
+  'her',
+  'was',
+  'one',
+  'our',
+  'out',
+  'day',
+  'get',
+  'has',
+  'him',
+  'his',
+  'how',
+  'its',
+  'may',
+  'new',
+  'now',
+  'old',
+  'see',
+  'way',
+  'who',
+  'boy',
+  'did',
+  'own',
+  'say',
+  'she',
+  'too',
+  'use',
+  'your',
+  'each',
+  'from',
+  'have',
+  'been',
+  'call',
+  'come',
+  'could',
+  'first',
+  'into',
+  'just',
+  'know',
+  'like',
+  'look',
+  'make',
+  'more',
+  'need',
+  'over',
+  'only',
+  'other',
+  'people',
+  'some',
+  'take',
+  'than',
+  'that',
+  'them',
+  'then',
+  'there',
+  'these',
+  'they',
+  'this',
+  'time',
+  'very',
+  'want',
+  'well',
+  'what',
+  'when',
+  'which',
+  'will',
+  'with',
+  'work',
+  'year',
+  'about',
+  'after',
+  'back',
+  'being',
+  'between',
+  'both',
+  'down',
+  'even',
+  'find',
+  'good',
+  'great',
+  'here',
+  'help',
+  'home',
+  'last',
+  'left',
+  'life',
+  'little',
+  'live',
+  'long',
+  'made',
+  'might',
+  'most',
+  'much',
+  'must',
+  'name',
+  'never',
+  'next',
+  'number',
+  'part',
+  'place',
+  'right',
+  'same',
+  'school',
+  'should',
+  'small',
+  'still',
+  'such',
+  'thing',
+  'think',
+  'through',
+  'under',
+  'while',
+  'world',
+  'would',
+  'write',
+  'years',
 
   // Proper nouns & brand names (don't simplify)
-  'bay', 'area', 'navigator', 'california', 'francisco', 'oakland', 'jose',
-  'mateo', 'clara', 'alameda', 'contra', 'costa', 'marin', 'sonoma', 'napa',
-  'solano', 'bart', 'muni', 'caltrain', 'clipper', 'medicare', 'medicaid',
-  'calfresh', 'calworks', 'baytides', 'github', 'cloudflare', 'azure',
+  'bay',
+  'area',
+  'navigator',
+  'california',
+  'francisco',
+  'oakland',
+  'jose',
+  'mateo',
+  'clara',
+  'alameda',
+  'contra',
+  'costa',
+  'marin',
+  'sonoma',
+  'napa',
+  'solano',
+  'bart',
+  'muni',
+  'caltrain',
+  'clipper',
+  'medicare',
+  'medicaid',
+  'calfresh',
+  'calworks',
+  'baytides',
+  'github',
+  'cloudflare',
+  'azure',
 
   // Technical terms that need to stay (use abbr tags instead)
-  'wcag', 'aria', 'html', 'css', 'api', 'url', 'pdf', 'wifi', 'gps',
+  'wcag',
+  'aria',
+  'html',
+  'css',
+  'api',
+  'url',
+  'pdf',
+  'wifi',
+  'gps',
 
   // Program acronyms (handled by Abbr component)
-  'snap', 'wic', 'ssi', 'ssdi', 'ebt', 'liheap', 'tanf', 'eitc', 'vita',
-  'hud', 'aca', 'chip', 'pge', 'fafsa', 'pell', 'ged', 'esl', 'irs', 'ctc',
-  'dol', 'usda', 'dmv', 'edd', 'pfl', 'sdi', 'nps', 'imls', 'acp'
+  'snap',
+  'wic',
+  'ssi',
+  'ssdi',
+  'ebt',
+  'liheap',
+  'tanf',
+  'eitc',
+  'vita',
+  'hud',
+  'aca',
+  'chip',
+  'pge',
+  'fafsa',
+  'pell',
+  'ged',
+  'esl',
+  'irs',
+  'ctc',
+  'dol',
+  'usda',
+  'dmv',
+  'edd',
+  'pfl',
+  'sdi',
+  'nps',
+  'imls',
+  'acp',
 ]);
 
 // Common complex words with pre-defined simple alternatives
 // This reduces API calls for frequently occurring terms
 const PRESET_SIMPLIFICATIONS = {
-  'eligibility': 'who can apply',
-  'eligible': 'able to get',
-  'requirements': 'what you need',
-  'documentation': 'papers',
-  'assistance': 'help',
-  'application': 'sign-up form',
-  'participate': 'take part',
-  'participation': 'taking part',
-  'benefits': 'help you can get',
-  'beneficiary': 'person who gets help',
-  'enrollment': 'signing up',
-  'enroll': 'sign up',
-  'supplement': 'extra',
-  'supplemental': 'extra',
-  'nutrition': 'food and eating',
-  'comprehensive': 'complete',
-  'accessibility': 'easy to use for everyone',
-  'accommodation': 'changes to help you',
-  'verification': 'checking if true',
-  'verify': 'check',
-  'determination': 'decision',
-  'determine': 'decide',
-  'qualification': 'what you need to qualify',
-  'qualify': 'be able to get',
-  'reimburse': 'pay back',
-  'reimbursement': 'getting paid back',
-  'authorization': 'permission',
-  'authorize': 'give permission',
-  'compliance': 'following the rules',
-  'comply': 'follow the rules',
-  'regulation': 'rule',
-  'regulatory': 'about rules',
-  'jurisdiction': 'area in charge',
-  'municipality': 'city or town',
-  'municipal': 'city or town',
-  'infrastructure': 'basic systems',
-  'sustainability': 'being green',
-  'sustainable': 'good for the planet',
-  'confidential': 'private',
-  'confidentiality': 'keeping things private',
-  'demographic': 'group of people',
-  'demographics': 'groups of people',
-  'socioeconomic': 'money and social',
-  'utilization': 'use',
-  'utilize': 'use',
-  'facilitate': 'help with',
-  'implementation': 'putting into action',
-  'implement': 'put into action',
-  'subsequently': 'after that',
-  'approximately': 'about',
-  'preliminary': 'first',
-  'comprehensive': 'complete',
-  'modification': 'change',
-  'modify': 'change',
-  'substantially': 'a lot',
-  'substantial': 'large',
-  'predominant': 'main',
-  'predominantly': 'mostly',
-  'acquisition': 'getting',
-  'acquire': 'get',
-  'deteriorate': 'get worse',
-  'deterioration': 'getting worse',
-  'accommodate': 'fit',
-  'procurement': 'buying',
-  'procure': 'buy',
-  'disseminate': 'share',
-  'dissemination': 'sharing',
-  'expedite': 'speed up',
-  'terminate': 'end',
-  'termination': 'ending',
-  'commencement': 'start',
-  'commence': 'start',
-  'pursuant': 'according to',
-  'aforementioned': 'mentioned before',
-  'notwithstanding': 'even though',
-  'hereinafter': 'from now on called',
-  'wherein': 'where',
-  'thereof': 'of it',
-  'hereby': 'by this',
-  'hereunder': 'under this',
-  'inasmuch': 'since',
-  'insofar': 'as much as',
-  'forthwith': 'right away',
-  'heretofore': 'before now',
-  'endeavor': 'try',
-  'remuneration': 'payment',
-  'compensation': 'payment',
-  'disbursement': 'payment',
-  'disburse': 'pay out',
-  'reimburse': 'pay back',
-  'stipend': 'small payment',
-  'subsidy': 'money help',
-  'subsidize': 'help pay for',
-  'allotment': 'share',
-  'allocation': 'share given',
-  'allocate': 'give out',
-  'delineate': 'describe',
-  'delineation': 'description',
-  'adjudicate': 'decide',
-  'adjudication': 'decision process',
-  'corroborate': 'confirm',
-  'corroboration': 'confirmation',
-  'substantiate': 'prove',
-  'substantiation': 'proof',
-  'promulgate': 'make official',
-  'promulgation': 'making official',
+  eligibility: 'who can apply',
+  eligible: 'able to get',
+  requirements: 'what you need',
+  documentation: 'papers',
+  assistance: 'help',
+  application: 'sign-up form',
+  participate: 'take part',
+  participation: 'taking part',
+  benefits: 'help you can get',
+  beneficiary: 'person who gets help',
+  enrollment: 'signing up',
+  enroll: 'sign up',
+  supplement: 'extra',
+  supplemental: 'extra',
+  nutrition: 'food and eating',
+  comprehensive: 'complete',
+  accessibility: 'easy to use for everyone',
+  accommodation: 'changes to help you',
+  verification: 'checking if true',
+  verify: 'check',
+  determination: 'decision',
+  determine: 'decide',
+  qualification: 'what you need to qualify',
+  qualify: 'be able to get',
+  reimburse: 'pay back',
+  reimbursement: 'getting paid back',
+  authorization: 'permission',
+  authorize: 'give permission',
+  compliance: 'following the rules',
+  comply: 'follow the rules',
+  regulation: 'rule',
+  regulatory: 'about rules',
+  jurisdiction: 'area in charge',
+  municipality: 'city or town',
+  municipal: 'city or town',
+  infrastructure: 'basic systems',
+  sustainability: 'being green',
+  sustainable: 'good for the planet',
+  confidential: 'private',
+  confidentiality: 'keeping things private',
+  demographic: 'group of people',
+  demographics: 'groups of people',
+  socioeconomic: 'money and social',
+  utilization: 'use',
+  utilize: 'use',
+  facilitate: 'help with',
+  implementation: 'putting into action',
+  implement: 'put into action',
+  subsequently: 'after that',
+  approximately: 'about',
+  preliminary: 'first',
+  comprehensive: 'complete',
+  modification: 'change',
+  modify: 'change',
+  substantially: 'a lot',
+  substantial: 'large',
+  predominant: 'main',
+  predominantly: 'mostly',
+  acquisition: 'getting',
+  acquire: 'get',
+  deteriorate: 'get worse',
+  deterioration: 'getting worse',
+  accommodate: 'fit',
+  procurement: 'buying',
+  procure: 'buy',
+  disseminate: 'share',
+  dissemination: 'sharing',
+  expedite: 'speed up',
+  terminate: 'end',
+  termination: 'ending',
+  commencement: 'start',
+  commence: 'start',
+  pursuant: 'according to',
+  aforementioned: 'mentioned before',
+  notwithstanding: 'even though',
+  hereinafter: 'from now on called',
+  wherein: 'where',
+  thereof: 'of it',
+  hereby: 'by this',
+  hereunder: 'under this',
+  inasmuch: 'since',
+  insofar: 'as much as',
+  forthwith: 'right away',
+  heretofore: 'before now',
+  endeavor: 'try',
+  remuneration: 'payment',
+  compensation: 'payment',
+  disbursement: 'payment',
+  disburse: 'pay out',
+  reimburse: 'pay back',
+  stipend: 'small payment',
+  subsidy: 'money help',
+  subsidize: 'help pay for',
+  allotment: 'share',
+  allocation: 'share given',
+  allocate: 'give out',
+  delineate: 'describe',
+  delineation: 'description',
+  adjudicate: 'decide',
+  adjudication: 'decision process',
+  corroborate: 'confirm',
+  corroboration: 'confirmation',
+  substantiate: 'prove',
+  substantiation: 'proof',
+  promulgate: 'make official',
+  promulgation: 'making official',
 };
 
 /**
@@ -202,12 +366,12 @@ function extractTextFromYaml(content) {
   const stringMatches = content.match(/:\s*["']([^"']+)["']/g) || [];
   const unquotedMatches = content.match(/:\s+([^#\n]+)/g) || [];
 
-  stringMatches.forEach(m => {
+  stringMatches.forEach((m) => {
     const match = m.match(/:\s*["']([^"']+)["']/);
     if (match) strings.push(match[1]);
   });
 
-  unquotedMatches.forEach(m => {
+  unquotedMatches.forEach((m) => {
     const match = m.match(/:\s+([^#\n]+)/);
     if (match && !match[1].startsWith('[') && !match[1].startsWith('{')) {
       strings.push(match[1].trim());
@@ -222,16 +386,17 @@ function extractTextFromYaml(content) {
  */
 function extractWords(text) {
   // Get all words, lowercase
-  const words = text.toLowerCase()
+  const words = text
+    .toLowerCase()
     .replace(/[^a-z\s-]/g, ' ')
     .split(/\s+/)
-    .filter(w => w.length > 3) // Skip very short words
-    .filter(w => !SKIP_WORDS.has(w))
-    .filter(w => !/^\d+$/.test(w)); // Skip numbers
+    .filter((w) => w.length > 3) // Skip very short words
+    .filter((w) => !SKIP_WORDS.has(w))
+    .filter((w) => !/^\d+$/.test(w)); // Skip numbers
 
   // Count word frequency
   const wordCounts = {};
-  words.forEach(w => {
+  words.forEach((w) => {
     wordCounts[w] = (wordCounts[w] || 0) + 1;
   });
 
@@ -248,7 +413,7 @@ async function identifyComplexWords(words) {
   }
 
   // Filter out words we already have simplifications for
-  const unknownWords = words.filter(w => !PRESET_SIMPLIFICATIONS[w]);
+  const unknownWords = words.filter((w) => !PRESET_SIMPLIFICATIONS[w]);
 
   if (unknownWords.length === 0) {
     console.log('All words have preset simplifications');
@@ -261,7 +426,9 @@ async function identifyComplexWords(words) {
 
   for (let i = 0; i < unknownWords.length; i += batchSize) {
     const batch = unknownWords.slice(i, i + batchSize);
-    console.log(`Processing batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(unknownWords.length / batchSize)} (${batch.length} words)`);
+    console.log(
+      `Processing batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(unknownWords.length / batchSize)} (${batch.length} words)`
+    );
 
     const prompt = `You are helping make a government benefits website easier to read for people with lower literacy.
 
@@ -292,16 +459,20 @@ Only output the complex words with their simplifications, nothing else:`;
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'api-key': AZURE_OPENAI_KEY
+          'api-key': AZURE_OPENAI_KEY,
         },
         body: JSON.stringify({
           messages: [
-            { role: 'system', content: 'You identify complex words above 8th grade reading level and provide simpler alternatives. Only output word: simplification pairs, one per line.' },
-            { role: 'user', content: prompt }
+            {
+              role: 'system',
+              content:
+                'You identify complex words above 8th grade reading level and provide simpler alternatives. Only output word: simplification pairs, one per line.',
+            },
+            { role: 'user', content: prompt },
           ],
           max_tokens: 1000,
           temperature: 0.3,
-        })
+        }),
       });
 
       if (!response.ok) {
@@ -328,9 +499,8 @@ Only output the complex words with their simplifications, nothing else:`;
 
       // Rate limiting - wait between batches (Azure has rate limits)
       if (i + batchSize < unknownWords.length) {
-        await new Promise(resolve => setTimeout(resolve, 500));
+        await new Promise((resolve) => setTimeout(resolve, 500));
       }
-
     } catch (error) {
       console.error('Azure OpenAI request error:', error.message);
     }
@@ -368,7 +538,7 @@ function scanDirectory(dir, allWords) {
 
     if (stat.isDirectory()) {
       scanDirectory(fullPath, allWords);
-    } else if (FILE_EXTENSIONS.some(ext => item.endsWith(ext))) {
+    } else if (FILE_EXTENSIONS.some((ext) => item.endsWith(ext))) {
       const content = fs.readFileSync(fullPath, 'utf8');
       let text = '';
 
@@ -405,7 +575,7 @@ async function main() {
   // Step 3: Merge preset and AI simplifications
   const allSimplifications = {
     ...PRESET_SIMPLIFICATIONS,
-    ...aiSimplifications
+    ...aiSimplifications,
   };
 
   // Step 4: Filter to only words that appear in our content
@@ -424,7 +594,7 @@ async function main() {
     description: 'Simplified alternatives for complex words (WCAG 2.2 AAA 3.1.5)',
     readingLevel: '8th grade or below',
     totalWords: Object.keys(relevantSimplifications).length,
-    simplifications: relevantSimplifications
+    simplifications: relevantSimplifications,
   };
 
   // Step 6: Write to file

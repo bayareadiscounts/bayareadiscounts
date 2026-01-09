@@ -39,7 +39,9 @@ function check(name, fn) {
   try {
     const result = fn();
     if (result.status === 'ok') {
-      console.log(`${colors.green}✓${colors.reset}${result.version ? ` ${colors.dim}(${result.version})${colors.reset}` : ''}`);
+      console.log(
+        `${colors.green}✓${colors.reset}${result.version ? ` ${colors.dim}(${result.version})${colors.reset}` : ''}`
+      );
     } else if (result.status === 'warning') {
       console.log(`${colors.yellow}⚠${colors.reset} ${result.message}`);
       hasWarnings = true;
@@ -80,7 +82,10 @@ check('Node.js', () => {
   const version = result.stdout.trim();
   const major = parseInt(version.replace('v', '').split('.')[0], 10);
   if (major < 18) {
-    return { status: 'error', message: `Node.js ${version} too old - need v18+ (recommended: v22)` };
+    return {
+      status: 'error',
+      message: `Node.js ${version} too old - need v18+ (recommended: v22)`,
+    };
   }
   if (major < 22) {
     return { status: 'warning', message: `${version} works but v22 recommended` };
@@ -120,7 +125,7 @@ check('Source data (src/data)', () => {
   if (!fs.existsSync(dataDir)) {
     return { status: 'error', message: 'src/data directory not found' };
   }
-  const yamlFiles = fs.readdirSync(dataDir).filter(f => f.endsWith('.yml'));
+  const yamlFiles = fs.readdirSync(dataDir).filter((f) => f.endsWith('.yml'));
   if (yamlFiles.length < 5) {
     return { status: 'warning', message: `Only ${yamlFiles.length} YAML files found` };
   }
@@ -191,7 +196,9 @@ ${colors.bold}${'═'.repeat(50)}${colors.reset}
 
 if (hasErrors) {
   console.log(`${colors.red}${colors.bold}✗ Setup completed with errors${colors.reset}`);
-  console.log(`\nPlease fix the errors above and run ${colors.cyan}npm run setup${colors.reset} again.`);
+  console.log(
+    `\nPlease fix the errors above and run ${colors.cyan}npm run setup${colors.reset} again.`
+  );
   process.exit(1);
 } else if (hasWarnings) {
   console.log(`${colors.yellow}${colors.bold}⚠ Setup completed with warnings${colors.reset}`);

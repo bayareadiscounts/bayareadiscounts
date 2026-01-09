@@ -21,12 +21,14 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ## 📊 Services Deployed
 
 ### 1. Azure Static Web Apps
+
 **Purpose:** Host Jekyll static website  
 **SKU:** Free  
 **Endpoint:** https://wonderful-coast-09041e01e.2.azurestaticapps.net  
 **Custom Domain:** baynavigator.org (configured separately)
 
 **Features:**
+
 - Automatic deployment from GitHub
 - Built-in SSL certificates
 - Global CDN distribution
@@ -35,17 +37,20 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 2. Azure Front Door (Standard)
+
 **Purpose:** Global CDN and traffic acceleration  
 **Endpoint:** https://baynavigator-web-b9gzhvbpdedgc2hn.z02.azurefd.net  
 **Resource:** `baynavigator-fd`
 
 **Configuration:**
+
 - Origin: Static Web App
 - HTTPS redirect enabled
 - Health probes every 120s
 - Caching enabled
 
 **Benefits:**
+
 - Faster load times globally
 - DDoS protection
 - Web Application Firewall (WAF) capable
@@ -56,11 +61,13 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 3. Azure Functions (Consumption)
+
 **Purpose:** Serverless REST API backend  
 **Runtime:** Node.js 20  
 **Resource:** `baynavigator-func-prod-clx32fwtnzehq`
 
 **Endpoints:**
+
 - `/api/programs` - Get all programs (with filters)
 - `/api/programs/{id}` - Get single program
 - `/api/categories` - Get all categories
@@ -69,6 +76,7 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 - `/api/translate` - Translate text
 
 **Features:**
+
 - Managed identity authentication to Cosmos/Key Vault
 - Application Insights integration
 - Redis caching layer (1-hour TTL)
@@ -80,11 +88,13 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 4. Azure Cosmos DB (Serverless)
+
 **Purpose:** NoSQL database for program data  
 **API:** Core (SQL)  
 **Resource:** `baynavigator-cosmos-prod-clx32fwtnzehq`
 
 **Configuration:**
+
 - Database: `baynavigator`
 - Container: `programs`
 - Partition Key: `/category`
@@ -95,17 +105,20 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 5. Azure Cache for Redis (Basic C0)
+
 **Purpose:** Server-side caching for API responses  
 **SKU:** Basic C0 (250MB)  
 **Resource:** `baynavigator-redis`  
 **Endpoint:** `baynavigator-redis.redis.cache.windows.net:6380`
 
 **Cache Strategy:**
+
 - Programs listings: 1 hour TTL
 - Translation results: 24 hours TTL
 - Categories/Areas: 24 hours TTL
 
 **Benefits:**
+
 - Reduces Cosmos DB RU consumption
 - Faster API response times
 - Reduces Functions execution time
@@ -115,11 +128,13 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 6. Azure Key Vault (Standard)
+
 **Purpose:** Centralized secret management  
 **Resource:** `baynavigator-kv-prod`  
 **URL:** https://baynavigator-kv-prod.vault.azure.net/
 
 **Secrets Stored:**
+
 - Cosmos DB connection strings
 - Redis access keys
 - API keys for external services
@@ -132,10 +147,12 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 7. Application Insights
+
 **Purpose:** Application monitoring and analytics  
 **Resource:** `baynavigator-insights-prod`
 
 **Metrics Tracked:**
+
 - API response times
 - Cache hit/miss rates
 - Error rates and exceptions
@@ -143,6 +160,7 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 - User analytics (page views, sessions)
 
 **Dashboards Available:**
+
 - Performance metrics
 - Failure analysis
 - Live metrics stream
@@ -153,11 +171,13 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 8. API Management (Consumption)
+
 **Purpose:** API gateway with rate limiting and analytics  
 **Resource:** `baynavigator-api`  
 **Status:** Deploying (30-45 minutes)
 
 **Planned Features:**
+
 - Rate limiting: 100 requests/min per IP
 - API key management
 - Request/response caching
@@ -170,6 +190,7 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ---
 
 ### 9. Azure Monitor Alerts
+
 **Purpose:** Proactive monitoring and notifications
 
 **Configured Alerts:**
@@ -191,6 +212,7 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ## 🔐 Security Configuration
 
 ### Managed Identities
+
 - Functions app has system-assigned managed identity
 - Used for passwordless auth to:
   - Cosmos DB (Data Contributor)
@@ -198,6 +220,7 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
   - Storage Account
 
 ### Network Security
+
 - Storage has firewall with Azure Services allowed
 - GitHub Actions IPs whitelisted
 - Redis requires TLS 1.2+
@@ -207,34 +230,37 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 
 ## 💰 Cost Estimate
 
-| Service | Tier | Monthly Cost |
-|---------|------|--------------|
-| Static Web Apps | Free | $0 |
-| Front Door | Standard | $15-25 |
-| Functions | Consumption | $0-5 |
-| Cosmos DB | Serverless | $5-15 |
-| Redis Cache | Basic C0 | $0 |
-| Key Vault | Standard | $0-1 |
-| App Insights | 5GB free | $0-3 |
-| API Management | Consumption | $0-10 |
-| Alerts | 5 rules free | $0 |
-| **Total** | | **$20-60/month** |
+| Service         | Tier         | Monthly Cost     |
+| --------------- | ------------ | ---------------- |
+| Static Web Apps | Free         | $0               |
+| Front Door      | Standard     | $15-25           |
+| Functions       | Consumption  | $0-5             |
+| Cosmos DB       | Serverless   | $5-15            |
+| Redis Cache     | Basic C0     | $0               |
+| Key Vault       | Standard     | $0-1             |
+| App Insights    | 5GB free     | $0-3             |
+| API Management  | Consumption  | $0-10            |
+| Alerts          | 5 rules free | $0               |
+| **Total**       |              | **$20-60/month** |
 
 ---
 
 ## 📈 Performance Improvements
 
 ### Without Caching:
+
 - API response: 200-400ms
 - Cosmos DB reads: ~5 RU per query
 - Cold start: 1-3 seconds
 
 ### With Redis Caching:
+
 - Cached response: 20-50ms (10x faster)
 - Cosmos DB reads: Reduced 80-90%
 - Cache hit rate: Target 70%+
 
 ### With Front Door:
+
 - Global latency: <100ms
 - Static assets cached at edge
 - DDoS protection
@@ -244,6 +270,7 @@ Users → Front Door (CDN) → Static Web Apps (Jekyll)
 ## 🔧 Local Development
 
 ### Required Environment Variables:
+
 ```bash
 # Cosmos DB
 COSMOS_DB_ENDPOINT=https://baynavigator-cosmos-prod-clx32fwtnzehq.documents.azure.com:443/
@@ -262,6 +289,7 @@ APPLICATIONINSIGHTS_CONNECTION_STRING=<from Functions app settings>
 ```
 
 ### Testing Locally:
+
 ```bash
 cd azure-functions
 npm install
@@ -301,4 +329,4 @@ func start
 
 ---
 
-*Last Updated: December 2025*
+_Last Updated: December 2025_

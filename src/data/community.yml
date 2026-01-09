@@ -26,7 +26,7 @@
   timeframe: Ongoing
   link: https://www.calvet.ca.gov/
   link_text: Explore Benefits
-  verified_date: "2026-01-03"
+  verified_date: '2026-01-03'
 - id: calvet-dvbe
   name: Disabled Veteran Business Enterprise (DVBE) Program
   category: Community Services
@@ -56,7 +56,7 @@
   timeframe: Ongoing
   link: https://www.dgs.ca.gov/PD/About/Page-Content/PD-Branch-Intro-702/Certification-Programs/DVBE-Program
   link_text: Apply for DVBE
-  verified_date: "2026-01-03"
+  verified_date: '2026-01-03'
 - id: calvet-caltap
   name: California Transition Assistance Program (CalTAP)
   category: Community Services
@@ -83,7 +83,7 @@
   timeframe: Ongoing
   link: https://www.calvet.ca.gov/VetServices/Pages/California-Transition-Assistance-Program.aspx
   link_text: Learn More
-  verified_date: "2026-01-03"
+  verified_date: '2026-01-03'
 - id: calvet-vhhp
   name: Veterans Housing and Homelessness Prevention (VHHP)
   category: Community Services
@@ -112,7 +112,7 @@
   timeframe: Ongoing (waitlists vary by location)
   link: https://www.calvet.ca.gov/veteran-services-benefits/housing
   link_text: Learn More
-  verified_date: "2026-01-03"
+  verified_date: '2026-01-03'
 - id: 211-bay-area
   name: 2-1-1 Bay Area
   category: Community Services
@@ -134,12 +134,12 @@
     4. Describe your needs
     5. Receive personalized referrals
     6. Follow up on resources provided
-  phone: "211"
+  phone: '211'
   benefit: Free 24/7 referral to food, housing, legal help, health care, and more
   timeframe: Ongoing
   link: https://211bayarea.org
   link_text: Visit Program
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: czi-community-space
   name: CZI Community Space
   category: Community Services
@@ -166,7 +166,7 @@
   timeframe: Ongoing
   link: https://chanzuckerberg.com/communityspace/
   link_text: Apply for Access
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.4860773
   longitude: -122.227942
 - id: dolly-parton-library
@@ -194,7 +194,7 @@
   timeframe: Ongoing (monthly until age 5)
   link: https://www.library.ca.gov/services/to-public/imagination-library/
   link_text: Enroll
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: generation-thrive-spaces
   name: Generation Thrive
   category: Community Services
@@ -220,7 +220,7 @@
   timeframe: Ongoing
   link: https://community.warriors.com/generation-thrive/spaces/
   link_text: Request Meeting Space
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: google-community-space
   name: Google Community Space
   category: Community Services
@@ -247,7 +247,7 @@
   timeframe: Ongoing
   link: https://communityspace.withgoogle.com/
   link_text: Apply for Access
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7879363
   longitude: -122.4075201
 - id: ohana-floor-salesforce
@@ -276,7 +276,7 @@
   timeframe: Weeknights only
   link: https://www.salesforce.com/company/ohana-floors-san-francisco/
   link_text: Request for an Event
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7897744
   longitude: -122.3969321
 - id: season-of-sharing
@@ -304,7 +304,7 @@
   timeframe: Ongoing
   link: https://seasonofsharing.org
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sobrato-conference-space
   name: Sobrato Nonprofit Centers Conference Space
   category: Community Services
@@ -330,7 +330,7 @@
   timeframe: Ongoing
   link: https://www.sobrato.com/sobrato-philanthropies/what-we-do/non-profit-sustainability/conference-space-nonprofit-centers/
   link_text: Apply for Access
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: tides-converge
   name: Tides Converge
   category: Community Services
@@ -357,7 +357,7 @@
   timeframe: Ongoing
   link: https://www.tides.org/social-purpose-real-estate/office-space/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7987456
   longitude: -122.4645889
 - id: va-vet-centers
@@ -386,7 +386,7 @@
   timeframe: Ongoing
   link: https://www.va.gov/find-locations
   link_text: Find Location
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: ymca
   name: YMCA
   category: Community Services
@@ -413,7 +413,7 @@
   timeframe: Ongoing
   link: https://www.ymca.org/get-involved/join
   link_text: Find Membership
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bacn-emergency-childcare
   name: Bay Area Crisis Nursery - Emergency Childcare
   category: Childcare
@@ -443,7 +443,7 @@
   timeframe: Ongoing
   link: https://bayareacrisisnursery.org/programs/emergency-childcare/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9672133
   longitude: -121.9979519
 - id: california-state-preschool
@@ -473,7 +473,7 @@
   timeframe: Ongoing
   link: https://mychildcareplan.org/resource/child-care-subsidy-programs/
   link_text: Find Providers
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: calworks-child-care
   name: CalWORKs Child Care
   category: Childcare
@@ -501,7 +501,7 @@
   timeframe: Ongoing
   link: https://www.cdss.ca.gov/inforesources/calworks-child-care
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: childrens-council-sf
   name: Children's Council San Francisco
   category: Childcare
@@ -531,7 +531,7 @@
   timeframe: Ongoing
   link: https://www.childrenscouncil.org/families/help-paying-for-child-care/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.763705
   longitude: -122.428483
 - id: choices-for-children
@@ -563,7 +563,7 @@
   timeframe: Ongoing (based on funding availability)
   link: https://www.cfcscc.org/our-programs/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: head-start
   name: Head Start
   category: Childcare
@@ -591,7 +591,7 @@
   timeframe: Ongoing
   link: https://mychildcareplan.org/resource/child-care-subsidy-programs/
   link_text: Find Programs
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bacn-boutique
   name: Bay Area Crisis Nursery - BACN Boutique
   category: Community Services
@@ -623,7 +623,7 @@
   timeframe: Ongoing
   link: https://bayareacrisisnursery.org/programs/bacn-boutique/
   link_text: Visit
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9672133
   longitude: -121.9979519
 - id: bacn-food-pantry-diaper
@@ -655,7 +655,7 @@
   timeframe: Ongoing
   link: https://bayareacrisisnursery.org/
   link_text: Order Online
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9672133
   longitude: -121.9979519
 - id: sf-diaper-bank
@@ -684,7 +684,7 @@
   timeframe: Ongoing
   link: https://www.sfhsa.org
   link_text: Enroll
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: st-anthonys-clothing
   name: St. Anthony's Free Clothing Program
   category: Community Services
@@ -712,7 +712,7 @@
   timeframe: Ongoing
   link: https://www.stanthonysf.org/services/clothing/shop-for-clothes/
   link_text: Schedule Visit
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.782217
   longitude: -122.4132276
 - id: california-grants-portal
@@ -740,7 +740,7 @@
   timeframe: Ongoing
   link: https://www.grants.ca.gov/
   link_text: Search Grants
-  verified_date: "2025-12-24"
+  verified_date: '2025-12-24'
 - id: hip-housing-home-sharing
   name: HIP Housing Home Sharing Program
   category: Community Services
@@ -768,7 +768,7 @@
   timeframe: Ongoing
   link: https://hiphousing.org/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.565602
   longitude: -122.3210686
 - id: lifemoves-services
@@ -799,7 +799,7 @@
   timeframe: Ongoing
   link: https://www.lifemoves.org/
   link_text: Get Help
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: haven-family-house
   name: Haven Family House (LifeMoves)
   category: Community Services
@@ -830,7 +830,7 @@
   timeframe: Ongoing
   link: https://www.lifemoves.org/
   link_text: Get Help
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4519671
   longitude: -122.177992
 - id: friendly-voices-seniors
@@ -858,7 +858,7 @@
   timeframe: Ongoing
   link: https://friendlyvoices.org/
   link_text: Sign Up
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: cid-housing-modifications
   name: Housing Accessibility Modifications Program
   category: Community Services
@@ -887,7 +887,7 @@
   timeframe: Ongoing
   link: https://www.cidsanmateo.org/
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: echo-housing
   name: ECHO Housing
   category: Community Services
@@ -914,7 +914,7 @@
   timeframe: Ongoing
   link: https://www.echofairhousing.org/
   link_text: File Complaint
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: smc-fixit-clinics
   name: Fixit Clinics
   category: Community Services
@@ -940,7 +940,7 @@
   timeframe: Ongoing (check schedule)
   link: https://www.smcsustainability.org/waste-reduction/reduce-reuse-repair/fixit-clinics/
   link_text: Find Events
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: smc-library-sewing
   name: San Mateo County Library Open Sewing Programs
   category: Community Services
@@ -966,7 +966,7 @@
   timeframe: Ongoing (varies by location)
   link: https://www.smcsustainability.org/waste-reduction/reduce-reuse-repair/fixit-clinics/
   link_text: Find Schedule
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: recyclestuff
   name: Recyclestuff.org
   category: Community Services
@@ -992,7 +992,7 @@
   timeframe: Ongoing
   link: https://www.recyclestuff.org/
   link_text: Search
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: smc-refuel-your-fun
   name: ReFuel Your Fun Program
   category: Community Services
@@ -1018,9 +1018,9 @@
   timeframe: Ongoing
   link: https://www.smchealth.org/refuel
   link_text: Learn More
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: acs-discovery-shop-oakland
-  name: "American Cancer Society: Discovery Shop (Oakland)"
+  name: 'American Cancer Society: Discovery Shop (Oakland)'
   category: Community Services
   area: City of Oakland
   groups:
@@ -1044,11 +1044,11 @@
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/oakland.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.8318
   longitude: -122.2522
 - id: acs-discovery-shop-napa
-  name: "American Cancer Society: Discovery Shop (Napa)"
+  name: 'American Cancer Society: Discovery Shop (Napa)'
   category: Community Services
   area: Napa County
   groups:
@@ -1068,16 +1068,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 10am-5pm
     5. Call (707) 224-4398 for info
   address: 1380 Trancas St, Napa, CA 94558
-  phone: "(707) 224-4398"
+  phone: '(707) 224-4398'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/napa.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 38.3177
   longitude: -122.2986
 - id: acs-discovery-shop-novato
-  name: "American Cancer Society: Discovery Shop (Novato)"
+  name: 'American Cancer Society: Discovery Shop (Novato)'
   category: Community Services
   area: Marin County
   groups:
@@ -1097,16 +1097,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 10am-5pm
     5. Call (415) 408-5722 for info
   address: 930 Diablo Ave, Novato, CA 94947
-  phone: "(415) 408-5722"
+  phone: '(415) 408-5722'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/novato.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 38.1074
   longitude: -122.5697
 - id: acs-discovery-shop-pleasanton
-  name: "American Cancer Society: Discovery Shop (Pleasanton)"
+  name: 'American Cancer Society: Discovery Shop (Pleasanton)'
   category: Community Services
   area: City of Pleasanton
   groups:
@@ -1126,16 +1126,16 @@
     4. Open Mon-Sun 10am-6pm
     5. Call (925) 462-7374 for info
   address: 1989 Santa Rita Rd, Pleasanton, CA 94566
-  phone: "(925) 462-7374"
+  phone: '(925) 462-7374'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/pleasanton.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.6604
   longitude: -121.8758
 - id: acs-discovery-shop-walnut-creek
-  name: "American Cancer Society: Discovery Shop (Walnut Creek)"
+  name: 'American Cancer Society: Discovery Shop (Walnut Creek)'
   category: Community Services
   area: City of Walnut Creek
   groups:
@@ -1155,16 +1155,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 10am-5pm
     5. Call (925) 944-1991 for info
   address: 1538 Locust St, Walnut Creek, CA 94596
-  phone: "(925) 944-1991"
+  phone: '(925) 944-1991'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/walnut-creek.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.9021
   longitude: -122.0608
 - id: acs-discovery-shop-san-jose
-  name: "American Cancer Society: Discovery Shop (San Jose)"
+  name: 'American Cancer Society: Discovery Shop (San Jose)'
   category: Community Services
   area: City of San Jose
   groups:
@@ -1188,11 +1188,11 @@
   timeframe: Ongoing
   link: https://acsdiscoveryshop.com/san-jose-discovery-shop
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.2529
   longitude: -121.9143
 - id: acs-discovery-shop-los-altos
-  name: "American Cancer Society: Discovery Shop (Los Altos)"
+  name: 'American Cancer Society: Discovery Shop (Los Altos)'
   category: Community Services
   area: City of Los Altos
   groups:
@@ -1212,16 +1212,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 10am-5pm
     5. Call (650) 949-0505 for info
   address: 243 Main St, Los Altos, CA 94022
-  phone: "(650) 949-0505"
+  phone: '(650) 949-0505'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/los-altos.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.3788
   longitude: -122.1141
 - id: acs-discovery-shop-los-gatos
-  name: "American Cancer Society: Discovery Shop (Los Gatos)"
+  name: 'American Cancer Society: Discovery Shop (Los Gatos)'
   category: Community Services
   area: Town of Los Gatos
   groups:
@@ -1241,16 +1241,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 9am-4pm
     5. Call (408) 354-5917 for info
   address: 150 W Main St, Los Gatos, CA 95030
-  phone: "(408) 354-5917"
+  phone: '(408) 354-5917'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/los-gatos.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.2226
   longitude: -121.9847
 - id: acs-discovery-shop-menlo-park
-  name: "American Cancer Society: Discovery Shop (Menlo Park)"
+  name: 'American Cancer Society: Discovery Shop (Menlo Park)'
   category: Community Services
   area: City of Menlo Park
   groups:
@@ -1270,16 +1270,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 10am-5pm
     5. Call (650) 325-8939 for info
   address: 748 Santa Cruz Ave, Menlo Park, CA 94025
-  phone: "(650) 325-8939"
+  phone: '(650) 325-8939'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/menlo-park.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.4529
   longitude: -122.1817
 - id: acs-discovery-shop-sunnyvale
-  name: "American Cancer Society: Discovery Shop (Sunnyvale)"
+  name: 'American Cancer Society: Discovery Shop (Sunnyvale)'
   category: Community Services
   area: City of Sunnyvale
   groups:
@@ -1299,16 +1299,16 @@
     4. Open Mon-Sat 10am-6pm, Sun 10am-5pm
     5. Call (408) 737-7707 for info
   address: 1659 Hollenbeck Ave, Sunnyvale, CA 94087
-  phone: "(408) 737-7707"
+  phone: '(408) 737-7707'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/sunnyvale.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 37.3569
   longitude: -122.0360
 - id: acs-discovery-shop-pacific-grove
-  name: "American Cancer Society: Discovery Shop (Pacific Grove)"
+  name: 'American Cancer Society: Discovery Shop (Pacific Grove)'
   category: Community Services
   area: Monterey County
   groups:
@@ -1328,16 +1328,16 @@
     4. Open daily 10am-5pm
     5. Call (831) 372-0866 for info
   address: 198 Country Club Gate, Pacific Grove, CA 93950
-  phone: "(831) 372-0866"
+  phone: '(831) 372-0866'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/pacific-grove.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 36.6177
   longitude: -121.9166
 - id: acs-discovery-shop-salinas
-  name: "American Cancer Society: Discovery Shop (Salinas)"
+  name: 'American Cancer Society: Discovery Shop (Salinas)'
   category: Community Services
   area: Monterey County
   groups:
@@ -1357,12 +1357,12 @@
     4. Open Mon-Sat 10am-6pm, Sun 11am-6pm
     5. Call (831) 443-8879 for info
   address: 1534 N Main St, Salinas, CA 93906
-  phone: "(831) 443-8879"
+  phone: '(831) 443-8879'
   benefit: Thrift store accepting donations; proceeds support cancer research and patient programs
   timeframe: Ongoing
   link: https://www.cancer.org/donate/discovery-shops-national/shops/salinas.html
   link_text: Visit Store
-  verified_date: "2026-01-06"
+  verified_date: '2026-01-06'
   latitude: 36.6958
   longitude: -121.6555
 - id: ehp-donations
@@ -1392,7 +1392,7 @@
   timeframe: Ongoing
   link: https://www.ehpcares.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4705872
   longitude: -122.1306312
 - id: family-connections-donations
@@ -1422,7 +1422,7 @@
   timeframe: Ongoing
   link: https://www.familyconnections.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.5680575
   longitude: -122.3222638
 - id: goodwill-sf-sm-marin
@@ -1450,7 +1450,7 @@
   timeframe: Ongoing
   link: https://sfgoodwill.org/
   link_text: Find Location
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: latino-commission-donations
   name: Latino Commission Donations
   category: Community Services
@@ -1476,7 +1476,7 @@
   timeframe: Ongoing
   link: https://www.thelatincommission.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: nine-lives-foundation
   name: Nine Lives Foundation
   category: Community Services
@@ -1504,7 +1504,7 @@
   timeframe: Ongoing
   link: https://ninelivesfoundation.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4696951
   longitude: -122.2466094
 - id: parca-thrift-shop
@@ -1534,7 +1534,7 @@
   timeframe: Ongoing
   link: https://www.pfrparca.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.6353699
   longitude: -122.4202598
 - id: peninsula-humane-society-donations
@@ -1564,7 +1564,7 @@
   timeframe: Ongoing
   link: https://phs-spca.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.5925546
   longitude: -122.3685574
 - id: pick-of-the-litter
@@ -1593,7 +1593,7 @@
   timeframe: Ongoing
   link: https://pickofthelitterbooks.org/
   link_text: Donate Books
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.586709
   longitude: -122.361699
 - id: puente-de-la-costa-sur
@@ -1623,7 +1623,7 @@
   timeframe: Ongoing
   link: https://www.mypuente.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.2564652
   longitude: -122.3776484
 - id: st-francis-center-rw
@@ -1653,7 +1653,7 @@
   timeframe: Ongoing
   link: https://stfranciscenterrwc.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4814937
   longitude: -122.2256829
 - id: st-vincent-de-paul-smc
@@ -1682,7 +1682,7 @@
   timeframe: Ongoing
   link: https://www.svdpsm.org/
   link_text: Schedule Pickup
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: samaritan-house-donations
   name: Samaritan House Thrift Stores
   category: Community Services
@@ -1709,7 +1709,7 @@
   timeframe: Ongoing
   link: https://samaritanhousesanmateo.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: savers-thrift
   name: Savers Thrift Stores
   category: Community Services
@@ -1735,7 +1735,7 @@
   timeframe: Ongoing
   link: https://www.savers.com/
   link_text: Find Location
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: south-coast-childrens
   name: South Coast Children's Services
   category: Community Services
@@ -1761,7 +1761,7 @@
   timeframe: Ongoing
   link: https://www.southcoastchildrens.org/
   link_text: Donate
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: salvation-army-smc
   name: The Salvation Army (San Mateo County)
   category: Community Services
@@ -1788,7 +1788,7 @@
   timeframe: Ongoing
   link: https://www.salvationarmyusa.org/
   link_text: Schedule Pickup
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: ucpa-golden-gate
   name: United Cerebral Palsy Association of the Golden Gate
   category: Community Services
@@ -1815,7 +1815,7 @@
   timeframe: Ongoing
   link: https://www.ucpgg.org/
   link_text: Schedule Pickup
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: sf-lgbt-center
   name: SF LGBT Center
   category: Community Services
@@ -1847,7 +1847,7 @@
   timeframe: Ongoing
   link: https://www.sfcenter.org/
   link_text: Visit Center
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7716509
   longitude: -122.4241156
 - id: oakland-lgbtq-center
@@ -1881,7 +1881,7 @@
   timeframe: Ongoing
   link: https://www.oaklandlgbtqcenter.org/
   link_text: Visit Center
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.8092703
   longitude: -122.2470874
 - id: pacific-center
@@ -1916,7 +1916,7 @@
   timeframe: Ongoing
   link: https://www.pacificcenter.org/
   link_text: Get Services
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.8610967
   longitude: -122.2593638
 - id: rainbow-community-center
@@ -1950,7 +1950,7 @@
   timeframe: Ongoing
   link: https://www.rainbowcc.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: billy-defrank-center
   name: Billy DeFrank LGBTQ+ Community Center
   category: Community Services
@@ -1981,7 +1981,7 @@
   timeframe: Ongoing
   link: https://www.defrankcenter.org/
   link_text: Visit Center
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.3313299
   longitude: -121.9080075
 - id: spahr-center
@@ -2015,7 +2015,7 @@
   timeframe: Ongoing
   link: https://www.thespahrcenter.org/
   link_text: Get Services
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.9714225
   longitude: -122.5208051
 - id: lgbtq-connection-napa
@@ -2047,7 +2047,7 @@
   timeframe: Ongoing
   link: https://lgbtqconnection.org/
   link_text: Get Connected
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 38.3098108
   longitude: -122.2882034
 - id: queer-lifespace
@@ -2079,7 +2079,7 @@
   timeframe: Ongoing
   link: https://www.queerlifespace.org/
   link_text: Get Therapy
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: lyric-youth
   name: LYRIC (Lavender Youth Recreation & Information Center)
   category: Community Services
@@ -2110,7 +2110,7 @@
   timeframe: Ongoing
   link: https://lyric.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7603772
   longitude: -122.4358628
 - id: outlet-peninsula
@@ -2141,7 +2141,7 @@
   timeframe: Ongoing
   link: https://www.acs-teens.org/what-we-do/outlet/
   link_text: Find Location
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: api-wellness-transthrive
   name: API Wellness / TRANS:THRIVE
   category: Community Services
@@ -2172,7 +2172,7 @@
   timeframe: Ongoing
   link: https://www.apiwellness.org/
   link_text: Get Care
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7837324
   longitude: -122.4194107
 - id: openhouse-sf
@@ -2205,7 +2205,7 @@
   timeframe: Ongoing
   link: https://www.openhousesf.org/
   link_text: Get Services
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7712334
   longitude: -122.4253678
 - id: pflag-sf
@@ -2237,7 +2237,7 @@
   timeframe: Ongoing
   link: https://pflagsf.org/
   link_text: Get Support
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7595967
   longitude: -122.4352061
 - id: trans-lifeline
@@ -2267,7 +2267,7 @@
   timeframe: Ongoing
   link: https://translifeline.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: trevor-project
   name: The Trevor Project
   category: Community Services
@@ -2294,7 +2294,7 @@
   timeframe: Ongoing
   link: https://www.thetrevorproject.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: lgbt-asylum-project
   name: The LGBT Asylum Project
   category: Community Services
@@ -2322,7 +2322,7 @@
   timeframe: Ongoing
   link: https://www.lgbtasylumproject.org/
   link_text: Get Legal Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: tgi-justice-project
   name: TGI Justice Project
   category: Community Services
@@ -2351,7 +2351,7 @@
   timeframe: Ongoing
   link: https://tgijp.org/
   link_text: Get Support
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7828731
   longitude: -122.4152584
 - id: el-la-para-translatinas
@@ -2384,7 +2384,7 @@
   timeframe: Ongoing
   link: https://ellaparatranslatinas.org/
   link_text: Get Support
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: glbt-historical-society
   name: GLBT Historical Society Museum
   category: Museums
@@ -2416,7 +2416,7 @@
   timeframe: Ongoing
   link: https://www.glbthistory.org/
   link_text: Plan Visit
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7607664
   longitude: -122.435607
 - id: id-me-first-responders
@@ -2444,7 +2444,7 @@
   timeframe: Ongoing
   link: https://www.id.me/government
   link_text: Verify Status
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: govx-first-responder
   name: GovX First Responder Discounts
   category: Community Services
@@ -2471,7 +2471,7 @@
   timeframe: Ongoing
   link: https://www.govx.com/
   link_text: Join Free
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: verizon-first-responders
   name: Verizon First Responders Discount
   category: Technology
@@ -2495,7 +2495,7 @@
   timeframe: Ongoing
   link: https://www.verizon.com/featured/first-responders/
   link_text: Get Discount
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: tmobile-first-responders
   name: T-Mobile First Responders Discount
   category: Technology
@@ -2519,7 +2519,7 @@
   timeframe: Ongoing
   link: https://www.t-mobile.com/cell-phone-plans/first-responders-background
   link_text: Learn More
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: apple-veterans-military
   name: Apple Veterans and Military Purchase Program
   category: Technology
@@ -2543,7 +2543,7 @@
   timeframe: Ongoing
   link: https://www.apple.com/shop/browse/home/veterans_military
   link_text: Shop Now
-  verified_date: "2026-01-04"
+  verified_date: '2026-01-04'
 - id: exploratorium-teacher-free
   name: Exploratorium Free Teacher Admission
   category: Museums
@@ -2571,7 +2571,7 @@
   timeframe: Ongoing
   link: https://www.exploratorium.edu/visit/admission
   link_text: Plan Visit
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.8016231
   longitude: -122.3973665
 - id: bay-area-writing-project
@@ -2601,7 +2601,7 @@
   timeframe: Applications in spring
   link: https://bawp.berkeley.edu/
   link_text: Apply Now
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: teacher-id-me-discounts
   name: ID.me Teacher Discounts
   category: Community Services
@@ -2625,7 +2625,7 @@
   timeframe: Ongoing
   link: https://www.id.me/teacher-military-discounts
   link_text: Verify Status
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: sf-jobsnow
   name: SF JobsNOW!
   category: Community Services
@@ -2654,7 +2654,7 @@
   timeframe: Ongoing
   link: https://sf.gov/information/jobsnow-employers
   link_text: Get Started
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: the-job-forum
   name: The Job Forum
   category: Community Services
@@ -2681,7 +2681,7 @@
   timeframe: Ongoing
   link: https://thejobforum.org/
   link_text: Join Meetings
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: oewd-citybuild
   name: CityBuild Academy
   category: Education
@@ -2710,7 +2710,7 @@
   timeframe: Multiple cohorts annually
   link: https://sf.gov/citybuild
   link_text: Apply Now
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: oewd-techsf
   name: TechSF
   category: Education
@@ -2739,7 +2739,7 @@
   timeframe: Ongoing
   link: https://techsf.org/
   link_text: Get Started
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: meda-workforce
   name: MEDA Workforce Development
   category: Community Services
@@ -2769,7 +2769,7 @@
   timeframe: Ongoing
   link: https://medasf.org/programs/workforce-development/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: iiba-immigration
   name: Immigration Institute of the Bay Area
   category: Legal Services
@@ -2797,7 +2797,7 @@
   timeframe: Ongoing
   link: https://iibayarea.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: eblc-immigration
   name: East Bay Community Law Center - Immigration
   category: Legal Services
@@ -2826,7 +2826,7 @@
   timeframe: Ongoing
   link: https://ebclc.org/immigration/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.8558152
   longitude: -122.2683904
 - id: sf-hsh
@@ -2856,7 +2856,7 @@
   timeframe: Ongoing
   link: https://hsh.sfgov.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: project-homeless-connect
   name: Project Homeless Connect
   category: Community Services
@@ -2887,7 +2887,7 @@
   timeframe: Ongoing
   link: https://www.projecthomelessconnect.org/
   link_text: Get Services
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.778881
   longitude: -122.4098301
 - id: family-caregiver-alliance
@@ -2919,7 +2919,7 @@
   timeframe: Ongoing
   link: https://www.caregiver.org/
   link_text: Get Support
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: ihss
   name: In-Home Supportive Services (IHSS)
   category: Community Services
@@ -2949,7 +2949,7 @@
   timeframe: Ongoing
   link: https://www.cdss.ca.gov/in-home-supportive-services
   link_text: Apply
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: beyond-emancipation
   name: Beyond Emancipation
   category: Community Services
@@ -2979,7 +2979,7 @@
   timeframe: Ongoing
   link: https://www.beyondemancipation.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: first-place-for-youth
   name: First Place for Youth
   category: Community Services
@@ -3008,7 +3008,7 @@
   timeframe: Ongoing
   link: https://www.firstplaceforyouth.org/
   link_text: Apply Now
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: chafee-grant
   name: Chafee Grant for Foster Youth
   category: Education
@@ -3035,7 +3035,7 @@
   timeframe: Academic year
   link: https://www.csac.ca.gov/chafee-grant
   link_text: Apply Now
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: sf-casa
   name: San Francisco CASA
   category: Community Services
@@ -3065,7 +3065,7 @@
   timeframe: Ongoing
   link: https://sfcasa.org/
   link_text: Learn More
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: five-keys
   name: Five Keys Schools and Programs
   category: Education
@@ -3096,7 +3096,7 @@
   timeframe: Ongoing
   link: https://www.fivekeyscharter.org/
   link_text: Enroll
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
   latitude: 37.7771703
   longitude: -122.4021838
 - id: project-rebound
@@ -3125,7 +3125,7 @@
   timeframe: Ongoing
   link: https://www.calstate.edu/impact-of-the-csu/student-success/project-rebound
   link_text: Find Campus
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: anti-recidivism-coalition
   name: Anti-Recidivism Coalition (ARC)
   category: Community Services
@@ -3153,7 +3153,7 @@
   timeframe: Ongoing
   link: https://antirecidivism.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'
 - id: centerforce-reentry
   name: Centerforce Reentry Services
   category: Community Services
@@ -3180,4 +3180,4 @@
   timeframe: Ongoing
   link: https://centerforce.org/
   link_text: Get Help
-  verified_date: "2025-12-30"
+  verified_date: '2025-12-30'

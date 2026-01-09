@@ -18,6 +18,7 @@ The simplest way to deploy is using the provided deployment script:
 ```
 
 This script will:
+
 1. Check if the site is already built (or rebuild if needed)
 2. Retrieve the deployment token from Azure automatically
 3. Deploy to Azure Static Web Apps using the SWA CLI
@@ -70,15 +71,19 @@ To re-enable automatic deployment, edit `.github/workflows/deploy.yml` and chang
 ## Troubleshooting
 
 ### "az command not found"
+
 Install Azure CLI: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 
 ### "swa command not found"
+
 Install SWA CLI: `npm install -g @azure/static-web-apps-cli`
 
 ### "Failed to retrieve deployment token"
+
 Make sure you're logged in to Azure: `az login`
 
 ### "No matching Static Web App was found"
+
 This usually indicates a token issue. Use the local `deploy.sh` script which retrieves a fresh token automatically.
 
 ## API Data Generation
@@ -88,6 +93,7 @@ The static JSON API files are generated automatically by the `generate-api.yml` 
 ## Post-Deployment Verification
 
 After deployment, verify:
+
 1. Site loads: https://baynavigator.org
 2. APCA checker works: Open browser console and run `window.APCA.scanPage()`
 3. Accessibility toolbar: Click the ♿ button in top-left
@@ -97,12 +103,14 @@ After deployment, verify:
 ## Rollback
 
 To rollback to a previous deployment, check the deployment history in Azure Portal:
+
 1. Navigate to the Static Web App resource
 2. Go to "Deployment History"
 3. Select a previous successful deployment
 4. Click "Reactivate"
 
 Alternatively, checkout a previous Git commit and run `./deploy.sh`:
+
 ```bash
 git checkout <commit-hash>
 ./deploy.sh

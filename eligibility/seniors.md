@@ -125,6 +125,7 @@ While AARP membership starts at 50, an AARP card is widely recognized for senior
   <div class="expandable-content">
 
 **Full Retirement Age (FRA):**
+
 - Born 1943-1954: Age 66
 - Born 1955-1959: Age 66 + 2 months per year
 - Born 1960+: Age 67
@@ -148,6 +149,7 @@ While AARP membership starts at 50, an AARP card is widely recognized for senior
 Federal health insurance for those 65+ or with qualifying disabilities.
 
 **Parts:**
+
 - **Part A:** Hospital insurance (usually premium-free)
 - **Part B:** Medical insurance ($185/month in 2026, income-based)
 - **Part C:** Medicare Advantage (private plans)
@@ -156,6 +158,7 @@ Federal health insurance for those 65+ or with qualifying disabilities.
 **Enrollment:** Initial enrollment period is 7 months around your 65th birthday.
 
 **California Medicare Resources:**
+
 - **HICAP (Health Insurance Counseling & Advocacy Program):** Free Medicare counseling
 - Phone: 1-800-434-0222
 - [cahealthadvocates.org](https://cahealthadvocates.org)
@@ -173,6 +176,7 @@ Federal health insurance for those 65+ or with qualifying disabilities.
 Cash assistance for seniors 65+ (or blind/disabled) with limited income and resources.
 
 **2026 Federal Rates:**
+
 - Individual: $967/month
 - Couple: $1,450/month
 
@@ -193,11 +197,13 @@ Cash assistance for seniors 65+ (or blind/disabled) with limited income and reso
 California's Medicaid program provides health coverage and can supplement Medicare.
 
 **Eligibility:**
+
 - Age 65+ with income at or below 138% FPL
 - May qualify at higher income with spend-down
 - Asset limits have been eliminated for most applicants
 
 **What It Covers:**
+
 - Medicare premiums, deductibles, and copays
 - Long-term care services
 - In-Home Supportive Services (IHSS)
@@ -217,6 +223,7 @@ California's Medicaid program provides health coverage and can supplement Medica
 Helps seniors remain at home by providing assistance with daily activities.
 
 **Services Include:**
+
 - Housecleaning and meal preparation
 - Laundry and shopping
 - Personal care (bathing, grooming, dressing)
@@ -383,12 +390,14 @@ Helps seniors remain at home by providing assistance with daily activities.
   <div class="expandable-content">
 
 **America the Beautiful Senior Pass**
+
 - Age: 62+
 - Cost: $20 annual or $80 lifetime
 - Covers: Entrance fees at 2,000+ federal recreation sites
 - [nps.gov/planyourvisit/passes.htm](https://www.nps.gov/planyourvisit/passes.htm)
 
 **California State Parks**
+
 - Limited Income Senior Pass: Free day use for low-income seniors 62+
 - [parks.ca.gov](https://www.parks.ca.gov/?page_id=1049)
 

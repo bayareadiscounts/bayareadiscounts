@@ -3,7 +3,7 @@
  * Expandable sections, checklists, and county selector
  */
 
-(function() {
+(function () {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', init);
@@ -21,7 +21,7 @@
   function initExpandableSections() {
     const sections = document.querySelectorAll('.expandable-section');
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const header = section.querySelector('.expandable-header');
       const content = section.querySelector('.expandable-content');
 
@@ -54,7 +54,7 @@
   function initChecklists() {
     const checklists = document.querySelectorAll('.eligibility-checklist');
 
-    checklists.forEach(checklist => {
+    checklists.forEach((checklist) => {
       const items = checklist.querySelectorAll('.eligibility-checklist-item');
       const progressBar = checklist.parentElement.querySelector('.progress-fill');
       const progressText = checklist.parentElement.querySelector('.progress-text');
@@ -127,7 +127,7 @@
     }
 
     // Update aria-checked on all items
-    items.forEach(item => {
+    items.forEach((item) => {
       item.setAttribute('aria-checked', item.classList.contains('checked'));
     });
   }
@@ -138,7 +138,7 @@
   function initCountySelector() {
     const selectors = document.querySelectorAll('.county-select');
 
-    selectors.forEach(select => {
+    selectors.forEach((select) => {
       const container = select.closest('.county-selector');
       const infoCards = container?.querySelectorAll('.county-info') || [];
 
@@ -158,7 +158,7 @@
   }
 
   function showCountyInfo(county, infoCards) {
-    infoCards.forEach(card => {
+    infoCards.forEach((card) => {
       if (card.dataset.county === county) {
         card.classList.add('active');
       } else {
@@ -173,7 +173,7 @@
   function initDocumentChecklists() {
     const checklists = document.querySelectorAll('.document-checklist');
 
-    checklists.forEach(checklist => {
+    checklists.forEach((checklist) => {
       const items = checklist.querySelectorAll('.document-item');
       const storageKey = checklist.dataset.checklistId || 'document-checklist';
 
@@ -230,7 +230,8 @@
       announcer.setAttribute('aria-live', 'polite');
       announcer.setAttribute('aria-atomic', 'true');
       announcer.className = 'sr-only';
-      announcer.style.cssText = 'position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;';
+      announcer.style.cssText =
+        'position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;';
       document.body.appendChild(announcer);
     }
 
@@ -241,6 +242,6 @@
   window.EligibilityGuide = {
     initChecklists,
     initCountySelector,
-    updateProgress
+    updateProgress,
   };
 })();

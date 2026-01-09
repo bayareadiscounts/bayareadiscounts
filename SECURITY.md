@@ -2,10 +2,10 @@
 
 ## Supported Versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| Latest  | :white_check_mark: |
-| < Latest| :x:                |
+| Version  | Supported          |
+| -------- | ------------------ |
+| Latest   | :white_check_mark: |
+| < Latest | :x:                |
 
 ## Reporting a Vulnerability
 
@@ -135,4 +135,4 @@ This project is fully open source. You can verify our security claims by:
 
 ---
 
-*Last Updated: December 26, 2025*
+_Last Updated: December 26, 2025_

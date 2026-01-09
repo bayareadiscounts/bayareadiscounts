@@ -26,49 +26,97 @@ if (!fs.existsSync(PROGRAMS_DIR)) {
   fs.mkdirSync(PROGRAMS_DIR, { recursive: true });
 } else {
   // Clean up old program files to remove deleted programs
-  const oldFiles = fs.readdirSync(PROGRAMS_DIR).filter(f => f.endsWith('.json'));
-  oldFiles.forEach(f => fs.unlinkSync(path.join(PROGRAMS_DIR, f)));
+  const oldFiles = fs.readdirSync(PROGRAMS_DIR).filter((f) => f.endsWith('.json'));
+  oldFiles.forEach((f) => fs.unlinkSync(path.join(PROGRAMS_DIR, f)));
   console.log(`🧹 Cleaned up ${oldFiles.length} old program files`);
 }
 
 // Category metadata with icons
 const CATEGORY_METADATA = {
-  'community': { name: 'Community', icon: '🏘️' },
-  'education': { name: 'Education', icon: '📚' },
-  'equipment': { name: 'Equipment', icon: '🔧' },
-  'finance': { name: 'Finance', icon: '💰' },
-  'food': { name: 'Food', icon: '🍎' },
-  'health': { name: 'Health', icon: '💊' },
-  'legal': { name: 'Legal', icon: '⚖️' },
-  'library_resources': { name: 'Library Resources', icon: '📖' },
-  'pet_resources': { name: 'Pet Resources', icon: '🐾' },
-  'recreation': { name: 'Recreation', icon: '⚽' },
-  'technology': { name: 'Technology', icon: '💻' },
-  'transportation': { name: 'Transportation', icon: '🚌' },
-  'utilities': { name: 'Utilities', icon: '🏠' }
+  community: { name: 'Community', icon: '🏘️' },
+  education: { name: 'Education', icon: '📚' },
+  equipment: { name: 'Equipment', icon: '🔧' },
+  finance: { name: 'Finance', icon: '💰' },
+  food: { name: 'Food', icon: '🍎' },
+  health: { name: 'Health', icon: '💊' },
+  legal: { name: 'Legal', icon: '⚖️' },
+  library_resources: { name: 'Library Resources', icon: '📖' },
+  pet_resources: { name: 'Pet Resources', icon: '🐾' },
+  recreation: { name: 'Recreation', icon: '⚽' },
+  technology: { name: 'Technology', icon: '💻' },
+  transportation: { name: 'Transportation', icon: '🚌' },
+  utilities: { name: 'Utilities', icon: '🏠' },
 };
 
 // Groups metadata with icons (formerly "eligibility")
 const GROUPS_METADATA = {
-  'income-eligible': { name: 'Income-Eligible', description: 'For people who qualify based on income', icon: '💳' },
-  'seniors': { name: 'Seniors (65+)', description: 'For adults age 65 and older', icon: '👵' },
-  'youth': { name: 'Youth', description: 'For children and young adults', icon: '🧒' },
-  'college-students': { name: 'College Students', description: 'For enrolled college students', icon: '🎓' },
-  'veterans': { name: 'Veterans / Active Duty', description: 'For military veterans and active duty', icon: '🎖️' },
-  'families': { name: 'Families', description: 'For families with children', icon: '👨‍👩‍👧' },
-  'disability': { name: 'People with Disabilities', description: 'For individuals with disabilities', icon: '🧑‍🦽' },
-  'lgbtq': { name: 'LGBT+', description: 'For LGBTQ+ community members', icon: '🌈' },
-  'first-responders': { name: 'First Responders', description: 'For police, firefighters, EMTs, nurses', icon: '🚒' },
-  'teachers': { name: 'Teachers/Educators', description: 'For K-12 teachers and school staff', icon: '👩‍🏫' },
-  'unemployed': { name: 'Unemployed/Job Seekers', description: 'For people actively seeking employment', icon: '💼' },
-  'immigrants': { name: 'Immigrants/Refugees', description: 'For new arrivals, undocumented, DACA', icon: '🌍' },
-  'unhoused': { name: 'Unhoused', description: 'For people experiencing homelessness', icon: '🏠' },
-  'pregnant': { name: 'Pregnant Women', description: 'For prenatal and maternal care', icon: '🤰' },
-  'caregivers': { name: 'Caregivers', description: 'For people caring for elderly or disabled family', icon: '🤲' },
-  'foster-youth': { name: 'Foster Youth', description: 'For current and former foster youth', icon: '🏡' },
-  'reentry': { name: 'Formerly Incarcerated', description: 'For reentry support programs', icon: '🔓' },
-  'nonprofits': { name: 'Nonprofit Organizations', description: 'For registered nonprofits', icon: '🤝' },
-  'everyone': { name: 'Everyone', description: 'Available to all residents', icon: '🌎' }
+  'income-eligible': {
+    name: 'Income-Eligible',
+    description: 'For people who qualify based on income',
+    icon: '💳',
+  },
+  seniors: { name: 'Seniors (65+)', description: 'For adults age 65 and older', icon: '👵' },
+  youth: { name: 'Youth', description: 'For children and young adults', icon: '🧒' },
+  'college-students': {
+    name: 'College Students',
+    description: 'For enrolled college students',
+    icon: '🎓',
+  },
+  veterans: {
+    name: 'Veterans / Active Duty',
+    description: 'For military veterans and active duty',
+    icon: '🎖️',
+  },
+  families: { name: 'Families', description: 'For families with children', icon: '👨‍👩‍👧' },
+  disability: {
+    name: 'People with Disabilities',
+    description: 'For individuals with disabilities',
+    icon: '🧑‍🦽',
+  },
+  lgbtq: { name: 'LGBT+', description: 'For LGBTQ+ community members', icon: '🌈' },
+  'first-responders': {
+    name: 'First Responders',
+    description: 'For police, firefighters, EMTs, nurses',
+    icon: '🚒',
+  },
+  teachers: {
+    name: 'Teachers/Educators',
+    description: 'For K-12 teachers and school staff',
+    icon: '👩‍🏫',
+  },
+  unemployed: {
+    name: 'Unemployed/Job Seekers',
+    description: 'For people actively seeking employment',
+    icon: '💼',
+  },
+  immigrants: {
+    name: 'Immigrants/Refugees',
+    description: 'For new arrivals, undocumented, DACA',
+    icon: '🌍',
+  },
+  unhoused: { name: 'Unhoused', description: 'For people experiencing homelessness', icon: '🏠' },
+  pregnant: { name: 'Pregnant Women', description: 'For prenatal and maternal care', icon: '🤰' },
+  caregivers: {
+    name: 'Caregivers',
+    description: 'For people caring for elderly or disabled family',
+    icon: '🤲',
+  },
+  'foster-youth': {
+    name: 'Foster Youth',
+    description: 'For current and former foster youth',
+    icon: '🏡',
+  },
+  reentry: {
+    name: 'Formerly Incarcerated',
+    description: 'For reentry support programs',
+    icon: '🔓',
+  },
+  nonprofits: {
+    name: 'Nonprofit Organizations',
+    description: 'For registered nonprofits',
+    icon: '🤝',
+  },
+  everyone: { name: 'Everyone', description: 'Available to all residents', icon: '🌎' },
 };
 
 // Area type mapping
@@ -83,8 +131,8 @@ const AREA_TYPES = {
   'Solano County': 'county',
   'Sonoma County': 'county',
   'Bay Area': 'region',
-  'Statewide': 'state',
-  'Nationwide': 'nationwide'
+  Statewide: 'state',
+  Nationwide: 'nationwide',
 };
 
 console.log('🚀 Generating API files from YAML data...\n');
@@ -94,7 +142,7 @@ const CITY_TO_COUNTY = {};
 if (fs.existsSync(CITIES_FILE)) {
   const citiesContent = fs.readFileSync(CITIES_FILE, 'utf8');
   const cities = yaml.load(citiesContent) || [];
-  cities.forEach(city => {
+  cities.forEach((city) => {
     // Store both exact name and lowercase for flexible matching
     CITY_TO_COUNTY[city.name] = city.county;
     CITY_TO_COUNTY[city.name.toLowerCase()] = city.county;
@@ -108,7 +156,7 @@ let suppressedIds = new Set();
 if (fs.existsSync(SUPPRESSED_FILE)) {
   const suppressedData = yaml.load(fs.readFileSync(SUPPRESSED_FILE, 'utf8'));
   if (Array.isArray(suppressedData)) {
-    suppressedIds = new Set(suppressedData.map(s => s.id));
+    suppressedIds = new Set(suppressedData.map((s) => s.id));
     console.log(`🚫 Loaded ${suppressedIds.size} suppressed program IDs`);
   }
 }
@@ -116,13 +164,22 @@ if (fs.existsSync(SUPPRESSED_FILE)) {
 // Load all programs from YAML files
 const allPrograms = [];
 // Filter out non-program files (metadata files that don't contain program arrays)
-const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml', 'search-config.yml', 'county-supervisors.yml', 'site-config.yml'];
-const categoryFiles = fs.readdirSync(DATA_DIR)
-  .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
+const NON_PROGRAM_FILES = [
+  'cities.yml',
+  'groups.yml',
+  'zipcodes.yml',
+  'suppressed.yml',
+  'search-config.yml',
+  'county-supervisors.yml',
+  'site-config.yml',
+];
+const categoryFiles = fs
+  .readdirSync(DATA_DIR)
+  .filter((f) => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
 console.log(`📂 Found ${categoryFiles.length} category files`);
 
-categoryFiles.forEach(file => {
+categoryFiles.forEach((file) => {
   const categoryId = path.basename(file, '.yml');
   const filePath = path.join(DATA_DIR, file);
   const content = fs.readFileSync(filePath, 'utf8');
@@ -130,12 +187,14 @@ categoryFiles.forEach(file => {
 
   console.log(`   - ${file}: ${programs.length} programs`);
 
-  programs.forEach(program => {
+  programs.forEach((program) => {
     // Use existing ID from YAML, or generate from name as fallback
-    const id = program.id || program.name
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '');
+    const id =
+      program.id ||
+      program.name
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
 
     // Skip suppressed programs
     if (suppressedIds.has(id)) {
@@ -185,7 +244,7 @@ categoryFiles.forEach(file => {
       keywords: program.keywords || [],
       lifeEvents: program.life_events || [],
       agency: program.agency || null,
-      lastUpdated: new Date().toISOString().split('T')[0]
+      lastUpdated: new Date().toISOString().split('T')[0],
     };
 
     allPrograms.push(transformed);
@@ -203,75 +262,63 @@ const programsResponse = {
   total: allPrograms.length,
   count: allPrograms.length,
   offset: 0,
-  programs: allPrograms
+  programs: allPrograms,
 };
 
-fs.writeFileSync(
-  path.join(API_DIR, 'programs.json'),
-  JSON.stringify(programsResponse, null, 2)
-);
+fs.writeFileSync(path.join(API_DIR, 'programs.json'), JSON.stringify(programsResponse, null, 2));
 console.log('✅ Generated programs.json');
 
 // Generate categories.json
 const categoryCounts = {};
-allPrograms.forEach(p => {
+allPrograms.forEach((p) => {
   categoryCounts[p.category] = (categoryCounts[p.category] || 0) + 1;
 });
 
-const categories = Object.keys(CATEGORY_METADATA).map(id => ({
+const categories = Object.keys(CATEGORY_METADATA).map((id) => ({
   id,
   name: CATEGORY_METADATA[id].name,
   icon: CATEGORY_METADATA[id].icon,
-  programCount: categoryCounts[id] || 0
+  programCount: categoryCounts[id] || 0,
 }));
 
-fs.writeFileSync(
-  path.join(API_DIR, 'categories.json'),
-  JSON.stringify({ categories }, null, 2)
-);
+fs.writeFileSync(path.join(API_DIR, 'categories.json'), JSON.stringify({ categories }, null, 2));
 console.log('✅ Generated categories.json');
 
 // Generate groups.json (formerly eligibility.json)
 const groupsCounts = {};
-allPrograms.forEach(p => {
-  p.groups.forEach(g => {
+allPrograms.forEach((p) => {
+  p.groups.forEach((g) => {
     groupsCounts[g] = (groupsCounts[g] || 0) + 1;
   });
 });
 
-const groups = Object.keys(GROUPS_METADATA).map(id => ({
+const groups = Object.keys(GROUPS_METADATA).map((id) => ({
   id,
   name: GROUPS_METADATA[id].name,
   description: GROUPS_METADATA[id].description,
   icon: GROUPS_METADATA[id].icon,
-  programCount: groupsCounts[id] || 0
+  programCount: groupsCounts[id] || 0,
 }));
 
-fs.writeFileSync(
-  path.join(API_DIR, 'groups.json'),
-  JSON.stringify({ groups }, null, 2)
-);
+fs.writeFileSync(path.join(API_DIR, 'groups.json'), JSON.stringify({ groups }, null, 2));
 console.log('✅ Generated groups.json');
 
 // Generate areas.json
 const areaCounts = {};
-allPrograms.forEach(p => {
-  p.areas.forEach(a => {
+allPrograms.forEach((p) => {
+  p.areas.forEach((a) => {
     areaCounts[a] = (areaCounts[a] || 0) + 1;
   });
 });
 
-const areas = Object.keys(AREA_TYPES).map(name => ({
+const areas = Object.keys(AREA_TYPES).map((name) => ({
   id: name.toLowerCase().replace(/\s+/g, '-'),
   name,
   type: AREA_TYPES[name],
-  programCount: areaCounts[name] || 0
+  programCount: areaCounts[name] || 0,
 }));
 
-fs.writeFileSync(
-  path.join(API_DIR, 'areas.json'),
-  JSON.stringify({ areas }, null, 2)
-);
+fs.writeFileSync(path.join(API_DIR, 'areas.json'), JSON.stringify({ areas }, null, 2));
 console.log('✅ Generated areas.json');
 
 // Generate API metadata
@@ -284,14 +331,11 @@ const metadata = {
     categories: '/api/categories.json',
     groups: '/api/groups.json',
     areas: '/api/areas.json',
-    singleProgram: '/api/programs/{id}.json'
-  }
+    singleProgram: '/api/programs/{id}.json',
+  },
 };
 
-fs.writeFileSync(
-  path.join(API_DIR, 'metadata.json'),
-  JSON.stringify(metadata, null, 2)
-);
+fs.writeFileSync(path.join(API_DIR, 'metadata.json'), JSON.stringify(metadata, null, 2));
 console.log('✅ Generated metadata.json');
 
 console.log('\n🎉 API generation complete!');

@@ -8,7 +8,8 @@ interface Props {
   apiEndpoint?: string;
 }
 
-const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assistant' } = Astro.props;
+const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assistant' } =
+  Astro.props;
 ---
 
 <!-- Floating Assistant Button -->
@@ -21,10 +22,17 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
   aria-controls="assistant-panel"
 >
   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+    ></path>
   </svg>
   <!-- Notification dot for first-time users -->
-  <span id="assistant-dot" class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></span>
+  <span
+    id="assistant-dot"
+    class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></span>
 </button>
 
 <!-- Assistant Panel -->
@@ -36,11 +44,18 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
   aria-labelledby="assistant-title"
 >
   <!-- Header -->
-  <div class="flex items-center justify-between p-4 border-b border-neutral-200 dark:border-neutral-700 bg-primary-600 text-white">
+  <div
+    class="flex items-center justify-between p-4 border-b border-neutral-200 dark:border-neutral-700 bg-primary-600 text-white"
+  >
     <div class="flex items-center gap-3">
       <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          ></path>
         </svg>
       </div>
       <div>
@@ -55,7 +70,11 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       aria-label="Close assistant"
     >
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
   </div>
@@ -66,7 +85,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     <div class="assistant-message">
       <div class="bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]">
         <p class="text-sm text-neutral-800 dark:text-neutral-200">
-          Hi! I'm here to help you find programs and services in the Bay Area. You can ask me things like:
+          Hi! I'm here to help you find programs and services in the Bay Area. You can ask me things
+          like:
         </p>
         <ul class="text-sm text-neutral-600 dark:text-neutral-300 mt-2 space-y-1">
           <li>"I need help paying my electric bill"</li>
@@ -88,7 +108,11 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       <button type="button" class="quick-prompt-btn">Healthcare</button>
       <button type="button" id="view-saved-btn" class="quick-prompt-btn flex items-center gap-1">
         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
         </svg>
         Saved
       </button>
@@ -113,7 +137,11 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
         aria-label="Send message"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
         </svg>
       </button>
     </form>
@@ -138,8 +166,39 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
   let isLoading = false;
 
   // Crisis detection keywords
-  const EMERGENCY_KEYWORDS = ['emergency', 'danger', 'hurt', 'attack', 'abuse', 'violence', 'domestic violence', 'unsafe', 'threatened', 'kidnap', 'abduct', 'murder', 'stabbed'];
-  const MENTAL_HEALTH_KEYWORDS = ['suicide', 'suicidal', 'kill myself', 'end my life', "don't want to live", 'want to die', 'self-harm', 'cutting', 'hurting myself', 'crisis', 'desperate', 'depressed', 'depression', 'anxious', 'anxiety', 'worried'];
+  const EMERGENCY_KEYWORDS = [
+    'emergency',
+    'danger',
+    'hurt',
+    'attack',
+    'abuse',
+    'violence',
+    'domestic violence',
+    'unsafe',
+    'threatened',
+    'kidnap',
+    'abduct',
+    'murder',
+    'stabbed',
+  ];
+  const MENTAL_HEALTH_KEYWORDS = [
+    'suicide',
+    'suicidal',
+    'kill myself',
+    'end my life',
+    "don't want to live",
+    'want to die',
+    'self-harm',
+    'cutting',
+    'hurting myself',
+    'crisis',
+    'desperate',
+    'depressed',
+    'depression',
+    'anxious',
+    'anxiety',
+    'worried',
+  ];
 
   function detectCrisis(message) {
     const lowerMessage = message.toLowerCase();
@@ -185,7 +244,7 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
   });
 
   // Quick prompts
-  document.querySelectorAll('.quick-prompt-btn:not(#view-saved-btn)').forEach(btn => {
+  document.querySelectorAll('.quick-prompt-btn:not(#view-saved-btn)').forEach((btn) => {
     btn.addEventListener('click', () => {
       if (input && !isLoading) {
         input.value = btn.textContent || '';
@@ -231,8 +290,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message,
-          conversationHistory: conversationHistory.slice(-6)
-        })
+          conversationHistory: conversationHistory.slice(-6),
+        }),
       });
 
       const data = await response.json();
@@ -246,7 +305,6 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
 
       // Add program cards (no AI message anymore)
       addProgramResults(data.programs || [], data.programsFound || 0);
-
     } catch (error) {
       console.error('Assistant error:', error);
       addMessage(
@@ -270,9 +328,11 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
         <div class="flex items-center gap-3 mb-4">
           <div class="w-12 h-12 rounded-full flex items-center justify-center ${isEmergency ? 'bg-red-100 dark:bg-red-900/30' : 'bg-blue-100 dark:bg-blue-900/30'}">
             <svg class="w-6 h-6 ${isEmergency ? 'text-red-600' : 'text-blue-600'}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              ${isEmergency
-                ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>'
-                : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>'}
+              ${
+                isEmergency
+                  ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>'
+                  : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>'
+              }
             </svg>
           </div>
           <h3 class="text-lg font-bold ${isEmergency ? 'text-red-700 dark:text-red-400' : 'text-blue-700 dark:text-blue-400'}">
@@ -280,12 +340,16 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
           </h3>
         </div>
         <p class="text-neutral-600 dark:text-neutral-300 mb-6">
-          ${isEmergency
-            ? 'If you or someone else is in immediate danger, please call 911.'
-            : "If you're experiencing a mental health crisis, help is available 24/7."}
+          ${
+            isEmergency
+              ? 'If you or someone else is in immediate danger, please call 911.'
+              : "If you're experiencing a mental health crisis, help is available 24/7."
+          }
         </p>
         <div class="space-y-3">
-          ${isEmergency ? `
+          ${
+            isEmergency
+              ? `
             <a href="tel:911" class="flex items-center gap-4 p-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
               <div class="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/50 flex items-center justify-center">
                 <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -300,7 +364,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
               </svg>
             </a>
-          ` : `
+          `
+              : `
             <a href="tel:988" class="flex items-center gap-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
               <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
                 <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -329,7 +394,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
               </svg>
             </a>
-          `}
+          `
+          }
         </div>
         <button type="button" class="w-full mt-4 py-2 text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200" id="crisis-dialog-close">
           Continue searching
@@ -393,7 +459,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
 
     // Add result count message
     const messageBubble = document.createElement('div');
-    messageBubble.className = 'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
+    messageBubble.className =
+      'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
     if (count === 0) {
       messageBubble.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">I couldn't find matching programs. Try different keywords or browse by category on the main page.</p>`;
     } else {
@@ -406,9 +473,10 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       const cardsContainer = document.createElement('div');
       cardsContainer.className = 'space-y-2 mt-2';
 
-      programs.forEach(program => {
+      programs.forEach((program) => {
         const card = document.createElement('div');
-        card.className = 'bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-600 rounded-lg p-3 text-sm';
+        card.className =
+          'bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-600 rounded-lg p-3 text-sm';
 
         const programId = program.id || program.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
         const hasPageCard = document.getElementById(`program-${programId}`);
@@ -419,7 +487,7 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
               <h4 class="font-medium text-neutral-900 dark:text-white">${escapeHtml(program.name)}</h4>
               ${program.category ? `<span class="text-xs text-primary-600 dark:text-primary-300">${escapeHtml(program.category)}</span>` : ''}
             </div>
-            <button type="button" class="save-program-btn p-1 text-neutral-400 hover:text-primary-600 dark:hover:text-primary-300" data-program='${JSON.stringify(program).replace(/'/g, "&#39;")}' aria-label="Save program">
+            <button type="button" class="save-program-btn p-1 text-neutral-400 hover:text-primary-600 dark:hover:text-primary-300" data-program='${JSON.stringify(program).replace(/'/g, '&#39;')}' aria-label="Save program">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
               </svg>
@@ -441,7 +509,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
       // Add save all button
       const saveAllBtn = document.createElement('button');
       saveAllBtn.type = 'button';
-      saveAllBtn.className = 'text-xs text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-1 mt-2';
+      saveAllBtn.className =
+        'text-xs text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-1 mt-2';
       saveAllBtn.innerHTML = `
         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
@@ -456,7 +525,7 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     messagesContainer?.scrollTo({ top: messagesContainer.scrollHeight, behavior: 'smooth' });
 
     // Attach save handlers
-    wrapper.querySelectorAll('.save-program-btn').forEach(btn => {
+    wrapper.querySelectorAll('.save-program-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         const program = JSON.parse(btn.dataset.program);
         savePrograms([program]);
@@ -467,14 +536,14 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
 
   function savePrograms(programs) {
     const saved = JSON.parse(localStorage.getItem('savedPrograms') || '[]');
-    const existingIds = new Set(saved.map(p => p.id || p.name));
+    const existingIds = new Set(saved.map((p) => p.id || p.name));
 
-    programs.forEach(program => {
+    programs.forEach((program) => {
       const id = program.id || program.name;
       if (!existingIds.has(id)) {
         saved.push({
           ...program,
-          savedAt: new Date().toISOString()
+          savedAt: new Date().toISOString(),
         });
         existingIds.add(id);
       }
@@ -484,14 +553,16 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
 
     // Show confirmation
     const toast = document.createElement('div');
-    toast.className = 'fixed bottom-24 left-1/2 -translate-x-1/2 bg-neutral-900 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50';
-    toast.textContent = programs.length === 1 ? 'Program saved!' : `${programs.length} programs saved!`;
+    toast.className =
+      'fixed bottom-24 left-1/2 -translate-x-1/2 bg-neutral-900 text-white text-sm px-4 py-2 rounded-lg shadow-lg z-50';
+    toast.textContent =
+      programs.length === 1 ? 'Program saved!' : `${programs.length} programs saved!`;
     document.body.appendChild(toast);
     setTimeout(() => toast.remove(), 2000);
   }
 
   // Close panel and scroll to program card
-  window.closeAndScroll = function(elementId) {
+  window.closeAndScroll = function (elementId) {
     panel?.classList.add('hidden');
     toggle?.setAttribute('aria-expanded', 'false');
     setTimeout(() => {
@@ -508,7 +579,10 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     const saved = JSON.parse(localStorage.getItem('savedPrograms') || '[]');
 
     if (saved.length === 0) {
-      addMessage("You haven't saved any programs yet. When I show you programs, click the bookmark icon to save them for later.", 'assistant');
+      addMessage(
+        "You haven't saved any programs yet. When I show you programs, click the bookmark icon to save them for later.",
+        'assistant'
+      );
       return;
     }
 
@@ -516,7 +590,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     wrapper.className = 'assistant-message space-y-3';
 
     const header = document.createElement('div');
-    header.className = 'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
+    header.className =
+      'bg-neutral-100 dark:bg-neutral-700 rounded-2xl rounded-tl-sm p-3 max-w-[85%]';
     header.innerHTML = `<p class="text-sm text-neutral-800 dark:text-neutral-200">You have <strong>${saved.length}</strong> saved program${saved.length !== 1 ? 's' : ''}:</p>`;
     wrapper.appendChild(header);
 
@@ -525,7 +600,8 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
 
     saved.forEach((program, index) => {
       const card = document.createElement('div');
-      card.className = 'bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-600 rounded-lg p-3 text-sm';
+      card.className =
+        'bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-600 rounded-lg p-3 text-sm';
 
       const programId = program.id || program.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
@@ -571,7 +647,7 @@ const { apiEndpoint = 'https://baytides-link-checker.azurewebsites.net/api/assis
     messagesContainer?.scrollTo({ top: messagesContainer.scrollHeight, behavior: 'smooth' });
 
     // Attach remove handlers
-    wrapper.querySelectorAll('.remove-saved-btn').forEach(btn => {
+    wrapper.querySelectorAll('.remove-saved-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         const index = parseInt(btn.dataset.index);
         const saved = JSON.parse(localStorage.getItem('savedPrograms') || '[]');

@@ -58,18 +58,21 @@ Bay Navigator uses Azure services for hosting and backend infrastructure while k
 ## 📦 Azure Services Used
 
 ### 1. Azure Static Web Apps (Current)
+
 **What it does**: Hosts the Jekyll static website
 **Cost**: Free tier
 **Open source**: ✅ GitHub Actions workflow public
 **Code location**: `.github/workflows/azure-static-web-apps-*.yml`
 
 ### 2. Azure Cosmos DB (New)
+
 **What it does**: NoSQL database for program data
 **Cost**: Serverless - pay per request (1000 RU/s free)
 **Open source**: ✅ Schema and queries in repo
 **Code location**: `infrastructure/bicep/main.bicep`
 
 **Why Cosmos DB?**
+
 - Real-time updates without rebuilding site
 - Better search and filtering capabilities
 - API access for third-party integrations
@@ -77,23 +80,27 @@ Bay Navigator uses Azure services for hosting and backend infrastructure while k
 - Automatic indexing and scaling
 
 ### 3. Azure Functions (New)
+
 **What it does**: Serverless REST API
 **Cost**: Consumption plan (1M executions free)
 **Open source**: ✅ All function code in repo
 **Code location**: `azure-functions/`
 
 **API Endpoints**:
+
 - `GET /api/programs` - List programs with filters
 - `GET /api/programs/{id}` - Get single program
 - `GET /api/categories` - List categories
 
 ### 4. Application Insights (New)
+
 **What it does**: Monitoring, analytics, and error tracking
 **Cost**: Free tier (5 GB/month)
 **Open source**: ✅ Configuration in repo
 **Code location**: `infrastructure/bicep/main.bicep`
 
 **What it tracks**:
+
 - API response times
 - Error rates and stack traces
 - Popular programs/categories
@@ -102,16 +109,17 @@ Bay Navigator uses Azure services for hosting and backend infrastructure while k
 
 ## 💰 Cost Analysis
 
-| Service | Free Tier | Expected Usage | Monthly Cost |
-|---------|-----------|----------------|--------------|
-| Static Web Apps | Unlimited | 100% covered | $0.00 |
-| Cosmos DB | 1000 RU/s, 25 GB | 50 RU/s, <1 GB | $0.00 |
-| Azure Functions | 1M executions | ~50k requests | $0.00 |
-| Storage (Functions) | 5 GB | <100 MB | $0.02 |
-| Application Insights | 5 GB data | ~500 MB | $0.00 |
-| **Total** | | | **$0.02/month** |
+| Service              | Free Tier        | Expected Usage | Monthly Cost    |
+| -------------------- | ---------------- | -------------- | --------------- |
+| Static Web Apps      | Unlimited        | 100% covered   | $0.00           |
+| Cosmos DB            | 1000 RU/s, 25 GB | 50 RU/s, <1 GB | $0.00           |
+| Azure Functions      | 1M executions    | ~50k requests  | $0.00           |
+| Storage (Functions)  | 5 GB             | <100 MB        | $0.02           |
+| Application Insights | 5 GB data        | ~500 MB        | $0.00           |
+| **Total**            |                  |                | **$0.02/month** |
 
 **Scaling costs** (10,000 visitors/day):
+
 - Cosmos DB: ~$5/month
 - Azure Functions: Still free
 - Application Insights: Still free
@@ -120,6 +128,7 @@ Bay Navigator uses Azure services for hosting and backend infrastructure while k
 ## 🔓 How This Remains Open Source
 
 ### What's Public (in GitHub)
+
 ✅ All application code
 ✅ Azure Functions (serverless API)
 ✅ Infrastructure as Code (Bicep templates)
@@ -129,12 +138,14 @@ Bay Navigator uses Azure services for hosting and backend infrastructure while k
 ✅ Documentation and setup guides
 
 ### What's Private (Azure secrets)
+
 🔒 Database connection strings
 🔒 API keys
 🔒 Service principal credentials
 🔒 Actual program data (though licensed CC BY 4.0)
 
 ### License Compliance
+
 - **Code**: MIT License (requires attribution)
 - **Data**: CC BY 4.0 (requires attribution)
 - Anyone can fork and deploy their own instance
@@ -143,19 +154,25 @@ Bay Navigator uses Azure services for hosting and backend infrastructure while k
 ## 🚀 Deployment Options
 
 ### Option 1: Use Azure (Recommended)
+
 Follow the guide in `infrastructure/README.md`
+
 - Free tier covers most usage
 - Easy GitHub Actions integration
 - 5-minute setup
 
 ### Option 2: Use Other Cloud Providers
+
 The code is cloud-agnostic:
+
 - Replace Cosmos DB with MongoDB Atlas, DynamoDB, or Firebase
 - Replace Functions with AWS Lambda, Google Cloud Functions, or Vercel
 - Replace Static Web Apps with Netlify, Vercel, or GitHub Pages
 
 ### Option 3: Self-Host
+
 Run everything on your own server:
+
 - Use MongoDB or PostgreSQL for data
 - Use Express.js or Next.js for API
 - Host static site anywhere
@@ -163,18 +180,21 @@ Run everything on your own server:
 ## 📋 Quick Start
 
 ### Prerequisites
+
 - Azure account (free at https://azure.microsoft.com/free/)
 - Azure CLI installed
 - Node.js 20+
 - Git
 
 ### 1. Clone Repository
+
 ```bash
 git clone https://github.com/baytides/baynavigator.git
 cd baynavigator
 ```
 
 ### 2. Deploy Infrastructure
+
 ```bash
 # Login to Azure
 az login
@@ -189,6 +209,7 @@ az deployment group create \
 ```
 
 ### 3. Migrate Data
+
 ```bash
 # Get Cosmos DB credentials from Azure Portal
 
@@ -203,6 +224,7 @@ npm run migrate
 ```
 
 ### 4. Deploy Functions
+
 ```bash
 cd azure-functions
 npm install
@@ -210,7 +232,9 @@ func azure functionapp publish <your-function-app-name>
 ```
 
 ### 5. Configure GitHub Actions
+
 Add these secrets to your GitHub repository:
+
 - `AZURE_FUNCTION_APP_NAME`
 - `AZURE_FUNCTION_APP_PUBLISH_PROFILE`
 - Other secrets (see `infrastructure/README.md`)
@@ -218,16 +242,19 @@ Add these secrets to your GitHub repository:
 ## 🔄 Data Flow
 
 ### Static Site (Current)
+
 ```
 YAML files → Jekyll build → Static HTML → Azure Static Web Apps
 ```
 
 ### Dynamic API (New)
+
 ```
 Admin adds program → Cosmos DB → Azure Functions API → Website/Apps
 ```
 
 ### Hybrid Approach (Recommended)
+
 ```
 YAML files (version control) → Migration script → Cosmos DB
                                                       ↓
@@ -237,18 +264,21 @@ Website ←──────────────── Azure Functions API 
 ## 🌟 Benefits of Azure Integration
 
 ### For Users
+
 ✅ Faster search (server-side with Cosmos DB)
 ✅ Real-time updates (no rebuild needed)
 ✅ Better mobile experience (API access)
 ✅ More features (favorites, notifications)
 
 ### For Developers
+
 ✅ Easy to contribute (all code is open)
 ✅ Modern stack (serverless, NoSQL)
 ✅ Free to deploy (generous free tiers)
 ✅ Production-ready (automatic scaling)
 
 ### For the Project
+
 ✅ Community ownership (MIT license)
 ✅ Sustainability (Azure sponsorship potential)
 ✅ Ecosystem growth (third-party apps welcome)
@@ -257,6 +287,7 @@ Website ←──────────────── Azure Functions API 
 ## 🛠️ Development Workflow
 
 ### Local Development
+
 ```bash
 # Run Jekyll site locally
 bundle exec jekyll serve
@@ -271,6 +302,7 @@ func start
 ```
 
 ### Making Changes
+
 ```bash
 # 1. Create feature branch
 git checkout -b feature/new-endpoint
@@ -293,7 +325,9 @@ git push origin feature/new-endpoint
 ## 📊 Monitoring & Analytics
 
 ### Application Insights Dashboard
+
 View in Azure Portal:
+
 - Request counts and latency
 - Error rates and types
 - Popular programs
@@ -301,13 +335,16 @@ View in Azure Portal:
 - Custom metrics
 
 ### Cosmos DB Metrics
+
 - Request units consumed
 - Storage usage
 - Query performance
 - Indexing efficiency
 
 ### Cost Management
+
 Set up alerts for:
+
 - Monthly spending > $1
 - Cosmos DB RU/s > 100
 - Function executions > 100k
@@ -349,18 +386,21 @@ Want to create "Seattle Discounts" or "NYC Benefits"?
 ## 📚 Resources
 
 ### Documentation
+
 - [Infrastructure Setup](../infrastructure/README.md)
 - [Azure Functions API](../azure-functions/README.md)
 - [Main README](../README.md)
 - [Contributing Guide](CONTRIBUTING.md)
 
 ### Azure Resources
+
 - [Azure Free Account](https://azure.microsoft.com/free/)
 - [Cosmos DB Pricing](https://azure.microsoft.com/pricing/details/cosmos-db/)
 - [Functions Pricing](https://azure.microsoft.com/pricing/details/functions/)
 - [Azure for Students](https://azure.microsoft.com/free/students/)
 
 ### Learning
+
 - [Azure Functions Tutorial](https://docs.microsoft.com/azure/azure-functions/)
 - [Cosmos DB Getting Started](https://docs.microsoft.com/azure/cosmos-db/)
 - [Infrastructure as Code with Bicep](https://docs.microsoft.com/azure/azure-resource-manager/bicep/)
@@ -374,6 +414,7 @@ Want to create "Seattle Discounts" or "NYC Benefits"?
 ## 📝 License
 
 This project uses dual licensing:
+
 - **Code**: MIT License (requires attribution)
 - **Data**: CC BY 4.0 (requires attribution)
 

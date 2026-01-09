@@ -13,18 +13,18 @@ async function checkAccessibility(page, pageName) {
     .analyze();
 
   // Create detailed violation report
-  const violations = results.violations.map(v => ({
+  const violations = results.violations.map((v) => ({
     id: v.id,
     impact: v.impact,
     description: v.description,
     helpUrl: v.helpUrl,
     nodes: v.nodes.length,
-    elements: v.nodes.slice(0, 3).map(n => n.html)
+    elements: v.nodes.slice(0, 3).map((n) => n.html),
   }));
 
   if (violations.length > 0) {
     console.log(`\n${pageName} - Accessibility Violations:`);
-    violations.forEach(v => {
+    violations.forEach((v) => {
       console.log(`  [${v.impact}] ${v.id}: ${v.description}`);
       console.log(`    Affected elements: ${v.nodes}`);
       console.log(`    Help: ${v.helpUrl}`);
@@ -42,11 +42,11 @@ test.describe('Accessibility - Home Page', () => {
     const { violations } = await checkAccessibility(page, 'Home');
 
     // Fail on critical or serious violations
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
-    expect(critical, `Found ${critical.length} critical/serious accessibility issues`).toHaveLength(0);
+    expect(critical, `Found ${critical.length} critical/serious accessibility issues`).toHaveLength(
+      0
+    );
   });
 
   test('should have proper heading hierarchy', async ({ page }) => {
@@ -61,16 +61,16 @@ test.describe('Accessibility - Home Page', () => {
     const headings = await page.evaluate(() => {
       const hs = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
       return Array.from(hs)
-        .filter(h => {
+        .filter((h) => {
           // Check if heading is visible (not inside a hidden parent)
           let parent = h.closest('.hidden');
           return !parent;
         })
-        .map(h => parseInt(h.tagName[1]));
+        .map((h) => parseInt(h.tagName[1]));
     });
 
     for (let i = 1; i < headings.length; i++) {
-      const diff = headings[i] - headings[i-1];
+      const diff = headings[i] - headings[i - 1];
       expect(diff, 'Heading levels should not skip more than one level').toBeLessThanOrEqual(1);
     }
   });
@@ -113,9 +113,7 @@ test.describe('Accessibility - Home Page', () => {
   test('images should have alt text', async ({ page }) => {
     await page.goto('/');
 
-    const results = await new AxeBuilder({ page })
-      .options({ runOnly: ['image-alt'] })
-      .analyze();
+    const results = await new AxeBuilder({ page }).options({ runOnly: ['image-alt'] }).analyze();
 
     expect(results.violations, 'Images missing alt text').toHaveLength(0);
   });
@@ -154,9 +152,7 @@ test.describe('Accessibility - Directory Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Directory');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -173,9 +169,7 @@ test.describe('Accessibility - Dark Mode', () => {
 
     const { violations } = await checkAccessibility(page, 'Home (Dark Mode)');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical, 'Dark mode has accessibility issues').toHaveLength(0);
   });
@@ -188,9 +182,7 @@ test.describe('Accessibility - About Page', () => {
 
     const { violations } = await checkAccessibility(page, 'About');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -203,9 +195,7 @@ test.describe('Accessibility - Eligibility Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Eligibility');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -218,9 +208,7 @@ test.describe('Accessibility - Partnerships Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Partnerships');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -233,9 +221,7 @@ test.describe('Accessibility - Glossary Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Glossary');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -260,9 +246,7 @@ test.describe('Accessibility - Sustainability Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Sustainability');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -275,9 +259,7 @@ test.describe('Accessibility - Accessibility Statement Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Accessibility Statement');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -290,9 +272,7 @@ test.describe('Accessibility - Download Page', () => {
 
     const { violations } = await checkAccessibility(page, 'Download');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -305,9 +285,7 @@ test.describe('Accessibility - Legal Pages', () => {
 
     const { violations } = await checkAccessibility(page, 'Privacy');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -318,9 +296,7 @@ test.describe('Accessibility - Legal Pages', () => {
 
     const { violations } = await checkAccessibility(page, 'Terms');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });
@@ -331,9 +307,7 @@ test.describe('Accessibility - Legal Pages', () => {
 
     const { violations } = await checkAccessibility(page, 'Credits');
 
-    const critical = violations.filter(v =>
-      v.impact === 'critical' || v.impact === 'serious'
-    );
+    const critical = violations.filter((v) => v.impact === 'critical' || v.impact === 'serious');
 
     expect(critical).toHaveLength(0);
   });

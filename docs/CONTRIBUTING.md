@@ -22,12 +22,14 @@ Thank you for your interest in contributing! This guide will help you add progra
 ## 🤝 Ways to Contribute
 
 ### Non-Technical Contributors
+
 - 📝 Submit program suggestions via [GitHub Issues](../../issues/new)
 - 🔍 Report outdated information or broken links
 - 💡 Suggest new features or improvements
 - 📣 Share the resource with your community
 
 ### Technical Contributors
+
 - ➕ Add new programs directly via Pull Request
 - 🐛 Fix bugs and issues
 - ✨ Improve existing features
@@ -58,6 +60,7 @@ Thank you for your interest in contributing! This guide will help you add progra
    - Clear value to Bay Area residents
 
 **❌ Do NOT include:**
+
 - Programs only available outside the Bay Area
 - National programs without Bay Area presence
 - Programs that require travel outside the region
@@ -67,6 +70,7 @@ Thank you for your interest in contributing! This guide will help you add progra
 **This is a factual, community-focused resource. All contributions must be:**
 
 #### ✅ Impartial & Factual
+
 - Stick to objective facts about programs
 - Use neutral language
 - No promotional or marketing language
@@ -75,6 +79,7 @@ Thank you for your interest in contributing! This guide will help you add progra
 - Use clean, canonical links only (no affiliate codes or tracking parameters). The site automatically appends standard `utm_source=baynavigator` referrals to program links for anonymous impact reporting.
 
 #### ✅ Community-Focused
+
 - Programs must benefit the community, not individuals or businesses
 - Focus on public good and accessibility
 - No self-promotion or business advertising
@@ -95,6 +100,7 @@ This project is privacy-first. Contributors must ensure changes do not introduce
 #### ❌ What We Don't Accept
 
 **Business Promotion:**
+
 - No private businesses (unless they offer verified public benefit programs)
 - No individual service providers
 - No affiliate links or referral codes
@@ -102,12 +108,14 @@ This project is privacy-first. Contributors must ensure changes do not introduce
 - No paid placements or compensation-based listings
 
 **Personal Beliefs & Causes:**
+
 - No edits based on personal political views
 - No removal of programs based on ideology
 - No promotion of personal causes or agendas
 - Keep all contributions neutral and fact-based
 
 **Religious Activities:**
+
 - ❌ NO religious services, worship events, or faith-based programs that include religious instruction
 - ❌ NO programs that use activities as a means to promote religious beliefs
 - ✅ YES to secular community services provided by religious organizations that:
@@ -117,22 +125,25 @@ This project is privacy-first. Contributors must ensure changes do not introduce
   - Do NOT include religious instruction or proselytizing
 
 **Example - Acceptable:**
+
 ```yaml
-- id: "church-free-lunch"
-  name: "Weekly Community Lunch"
-  benefit: "Free hot lunch every Saturday from 12-2pm; open to all community members"
+- id: 'church-free-lunch'
+  name: 'Weekly Community Lunch'
+  benefit: 'Free hot lunch every Saturday from 12-2pm; open to all community members'
 ```
 
 **Example - NOT Acceptable:**
+
 ```yaml
-- id: "church-service"
-  name: "Sunday Worship Service"
-  benefit: "Join us for worship and community"  # ❌ Religious service
+- id: 'church-service'
+  name: 'Sunday Worship Service'
+  benefit: 'Join us for worship and community' # ❌ Religious service
 ```
 
 ### Quality Standards
 
 All programs must be:
+
 - **Verifiable** - Official website or documentation required
 - **Active** - Currently operating (not historical or planned)
 - **Accessible** - Clear eligibility and access information
@@ -142,12 +153,14 @@ All programs must be:
 #### Timing Requirements
 
 **✅ Programs we include:**
+
 - **Ongoing programs** - Available continuously (e.g., "Apply anytime")
 - **Seasonal programs** - Recurring annually (e.g., "Summer only", "November-March")
 - **Regular recurring events** - Consistent schedule (e.g., "First Monday of each month", "Weekly on Saturdays", "Every other Tuesday")
 - **Long-term programs** - Extended duration with clear timeframe (e.g., "6-month program starting quarterly")
 
 **❌ Programs we exclude:**
+
 - One-time events (e.g., "Free concert on July 15th")
 - Short single-period events (e.g., "3-day workshop")
 - Irregular or unpredictable availability
@@ -156,42 +169,49 @@ All programs must be:
 **Examples:**
 
 ✅ **Good - Ongoing:**
+
 ```yaml
-timeframe: "Ongoing"
-benefit: "Free library card with 24/7 digital access"
+timeframe: 'Ongoing'
+benefit: 'Free library card with 24/7 digital access'
 ```
 
 ✅ **Good - Seasonal:**
+
 ```yaml
-timeframe: "Annual (November-March)"
-benefit: "Free tax preparation assistance during tax season"
+timeframe: 'Annual (November-March)'
+benefit: 'Free tax preparation assistance during tax season'
 ```
 
 ✅ **Good - Regular recurring:**
+
 ```yaml
-timeframe: "Weekly on Saturdays, 12-2pm"
-benefit: "Free community meal every Saturday"
+timeframe: 'Weekly on Saturdays, 12-2pm'
+benefit: 'Free community meal every Saturday'
 ```
 
 ✅ **Good - Regular basis:**
+
 ```yaml
-timeframe: "First Monday of each month"
-benefit: "Free legal clinic on the first Monday of every month"
+timeframe: 'First Monday of each month'
+benefit: 'Free legal clinic on the first Monday of every month'
 ```
 
 ❌ **Bad - One-time event:**
+
 ```yaml
-timeframe: "June 15, 2024"
-benefit: "Free health screening day"  # Single event, not recurring
+timeframe: 'June 15, 2024'
+benefit: 'Free health screening day' # Single event, not recurring
 ```
 
 ❌ **Bad - Short duration without recurrence:**
+
 ```yaml
-timeframe: "Weekend workshop"
-benefit: "Three-day financial literacy workshop"  # No recurring schedule
+timeframe: 'Weekend workshop'
+benefit: 'Three-day financial literacy workshop' # No recurring schedule
 ```
 
 **If in doubt, ask yourself:**
+
 - Does this help the Bay Area community?
 - Is this factual and neutral?
 - Would this benefit multiple people, not just me or my organization?
@@ -203,6 +223,7 @@ benefit: "Three-day financial literacy workshop"  # No recurring schedule
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Git
 - Node.js (18+)
 
@@ -260,15 +281,15 @@ Open the appropriate YAML file and add your program following this structure:
 - id: unique-program-id
   name: Official Program Name
   category: Category Name
-  area: Geographic Coverage      # County, "Bay Area", "Statewide", or "Nationwide"
-  city: City Name                # Optional: specific city
+  area: Geographic Coverage # County, "Bay Area", "Statewide", or "Nationwide"
+  city: City Name # Optional: specific city
   groups:
-    - group-id                   # See eligibility groups below
+    - group-id # See eligibility groups below
   description: Brief description of the program
-  what_they_offer: |             # Optional: detailed benefits
+  what_they_offer: | # Optional: detailed benefits
     - Benefit 1
     - Benefit 2
-  how_to_get_it: Steps to access the program  # Optional
+  how_to_get_it: Steps to access the program # Optional
   timeframe: Ongoing
   link: https://official-website.com
   link_text: Apply
@@ -278,34 +299,35 @@ Open the appropriate YAML file and add your program following this structure:
 
 #### Required Fields
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| `id` | Unique identifier (lowercase, hyphenated) | `sf-library-card` |
-| `name` | Official program name | `San Francisco Public Library Card` |
-| `category` | Category name (must match existing category) | `Library Resources` |
-| `area` | Geographic area served | `San Francisco` |
-| `groups` | Array of eligibility group IDs | `[income-eligible, everyone]` |
+| Field         | Description                                    | Example                                                        |
+| ------------- | ---------------------------------------------- | -------------------------------------------------------------- |
+| `id`          | Unique identifier (lowercase, hyphenated)      | `sf-library-card`                                              |
+| `name`        | Official program name                          | `San Francisco Public Library Card`                            |
+| `category`    | Category name (must match existing category)   | `Library Resources`                                            |
+| `area`        | Geographic area served                         | `San Francisco`                                                |
+| `groups`      | Array of eligibility group IDs                 | `[income-eligible, everyone]`                                  |
 | `description` | Brief description of what the program provides | `Free library card with access to books and digital resources` |
-| `timeframe` | When available | `Ongoing` |
-| `link` | Official URL | `https://sfpl.org` |
-| `link_text` | Call to action text | `Get Library Card` |
+| `timeframe`   | When available                                 | `Ongoing`                                                      |
+| `link`        | Official URL                                   | `https://sfpl.org`                                             |
+| `link_text`   | Call to action text                            | `Get Library Card`                                             |
 
 #### Optional Fields
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| `city` | Specific city | `Oakland` |
-| `what_they_offer` | Detailed list of benefits | Multi-line YAML |
-| `how_to_get_it` | Steps to access the program | Text description |
-| `phone` | Contact phone number | `(415) 555-1234` |
-| `address` | Physical address | `100 Larkin St, San Francisco, CA` |
-| `map_link` | Google Maps link | `https://www.google.com/maps/...` |
+| Field             | Description                 | Example                            |
+| ----------------- | --------------------------- | ---------------------------------- |
+| `city`            | Specific city               | `Oakland`                          |
+| `what_they_offer` | Detailed list of benefits   | Multi-line YAML                    |
+| `how_to_get_it`   | Steps to access the program | Text description                   |
+| `phone`           | Contact phone number        | `(415) 555-1234`                   |
+| `address`         | Physical address            | `100 Larkin St, San Francisco, CA` |
+| `map_link`        | Google Maps link            | `https://www.google.com/maps/...`  |
 
 #### Area Options
 
 Use the most specific area that applies:
 
 **Counties:**
+
 - `"Alameda County"`
 - `"Contra Costa County"`
 - `"Marin County"`
@@ -317,6 +339,7 @@ Use the most specific area that applies:
 - `"Sonoma County"`
 
 **Broader Areas:**
+
 - `"Bay Area-wide"`
 - `"Statewide"`
 - `"Nationwide"`
@@ -326,9 +349,9 @@ Use the most specific area that applies:
 For programs specific to a city, you can use the optional `city` field. The county will be auto-derived from `_data/cities.yml`:
 
 ```yaml
-- id: "oakland-tool-library"
-  name: "Oakland Tool Lending Library"
-  city: "Oakland"              # County auto-derived to "Alameda County"
+- id: 'oakland-tool-library'
+  name: 'Oakland Tool Lending Library'
+  city: 'Oakland' # County auto-derived to "Alameda County"
   # area field can be omitted when city is specified
 ```
 
@@ -336,27 +359,28 @@ All Bay Area cities are mapped in `src/data/cities.yml`. If you add a program fo
 
 #### Eligibility Groups
 
-| Group ID | Icon | Description |
-|----------|------|-------------|
-| `income-eligible` | 💳 | SNAP/EBT/Medi-Cal recipients |
-| `seniors` | 👵 | Seniors (60+) |
-| `youth` | 🧒 | Youth |
-| `college-students` | 🎓 | College students |
-| `veterans` | 🎖️ | Veterans/Active duty |
-| `families` | 👨‍👩‍👧 | Families |
-| `disability` | 🧑‍🦽 | People with disabilities |
-| `lgbtq` | 🌈 | LGBT+ community |
-| `first-responders` | 🚒 | First responders |
-| `teachers` | 👩‍🏫 | Teachers/Educators |
-| `unemployed` | 💼 | Job seekers |
-| `immigrants` | 🌍 | Immigrants/Refugees |
-| `unhoused` | 🏠 | Unhoused |
-| `caregivers` | 🤲 | Caregivers |
-| `foster-youth` | 🏡 | Foster youth |
-| `nonprofits` | 🤝 | Nonprofit organizations |
-| `everyone` | 🌎 | Everyone |
+| Group ID           | Icon | Description                  |
+| ------------------ | ---- | ---------------------------- |
+| `income-eligible`  | 💳   | SNAP/EBT/Medi-Cal recipients |
+| `seniors`          | 👵   | Seniors (60+)                |
+| `youth`            | 🧒   | Youth                        |
+| `college-students` | 🎓   | College students             |
+| `veterans`         | 🎖️   | Veterans/Active duty         |
+| `families`         | 👨‍👩‍👧   | Families                     |
+| `disability`       | 🧑‍🦽   | People with disabilities     |
+| `lgbtq`            | 🌈   | LGBT+ community              |
+| `first-responders` | 🚒   | First responders             |
+| `teachers`         | 👩‍🏫   | Teachers/Educators           |
+| `unemployed`       | 💼   | Job seekers                  |
+| `immigrants`       | 🌍   | Immigrants/Refugees          |
+| `unhoused`         | 🏠   | Unhoused                     |
+| `caregivers`       | 🤲   | Caregivers                   |
+| `foster-youth`     | 🏡   | Foster youth                 |
+| `nonprofits`       | 🤝   | Nonprofit organizations      |
+| `everyone`         | 🌎   | Everyone                     |
 
 **Multiple groups:** List all that apply:
+
 ```yaml
 groups:
   - income-eligible
@@ -367,16 +391,19 @@ groups:
 #### Writing Good Benefits
 
 ✅ **Good:**
+
 ```yaml
-benefit: "Free internet with speeds up to 50 Mbps for eligible households; includes free Wi-Fi router and no installation fees"
+benefit: 'Free internet with speeds up to 50 Mbps for eligible households; includes free Wi-Fi router and no installation fees'
 ```
 
 ❌ **Too vague:**
+
 ```yaml
-benefit: "Cheap internet"
+benefit: 'Cheap internet'
 ```
 
 **Tips for benefits:**
+
 - Be specific about what's included
 - Mention key details (amounts, frequencies, limits)
 - Use clear, accessible language
@@ -386,6 +413,7 @@ benefit: "Cheap internet"
 #### Link Text Options
 
 Common link text phrases:
+
 - `"Apply"`
 - `"Learn More"`
 - `"Enroll"`
@@ -446,7 +474,7 @@ categories:
   # ... existing categories
   - id: your-category
     name: Your New Category Name
-    icon: "🆕"
+    icon: '🆕'
 ```
 
 ### Step 4: Update README
@@ -477,21 +505,23 @@ If a program is no longer available:
 ### YAML Formatting
 
 ✅ **Correct:**
+
 ```yaml
-- id: "program-id"
-  name: "Program Name"
-  category: "Category"
-  area: "Area"
+- id: 'program-id'
+  name: 'Program Name'
+  category: 'Category'
+  area: 'Area'
   eligibility:
-    - "💳"
-    - "👵"
-  benefit: "Clear description"
-  timeframe: "Ongoing"
-  link: "https://example.com"
-  link_text: "Apply"
+    - '💳'
+    - '👵'
+  benefit: 'Clear description'
+  timeframe: 'Ongoing'
+  link: 'https://example.com'
+  link_text: 'Apply'
 ```
 
 ❌ **Incorrect indentation:**
+
 ```yaml
 - id: "program-id"
 name: "Program Name"      # ← Missing indentation
@@ -500,6 +530,7 @@ name: "Program Name"      # ← Missing indentation
 ```
 
 **Rules:**
+
 - Use 2 spaces for indentation (no tabs)
 - Each new program starts with `-` at column 0
 - All fields under a program are indented 2 spaces
@@ -513,6 +544,7 @@ name: "Program Name"      # ← Missing indentation
 - Format: `"organization-program"` or `"area-program"`
 
 Examples:
+
 - ✅ `"sf-library-card"`
 - ✅ `"bart-discount"`
 - ✅ `"calworks-child-care"`
@@ -527,6 +559,7 @@ Examples:
 ### Before Submitting
 
 1. **Run locally:**
+
    ```bash
    npm run dev
    ```
@@ -541,6 +574,7 @@ Examples:
    - ✅ No JavaScript errors in console (F12 → Console tab)
 
 3. **Check build:**
+
    ```bash
    # The build will fail if there are errors
    npm run build
@@ -571,6 +605,7 @@ git commit -m "Add [Program Name] to [Category]"
 ```
 
 **Good commit messages:**
+
 - `"Add SF Lifeline Phone to Technology"`
 - `"Update BART discount: new eligibility requirements"`
 - `"Fix broken link for CalFresh application"`
@@ -590,14 +625,17 @@ git push origin add-program-name
 
 ```markdown
 ## Summary
+
 Added [Program Name] to [Category]
 
 ## Details
+
 - **What**: [Brief description of the program]
 - **Who**: [Eligibility]
 - **Where**: [Geographic area]
 
 ## Checklist
+
 - [x] Tested locally
 - [x] YAML syntax is valid
 - [x] Program link works
@@ -654,19 +692,23 @@ baynavigator/
 ### Key Files to Know
 
 **Data Files:**
+
 - `src/data/*.yml` - All program data (15+ category files)
 - `src/data/cities.yml` - City-to-county mapping
 - `src/data/groups.yml` - Eligibility groups, categories, and sync sources
 
 **Components:**
+
 - `src/components/ProgramCard.astro` - How each program displays
 - `src/components/SearchFilter.astro` - Search and filter interface
 
 **Scripts:**
+
 - `scripts/generate-api.cjs` - Generates static JSON API from YAML
 - `scripts/sync-*.cjs` - Data sync scripts for various sources
 
 **Styles:**
+
 - `src/styles/` - CSS stylesheets with Tailwind
 
 ---
@@ -680,6 +722,7 @@ Choose the primary benefit. If a program fits multiple categories, pick the most
 ### "Can I add a program that requires payment?"
 
 Yes, if it's:
+
 - Significantly discounted for eligible groups
 - A sliding scale based on income
 - Low-cost compared to market rates
@@ -693,6 +736,7 @@ Use `"Bay Area-wide"` if it serves 3+ Bay Area counties.
 ### "Should I include national programs?"
 
 Yes, if they:
+
 - Have specific Bay Area locations
 - Are available to Bay Area residents
 - Provide meaningful value to the community
@@ -712,12 +756,14 @@ Run `npm run build`. If it succeeds, your YAML is valid. If there are errors, th
 Bay Navigator uses a simple, efficient static architecture:
 
 **YAML Files (`src/data/*.yml`)** - Source of Truth
+
 - ✅ Version control - Track all changes via Git
 - ✅ Open source transparency - Anyone can view/download data
 - ✅ Easy contributions - Submit PRs to update programs
 - ✅ Astro integration - Powers the static site directly
 
 **Static JSON API (`api/`)** - Auto-Generated
+
 - ✅ Fast API access - Pre-built JSON files served statically
 - ✅ Zero server costs - No database or backend required
 - ✅ Automatic updates - GitHub Actions regenerates on changes

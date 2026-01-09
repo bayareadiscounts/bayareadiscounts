@@ -3,6 +3,7 @@
 > Source of truth: [openapi/baynavigator-api.yaml](../openapi/baynavigator-api.yaml). The summary below is for quick reference. For client code, see the shared helpers in [shared/](../shared/).
 
 ## Base URL
+
 ```
 https://baynavigator.org/api
 ```
@@ -10,6 +11,7 @@ https://baynavigator.org/api
 ## Overview
 
 Bay Navigator uses a **static JSON API** generated from YAML program data. The API files are:
+
 - Automatically generated via `scripts/generate-api.js`
 - Cached globally via Azure Static Web Apps CDN
 - Updated automatically when program data changes (via GitHub Actions)
@@ -17,16 +19,19 @@ Bay Navigator uses a **static JSON API** generated from YAML program data. The A
 ## Endpoints
 
 ### 1. Get All Programs
+
 **GET** `/api/programs.json`
 
 Returns all programs with metadata.
 
 **Example:**
+
 ```bash
 curl https://baynavigator.org/api/programs.json
 ```
 
 **Response:**
+
 ```json
 {
   "total": 237,
@@ -50,16 +55,19 @@ curl https://baynavigator.org/api/programs.json
 ---
 
 ### 2. Get Program by ID
+
 **GET** `/api/programs/{id}.json`
 
 Returns a single program by its ID.
 
 **Example:**
+
 ```bash
 curl https://baynavigator.org/api/programs/alameda-food-bank.json
 ```
 
 **Response:**
+
 ```json
 {
   "id": "alameda-food-bank",
@@ -76,16 +84,19 @@ curl https://baynavigator.org/api/programs/alameda-food-bank.json
 ---
 
 ### 3. Get Categories
+
 **GET** `/api/categories.json`
 
 Returns all categories with program counts.
 
 **Example:**
+
 ```bash
 curl https://baynavigator.org/api/categories.json
 ```
 
 **Response:**
+
 ```json
 {
   "categories": [
@@ -108,16 +119,19 @@ curl https://baynavigator.org/api/categories.json
 ---
 
 ### 4. Get Areas
+
 **GET** `/api/areas.json`
 
 Returns all geographic areas with program counts.
 
 **Example:**
+
 ```bash
 curl https://baynavigator.org/api/areas.json
 ```
 
 **Response:**
+
 ```json
 {
   "areas": [
@@ -140,16 +154,19 @@ curl https://baynavigator.org/api/areas.json
 ---
 
 ### 5. Get Eligibility Types
+
 **GET** `/api/eligibility.json`
 
 Returns all eligibility types with program counts.
 
 **Example:**
+
 ```bash
 curl https://baynavigator.org/api/eligibility.json
 ```
 
 **Response:**
+
 ```json
 {
   "eligibility": [
@@ -174,16 +191,19 @@ curl https://baynavigator.org/api/eligibility.json
 ---
 
 ### 6. Get API Metadata
+
 **GET** `/api/metadata.json`
 
 Returns API version and available endpoints.
 
 **Example:**
+
 ```bash
 curl https://baynavigator.org/api/metadata.json
 ```
 
 **Response:**
+
 ```json
 {
   "version": "1.0.0",
@@ -204,25 +224,25 @@ curl https://baynavigator.org/api/metadata.json
 ## Filtering (Client-Side)
 
 Since this is a static JSON API, filtering is done client-side. The website uses JavaScript to filter programs based on:
+
 - Category
 - Eligibility
 - Geographic area
 - Search text
 
 **Example JavaScript:**
+
 ```javascript
 // Fetch all programs and filter client-side
 fetch('https://baynavigator.org/api/programs.json')
-  .then(res => res.json())
-  .then(data => {
+  .then((res) => res.json())
+  .then((data) => {
     // Filter by category
-    const foodPrograms = data.programs.filter(p => p.category === 'food');
+    const foodPrograms = data.programs.filter((p) => p.category === 'food');
     console.log(`Found ${foodPrograms.length} food programs`);
 
     // Filter by eligibility
-    const seniorPrograms = data.programs.filter(p =>
-      p.eligibility.includes('seniors')
-    );
+    const seniorPrograms = data.programs.filter((p) => p.eligibility.includes('seniors'));
     console.log(`Found ${seniorPrograms.length} senior programs`);
   });
 ```
@@ -232,6 +252,7 @@ fetch('https://baynavigator.org/api/programs.json')
 ## Response Headers
 
 All responses include:
+
 - `Content-Type: application/json`
 - Azure Static Web Apps CDN caching headers
 
@@ -251,6 +272,7 @@ node scripts/generate-api.js
 ```
 
 This script:
+
 1. Reads all YAML files from `_data/programs/`
 2. Transforms to JSON format
 3. Generates individual program files in `/api/programs/`

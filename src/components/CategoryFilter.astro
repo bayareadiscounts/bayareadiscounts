@@ -7,24 +7,21 @@ const { categories } = Astro.props;
 ---
 
 <div class="flex flex-wrap gap-2" role="group" aria-label="Filter by category">
-  <button
-    type="button"
-    class="category-btn active"
-    data-category="all"
-    aria-pressed="true"
-  >
+  <button type="button" class="category-btn active" data-category="all" aria-pressed="true">
     All
   </button>
-  {categories.map((cat) => (
-    <button
-      type="button"
-      class="category-btn"
-      data-category={cat.toLowerCase()}
-      aria-pressed="false"
-    >
-      {cat}
-    </button>
-  ))}
+  {
+    categories.map((cat) => (
+      <button
+        type="button"
+        class="category-btn"
+        data-category={cat.toLowerCase()}
+        aria-pressed="false"
+      >
+        {cat}
+      </button>
+    ))
+  }
 </div>
 
 <style>
@@ -67,7 +64,9 @@ const { categories } = Astro.props;
       });
 
       // Update count
-      const visibleCount = document.querySelectorAll('[data-category]:not([style*="display: none"])').length;
+      const visibleCount = document.querySelectorAll(
+        '[data-category]:not([style*="display: none"])'
+      ).length;
       const counter = document.getElementById('results-count');
       if (counter) {
         counter.textContent = `${visibleCount} program${visibleCount !== 1 ? 's' : ''} found`;

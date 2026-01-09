@@ -4,7 +4,7 @@
  * Note: Navigation is now handled via direct links in desktop-sidebar.html
  */
 
-(function() {
+(function () {
   'use strict';
 
   // Wait for DOM to be ready

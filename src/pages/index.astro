@@ -8,7 +8,13 @@ import path from 'node:path';
 
 // Load all programs for search (hidden by default, shown on search)
 const dataDir = path.join(process.cwd(), 'src/data');
-const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml', 'site-config.yml'];
+const NON_PROGRAM_FILES = [
+  'cities.yml',
+  'groups.yml',
+  'zipcodes.yml',
+  'suppressed.yml',
+  'site-config.yml',
+];
 
 // Load suppressed programs
 const suppressedFile = path.join(dataDir, 'suppressed.yml');
@@ -16,38 +22,50 @@ let suppressedIds = new Set<string>();
 if (fs.existsSync(suppressedFile)) {
   const suppressedData = yaml.load(fs.readFileSync(suppressedFile, 'utf8')) as any[];
   if (Array.isArray(suppressedData)) {
-    suppressedIds = new Set(suppressedData.map(s => s.id));
+    suppressedIds = new Set(suppressedData.map((s) => s.id));
   }
 }
 
 const allPrograms: any[] = [];
-const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
+const files = fs
+  .readdirSync(dataDir)
+  .filter((f) => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
 for (const file of files) {
   const content = fs.readFileSync(path.join(dataDir, file), 'utf8');
   const data = yaml.load(content) as any;
 
   // Handle both formats: array of programs or object with {category, programs}
-  const programs = Array.isArray(data) ? data : (data.programs || []);
+  const programs = Array.isArray(data) ? data : data.programs || [];
 
   for (const program of programs) {
     // Use program's own category if present, otherwise derive from filename
-    const category = program.category || file.replace('.yml', '').replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
-    const id = program.id || `${category.toLowerCase().replace(/\s+/g, '-')}-${(program.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+    const category =
+      program.category ||
+      file
+        .replace('.yml', '')
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c: string) => c.toUpperCase());
+    const id =
+      program.id ||
+      `${category.toLowerCase().replace(/\s+/g, '-')}-${(program.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
     if (!suppressedIds.has(id)) {
       allPrograms.push({
         ...program,
         id,
         category,
-        groups: program.groups || []
+        groups: program.groups || [],
       });
     }
   }
 }
 ---
 
-<BaseLayout title="Home" description="Find free and low-cost programs for food, housing, healthcare, utilities, and more across the San Francisco Bay Area.">
+<BaseLayout
+  title="Home"
+  description="Find free and low-cost programs for food, housing, healthcare, utilities, and more across the San Francisco Bay Area."
+>
   <!-- Hero Section -->
   <section class="hero">
     <div class="container-page text-center">
@@ -73,35 +91,42 @@ for (const file of files) {
         <p id="home-results-count" class="text-neutral-600 dark:text-neutral-300">
           0 programs found
         </p>
-        <button id="clear-search" class="text-sm text-primary-700 dark:text-primary-300 hover:underline">
+        <button
+          id="clear-search"
+          class="text-sm text-primary-700 dark:text-primary-300 hover:underline"
+        >
           Clear search
         </button>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="home-programs-grid">
-        {allPrograms.map((program) => (
-          <div class="home-program-card hidden" data-program-id={program.id}>
-            <ProgramCard
-              id={program.id}
-              name={program.name}
-              category={program.category}
-              area={program.area}
-              description={program.description}
-              whatTheyOffer={program.what_they_offer}
-              howToGetIt={program.how_to_get_it}
-              phone={program.phone}
-              link={program.link}
-              linkText={program.link_text}
-              groups={program.groups}
-              verifiedBy={program.verified_by}
-              verifiedDate={program.verified_date}
-            />
-          </div>
-        ))}
+        {
+          allPrograms.map((program) => (
+            <div class="home-program-card hidden" data-program-id={program.id}>
+              <ProgramCard
+                id={program.id}
+                name={program.name}
+                category={program.category}
+                area={program.area}
+                description={program.description}
+                whatTheyOffer={program.what_they_offer}
+                howToGetIt={program.how_to_get_it}
+                phone={program.phone}
+                link={program.link}
+                linkText={program.link_text}
+                groups={program.groups}
+                verifiedBy={program.verified_by}
+                verifiedDate={program.verified_date}
+              />
+            </div>
+          ))
+        }
       </div>
 
       <div id="no-results" class="hidden text-center py-8">
-        <p class="text-neutral-600 dark:text-neutral-300 mb-4">No programs found matching your search.</p>
+        <p class="text-neutral-600 dark:text-neutral-300 mb-4">
+          No programs found matching your search.
+        </p>
         <a href="/directory" class="btn-primary">Browse All Programs</a>
       </div>
 
@@ -124,84 +149,174 @@ for (const file of files) {
       </p>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <!-- Food -->
-        <a href="/directory?category=Food" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Food"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">🍎</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Food</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">Food banks, meals, CalFresh</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Food
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            Food banks, meals, CalFresh
+          </p>
         </a>
 
         <!-- Community Services -->
-        <a href="/directory?category=Community%20Services" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Community%20Services"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">🏘️</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Community</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">Local services, housing, shelters</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Community
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            Local services, housing, shelters
+          </p>
         </a>
 
         <!-- Health -->
-        <a href="/directory?category=Health" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Health"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">🏥</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Health</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">Medi-Cal, clinics, mental health</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Health
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            Medi-Cal, clinics, mental health
+          </p>
         </a>
 
         <!-- Utilities -->
-        <a href="/directory?category=Utilities" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Utilities"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">💡</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Utilities</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">CARE, FERA, bill assistance</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Utilities
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            CARE, FERA, bill assistance
+          </p>
         </a>
 
         <!-- Transit -->
-        <a href="/directory?category=Public%20Transit" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Public%20Transit"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">🚌</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Transit</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">Clipper discounts, paratransit</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Transit
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            Clipper discounts, paratransit
+          </p>
         </a>
 
         <!-- Education -->
-        <a href="/directory?category=Education" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Education"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">📚</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Education</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">Job training, college programs</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Education
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            Job training, college programs
+          </p>
         </a>
 
         <!-- Legal -->
-        <a href="/directory?category=Legal%20Services" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow">
+        <a
+          href="/directory?category=Legal%20Services"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">⚖️</div>
-          <h3 class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">Legal</h3>
-          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">Free legal aid, immigration help</p>
+          <h3
+            class="text-base font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400"
+          >
+            Legal
+          </h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-300 mt-1">
+            Free legal aid, immigration help
+          </p>
         </a>
 
         <!-- View All -->
-        <a href="/directory" class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow bg-primary-50 dark:bg-primary-900/30 border-primary-200 dark:border-primary-800">
+        <a
+          href="/directory"
+          class="card text-center group no-underline hover:no-underline hover:shadow-lg transition-shadow bg-primary-50 dark:bg-primary-900/30 border-primary-200 dark:border-primary-800"
+        >
           <div class="text-4xl mb-3" aria-hidden="true">📋</div>
-          <h3 class="text-base font-semibold text-primary-900 dark:text-primary-200 group-hover:text-primary-800 dark:group-hover:text-primary-100">View All</h3>
+          <h3
+            class="text-base font-semibold text-primary-900 dark:text-primary-200 group-hover:text-primary-800 dark:group-hover:text-primary-100"
+          >
+            View All
+          </h3>
           <p class="text-xs text-primary-800 dark:text-primary-200 mt-1">Browse full directory</p>
         </a>
       </div>
 
       <!-- Quick Links Row -->
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a href="/eligibility" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors">
-          <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        <a
+          href="/eligibility"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors"
+        >
+          <svg
+            class="w-4 h-4 text-primary-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           Eligibility Guides
         </a>
-        <a href="/directory?group=seniors" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors">
+        <a
+          href="/directory?group=seniors"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors"
+        >
           <span aria-hidden="true">👵</span>
           Seniors (60+)
         </a>
-        <a href="/directory?group=veterans" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors">
+        <a
+          href="/directory?group=veterans"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors"
+        >
           <span aria-hidden="true">🎖️</span>
           Veterans
         </a>
-        <a href="/directory?group=families" class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors">
+        <a
+          href="/directory?group=families"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-600 no-underline transition-colors"
+        >
           <span aria-hidden="true">👨‍👩‍👧</span>
           Families
         </a>
       </div>
     </div>
   </section>
-
 </BaseLayout>

@@ -50,7 +50,7 @@ const NON_PROGRAM_FILES = [
 function validateType(value, expectedType) {
   // Handle array of allowed types
   if (Array.isArray(expectedType)) {
-    return expectedType.some(t => validateType(value, t));
+    return expectedType.some((t) => validateType(value, t));
   }
   if (expectedType === 'string') return typeof value === 'string';
   if (expectedType === 'number') return typeof value === 'number';
@@ -77,12 +77,16 @@ function validateProgram(program, index, filename) {
 
     // Type check
     if (rules.type && !validateType(value, rules.type)) {
-      errors.push(`Program #${index + 1} (${program.name || 'unnamed'}): Field '${field}' should be ${rules.type}, got ${typeof value}`);
+      errors.push(
+        `Program #${index + 1} (${program.name || 'unnamed'}): Field '${field}' should be ${rules.type}, got ${typeof value}`
+      );
     }
 
     // Min length check
     if (rules.minLength && typeof value === 'string' && value.length < rules.minLength) {
-      errors.push(`Program #${index + 1} (${program.name || 'unnamed'}): Field '${field}' is too short`);
+      errors.push(
+        `Program #${index + 1} (${program.name || 'unnamed'}): Field '${field}' is too short`
+      );
     }
 
     // Pattern check
@@ -90,9 +94,13 @@ function validateProgram(program, index, filename) {
       const regex = new RegExp(rules.pattern);
       if (!regex.test(value)) {
         if (field === 'link') {
-          errors.push(`Program #${index + 1} (${program.name || 'unnamed'}): Invalid URL in '${field}': ${value}`);
+          errors.push(
+            `Program #${index + 1} (${program.name || 'unnamed'}): Invalid URL in '${field}': ${value}`
+          );
         } else if (field === 'verified_date') {
-          warnings.push(`Program #${index + 1} (${program.name || 'unnamed'}): Invalid date format in '${field}': ${value} (expected YYYY-MM-DD)`);
+          warnings.push(
+            `Program #${index + 1} (${program.name || 'unnamed'}): Invalid date format in '${field}': ${value} (expected YYYY-MM-DD)`
+          );
         }
       }
     }
@@ -100,12 +108,16 @@ function validateProgram(program, index, filename) {
 
   // Additional validation rules
   if (program.link && !program.link.startsWith('http')) {
-    errors.push(`Program #${index + 1} (${program.name || 'unnamed'}): Link must start with http:// or https://`);
+    errors.push(
+      `Program #${index + 1} (${program.name || 'unnamed'}): Link must start with http:// or https://`
+    );
   }
 
   // Check for data completeness (warnings only)
   if (!program.description && !program.what_they_offer) {
-    warnings.push(`Program #${index + 1} (${program.name || 'unnamed'}): Missing description or what_they_offer`);
+    warnings.push(
+      `Program #${index + 1} (${program.name || 'unnamed'}): Missing description or what_they_offer`
+    );
   }
 
   if (!program.link) {
@@ -141,8 +153,8 @@ function validateFile(filePath) {
 
   data.forEach((program, index) => {
     const { errors, warnings } = validateProgram(program, index, filename);
-    allErrors.push(...errors.map(e => `${filename}: ${e}`));
-    allWarnings.push(...warnings.map(w => `${filename}: ${w}`));
+    allErrors.push(...errors.map((e) => `${filename}: ${e}`));
+    allWarnings.push(...warnings.map((w) => `${filename}: ${w}`));
   });
 
   return { errors: allErrors, warnings: allWarnings, skipped: false, count: data.length };
@@ -151,7 +163,7 @@ function validateFile(filePath) {
 // Main execution
 function main() {
   const dataDir = path.join(__dirname, '..', 'src', 'data');
-  const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.yml') || f.endsWith('.yaml'));
+  const files = fs.readdirSync(dataDir).filter((f) => f.endsWith('.yml') || f.endsWith('.yaml'));
 
   console.log('🔍 Validating YAML program data...\n');
 
@@ -186,13 +198,13 @@ function main() {
 
   if (totalErrors.length > 0) {
     console.log(`❌ ${totalErrors.length} Error(s):`);
-    totalErrors.forEach(e => console.log(`   - ${e}`));
+    totalErrors.forEach((e) => console.log(`   - ${e}`));
     console.log('');
   }
 
   if (totalWarnings.length > 0) {
     console.log(`⚠️  ${totalWarnings.length} Warning(s):`);
-    totalWarnings.slice(0, 10).forEach(w => console.log(`   - ${w}`));
+    totalWarnings.slice(0, 10).forEach((w) => console.log(`   - ${w}`));
     if (totalWarnings.length > 10) {
       console.log(`   ... and ${totalWarnings.length - 10} more warnings`);
     }

@@ -9,8 +9,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ## 🎯 What Was Secured
 
 ### 1. API Management Gateway
+
 **Problem**: APIs were publicly accessible without authentication  
 **Solution**:
+
 - ✅ **Subscription keys required** - No anonymous access
 - ✅ **Rate limiting**: 10,000 requests/day per key
 - ✅ **Security headers**: HSTS, X-Frame-Options, X-Content-Type-Options
@@ -24,8 +26,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ---
 
 ### 2. Azure Key Vault
+
 **Problem**: Publicly accessible secret storage  
 **Solution**:
+
 - ✅ **Network firewall**: Default deny, Azure Services only
 - ✅ **Your IP allowlisted**: Management access from your machine
 - ✅ **RBAC enabled**: Role-based access control
@@ -36,8 +40,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ---
 
 ### 3. Azure Redis Cache
+
 **Problem**: Cache accessible from internet  
 **Solution**:
+
 - ✅ **Firewall rules**: Azure Services only (0.0.0.0/32)
 - ✅ **TLS 1.2+ required**: Encrypted connections
 - ✅ **Non-SSL port disabled**: No unencrypted access
@@ -47,8 +53,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ---
 
 ### 4. Azure Functions
+
 **Problem**: Insecure protocols enabled  
 **Solution**:
+
 - ✅ **FTP disabled**: No file transfer protocol access
 - ✅ **Remote debugging off**: No debug ports exposed
 - ✅ **HTTPS-only**: All traffic encrypted
@@ -59,8 +67,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ---
 
 ### 5. Cosmos DB
+
 **Problem**: Public network access enabled  
 **Solution**:
+
 - ✅ **Public access disabled**: Zero internet exposure
 - ✅ **Azure Services only**: Firewall rules enforced
 - ✅ **Managed identity auth**: No connection strings
@@ -70,8 +80,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ---
 
 ### 6. Static Web App
+
 **Problem**: Missing security headers  
 **Solution**:
+
 - ✅ **Content Security Policy**: Prevents XSS attacks
 - ✅ **X-Frame-Options: DENY**: Prevents clickjacking
 - ✅ **X-Content-Type-Options**: Prevents MIME sniffing
@@ -83,8 +95,10 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ---
 
 ### 7. Azure Front Door
+
 **Problem**: No DDoS protection  
 **Solution**:
+
 - ✅ **DDoS protection**: Layer 3/4 and 7 mitigation
 - ✅ **HTTPS redirect**: Forced encryption
 - ✅ **Health probes**: Automatic failover
@@ -97,6 +111,7 @@ Your Bay Navigator infrastructure is now hardened against attacks and abuse. Her
 ## 🔑 Your API Subscription Key
 
 **For Website Use:**
+
 ```
 Primary Key: cac137c0e27f43b0b8cdb356b75cb087
 Subscription ID: baynavigator-website
@@ -104,13 +119,14 @@ Daily Limit: 10,000 requests
 ```
 
 **How to Use:**
+
 ```javascript
 // Add to your website's API calls
 fetch('https://baynavigator-api.azure-api.net/programs', {
   headers: {
-    'Ocp-Apim-Subscription-Key': 'cac137c0e27f43b0b8cdb356b75cb087'
-  }
-})
+    'Ocp-Apim-Subscription-Key': 'cac137c0e27f43b0b8cdb356b75cb087',
+  },
+});
 ```
 
 **Note**: Store this key securely. You can regenerate it anytime if compromised.
@@ -119,18 +135,18 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 
 ## 📊 Security Posture Summary
 
-| Threat | Before | After | Mitigation |
-|--------|--------|-------|------------|
-| **DDoS Attack** | Vulnerable | ✅ Protected | Front Door + Azure infrastructure |
-| **Brute Force** | Vulnerable | ✅ Protected | API keys + rate limiting |
-| **SQL Injection** | Low risk | ✅ Prevented | Parameterized queries |
-| **XSS Attacks** | Medium risk | ✅ Prevented | CSP headers + output encoding |
-| **CSRF** | Low risk | ✅ Prevented | CORS restrictions |
-| **Data Breach** | Medium risk | ✅ Prevented | Network isolation + encryption |
-| **Credential Theft** | Medium risk | ✅ Prevented | Managed identities |
-| **API Abuse** | Vulnerable | ✅ Protected | Subscription keys + quotas |
-| **Man-in-Middle** | Low risk | ✅ Prevented | TLS 1.2+ everywhere |
-| **Information Leak** | Medium risk | ✅ Prevented | Error sanitization |
+| Threat               | Before      | After        | Mitigation                        |
+| -------------------- | ----------- | ------------ | --------------------------------- |
+| **DDoS Attack**      | Vulnerable  | ✅ Protected | Front Door + Azure infrastructure |
+| **Brute Force**      | Vulnerable  | ✅ Protected | API keys + rate limiting          |
+| **SQL Injection**    | Low risk    | ✅ Prevented | Parameterized queries             |
+| **XSS Attacks**      | Medium risk | ✅ Prevented | CSP headers + output encoding     |
+| **CSRF**             | Low risk    | ✅ Prevented | CORS restrictions                 |
+| **Data Breach**      | Medium risk | ✅ Prevented | Network isolation + encryption    |
+| **Credential Theft** | Medium risk | ✅ Prevented | Managed identities                |
+| **API Abuse**        | Vulnerable  | ✅ Protected | Subscription keys + quotas        |
+| **Man-in-Middle**    | Low risk    | ✅ Prevented | TLS 1.2+ everywhere               |
+| **Information Leak** | Medium risk | ✅ Prevented | Error sanitization                |
 
 **Overall Security Rating**: 🟢 **EXCELLENT**
 
@@ -153,6 +169,7 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
    - Could indicate: Legitimate traffic spike or abuse
 
 **Real-time Monitoring:**
+
 - Application Insights: Request traces, errors, performance
 - Front Door: DDoS attacks, traffic patterns
 - API Management: Usage by subscription key
@@ -162,6 +179,7 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 ## 🛡️ What You're Protected Against
 
 ### Common Web Attacks (OWASP Top 10)
+
 1. ✅ Broken Access Control - API keys required
 2. ✅ Cryptographic Failures - TLS 1.2+ everywhere
 3. ✅ Injection - Parameterized queries
@@ -174,6 +192,7 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 10. ✅ SSRF - Network isolation
 
 ### Infrastructure Attacks
+
 - ✅ **DDoS**: Azure Front Door automatic mitigation
 - ✅ **Port Scanning**: All non-HTTPS ports closed
 - ✅ **Brute Force**: Rate limiting prevents repeated attempts
@@ -181,6 +200,7 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 - ✅ **Data Exfiltration**: Network segmentation prevents lateral movement
 
 ### Application Attacks
+
 - ✅ **XSS**: Content Security Policy blocks malicious scripts
 - ✅ **Clickjacking**: X-Frame-Options prevents iframe embedding
 - ✅ **CSRF**: CORS restrictions limit cross-site requests
@@ -191,6 +211,7 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 ## 📋 Security Checklist
 
 ### Implemented ✅
+
 - [x] HTTPS enforced everywhere
 - [x] API authentication (subscription keys)
 - [x] Rate limiting (10,000/day per key)
@@ -207,6 +228,7 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 - [x] Audit logging
 
 ### Recommended (Optional)
+
 - [ ] Custom domain with SSL certificate
 - [ ] WAF (Web Application Firewall) - requires Standard tier
 - [ ] Private Endpoints for Functions - requires Premium tier
@@ -218,12 +240,14 @@ fetch('https://baynavigator-api.azure-api.net/programs', {
 ## 🔍 How to Verify Security
 
 ### Test 1: Try API Without Key (Should Fail)
+
 ```bash
 curl https://baynavigator-api.azure-api.net/programs
 # Expected: 401 Unauthorized with "Missing subscription key"
 ```
 
 ### Test 2: Try API With Key (Should Work)
+
 ```bash
 curl -H "Ocp-Apim-Subscription-Key: cac137c0e27f43b0b8cdb356b75cb087" \
   https://baynavigator-api.azure-api.net/programs
@@ -231,12 +255,14 @@ curl -H "Ocp-Apim-Subscription-Key: cac137c0e27f43b0b8cdb356b75cb087" \
 ```
 
 ### Test 3: Check Security Headers
+
 ```bash
 curl -I https://wonderful-coast-09041e01e.2.azurestaticapps.net
 # Look for: X-Frame-Options, X-Content-Type-Options, CSP headers
 ```
 
 ### Test 4: Verify HTTPS Redirect
+
 ```bash
 curl -I http://baynavigator-web-b9gzhvbpdedgc2hn.z02.azurefd.net
 # Expected: 301/302 redirect to HTTPS
@@ -268,6 +294,7 @@ curl -I http://baynavigator-web-b9gzhvbpdedgc2hn.z02.azurefd.net
 ## 📞 Support
 
 If you detect suspicious activity:
+
 - **Urgent**: Suspend subscription key immediately
 - **Email**: security@baytides.org
 - **Check logs**: Application Insights for access patterns
@@ -275,6 +302,6 @@ If you detect suspicious activity:
 
 ---
 
-*Security Audit Date: December 19, 2025*  
-*Status: ✅ PASSED - Production Ready*  
-*Next Review: March 2026 (quarterly)*
+_Security Audit Date: December 19, 2025_  
+_Status: ✅ PASSED - Production Ready_  
+_Next Review: March 2026 (quarterly)_

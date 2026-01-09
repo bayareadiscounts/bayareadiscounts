@@ -18,7 +18,15 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 const DATA_DIR = path.join(__dirname, '../src/data');
-const NON_PROGRAM_FILES = ['cities.yml', 'groups.yml', 'zipcodes.yml', 'suppressed.yml', 'search-config.yml', 'county-supervisors.yml', 'site-config.yml'];
+const NON_PROGRAM_FILES = [
+  'cities.yml',
+  'groups.yml',
+  'zipcodes.yml',
+  'suppressed.yml',
+  'search-config.yml',
+  'county-supervisors.yml',
+  'site-config.yml',
+];
 
 // Extract coordinates from map_link URL
 function extractCoordinates(mapLink) {
@@ -40,8 +48,9 @@ function extractCoordinates(mapLink) {
 async function main() {
   console.log('🔄 Migrating map_link to latitude/longitude...\n');
 
-  const categoryFiles = fs.readdirSync(DATA_DIR)
-    .filter(f => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
+  const categoryFiles = fs
+    .readdirSync(DATA_DIR)
+    .filter((f) => f.endsWith('.yml') && !NON_PROGRAM_FILES.includes(f));
 
   let totalPrograms = 0;
   let withMapLink = 0;
@@ -81,10 +90,14 @@ async function main() {
           program.latitude = coords.latitude;
           program.longitude = coords.longitude;
           migrated++;
-          console.log(`   ✅ ${program.name}: ${coords.latitude.toFixed(5)}, ${coords.longitude.toFixed(5)}`);
+          console.log(
+            `   ✅ ${program.name}: ${coords.latitude.toFixed(5)}, ${coords.longitude.toFixed(5)}`
+          );
         } else {
           invalidMapLink++;
-          console.log(`   ⚠️  ${program.name}: Could not extract coords from "${program.map_link}"`);
+          console.log(
+            `   ⚠️  ${program.name}: Could not extract coords from "${program.map_link}"`
+          );
         }
 
         // Remove map_link either way
@@ -100,7 +113,7 @@ async function main() {
         lineWidth: -1,
         quotingType: '"',
         forceQuotes: false,
-        noRefs: true
+        noRefs: true,
       });
       fs.writeFileSync(filePath, yamlOutput);
       console.log(`   💾 Saved ${file}`);

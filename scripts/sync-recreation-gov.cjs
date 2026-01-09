@@ -39,36 +39,75 @@ const BAY_AREA_BOUNDS = {
   minLat: 36.8,
   maxLat: 38.9,
   minLng: -123.5,
-  maxLng: -121.0
+  maxLng: -121.0,
 };
 
 // Keywords for Bay Area (for entries without coordinates)
 const BAY_AREA_KEYWORDS = [
-  'golden gate', 'point reyes', 'muir', 'presidio', 'alcatraz',
-  'marin', 'san francisco', 'angel island', 'pinnacles', 'tamalpais',
-  'don edwards', 'farallones', 'cordell', 'antioch', 'folsom',
-  'lake sonoma', 'san pablo', 'berkeley', 'oakland', 'lake berryessa',
-  'san jose', 'santa clara', 'napa', 'sonoma', 'solano'
+  'golden gate',
+  'point reyes',
+  'muir',
+  'presidio',
+  'alcatraz',
+  'marin',
+  'san francisco',
+  'angel island',
+  'pinnacles',
+  'tamalpais',
+  'don edwards',
+  'farallones',
+  'cordell',
+  'antioch',
+  'folsom',
+  'lake sonoma',
+  'san pablo',
+  'berkeley',
+  'oakland',
+  'lake berryessa',
+  'san jose',
+  'santa clara',
+  'napa',
+  'sonoma',
+  'solano',
 ];
 
 // Facility types to EXCLUDE (commercial lodging, etc.)
 const EXCLUDED_FACILITY_TYPES = [
-  'hotel', 'inn', 'lodge', 'resort', 'mansion', 'motel',
-  'fairmont', 'marriott', 'hilton', 'hyatt'
+  'hotel',
+  'inn',
+  'lodge',
+  'resort',
+  'mansion',
+  'motel',
+  'fairmont',
+  'marriott',
+  'hilton',
+  'hyatt',
 ];
 
 // Facility types to INCLUDE
 const VALID_FACILITY_TYPES = [
-  'campground', 'day use', 'picnic', 'trailhead', 'boat ramp',
-  'visitor center', 'recreation area', 'wilderness', 'refuge',
-  'sanctuary', 'preserve', 'park', 'tours', 'permit'
+  'campground',
+  'day use',
+  'picnic',
+  'trailhead',
+  'boat ramp',
+  'visitor center',
+  'recreation area',
+  'wilderness',
+  'refuge',
+  'sanctuary',
+  'preserve',
+  'park',
+  'tours',
+  'permit',
 ];
 
 // Rate limit: 50 requests per minute = 1.2 seconds between requests
 const RATE_LIMIT_MS = 1300;
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /**
@@ -81,23 +120,25 @@ function apiRequest(endpoint, params = {}) {
 
     const options = {
       headers: {
-        'apikey': API_KEY,
-        'Accept': 'application/json'
-      }
+        apikey: API_KEY,
+        Accept: 'application/json',
+      },
     };
 
-    https.get(url, options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const json = JSON.parse(data);
-          resolve(json);
-        } catch (e) {
-          reject(new Error(`Failed to parse API response: ${e.message}`));
-        }
-      });
-    }).on('error', reject);
+    https
+      .get(url, options, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            const json = JSON.parse(data);
+            resolve(json);
+          } catch (e) {
+            reject(new Error(`Failed to parse API response: ${e.message}`));
+          }
+        });
+      })
+      .on('error', reject);
   });
 }
 
@@ -106,10 +147,12 @@ function apiRequest(endpoint, params = {}) {
  */
 function isInBayArea(lat, lng) {
   if (!lat || !lng) return false;
-  return lat >= BAY_AREA_BOUNDS.minLat &&
-         lat <= BAY_AREA_BOUNDS.maxLat &&
-         lng >= BAY_AREA_BOUNDS.minLng &&
-         lng <= BAY_AREA_BOUNDS.maxLng;
+  return (
+    lat >= BAY_AREA_BOUNDS.minLat &&
+    lat <= BAY_AREA_BOUNDS.maxLat &&
+    lng >= BAY_AREA_BOUNDS.minLng &&
+    lng <= BAY_AREA_BOUNDS.maxLng
+  );
 }
 
 /**
@@ -117,7 +160,7 @@ function isInBayArea(lat, lng) {
  */
 function hasBayAreaKeyword(name) {
   const lowerName = name.toLowerCase();
-  return BAY_AREA_KEYWORDS.some(kw => lowerName.includes(kw));
+  return BAY_AREA_KEYWORDS.some((kw) => lowerName.includes(kw));
 }
 
 /**
@@ -152,10 +195,12 @@ function isValidRecreationType(name, type) {
   }
 
   // Also allow national wildlife refuges, marine sanctuaries, etc.
-  if (lowerName.includes('wildlife') ||
-      lowerName.includes('sanctuary') ||
-      lowerName.includes('national') ||
-      lowerName.includes('state')) {
+  if (
+    lowerName.includes('wildlife') ||
+    lowerName.includes('sanctuary') ||
+    lowerName.includes('national') ||
+    lowerName.includes('state')
+  ) {
     return true;
   }
 
@@ -218,8 +263,14 @@ function determineArea(lat, lng, name) {
   if (lowerName.includes('sonoma') || lowerName.includes('lake sonoma')) return 'Sonoma County';
   if (lowerName.includes('napa') || lowerName.includes('berryessa')) return 'Napa County';
   if (lowerName.includes('solano')) return 'Solano County';
-  if (lowerName.includes('alameda') || lowerName.includes('oakland') || lowerName.includes('berkeley')) return 'Alameda County';
-  if (lowerName.includes('santa clara') || lowerName.includes('san jose')) return 'Santa Clara County';
+  if (
+    lowerName.includes('alameda') ||
+    lowerName.includes('oakland') ||
+    lowerName.includes('berkeley')
+  )
+    return 'Alameda County';
+  if (lowerName.includes('santa clara') || lowerName.includes('san jose'))
+    return 'Santa Clara County';
   if (lowerName.includes('san mateo')) return 'San Mateo County';
   if (lowerName.includes('contra costa')) return 'Contra Costa County';
 
@@ -236,8 +287,10 @@ function recAreaToProgram(area) {
 
   const description = cleanDescription(area.RecAreaDescription);
   const phone = area.RecAreaPhone || '';
-  const url = area.RecAreaReservationURL || area.RecAreaMapURL ||
-              `https://www.recreation.gov/search?q=${encodeURIComponent(name)}`;
+  const url =
+    area.RecAreaReservationURL ||
+    area.RecAreaMapURL ||
+    `https://www.recreation.gov/search?q=${encodeURIComponent(name)}`;
 
   return {
     id: generateId(name),
@@ -245,9 +298,13 @@ function recAreaToProgram(area) {
     category: 'Recreation',
     area: determineArea(lat, lng, name),
     groups: ['everyone'],
-    description: description || `${name} is a federal recreation area managed through Recreation.gov. Visit for outdoor activities, nature exploration, and recreation opportunities.`,
-    what_they_offer: 'Outdoor recreation including hiking, wildlife viewing, and nature experiences. Some sites offer camping, picnicking, and water activities.',
-    how_to_get_it: 'Visit Recreation.gov to check availability, make reservations, and plan your visit. Some areas are free to visit while others may require permits or fees.',
+    description:
+      description ||
+      `${name} is a federal recreation area managed through Recreation.gov. Visit for outdoor activities, nature exploration, and recreation opportunities.`,
+    what_they_offer:
+      'Outdoor recreation including hiking, wildlife viewing, and nature experiences. Some sites offer camping, picnicking, and water activities.',
+    how_to_get_it:
+      'Visit Recreation.gov to check availability, make reservations, and plan your visit. Some areas are free to visit while others may require permits or fees.',
     phone: phone,
     timeframe: 'Varies by location and activity',
     link: url,
@@ -256,7 +313,7 @@ function recAreaToProgram(area) {
     longitude: lng || null,
     verified: 'Recreation.gov',
     verified_date: new Date().toISOString().split('T')[0],
-    recgov_id: area.RecAreaID
+    recgov_id: area.RecAreaID,
   };
 }
 
@@ -272,8 +329,9 @@ function facilityToProgram(facility, parentName = '') {
 
   const description = cleanDescription(facility.FacilityDescription);
   const phone = facility.FacilityPhone || '';
-  const url = facility.FacilityReservationURL ||
-              `https://www.recreation.gov/camping/campgrounds/${facility.FacilityID}`;
+  const url =
+    facility.FacilityReservationURL ||
+    `https://www.recreation.gov/camping/campgrounds/${facility.FacilityID}`;
 
   let whatTheyOffer = `${type} at ${parentName || name}.`;
   if (reservable) {
@@ -286,7 +344,8 @@ function facilityToProgram(facility, parentName = '') {
     category: 'Recreation',
     area: determineArea(lat, lng, name),
     groups: ['everyone'],
-    description: description || `${name} is a ${type.toLowerCase()} available through Recreation.gov.`,
+    description:
+      description || `${name} is a ${type.toLowerCase()} available through Recreation.gov.`,
     what_they_offer: whatTheyOffer,
     how_to_get_it: reservable
       ? 'Make a reservation through Recreation.gov. Book early as popular sites fill up quickly.'
@@ -299,7 +358,7 @@ function facilityToProgram(facility, parentName = '') {
     longitude: lng || null,
     verified: 'Recreation.gov',
     verified_date: new Date().toISOString().split('T')[0],
-    recgov_facility_id: facility.FacilityID
+    recgov_facility_id: facility.FacilityID,
   };
 }
 
@@ -312,12 +371,10 @@ async function main() {
   const existingPrograms = yaml.load(existingContent) || [];
 
   // Build set of existing names and IDs for duplicate detection
-  const existingIds = new Set(existingPrograms.map(p => p.id));
-  const existingNames = new Set(existingPrograms.map(p => p.name.toLowerCase()));
+  const existingIds = new Set(existingPrograms.map((p) => p.id));
+  const existingNames = new Set(existingPrograms.map((p) => p.name.toLowerCase()));
   const existingRecgovIds = new Set(
-    existingPrograms
-      .filter(p => p.recgov_id)
-      .map(p => String(p.recgov_id))
+    existingPrograms.filter((p) => p.recgov_id).map((p) => String(p.recgov_id))
   );
 
   console.log(`   Found ${existingPrograms.length} existing programs`);
@@ -333,7 +390,7 @@ async function main() {
     const response = await apiRequest('/recareas', {
       state: 'CA',
       limit,
-      offset
+      offset,
     });
     const areas = response.RECDATA || [];
     if (areas.length === 0) break;
@@ -349,7 +406,7 @@ async function main() {
   }
 
   // Filter to Bay Area and exclude commercial lodging
-  const bayAreaAreas = allAreas.filter(area => {
+  const bayAreaAreas = allAreas.filter((area) => {
     const lat = area.RecAreaLatitude;
     const lng = area.RecAreaLongitude;
     const name = area.RecAreaName;
@@ -377,7 +434,7 @@ async function main() {
       const facilities = response.RECDATA || [];
 
       // Only include reservable facilities that are actual recreation (not hotels)
-      const validFacilities = facilities.filter(f => {
+      const validFacilities = facilities.filter((f) => {
         if (!f.Reservable) return false;
         const name = f.FacilityName || '';
         const type = f.FacilityTypeDescription || '';
@@ -393,7 +450,7 @@ async function main() {
 
       if (validFacilities.length > 0) {
         console.log(`   ${area.RecAreaName}: ${validFacilities.length} valid facilities`);
-        validFacilities.forEach(f => {
+        validFacilities.forEach((f) => {
           f._parentAreaName = area.RecAreaName;
         });
         allFacilities = allFacilities.concat(validFacilities);
@@ -487,7 +544,7 @@ async function main() {
   const yamlOutput = yaml.dump(updatedPrograms, {
     lineWidth: -1,
     quotingType: '"',
-    forceQuotes: false
+    forceQuotes: false,
   });
 
   fs.writeFileSync(RECREATION_FILE, yamlOutput);
@@ -503,13 +560,13 @@ async function main() {
   // List new programs
   if (newPrograms.length > 0) {
     console.log('\n📝 New programs added:');
-    newPrograms.forEach(p => {
+    newPrograms.forEach((p) => {
       console.log(`   • ${p.name} (${p.area})`);
     });
   }
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error('❌ Error:', err.message);
   process.exit(1);
 });

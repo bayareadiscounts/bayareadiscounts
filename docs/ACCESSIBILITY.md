@@ -136,4 +136,4 @@ This accessibility statement was last reviewed on: **December 2025**
 
 ---
 
-*This statement was created using the [W3C Accessibility Statement Generator](https://www.w3.org/WAI/planning/statements/).*
+_This statement was created using the [W3C Accessibility Statement Generator](https://www.w3.org/WAI/planning/statements/)._

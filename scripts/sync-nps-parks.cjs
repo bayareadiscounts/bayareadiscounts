@@ -15,8 +15,15 @@ const NPS_API_BASE = 'https://developer.nps.gov/api/v1';
 
 // Bay Area counties and their approximate bounding box
 const BAY_AREA_COUNTIES = [
-  'Alameda', 'Contra Costa', 'Marin', 'Napa',
-  'San Francisco', 'San Mateo', 'Santa Clara', 'Solano', 'Sonoma'
+  'Alameda',
+  'Contra Costa',
+  'Marin',
+  'Napa',
+  'San Francisco',
+  'San Mateo',
+  'Santa Clara',
+  'Solano',
+  'Sonoma',
 ];
 
 // Bay Area bounding box (approximate)
@@ -24,7 +31,7 @@ const BAY_AREA_BOUNDS = {
   minLat: 36.9,
   maxLat: 38.9,
   minLng: -123.6,
-  maxLng: -121.2
+  maxLng: -121.2,
 };
 
 if (!NPS_API_KEY) {
@@ -43,21 +50,23 @@ function fetchFromNPS(endpoint, params = {}) {
     const options = {
       headers: {
         'X-Api-Key': NPS_API_KEY,
-        'Accept': 'application/json'
-      }
+        Accept: 'application/json',
+      },
     };
 
-    https.get(url, options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch (e) {
-          reject(new Error(`Failed to parse response: ${e.message}`));
-        }
-      });
-    }).on('error', reject);
+    https
+      .get(url, options, (res) => {
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try {
+            resolve(JSON.parse(data));
+          } catch (e) {
+            reject(new Error(`Failed to parse response: ${e.message}`));
+          }
+        });
+      })
+      .on('error', reject);
   });
 }
 
@@ -65,27 +74,29 @@ function fetchFromNPS(endpoint, params = {}) {
  * Check if coordinates are within Bay Area bounds
  */
 function isInBayArea(lat, lng) {
-  return lat >= BAY_AREA_BOUNDS.minLat &&
-         lat <= BAY_AREA_BOUNDS.maxLat &&
-         lng >= BAY_AREA_BOUNDS.minLng &&
-         lng <= BAY_AREA_BOUNDS.maxLng;
+  return (
+    lat >= BAY_AREA_BOUNDS.minLat &&
+    lat <= BAY_AREA_BOUNDS.maxLat &&
+    lng >= BAY_AREA_BOUNDS.minLng &&
+    lng <= BAY_AREA_BOUNDS.maxLng
+  );
 }
 
 /**
  * Known park code to county mappings for accuracy
  */
 const PARK_COUNTY_MAP = {
-  'alca': 'San Francisco County',  // Alcatraz is in SF Bay
-  'euon': 'Contra Costa County',   // Eugene O'Neill is in Danville
-  'fopo': 'San Francisco County',  // Fort Point is in SF
-  'goga': 'San Francisco County',  // Golden Gate spans multiple, HQ in SF
-  'jomu': 'Contra Costa County',   // John Muir is in Martinez
-  'muwo': 'Marin County',          // Muir Woods is in Marin
-  'pore': 'Marin County',          // Point Reyes is in Marin
-  'poch': 'Contra Costa County',   // Port Chicago is in Concord area
-  'prsf': 'San Francisco County',  // Presidio is in SF
-  'rori': 'Contra Costa County',   // Rosie the Riveter is in Richmond
-  'safr': 'San Francisco County',  // SF Maritime is in SF
+  alca: 'San Francisco County', // Alcatraz is in SF Bay
+  euon: 'Contra Costa County', // Eugene O'Neill is in Danville
+  fopo: 'San Francisco County', // Fort Point is in SF
+  goga: 'San Francisco County', // Golden Gate spans multiple, HQ in SF
+  jomu: 'Contra Costa County', // John Muir is in Martinez
+  muwo: 'Marin County', // Muir Woods is in Marin
+  pore: 'Marin County', // Point Reyes is in Marin
+  poch: 'Contra Costa County', // Port Chicago is in Concord area
+  prsf: 'San Francisco County', // Presidio is in SF
+  rori: 'Contra Costa County', // Rosie the Riveter is in Richmond
+  safr: 'San Francisco County', // SF Maritime is in SF
 };
 
 /**
@@ -128,7 +139,7 @@ function formatParkForYaml(park, feeInfo = null) {
   // Build address from available components
   const addressParts = [];
   if (park.addresses && park.addresses.length > 0) {
-    const addr = park.addresses.find(a => a.type === 'Physical') || park.addresses[0];
+    const addr = park.addresses.find((a) => a.type === 'Physical') || park.addresses[0];
     if (addr.line1) addressParts.push(addr.line1);
     if (addr.city) addressParts.push(addr.city);
     if (addr.stateCode) addressParts.push(addr.stateCode);
@@ -159,7 +170,7 @@ function formatParkForYaml(park, feeInfo = null) {
     designation: park.designation,
     fee_info: feeInfo,
     verified_by: 'National Park Service',
-    verified_date: new Date().toISOString().split('T')[0]
+    verified_date: new Date().toISOString().split('T')[0],
   };
 }
 
@@ -192,7 +203,7 @@ async function fetchFeeInfo(parkCode) {
   try {
     const response = await fetchFromNPS('/feespasses', {
       parkCode: parkCode,
-      limit: 10
+      limit: 10,
     });
 
     if (response.data && response.data.length > 0) {
@@ -205,9 +216,10 @@ async function fetchFeeInfo(parkCode) {
 
       // Check the fees array for entrance fees
       if (feeData.fees && feeData.fees.length > 0) {
-        const entranceFee = feeData.fees.find(f =>
-          f.entranceFeeType && f.entranceFeeType.toLowerCase().includes('entrance')
-        ) || feeData.fees[0];
+        const entranceFee =
+          feeData.fees.find(
+            (f) => f.entranceFeeType && f.entranceFeeType.toLowerCase().includes('entrance')
+          ) || feeData.fees[0];
 
         if (entranceFee && entranceFee.cost) {
           const cost = parseFloat(entranceFee.cost);
@@ -248,7 +260,7 @@ async function main() {
     // Fetch all California parks
     const response = await fetchFromNPS('/parks', {
       stateCode: 'CA',
-      limit: 100
+      limit: 100,
     });
 
     if (!response.data) {
@@ -258,7 +270,7 @@ async function main() {
     console.log(`Found ${response.data.length} California parks`);
 
     // Filter to Bay Area parks
-    const bayAreaParks = response.data.filter(park => {
+    const bayAreaParks = response.data.filter((park) => {
       const lat = parseFloat(park.latitude);
       const lng = parseFloat(park.longitude);
 
@@ -294,22 +306,41 @@ async function main() {
     yamlOutput += '# Source: National Park Service API\n';
     yamlOutput += `# Updated: ${new Date().toISOString().split('T')[0]}\n\n`;
 
-    formattedParks.forEach(park => {
+    formattedParks.forEach((park) => {
       yamlOutput += parkToYaml(park) + '\n';
     });
 
     // Save to exports folder
-    const exportPath = path.join(__dirname, '..', 'data-exports', 'gov-datasets', 'bay-area-nps-parks.yml');
+    const exportPath = path.join(
+      __dirname,
+      '..',
+      'data-exports',
+      'gov-datasets',
+      'bay-area-nps-parks.yml'
+    );
     fs.writeFileSync(exportPath, yamlOutput);
     console.log(`\nSaved YAML to: ${exportPath}`);
 
     // Also save as JSON for reference
-    const jsonPath = path.join(__dirname, '..', 'data-exports', 'gov-datasets', 'bay-area-nps-parks.json');
-    fs.writeFileSync(jsonPath, JSON.stringify({
-      source: 'National Park Service API',
-      updated: new Date().toISOString(),
-      parks: formattedParks
-    }, null, 2));
+    const jsonPath = path.join(
+      __dirname,
+      '..',
+      'data-exports',
+      'gov-datasets',
+      'bay-area-nps-parks.json'
+    );
+    fs.writeFileSync(
+      jsonPath,
+      JSON.stringify(
+        {
+          source: 'National Park Service API',
+          updated: new Date().toISOString(),
+          parks: formattedParks,
+        },
+        null,
+        2
+      )
+    );
     console.log(`Saved JSON to: ${jsonPath}`);
 
     // Update recreation.yml
@@ -327,9 +358,11 @@ async function main() {
         ? npsStart + 1 + nextSectionMatch.index
         : recreationContent.length;
 
-      recreationContent = recreationContent.slice(0, npsStart) +
-                          yamlOutput.trim() + '\n' +
-                          recreationContent.slice(npsEnd);
+      recreationContent =
+        recreationContent.slice(0, npsStart) +
+        yamlOutput.trim() +
+        '\n' +
+        recreationContent.slice(npsEnd);
     } else {
       // Append NPS section
       recreationContent += yamlOutput;
@@ -339,7 +372,6 @@ async function main() {
     console.log(`Updated: ${recreationPath}`);
 
     console.log('\nDone!');
-
   } catch (error) {
     console.error('Error:', error.message);
     process.exit(1);

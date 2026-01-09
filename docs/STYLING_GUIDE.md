@@ -22,6 +22,7 @@ Your content here...
 ```
 
 That's it! No custom CSS needed. The page will automatically have:
+
 - Consistent typography
 - Proper spacing
 - Dark mode support
@@ -31,12 +32,14 @@ That's it! No custom CSS needed. The page will automatically have:
 ## CSS Variables
 
 All colors and styles use CSS variables defined in `assets/css/base.css`. These variables automatically adapt to:
+
 - System dark mode preference (`@media (prefers-color-scheme: dark)`)
 - Manual theme selection (`body[data-theme="dark"]` or `body[data-theme="light"]`)
 
 ### Available Variables
 
 #### Colors
+
 - `--primary-teal`: #00acc1 (Main brand color)
 - `--primary-teal-dark`: #00838f
 - `--primary-teal-darker`: #006064
@@ -44,18 +47,21 @@ All colors and styles use CSS variables defined in `assets/css/base.css`. These 
 - `--accent-orange-light`: #ff8f00
 
 #### Backgrounds
+
 - `--bg-body`: Page background gradient
 - `--bg-main`: Main content background (white/dark)
 - `--bg-table-hover`: Table row hover color
 - `--bg-footer`: Footer background
 
 #### Text
+
 - `--text-primary`: Main text color (dark/light based on theme)
 - `--text-heading`: Heading color (teal in light mode, cyan in dark mode)
 - `--text-link`: Link color
 - `--text-link-hover`: Link hover color
 
 #### Borders & Shadows
+
 - `--border-color`: Standard border color
 - `--border-light`: Light border (cyan-based)
 - `--shadow`: Box shadow color
@@ -66,6 +72,7 @@ All colors and styles use CSS variables defined in `assets/css/base.css`. These 
 ### `.content-wrapper`
 
 The main class for content pages. Provides:
+
 - Max width: 900px
 - Centered layout
 - Proper padding and spacing
@@ -73,6 +80,7 @@ The main class for content pages. Provides:
 - Dark mode support
 
 **Usage:**
+
 ```html
 <div class="content-wrapper" markdown="1">
   <!-- Your markdown content -->
@@ -80,6 +88,7 @@ The main class for content pages. Provides:
 ```
 
 **Includes:**
+
 - H1-H6 styling with proper hierarchy
 - Paragraph spacing
 - Link styling with underlines
@@ -99,6 +108,7 @@ Screen reader only content (visually hidden but accessible):
 ### `.container`
 
 Standard page container (already used in main layouts):
+
 - Max width: 1200px
 - Centered with auto margins
 - Responsive padding
@@ -115,12 +125,14 @@ All CSS variables automatically switch between light and dark values. You don't 
 ### Dark Mode Colors
 
 **Light Mode:**
+
 - Background: white
 - Text: #24292e (dark gray)
 - Headings: #00838f (teal)
 - Links: #00838f (teal)
 
 **Dark Mode:**
+
 - Background: #0d1117 (dark)
 - Text: #e8eef5 (light gray)
 - Headings: #79d8eb (cyan)
@@ -129,6 +141,7 @@ All CSS variables automatically switch between light and dark values. You don't 
 ## Typography
 
 ### Font Stack
+
 ```css
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 ```
@@ -136,12 +149,14 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sa
 System fonts for optimal performance and native feel.
 
 ### Heading Sizes
+
 - **H1**: 2.5rem (40px)
 - **H2**: 2rem (32px) - with bottom border
 - **H3**: 1.5rem (24px)
 - **H4-H6**: Progressively smaller
 
 ### Line Height
+
 - Body text: 1.8 (for readability)
 - Headings: Default
 
@@ -251,6 +266,7 @@ body[data-theme="dark"] .custom-component {
 If you have an existing page with custom CSS (like the old privacy-content class), migrate to content-wrapper:
 
 **Before:**
+
 ```markdown
 <style>
 .privacy-content {
@@ -264,6 +280,7 @@ If you have an existing page with custom CSS (like the old privacy-content class
 ```
 
 **After:**
+
 ```markdown
 <div class="content-wrapper" markdown="1">
 ```
@@ -285,6 +302,7 @@ npx playwright test tests/recent-changes.spec.js
 ```
 
 Tests verify:
+
 - Responsive design (mobile, tablet, desktop)
 - Dark mode toggle functionality
 - Theme override behavior

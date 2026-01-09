@@ -3,12 +3,14 @@
 ## 🚀 Service Endpoints
 
 ### Public URLs
+
 - **Website (Static Web App)**: https://wonderful-coast-09041e01e.2.azurestaticapps.net
 - **CDN (Front Door)**: https://baynavigator-web-b9gzhvbpdedgc2hn.z02.azurefd.net
 - **API Gateway**: https://baynavigator-api.azure-api.net
 - **Functions (Direct)**: https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api
 
 ### API Endpoints (via API Management)
+
 ```bash
 GET https://baynavigator-api.azure-api.net/programs
 GET https://baynavigator-api.azure-api.net/programs/{id}
@@ -23,6 +25,7 @@ POST https://baynavigator-api.azure-api.net/translate
 ## 📊 Monitoring Dashboards
 
 ### Application Insights
+
 ```bash
 # View in Azure Portal
 https://portal.azure.com/#@/resource/subscriptions/7848d90a-1826-43f6-a54e-090c2d18946f/resourceGroups/baynavigator-rg/providers/microsoft.insights/components/baynavigator-insights-prod
@@ -35,6 +38,7 @@ az monitor app-insights metrics show \
 ```
 
 ### Cache Performance
+
 ```bash
 # Check Redis cache hit rate (once configured)
 az monitor metrics list \
@@ -47,6 +51,7 @@ az monitor metrics list \
 ## 🔧 Common Commands
 
 ### Check Service Status
+
 ```bash
 # All services at once
 az resource list \
@@ -68,6 +73,7 @@ az apim show \
 ```
 
 ### Configure Redis (When Ready)
+
 ```bash
 # 1. Get access keys
 az redis list-keys \
@@ -89,6 +95,7 @@ az functionapp restart \
 ```
 
 ### View Logs
+
 ```bash
 # Functions logs (live tail)
 az functionapp log tail \
@@ -107,6 +114,7 @@ az monitor app-insights query \
 ```
 
 ### Test API Endpoints
+
 ```bash
 # Test through API Management
 curl https://baynavigator-api.azure-api.net/programs?category=food
@@ -124,6 +132,7 @@ curl -I https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/progr
 ## 💡 Troubleshooting
 
 ### Redis Not Connecting
+
 ```bash
 # 1. Verify Redis is ready
 az redis show --name baynavigator-redis --resource-group baynavigator-rg
@@ -139,6 +148,7 @@ az functionapp config appsettings list \
 ```
 
 ### API Management Not Responding
+
 ```bash
 # Check API status
 az apim api show \
@@ -154,6 +164,7 @@ az apim api operation list \
 ```
 
 ### Front Door Not Routing
+
 ```bash
 # Check health probe
 az afd origin show \
@@ -171,6 +182,7 @@ az afd route show \
 ```
 
 ### High Costs Alert
+
 ```bash
 # Check current month costs
 az consumption usage list \
@@ -191,6 +203,7 @@ az consumption budget create \
 ## 📈 Performance Optimization
 
 ### Cache Hit Rate Goal: >70%
+
 ```bash
 # Monitor cache metrics
 az monitor metrics list \
@@ -201,6 +214,7 @@ az monitor metrics list \
 ```
 
 ### Cosmos DB RU Optimization
+
 ```bash
 # Check RU consumption
 az cosmosdb mongodb collection throughput show \
@@ -228,6 +242,7 @@ az cosmosdb mongodb collection throughput show \
 ## 🎯 Next Actions
 
 1. **Wait for Redis (~5-10 more minutes)**
+
    ```bash
    watch -n 30 'az redis show --name baynavigator-redis --resource-group baynavigator-rg --query provisioningState'
    ```
@@ -235,10 +250,11 @@ az cosmosdb mongodb collection throughput show \
 2. **Configure Redis connection** (see "Configure Redis" above)
 
 3. **Test cache performance**
+
    ```bash
    # First request (should be MISS)
    curl -I https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/programs
-   
+
    # Second request (should be HIT)
    curl -I https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/programs
    ```
@@ -249,4 +265,4 @@ az cosmosdb mongodb collection throughput show \
 
 ---
 
-*For detailed information, see [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md)*
+_For detailed information, see [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md)_

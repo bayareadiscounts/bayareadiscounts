@@ -54,20 +54,23 @@ baynavigator/
 ## 🎯 What Each Component Does
 
 ### Azure Functions (API Backend)
+
 **Purpose**: Serverless REST API for accessing program data
 
-| Endpoint | File | Description |
-|----------|------|-------------|
-| GET /api/programs | `GetPrograms/index.js` | List all programs with filters (category, area, eligibility, search) |
-| GET /api/programs/{id} | `GetProgramById/index.js` | Get single program by ID |
-| GET /api/categories | `GetCategories/index.js` | List all unique categories with counts |
+| Endpoint               | File                      | Description                                                          |
+| ---------------------- | ------------------------- | -------------------------------------------------------------------- |
+| GET /api/programs      | `GetPrograms/index.js`    | List all programs with filters (category, area, eligibility, search) |
+| GET /api/programs/{id} | `GetProgramById/index.js` | Get single program by ID                                             |
+| GET /api/categories    | `GetCategories/index.js`  | List all unique categories with counts                               |
 
 **Shared code**: `shared/cosmosClient.js` - Reusable Cosmos DB connection logic
 
 ### Infrastructure (Bicep)
+
 **Purpose**: Defines all Azure resources as code
 
 **Creates**:
+
 - Azure Cosmos DB (serverless NoSQL database)
 - Azure Functions App (serverless compute)
 - Storage Account (required for Functions)
@@ -77,32 +80,36 @@ baynavigator/
 **Cost**: ~$0.02/month (essentially free!)
 
 ### Scripts
+
 **Purpose**: Data migration from YAML to Cosmos DB
 
 **Features**:
+
 - Reads all YAML files in `_data/programs/`
 - Uploads to Cosmos DB with upsert (insert or update)
 - Progress tracking and error reporting
 - Idempotent (safe to run multiple times)
 
 ### GitHub Actions
+
 **Purpose**: Automated deployment
 
-| Workflow | Trigger | What it does |
-|----------|---------|--------------|
-| `azure-functions-deploy.yml` | Push to main (when azure-functions/ changes) | Deploys API code to Azure Functions |
-| `azure-infrastructure-deploy.yml` | Manual trigger only | Creates/updates Azure resources |
+| Workflow                          | Trigger                                      | What it does                        |
+| --------------------------------- | -------------------------------------------- | ----------------------------------- |
+| `azure-functions-deploy.yml`      | Push to main (when azure-functions/ changes) | Deploys API code to Azure Functions |
+| `azure-infrastructure-deploy.yml` | Manual trigger only                          | Creates/updates Azure resources     |
 
 ### Documentation
+
 **Purpose**: Comprehensive guides for deployment and usage
 
-| File | Purpose |
-|------|---------|
-| `AZURE_INTEGRATION.md` | Complete architecture overview, benefits, and details |
-| `GETTING_STARTED_AZURE.md` | Step-by-step deployment guide (30 minutes) |
-| `infrastructure/README.md` | Infrastructure deployment and management |
-| `azure-functions/README.md` | API documentation and local development |
-| `_data/programs/README.md` | Data licensing and contribution guide |
+| File                        | Purpose                                               |
+| --------------------------- | ----------------------------------------------------- |
+| `AZURE_INTEGRATION.md`      | Complete architecture overview, benefits, and details |
+| `GETTING_STARTED_AZURE.md`  | Step-by-step deployment guide (30 minutes)            |
+| `infrastructure/README.md`  | Infrastructure deployment and management              |
+| `azure-functions/README.md` | API documentation and local development               |
+| `_data/programs/README.md`  | Data licensing and contribution guide                 |
 
 ## 🔐 License Information
 
@@ -113,24 +120,28 @@ All code is **100% open source**:
 - **Infrastructure code**: MIT License
 
 Anyone can:
+
 - ✅ Fork and deploy their own instance
 - ✅ Modify and customize
 - ✅ Use commercially
 - ✅ Contribute improvements
 
 Must:
+
 - ✅ Provide attribution to Bay Navigator
 - ✅ Include license notices
 
 ## 🚀 Key Features
 
 ### For Users
+
 - Fast, scalable API
 - Real-time data updates
 - Global availability
 - 99.9% uptime SLA
 
 ### For Developers
+
 - Modern serverless architecture
 - Easy to deploy (30 minutes)
 - Automatic scaling
@@ -139,6 +150,7 @@ Must:
 - Complete documentation
 
 ### For the Project
+
 - Free hosting (generous free tiers)
 - Professional infrastructure
 - Production-ready from day one
@@ -146,13 +158,13 @@ Must:
 
 ## 💰 Cost Breakdown
 
-| Service | Usage | Monthly Cost |
-|---------|-------|--------------|
+| Service              | Usage           | Monthly Cost      |
+| -------------------- | --------------- | ----------------- |
 | Cosmos DB Serverless | ~50 RU/s, <1 GB | $0.00 (free tier) |
-| Azure Functions | ~10k executions | $0.00 (free tier) |
-| Storage Account | <100 MB | $0.02 |
-| Application Insights | ~500 MB data | $0.00 (free tier) |
-| **Total** | | **~$0.02/month** |
+| Azure Functions      | ~10k executions | $0.00 (free tier) |
+| Storage Account      | <100 MB         | $0.02             |
+| Application Insights | ~500 MB data    | $0.00 (free tier) |
+| **Total**            |                 | **~$0.02/month**  |
 
 **Scaling**: Even at 10,000 visitors/day, costs stay under $5/month!
 
@@ -199,6 +211,7 @@ Must:
 ## 🌟 Benefits of This Integration
 
 ### Technical
+
 ✅ Serverless architecture (scales automatically)
 ✅ NoSQL database (flexible schema)
 ✅ REST API (easy integration)
@@ -207,6 +220,7 @@ Must:
 ✅ Built-in monitoring (Application Insights)
 
 ### Business
+
 ✅ Free tier covers most usage
 ✅ Production-ready from day one
 ✅ Professional infrastructure
@@ -214,6 +228,7 @@ Must:
 ✅ Community can fork and adapt
 
 ### Open Source
+
 ✅ All code in public GitHub repo
 ✅ Clear licensing (MIT + CC BY 4.0)
 ✅ Comprehensive documentation

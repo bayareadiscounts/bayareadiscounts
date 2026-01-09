@@ -20,7 +20,7 @@
   timeframe: Ongoing
   link: https://www.banfieldfoundation.org/Banfield-Foundation-Resources-for-pet-owners
   link_text: Browse Resources
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: bebhs-spay-bay
   name: Berkeley-East Bay Humane Society - Spay the Bay
   category: Pet Resources
@@ -47,7 +47,7 @@
   timeframe: Ongoing
   link: https://berkeleyhumane.org/spay-the-bay/
   link_text: Schedule
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.8571686
   longitude: -122.291021
 - id: hssv-pet-pantry
@@ -75,7 +75,7 @@
   timeframe: Every 30 days
   link: https://www.hssv.org/pet-pantry/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.4217456
   longitude: -121.887582
 - id: humane-world
@@ -100,7 +100,7 @@
   timeframe: Ongoing
   link: https://www.humaneworld.org/en/resources/having-trouble-affording-your-pet#finance
   link_text: Browse Resources
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: joybound-vet-care
   name: Joybound People & Pets - Community Veterinary Care
   category: Pet Resources
@@ -126,7 +126,7 @@
   timeframe: Ongoing
   link: https://joybound.org/services/get-help/
   link_text: Contact
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9330006
   longitude: -122.0206915
 - id: joybound-pet-food
@@ -153,7 +153,7 @@
   timeframe: Ongoing
   link: https://joybound.org/services/get-help/
   link_text: Contact
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9330006
   longitude: -122.0206915
 - id: joybound-vaccinations
@@ -179,7 +179,7 @@
   timeframe: Monthly
   link: https://joybound.org/services/get-help/
   link_text: Find Clinic
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: joybound-pet-safety-net
   name: Joybound People & Pets - Pet Safety Net
   category: Pet Resources
@@ -204,7 +204,7 @@
   timeframe: As needed
   link: https://joybound.org/services/get-help/
   link_text: Get Help
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9330006
   longitude: -122.0206915
 - id: joybound-spay-neuter
@@ -233,7 +233,7 @@
   timeframe: Ongoing
   link: https://joybound.org/services/get-help/
   link_text: Schedule
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.9330006
   longitude: -122.0206915
 - id: marin-humane-pet-care
@@ -262,7 +262,7 @@
   timeframe: Ongoing
   link: https://www.marinhumanesociety.org
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 38.0682551
   longitude: -122.5367087
 - id: muttville-cuddle-club
@@ -290,7 +290,7 @@
   timeframe: Ongoing
   link: https://muttville.org/seniors_for_seniors#cuddle
   link_text: Find Event
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.765762
   longitude: -122.4120821
 - id: muttville-seniors-for-seniors
@@ -318,7 +318,7 @@
   timeframe: Ongoing
   link: https://muttville.org/seniors_for_seniors
   link_text: Adopt
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.765762
   longitude: -122.4120821
 - id: phs-mobile-spay-neuter
@@ -345,7 +345,7 @@
   timeframe: By appointment
   link: https://phs-spca.org/spayneuter/mobile/
   link_text: Schedule
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: phs-vaccine-clinics
   name: Peninsula Humane Society SPCA Low-Cost Vaccine Clinics
   category: Pet Resources
@@ -371,7 +371,7 @@
   timeframe: Monthly
   link: https://phs-spca.org/spayneuter/
   link_text: Schedule
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.5859249
   longitude: -122.328231
 - id: pet-help-finder
@@ -397,7 +397,7 @@
   timeframe: Ongoing
   link: https://www.pethelpfinder.org/
   link_text: Search
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pets-in-need
   name: Pets in Need - Low-Cost Vet Services
   category: Pet Resources
@@ -424,7 +424,7 @@
   timeframe: Ongoing
   link: https://www.petsinneed.org/communityclinic
   link_text: Schedule
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: pets-of-homeless
   name: Pets of the Homeless
   category: Pet Resources
@@ -449,7 +449,7 @@
   timeframe: Ongoing
   link: https://petsofthehomeless.org/get-help/find-locations/
   link_text: Find Location
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sf-spca-community-clinic
   name: San Francisco SPCA - Community Clinic
   category: Pet Resources
@@ -475,7 +475,7 @@
   timeframe: Ongoing
   link: https://www.sfspca.org/veterinary-care/community-clinic/
   link_text: Schedule
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7672325
   longitude: -122.4124314
 - id: sf-spca-spay-neuter
@@ -503,7 +503,7 @@
   timeframe: Ongoing
   link: https://www.sfspca.org
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7672325
   longitude: -122.4124314
 - id: sf-aid-for-animals
@@ -530,7 +530,7 @@
   timeframe: Ongoing
   link: https://www.sfafa.org/gethelp
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: the-pet-fund
   name: The Pet Fund
   category: Pet Resources
@@ -555,7 +555,7 @@
   timeframe: Ongoing
   link: https://www.thepetfund.com/for-pet-owners/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: vet-billing
   name: Vet Billing - Payment Plans
   category: Pet Resources
@@ -578,7 +578,7 @@
   timeframe: Ongoing
   link: https://vetbilling.com/find-vet/
   link_text: Search
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: vetco-clinics
   name: VETCO Clinics
   category: Pet Resources
@@ -603,7 +603,7 @@
   timeframe: Weekly
   link: https://www.vetcoclinics.com
   link_text: Find Location
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: vip-petcare
   name: VIP Petcare
   category: Pet Resources
@@ -628,4 +628,4 @@
   timeframe: Weekly
   link: https://www.vippetcare.com
   link_text: Find Clinic
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'

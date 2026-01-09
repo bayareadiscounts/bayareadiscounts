@@ -143,6 +143,4 @@ These guides explain who qualifies for each category, how to verify your status,
   </a>
 </div>
 
-
-
 </div>

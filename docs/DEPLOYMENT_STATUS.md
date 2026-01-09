@@ -6,6 +6,7 @@
 ## 🎉 Latest Update: Azure Enhancements Complete
 
 All Azure services successfully deployed and configured! The site now has:
+
 - ✅ Global CDN (Azure Front Door)
 - ✅ API Gateway (API Management)
 - ✅ Redis Caching (provisioning)
@@ -18,12 +19,14 @@ See [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md) for complete documentatio
 ## ✅ Completed Steps
 
 ### 1. Dual License Setup
+
 - ✅ Created LICENSE (MIT for code)
 - ✅ Created LICENSE-DATA (CC BY 4.0 for data)
 - ✅ Updated README with license badges
 - ✅ Added license notice to data directory
 
 ### 2. Infrastructure Deployment
+
 - ✅ Created Azure Resource Group: `baynavigator-rg`
 - ✅ Deployed all Azure resources via Bicep:
   - Cosmos DB Account: `baynavigator-cosmos-prod-clx32fwtnzehq`
@@ -34,11 +37,13 @@ See [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md) for complete documentatio
   - Application Insights: `baynavigator-insights-prod`
 
 ### 3. Data Migration
+
 - ✅ Migrated all 237 programs from YAML to Cosmos DB
 - ✅ 100% success rate (0 errors)
 - ✅ Data organized by 13 categories
 
 ### 4. Azure Functions
+
 - ✅ Created 3 API endpoints:
   - GET /api/programs
   - GET /api/programs/{id}
@@ -49,12 +54,12 @@ See [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md) for complete documentatio
 ## ✅ Recent Fixes
 
 ### Infrastructure Recreation (Dec 21, 2025)
-- ✅ Created Cosmos DB: `baytides-discounts-cosmos` 
+
+- ✅ Created Cosmos DB: `baytides-discounts-cosmos`
   - Database: `baynavigator`
   - Container: `programs` (partition key: `/category`)
   - Tier: Free (1000 RU/s free, 25GB free storage)
   - Cost: $0/month
-  
 - 🔄 Creating Function App: `bayarea-api-prod`
   - Plan: Basic B1 (Linux, 1 core)
   - Runtime: Node.js 24
@@ -64,10 +69,11 @@ See [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md) for complete documentatio
 
 - ✅ Managed Identity configured
   - Function App MSI granted DocumentDB Data Contributor role on Cosmos DB
-  
+
 **Total estimated monthly cost: ~$40/month** (well under $150 budget)
 
 ### Azure Static Web Apps Deployment Token (Dec 20, 2025)
+
 - ✅ Regenerated API deployment token via Azure CLI
 - ✅ Updated GitHub secret `AZURE_STATIC_WEB_APPS_API_TOKEN`
 - ✅ Consolidated on `deploy.yml` workflow
@@ -75,19 +81,23 @@ See [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md) for complete documentatio
 ## ⚠️ Pending Tasks
 
 ### 1. Debug Azure Functions (Priority)
+
 **Issue:** Functions deployed but returning HTTP 500 errors
 
 **Possible causes:**
+
 - Environment variables not configured correctly
 - Cosmos DB connection issues
 - Programming model mismatch
 
 **Next steps:**
+
 1. Check function logs in Azure Portal:
    - Portal → Function App → Monitor → Logs
    - Or use: `func azure functionapp logstream baynavigator-func-prod-clx32fwtnzehq`
 
 2. Verify environment variables in Azure:
+
    ```bash
    az functionapp config appsettings list \
      --resource-group baynavigator-rg \
@@ -100,7 +110,9 @@ See [AZURE_SERVICES_GUIDE.md](AZURE_SERVICES_GUIDE.md) for complete documentatio
    - Test at http://localhost:7071
 
 ### 2. Create Additional API Endpoints
+
 Once basic endpoints are working, add:
+
 - GET /api/areas - List all geographic areas
 - GET /api/stats - Get statistics about programs
 - POST /api/programs/suggest - Program submission form
@@ -108,6 +120,7 @@ Once basic endpoints are working, add:
 ## 📊 Azure Resources
 
 ### Cosmos DB
+
 - **Endpoint:** `https://baynavigator-cosmos-prod-clx32fwtnzehq.documents.azure.com:443/`
 - **Database:** `baynavigator`
 - **Container:** `programs` (237 items)
@@ -115,12 +128,14 @@ Once basic endpoints are working, add:
 - **Cost:** $0.00/month (within free tier)
 
 ### Azure Functions
+
 - **URL:** `https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net`
 - **Runtime:** Node.js 24
 - **Model:** Programming Model v3 (function.json)
 - **Cost:** $0.00/month (within free tier)
 
 ### Application Insights
+
 - **Instrumentation Key:** `5e69b212-4723-44d4-b23e-27da3f7cac8f`
 - **Use:** Monitor API performance and errors
 - **Cost:** $0.00/month (within free tier)
@@ -128,6 +143,7 @@ Once basic endpoints are working, add:
 ## 🛠️ Debugging Guide
 
 ### Option 1: Azure Portal (Easiest)
+
 1. Go to https://portal.azure.com
 2. Navigate to Function App: `baynavigator-func-prod-clx32fwtnzehq`
 3. Click on a function (e.g., GetCategories)
@@ -136,6 +152,7 @@ Once basic endpoints are working, add:
 6. Check "Logs" tab for error messages
 
 ### Option 2: Local Testing
+
 ```bash
 cd azure-functions
 
@@ -164,11 +181,13 @@ curl http://localhost:7071/api/categories
 ```
 
 ### Option 3: Stream Live Logs
+
 ```bash
 func azure functionapp logstream baynavigator-func-prod-clx32fwtnzehq
 ```
 
 Then in another terminal:
+
 ```bash
 curl https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/categories
 ```
@@ -176,11 +195,13 @@ curl https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/categori
 ## 📝 Files Created
 
 ### Infrastructure
+
 - `infrastructure/bicep/main.bicep` - Azure resources definition
 - `infrastructure/bicep/parameters.json.example` - Configuration template
 - `infrastructure/README.md` - Deployment guide
 
 ### Azure Functions
+
 - `azure-functions/GetPrograms/` - List programs endpoint
 - `azure-functions/GetProgramById/` - Get single program endpoint
 - `azure-functions/GetCategories/` - List categories endpoint
@@ -188,14 +209,17 @@ curl https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/categori
 - `azure-functions/README.md` - API documentation
 
 ### Scripts
+
 - `scripts/migrate-to-cosmos.js` - YAML to Cosmos DB migration
 - `scripts/package.json` - Migration dependencies
 
 ### GitHub Actions
+
 - `.github/workflows/azure-functions-deploy.yml` - Auto-deploy API
 - `.github/workflows/azure-infrastructure-deploy.yml` - Deploy infrastructure
 
 ### Documentation
+
 - `AZURE_INTEGRATION.md` - Complete integration guide
 - `GETTING_STARTED_AZURE.md` - Quick start guide (30 min)
 - `AZURE_FILES_SUMMARY.md` - File structure overview
@@ -206,12 +230,12 @@ curl https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/categori
 
 **Total monthly cost: ~$0.02**
 
-| Service | Usage | Cost |
-|---------|-------|------|
-| Cosmos DB | 237 items, <1 GB | $0.00 (free tier) |
-| Azure Functions | Deployed, not working yet | $0.00 (free tier) |
-| Storage Account | <100 MB | $0.02 |
-| Application Insights | ~100 MB | $0.00 (free tier) |
+| Service              | Usage                     | Cost              |
+| -------------------- | ------------------------- | ----------------- |
+| Cosmos DB            | 237 items, <1 GB          | $0.00 (free tier) |
+| Azure Functions      | Deployed, not working yet | $0.00 (free tier) |
+| Storage Account      | <100 MB                   | $0.02             |
+| Application Insights | ~100 MB                   | $0.00 (free tier) |
 
 ## 🎯 Next Session Goals
 
@@ -260,11 +284,13 @@ curl https://baynavigator-func-prod-clx32fwtnzehq.azurewebsites.net/api/categori
 ## 🔧 Infrastructure Consolidation Complete (Dec 21)
 
 **Cleaned up duplicate Azure resources:**
+
 - ✅ Deleted old Cosmos DB (baynavigator-cosmos-db)
-- ✅ Deleted old Function App (baytides-discounts-functions-app)  
+- ✅ Deleted old Function App (baytides-discounts-functions-app)
 - ✅ Deleted old Application Insights (baytides-discounts-functions)
 
 **Now using consolidated infrastructure:**
+
 - Function App: `bayarea-api-prod` (Basic B1, ~$13/mo)
 - Cosmos DB: `baytides-discounts-cosmos` (Free tier, $0/mo)
 - All code uses environment variables (fully portable)

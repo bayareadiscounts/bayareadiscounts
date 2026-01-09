@@ -9,6 +9,7 @@ GitHub Actions runners use a large pool of IP addresses (5,000+) that change per
 ## Solution
 
 The `sync-github-ips.sh` script:
+
 - Fetches current GitHub Actions IP ranges from `https://api.github.com/meta`
 - Prioritizes the top 200 ranges by CIDR coverage (smaller CIDR = broader coverage)
 - Updates Azure Storage firewall rules
@@ -26,6 +27,7 @@ cd /path/to/baynavigator
 ### Automated (Recommended)
 
 **Option 1: Local cron job**
+
 ```bash
 # Edit crontab
 crontab -e
@@ -37,25 +39,26 @@ crontab -e
 **Option 2: GitHub Actions (self-updating)**
 
 Create `.github/workflows/sync-github-ips.yml`:
+
 ```yaml
 name: Sync GitHub IPs to Storage
 
 on:
   schedule:
-    - cron: '0 3 * * 0'  # Every Sunday at 3 AM
-  workflow_dispatch:  # Manual trigger
+    - cron: '0 3 * * 0' # Every Sunday at 3 AM
+  workflow_dispatch: # Manual trigger
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      
+
       - name: Sync GitHub IPs
         run: ./scripts/sync-github-ips.sh
 ```
@@ -63,6 +66,7 @@ jobs:
 ## Configuration
 
 Edit the script to change:
+
 - `RESOURCE_GROUP`: Azure resource group name
 - `STORAGE_ACCOUNT`: Storage account name
 - `MAX_RULES`: Maximum IP rules to add (Azure limit is ~200)
@@ -77,11 +81,13 @@ Edit the script to change:
 ## Monitoring
 
 Check sync logs:
+
 ```bash
 tail -f /tmp/github-ip-sync.log
 ```
 
 Verify current rules:
+
 ```bash
 az storage account network-rule list \
   -g baynavigator-rg \
@@ -110,4 +116,3 @@ If managing 200 IP rules becomes burdensome, consider the automated workflow app
 - The script adds the broadest ranges first (better coverage with fewer rules)
 - Some IPs may fail to add if they're duplicates or invalid (this is normal)
 - Total coverage: ~200 out of 5,000+ ranges (prioritized for maximum coverage)
-

@@ -1,4 +1,5 @@
 # Mobile App Development Roadmap
+
 ## Bay Navigator - iOS & Android Native Apps
 
 This document outlines the path to converting the Bay Navigator web application into native iOS and Android mobile apps.
@@ -8,6 +9,7 @@ This document outlines the path to converting the Bay Navigator web application 
 ## Current Architecture Assessment
 
 ### ✅ Strengths (Ready for Mobile)
+
 - **Progressive Web App (PWA)** - Already has service worker (`sw.js`) and offline capabilities
 - **Mobile-First Design** - Responsive CSS with touch-friendly UI
 - **Static JSON API** - Fast, CDN-cached API at `https://baynavigator.org/api/`
@@ -19,6 +21,7 @@ This document outlines the path to converting the Bay Navigator web application 
 - **No Authentication Required** - Public API, no tokens needed for read access
 
 ### ⚠️ Areas Needing Mobile Optimization
+
 - **Bundle Size** - 6 CSS files + 12 JS files need consolidation
 - **Image Optimization** - SVG logo is good; need optimized PNGs for app icons
 - **Client-side Filtering** - Static API returns all programs, filter on device
@@ -30,7 +33,9 @@ This document outlines the path to converting the Bay Navigator web application 
 ## Technology Stack Recommendations
 
 ### Option 1: React Native (Recommended)
+
 **Pros:**
+
 - Single codebase for iOS & Android
 - Large community and ecosystem
 - Can reuse JavaScript logic from web app
@@ -38,6 +43,7 @@ This document outlines the path to converting the Bay Navigator web application 
 - Hot reloading for faster development
 
 **Cons:**
+
 - Larger app size than native
 - Some performance overhead
 - May need native modules for advanced features
@@ -45,13 +51,16 @@ This document outlines the path to converting the Bay Navigator web application 
 **Estimated Timeline:** 8-12 weeks
 
 ### Option 2: Flutter
+
 **Pros:**
+
 - Excellent performance (compiled to native)
 - Beautiful UI out of the box
 - Hot reload and dev tools
 - Single codebase
 
 **Cons:**
+
 - Dart language (new learning curve)
 - Can't reuse existing JavaScript
 - Smaller ecosystem than React Native
@@ -59,12 +68,15 @@ This document outlines the path to converting the Bay Navigator web application 
 **Estimated Timeline:** 10-14 weeks
 
 ### Option 3: Native Swift (iOS) + Kotlin (Android)
+
 **Pros:**
+
 - Best performance
 - Full platform capabilities
 - Native look and feel
 
 **Cons:**
+
 - Two separate codebases
 - 2x development time
 - 2x maintenance burden
@@ -76,6 +88,7 @@ This document outlines the path to converting the Bay Navigator web application 
 ## Mobile App Features
 
 ### Phase 1: MVP (Minimum Viable Product)
+
 - [ ] Browse all discount programs
 - [ ] Filter by eligibility and area
 - [ ] Search programs by keyword
@@ -85,6 +98,7 @@ This document outlines the path to converting the Bay Navigator web application 
 - [ ] Share programs via system share sheet
 
 ### Phase 2: Enhanced Features
+
 - [ ] Push notifications for new programs
 - [ ] Location-based county detection
 - [ ] QR code scanner for program enrollment
@@ -93,6 +107,7 @@ This document outlines the path to converting the Bay Navigator web application 
 - [ ] Multi-language support (English, Spanish, Chinese)
 
 ### Phase 3: Advanced Features
+
 - [ ] User accounts (optional, for cross-device sync)
 - [ ] Application status tracking
 - [ ] Program recommendations based on eligibility
@@ -105,6 +120,7 @@ This document outlines the path to converting the Bay Navigator web application 
 ## API Preparation
 
 ### Current Static JSON API
+
 The site uses a static JSON API served via Azure Static Web Apps (CDN-cached):
 
 ```javascript
@@ -118,6 +134,7 @@ The site uses a static JSON API served via Azure Static Web Apps (CDN-cached):
 ```
 
 ### API Client Library
+
 Pre-built API client available at `shared/api-client.js`:
 
 ```javascript
@@ -126,7 +143,7 @@ import APIClient from '../shared/api-client.js';
 const client = new APIClient({
   baseURL: 'https://baynavigator.org/api',
   cache: true,
-  cacheTTL: 3600000 // 1 hour
+  cacheTTL: 3600000, // 1 hour
 });
 
 // Fetch all programs
@@ -140,6 +157,7 @@ const stats = await client.getStats();
 ```
 
 ### Authentication Strategy
+
 Current API is public (read-only). For future features requiring authentication:
 
 ```javascript
@@ -152,7 +170,9 @@ headers: {
 ```
 
 ### Rate Limiting
+
 Static JSON API is protected by Azure Static Web Apps CDN:
+
 - No rate limiting needed for read-only access
 - CDN handles scaling and DDoS protection automatically
 - Average response time: ~10-50ms (vs 50-300ms for Azure Functions)
@@ -162,6 +182,7 @@ Static JSON API is protected by Azure Static Web Apps CDN:
 ## Data Sync Strategy
 
 ### Offline-First Architecture
+
 ```
 1. App Launch
    ↓
@@ -175,12 +196,14 @@ Static JSON API is protected by Azure Static Web Apps CDN:
 ```
 
 ### Storage Options
+
 - **iOS**: Core Data or Realm
 - **Android**: Room Database or Realm
 - **React Native**: AsyncStorage + WatermelonDB
 - **Flutter**: Hive or Drift
 
 ### Sync Logic
+
 ```javascript
 // Pseudo-code for sync strategy
 async function syncPrograms() {
@@ -199,6 +222,7 @@ async function syncPrograms() {
 ## GitHub CLI Optimizations
 
 ### Automated Release Management
+
 Create GitHub Actions workflow for mobile releases:
 
 ```yaml
@@ -295,6 +319,7 @@ az monitor diagnostic-settings create \
 ```
 
 ### Cost Optimization
+
 Your current Azure setup is on Free tier. For mobile app scale:
 
 ```bash
@@ -400,11 +425,11 @@ module.exports = {
   mode: 'production',
   entry: {
     main: './assets/js/index.js',
-    vendor: ['favorites.js', 'search-filter.js']
+    vendor: ['favorites.js', 'search-filter.js'],
   },
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   optimization: {
     splitChunks: {
@@ -413,11 +438,11 @@ module.exports = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
-  }
+          chunks: 'all',
+        },
+      },
+    },
+  },
 };
 ```
 
@@ -450,28 +475,26 @@ const URLS_TO_CACHE = [
   '/assets/css/responsive-optimized.css',
   '/assets/js/search-filter.js',
   '/assets/js/favorites.js',
-  '/assets/images/logo/banner.svg'
+  '/assets/images/logo/banner.svg',
 ];
 
 // Background sync for offline submissions
-self.addEventListener('sync', event => {
+self.addEventListener('sync', (event) => {
   if (event.tag === 'sync-favorites') {
     event.waitUntil(syncFavorites());
   }
 });
 
 // Push notifications
-self.addEventListener('push', event => {
+self.addEventListener('push', (event) => {
   const data = event.data.json();
   const options = {
     body: data.body,
     icon: '/assets/images/logo/icon-192.png',
     badge: '/assets/images/logo/badge-72.png',
-    data: { url: data.url }
+    data: { url: data.url },
   };
-  event.waitUntil(
-    self.registration.showNotification(data.title, options)
-  );
+  event.waitUntil(self.registration.showNotification(data.title, options));
 });
 ```
 
@@ -484,6 +507,7 @@ self.addEventListener('push', event => {
 Create a new repository `baynavigator-mobile` for the mobile app:
 
 **Why Separate?**
+
 - ✅ Clean separation of web and mobile code
 - ✅ Independent deployment pipelines
 - ✅ Faster CI/CD (mobile builds don't trigger on web changes)
@@ -492,17 +516,20 @@ Create a new repository `baynavigator-mobile` for the mobile app:
 - ✅ Smaller repository sizes
 
 **Repository Structure:**
+
 ```
 baytides/baynavigator/    # Current web repo (keep as-is)
 baytides/mobile-apps/         # Mobile apps repo ✅ Created
 ```
 
 **Sharing Code Between Repos:**
+
 - Mobile app calls web API endpoints (https://baynavigator.org/api)
 - Types and constants copied to mobile (minimal duplication)
 - OR: Create optional `baynavigator-shared` npm package later if needed
 
 **Mobile Repo Setup:**
+
 ```bash
 # Clone the mobile apps repo
 gh repo clone baytides/mobile-apps
@@ -525,24 +552,28 @@ git push origin main
 ## Recommended Next Steps
 
 ### Immediate (Week 1-2)
+
 1. ✅ **Decide on mobile framework** - React Native recommended
 2. ✅ **Set up mobile repository** - ✅ Created at `baytides/mobile-apps`
 3. ✅ **API infrastructure ready** - Static JSON API at `https://baynavigator.org/api/`
 4. ⏳ **Create app mockups** - Design mobile-specific screens
 
 ### Short-term (Week 3-6)
+
 1. ✅ **Use shared API client** - Pre-built at `shared/api-client.js`
 2. ⏳ **Build MVP** - Core features (browse, search, filter, favorites)
 3. ⏳ **Internal testing** - TestFlight (iOS) & Internal Testing (Android)
 4. ⏳ **Implement authentication** - Only if adding user accounts (optional)
 
 ### Medium-term (Week 7-12)
+
 1. ✅ **Beta testing** - Invite community members
 2. ✅ **Analytics integration** - Firebase Analytics or App Center
 3. ✅ **Push notification setup** - FCM (Firebase Cloud Messaging)
 4. ✅ **App Store preparation** - Screenshots, descriptions, metadata
 
 ### Long-term (Month 4+)
+
 1. ✅ **Public launch** - Submit to App Store & Play Store
 2. ✅ **Marketing campaign** - Community outreach
 3. ✅ **Feature expansion** - Phase 2 & 3 features
@@ -553,11 +584,13 @@ git push origin main
 ## Cost Estimates
 
 ### Development Costs (if hiring)
+
 - React Native developer: $75-150/hr × 300-500 hours = $22,500-75,000
 - UI/UX designer: $50-100/hr × 40-80 hours = $2,000-8,000
 - Backend enhancements: $75-125/hr × 80-120 hours = $6,000-15,000
 
 ### Infrastructure Costs (monthly)
+
 - Azure Static Web Apps (Standard): $9/month
 - Azure CosmosDB: ~$25/month (current usage)
 - Firebase (for push notifications): Free tier → $25/month at scale
@@ -566,6 +599,7 @@ git push origin main
 - **Total: ~$60-80/month**
 
 ### DIY Development (if you build it yourself)
+
 - Time investment: 300-500 hours over 3-6 months
 - Learning resources: $0-500 (courses, books)
 - Testing devices: $0-1000 (if you don't have iOS/Android devices)
@@ -575,6 +609,7 @@ git push origin main
 ## Testing Strategy
 
 ### Unit Testing
+
 ```javascript
 // Jest for React Native
 describe('ProgramCard', () => {
@@ -587,6 +622,7 @@ describe('ProgramCard', () => {
 ```
 
 ### Integration Testing
+
 ```javascript
 // Detox for E2E testing
 describe('Favorites Flow', () => {
@@ -600,6 +636,7 @@ describe('Favorites Flow', () => {
 ```
 
 ### Beta Testing Platforms
+
 - **iOS**: TestFlight (100 external testers, free)
 - **Android**: Google Play Internal Testing (unlimited, free)
 - **Cross-platform**: Firebase App Distribution
@@ -609,16 +646,19 @@ describe('Favorites Flow', () => {
 ## Resources & Documentation
 
 ### React Native Learning
+
 - [React Native Official Docs](https://reactnative.dev/docs/getting-started)
 - [Expo Documentation](https://docs.expo.dev/)
 - [React Navigation](https://reactnavigation.org/) - Navigation library
 
 ### Azure Mobile Services
+
 - [Azure Mobile Apps](https://learn.microsoft.com/en-us/azure/developer/mobile-apps/)
 - [Azure Notification Hubs](https://learn.microsoft.com/en-us/azure/notification-hubs/)
 - [Azure App Center](https://learn.microsoft.com/en-us/appcenter/) - Testing & Analytics
 
 ### App Store Guidelines
+
 - [iOS App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
 - [Google Play Policy Center](https://support.google.com/googleplay/android-developer/answer/9859673)
 
@@ -637,7 +677,7 @@ describe('Favorites Flow', () => {
 
 ---
 
-*This roadmap is a living document. Update it as decisions are made and progress is achieved.*
+_This roadmap is a living document. Update it as decisions are made and progress is achieved._
 
 **Last Updated**: 2025-12-22
 **Author**: Bay Navigator Development Team
@@ -647,6 +687,7 @@ describe('Favorites Flow', () => {
 ## Recent Infrastructure Updates (December 2025)
 
 ### ✅ Completed Security & Cost Optimizations
+
 1. **Removed Azure Functions** - Eliminated unauthenticated endpoints (SendEmail, Translate, database access)
 2. **Migrated to Static JSON API** - Pre-generated JSON files served via Azure Static Web Apps CDN
 3. **Updated API Client** - `shared/api-client.js` now points to static JSON endpoints
@@ -655,6 +696,7 @@ describe('Favorites Flow', () => {
 6. **Performance Gains** - API response times improved from 50-300ms to 10-50ms
 
 ### Impact on Mobile App Development
+
 - **✅ Ready to build** - API infrastructure is production-ready
 - **✅ No auth required** - Public read-only API simplifies mobile app development
 - **✅ Offline-first friendly** - Static JSON is easy to cache locally

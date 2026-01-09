@@ -48,29 +48,32 @@ const SAMPLE_YAML_CONTENT = `
 
 // Category metadata (copied from generate-api.cjs for testing)
 const CATEGORY_METADATA = {
-  'community': { name: 'Community', icon: '🏘️' },
-  'education': { name: 'Education', icon: '📚' },
-  'equipment': { name: 'Equipment', icon: '🔧' },
-  'finance': { name: 'Finance', icon: '💰' },
-  'food': { name: 'Food', icon: '🍎' },
-  'health': { name: 'Health', icon: '💊' },
-  'legal': { name: 'Legal', icon: '⚖️' },
-  'library_resources': { name: 'Library Resources', icon: '📖' },
-  'pet_resources': { name: 'Pet Resources', icon: '🐾' },
-  'recreation': { name: 'Recreation', icon: '⚽' },
-  'technology': { name: 'Technology', icon: '💻' },
-  'transportation': { name: 'Transportation', icon: '🚌' },
-  'utilities': { name: 'Utilities', icon: '🏠' }
+  community: { name: 'Community', icon: '🏘️' },
+  education: { name: 'Education', icon: '📚' },
+  equipment: { name: 'Equipment', icon: '🔧' },
+  finance: { name: 'Finance', icon: '💰' },
+  food: { name: 'Food', icon: '🍎' },
+  health: { name: 'Health', icon: '💊' },
+  legal: { name: 'Legal', icon: '⚖️' },
+  library_resources: { name: 'Library Resources', icon: '📖' },
+  pet_resources: { name: 'Pet Resources', icon: '🐾' },
+  recreation: { name: 'Recreation', icon: '⚽' },
+  technology: { name: 'Technology', icon: '💻' },
+  transportation: { name: 'Transportation', icon: '🚌' },
+  utilities: { name: 'Utilities', icon: '🏠' },
 };
 
 const GROUPS_METADATA = {
-  'income-eligible': { name: 'Income-Eligible', description: 'For people who qualify based on income', icon: '💳' },
-  'seniors': { name: 'Seniors (65+)', description: 'For adults age 65 and older', icon: '👵' },
-  'everyone': { name: 'Everyone', description: 'Available to all residents', icon: '🌎' }
+  'income-eligible': {
+    name: 'Income-Eligible',
+    description: 'For people who qualify based on income',
+    icon: '💳',
+  },
+  seniors: { name: 'Seniors (65+)', description: 'For adults age 65 and older', icon: '👵' },
+  everyone: { name: 'Everyone', description: 'Available to all residents', icon: '🌎' },
 };
 
 describe('generate-api.cjs', () => {
-
   describe('YAML parsing', () => {
     it('should parse valid YAML program data', () => {
       const programs = yaml.load(SAMPLE_YAML_CONTENT);
@@ -183,7 +186,7 @@ describe('generate-api.cjs', () => {
 
       assert.strictEqual(Array.isArray(categories), true);
 
-      const foodCategory = categories.find(c => c.id === 'food');
+      const foodCategory = categories.find((c) => c.id === 'food');
       assert.ok(foodCategory);
       assert.strictEqual(foodCategory.name, 'Food');
       assert.strictEqual(foodCategory.icon, '🍎');
@@ -234,7 +237,10 @@ describe('generate-api.cjs', () => {
       const filtered = filterSuppressed(programs, suppressedIds);
 
       assert.strictEqual(filtered.length, 2);
-      assert.strictEqual(filtered.find(p => p.id === 'suppress-me'), undefined);
+      assert.strictEqual(
+        filtered.find((p) => p.id === 'suppress-me'),
+        undefined
+      );
     });
   });
 
@@ -289,7 +295,7 @@ function transformProgram(program, categoryId) {
     keywords: program.keywords || [],
     lifeEvents: program.life_events || [],
     agency: program.agency || null,
-    lastUpdated: new Date().toISOString().split('T')[0]
+    lastUpdated: new Date().toISOString().split('T')[0],
   };
 }
 
@@ -302,7 +308,7 @@ function generateIdFromName(name) {
 
 function countByCategory(programs) {
   const counts = {};
-  programs.forEach(p => {
+  programs.forEach((p) => {
     counts[p.category] = (counts[p.category] || 0) + 1;
   });
   return counts;
@@ -310,8 +316,8 @@ function countByCategory(programs) {
 
 function countByGroups(programs) {
   const counts = {};
-  programs.forEach(p => {
-    (p.groups || []).forEach(g => {
+  programs.forEach((p) => {
+    (p.groups || []).forEach((g) => {
       counts[g] = (counts[g] || 0) + 1;
     });
   });
@@ -320,8 +326,8 @@ function countByGroups(programs) {
 
 function countByAreas(programs) {
   const counts = {};
-  programs.forEach(p => {
-    (p.areas || []).forEach(a => {
+  programs.forEach((p) => {
+    (p.areas || []).forEach((a) => {
       counts[a] = (counts[a] || 0) + 1;
     });
   });
@@ -329,16 +335,16 @@ function countByAreas(programs) {
 }
 
 function generateCategoriesJson(counts) {
-  return Object.keys(CATEGORY_METADATA).map(id => ({
+  return Object.keys(CATEGORY_METADATA).map((id) => ({
     id,
     name: CATEGORY_METADATA[id].name,
     icon: CATEGORY_METADATA[id].icon,
-    programCount: counts[id] || 0
+    programCount: counts[id] || 0,
   }));
 }
 
 function filterSuppressed(programs, suppressedIds) {
-  return programs.filter(p => !suppressedIds.has(p.id));
+  return programs.filter((p) => !suppressedIds.has(p.id));
 }
 
 function generateMetadata(totalPrograms) {
@@ -351,7 +357,7 @@ function generateMetadata(totalPrograms) {
       categories: '/api/categories.json',
       groups: '/api/groups.json',
       areas: '/api/areas.json',
-      singleProgram: '/api/programs/{id}.json'
-    }
+      singleProgram: '/api/programs/{id}.json',
+    },
   };
 }

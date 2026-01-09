@@ -24,7 +24,7 @@
   timeframe: Ongoing
   link: https://www.agreenersource.com/non-profits/
   link_text: Register
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.6164565
   longitude: -122.0618595
 - id: alameda-county-property-salvage
@@ -51,7 +51,7 @@
   timeframe: Ongoing
   link: https://gsa.acgov.org/local-services/property-salvage/donations/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: building-resources
   name: Building Resources
   category: Equipment
@@ -79,7 +79,7 @@
   timeframe: Ongoing
   link: https://buildingresources.org/
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7456694
   longitude: -122.3852748
 - id: california-federal-surplus-program
@@ -109,7 +109,7 @@
   timeframe: Ongoing
   link: https://www.dgs.ca.gov/OFAM/Services/Page-Content/Office-of-Fleet-and-Asset-Management-Services-List-Folder/Apply-or-Renew-as-Federal-Donee-of-Surplus-Property
   link_text: Apply as Donee
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 38.5953023
   longitude: -121.4315147
 - id: city-of-san-jose-surplus
@@ -136,7 +136,7 @@
   timeframe: Ongoing - subject to availability
   link: https://www.sanjoseca.gov/your-government/departments-offices/public-works/surplus-property
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: santa-clara-county-surplus-donations
   name: Santa Clara County Surplus Property Donation Program
   category: Equipment
@@ -160,7 +160,7 @@
   timeframe: Ongoing
   link: https://prc.santaclaracounty.gov/surplus-property-program/request-donations-county-surplus-property
   link_text: Request Donation
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: santa-clara-county-library-surplus
   name: Santa Clara County Library District Surplus Property Donations
   category: Equipment
@@ -184,7 +184,7 @@
   timeframe: Ongoing
   link: https://sccld.org/surplus-property-donation-program/
   link_text: Program Details
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: sf-virtual-warehouse
   name: San Francisco Virtual Warehouse
   category: Equipment
@@ -210,7 +210,7 @@
   timeframe: Ongoing
   link: https://www.sfenvironment.org/virtual-warehouse-instructions-non-profits-and-schools
   link_text: Enrollment Instructions
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: scrap-sf
   name: SCRAP (Scroungers' Center for Re-usable Art Parts)
   category: Equipment
@@ -238,7 +238,7 @@
   timeframe: Ongoing
   link: https://www.scrap-sf.org/
   link_text: Visit SCRAP
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.7413758
   longitude: -122.3997848
 - id: smc-surplus-property
@@ -264,4 +264,4 @@
   timeframe: Ongoing
   link: https://docs.google.com/forms/d/e/1FAIpQLSfwPk-gLzC8SRHZPOj2jCHP9RxJ4ca8zAOoA5FLCl7W2ZJ0Pw/viewform
   link_text: Request an Invitation
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'

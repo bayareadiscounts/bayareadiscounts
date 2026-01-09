@@ -4,97 +4,97 @@
 groups:
   - id: income-eligible
     name: Income-Eligible
-    icon: "💳"
+    icon: '💳'
     description: SNAP/EBT, Medi-Cal, CalWORKs recipients
 
   - id: seniors
     name: Seniors (60+)
-    icon: "👵"
+    icon: '👵'
     description: Adults aged 60 and older
 
   - id: youth
     name: Youth
-    icon: "🧒"
+    icon: '🧒'
     description: Children and teenagers
 
   - id: college-students
     name: College Students
-    icon: "🎓"
+    icon: '🎓'
     description: Currently enrolled students
 
   - id: veterans
     name: Veterans / Active Duty
-    icon: "🎖️"
+    icon: '🎖️'
     description: Military veterans and active service members
 
   - id: families
     name: Families
-    icon: "👨‍👩‍👧"
+    icon: '👨‍👩‍👧'
     description: Families with children
 
   - id: disability
     name: People with Disabilities
-    icon: "🧑‍🦽"
+    icon: '🧑‍🦽'
     description: SSI/SSDI recipients, ADA accommodations
 
   - id: lgbtq
     name: LGBT+
-    icon: "🌈"
+    icon: '🌈'
     description: LGBTQ+ community members
 
   - id: first-responders
     name: First Responders
-    icon: "🚒"
+    icon: '🚒'
     description: Police, fire, EMS, and emergency personnel
 
   - id: teachers
     name: Teachers/Educators
-    icon: "👩‍🏫"
+    icon: '👩‍🏫'
     description: K-12 and higher education teachers
 
   - id: unemployed
     name: Job Seekers
-    icon: "💼"
+    icon: '💼'
     description: Unemployed or seeking employment
 
   - id: immigrants
     name: Immigrants/Refugees
-    icon: "🌍"
+    icon: '🌍'
     description: Immigrants and refugee communities
 
   - id: unhoused
     name: Unhoused
-    icon: "🏠"
+    icon: '🏠'
     description: Experiencing homelessness
 
   - id: pregnant
     name: Pregnant Women
-    icon: "🤰"
+    icon: '🤰'
     description: Expecting mothers
 
   - id: caregivers
     name: Caregivers
-    icon: "🤲"
+    icon: '🤲'
     description: Family and professional caregivers
 
   - id: foster-youth
     name: Foster Youth
-    icon: "🏡"
+    icon: '🏡'
     description: Current and former foster youth
 
   - id: reentry
     name: Formerly Incarcerated
-    icon: "🔓"
+    icon: '🔓'
     description: Reentry support services
 
   - id: nonprofits
     name: Nonprofits
-    icon: "🤝"
+    icon: '🤝'
     description: Nonprofit organizations
 
   - id: everyone
     name: Everyone
-    icon: "🌎"
+    icon: '🌎'
     description: Available to all residents
 
 counties:
@@ -129,78 +129,78 @@ categories:
   # Assistance & Social Services
   - id: childcare
     name: Childcare
-    icon: "👶"
+    icon: '👶'
 
   - id: community
     name: Community Services
-    icon: "🏘️"
+    icon: '🏘️'
 
   # Education & Learning
   - id: education
     name: Education
-    icon: "📚"
+    icon: '📚'
 
   - id: library
     name: Library Resources
-    icon: "📖"
+    icon: '📖'
 
   # Financial
   - id: finance
     name: Finance
-    icon: "💰"
+    icon: '💰'
 
   - id: tax
     name: Tax Preparation
-    icon: "📋"
+    icon: '📋'
 
   # Food & Basic Needs
   - id: food
     name: Food
-    icon: "🍎"
+    icon: '🍎'
 
   - id: utilities
     name: Utilities
-    icon: "💡"
+    icon: '💡'
 
   # Health & Legal
   - id: health
     name: Health
-    icon: "🏥"
+    icon: '🏥'
 
   - id: legal
     name: Legal Services
-    icon: "⚖️"
+    icon: '⚖️'
 
   # Recreation & Culture
   - id: museums
     name: Museums
-    icon: "🏛️"
+    icon: '🏛️'
 
   - id: parks
     name: Parks & Open Space
-    icon: "🌲"
+    icon: '🌲'
 
   - id: recreation
     name: Recreation
-    icon: "⚽"
+    icon: '⚽'
 
   # Resources & Equipment
   - id: equipment
     name: Equipment
-    icon: "🔧"
+    icon: '🔧'
 
   - id: pets
     name: Pet Resources
-    icon: "🐾"
+    icon: '🐾'
 
   - id: technology
     name: Technology
-    icon: "💻"
+    icon: '💻'
 
   # Transportation
   - id: transportation
     name: Transportation
-    icon: "🚗"
+    icon: '🚗'
 
 # Sync sources - tracks which entries come from automated API syncs
 # Used by sync scripts to identify and update their entries

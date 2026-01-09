@@ -22,7 +22,7 @@
   timeframe: Ongoing
   link: https://www.7-eleven.com/lp/goldpass
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: amazon-prime-access
   name: Amazon Prime Access
   category: Technology
@@ -46,7 +46,7 @@
   timeframe: Ongoing
   link: https://www.amazon.com/primeaccess
   link_text: Learn More
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: att-access
   name: AT&T Access
   category: Technology
@@ -71,7 +71,7 @@
   timeframe: Ongoing
   link: https://www.att.com/internet/access/
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: california-lifeline
   name: California LifeLine Program
   category: Technology
@@ -95,7 +95,7 @@
   timeframe: Ongoing
   link: https://www.californialifeline.com
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: good360
   name: Good360
   category: Technology
@@ -118,7 +118,7 @@
   timeframe: Ongoing
   link: https://good360.org/
   link_text: Become a Member
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: goodstack-nonprofit-discounts
   name: Goodstack Nonprofit Discounts
   category: Technology
@@ -141,7 +141,7 @@
   timeframe: Ongoing
   link: https://causes.goodstack.io/
   link_text: Enroll
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: instacart-ebt
   name: Instacart for EBT/SNAP
   category: Technology
@@ -164,7 +164,7 @@
   timeframe: Ongoing
   link: https://www.instacart.com/ebt-snap
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: internet-essentials
   name: Internet Essentials by Xfinity
   category: Technology
@@ -188,7 +188,7 @@
   timeframe: Ongoing
   link: https://www.xfinity.com/learn/internet-service/internet-essentials
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: kanopy-students
   name: Kanopy for Students
   category: Technology
@@ -211,7 +211,7 @@
   timeframe: Ongoing
   link: https://www.kanopy.com/signup/find/university
   link_text: Find Your School
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: tech-exchange
   name: Tech Exchange
   category: Technology
@@ -236,7 +236,7 @@
   timeframe: Ongoing
   link: https://www.techexchange.org/lowcostcomputers
   link_text: Request Equipment
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
   latitude: 37.8161631
   longitude: -122.2804425
 - id: techsoup-discount-marketplace
@@ -262,7 +262,7 @@
   timeframe: Ongoing
   link: https://www.techsoup.org/
   link_text: Explore Discounts
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: t-mobile-project-10million
   name: T-Mobile Project 10Million
   category: Technology
@@ -286,7 +286,7 @@
   timeframe: Ongoing
   link: https://www.t-mobile.com/brand/project-10-million
   link_text: Check Eligibility
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: walmart-plus-assist
   name: Walmart+ Assist
   category: Technology
@@ -310,7 +310,7 @@
   timeframe: Ongoing
   link: https://www.walmart.com/plus/assist
   link_text: Apply
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: world-computer-exchange
   name: World Computer Exchange
   category: Technology
@@ -332,7 +332,7 @@
   timeframe: Ongoing
   link: https://worldcomputerexchange.org/get-computers/
   link_text: Get Computers
-  verified_date: "2025-12-16"
+  verified_date: '2025-12-16'
 - id: spectrum-internet-assist
   name: Spectrum Internet Assist
   category: Technology
@@ -358,7 +358,7 @@
   timeframe: Ongoing
   link: https://www.spectrum.com/internet/spectrum-internet-assist
   link_text: Apply
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
 - id: menlo-park-library-hotspots
   name: Menlo Park Library Wi-Fi Hotspots
   category: Technology
@@ -382,6 +382,6 @@
   timeframe: Ongoing
   link: https://menlopark.gov/
   link_text: Check Availability
-  verified_date: "2025-12-25"
+  verified_date: '2025-12-25'
   latitude: 37.4531439
   longitude: -122.1789573

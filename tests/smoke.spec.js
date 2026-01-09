@@ -149,7 +149,10 @@ test('category links work', async ({ page }) => {
   await expect(page).toHaveURL(/\/directory/);
 
   // Wait for food programs to load (filtered by category=Food)
-  await page.locator('[data-category="food"]:not([style*="display: none"])').first().waitFor({ state: 'visible', timeout: 10000 });
+  await page
+    .locator('[data-category="food"]:not([style*="display: none"])')
+    .first()
+    .waitFor({ state: 'visible', timeout: 10000 });
 
   // Should show food programs
   const foodCards = page.locator('[data-category="food"]:not([style*="display: none"])');
@@ -189,9 +192,7 @@ test('dark mode toggle works', async ({ page }) => {
   await themeToggle.click();
 
   // Check that dark class is added to html
-  const isDark = await page.evaluate(() =>
-    document.documentElement.classList.contains('dark')
-  );
+  const isDark = await page.evaluate(() => document.documentElement.classList.contains('dark'));
   expect(isDark).toBe(true);
 });
 
