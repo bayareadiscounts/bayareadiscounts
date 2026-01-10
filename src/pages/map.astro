@@ -350,11 +350,11 @@ const pmtilesUrl =
       </div>
     </div>
 
-    <!-- Fullscreen Toggle (top right) - positioned relative to map-container -->
+    <!-- Fullscreen Toggle (top right, offset to avoid MapLibre zoom controls) -->
     <button
       id="fullscreen-toggle"
       type="button"
-      class="absolute top-4 right-4 z-20 bg-white dark:bg-neutral-800 p-2 rounded-lg shadow-lg text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
+      class="absolute top-4 right-14 z-20 bg-white dark:bg-neutral-800 p-2 rounded-lg shadow-lg text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
       aria-label="Toggle fullscreen"
       title="Fullscreen"
     >
@@ -602,9 +602,9 @@ const pmtilesUrl =
       </div>
     </div>
 
-    <!-- Program Count & Data Notice -->
+    <!-- Program Count & Data Notice (bottom right to avoid layer panel overlap) -->
     <div
-      class="absolute bottom-4 left-4 z-20 bg-white dark:bg-neutral-800 px-3 py-2 rounded-lg shadow-lg"
+      class="absolute bottom-4 right-4 z-10 bg-white dark:bg-neutral-800 px-3 py-2 rounded-lg shadow-lg"
       role="status"
       aria-live="polite"
     >
@@ -1230,7 +1230,7 @@ const pmtilesUrl =
     (window as any).__PMTILES_URL__ ||
     'https://baytidesstorage.blob.core.windows.net/tiles/bayarea.pmtiles';
 
-  // Light and dark map styles
+  // Light and dark map styles - enhanced with road labels, neighborhoods, and better detail
   const LIGHT_STYLE = {
     version: 8 as const,
     sources: {
@@ -1251,14 +1251,31 @@ const pmtilesUrl =
         'source-layer': 'water',
         paint: { 'fill-color': '#a5d8ff' },
       },
-      // Land use
+      // Land use - parks and green spaces
       {
         id: 'landuse-park',
         type: 'fill' as const,
         source: 'protomaps',
         'source-layer': 'landuse',
-        filter: ['==', 'pmap:kind', 'park'],
+        filter: ['in', 'pmap:kind', 'park', 'nature_reserve', 'protected_area'],
         paint: { 'fill-color': '#bbf7d0' },
+      },
+      // Land use - other areas
+      {
+        id: 'landuse-residential',
+        type: 'fill' as const,
+        source: 'protomaps',
+        'source-layer': 'landuse',
+        filter: ['==', 'pmap:kind', 'residential'],
+        paint: { 'fill-color': '#fafafa', 'fill-opacity': 0.5 },
+      },
+      {
+        id: 'landuse-industrial',
+        type: 'fill' as const,
+        source: 'protomaps',
+        'source-layer': 'landuse',
+        filter: ['in', 'pmap:kind', 'industrial', 'commercial'],
+        paint: { 'fill-color': '#f5f5f4', 'fill-opacity': 0.5 },
       },
       // Buildings
       {
@@ -1269,7 +1286,31 @@ const pmtilesUrl =
         minzoom: 13,
         paint: { 'fill-color': '#e2e8f0', 'fill-opacity': 0.8 },
       },
-      // Roads
+      // Roads - casings (outlines) for depth
+      {
+        id: 'roads-highway-casing',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['==', 'pmap:kind', 'highway'],
+        paint: {
+          'line-color': '#d97706',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 8, 2, 14, 6],
+        },
+      },
+      {
+        id: 'roads-major-casing',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['in', 'pmap:kind', 'major_road', 'medium_road'],
+        minzoom: 10,
+        paint: {
+          'line-color': '#cbd5e1',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 14, 4],
+        },
+      },
+      // Roads - fills
       {
         id: 'roads-highway',
         type: 'line' as const,
@@ -1288,8 +1329,8 @@ const pmtilesUrl =
         'source-layer': 'roads',
         filter: ['in', 'pmap:kind', 'major_road', 'medium_road'],
         paint: {
-          'line-color': '#e2e8f0',
-          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0.5, 14, 2],
+          'line-color': '#ffffff',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0.5, 14, 3],
         },
       },
       {
@@ -1299,9 +1340,91 @@ const pmtilesUrl =
         'source-layer': 'roads',
         filter: ['==', 'pmap:kind', 'minor_road'],
         minzoom: 12,
-        paint: { 'line-color': '#f1f5f9', 'line-width': 1 },
+        paint: { 'line-color': '#ffffff', 'line-width': 1.5 },
       },
-      // Labels
+      // Bridges - casing (dark outline for depth) - uses pmap:kind_detail for bridges
+      {
+        id: 'bridges-casing',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['any', ['has', 'pmap:level'], ['==', ['get', 'pmap:kind_detail'], 'bridge']],
+        paint: {
+          'line-color': '#78716c',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 8, 3, 14, 10],
+        },
+      },
+      // Bridges - main surface
+      {
+        id: 'bridges',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['any', ['has', 'pmap:level'], ['==', ['get', 'pmap:kind_detail'], 'bridge']],
+        paint: {
+          'line-color': '#fbbf24',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 8, 2, 14, 8],
+        },
+      },
+      // Transit - rail lines
+      {
+        id: 'transit-rail',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'transit',
+        filter: ['in', 'pmap:kind', 'rail', 'subway', 'light_rail'],
+        minzoom: 10,
+        paint: {
+          'line-color': '#6366f1',
+          'line-width': 2,
+          'line-dasharray': [2, 1],
+        },
+      },
+      // Road labels - highways
+      {
+        id: 'road-labels-highway',
+        type: 'symbol' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['==', 'pmap:kind', 'highway'],
+        minzoom: 10,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 10,
+          'text-font': ['Noto Sans Bold'],
+          'symbol-placement': 'line',
+          'text-rotation-alignment': 'map',
+          'text-max-angle': 30,
+        },
+        paint: {
+          'text-color': '#78350f',
+          'text-halo-color': '#fef3c7',
+          'text-halo-width': 1.5,
+        },
+      },
+      // Road labels - major roads
+      {
+        id: 'road-labels-major',
+        type: 'symbol' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['in', 'pmap:kind', 'major_road', 'medium_road'],
+        minzoom: 12,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 10,
+          'text-font': ['Noto Sans Regular'],
+          'symbol-placement': 'line',
+          'text-rotation-alignment': 'map',
+          'text-max-angle': 30,
+        },
+        paint: {
+          'text-color': '#64748b',
+          'text-halo-color': '#ffffff',
+          'text-halo-width': 1,
+        },
+      },
+      // Place labels - cities
       {
         id: 'places-city',
         type: 'symbol' as const,
@@ -1310,11 +1433,14 @@ const pmtilesUrl =
         filter: ['==', 'pmap:kind', 'city'],
         layout: {
           'text-field': ['get', 'name'],
-          'text-size': 14,
-          'text-font': ['Noto Sans Regular'],
+          'text-size': ['interpolate', ['linear'], ['zoom'], 8, 14, 12, 18],
+          'text-font': ['Noto Sans Bold'],
+          'text-transform': 'uppercase',
+          'text-letter-spacing': 0.1,
         },
-        paint: { 'text-color': '#1e293b', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 },
+        paint: { 'text-color': '#1e293b', 'text-halo-color': '#ffffff', 'text-halo-width': 2 },
       },
+      // Place labels - towns
       {
         id: 'places-town',
         type: 'symbol' as const,
@@ -1325,9 +1451,26 @@ const pmtilesUrl =
         layout: {
           'text-field': ['get', 'name'],
           'text-size': 12,
-          'text-font': ['Noto Sans Regular'],
+          'text-font': ['Noto Sans Medium'],
         },
-        paint: { 'text-color': '#475569', 'text-halo-color': '#ffffff', 'text-halo-width': 1 },
+        paint: { 'text-color': '#475569', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 },
+      },
+      // Place labels - neighborhoods/suburbs
+      {
+        id: 'places-neighborhood',
+        type: 'symbol' as const,
+        source: 'protomaps',
+        'source-layer': 'places',
+        filter: ['in', 'pmap:kind', 'neighbourhood', 'neighborhood', 'suburb'],
+        minzoom: 12,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 11,
+          'text-font': ['Noto Sans Regular'],
+          'text-transform': 'uppercase',
+          'text-letter-spacing': 0.05,
+        },
+        paint: { 'text-color': '#94a3b8', 'text-halo-color': '#ffffff', 'text-halo-width': 1 },
       },
     ],
     glyphs: 'https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf',
@@ -1343,7 +1486,9 @@ const pmtilesUrl =
       },
     },
     layers: [
+      // Background
       { id: 'background', type: 'background' as const, paint: { 'background-color': '#1a1a2e' } },
+      // Water
       {
         id: 'water',
         type: 'fill' as const,
@@ -1351,14 +1496,25 @@ const pmtilesUrl =
         'source-layer': 'water',
         paint: { 'fill-color': '#16213e' },
       },
+      // Land use - parks
       {
         id: 'landuse-park',
         type: 'fill' as const,
         source: 'protomaps',
         'source-layer': 'landuse',
-        filter: ['==', 'pmap:kind', 'park'],
+        filter: ['in', 'pmap:kind', 'park', 'nature_reserve', 'protected_area'],
         paint: { 'fill-color': '#1e3a29' },
       },
+      // Land use - other
+      {
+        id: 'landuse-residential',
+        type: 'fill' as const,
+        source: 'protomaps',
+        'source-layer': 'landuse',
+        filter: ['==', 'pmap:kind', 'residential'],
+        paint: { 'fill-color': '#1e1e32', 'fill-opacity': 0.5 },
+      },
+      // Buildings
       {
         id: 'buildings',
         type: 'fill' as const,
@@ -1367,6 +1523,31 @@ const pmtilesUrl =
         minzoom: 13,
         paint: { 'fill-color': '#2d2d44', 'fill-opacity': 0.8 },
       },
+      // Roads - casings
+      {
+        id: 'roads-highway-casing',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['==', 'pmap:kind', 'highway'],
+        paint: {
+          'line-color': '#92400e',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 8, 2, 14, 6],
+        },
+      },
+      {
+        id: 'roads-major-casing',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['in', 'pmap:kind', 'major_road', 'medium_road'],
+        minzoom: 10,
+        paint: {
+          'line-color': '#1f2937',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 14, 4],
+        },
+      },
+      // Roads - fills
       {
         id: 'roads-highway',
         type: 'line' as const,
@@ -1386,7 +1567,7 @@ const pmtilesUrl =
         filter: ['in', 'pmap:kind', 'major_road', 'medium_road'],
         paint: {
           'line-color': '#374151',
-          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0.5, 14, 2],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0.5, 14, 3],
         },
       },
       {
@@ -1396,8 +1577,91 @@ const pmtilesUrl =
         'source-layer': 'roads',
         filter: ['==', 'pmap:kind', 'minor_road'],
         minzoom: 12,
-        paint: { 'line-color': '#1f2937', 'line-width': 1 },
+        paint: { 'line-color': '#2d3748', 'line-width': 1.5 },
       },
+      // Bridges - casing
+      {
+        id: 'bridges-casing',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['any', ['has', 'pmap:level'], ['==', ['get', 'pmap:kind_detail'], 'bridge']],
+        paint: {
+          'line-color': '#44403c',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 8, 3, 14, 10],
+        },
+      },
+      // Bridges - main surface
+      {
+        id: 'bridges',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['any', ['has', 'pmap:level'], ['==', ['get', 'pmap:kind_detail'], 'bridge']],
+        paint: {
+          'line-color': '#b45309',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 8, 2, 14, 8],
+        },
+      },
+      // Transit - rail lines
+      {
+        id: 'transit-rail',
+        type: 'line' as const,
+        source: 'protomaps',
+        'source-layer': 'transit',
+        filter: ['in', 'pmap:kind', 'rail', 'subway', 'light_rail'],
+        minzoom: 10,
+        paint: {
+          'line-color': '#818cf8',
+          'line-width': 2,
+          'line-dasharray': [2, 1],
+        },
+      },
+      // Road labels - highways
+      {
+        id: 'road-labels-highway',
+        type: 'symbol' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['==', 'pmap:kind', 'highway'],
+        minzoom: 10,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 10,
+          'text-font': ['Noto Sans Bold'],
+          'symbol-placement': 'line',
+          'text-rotation-alignment': 'map',
+          'text-max-angle': 30,
+        },
+        paint: {
+          'text-color': '#fbbf24',
+          'text-halo-color': '#1a1a2e',
+          'text-halo-width': 1.5,
+        },
+      },
+      // Road labels - major roads
+      {
+        id: 'road-labels-major',
+        type: 'symbol' as const,
+        source: 'protomaps',
+        'source-layer': 'roads',
+        filter: ['in', 'pmap:kind', 'major_road', 'medium_road'],
+        minzoom: 12,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 10,
+          'text-font': ['Noto Sans Regular'],
+          'symbol-placement': 'line',
+          'text-rotation-alignment': 'map',
+          'text-max-angle': 30,
+        },
+        paint: {
+          'text-color': '#9ca3af',
+          'text-halo-color': '#1a1a2e',
+          'text-halo-width': 1,
+        },
+      },
+      // Place labels - cities
       {
         id: 'places-city',
         type: 'symbol' as const,
@@ -1406,11 +1670,14 @@ const pmtilesUrl =
         filter: ['==', 'pmap:kind', 'city'],
         layout: {
           'text-field': ['get', 'name'],
-          'text-size': 14,
-          'text-font': ['Noto Sans Regular'],
+          'text-size': ['interpolate', ['linear'], ['zoom'], 8, 14, 12, 18],
+          'text-font': ['Noto Sans Bold'],
+          'text-transform': 'uppercase',
+          'text-letter-spacing': 0.1,
         },
-        paint: { 'text-color': '#e5e7eb', 'text-halo-color': '#111827', 'text-halo-width': 1.5 },
+        paint: { 'text-color': '#e5e7eb', 'text-halo-color': '#111827', 'text-halo-width': 2 },
       },
+      // Place labels - towns
       {
         id: 'places-town',
         type: 'symbol' as const,
@@ -1421,9 +1688,26 @@ const pmtilesUrl =
         layout: {
           'text-field': ['get', 'name'],
           'text-size': 12,
-          'text-font': ['Noto Sans Regular'],
+          'text-font': ['Noto Sans Medium'],
         },
-        paint: { 'text-color': '#9ca3af', 'text-halo-color': '#111827', 'text-halo-width': 1 },
+        paint: { 'text-color': '#9ca3af', 'text-halo-color': '#111827', 'text-halo-width': 1.5 },
+      },
+      // Place labels - neighborhoods
+      {
+        id: 'places-neighborhood',
+        type: 'symbol' as const,
+        source: 'protomaps',
+        'source-layer': 'places',
+        filter: ['in', 'pmap:kind', 'neighbourhood', 'neighborhood', 'suburb'],
+        minzoom: 12,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 11,
+          'text-font': ['Noto Sans Regular'],
+          'text-transform': 'uppercase',
+          'text-letter-spacing': 0.05,
+        },
+        paint: { 'text-color': '#6b7280', 'text-halo-color': '#111827', 'text-halo-width': 1 },
       },
     ],
     glyphs: 'https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf',
