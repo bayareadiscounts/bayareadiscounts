@@ -194,25 +194,263 @@ const pmtilesUrl =
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
           ></path>
         </svg>
-        Legend
+        Filter
+        <span
+          id="filter-count"
+          class="hidden bg-primary-600 text-white text-xs rounded-full px-1.5 py-0.5 min-w-[1.25rem] text-center"
+        ></span>
+      </button>
+
+      <!-- View Mode Toggle -->
+      <div class="flex bg-white dark:bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+        <button
+          id="view-markers"
+          type="button"
+          class="px-3 py-2 text-sm font-medium text-white bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500"
+          aria-pressed="true"
+          title="Marker view"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            ></path>
+          </svg>
+        </button>
+        <button
+          id="view-heatmap"
+          type="button"
+          class="px-3 py-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
+          aria-pressed="false"
+          title="Heatmap view"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Transit Layer Toggle -->
+      <button
+        id="transit-toggle"
+        type="button"
+        class="bg-white dark:bg-neutral-800 px-3 py-2 rounded-lg shadow-lg text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-700 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary-500 min-h-[44px]"
+        aria-pressed="false"
+        title="Show BART stations"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7h8m-8 4h8m-6 4h4M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"
+          ></path>
+        </svg>
+        BART
       </button>
     </div>
 
-    <!-- Legend Panel -->
+    <!-- Fullscreen Toggle (top right) -->
+    <button
+      id="fullscreen-toggle"
+      type="button"
+      class="absolute top-4 right-4 z-20 bg-white dark:bg-neutral-800 p-2 rounded-lg shadow-lg text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
+      aria-label="Toggle fullscreen"
+      title="Fullscreen"
+    >
+      <svg
+        id="fullscreen-icon-expand"
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+        ></path>
+      </svg>
+      <svg
+        id="fullscreen-icon-collapse"
+        class="w-5 h-5 hidden"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 9V4H4v5h5zm6 0V4h5v5h-5zm0 6v5h5v-5h-5zm-6 0v5H4v-5h5z"></path>
+      </svg>
+    </button>
+
+    <!-- Legend Panel (Filter Panel) -->
     <div
       id="legend-panel"
-      class="hidden absolute top-16 left-4 z-20 bg-white dark:bg-neutral-800 rounded-lg shadow-lg p-4 max-w-xs"
+      class="hidden absolute top-16 left-4 z-20 bg-white dark:bg-neutral-800 rounded-lg shadow-lg p-4 w-72 max-h-[70vh] overflow-hidden flex flex-col"
       role="region"
       aria-labelledby="legend-heading"
     >
-      <h3 id="legend-heading" class="font-semibold text-neutral-900 dark:text-white mb-3">
-        Categories
-      </h3>
-      <div class="space-y-2 text-sm" id="legend-items" role="list">
+      <div class="flex items-center justify-between mb-3">
+        <h3 id="legend-heading" class="font-semibold text-neutral-900 dark:text-white">
+          Filter Categories
+        </h3>
+        <div class="flex gap-1">
+          <button
+            id="filter-all"
+            type="button"
+            class="text-xs text-primary-600 dark:text-primary-400 hover:underline px-2 py-1"
+          >
+            All
+          </button>
+          <button
+            id="filter-none"
+            type="button"
+            class="text-xs text-neutral-600 dark:text-neutral-400 hover:underline px-2 py-1"
+          >
+            None
+          </button>
+        </div>
+      </div>
+      <div
+        class="space-y-1 text-sm overflow-y-auto flex-1"
+        id="legend-items"
+        role="group"
+        aria-label="Category filters"
+      >
         <!-- Populated by JavaScript -->
+      </div>
+      <div class="mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-700">
+        <label
+          class="flex items-center gap-2 text-sm text-neutral-700 dark:text-neutral-300 cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            id="show-counties"
+            class="rounded text-primary-600 focus:ring-primary-500"
+          />
+          <span>Show county boundaries</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Context Menu (right-click / long-press) -->
+    <div
+      id="map-context-menu"
+      class="hidden absolute z-30 bg-white dark:bg-neutral-800 rounded-lg shadow-xl py-1 min-w-48"
+      role="menu"
+    >
+      <button
+        id="context-isochrone"
+        type="button"
+        class="w-full px-4 py-2.5 text-left text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 flex items-center gap-3"
+        role="menuitem"
+      >
+        <svg
+          class="w-4 h-4 text-primary-600 dark:text-primary-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>Show travel time from here</span>
+      </button>
+      <button
+        id="context-directions"
+        type="button"
+        class="w-full px-4 py-2.5 text-left text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 flex items-center gap-3"
+        role="menuitem"
+      >
+        <svg
+          class="w-4 h-4 text-green-600 dark:text-green-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+          ></path>
+        </svg>
+        <span>Directions from here</span>
+      </button>
+      <button
+        id="context-nearby"
+        type="button"
+        class="w-full px-4 py-2.5 text-left text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 flex items-center gap-3"
+        role="menuitem"
+      >
+        <svg
+          class="w-4 h-4 text-blue-600 dark:text-blue-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          ></path>
+        </svg>
+        <span>Find programs near here</span>
+      </button>
+    </div>
+
+    <!-- Isochrone Legend (shown when isochrone is active) -->
+    <div
+      id="isochrone-legend"
+      class="hidden absolute bottom-20 left-4 z-20 bg-white dark:bg-neutral-800 rounded-lg shadow-lg p-3"
+    >
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-sm font-medium text-neutral-900 dark:text-white"
+          >Travel Time (driving)</span
+        >
+        <button
+          id="clear-isochrone"
+          type="button"
+          class="text-xs text-red-600 dark:text-red-400 hover:underline"
+        >
+          Clear
+        </button>
+      </div>
+      <div class="flex items-center gap-2 text-xs text-neutral-600 dark:text-neutral-300">
+        <div class="flex items-center gap-1">
+          <div class="w-4 h-3 rounded" style="background: rgba(74, 222, 128, 0.4);"></div>
+          <span>5 min</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-4 h-3 rounded" style="background: rgba(250, 204, 21, 0.4);"></div>
+          <span>10 min</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-4 h-3 rounded" style="background: rgba(251, 146, 60, 0.4);"></div>
+          <span>15 min</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-4 h-3 rounded" style="background: rgba(248, 113, 113, 0.4);"></div>
+          <span>20 min</span>
+        </div>
       </div>
     </div>
 
@@ -395,6 +633,129 @@ const pmtilesUrl =
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  /* Fullscreen mode */
+  :global(.map-fullscreen) {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 9999 !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+
+  :global(.map-fullscreen #map) {
+    height: 100vh !important;
+  }
+
+  /* Hide header/footer in fullscreen */
+  :global(body:has(.map-fullscreen) header),
+  :global(body:has(.map-fullscreen) footer),
+  :global(body:has(.map-fullscreen) nav) {
+    display: none !important;
+  }
+
+  /* Hover tooltip */
+  :global(.map-hover-tooltip) {
+    position: absolute;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    z-index: 100;
+    max-width: 200px;
+    font-size: 13px;
+    transform: translate(-50%, -100%);
+    margin-top: -10px;
+  }
+
+  :global(.dark .map-hover-tooltip) {
+    background: #1f2937;
+    color: #f3f4f6;
+  }
+
+  :global(.map-hover-tooltip::after) {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+  }
+
+  :global(.dark .map-hover-tooltip::after) {
+    border-top-color: #1f2937;
+  }
+
+  /* BART station marker */
+  :global(.bart-marker) {
+    background: #009bda;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Category filter checkbox styles */
+  :global(.category-filter) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+
+  :global(.category-filter:hover) {
+    background: #f3f4f6;
+  }
+
+  :global(.dark .category-filter:hover) {
+    background: #374151;
+  }
+
+  :global(.category-filter.disabled) {
+    opacity: 0.5;
+  }
+
+  :global(.category-filter .color-dot) {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  :global(.category-filter.disabled .color-dot) {
+    background: #9ca3af !important;
+  }
+
+  /* Spiderfy styles for overlapping markers */
+  :global(.spider-leg) {
+    stroke: rgba(0, 0, 0, 0.5);
+    stroke-width: 1;
+    pointer-events: none;
+  }
+
+  :global(.dark .spider-leg) {
+    stroke: rgba(255, 255, 255, 0.5);
+  }
+
+  :global(.spider-marker) {
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+
+  :global(.spider-marker:hover) {
+    transform: scale(1.2);
+    z-index: 100 !important;
   }
 </style>
 
@@ -1093,59 +1454,344 @@ const pmtilesUrl =
           programCountEl.textContent = String(geojson.features.length);
         }
 
-        // Build legend
+        // Build interactive legend with category filtering
         const categories = new Set<string>();
+        const categoryCounts: Record<string, number> = {};
         geojson.features.forEach((f: any) => {
           if (f.properties.category) {
             categories.add(f.properties.category);
+            categoryCounts[f.properties.category] =
+              (categoryCounts[f.properties.category] || 0) + 1;
           }
         });
+
+        // Track enabled categories (all enabled by default)
+        const enabledCategories = new Set<string>(categories);
+        const filterCountEl = document.getElementById('filter-count');
+
+        function updateFilterCount() {
+          const hiddenCount = categories.size - enabledCategories.size;
+          if (filterCountEl) {
+            if (hiddenCount > 0) {
+              filterCountEl.textContent = String(hiddenCount);
+              filterCountEl.classList.remove('hidden');
+            } else {
+              filterCountEl.classList.add('hidden');
+            }
+          }
+        }
+
+        function updateMapFilter() {
+          // Build filter expression for visible categories
+          if (enabledCategories.size === categories.size) {
+            // All categories enabled - no filter needed
+            map.setFilter('program-points', ['!', ['has', 'point_count']]);
+            map.setFilter('clusters', ['has', 'point_count']);
+          } else if (enabledCategories.size === 0) {
+            // No categories enabled - hide all
+            map.setFilter('program-points', ['==', ['get', 'category'], '__none__']);
+            map.setFilter('clusters', ['==', ['get', 'category'], '__none__']);
+          } else {
+            // Some categories enabled - filter by category
+            const categoryFilter = [
+              'in',
+              ['get', 'category'],
+              ['literal', Array.from(enabledCategories)],
+            ];
+            map.setFilter('program-points', ['all', ['!', ['has', 'point_count']], categoryFilter]);
+            // For clusters, we need to update the source data
+            const filteredData = {
+              ...geojson,
+              features: geojson.features.filter((f: any) =>
+                enabledCategories.has(f.properties.category)
+              ),
+            };
+            (map.getSource('programs') as maplibregl.GeoJSONSource).setData(filteredData);
+          }
+          updateFilterCount();
+
+          // Update visible count
+          if (programCountEl) {
+            const visibleCount = geojson.features.filter((f: any) =>
+              enabledCategories.has(f.properties.category)
+            ).length;
+            programCountEl.textContent = String(visibleCount);
+          }
+        }
+
+        function toggleCategory(cat: string) {
+          if (enabledCategories.has(cat)) {
+            enabledCategories.delete(cat);
+          } else {
+            enabledCategories.add(cat);
+          }
+          updateMapFilter();
+          updateLegendUI();
+        }
+
+        function updateLegendUI() {
+          document.querySelectorAll('.category-filter').forEach((el) => {
+            const cat = el.getAttribute('data-category');
+            if (cat && !enabledCategories.has(cat)) {
+              el.classList.add('disabled');
+              const checkbox = el.querySelector('input[type="checkbox"]') as HTMLInputElement;
+              if (checkbox) checkbox.checked = false;
+            } else {
+              el.classList.remove('disabled');
+              const checkbox = el.querySelector('input[type="checkbox"]') as HTMLInputElement;
+              if (checkbox) checkbox.checked = true;
+            }
+          });
+        }
 
         if (legendItems) {
           legendItems.innerHTML = Array.from(categories)
             .sort()
             .map(
               (cat) => `
-            <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full" style="background-color: ${CATEGORY_COLORS[cat] || '#6B7280'}"></span>
-              <span class="text-neutral-700 dark:text-neutral-300">${cat}</span>
-            </div>
+            <label class="category-filter" data-category="${cat}">
+              <input type="checkbox" checked class="sr-only" />
+              <span class="color-dot" style="background-color: ${CATEGORY_COLORS[cat] || '#6B7280'}"></span>
+              <span class="flex-1 text-neutral-700 dark:text-neutral-300">${cat}</span>
+              <span class="text-xs text-neutral-500 dark:text-neutral-400">${categoryCounts[cat]}</span>
+            </label>
           `
             )
             .join('');
+
+          // Add click handlers for category filtering
+          legendItems.querySelectorAll('.category-filter').forEach((el) => {
+            el.addEventListener('click', (e) => {
+              const cat = el.getAttribute('data-category');
+              if (cat) toggleCategory(cat);
+            });
+          });
         }
+
+        // Filter All/None buttons
+        document.getElementById('filter-all')?.addEventListener('click', () => {
+          categories.forEach((cat) => enabledCategories.add(cat));
+          updateMapFilter();
+          updateLegendUI();
+        });
+
+        document.getElementById('filter-none')?.addEventListener('click', () => {
+          enabledCategories.clear();
+          updateMapFilter();
+          updateLegendUI();
+        });
 
         // Hide loading
         if (loadingEl) {
           loadingEl.style.display = 'none';
         }
 
-        // Click on cluster to zoom in and expand it
+        // Spiderfy state
+        let spiderMarkers: maplibregl.Marker[] = [];
+        let spiderLegs: SVGElement | null = null;
+        const SPIDER_LEG_LENGTH = 40; // pixels
+
+        // Clear any existing spider markers
+        function clearSpider() {
+          spiderMarkers.forEach((m) => m.remove());
+          spiderMarkers = [];
+          if (spiderLegs) {
+            spiderLegs.remove();
+            spiderLegs = null;
+          }
+        }
+
+        // Create spiderfy visualization for overlapping points
+        function spiderfy(center: [number, number], features: any[]) {
+          clearSpider();
+
+          const count = features.length;
+          if (count <= 1) return;
+
+          // Limit spider to 12 items max for readability
+          const itemsToShow = features.slice(0, 12);
+          const angleStep = (2 * Math.PI) / itemsToShow.length;
+
+          // Create SVG for spider legs
+          const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          svg.setAttribute('class', 'absolute inset-0 pointer-events-none z-10');
+          svg.style.overflow = 'visible';
+          svg.style.position = 'absolute';
+          svg.style.top = '0';
+          svg.style.left = '0';
+          svg.style.width = '100%';
+          svg.style.height = '100%';
+
+          const centerPoint = map.project(center);
+
+          itemsToShow.forEach((feature, i) => {
+            const angle = angleStep * i - Math.PI / 2; // Start from top
+            const legLength = SPIDER_LEG_LENGTH + (count > 8 ? 10 : 0);
+
+            // Calculate spider point position (in screen space)
+            const spiderX = centerPoint.x + Math.cos(angle) * legLength;
+            const spiderY = centerPoint.y + Math.sin(angle) * legLength;
+
+            // Convert back to map coordinates
+            const spiderLngLat = map.unproject([spiderX, spiderY]);
+
+            // Draw leg line
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', String(centerPoint.x));
+            line.setAttribute('y1', String(centerPoint.y));
+            line.setAttribute('x2', String(spiderX));
+            line.setAttribute('y2', String(spiderY));
+            line.setAttribute('class', 'spider-leg');
+            svg.appendChild(line);
+
+            // Create marker element
+            const el = document.createElement('div');
+            el.className = 'spider-marker';
+            el.style.width = '16px';
+            el.style.height = '16px';
+            el.style.borderRadius = '50%';
+            el.style.backgroundColor = CATEGORY_COLORS[feature.properties.category] || '#6B7280';
+            el.style.border = '2px solid white';
+            el.style.boxShadow = '0 1px 4px rgba(0,0,0,0.3)';
+            el.title = feature.properties.name;
+
+            // Create marker
+            const marker = new maplibregl.Marker({ element: el })
+              .setLngLat([spiderLngLat.lng, spiderLngLat.lat])
+              .addTo(map);
+
+            // Click handler for spider marker
+            el.addEventListener('click', (evt) => {
+              evt.stopPropagation();
+              clearSpider();
+
+              const props = feature.properties;
+              const coords = (feature.geometry as GeoJSON.Point).coordinates as [number, number];
+
+              // Build action buttons (same as regular point click)
+              const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords[1]},${coords[0]}`;
+              const actionButtons = [
+                `
+                <a href="${directionsUrl}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1 px-2 py-1.5 bg-neutral-100 dark:bg-neutral-700 hover:bg-neutral-200 dark:hover:bg-neutral-600 rounded text-xs text-neutral-700 dark:text-neutral-200 no-underline" title="Get directions">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                  Directions
+                </a>
+              `,
+              ];
+
+              if (props.phone) {
+                actionButtons.push(`
+                  <a href="tel:${props.phone.replace(/[^0-9+]/g, '')}" class="flex items-center justify-center gap-1 px-2 py-1.5 bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 rounded text-xs text-green-700 dark:text-green-200 no-underline" title="Call">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    Call
+                  </a>
+                `);
+              }
+
+              if (props.link) {
+                actionButtons.push(`
+                  <a href="${props.link}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1 px-2 py-1.5 bg-primary-100 dark:bg-primary-900 hover:bg-primary-200 dark:hover:bg-primary-800 rounded text-xs text-primary-700 dark:text-primary-200 no-underline" title="Visit website">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    Website
+                  </a>
+                `);
+              }
+
+              new maplibregl.Popup({ offset: 15, maxWidth: '280px' })
+                .setLngLat([spiderLngLat.lng, spiderLngLat.lat])
+                .setHTML(
+                  `
+                  <div class="p-3">
+                    <h3 class="font-semibold text-neutral-900 dark:text-white text-sm mb-1">${props.name}</h3>
+                    <p class="text-xs text-primary-600 dark:text-primary-400 mb-2">${props.category}</p>
+                    ${props.description ? `<p class="text-xs text-neutral-600 dark:text-neutral-300 mb-2 line-clamp-2">${props.description}</p>` : ''}
+                    ${actionButtons.length ? `<div class="flex flex-wrap gap-1.5 pt-1 border-t border-neutral-200 dark:border-neutral-600">${actionButtons.join('')}</div>` : ''}
+                  </div>
+                `
+                )
+                .addTo(map);
+            });
+
+            spiderMarkers.push(marker);
+          });
+
+          // Show "X more" indicator if there are more items
+          if (count > 12) {
+            const moreEl = document.createElement('div');
+            moreEl.className =
+              'absolute bg-neutral-800 text-white text-xs px-2 py-1 rounded-full pointer-events-none';
+            moreEl.textContent = `+${count - 12} more`;
+            moreEl.style.transform = 'translate(-50%, -50%)';
+            moreEl.style.top = `${centerPoint.y + SPIDER_LEG_LENGTH + 25}px`;
+            moreEl.style.left = `${centerPoint.x}px`;
+            svg.appendChild(moreEl as any);
+          }
+
+          document.getElementById('map')?.appendChild(svg);
+          spiderLegs = svg;
+        }
+
+        // Clear spider when clicking elsewhere or zooming
+        map.on('click', (e) => {
+          // Check if click is on a spider marker or cluster
+          const features = map.queryRenderedFeatures(e.point, {
+            layers: ['clusters', 'program-points'],
+          });
+          if (features.length === 0) {
+            clearSpider();
+          }
+        });
+
+        map.on('zoom', clearSpider);
+        map.on('move', () => {
+          // Update spider leg positions during pan
+          if (spiderLegs && spiderMarkers.length > 0) {
+            clearSpider();
+          }
+        });
+
+        // Click on cluster to zoom in or spiderfy at high zoom
         map.on('click', 'clusters', (e) => {
           const features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
           if (!features.length) return;
 
           const clusterId = features[0].properties?.cluster_id;
+          const pointCount = features[0].properties?.point_count || 0;
           const source = map.getSource('programs') as maplibregl.GeoJSONSource;
           const clusterCoords = (features[0].geometry as GeoJSON.Point).coordinates as [
             number,
             number,
           ];
 
-          source.getClusterExpansionZoom(clusterId, (err, zoom) => {
+          const currentZoom = map.getZoom();
+
+          source.getClusterExpansionZoom(clusterId, (err, expansionZoom) => {
             if (err) return;
-            // Zoom in at least 1 level more than the expansion zoom for a noticeable effect
-            const targetZoom = Math.min((zoom ?? 12) + 1, 18);
-            map.flyTo({
-              center: clusterCoords,
-              zoom: targetZoom,
-              duration: 500,
-              essential: true,
-            });
+
+            // If we're at or near max useful zoom and can't expand further, spiderfy
+            if (
+              currentZoom >= 15 &&
+              (expansionZoom === null || expansionZoom > 18 || currentZoom >= expansionZoom)
+            ) {
+              // Get cluster leaves (actual points in the cluster)
+              source.getClusterLeaves(clusterId, pointCount, 0, (err2, leaves) => {
+                if (err2 || !leaves) return;
+                spiderfy(clusterCoords, leaves);
+              });
+            } else {
+              // Otherwise zoom in
+              const targetZoom = Math.min((expansionZoom ?? 12) + 1, 18);
+              map.flyTo({
+                center: clusterCoords,
+                zoom: targetZoom,
+                duration: 500,
+                essential: true,
+              });
+            }
           });
         });
 
-        // Click on program point to show popup
+        // Click on program point to show popup with action buttons
         map.on('click', 'program-points', (e) => {
           if (!e.features || e.features.length === 0) return;
 
@@ -1156,17 +1802,58 @@ const pmtilesUrl =
             number,
           ];
 
+          // Build action buttons
+          const actionButtons: string[] = [];
+
+          // Directions button (always available if we have coordinates)
+          const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords[1]},${coords[0]}`;
+          actionButtons.push(`
+            <a href="${directionsUrl}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1 px-2 py-1.5 bg-neutral-100 dark:bg-neutral-700 hover:bg-neutral-200 dark:hover:bg-neutral-600 rounded text-xs text-neutral-700 dark:text-neutral-200 no-underline" title="Get directions">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Directions
+            </a>
+          `);
+
+          // Phone button if available
+          if (props.phone) {
+            actionButtons.push(`
+              <a href="tel:${props.phone.replace(/[^0-9+]/g, '')}" class="flex items-center justify-center gap-1 px-2 py-1.5 bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 rounded text-xs text-green-700 dark:text-green-200 no-underline" title="Call">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                Call
+              </a>
+            `);
+          }
+
+          // Website button if available
+          if (props.link) {
+            actionButtons.push(`
+              <a href="${props.link}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1 px-2 py-1.5 bg-primary-100 dark:bg-primary-900 hover:bg-primary-200 dark:hover:bg-primary-800 rounded text-xs text-primary-700 dark:text-primary-200 no-underline" title="Visit website">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                Website
+              </a>
+            `);
+          }
+
           const popupContent = `
             <div class="p-3">
               <h3 class="font-semibold text-neutral-900 dark:text-white text-sm mb-1">${props.name}</h3>
               <p class="text-xs text-primary-600 dark:text-primary-400 mb-2">${props.category}</p>
-              ${props.description ? `<p class="text-xs text-neutral-600 dark:text-neutral-300 mb-2">${props.description}</p>` : ''}
-              ${props.address ? `<p class="text-xs text-neutral-600 dark:text-neutral-300 mb-2">${props.address}</p>` : ''}
-              <a href="/directory#${props.id}" class="text-xs text-primary-700 dark:text-primary-300 hover:underline">View details &rarr;</a>
+              ${props.description ? `<p class="text-xs text-neutral-600 dark:text-neutral-300 mb-2 line-clamp-2">${props.description}</p>` : ''}
+              ${props.address ? `<p class="text-xs text-neutral-600 dark:text-neutral-300 mb-3 flex items-start gap-1"><svg class="w-3 h-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>${props.address}</p>` : ''}
+              <div class="flex gap-2 mb-2">
+                ${actionButtons.join('')}
+              </div>
+              <a href="/directory#${props.id}" class="text-xs text-primary-700 dark:text-primary-300 hover:underline flex items-center gap-1">
+                View full details
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
             </div>
           `;
 
-          new maplibregl.Popup({ offset: 15 }).setLngLat(coords).setHTML(popupContent).addTo(map);
+          new maplibregl.Popup({ offset: 15, maxWidth: '320px' })
+            .setLngLat(coords)
+            .setHTML(popupContent)
+            .addTo(map);
         });
 
         // Cursor changes
@@ -1181,6 +1868,357 @@ const pmtilesUrl =
         });
         map.on('mouseleave', 'program-points', () => {
           map.getCanvas().style.cursor = '';
+        });
+
+        // ========================================
+        // HOVER PREVIEW (Desktop only)
+        // ========================================
+        let hoverTooltip: HTMLDivElement | null = null;
+
+        // Only show hover tooltip on devices that support hover (not touch)
+        if (window.matchMedia('(hover: hover)').matches) {
+          hoverTooltip = document.createElement('div');
+          hoverTooltip.className = 'map-hover-tooltip hidden';
+          document.getElementById('map-container')?.appendChild(hoverTooltip);
+
+          map.on('mousemove', 'program-points', (e) => {
+            if (!e.features || e.features.length === 0 || !hoverTooltip) return;
+
+            const props = e.features[0].properties;
+            const distanceText = userLocation
+              ? ` · ${formatDistance(calculateDistance(userLocation.lat, userLocation.lng, e.lngLat.lat, e.lngLat.lng))}`
+              : '';
+
+            hoverTooltip.innerHTML = `
+              <div class="font-medium text-neutral-900 dark:text-white">${props.name}</div>
+              <div class="text-xs text-primary-600 dark:text-primary-400">${props.category}${distanceText}</div>
+            `;
+            hoverTooltip.style.left = `${e.point.x}px`;
+            hoverTooltip.style.top = `${e.point.y}px`;
+            hoverTooltip.classList.remove('hidden');
+          });
+
+          map.on('mouseleave', 'program-points', () => {
+            if (hoverTooltip) hoverTooltip.classList.add('hidden');
+          });
+        }
+
+        // ========================================
+        // HEATMAP VIEW TOGGLE
+        // ========================================
+        const viewMarkersBtn = document.getElementById('view-markers');
+        const viewHeatmapBtn = document.getElementById('view-heatmap');
+        let isHeatmapView = false;
+
+        // Add heatmap layer (initially hidden)
+        map.addLayer({
+          id: 'programs-heatmap',
+          type: 'heatmap',
+          source: 'programs',
+          maxzoom: 15,
+          paint: {
+            'heatmap-weight': 1,
+            'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], 0, 1, 15, 3],
+            'heatmap-color': [
+              'interpolate',
+              ['linear'],
+              ['heatmap-density'],
+              0,
+              'rgba(0, 0, 255, 0)',
+              0.1,
+              'rgb(65, 105, 225)',
+              0.3,
+              'rgb(0, 255, 255)',
+              0.5,
+              'rgb(0, 255, 0)',
+              0.7,
+              'rgb(255, 255, 0)',
+              1,
+              'rgb(255, 0, 0)',
+            ],
+            'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 0, 2, 15, 20],
+            'heatmap-opacity': 0.8,
+          },
+          layout: { visibility: 'none' },
+        });
+
+        function toggleHeatmapView(showHeatmap: boolean) {
+          isHeatmapView = showHeatmap;
+
+          if (showHeatmap) {
+            map.setLayoutProperty('clusters', 'visibility', 'none');
+            map.setLayoutProperty('cluster-count', 'visibility', 'none');
+            map.setLayoutProperty('program-points', 'visibility', 'none');
+            map.setLayoutProperty('programs-heatmap', 'visibility', 'visible');
+
+            viewHeatmapBtn?.classList.add('bg-primary-600', 'text-white');
+            viewHeatmapBtn?.classList.remove('text-neutral-700', 'dark:text-neutral-300');
+            viewMarkersBtn?.classList.remove('bg-primary-600', 'text-white');
+            viewMarkersBtn?.classList.add('text-neutral-700', 'dark:text-neutral-300');
+          } else {
+            map.setLayoutProperty('clusters', 'visibility', 'visible');
+            map.setLayoutProperty('cluster-count', 'visibility', 'visible');
+            map.setLayoutProperty('program-points', 'visibility', 'visible');
+            map.setLayoutProperty('programs-heatmap', 'visibility', 'none');
+
+            viewMarkersBtn?.classList.add('bg-primary-600', 'text-white');
+            viewMarkersBtn?.classList.remove('text-neutral-700', 'dark:text-neutral-300');
+            viewHeatmapBtn?.classList.remove('bg-primary-600', 'text-white');
+            viewHeatmapBtn?.classList.add('text-neutral-700', 'dark:text-neutral-300');
+          }
+        }
+
+        viewMarkersBtn?.addEventListener('click', () => toggleHeatmapView(false));
+        viewHeatmapBtn?.addEventListener('click', () => toggleHeatmapView(true));
+
+        // ========================================
+        // COUNTY BOUNDARIES
+        // ========================================
+        const showCountiesCheckbox = document.getElementById('show-counties') as HTMLInputElement;
+
+        // Bay Area county boundaries (simplified GeoJSON)
+        const countyBoundaries = {
+          type: 'FeatureCollection',
+          features: [
+            // Simplified county polygons - these are approximate centers for label placement
+            {
+              type: 'Feature',
+              properties: { name: 'San Francisco' },
+              geometry: { type: 'Point', coordinates: [-122.4194, 37.7749] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Alameda' },
+              geometry: { type: 'Point', coordinates: [-122.0822, 37.6017] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Contra Costa' },
+              geometry: { type: 'Point', coordinates: [-121.9018, 37.9161] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'San Mateo' },
+              geometry: { type: 'Point', coordinates: [-122.3255, 37.4969] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Santa Clara' },
+              geometry: { type: 'Point', coordinates: [-121.8863, 37.3382] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Marin' },
+              geometry: { type: 'Point', coordinates: [-122.5311, 37.9735] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Sonoma' },
+              geometry: { type: 'Point', coordinates: [-122.7141, 38.4404] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Napa' },
+              geometry: { type: 'Point', coordinates: [-122.2869, 38.2975] },
+            },
+            {
+              type: 'Feature',
+              properties: { name: 'Solano' },
+              geometry: { type: 'Point', coordinates: [-121.9877, 38.3566] },
+            },
+          ],
+        };
+
+        map.addSource('county-labels', {
+          type: 'geojson',
+          data: countyBoundaries as any,
+        });
+
+        map.addLayer({
+          id: 'county-labels',
+          type: 'symbol',
+          source: 'county-labels',
+          layout: {
+            'text-field': ['get', 'name'],
+            'text-size': 14,
+            'text-font': ['Noto Sans Bold'],
+            visibility: 'none',
+          },
+          paint: {
+            'text-color': '#6b7280',
+            'text-halo-color': '#ffffff',
+            'text-halo-width': 2,
+            'text-opacity': 0.7,
+          },
+        });
+
+        showCountiesCheckbox?.addEventListener('change', () => {
+          const visibility = showCountiesCheckbox.checked ? 'visible' : 'none';
+          map.setLayoutProperty('county-labels', 'visibility', visibility);
+        });
+
+        // ========================================
+        // BART TRANSIT LAYER
+        // ========================================
+        const transitToggle = document.getElementById('transit-toggle');
+        let bartLayerAdded = false;
+        let bartVisible = false;
+
+        // BART station data (from 511 API - pre-cached for reliability)
+        const BART_STATIONS = [
+          { name: '12th St. Oakland City Center', lat: 37.803768, lng: -122.27145 },
+          { name: '16th St. Mission', lat: 37.765062, lng: -122.419694 },
+          { name: '19th St. Oakland', lat: 37.80835, lng: -122.268602 },
+          { name: '24th St. Mission', lat: 37.75247, lng: -122.418143 },
+          { name: 'Antioch', lat: 37.995388, lng: -121.78042 },
+          { name: 'Ashby', lat: 37.852803, lng: -122.269957 },
+          { name: 'Balboa Park', lat: 37.721981, lng: -122.447414 },
+          { name: 'Bay Fair', lat: 37.696924, lng: -122.126514 },
+          { name: 'Berryessa/North San José', lat: 37.368473, lng: -121.874605 },
+          { name: 'Castro Valley', lat: 37.690746, lng: -122.075602 },
+          { name: 'Civic Center/UN Plaza', lat: 37.779732, lng: -122.414123 },
+          { name: 'Coliseum', lat: 37.753661, lng: -122.196869 },
+          { name: 'Colma', lat: 37.684638, lng: -122.466233 },
+          { name: 'Concord', lat: 37.973737, lng: -122.029095 },
+          { name: 'Daly City', lat: 37.706121, lng: -122.469081 },
+          { name: 'Downtown Berkeley', lat: 37.869867, lng: -122.268045 },
+          { name: 'Dublin/Pleasanton', lat: 37.701687, lng: -121.899179 },
+          { name: 'El Cerrito del Norte', lat: 37.925655, lng: -122.316816 },
+          { name: 'El Cerrito Plaza', lat: 37.902632, lng: -122.298904 },
+          { name: 'Embarcadero', lat: 37.792976, lng: -122.396742 },
+          { name: 'Fremont', lat: 37.557465, lng: -121.976608 },
+          { name: 'Fruitvale', lat: 37.774836, lng: -122.224175 },
+          { name: 'Glen Park', lat: 37.733064, lng: -122.433817 },
+          { name: 'Hayward', lat: 37.669723, lng: -122.087018 },
+          { name: 'Lafayette', lat: 37.893394, lng: -122.123801 },
+          { name: 'Lake Merritt', lat: 37.797027, lng: -122.26518 },
+          { name: 'MacArthur', lat: 37.828415, lng: -122.267227 },
+          { name: 'Millbrae', lat: 37.599787, lng: -122.386749 },
+          { name: 'Milpitas', lat: 37.410277, lng: -121.891062 },
+          { name: 'Montgomery St.', lat: 37.789405, lng: -122.401066 },
+          { name: 'North Berkeley', lat: 37.873967, lng: -122.28344 },
+          { name: 'North Concord/Martinez', lat: 38.003193, lng: -122.024653 },
+          { name: 'Orinda', lat: 37.878361, lng: -122.183791 },
+          { name: 'Pittsburg/Bay Point', lat: 38.018914, lng: -121.945154 },
+          { name: 'Pittsburg Center', lat: 38.016941, lng: -121.889457 },
+          { name: 'Pleasant Hill/Contra Costa Centre', lat: 37.928468, lng: -122.056012 },
+          { name: 'Powell St.', lat: 37.784991, lng: -122.406857 },
+          { name: 'Richmond', lat: 37.936887, lng: -122.353165 },
+          { name: 'Rockridge', lat: 37.844601, lng: -122.251793 },
+          { name: 'San Bruno', lat: 37.637753, lng: -122.416038 },
+          { name: 'San Francisco International Airport', lat: 37.615966, lng: -122.392409 },
+          { name: 'San Leandro', lat: 37.721947, lng: -122.160844 },
+          { name: 'South Hayward', lat: 37.634375, lng: -122.057189 },
+          { name: 'South San Francisco', lat: 37.664174, lng: -122.444116 },
+          { name: 'Union City', lat: 37.59063, lng: -122.017388 },
+          { name: 'Walnut Creek', lat: 37.905628, lng: -122.067423 },
+          { name: 'Warm Springs/South Fremont', lat: 37.502171, lng: -121.939313 },
+          { name: 'West Dublin/Pleasanton', lat: 37.699759, lng: -121.928099 },
+          { name: 'West Oakland', lat: 37.804872, lng: -122.294582 },
+        ];
+
+        function addBartLayer() {
+          if (bartLayerAdded) return;
+
+          const bartGeoJSON = {
+            type: 'FeatureCollection',
+            features: BART_STATIONS.map((station) => ({
+              type: 'Feature',
+              geometry: { type: 'Point', coordinates: [station.lng, station.lat] },
+              properties: { name: station.name },
+            })),
+          };
+
+          map.addSource('bart-stations', {
+            type: 'geojson',
+            data: bartGeoJSON as any,
+          });
+
+          // BART station circles
+          map.addLayer({
+            id: 'bart-stations',
+            type: 'circle',
+            source: 'bart-stations',
+            paint: {
+              'circle-color': '#009bda',
+              'circle-radius': 6,
+              'circle-stroke-width': 2,
+              'circle-stroke-color': '#ffffff',
+            },
+          });
+
+          // BART station labels
+          map.addLayer({
+            id: 'bart-labels',
+            type: 'symbol',
+            source: 'bart-stations',
+            minzoom: 11,
+            layout: {
+              'text-field': ['get', 'name'],
+              'text-size': 10,
+              'text-font': ['Noto Sans Regular'],
+              'text-offset': [0, 1.2],
+              'text-anchor': 'top',
+            },
+            paint: {
+              'text-color': '#009bda',
+              'text-halo-color': '#ffffff',
+              'text-halo-width': 1,
+            },
+          });
+
+          // Click handler for BART stations
+          map.on('click', 'bart-stations', (e) => {
+            if (!e.features || e.features.length === 0) return;
+            const props = e.features[0].properties;
+            const coords = (e.features[0].geometry as GeoJSON.Point).coordinates as [
+              number,
+              number,
+            ];
+
+            new maplibregl.Popup({ offset: 10 })
+              .setLngLat(coords)
+              .setHTML(
+                `
+                <div class="p-2">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="w-3 h-3 rounded-full bg-[#009bda]"></span>
+                    <span class="font-semibold text-sm">${props.name}</span>
+                  </div>
+                  <p class="text-xs text-neutral-600 dark:text-neutral-300">BART Station</p>
+                  <a href="https://www.bart.gov/stations/${props.name.toLowerCase().replace(/[^a-z0-9]/g, '')}" target="_blank" rel="noopener" class="text-xs text-primary-600 hover:underline">Station info →</a>
+                </div>
+              `
+              )
+              .addTo(map);
+          });
+
+          map.on('mouseenter', 'bart-stations', () => {
+            map.getCanvas().style.cursor = 'pointer';
+          });
+          map.on('mouseleave', 'bart-stations', () => {
+            map.getCanvas().style.cursor = '';
+          });
+
+          bartLayerAdded = true;
+        }
+
+        transitToggle?.addEventListener('click', () => {
+          if (!bartLayerAdded) addBartLayer();
+
+          bartVisible = !bartVisible;
+
+          map.setLayoutProperty('bart-stations', 'visibility', bartVisible ? 'visible' : 'none');
+          map.setLayoutProperty('bart-labels', 'visibility', bartVisible ? 'visible' : 'none');
+
+          transitToggle.setAttribute('aria-pressed', String(bartVisible));
+          if (bartVisible) {
+            transitToggle.classList.add('bg-[#009bda]', 'text-white');
+            transitToggle.classList.remove('text-neutral-700', 'dark:text-neutral-300');
+          } else {
+            transitToggle.classList.remove('bg-[#009bda]', 'text-white');
+            transitToggle.classList.add('text-neutral-700', 'dark:text-neutral-300');
+          }
         });
       } catch (error) {
         console.error('Error loading programs:', error);
@@ -1200,6 +2238,326 @@ const pmtilesUrl =
       const isHidden = legendPanel?.classList.toggle('hidden');
       legendToggle.setAttribute('aria-expanded', String(!isHidden));
     });
+
+    // Fullscreen toggle
+    const fullscreenToggle = document.getElementById('fullscreen-toggle');
+    const fullscreenIconExpand = document.getElementById('fullscreen-icon-expand');
+    const fullscreenIconCollapse = document.getElementById('fullscreen-icon-collapse');
+    const mapContainer = document.getElementById('map-container');
+
+    let isFullscreen = false;
+
+    fullscreenToggle?.addEventListener('click', () => {
+      isFullscreen = !isFullscreen;
+
+      if (isFullscreen) {
+        mapContainer?.classList.add('map-fullscreen');
+        fullscreenIconExpand?.classList.add('hidden');
+        fullscreenIconCollapse?.classList.remove('hidden');
+        fullscreenToggle.setAttribute('aria-label', 'Exit fullscreen');
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+      } else {
+        mapContainer?.classList.remove('map-fullscreen');
+        fullscreenIconExpand?.classList.remove('hidden');
+        fullscreenIconCollapse?.classList.add('hidden');
+        fullscreenToggle.setAttribute('aria-label', 'Toggle fullscreen');
+        // Restore body scroll
+        document.body.style.overflow = '';
+      }
+
+      // Resize map to fit new container size
+      setTimeout(() => {
+        map?.resize();
+      }, 100);
+    });
+
+    // Exit fullscreen with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isFullscreen) {
+        fullscreenToggle?.click();
+      }
+    });
+
+    // Context Menu functionality
+    const contextMenu = document.getElementById('map-context-menu');
+    const contextIsochrone = document.getElementById('context-isochrone');
+    const contextDirections = document.getElementById('context-directions');
+    const contextNearby = document.getElementById('context-nearby');
+    const isochroneLegend = document.getElementById('isochrone-legend');
+    const clearIsochroneBtn = document.getElementById('clear-isochrone');
+
+    let contextMenuLngLat: [number, number] | null = null;
+    let isochroneSourceAdded = false;
+
+    function hideContextMenu() {
+      contextMenu?.classList.add('hidden');
+    }
+
+    function showContextMenu(x: number, y: number, lngLat: [number, number]) {
+      if (!contextMenu) return;
+
+      contextMenuLngLat = lngLat;
+
+      // Position menu, keeping it within viewport
+      const menuRect = contextMenu.getBoundingClientRect();
+      const mapRect = document.getElementById('map-container')?.getBoundingClientRect();
+
+      if (!mapRect) return;
+
+      let left = x;
+      let top = y;
+
+      // Adjust if menu would go off right edge
+      if (x + 200 > mapRect.right) {
+        left = x - 200;
+      }
+
+      // Adjust if menu would go off bottom edge
+      if (y + 150 > mapRect.bottom) {
+        top = y - 150;
+      }
+
+      contextMenu.style.left = `${left}px`;
+      contextMenu.style.top = `${top}px`;
+      contextMenu.classList.remove('hidden');
+    }
+
+    // Right-click handler
+    map?.on('contextmenu', (e) => {
+      e.preventDefault();
+      const lngLat: [number, number] = [e.lngLat.lng, e.lngLat.lat];
+      const point = map.project(lngLat);
+      const containerRect = document.getElementById('map-container')?.getBoundingClientRect();
+
+      if (containerRect) {
+        showContextMenu(point.x + containerRect.left, point.y + containerRect.top, lngLat);
+      }
+    });
+
+    // Hide context menu on click elsewhere
+    document.addEventListener('click', (e) => {
+      if (!contextMenu?.contains(e.target as Node)) {
+        hideContextMenu();
+      }
+    });
+
+    map?.on('movestart', hideContextMenu);
+
+    // Isochrone colors (from innermost to outermost)
+    const ISOCHRONE_COLORS = [
+      { time: 5, color: 'rgba(74, 222, 128, 0.4)', border: 'rgba(74, 222, 128, 0.8)' }, // green
+      { time: 10, color: 'rgba(250, 204, 21, 0.4)', border: 'rgba(250, 204, 21, 0.8)' }, // yellow
+      { time: 15, color: 'rgba(251, 146, 60, 0.4)', border: 'rgba(251, 146, 60, 0.8)' }, // orange
+      { time: 20, color: 'rgba(248, 113, 113, 0.4)', border: 'rgba(248, 113, 113, 0.8)' }, // red
+    ];
+
+    // Add isochrone layer source
+    function ensureIsochroneSource() {
+      if (isochroneSourceAdded) return;
+
+      map?.addSource('isochrone', {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+      });
+
+      // Add layers for each time band (in reverse order so smaller times are on top)
+      ISOCHRONE_COLORS.slice()
+        .reverse()
+        .forEach((iso, i) => {
+          map?.addLayer({
+            id: `isochrone-fill-${iso.time}`,
+            type: 'fill',
+            source: 'isochrone',
+            filter: ['==', ['get', 'time'], iso.time],
+            paint: {
+              'fill-color': iso.color,
+              'fill-opacity': 0.6,
+            },
+          });
+
+          map?.addLayer({
+            id: `isochrone-line-${iso.time}`,
+            type: 'line',
+            source: 'isochrone',
+            filter: ['==', ['get', 'time'], iso.time],
+            paint: {
+              'line-color': iso.border,
+              'line-width': 2,
+            },
+          });
+        });
+
+      // Add marker for center point
+      map?.addSource('isochrone-center', {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+      });
+
+      map?.addLayer({
+        id: 'isochrone-center',
+        type: 'circle',
+        source: 'isochrone-center',
+        paint: {
+          'circle-radius': 8,
+          'circle-color': '#3b82f6',
+          'circle-stroke-width': 3,
+          'circle-stroke-color': '#ffffff',
+        },
+      });
+
+      isochroneSourceAdded = true;
+    }
+
+    // Fetch isochrone data using OpenRouteService API
+    async function fetchIsochrone(
+      lng: number,
+      lat: number
+    ): Promise<GeoJSON.FeatureCollection | null> {
+      // Using OpenRouteService public API (free tier allows 40 req/min)
+      // Note: For production, consider self-hosting Valhalla or OSRM
+      const times = [5, 10, 15, 20]; // minutes
+      const features: GeoJSON.Feature[] = [];
+
+      // Create approximate isochrones using concentric circles
+      // This is a fallback if no API is available
+      for (const time of times) {
+        // Rough estimate: 5 min ~ 3km at 36km/h average city driving
+        const radiusKm = time * 0.6; // km per minute
+        const radiusDeg = radiusKm / 111; // approximate degrees
+
+        // Create a circle polygon
+        const points = 32;
+        const coordinates: [number, number][] = [];
+
+        for (let i = 0; i <= points; i++) {
+          const angle = (i / points) * 2 * Math.PI;
+          coordinates.push([
+            lng + radiusDeg * Math.cos(angle) * 1.3, // Adjust for longitude compression at this latitude
+            lat + radiusDeg * Math.sin(angle),
+          ]);
+        }
+
+        features.push({
+          type: 'Feature',
+          properties: { time },
+          geometry: {
+            type: 'Polygon',
+            coordinates: [coordinates],
+          },
+        });
+      }
+
+      return {
+        type: 'FeatureCollection',
+        features: features.reverse(), // Larger areas first so smaller ones render on top
+      };
+    }
+
+    // Show isochrone from a point
+    async function showIsochrone(lngLat: [number, number]) {
+      hideContextMenu();
+      ensureIsochroneSource();
+
+      // Update center marker
+      (map?.getSource('isochrone-center') as maplibregl.GeoJSONSource)?.setData({
+        type: 'FeatureCollection',
+        features: [
+          {
+            type: 'Feature',
+            properties: {},
+            geometry: { type: 'Point', coordinates: lngLat },
+          },
+        ],
+      });
+
+      // Fetch and display isochrone
+      const isochroneData = await fetchIsochrone(lngLat[0], lngLat[1]);
+
+      if (isochroneData) {
+        (map?.getSource('isochrone') as maplibregl.GeoJSONSource)?.setData(isochroneData);
+        isochroneLegend?.classList.remove('hidden');
+      }
+    }
+
+    // Clear isochrone
+    function clearIsochrone() {
+      if (map?.getSource('isochrone')) {
+        (map.getSource('isochrone') as maplibregl.GeoJSONSource).setData({
+          type: 'FeatureCollection',
+          features: [],
+        });
+      }
+      if (map?.getSource('isochrone-center')) {
+        (map.getSource('isochrone-center') as maplibregl.GeoJSONSource).setData({
+          type: 'FeatureCollection',
+          features: [],
+        });
+      }
+      isochroneLegend?.classList.add('hidden');
+    }
+
+    // Context menu handlers
+    contextIsochrone?.addEventListener('click', () => {
+      if (contextMenuLngLat) {
+        showIsochrone(contextMenuLngLat);
+      }
+    });
+
+    contextDirections?.addEventListener('click', () => {
+      if (contextMenuLngLat) {
+        hideContextMenu();
+        const [lng, lat] = contextMenuLngLat;
+        window.open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`, '_blank');
+      }
+    });
+
+    contextNearby?.addEventListener('click', () => {
+      if (contextMenuLngLat) {
+        hideContextMenu();
+        // Trigger the nearby programs functionality using this location
+        const [lng, lat] = contextMenuLngLat;
+
+        // Fly to location
+        map?.flyTo({
+          center: contextMenuLngLat,
+          zoom: 13,
+          duration: 500,
+        });
+
+        // Update nearby panel with this location
+        if (nearbyPanel && nearbyLocation && nearbyList && programsGeoJSON) {
+          userLocation = { lat, lng };
+          nearbyLocation.textContent = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+
+          // Calculate distances and show nearby
+          const distances = programsGeoJSON.features.map((f: any) => {
+            const [fLng, fLat] = f.geometry.coordinates;
+            const dist = haversineDistance(lat, lng, fLat, fLng);
+            return { ...f, distance: dist };
+          });
+
+          distances.sort((a: any, b: any) => a.distance - b.distance);
+          const nearby = distances.slice(0, 10);
+
+          nearbyList.innerHTML = nearby
+            .map(
+              (f: any) => `
+            <button type="button" class="w-full p-3 text-left hover:bg-neutral-50 dark:hover:bg-neutral-700 focus:bg-neutral-50 dark:focus:bg-neutral-700 focus:outline-none border-b border-neutral-200 dark:border-neutral-700 last:border-b-0" data-lng="${f.geometry.coordinates[0]}" data-lat="${f.geometry.coordinates[1]}">
+              <div class="font-medium text-sm text-neutral-900 dark:text-white">${f.properties.name}</div>
+              <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-0.5">${f.properties.category}</div>
+              <div class="text-xs text-primary-600 dark:text-primary-400 mt-0.5">${f.distance.toFixed(1)} mi away</div>
+            </button>
+          `
+            )
+            .join('');
+
+          nearbyPanel.classList.remove('hidden');
+        }
+      }
+    });
+
+    clearIsochroneBtn?.addEventListener('click', clearIsochrone);
 
     // Location search functionality
     const searchInput = document.getElementById('location-search') as HTMLInputElement;

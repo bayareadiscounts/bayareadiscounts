@@ -9,6 +9,7 @@ const CACHE_VERSION = '2026-01-09';
 const STATIC_CACHE = `baynavigator-static-${CACHE_VERSION}`;
 const API_CACHE = `baynavigator-api-${CACHE_VERSION}`;
 const IMAGE_CACHE = `baynavigator-images-${CACHE_VERSION}`;
+const MAP_CACHE = `baynavigator-map-${CACHE_VERSION}`;
 
 // Static assets to cache on install (include both with and without trailing slash)
 const STATIC_ASSETS = [
@@ -43,8 +44,16 @@ const API_ENDPOINTS = [
   '/api/emergency.json', // Crisis resources for offline access
 ];
 
+// Map-related resources to cache
+const MAP_RESOURCES = [
+  'https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js',
+  'https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.css',
+  'https://unpkg.com/pmtiles@3.0.6/dist/pmtiles.js',
+];
+
 // Cache size limits
 const MAX_IMAGE_CACHE_SIZE = 50;
+const MAX_MAP_TILE_CACHE_SIZE = 200; // More tiles for offline map viewing
 
 // Install event - cache static assets
 self.addEventListener('install', (event) => {
@@ -52,13 +61,17 @@ self.addEventListener('install', (event) => {
     Promise.all([
       caches.open(STATIC_CACHE).then((cache) => cache.addAll(STATIC_ASSETS)),
       caches.open(API_CACHE).then((cache) => cache.addAll(API_ENDPOINTS)),
+      // Pre-cache map libraries (catch errors for cross-origin resources)
+      caches
+        .open(MAP_CACHE)
+        .then((cache) => Promise.allSettled(MAP_RESOURCES.map((url) => cache.add(url)))),
     ]).then(() => self.skipWaiting())
   );
 });
 
 // Activate event - clean up old caches
 self.addEventListener('activate', (event) => {
-  const currentCaches = [STATIC_CACHE, API_CACHE, IMAGE_CACHE];
+  const currentCaches = [STATIC_CACHE, API_CACHE, IMAGE_CACHE, MAP_CACHE];
 
   event.waitUntil(
     caches
@@ -83,8 +96,27 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
 
   // Skip cross-origin requests (except allowed CDNs)
-  const allowedOrigins = ['cdn.jsdelivr.net', 'unpkg.com', 'baytidesstorage.blob.core.windows.net'];
+  const allowedOrigins = [
+    'cdn.jsdelivr.net',
+    'unpkg.com',
+    'baytidesstorage.blob.core.windows.net',
+    'tiles.openfreemap.org',
+    'api.maptiler.com',
+  ];
   if (url.origin !== location.origin && !allowedOrigins.some((o) => url.origin.includes(o))) {
+    return;
+  }
+
+  // Handle map tiles and resources (PMTiles, vector tiles, map libraries)
+  if (
+    url.pathname.includes('.pmtiles') ||
+    url.pathname.includes('/tiles/') ||
+    url.hostname.includes('maptiler') ||
+    url.hostname.includes('openfreemap') ||
+    (url.hostname.includes('unpkg.com') && url.pathname.includes('maplibre')) ||
+    (url.hostname.includes('unpkg.com') && url.pathname.includes('pmtiles'))
+  ) {
+    event.respondWith(cacheFirstWithLimit(request, MAP_CACHE, MAX_MAP_TILE_CACHE_SIZE));
     return;
   }
 
