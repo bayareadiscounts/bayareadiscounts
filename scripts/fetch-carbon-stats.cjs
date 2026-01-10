@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // Carbon factors (grams CO2e)
 const CARBON_FACTORS = {
@@ -160,36 +161,97 @@ async function getGitHubStats() {
   }
 }
 
+async function getAzureStats() {
+  // Check if Azure CLI is available and logged in
+  try {
+    execSync('az account show', { stdio: 'pipe' });
+  } catch {
+    console.log('Azure CLI not available or not logged in');
+    return null;
+  }
+
+  const subscriptionId = '7848d90a-1826-43f6-a54e-090c2d18946f';
+  const openAiResourceGroup = 'baytides-discounts-rg';
+  const openAiAccount = 'baynavigator-openai';
+  const functionAppResourceGroup = 'baytides-rg';
+  const functionApp = 'baytides-integrity';
+
+  // Calculate date range (last 30 days)
+  const endTime = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+  const startDate = new Date();
+  startDate.setDate(startDate.getDate() - 30);
+  const startTime = startDate.toISOString().split('T')[0] + 'T00:00:00Z';
+
+  try {
+    // Get Azure OpenAI request count
+    const openAiResourceId = `/subscriptions/${subscriptionId}/resourceGroups/${openAiResourceGroup}/providers/Microsoft.CognitiveServices/accounts/${openAiAccount}`;
+    const openAiCmd = `az monitor metrics list --resource "${openAiResourceId}" --metric "TotalCalls" --interval P1D --aggregation Total --start-time ${startTime} --end-time ${endTime} -o json`;
+
+    let aiRequests = 0;
+    try {
+      const openAiResult = JSON.parse(execSync(openAiCmd, { stdio: 'pipe' }).toString());
+      const timeseries = openAiResult?.value?.[0]?.timeseries?.[0]?.data || [];
+      aiRequests = timeseries.reduce((sum, d) => sum + (d.total || 0), 0);
+    } catch (err) {
+      console.error('Failed to fetch OpenAI metrics:', err.message);
+    }
+
+    // Get Function App execution count
+    const functionAppResourceId = `/subscriptions/${subscriptionId}/resourceGroups/${functionAppResourceGroup}/providers/Microsoft.Web/sites/${functionApp}`;
+    const functionCmd = `az monitor metrics list --resource "${functionAppResourceId}" --metric "FunctionExecutionCount" --interval P1D --aggregation Total --start-time ${startTime} --end-time ${endTime} -o json`;
+
+    let functionExecutions = 0;
+    try {
+      const functionResult = JSON.parse(execSync(functionCmd, { stdio: 'pipe' }).toString());
+      const timeseries = functionResult?.value?.[0]?.timeseries?.[0]?.data || [];
+      functionExecutions = timeseries.reduce((sum, d) => sum + (d.total || 0), 0);
+    } catch (err) {
+      console.error('Failed to fetch Function App metrics:', err.message);
+    }
+
+    return {
+      aiRequests: Math.round(aiRequests),
+      functionExecutions: Math.round(functionExecutions),
+      source: 'azure_monitor',
+    };
+  } catch (error) {
+    console.error('Azure fetch error:', error.message);
+    return null;
+  }
+}
+
 async function main() {
   console.log('Fetching carbon stats...');
 
-  const [cloudflareStats, githubStats] = await Promise.all([
+  const [cloudflareStats, githubStats, azureStats] = await Promise.all([
     getCloudflareStats(),
     getGitHubStats(),
+    getAzureStats(),
   ]);
 
-  // Use real data where available, fall back to estimates
+  // Use real data where available, fall back to null (no estimates)
   const usage = {
-    cdnRequests: cloudflareStats?.requests ?? 50000,
-    cdnBytesTransferred: cloudflareStats?.bytesTransferred ?? 0,
+    cdnRequests: cloudflareStats?.requests ?? null,
+    cdnBytesTransferred: cloudflareStats?.bytesTransferred ?? null,
     cdnCacheHitRate: cloudflareStats?.cacheHitRate ?? null,
-    aiQueries: 500, // Estimated - Azure metrics require managed identity
-    ciRuns: githubStats?.totalRuns ?? 30,
-    ciMinutes: githubStats?.estimatedMinutes ?? 120,
+    aiQueries: azureStats?.aiRequests ?? null,
+    functionExecutions: azureStats?.functionExecutions ?? null,
+    ciRuns: githubStats?.totalRuns ?? null,
+    ciMinutes: githubStats?.estimatedMinutes ?? null,
     ciWorkflows: githubStats?.workflowBreakdown ?? null,
   };
 
   const dataSources = {
-    cloudflare: cloudflareStats ? 'live' : 'estimated',
-    github: githubStats ? 'live' : 'estimated',
-    azure: 'estimated', // Would need managed identity to access from Actions
+    cloudflare: cloudflareStats ? 'live' : 'unavailable',
+    github: githubStats ? 'live' : 'unavailable',
+    azure: azureStats ? 'live' : 'unavailable',
   };
 
-  // Calculate emissions
+  // Calculate emissions (use 0 if data unavailable)
   const grossEmissions = {
-    cdn: usage.cdnRequests * CARBON_FACTORS.cdnRequestGrams,
-    ai: usage.aiQueries * CARBON_FACTORS.aiQueryGrams,
-    ci: usage.ciMinutes * CARBON_FACTORS.ciMinuteGrams,
+    cdn: (usage.cdnRequests || 0) * CARBON_FACTORS.cdnRequestGrams,
+    ai: (usage.aiQueries || 0) * CARBON_FACTORS.aiQueryGrams,
+    ci: (usage.ciMinutes || 0) * CARBON_FACTORS.ciMinuteGrams,
   };
 
   const totalGrossGrams = Object.values(grossEmissions).reduce((a, b) => a + b, 0);
@@ -259,8 +321,9 @@ async function main() {
   fs.writeFileSync(outputPath, JSON.stringify(stats, null, 2));
 
   console.log('Carbon stats updated successfully!');
-  console.log(`- Cloudflare: ${dataSources.cloudflare} (${usage.cdnRequests} requests)`);
-  console.log(`- GitHub: ${dataSources.github} (${usage.ciRuns} runs)`);
+  console.log(`- Cloudflare: ${dataSources.cloudflare} (${usage.cdnRequests ?? 'N/A'} requests)`);
+  console.log(`- GitHub: ${dataSources.github} (${usage.ciRuns ?? 'N/A'} runs)`);
+  console.log(`- Azure: ${dataSources.azure} (${usage.aiQueries ?? 'N/A'} AI queries, ${usage.functionExecutions ?? 'N/A'} function executions)`);
   console.log(`- Total gross emissions: ${stats.summary.totalGrossEmissionsKg} kg CO₂e`);
 }
 
