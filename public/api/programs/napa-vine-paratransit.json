@@ -1,0 +1,32 @@
+{
+  "id": "napa-vine-paratransit",
+  "name": "Vine Transit: Vine Go Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit throughout Napa County",
+  "fullDescription": "Vine Go is Napa County's ADA paratransit service for residents who cannot use regular Vine bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service throughout Napa County\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the Vine Go eligibility application\n2. Application at vinetransit.com\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Napa County"
+  ],
+  "city": null,
+  "website": "https://vinetransit.com/vine-go/",
+  "cost": null,
+  "phone": "707-251-2800",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "Vine Go",
+    "ADA",
+    "napa"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "golden-gate-paratransit",
+  "name": "Golden Gate Transit: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit in Marin/Sonoma counties",
+  "fullDescription": "Golden Gate Transit provides ADA paratransit service for eligible riders who cannot use regular Golden Gate Transit bus or ferry service due to a disability. Service operates in Marin and Sonoma counties.",
+  "whatTheyOffer": "- Door-to-door paratransit service\n- Covers Golden Gate Transit bus and ferry service areas\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the ADA paratransit application\n2. Application available at goldengatetransit.org\n3. Assessment may be required\n4. Once certified, call to schedule rides\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Marin County"
+  ],
+  "city": null,
+  "website": "http://goldengatetransit.org/accessibility/",
+  "cost": null,
+  "phone": "415-455-9744",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "golden gate"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

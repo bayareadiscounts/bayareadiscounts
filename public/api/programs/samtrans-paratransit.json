@@ -1,0 +1,31 @@
+{
+  "id": "samtrans-paratransit",
+  "name": "SamTrans: Redi-Wheels Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit throughout San Mateo County",
+  "fullDescription": "Redi-Wheels is SamTrans' ADA paratransit service providing door-to-door transportation for San Mateo County residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service throughout San Mateo County\n- Advance reservation required (1-7 days ahead)\n- Wheelchair accessible vehicles\n- Personal care attendants ride free\n",
+  "howToGetIt": "1. Complete the ADA paratransit application\n2. Application available at samtrans.com or by calling\n3. In-person eligibility assessment may be required\n4. Once certified, schedule rides by phone or online\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "San Mateo County"
+  ],
+  "city": null,
+  "website": "http://www.samtrans.com/Accessibility/Paratransit.html",
+  "cost": null,
+  "phone": "650-508-6241",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "redi-wheels",
+    "ADA"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

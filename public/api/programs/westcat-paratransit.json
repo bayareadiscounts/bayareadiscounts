@@ -1,0 +1,32 @@
+{
+  "id": "westcat-paratransit",
+  "name": "WestCAT: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit in western Contra Costa County",
+  "fullDescription": "WestCAT provides ADA paratransit service for western Contra Costa County residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service in western Contra Costa (Pinole, Hercules, Rodeo, Crockett)\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Application at westcat.org\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Contra Costa County"
+  ],
+  "city": null,
+  "website": "https://www.westcat.org/home/ServADAPara",
+  "cost": null,
+  "phone": "510-724-7993",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "pinole",
+    "hercules"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

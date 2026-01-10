@@ -1,0 +1,31 @@
+{
+  "id": "county-connection-paratransit",
+  "name": "County Connection: LINK Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit in Central Contra Costa County",
+  "fullDescription": "LINK is County Connection's ADA paratransit service for Central Contra Costa County residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service in Central Contra Costa County\n- Same-day and advance reservations\n- Wheelchair accessible vehicles\n- Personal care attendants ride free\n",
+  "howToGetIt": "1. Complete the LINK paratransit application\n2. Application at countyconnection.com/paratransit\n3. In-person assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Contra Costa County"
+  ],
+  "city": null,
+  "website": "https://countyconnection.com/paratransit/",
+  "cost": null,
+  "phone": "925-938-7433",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "LINK",
+    "ADA"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "sonoma-county-paratransit",
+  "name": "Sonoma County Transit: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit throughout Sonoma County",
+  "fullDescription": "Sonoma County Transit provides ADA paratransit service for Sonoma County residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service throughout Sonoma County\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Application at sctransit.com\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Sonoma County"
+  ],
+  "city": null,
+  "website": "http://sctransit.com/paratransit/",
+  "cost": null,
+  "phone": "707-585-7516",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "sonoma"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

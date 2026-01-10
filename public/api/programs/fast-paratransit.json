@@ -1,0 +1,32 @@
+{
+  "id": "fast-paratransit",
+  "name": "FAST: DART Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit within Fremont",
+  "fullDescription": "DART (Dial-A-Ride Transit) is FAST's paratransit service for Fremont residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service within Fremont city limits\n- Advance reservations required\n- Wheelchair accessible vehicles\n- Personal care attendants ride free\n",
+  "howToGetIt": "1. Complete the DART paratransit application\n2. Application available at fasttransit.org\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Alameda County"
+  ],
+  "city": null,
+  "website": "https://fasttransit.org/services/dart-paratransit-disabled-services/",
+  "cost": null,
+  "phone": "510-574-2312",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "DART",
+    "ADA",
+    "fremont"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

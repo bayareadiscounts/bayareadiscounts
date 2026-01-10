@@ -1,0 +1,32 @@
+{
+  "id": "soltrans-paratransit",
+  "name": "SolTrans: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit in Vallejo and Benicia",
+  "fullDescription": "SolTrans provides ADA paratransit service for Vallejo and Benicia residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service in Vallejo and Benicia\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Application at soltrans.org\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Solano County"
+  ],
+  "city": null,
+  "website": "https://soltrans.org/accessibility/ada-paratransit/",
+  "cost": null,
+  "phone": "707-648-4666",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "vallejo",
+    "benicia"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

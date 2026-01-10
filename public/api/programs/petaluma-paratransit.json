@@ -1,0 +1,31 @@
+{
+  "id": "petaluma-paratransit",
+  "name": "Petaluma Transit: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit within Petaluma",
+  "fullDescription": "Petaluma Transit provides ADA paratransit service for Petaluma residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service within Petaluma\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Contact Petaluma Transit for application\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Sonoma County"
+  ],
+  "city": null,
+  "website": "https://transit.cityofpetaluma.net/?s=paratransit",
+  "cost": null,
+  "phone": "707-778-4460",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "petaluma"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

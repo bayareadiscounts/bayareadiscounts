@@ -1,0 +1,34 @@
+{
+  "id": "bay-area-ada-paratransit",
+  "name": "Bay Area ADA Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit for people with disabilities who cannot use regular buses/trains",
+  "fullDescription": "ADA Paratransit is a shared-ride, door-to-door transportation service for people who cannot use regular public transit due to a disability. Bay Area transit agencies provide coordinated paratransit service with regional certification—eligibility with one operator grants access to all Bay Area paratransit programs.",
+  "whatTheyOffer": "- Door-to-door pickup and drop-off service\n- Shared rides via small buses, vans, taxis, or sedans\n- Service available during same hours as regular fixed-route transit\n- Regional certification accepted by all Bay Area operators\n- Personal care attendants ride free\n",
+  "howToGetIt": "1. Contact your local transit agency to request an application\n2. Complete the ADA paratransit eligibility application\n3. You may need to complete an in-person assessment\n4. Once certified, you can use paratransit across the Bay Area\n5. Call 511 and say \"paratransit\" then your city name for local info\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Bay Area-wide"
+  ],
+  "city": null,
+  "website": "https://511.org/transit/ada-paratransit",
+  "cost": null,
+  "phone": "511",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "accessible transit",
+    "disability transportation",
+    "door to door",
+    "wheelchair accessible"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

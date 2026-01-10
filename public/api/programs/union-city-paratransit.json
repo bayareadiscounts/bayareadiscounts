@@ -1,0 +1,31 @@
+{
+  "id": "union-city-paratransit",
+  "name": "Union City Transit: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit within Union City",
+  "fullDescription": "Union City Transit provides ADA paratransit service for Union City residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service within Union City\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Contact Union City Transit for application\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Alameda County"
+  ],
+  "city": null,
+  "website": "https://www.unioncity.org/172/Paratransit",
+  "cost": null,
+  "phone": "510-675-5300",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "union city"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

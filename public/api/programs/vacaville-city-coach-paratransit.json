@@ -1,0 +1,31 @@
+{
+  "id": "vacaville-city-coach-paratransit",
+  "name": "City Coach: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit within Vacaville",
+  "fullDescription": "City Coach provides door-to-door paratransit service for Vacaville residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service within Vacaville\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Application at citycoach.com\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Solano County"
+  ],
+  "city": null,
+  "website": "http://www.citycoach.com/door-to-door-paratransit/",
+  "cost": null,
+  "phone": "707-469-6520",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "vacaville"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

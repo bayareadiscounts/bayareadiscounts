@@ -1,0 +1,31 @@
+{
+  "id": "rio-vista-paratransit",
+  "name": "Rio Vista Delta Breeze: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit within Rio Vista",
+  "fullDescription": "Rio Vista Delta Breeze provides ADA paratransit service for Rio Vista residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service within Rio Vista\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Contact Delta Breeze for application\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Solano County"
+  ],
+  "city": null,
+  "website": "https://www.riovistacity.com/deltabreeze/page/ada-paratransit",
+  "cost": null,
+  "phone": "707-374-2878",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "rio vista"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

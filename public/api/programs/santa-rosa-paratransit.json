@@ -1,0 +1,31 @@
+{
+  "id": "santa-rosa-paratransit",
+  "name": "Santa Rosa CityBus: Paratransit",
+  "category": "transportation",
+  "description": "Door-to-door transit within Santa Rosa",
+  "fullDescription": "Santa Rosa CityBus provides ADA paratransit service for Santa Rosa residents who cannot use regular bus service due to a disability.",
+  "whatTheyOffer": "- Door-to-door shared ride service\n- Service within Santa Rosa\n- Advance reservations required\n- Wheelchair accessible vehicles\n",
+  "howToGetIt": "1. Complete the paratransit eligibility application\n2. Contact Santa Rosa CityBus for application\n3. Assessment may be required\n4. Once certified, schedule rides by phone\n",
+  "groups": [
+    "disability"
+  ],
+  "areas": [
+    "Sonoma County"
+  ],
+  "city": null,
+  "website": "https://srcity.org/1696/Paratransit",
+  "cost": null,
+  "phone": "707-543-3333",
+  "email": null,
+  "address": null,
+  "requirements": null,
+  "howToApply": null,
+  "keywords": [
+    "paratransit",
+    "ADA",
+    "santa rosa"
+  ],
+  "lifeEvents": [],
+  "agency": null,
+  "lastUpdated": "2026-01-10"
+}

@@ -931,3 +931,593 @@
   link: https://www.caltrain.com/stations-zones
   link_text: View Stations
   verified_date: '2026-01-06'
+# ADA Paratransit Services
+- id: bay-area-ada-paratransit
+  name: Bay Area ADA Paratransit
+  category: Transportation
+  area: Bay Area-wide
+  groups:
+    - disability
+  description: ADA Paratransit is a shared-ride, door-to-door transportation service for people who cannot use regular public transit due to a disability. Bay Area transit agencies provide coordinated paratransit service with regional certification—eligibility with one operator grants access to all Bay Area paratransit programs.
+  what_they_offer: |
+    - Door-to-door pickup and drop-off service
+    - Shared rides via small buses, vans, taxis, or sedans
+    - Service available during same hours as regular fixed-route transit
+    - Regional certification accepted by all Bay Area operators
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Contact your local transit agency to request an application
+    2. Complete the ADA paratransit eligibility application
+    3. You may need to complete an in-person assessment
+    4. Once certified, you can use paratransit across the Bay Area
+    5. Call 511 and say "paratransit" then your city name for local info
+  phone: '511'
+  benefit: Door-to-door transit for people with disabilities who cannot use regular buses/trains
+  how_to_use: Call 511 and say "paratransit" for local operator information
+  timeframe: Ongoing
+  link: https://511.org/transit/ada-paratransit
+  link_text: Learn More
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - accessible transit
+    - disability transportation
+    - door to door
+    - wheelchair accessible
+  lifeEvents:
+    - disability
+- id: ac-transit-paratransit
+  name: 'AC Transit: East Bay Paratransit'
+  category: Transportation
+  area: Alameda County
+  groups:
+    - disability
+  description: East Bay Paratransit is a shared-ride, door-to-door service for people who are unable to use AC Transit or BART due to a disability. The service covers Alameda and western Contra Costa counties.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service area covers AC Transit and BART service areas
+    - Same-day and advance reservation options
+    - Free rides for personal care attendants
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Apply for ADA paratransit eligibility
+    2. Complete application at actransit.org/paratransit
+    3. In-person assessment may be required
+    4. Once certified, call to schedule rides
+  phone: 510-287-5000
+  benefit: Door-to-door transit for AC Transit/BART service area
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://www.actransit.org/paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - east bay
+  lifeEvents:
+    - disability
+- id: samtrans-paratransit
+  name: 'SamTrans: Redi-Wheels Paratransit'
+  category: Transportation
+  area: San Mateo County
+  groups:
+    - disability
+  description: Redi-Wheels is SamTrans' ADA paratransit service providing door-to-door transportation for San Mateo County residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service throughout San Mateo County
+    - Advance reservation required (1-7 days ahead)
+    - Wheelchair accessible vehicles
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Complete the ADA paratransit application
+    2. Application available at samtrans.com or by calling
+    3. In-person eligibility assessment may be required
+    4. Once certified, schedule rides by phone or online
+  phone: 650-508-6241
+  benefit: Door-to-door transit throughout San Mateo County
+  how_to_use: Apply for eligibility; schedule rides in advance
+  timeframe: Ongoing
+  link: http://www.samtrans.com/Accessibility/Paratransit.html
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - redi-wheels
+    - ADA
+  lifeEvents:
+    - disability
+- id: sfmta-paratransit
+  name: 'SFMTA: SF Paratransit'
+  category: Transportation
+  area: San Francisco
+  groups:
+    - disability
+  description: SF Paratransit provides door-to-door transportation for San Francisco residents who are unable to use Muni due to a disability. Services include van rides, taxi vouchers, and group van service.
+  what_they_offer: |
+    - SF Access van service (shared-ride, door-to-door)
+    - Taxi program with discounted vouchers
+    - Group Van service for regular trips
+    - Shop-a-Round shuttle for grocery shopping
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Complete the SF Paratransit eligibility application
+    2. Applications available online or at SFMTA offices
+    3. Functional assessment may be required
+    4. Choose service options based on your needs
+    5. Schedule rides by phone or through the app
+  phone: 415-351-7000
+  benefit: Multiple transit options including vans, taxis, and shuttles
+  how_to_use: Apply for eligibility; schedule rides by phone or app
+  timeframe: Ongoing
+  link: https://www.sfmta.com/getting-around/accessibility/paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - SF Access
+    - ADA
+    - taxi vouchers
+  lifeEvents:
+    - disability
+- id: vta-paratransit
+  name: 'VTA: ACCESS Paratransit'
+  category: Transportation
+  area: Santa Clara County
+  groups:
+    - disability
+  description: VTA ACCESS is an ADA paratransit service providing door-to-door transportation for Santa Clara County residents who cannot use regular VTA buses or light rail due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service throughout Santa Clara County
+    - Reservations accepted 1-7 days in advance
+    - Wheelchair accessible vehicles
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Complete the VTA ACCESS eligibility application
+    2. Download application at vta.org or call for copy
+    3. In-person eligibility assessment required
+    4. Once certified, schedule rides by phone
+  phone: 408-321-2381
+  benefit: Door-to-door transit throughout Santa Clara County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: http://www.vta.org/getting-around/paratransit/accessibility-paratransit-service
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - VTA ACCESS
+    - ADA
+  lifeEvents:
+    - disability
+- id: golden-gate-paratransit
+  name: 'Golden Gate Transit: Paratransit'
+  category: Transportation
+  area: Marin County
+  groups:
+    - disability
+  description: Golden Gate Transit provides ADA paratransit service for eligible riders who cannot use regular Golden Gate Transit bus or ferry service due to a disability. Service operates in Marin and Sonoma counties.
+  what_they_offer: |
+    - Door-to-door paratransit service
+    - Covers Golden Gate Transit bus and ferry service areas
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the ADA paratransit application
+    2. Application available at goldengatetransit.org
+    3. Assessment may be required
+    4. Once certified, call to schedule rides
+  phone: 415-455-9744
+  benefit: Door-to-door transit in Marin/Sonoma counties
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: http://goldengatetransit.org/accessibility/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - golden gate
+  lifeEvents:
+    - disability
+- id: marin-transit-paratransit
+  name: 'Marin Transit: Paratransit'
+  category: Transportation
+  area: Marin County
+  groups:
+    - disability
+  description: Marin Transit provides ADA paratransit service for Marin County residents who cannot use regular local bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service throughout Marin County
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Complete the Marin Transit paratransit application
+    2. Application available at marintransit.org
+    3. In-person assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 415-454-0902
+  benefit: Door-to-door transit throughout Marin County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://marintransit.org/paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - marin
+  lifeEvents:
+    - disability
+- id: county-connection-paratransit
+  name: 'County Connection: LINK Paratransit'
+  category: Transportation
+  area: Contra Costa County
+  groups:
+    - disability
+  description: LINK is County Connection's ADA paratransit service for Central Contra Costa County residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service in Central Contra Costa County
+    - Same-day and advance reservations
+    - Wheelchair accessible vehicles
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Complete the LINK paratransit application
+    2. Application at countyconnection.com/paratransit
+    3. In-person assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 925-938-7433
+  benefit: Door-to-door transit in Central Contra Costa County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://countyconnection.com/paratransit/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - LINK
+    - ADA
+  lifeEvents:
+    - disability
+- id: fast-paratransit
+  name: 'FAST: DART Paratransit'
+  category: Transportation
+  area: Alameda County
+  groups:
+    - disability
+  description: DART (Dial-A-Ride Transit) is FAST's paratransit service for Fremont residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service within Fremont city limits
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+    - Personal care attendants ride free
+  how_to_get_it: |
+    1. Complete the DART paratransit application
+    2. Application available at fasttransit.org
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 510-574-2312
+  benefit: Door-to-door transit within Fremont
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://fasttransit.org/services/dart-paratransit-disabled-services/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - DART
+    - ADA
+    - fremont
+  lifeEvents:
+    - disability
+- id: tri-delta-paratransit
+  name: 'Tri Delta Transit: Paratransit'
+  category: Transportation
+  area: Contra Costa County
+  groups:
+    - disability
+  description: Tri Delta Transit provides ADA paratransit service for eastern Contra Costa County residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service in eastern Contra Costa (Antioch, Brentwood, Pittsburg, Oakley)
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Application at trideltatransit.com
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 925-754-6622
+  benefit: Door-to-door transit in eastern Contra Costa County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://trideltatransit.com/paratransit.aspx?filename=paraintro
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - antioch
+    - brentwood
+  lifeEvents:
+    - disability
+- id: westcat-paratransit
+  name: 'WestCAT: Paratransit'
+  category: Transportation
+  area: Contra Costa County
+  groups:
+    - disability
+  description: WestCAT provides ADA paratransit service for western Contra Costa County residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service in western Contra Costa (Pinole, Hercules, Rodeo, Crockett)
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Application at westcat.org
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 510-724-7993
+  benefit: Door-to-door transit in western Contra Costa County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://www.westcat.org/home/ServADAPara
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - pinole
+    - hercules
+  lifeEvents:
+    - disability
+- id: union-city-paratransit
+  name: 'Union City Transit: Paratransit'
+  category: Transportation
+  area: Alameda County
+  groups:
+    - disability
+  description: Union City Transit provides ADA paratransit service for Union City residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service within Union City
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Contact Union City Transit for application
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 510-675-5300
+  benefit: Door-to-door transit within Union City
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://www.unioncity.org/172/Paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - union city
+  lifeEvents:
+    - disability
+- id: soltrans-paratransit
+  name: 'SolTrans: Paratransit'
+  category: Transportation
+  area: Solano County
+  groups:
+    - disability
+  description: SolTrans provides ADA paratransit service for Vallejo and Benicia residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service in Vallejo and Benicia
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Application at soltrans.org
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-648-4666
+  benefit: Door-to-door transit in Vallejo and Benicia
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://soltrans.org/accessibility/ada-paratransit/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - vallejo
+    - benicia
+  lifeEvents:
+    - disability
+- id: napa-vine-paratransit
+  name: 'Vine Transit: Vine Go Paratransit'
+  category: Transportation
+  area: Napa County
+  groups:
+    - disability
+  description: Vine Go is Napa County's ADA paratransit service for residents who cannot use regular Vine bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service throughout Napa County
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the Vine Go eligibility application
+    2. Application at vinetransit.com
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-251-2800
+  benefit: Door-to-door transit throughout Napa County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://vinetransit.com/vine-go/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - Vine Go
+    - ADA
+    - napa
+  lifeEvents:
+    - disability
+- id: vacaville-city-coach-paratransit
+  name: 'City Coach: Paratransit'
+  category: Transportation
+  area: Solano County
+  groups:
+    - disability
+  description: City Coach provides door-to-door paratransit service for Vacaville residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service within Vacaville
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Application at citycoach.com
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-469-6520
+  benefit: Door-to-door transit within Vacaville
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: http://www.citycoach.com/door-to-door-paratransit/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - vacaville
+  lifeEvents:
+    - disability
+- id: santa-rosa-paratransit
+  name: 'Santa Rosa CityBus: Paratransit'
+  category: Transportation
+  area: Sonoma County
+  groups:
+    - disability
+  description: Santa Rosa CityBus provides ADA paratransit service for Santa Rosa residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service within Santa Rosa
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Contact Santa Rosa CityBus for application
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-543-3333
+  benefit: Door-to-door transit within Santa Rosa
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://srcity.org/1696/Paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - santa rosa
+  lifeEvents:
+    - disability
+- id: sonoma-county-paratransit
+  name: 'Sonoma County Transit: Paratransit'
+  category: Transportation
+  area: Sonoma County
+  groups:
+    - disability
+  description: Sonoma County Transit provides ADA paratransit service for Sonoma County residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service throughout Sonoma County
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Application at sctransit.com
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-585-7516
+  benefit: Door-to-door transit throughout Sonoma County
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: http://sctransit.com/paratransit/
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - sonoma
+  lifeEvents:
+    - disability
+- id: petaluma-paratransit
+  name: 'Petaluma Transit: Paratransit'
+  category: Transportation
+  area: Sonoma County
+  groups:
+    - disability
+  description: Petaluma Transit provides ADA paratransit service for Petaluma residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service within Petaluma
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Contact Petaluma Transit for application
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-778-4460
+  benefit: Door-to-door transit within Petaluma
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://transit.cityofpetaluma.net/?s=paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - petaluma
+  lifeEvents:
+    - disability
+- id: rio-vista-paratransit
+  name: 'Rio Vista Delta Breeze: Paratransit'
+  category: Transportation
+  area: Solano County
+  groups:
+    - disability
+  description: Rio Vista Delta Breeze provides ADA paratransit service for Rio Vista residents who cannot use regular bus service due to a disability.
+  what_they_offer: |
+    - Door-to-door shared ride service
+    - Service within Rio Vista
+    - Advance reservations required
+    - Wheelchair accessible vehicles
+  how_to_get_it: |
+    1. Complete the paratransit eligibility application
+    2. Contact Delta Breeze for application
+    3. Assessment may be required
+    4. Once certified, schedule rides by phone
+  phone: 707-374-2878
+  benefit: Door-to-door transit within Rio Vista
+  how_to_use: Apply for eligibility; schedule rides by phone
+  timeframe: Ongoing
+  link: https://www.riovistacity.com/deltabreeze/page/ada-paratransit
+  link_text: Apply
+  verified_date: '2026-01-10'
+  keywords:
+    - paratransit
+    - ADA
+    - rio vista
+  lifeEvents:
+    - disability
