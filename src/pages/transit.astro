@@ -524,8 +524,10 @@ const agencyLinks: Record<string, { website: string; alerts: string; fares: stri
       const status = document.getElementById('alerts-status');
 
       try {
-        // Fetch alerts from our Azure Function proxy
-        const response = await fetch('/api/transit-alerts');
+        // Fetch alerts from Azure Function
+        const response = await fetch(
+          'https://baytides-integrity.azurewebsites.net/api/transit-alerts'
+        );
 
         if (!response.ok) {
           throw new Error('Failed to fetch alerts');
