@@ -29,7 +29,7 @@ const TEST_POINTS = [
   // US 101 - Marin side
   { name: 'US 101 at Golden Gate Bridge (Marin)', lat: 37.8324, lng: -122.4795, route: 101 },
   // US 101 - SFO area
-  { name: 'US 101 at SFO', lat: 37.6213, lng: -122.3790, route: 101 },
+  { name: 'US 101 at SFO', lat: 37.6213, lng: -122.379, route: 101 },
   // US 101 - San Jose
   { name: 'US 101 at San Jose', lat: 37.3382, lng: -121.8863, route: 101 },
   // I-80 - Bay Bridge (SF side)
@@ -41,11 +41,11 @@ const TEST_POINTS = [
   // I-580 - Castro Valley
   { name: 'I-580 Castro Valley', lat: 37.6941, lng: -122.0827, route: 580 },
   // I-680 - Walnut Creek
-  { name: 'I-680 Walnut Creek', lat: 37.9063, lng: -122.0650, route: 680 },
+  { name: 'I-680 Walnut Creek', lat: 37.9063, lng: -122.065, route: 680 },
   // I-880 - Oakland
-  { name: 'I-880 Oakland', lat: 37.7584, lng: -122.1960, route: 880 },
+  { name: 'I-880 Oakland', lat: 37.7584, lng: -122.196, route: 880 },
   // SR 92 - San Mateo Bridge
-  { name: 'SR 92 San Mateo Bridge', lat: 37.5800, lng: -122.2500, route: 92 },
+  { name: 'SR 92 San Mateo Bridge', lat: 37.58, lng: -122.25, route: 92 },
   // SR 84 - Dumbarton Bridge
   { name: 'SR 84 Dumbarton Bridge', lat: 37.5063, lng: -122.1171, route: 84 },
 ];
@@ -216,22 +216,21 @@ async function main() {
 
     if (caltransData) {
       // Filter features for this route
-      const routeFeatures = caltransData.features.filter(
-        (f) => f.properties.route === point.route
-      );
+      const routeFeatures = caltransData.features.filter((f) => f.properties.route === point.route);
 
       if (routeFeatures.length > 0) {
         caltransDistance = distanceToRoute(point.lat, point.lng, routeFeatures);
       }
     }
 
-    const status = caltransDistance !== null
-      ? caltransDistance < 100
-        ? '✓'
-        : caltransDistance < 500
-          ? '⚠'
-          : '✗'
-      : '?';
+    const status =
+      caltransDistance !== null
+        ? caltransDistance < 100
+          ? '✓'
+          : caltransDistance < 500
+            ? '⚠'
+            : '✗'
+        : '?';
 
     const distStr = caltransDistance !== null ? `${Math.round(caltransDistance)}m` : 'N/A';
 
