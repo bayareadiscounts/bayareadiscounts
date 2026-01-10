@@ -35,6 +35,7 @@ jobs:
         run: npm run build
         env:
           PUBLIC_PMTILES_URL: ${{ secrets.PUBLIC_PMTILES_URL }}
+          PUBLIC_AZURE_MAPS_KEY: ${{ secrets.PUBLIC_AZURE_MAPS_KEY }}
 
       - name: Sync programs to Azure AI Search
         run: node scripts/sync-search-index.cjs

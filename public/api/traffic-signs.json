@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": "2026-01-10T20:39:35.342Z",
+    "generated": "2026-01-10T22:00:03.322Z",
     "source": "Caltrans CWWP2 - District 4 CMS",
     "count": 189
   },
@@ -39,7 +39,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HWY 1      9 MIN | GG BRIDGE 13 MIN | BERKELEY  18 MIN",
+        "message": "HWY 1      9 MIN | GG BRIDGE 15 MIN | BERKELEY  18 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -281,7 +281,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SFO ARPT   8 MIN | SF DWNTWN 26 MIN | HAYWARD   13 MIN",
+        "message": "SFO ARPT  14 MIN | SF DWNTWN 32 MIN | HAYWARD   22 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -325,7 +325,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SFO ARPT  18 MIN | SAN MATEO 14 MIN | FREMONT   15 MIN",
+        "message": "SFO ARPT  21 MIN | SAN MATEO 18 MIN | FREMONT   17 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -346,8 +346,8 @@
         "route": "US-101",
         "direction": "South",
         "inService": true,
-        "display": "Blank",
-        "message": null,
+        "display": "1 Page (Normal)",
+        "message": "SJ ARPT   11 MIN | MILPITAS  12 MIN | LOS GATOS 20 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -435,7 +435,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SJ STATE  14 MIN | CUPERTINO 23 MIN | S101 / 85 16 MIN",
+        "message": "SJ STATE  10 MIN | CUPERTINO 19 MIN | S101 / 85 18 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -501,7 +501,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "LOS GATOS  5 MIN | SANTA CRZ 25 MIN | MORG HILL 18 MIN",
+        "message": "LOS GATOS  7 MIN | SANTA CRZ 29 MIN | MORG HILL 18 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -545,7 +545,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "OAKLAND    9 MIN | SF DWNTWN 26 MIN | OAK ARPT  15 MIN",
+        "message": "OAKLAND    9 MIN | SF DWNTWN 30 MIN | OAK ARPT  17 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -589,7 +589,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SFO ARPT  11 MIN | RTE 92    17 MIN | DALY CITY 11 MIN",
+        "message": "SFO ARPT  11 MIN | RTE 92    19 MIN | DALY CITY 12 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -633,7 +633,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "MILPITAS  17 MIN | SJ ARPT   24 MIN | MENLO PRK 11 MIN",
+        "message": "MILPITAS  16 MIN | SJ ARPT   22 MIN | MENLO PRK 11 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -765,7 +765,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SUMMIT RD  7 MIN | SCOTTS VY 15 MIN | SANTA CRZ 22 MIN",
+        "message": "SUMMIT RD  9 MIN | SCOTTS VY 15 MIN | SANTA CRZ 22 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1051,7 +1051,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HWY 4      7 MIN | BERKELEY  21 MIN | CONCORD   14 MIN",
+        "message": "HWY 4      7 MIN | BERKELEY  19 MIN | CONCORD   16 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1073,7 +1073,7 @@
         "direction": "East",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "VACAVILLE 18 MIN | SACRAMNTO 47 MIN | SEARS PT  19 MIN",
+        "message": "VACAVILLE 18 MIN | SACRAMNTO 47 MIN | SEARS PT  17 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1227,7 +1227,7 @@
         "direction": "East",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "FREMONT   13 MIN | HAYWARD   16 MIN | MILPITAS  22 MIN",
+        "message": "FREMONT   14 MIN | HAYWARD   17 MIN | MILPITAS  22 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1447,7 +1447,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SF DWNTWN 19 MIN | SFO ARPT  33 MIN | OAK ARPT  17 MIN",
+        "message": "SF DWNTWN 22 MIN | SFO ARPT  36 MIN | OAK ARPT  17 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1491,7 +1491,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HALF MOON 19 MIN | DALY CITY 16 MIN | HWY 84     9 MIN",
+        "message": "HALF MOON 17 MIN | DALY CITY 16 MIN | HWY 84     9 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1535,7 +1535,7 @@
         "direction": "South",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "S880/280  11 MIN | LOS GATOS 18 MIN | CUPERTINO 18 MIN",
+        "message": "S880/280   6 MIN | LOS GATOS 14 MIN | CUPERTINO 12 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1601,7 +1601,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "FREMONT    8 MIN | HAYWARD   15 MIN | PALO ALTO 24 MIN",
+        "message": "FREMONT    8 MIN | HAYWARD   17 MIN | PALO ALTO 24 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1623,7 +1623,7 @@
         "direction": "East",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "CARQ BRDG 16 MIN | FAIRFIELD 31 MIN | NOVATO    24 MIN",
+        "message": "CARQ BRDG 14 MIN | FAIRFIELD 29 MIN | NOVATO    22 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1645,7 +1645,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SF DWNTWN 10 MIN | OAKLAND   20 MIN | BERKELEY  25 MIN",
+        "message": "SF DWNTWN 12 MIN | OAKLAND   22 MIN | BERKELEY  25 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1755,7 +1755,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HALF MOON 24 MIN | SFO ARPT   9 MIN | PALO ALTO 14 MIN",
+        "message": "HALF MOON 22 MIN | SFO ARPT   9 MIN | PALO ALTO 14 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1777,7 +1777,7 @@
         "direction": "East",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HAYWARD   10 MIN | CASTRO VY 28 MIN | FREMONT   26 MIN",
+        "message": "HAYWARD   10 MIN | CASTRO VY 26 MIN | FREMONT   24 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1865,7 +1865,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "BERKELEY  12 MIN | SF DWNTWN 35 MIN | OAKLAND   22 MIN",
+        "message": "BERKELEY  10 MIN | SF DWNTWN 37 MIN | OAKLAND   18 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -1997,7 +1997,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SF DWNTWN 22 MIN | SFO ARPT  36 MIN | OAK ARPT  10 MIN",
+        "message": "SF DWNTWN 25 MIN | SFO ARPT  38 MIN | OAK ARPT  13 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2041,7 +2041,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "SF DWNTWN 22 MIN | CARQ BRDG 27 MIN | WALNUT CR 16 MIN",
+        "message": "SF DWNTWN 23 MIN | CARQ BRDG 28 MIN | WALNUT CR 16 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2063,7 +2063,7 @@
         "direction": "East",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "WALNUT CR  8 MIN | DUBLIN    22 MIN | ANTIOCH   15 MIN",
+        "message": "WALNUT CR  9 MIN | DUBLIN    23 MIN | ANTIOCH   14 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2151,7 +2151,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "LIVERMORE 14 MIN | DUBLIN    22 MIN | CASTRO VY 30 MIN",
+        "message": "LIVERMORE 14 MIN | DUBLIN    20 MIN | CASTRO VY 30 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2173,7 +2173,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "LIVERMORE 14 MIN | DUBLIN    21 MIN | CASTRO VY 29 MIN",
+        "message": "LIVERMORE 14 MIN | DUBLIN    20 MIN | CASTRO VY 29 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2283,7 +2283,7 @@
         "direction": "East",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "DUBLIN    14 MIN | LIVERMORE 19 MIN | SM BRIDGE 20 MIN",
+        "message": "DUBLIN    14 MIN | LIVERMORE 19 MIN | SM BRIDGE 22 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2305,7 +2305,7 @@
         "direction": "West",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HWY 13    10 MIN | RTE 24    15 MIN | SM BRIDGE 15 MIN",
+        "message": "HWY 13    13 MIN | RTE 24    17 MIN | SM BRIDGE 16 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -2744,8 +2744,8 @@
         "route": "I-680",
         "direction": "North",
         "inService": true,
-        "display": "1 Page (Normal)",
-        "message": "680/80/12 13 MIN | VACAVILLE 22 MIN | VALLEJO    8 MIN",
+        "display": "Blank",
+        "message": null,
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -3207,7 +3207,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "JCT 680   11 MIN | MILPITAS  19 MIN | PALO ALTO 34 MIN",
+        "message": "DEBRIS N-101 | BEFORE JCT 280 | RIGHT LANE CLSD",
         "updated": "2026-01-10"
       },
       "geometry": {
@@ -3273,7 +3273,7 @@
         "direction": "North",
         "inService": true,
         "display": "1 Page (Normal)",
-        "message": "HWY 84    10 MIN | HWY 580   17 MIN | WALNUT CK 30 MIN",
+        "message": "HWY 84    10 MIN | HWY 580   18 MIN | WALNUT CK 31 MIN",
         "updated": "2026-01-10"
       },
       "geometry": {

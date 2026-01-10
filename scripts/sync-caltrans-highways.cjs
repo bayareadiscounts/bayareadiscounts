@@ -20,7 +20,9 @@ const CALTRANS_API =
   'https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHhighway/SHN_Lines/FeatureServer/0/query';
 
 // Bay Area counties (Caltrans county codes)
-const BAY_AREA_COUNTIES = ['ALA', 'CC', 'MAR', 'NAP', 'SF', 'SM', 'SCL', 'SOL', 'SON'];
+// ALA=Alameda, CC=Contra Costa, MRN=Marin, NAP=Napa, SF=San Francisco
+// SM=San Mateo, SCL=Santa Clara, SOL=Solano, SON=Sonoma
+const BAY_AREA_COUNTIES = ['ALA', 'CC', 'MRN', 'NAP', 'SF', 'SM', 'SCL', 'SOL', 'SON'];
 
 // Major Bay Area highways to fetch
 const BAY_AREA_ROUTES = [

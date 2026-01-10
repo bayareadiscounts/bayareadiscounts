@@ -1,9 +1,9 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": "2026-01-10T20:39:35.343Z",
+    "generated": "2026-01-10T22:00:03.324Z",
     "source": "Caltrans CWWP2 - District 4 LCS",
-    "count": 1024,
+    "count": 1022,
     "note": "Includes closures for next 7 days"
   },
   "features": [
@@ -22410,34 +22410,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "M17CA-0001-2026-01-10-08:01:00",
-        "closureId": "M17CA",
-        "route": "SR-17",
-        "direction": "North",
-        "county": "Santa Clara",
-        "beginLocation": "Scrz/Scl County Line",
-        "endLocation": "Summit Rd (Route Sr/35)",
-        "typeOfClosure": "Lane",
-        "typeOfWork": "Guardrail Repair",
-        "lanesClosed": 2,
-        "totalLanes": 2,
-        "startDate": "2026-01-10",
-        "startTime": "08:01:00",
-        "endDate": "2026-01-10",
-        "endTime": "13:01:00",
-        "estimatedDelay": "Not Reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.9846475,
-          37.1445445
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "M24IA-0001-2026-01-13-09:01:00",
         "closureId": "M24IA",
         "route": "SR-24",
@@ -28396,34 +28368,6 @@
         "coordinates": [
           -122.301677,
           37.9935
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "T101JA-0001-2026-01-10-11:01:00",
-        "closureId": "T101JA",
-        "route": "US-101",
-        "direction": "South",
-        "county": "San Mateo",
-        "beginLocation": "Route 92",
-        "endLocation": "Sf/Sm County Line",
-        "typeOfClosure": "Moving",
-        "typeOfWork": "Vegetation Spraying",
-        "lanesClosed": 1,
-        "totalLanes": 5,
-        "startDate": "2026-01-10",
-        "startTime": "11:01:00",
-        "endDate": "2026-01-10",
-        "endTime": "13:30:00",
-        "estimatedDelay": "Not Reported"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.3454965,
-          37.630667
         ]
       }
     },

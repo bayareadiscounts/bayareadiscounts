@@ -6,12 +6,16 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 const pmtilesUrl =
   import.meta.env.PUBLIC_PMTILES_URL ||
   'https://baytidesstorage.blob.core.windows.net/tiles/bayarea.pmtiles';
+
+// Get Azure Maps key from environment variable (PUBLIC_ prefix exposes to client)
+const azureMapsKey = import.meta.env.PUBLIC_AZURE_MAPS_KEY || '';
 ---
 
 <BaseLayout title="Map" description="Explore Bay Area resources on an interactive map">
-  <!-- Pass PMTiles URL to client-side script -->
-  <script is:inline define:vars={{ pmtilesUrl }}>
+  <!-- Pass environment variables to client-side script -->
+  <script is:inline define:vars={{ pmtilesUrl, azureMapsKey }}>
     window.__PMTILES_URL__ = pmtilesUrl;
+    window.__AZURE_MAPS_KEY__ = azureMapsKey;
     // Detect if accessing via Tor (.onion)
     window.__IS_ONION__ = window.location.hostname.endsWith('.onion');
   </script>
@@ -291,6 +295,22 @@ const pmtilesUrl =
               >Traffic</span
             >
             <div class="space-y-1">
+              <label
+                class="flex items-center gap-2 cursor-pointer py-1 px-1 rounded hover:bg-neutral-100 dark:hover:bg-neutral-700"
+              >
+                <input
+                  type="checkbox"
+                  id="traffic-flow"
+                  class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500"
+                />
+                <span
+                  class="w-3 h-3 rounded-sm flex-shrink-0"
+                  style="background: linear-gradient(90deg, #22c55e 0%, #eab308 50%, #ef4444 100%);"
+                ></span>
+                <span class="text-sm text-neutral-700 dark:text-neutral-300 flex-1"
+                  >Traffic Flow</span
+                >
+              </label>
               <label
                 class="flex items-center gap-2 cursor-pointer py-1 px-1 rounded hover:bg-neutral-100 dark:hover:bg-neutral-700"
               >
@@ -1249,13 +1269,16 @@ const pmtilesUrl =
     layers: [
       // Background
       { id: 'background', type: 'background' as const, paint: { 'background-color': '#f8fafc' } },
-      // Water
+      // Water - with reduced opacity at high zoom to prevent covering roads/bridges
       {
         id: 'water',
         type: 'fill' as const,
         source: 'protomaps',
         'source-layer': 'water',
-        paint: { 'fill-color': '#a5d8ff' },
+        paint: {
+          'fill-color': '#a5d8ff',
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], 10, 1, 14, 0.85, 16, 0.7],
+        },
       },
       // Land use - parks and green spaces
       {
@@ -1494,13 +1517,16 @@ const pmtilesUrl =
     layers: [
       // Background
       { id: 'background', type: 'background' as const, paint: { 'background-color': '#1a1a2e' } },
-      // Water
+      // Water - with reduced opacity at high zoom to prevent covering roads/bridges
       {
         id: 'water',
         type: 'fill' as const,
         source: 'protomaps',
         'source-layer': 'water',
-        paint: { 'fill-color': '#16213e' },
+        paint: {
+          'fill-color': '#16213e',
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], 10, 1, 14, 0.85, 16, 0.7],
+        },
       },
       // Land use - parks
       {
@@ -2654,6 +2680,7 @@ const pmtilesUrl =
         function updateLayersCount() {
           const transitCount = activeOperators.size;
           const trafficCount = [
+            trafficFlowCheckbox?.checked,
             trafficIncidentsCheckbox?.checked,
             trafficClosuresCheckbox?.checked,
             trafficCamerasCheckbox?.checked,
@@ -2725,6 +2752,11 @@ const pmtilesUrl =
           'traffic-cameras'
         ) as HTMLInputElement;
         const trafficVistasCheckbox = document.getElementById('traffic-vistas') as HTMLInputElement;
+        const trafficFlowCheckbox = document.getElementById('traffic-flow') as HTMLInputElement;
+
+        // Azure Maps Traffic Flow API key (passed from server-side)
+        const AZURE_MAPS_KEY = (window as any).__AZURE_MAPS_KEY__ || '';
+        let trafficFlowLayerAdded = false;
 
         // Traffic data cache
         let trafficEventsData: any = null;
@@ -2970,6 +3002,60 @@ const pmtilesUrl =
           trafficLayersAdded = true;
         }
 
+        // Add Azure Maps traffic flow layer
+        function addTrafficFlowLayer() {
+          if (trafficFlowLayerAdded) return;
+
+          // Skip if Azure Maps key is not configured
+          if (!AZURE_MAPS_KEY) {
+            console.warn('Traffic flow unavailable: PUBLIC_AZURE_MAPS_KEY not configured');
+            return;
+          }
+
+          // Add Azure Maps traffic flow tile source
+          map.addSource('azure-traffic-flow', {
+            type: 'raster',
+            tiles: [
+              `https://atlas.microsoft.com/traffic/flow/tile/png?api-version=1.0&style=relative&zoom={z}&x={x}&y={y}&subscription-key=${AZURE_MAPS_KEY}`,
+            ],
+            tileSize: 256,
+            attribution: '© Microsoft Azure Maps',
+          });
+
+          // Add traffic flow layer (insert below labels but above roads)
+          map.addLayer(
+            {
+              id: 'traffic-flow',
+              type: 'raster',
+              source: 'azure-traffic-flow',
+              paint: {
+                'raster-opacity': 0.7,
+              },
+              layout: {
+                visibility: 'none',
+              },
+            },
+            'road-labels-highway'
+          ); // Insert below road labels
+
+          trafficFlowLayerAdded = true;
+        }
+
+        // Update traffic flow layer visibility
+        function updateTrafficFlowLayer() {
+          if (!trafficFlowLayerAdded) {
+            addTrafficFlowLayer();
+          }
+
+          const flowVisible = trafficFlowCheckbox?.checked;
+          if (map.getLayer('traffic-flow')) {
+            map.setLayoutProperty('traffic-flow', 'visibility', flowVisible ? 'visible' : 'none');
+          }
+
+          // Update combined layers count badge
+          updateLayersCount();
+        }
+
         // Update traffic layer visibility
         function updateTrafficLayers() {
           if (!trafficLayersAdded) return;
@@ -3009,6 +3095,9 @@ const pmtilesUrl =
         ].forEach((cb) => {
           cb?.addEventListener('change', updateTrafficLayers);
         });
+
+        // Traffic flow checkbox handler (separate since it uses Azure Maps tiles)
+        trafficFlowCheckbox?.addEventListener('change', updateTrafficFlowLayer);
       } catch (error) {
         console.error('Error loading programs:', error);
         if (loadingEl) {

@@ -23,31 +23,32 @@ const AZURE_MAPS_API = 'https://atlas.microsoft.com';
 const CALTRANS_FILE = path.join(__dirname, '..', 'public', 'api', 'caltrans-highways.json');
 
 // Test points for major highways (known locations)
+// Coordinates taken directly from Caltrans SHN_Lines geometry data
 const TEST_POINTS = [
-  // US 101 - Golden Gate Bridge approach (SF side)
-  { name: 'US 101 at Golden Gate Bridge (SF)', lat: 37.8076, lng: -122.4752, route: 101 },
-  // US 101 - Marin side
-  { name: 'US 101 at Golden Gate Bridge (Marin)', lat: 37.8324, lng: -122.4795, route: 101 },
+  // US 101 - Golden Gate Bridge (from Caltrans toll bridge data)
+  { name: 'US 101 at Golden Gate Bridge', lat: 37.80816667, lng: -122.4764, route: 101 },
+  // US 101 - Marin (Alexander Ave area)
+  { name: 'US 101 at Alexander Ave (Marin)', lat: 37.8325, lng: -122.478, route: 101 },
   // US 101 - SFO area
-  { name: 'US 101 at SFO', lat: 37.6213, lng: -122.379, route: 101 },
+  { name: 'US 101 at SFO', lat: 37.6005, lng: -122.3859, route: 101 },
   // US 101 - San Jose
-  { name: 'US 101 at San Jose', lat: 37.3382, lng: -121.8863, route: 101 },
-  // I-80 - Bay Bridge (SF side)
+  { name: 'US 101 at San Jose', lat: 37.3697, lng: -121.9228, route: 101 },
+  // I-80 - Bay Bridge (from Caltrans toll bridge data)
   { name: 'I-80 at Bay Bridge (SF)', lat: 37.7983, lng: -122.3778, route: 80 },
   // I-80 - Bay Bridge (Oakland side)
-  { name: 'I-80 at Bay Bridge (Oakland)', lat: 37.8165, lng: -122.3553, route: 80 },
-  // I-280 - San Francisco
-  { name: 'I-280 in SF', lat: 37.7285, lng: -122.4506, route: 280 },
-  // I-580 - Castro Valley
-  { name: 'I-580 Castro Valley', lat: 37.6941, lng: -122.0827, route: 580 },
-  // I-680 - Walnut Creek
-  { name: 'I-680 Walnut Creek', lat: 37.9063, lng: -122.065, route: 680 },
-  // I-880 - Oakland
-  { name: 'I-880 Oakland', lat: 37.7584, lng: -122.196, route: 880 },
-  // SR 92 - San Mateo Bridge
-  { name: 'SR 92 San Mateo Bridge', lat: 37.58, lng: -122.25, route: 92 },
-  // SR 84 - Dumbarton Bridge
-  { name: 'SR 84 Dumbarton Bridge', lat: 37.5063, lng: -122.1171, route: 84 },
+  { name: 'I-80 at Bay Bridge (Oakland)', lat: 37.8118, lng: -122.3594, route: 80 },
+  // I-280 - San Francisco (from Caltrans SHN geometry)
+  { name: 'I-280 in SF', lat: 37.771606, lng: -122.398199, route: 280 },
+  // I-580 - Alameda County (from Caltrans SHN geometry)
+  { name: 'I-580 Alameda', lat: 37.89528, lng: -122.310267, route: 580 },
+  // I-680 - Walnut Creek area (from Caltrans SHN geometry)
+  { name: 'I-680 Walnut Creek', lat: 37.900687, lng: -122.070805, route: 680 },
+  // I-880 - Oakland (from Caltrans SHN geometry)
+  { name: 'I-880 Oakland', lat: 37.802879, lng: -122.300899, route: 880 },
+  // SR 92 - San Mateo Bridge (from Caltrans toll bridge data)
+  { name: 'SR 92 San Mateo Bridge', lat: 37.57355278, lng: -122.26235, route: 92 },
+  // SR 84 - Dumbarton Bridge (from Caltrans toll bridge data)
+  { name: 'SR 84 Dumbarton Bridge', lat: 37.49915, lng: -122.12838, route: 84 },
 ];
 
 /**

@@ -1,9 +1,9 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": "2026-01-10T20:39:35.339Z",
+    "generated": "2026-01-10T22:00:03.318Z",
     "source": "511.org Traffic Events API",
-    "count": 18
+    "count": 20
   },
   "features": [
     {
@@ -265,7 +265,7 @@
         "severity": "Unknown",
         "status": "ACTIVE",
         "created": "2026-01-06T03:11Z",
-        "updated": "2026-01-10T20:12Z",
+        "updated": "2026-01-10T21:22Z",
         "roads": [
           {
             "name": "CA-116",
@@ -291,252 +291,6 @@
         "coordinates": [
           -123.022584490165,
           38.4771116440483
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1444924",
-        "headline": "CHP : Traffic Hazard on I-880 Northbound exiting at W Tennyson Rd (Hayward). Off Ramp blocked. Expect delays.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Traffic Hazard"
-        ],
-        "severity": "Major",
-        "status": "ACTIVE",
-        "created": "2026-01-10T14:31Z",
-        "updated": "2026-01-10T20:12Z",
-        "roads": [
-          {
-            "name": "I-880 N",
-            "from": "W Tennyson Rd",
-            "direction": "Northbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Off Ramp",
-            "+lane_status": "blocked",
-            "+road_advisory": "Expect delays",
-            "+article": "exiting at"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -122.081243,
-          37.627371
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1444940",
-        "headline": "CHP : Fog on I-680 Northbound and Southbound at Benicia Bridge (Benicia). Lanes affected. Traffic advisory in effect.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Fog"
-        ],
-        "severity": "Major",
-        "status": "ACTIVE",
-        "created": "2026-01-10T16:29Z",
-        "updated": "2026-01-10T19:03Z",
-        "roads": [
-          {
-            "name": "I-680 N",
-            "from": "Benicia Bridge",
-            "direction": "Northbound and Southbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Lanes",
-            "+lane_status": "affected",
-            "+road_advisory": "Traffic advisory in effect",
-            "+article": "at"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -122.123139968262,
-          38.0427620205391
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1444961",
-        "headline": "CHP : Traffic Hazard on CA-113 Northbound at Hastings Rd (Dixon). Lane affected. Expect delays.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Traffic Hazard"
-        ],
-        "severity": "Minor",
-        "status": "ACTIVE",
-        "created": "2026-01-10T17:35Z",
-        "updated": "2026-01-10T17:54Z",
-        "roads": [
-          {
-            "name": "CA-113 N",
-            "from": "Hastings Rd",
-            "direction": "Northbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Lane",
-            "+lane_status": "affected",
-            "+road_advisory": "Expect delays",
-            "+article": "at"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -121.805304,
-          38.285237
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1445008",
-        "headline": "CHP : Disabled vehicle on I-580 Eastbound west of Foothill Rd (Dublin). Center Divider affected. Expect delays.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Disabled vehicle"
-        ],
-        "severity": "Minor",
-        "status": "ACTIVE",
-        "created": "2026-01-10T20:18Z",
-        "updated": "2026-01-10T20:20Z",
-        "roads": [
-          {
-            "name": "I-580 E",
-            "from": "Foothill Rd",
-            "direction": "Eastbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Center Divider",
-            "+lane_status": "affected",
-            "+road_advisory": "Expect delays",
-            "+article": "west of"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -121.929057,
-          37.699354
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1445009",
-        "headline": "CHP : Traffic Hazard on I-680 Southbound south of Scott Creek Rd (Fremont). Lane affected. Expect delays.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Traffic Hazard"
-        ],
-        "severity": "Moderate",
-        "status": "ACTIVE",
-        "created": "2026-01-10T20:22Z",
-        "updated": "2026-01-10T20:23Z",
-        "roads": [
-          {
-            "name": "I-680 S",
-            "from": "Scott Creek Rd",
-            "direction": "Southbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Lane",
-            "+lane_status": "affected",
-            "+road_advisory": "Expect delays",
-            "+article": "south of"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -121.90353,
-          37.463575
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1445011",
-        "headline": "CHP : Traffic Hazard on US-101 Northbound south of Alum Rock Ave (San Jose). Lane affected. Expect delays.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Traffic Hazard"
-        ],
-        "severity": "Moderate",
-        "status": "ACTIVE",
-        "created": "2026-01-10T20:27Z",
-        "updated": "2026-01-10T20:27Z",
-        "roads": [
-          {
-            "name": "US-101 N",
-            "from": "Alum Rock Ave",
-            "direction": "Northbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Lane",
-            "+lane_status": "affected",
-            "+road_advisory": "Expect delays",
-            "+article": "south of"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -121.858883,
-          37.346961
         ]
       }
     },
@@ -583,6 +337,375 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "511.org/1445026",
+        "headline": "CHP : Traffic Hazard on I-880 Southbound north of Industrial Pky W (Hayward). Right lane affected. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Hazard"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:22Z",
+        "updated": "2026-01-10T21:23Z",
+        "roads": [
+          {
+            "name": "I-880 S",
+            "from": "Industrial Pky W",
+            "direction": "Southbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Right lane",
+            "+lane_status": "affected",
+            "+road_advisory": "Expect delays",
+            "+article": "north of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -122.077315,
+          37.621437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445031",
+        "headline": "CHP : Traffic Hazard on I-580 Westbound west of I-680 N (Pleasanton). Right lanes blocked. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Hazard"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:30Z",
+        "updated": "2026-01-10T21:31Z",
+        "roads": [
+          {
+            "name": "I-580 W",
+            "from": "I-680 N",
+            "direction": "Westbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Right lanes",
+            "+lane_status": "blocked",
+            "+road_advisory": "Expect delays",
+            "+article": "west of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -121.917091,
+          37.701987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445033",
+        "headline": "CHP : Traffic Collision on CA-92 Westbound east of Mariners Island Blvd (San Mateo). Lane affected. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Collision"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:34Z",
+        "updated": "2026-01-10T21:36Z",
+        "roads": [
+          {
+            "name": "CA-92 W",
+            "from": "Mariners Island Blvd",
+            "direction": "Westbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Lane",
+            "+lane_status": "affected",
+            "+road_advisory": "Expect delays",
+            "+article": "east of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -122.280445,
+          37.559267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445034",
+        "headline": "CHP : Disabled vehicle on I-880 Southbound north of Mowry Ave (Fremont). Right lane affected. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Disabled vehicle"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:36Z",
+        "updated": "2026-01-10T21:48Z",
+        "roads": [
+          {
+            "name": "I-880 S",
+            "from": "Mowry Ave",
+            "direction": "Southbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Right lane",
+            "+lane_status": "affected",
+            "+road_advisory": "Expect delays",
+            "+article": "north of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -122.006489,
+          37.532001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445036",
+        "headline": "CHP : Traffic Hazard on I-280 Northbound north of CA-17 S (San Jose). Right lane affected. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Hazard"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:42Z",
+        "updated": "2026-01-10T21:50Z",
+        "roads": [
+          {
+            "name": "I-280 N",
+            "from": "CA-17 S",
+            "direction": "Northbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Right lane",
+            "+lane_status": "affected",
+            "+road_advisory": "Expect delays",
+            "+article": "north of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -121.940277,
+          37.317371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445038",
+        "headline": "CHP : Traffic Hazard on CA-4 Westbound east of Laurel Rd (Antioch). Left lanes affected. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Hazard"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:45Z",
+        "updated": "2026-01-10T21:51Z",
+        "roads": [
+          {
+            "name": "CA-4 W",
+            "from": "Laurel Rd",
+            "direction": "Westbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Left lanes",
+            "+lane_status": "affected",
+            "+road_advisory": "Expect delays",
+            "+article": "east of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -121.741915,
+          37.976136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445039",
+        "headline": "CHP : Traffic Hazard on US-101 Southbound north of I-880 S (San Jose). Lane blocked. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Hazard"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:48Z",
+        "updated": "2026-01-10T21:52Z",
+        "roads": [
+          {
+            "name": "US-101 S",
+            "from": "I-880 S",
+            "direction": "Southbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "Lane",
+            "+lane_status": "blocked",
+            "+road_advisory": "Expect delays",
+            "+article": "north of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -121.901972,
+          37.364098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445028",
+        "headline": "CHP : Traffic Collision on CA-84 Eastbound west of I-880 N (Fremont). 2nd lane from the left blocked. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Collision"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:23Z",
+        "updated": "2026-01-10T21:50Z",
+        "roads": [
+          {
+            "name": "CA-84 E",
+            "from": "I-880 N",
+            "direction": "Eastbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "2nd lane from the left",
+            "+lane_status": "blocked",
+            "+road_advisory": "Expect delays",
+            "+article": "west of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -122.037808,
+          37.562737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "511.org/1445041",
+        "headline": "CHP : Traffic Hazard on CA-87 Northbound south of Almaden Expy (San Jose). 2nd lane from the left blocked. Expect delays.",
+        "type": "INCIDENT",
+        "subtypes": [
+          "Traffic Hazard"
+        ],
+        "severity": "Moderate",
+        "status": "ACTIVE",
+        "created": "2026-01-10T21:55Z",
+        "updated": "2026-01-10T21:56Z",
+        "roads": [
+          {
+            "name": "CA-87 N",
+            "from": "Almaden Expy",
+            "direction": "Northbound",
+            "state": "SOME_LANES_CLOSED",
+            "+lane_type": "2nd lane from the left",
+            "+lane_status": "blocked",
+            "+road_advisory": "Expect delays",
+            "+article": "south of"
+          }
+        ],
+        "source": "CHP"
+      },
+      "geometry": {
+        "type": "Point",
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+          }
+        },
+        "coordinates": [
+          -121.878779,
+          37.304487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "511.org/1444948",
         "headline": "Caltrans : Roadwork on CA-1 Southbound at Capistrano Rd (El Granada). Right shoulder closed until 3 PM. From 8:00 AM Saturday, January 10, 2026 to 3:00 PM Saturday, January 10, 2026.",
         "type": "CONSTRUCTION",
@@ -592,7 +715,7 @@
         "severity": "Unknown",
         "status": "ACTIVE",
         "created": "2026-01-10T16:53Z",
-        "updated": "2026-01-10T20:36Z",
+        "updated": "2026-01-10T21:56Z",
         "roads": [
           {
             "name": "CA-1 S",
@@ -633,7 +756,7 @@
         "severity": "Unknown",
         "status": "ACTIVE",
         "created": "2026-01-10T15:41Z",
-        "updated": "2026-01-10T20:36Z",
+        "updated": "2026-01-10T21:56Z",
         "roads": [
           {
             "name": "I-880 N",
@@ -665,26 +788,26 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "511.org/1445012",
-        "headline": "CHP : Traffic Hazard on I-680 Northbound at Gold Hill Rd (Fairfield). Lane affected. Expect delays.",
+        "id": "511.org/1445042",
+        "headline": "CHP : Residual delays on I-880 Southbound south of N 1ST St (San Jose). Right shoulder affected. Expect delays.",
         "type": "INCIDENT",
         "subtypes": [
-          "Traffic Hazard"
+          "Residual delays"
         ],
         "severity": "Moderate",
         "status": "ACTIVE",
-        "created": "2026-01-10T20:30Z",
-        "updated": "2026-01-10T20:39Z",
+        "created": "2026-01-10T21:57Z",
+        "updated": "2026-01-10T21:59Z",
         "roads": [
           {
-            "name": "I-680 N",
-            "from": "Gold Hill Rd",
-            "direction": "Northbound",
+            "name": "I-880 S",
+            "from": "N 1ST St",
+            "direction": "Southbound",
             "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Lane",
+            "+lane_type": "Right shoulder",
             "+lane_status": "affected",
             "+road_advisory": "Expect delays",
-            "+article": "at"
+            "+article": "south of"
           }
         ],
         "source": "CHP"
@@ -698,49 +821,8 @@
           }
         },
         "coordinates": [
-          -122.132282,
-          38.17938
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "511.org/1445013",
-        "headline": "CHP : Traffic Hazard on US-101 Northbound at Seminary Dr (Mill Valley). Lane affected. Expect delays.",
-        "type": "INCIDENT",
-        "subtypes": [
-          "Traffic Hazard"
-        ],
-        "severity": "Moderate",
-        "status": "ACTIVE",
-        "created": "2026-01-10T20:31Z",
-        "updated": "2026-01-10T20:39Z",
-        "roads": [
-          {
-            "name": "US-101 N",
-            "from": "Seminary Dr",
-            "direction": "Northbound",
-            "state": "SOME_LANES_CLOSED",
-            "+lane_type": "Lane",
-            "+lane_status": "affected",
-            "+road_advisory": "Expect delays",
-            "+article": "at"
-          }
-        ],
-        "source": "CHP"
-      },
-      "geometry": {
-        "type": "Point",
-        "crs": {
-          "type": "name",
-          "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-          }
-        },
-        "coordinates": [
-          -122.516577,
-          37.885375
+          -121.904718,
+          37.360843
         ]
       }
     }

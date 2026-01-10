@@ -312,13 +312,33 @@ function cmsToGeoJSON(signs) {
   };
 }
 
+// Bay Area bounding box for coordinate validation
+const BAY_AREA_BOUNDS = {
+  minLat: 36.8,
+  maxLat: 39.0,
+  minLng: -123.5,
+  maxLng: -121.0,
+};
+
+/**
+ * Check if coordinates are within Bay Area bounds
+ */
+function isInBayArea(lat, lng) {
+  return (
+    lat >= BAY_AREA_BOUNDS.minLat &&
+    lat <= BAY_AREA_BOUNDS.maxLat &&
+    lng >= BAY_AREA_BOUNDS.minLng &&
+    lng <= BAY_AREA_BOUNDS.maxLng
+  );
+}
+
 /**
  * Convert Lane Closures to GeoJSON
- * Only include active/upcoming closures
+ * Only include active/upcoming closures with valid coordinates
  */
 function lcsToGeoJSON(closures) {
   const now = new Date();
-  const weekFromNow = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+  let filteredCount = 0;
 
   const features = closures
     .filter((c) => c.lcs && c.lcs.location)
@@ -356,6 +376,12 @@ function lcsToGeoJSON(closures) {
         return null;
       }
 
+      // Validate coordinates are within Bay Area bounds
+      if (!isInBayArea(coordinates[1], coordinates[0])) {
+        filteredCount++;
+        return null;
+      }
+
       return {
         type: 'Feature',
         properties: {
@@ -383,6 +409,10 @@ function lcsToGeoJSON(closures) {
       };
     })
     .filter((f) => f !== null);
+
+  if (filteredCount > 0) {
+    console.log(`    (Filtered ${filteredCount} closures with invalid coordinates)`);
+  }
 
   return {
     type: 'FeatureCollection',
