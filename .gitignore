@@ -69,11 +69,9 @@ data-exports/
 baynavigator.code-workspace
 *.code-workspace
 
-# Duplicate files (macOS/backup artifacts)
-* 2
-* 2.*
-* 3
-* 3.*
+# Duplicate files (iCloud sync conflicts)
+*\ [0-9]*
+*\ [0-9].*
 
 # Flutter App (apps)
 apps/.dart_tool/
