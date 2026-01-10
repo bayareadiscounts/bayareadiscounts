@@ -22,13 +22,12 @@ const ferryAgencies = agencies.filter((a) => a.type === 'ferry');
 const busAgencies = agencies.filter((a) => a.type === 'bus');
 
 // Agency logo mappings (id -> SVG filename without extension)
+// Note: SM (SamTrans) and SC (VTA) removed due to font/rendering issues
 const agencyLogos: Record<string, string> = {
   BA: 'bart',
   CT: 'caltrain',
   SF: 'muni',
   AC: 'actransit',
-  SC: 'vta',
-  SM: 'samtrans',
   SA: 'smart',
   SB: 'sfbayferry',
   CE: 'ace',
