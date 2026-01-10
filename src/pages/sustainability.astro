@@ -892,14 +892,20 @@ const githubStats = {
           return num.toLocaleString();
         };
 
-        // Update usage stats
+        // Update usage stats (handle null values gracefully)
         const statCdnRequests = document.getElementById('stat-cdn-requests');
         const statAiQueries = document.getElementById('stat-ai-queries');
         const statCiRuns = document.getElementById('stat-ci-runs');
 
-        if (statCdnRequests) statCdnRequests.textContent = formatNumber(data.usage.cdnRequests);
-        if (statAiQueries) statAiQueries.textContent = formatNumber(data.usage.aiQueries);
-        if (statCiRuns) statCiRuns.textContent = formatNumber(data.usage.ciRuns);
+        if (statCdnRequests)
+          statCdnRequests.textContent =
+            data.usage.cdnRequests != null ? formatNumber(data.usage.cdnRequests) : '—';
+        if (statAiQueries)
+          statAiQueries.textContent =
+            data.usage.aiQueries != null ? formatNumber(data.usage.aiQueries) : '—';
+        if (statCiRuns)
+          statCiRuns.textContent =
+            data.usage.ciRuns != null ? formatNumber(data.usage.ciRuns) : '—';
 
         // Update carbon stats
         const statEmissions = document.getElementById('stat-emissions');
@@ -936,20 +942,26 @@ const githubStats = {
           'bg-green-100 dark:bg-green-900/50 text-green-900 dark:text-green-100 px-2 py-0.5 rounded';
         const estimatedClass =
           'bg-yellow-100 dark:bg-yellow-900/50 text-yellow-900 dark:text-yellow-100 px-2 py-0.5 rounded';
+        const unavailableClass =
+          'bg-neutral-100 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300 px-2 py-0.5 rounded';
+
+        const getStatusClass = (status) => {
+          if (status === 'live') return liveClass;
+          if (status === 'unavailable') return unavailableClass;
+          return estimatedClass;
+        };
 
         if (sourceCloudflare) {
           sourceCloudflare.textContent = `Cloudflare: ${data.dataFreshness.cloudflare}`;
-          sourceCloudflare.className =
-            data.dataFreshness.cloudflare === 'live' ? liveClass : estimatedClass;
+          sourceCloudflare.className = getStatusClass(data.dataFreshness.cloudflare);
         }
         if (sourceGithub) {
           sourceGithub.textContent = `GitHub: ${data.dataFreshness.github}`;
-          sourceGithub.className =
-            data.dataFreshness.github === 'live' ? liveClass : estimatedClass;
+          sourceGithub.className = getStatusClass(data.dataFreshness.github);
         }
         if (sourceAzure) {
           sourceAzure.textContent = `Azure: ${data.dataFreshness.azure}`;
-          sourceAzure.className = data.dataFreshness.azure === 'live' ? liveClass : estimatedClass;
+          sourceAzure.className = getStatusClass(data.dataFreshness.azure);
         }
 
         // Update equivalents
