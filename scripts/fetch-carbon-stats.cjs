@@ -323,7 +323,9 @@ async function main() {
   console.log('Carbon stats updated successfully!');
   console.log(`- Cloudflare: ${dataSources.cloudflare} (${usage.cdnRequests ?? 'N/A'} requests)`);
   console.log(`- GitHub: ${dataSources.github} (${usage.ciRuns ?? 'N/A'} runs)`);
-  console.log(`- Azure: ${dataSources.azure} (${usage.aiQueries ?? 'N/A'} AI queries, ${usage.functionExecutions ?? 'N/A'} function executions)`);
+  console.log(
+    `- Azure: ${dataSources.azure} (${usage.aiQueries ?? 'N/A'} AI queries, ${usage.functionExecutions ?? 'N/A'} function executions)`
+  );
   console.log(`- Total gross emissions: ${stats.summary.totalGrossEmissionsKg} kg CO₂e`);
 }
 
