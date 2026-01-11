@@ -12,6 +12,7 @@ import 'providers/theme_provider.dart';
 import 'providers/settings_provider.dart';
 import 'providers/user_prefs_provider.dart';
 import 'providers/safety_provider.dart';
+import 'providers/localization_provider.dart';
 import 'widgets/quick_exit_detector.dart';
 import 'widgets/safety_widgets.dart';
 import 'screens/for_you_screen.dart';
@@ -73,6 +74,7 @@ class BayAreaDiscountsApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SettingsProvider()..initialize()),
         ChangeNotifierProvider(create: (_) => UserPrefsProvider()..initialize()),
         ChangeNotifierProvider(create: (_) => SafetyProvider()..initialize()),
+        ChangeNotifierProvider(create: (_) => LocalizationProvider()..initialize()),
       ],
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, child) {

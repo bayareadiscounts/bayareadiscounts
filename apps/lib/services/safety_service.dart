@@ -8,6 +8,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
 
 /// Safety service for Bay Navigator
 /// Provides features to protect vulnerable users:
@@ -679,33 +680,56 @@ class SafetyService {
     );
   }
 
-  /// Apply disguised icon (platform-specific implementation needed)
+  /// Apply disguised icon (platform-specific implementation)
   /// On Android: Enable/disable activity-alias in manifest
   /// On iOS: Call setAlternateIconName
   Future<DisguiseResult> applyDisguisedIcon(String iconId) async {
     try {
-      await setDisguisedIcon(iconId);
-      await setDisguisedModeEnabled(true);
-
-      // Note: Actual icon change requires platform channels
-      // The flutter_dynamic_icon package can be used for this
-      // For now, we'll just save the preference
+      // Find the icon configuration
+      final icon = disguisedIcons.firstWhere(
+        (i) => i.id == iconId,
+        orElse: () => disguisedIcons.first,
+      );
 
       if (Platform.isIOS) {
-        // iOS shows a system alert when changing icons
+        // Check if alternate icons are supported
+        final supportsAlternateIcons = await FlutterDynamicIcon.supportsAlternateIcons;
+        if (!supportsAlternateIcons) {
+          return DisguiseResult(
+            success: false,
+            message: 'This device does not support alternate app icons.',
+            requiresRestart: false,
+          );
+        }
+
+        // Set the alternate icon - iOS shows a system alert
+        await FlutterDynamicIcon.setAlternateIconName(icon.iosIconName);
+
+        // Save the preference
+        await setDisguisedIcon(iconId);
+        await setDisguisedModeEnabled(true);
+
         return DisguiseResult(
           success: true,
-          message: 'App icon changed. iOS will show a confirmation alert.',
+          message: 'App icon changed to "${icon.name}".',
           requiresRestart: false,
         );
       } else if (Platform.isAndroid) {
-        // Android may require app restart for some launchers
+        // Save the preference for Android (actual icon change via activity-alias)
+        await setDisguisedIcon(iconId);
+        await setDisguisedModeEnabled(true);
+
+        // Android requires app restart and activity-alias setup
         return DisguiseResult(
           success: true,
-          message: 'App icon changed. You may need to restart the app for changes to appear on some devices.',
+          message: 'App icon will change after restarting the app.',
           requiresRestart: true,
         );
       }
+
+      // Save preference for other platforms
+      await setDisguisedIcon(iconId);
+      await setDisguisedModeEnabled(true);
 
       return DisguiseResult(
         success: true,
@@ -724,6 +748,15 @@ class SafetyService {
   /// Reset to default app icon
   Future<DisguiseResult> resetToDefaultIcon() async {
     try {
+      if (Platform.isIOS) {
+        // Check if alternate icons are supported
+        final supportsAlternateIcons = await FlutterDynamicIcon.supportsAlternateIcons;
+        if (supportsAlternateIcons) {
+          // Reset to primary icon by passing null
+          await FlutterDynamicIcon.setAlternateIconName(null);
+        }
+      }
+
       await setDisguisedModeEnabled(false);
       final prefs = await _preferences;
       await prefs.remove(_disguisedIconKey);

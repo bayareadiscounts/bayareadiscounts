@@ -12,22 +12,52 @@
 import en from './en.json';
 import es from './es.json';
 
-export type Locale = 'en' | 'es';
+// Additional languages (zh-Hans, vi, tl, ko) are loaded dynamically
+// to reduce bundle size - see loadLanguage()
+
+export type Locale = 'en' | 'es' | 'zh-Hans' | 'vi' | 'tl' | 'ko';
 
 export interface TranslationData {
   [key: string]: string | TranslationData;
 }
 
-const translations: Record<Locale, TranslationData> = {
+const translations: Record<Locale, TranslationData | null> = {
   en: en as TranslationData,
   es: es as TranslationData,
+  'zh-Hans': null, // Loaded dynamically
+  vi: null, // Loaded dynamically
+  tl: null, // Loaded dynamically
+  ko: null, // Loaded dynamically
 };
 
 // Supported locales with display names
 export const locales: Record<Locale, { name: string; nativeName: string }> = {
   en: { name: 'English', nativeName: 'English' },
   es: { name: 'Spanish', nativeName: 'Español' },
+  'zh-Hans': { name: 'Chinese (Simplified)', nativeName: '简体中文' },
+  vi: { name: 'Vietnamese', nativeName: 'Tiếng Việt' },
+  tl: { name: 'Tagalog', nativeName: 'Tagalog' },
+  ko: { name: 'Korean', nativeName: '한국어' },
 };
+
+/**
+ * Load a language file dynamically
+ */
+async function loadLanguage(locale: Locale): Promise<TranslationData | null> {
+  if (translations[locale]) return translations[locale];
+
+  try {
+    const response = await fetch(`/i18n/${locale}.json`);
+    if (response.ok) {
+      const data = await response.json();
+      translations[locale] = data as TranslationData;
+      return data as TranslationData;
+    }
+  } catch (e) {
+    console.warn(`Failed to load language: ${locale}`);
+  }
+  return null;
+}
 
 const STORAGE_KEY = 'baynavigator_locale';
 const DEFAULT_LOCALE: Locale = 'en';
@@ -59,11 +89,17 @@ export function getLocale(): Locale {
 
 /**
  * Set locale and persist to storage
+ * Loads language file dynamically if needed
  */
-export function setLocale(locale: Locale): void {
+export async function setLocale(locale: Locale): Promise<void> {
   if (!isValidLocale(locale)) {
     console.warn(`Invalid locale: ${locale}, falling back to ${DEFAULT_LOCALE}`);
     locale = DEFAULT_LOCALE;
+  }
+
+  // Load language file if not already loaded
+  if (!translations[locale]) {
+    await loadLanguage(locale);
   }
 
   if (typeof window !== 'undefined') {
@@ -73,8 +109,9 @@ export function setLocale(locale: Locale): void {
       // localStorage not available
     }
 
-    // Update HTML lang attribute
-    document.documentElement.lang = locale;
+    // Update HTML lang attribute (use base language code for lang attribute)
+    const langCode = locale.split('-')[0];
+    document.documentElement.lang = langCode;
 
     // Dispatch event for components to react
     window.dispatchEvent(new CustomEvent('locale-changed', { detail: { locale } }));
@@ -118,19 +155,23 @@ function getNestedValue(obj: TranslationData, path: string): string | undefined 
  */
 export function t(key: string, params?: Record<string, string | number>, locale?: Locale): string {
   const currentLocale = locale || getLocale();
-  const translation = getNestedValue(translations[currentLocale], key);
+  const localeData = translations[currentLocale];
 
-  if (translation === undefined) {
-    // Fallback to English
-    const fallback = getNestedValue(translations.en, key);
-    if (fallback === undefined) {
-      console.warn(`Translation missing for key: ${key}`);
-      return key;
+  // Try current locale first (if loaded)
+  if (localeData) {
+    const translation = getNestedValue(localeData, key);
+    if (translation !== undefined) {
+      return interpolate(translation, params);
     }
-    return interpolate(fallback, params);
   }
 
-  return interpolate(translation, params);
+  // Fallback to English
+  const fallback = getNestedValue(translations.en!, key);
+  if (fallback === undefined) {
+    console.warn(`Translation missing for key: ${key}`);
+    return key;
+  }
+  return interpolate(fallback, params);
 }
 
 /**
@@ -150,12 +191,27 @@ function interpolate(str: string, params?: Record<string, string | number>): str
  */
 export function getNamespace(namespace: string, locale?: Locale): Record<string, string> {
   const currentLocale = locale || getLocale();
-  const data = getNestedValue(translations[currentLocale], namespace);
+  const localeData = translations[currentLocale];
 
-  if (typeof data === 'object' && data !== null) {
-    // Flatten object to Record<string, string>
+  // Try current locale first
+  if (localeData) {
+    const data = getNestedValue(localeData, namespace);
+    if (typeof data === 'object' && data !== null) {
+      const result: Record<string, string> = {};
+      for (const [key, value] of Object.entries(data)) {
+        if (typeof value === 'string') {
+          result[key] = value;
+        }
+      }
+      return result;
+    }
+  }
+
+  // Fallback to English
+  const enData = getNestedValue(translations.en!, namespace);
+  if (typeof enData === 'object' && enData !== null) {
     const result: Record<string, string> = {};
-    for (const [key, value] of Object.entries(data)) {
+    for (const [key, value] of Object.entries(enData)) {
       if (typeof value === 'string') {
         result[key] = value;
       }
