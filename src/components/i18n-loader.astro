@@ -1,0 +1,169 @@
+---
+/**
+ * i18n Loader Component
+ *
+ * Client-side script that loads translations from JSON files and applies
+ * them to elements with data-i18n attributes. This enables runtime
+ * translation switching without full page reloads for cached content.
+ *
+ * Usage:
+ * - Add data-i18n="key.path" to elements for text content translation
+ * - Add data-i18n-aria-label="key.path" for aria-label translation
+ * - Add data-i18n-title="key.path" for title attribute translation
+ * - Add data-i18n-placeholder="key.path" for placeholder translation
+ * - Add data-i18n-tooltip="key.path" for data-tooltip translation
+ */
+---
+
+<script>
+  const STORAGE_KEY = 'baynavigator_locale';
+  const SUPPORTED_LOCALES = ['en', 'es', 'zh-Hans', 'zh-Hant', 'vi', 'fil', 'ko', 'ru', 'fr', 'ar'];
+
+  // Translation cache
+  const translationCache: Record<string, Record<string, unknown>> = {};
+
+  /**
+   * Get nested value from object using dot notation
+   */
+  function getNestedValue(obj: Record<string, unknown>, path: string): string | undefined {
+    const keys = path.split('.');
+    let value: unknown = obj;
+
+    for (const key of keys) {
+      if (typeof value !== 'object' || value === null) {
+        return undefined;
+      }
+      value = (value as Record<string, unknown>)[key];
+    }
+
+    return typeof value === 'string' ? value : undefined;
+  }
+
+  /**
+   * Load UI translations for a locale
+   */
+  async function loadTranslations(locale: string): Promise<Record<string, unknown>> {
+    // Check cache first
+    if (translationCache[locale]) {
+      return translationCache[locale];
+    }
+
+    // Default to English if locale not supported
+    const targetLocale = SUPPORTED_LOCALES.includes(locale) ? locale : 'en';
+
+    try {
+      const response = await fetch(`/shared/i18n/json/${targetLocale}-ui.json`);
+      if (!response.ok) {
+        // Fall back to English if translation file not found
+        if (targetLocale !== 'en') {
+          return loadTranslations('en');
+        }
+        throw new Error(`Failed to load translations: ${response.status}`);
+      }
+      const data = await response.json();
+      translationCache[locale] = data;
+      return data;
+    } catch (error) {
+      console.warn(`Failed to load ${targetLocale} translations, falling back to English`, error);
+      if (targetLocale !== 'en') {
+        return loadTranslations('en');
+      }
+      return {};
+    }
+  }
+
+  /**
+   * Apply translations to all elements with data-i18n attributes
+   */
+  function applyTranslations(translations: Record<string, unknown>): void {
+    // Translate text content
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      if (key) {
+        const translated = getNestedValue(translations, key);
+        if (translated) {
+          el.textContent = translated;
+        }
+      }
+    });
+
+    // Translate aria-label
+    document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-aria-label');
+      if (key) {
+        const translated = getNestedValue(translations, key);
+        if (translated) {
+          el.setAttribute('aria-label', translated);
+        }
+      }
+    });
+
+    // Translate title
+    document.querySelectorAll('[data-i18n-title]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-title');
+      if (key) {
+        const translated = getNestedValue(translations, key);
+        if (translated) {
+          el.setAttribute('title', translated);
+        }
+      }
+    });
+
+    // Translate placeholder
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (key) {
+        const translated = getNestedValue(translations, key);
+        if (translated) {
+          el.setAttribute('placeholder', translated);
+        }
+      }
+    });
+
+    // Translate data-tooltip
+    document.querySelectorAll('[data-i18n-tooltip]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-tooltip');
+      if (key) {
+        const translated = getNestedValue(translations, key);
+        if (translated) {
+          el.setAttribute('data-tooltip', translated);
+        }
+      }
+    });
+  }
+
+  /**
+   * Initialize i18n system
+   */
+  async function initI18n(): Promise<void> {
+    // Get current locale from storage or use English
+    let locale = 'en';
+    try {
+      locale = localStorage.getItem(STORAGE_KEY) || 'en';
+    } catch {
+      // localStorage not available
+    }
+
+    // Load and apply translations
+    const translations = await loadTranslations(locale);
+    applyTranslations(translations);
+
+    // Listen for locale changes
+    window.addEventListener('locale-changed', async (e: Event) => {
+      const customEvent = e as CustomEvent<{ locale: string }>;
+      const newLocale = customEvent.detail?.locale;
+      if (newLocale && newLocale !== locale) {
+        locale = newLocale;
+        const newTranslations = await loadTranslations(newLocale);
+        applyTranslations(newTranslations);
+      }
+    });
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initI18n);
+  } else {
+    initI18n();
+  }
+</script>

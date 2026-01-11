@@ -3,8 +3,23 @@
  * Language Selector Component
  *
  * Dropdown selector for switching between available languages.
+ * Supports 10 languages with browser auto-detection.
  * Persists selection to localStorage and updates UI dynamically.
  */
+
+// All supported locales with their native names and flag emoji
+const supportedLocales = [
+  { code: 'en', name: 'English', nativeName: 'English', flag: '🇺🇸' },
+  { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸' },
+  { code: 'zh-Hans', name: 'Chinese (Simplified)', nativeName: '简体中文', flag: '🇨🇳' },
+  { code: 'zh-Hant', name: 'Chinese (Traditional)', nativeName: '繁體中文', flag: '🇹🇼' },
+  { code: 'vi', name: 'Vietnamese', nativeName: 'Tiếng Việt', flag: '🇻🇳' },
+  { code: 'fil', name: 'Filipino', nativeName: 'Filipino', flag: '🇵🇭' },
+  { code: 'ko', name: 'Korean', nativeName: '한국어', flag: '🇰🇷' },
+  { code: 'ru', name: 'Russian', nativeName: 'Русский', flag: '🇷🇺' },
+  { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷' },
+  { code: 'ar', name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦', rtl: true },
+] as const;
 ---
 
 <div class="relative" id="language-selector-container">
@@ -31,83 +46,148 @@
     </svg>
   </button>
 
-  <!-- Dropdown menu -->
+  <!-- Dropdown menu with scrollable list -->
   <div
     id="language-dropdown"
-    class="hidden absolute right-0 top-full mt-1 w-40 bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-neutral-200 dark:border-neutral-700 overflow-hidden z-50"
+    class="hidden absolute right-0 top-full mt-1 w-48 max-h-80 overflow-y-auto bg-white dark:bg-neutral-800 rounded-lg shadow-lg border border-neutral-200 dark:border-neutral-700 z-50"
     role="listbox"
     aria-labelledby="language-selector-btn"
   >
-    <button
-      type="button"
-      class="language-option w-full px-4 py-2.5 text-left text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 flex items-center justify-between transition-colors"
-      data-locale="en"
-      role="option"
-      aria-selected="true"
-    >
-      <span>English</span>
-      <svg
-        class="w-4 h-4 text-primary-600 dark:text-primary-400 check-icon"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
-        ></path>
-      </svg>
-    </button>
-    <button
-      type="button"
-      class="language-option w-full px-4 py-2.5 text-left text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 flex items-center justify-between transition-colors"
-      data-locale="es"
-      role="option"
-      aria-selected="false"
-    >
-      <span>Español</span>
-      <svg
-        class="w-4 h-4 text-primary-600 dark:text-primary-400 check-icon hidden"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
-        ></path>
-      </svg>
-    </button>
+    {
+      supportedLocales.map((locale, index) => (
+        <button
+          type="button"
+          class="language-option w-full px-4 py-2.5 text-left text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 flex items-center justify-between transition-colors"
+          data-locale={locale.code}
+          data-rtl={locale.rtl ? 'true' : undefined}
+          role="option"
+          aria-selected={index === 0 ? 'true' : 'false'}
+        >
+          <span class="flex items-center gap-2">
+            <span class="text-base" aria-hidden="true">
+              {locale.flag}
+            </span>
+            <span>{locale.nativeName}</span>
+          </span>
+          <svg
+            class={`w-4 h-4 text-primary-600 dark:text-primary-400 check-icon ${index !== 0 ? 'hidden' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </button>
+      ))
+    }
   </div>
 </div>
 
 <script>
   const STORAGE_KEY = 'baynavigator_locale';
 
-  const localeNames: Record<string, string> = {
-    en: 'English',
-    es: 'Español',
+  // Supported locales with native names
+  const localeInfo: Record<string, { nativeName: string; rtl?: boolean }> = {
+    en: { nativeName: 'English' },
+    es: { nativeName: 'Español' },
+    'zh-Hans': { nativeName: '简体中文' },
+    'zh-Hant': { nativeName: '繁體中文' },
+    vi: { nativeName: 'Tiếng Việt' },
+    fil: { nativeName: 'Filipino' },
+    ko: { nativeName: '한국어' },
+    ru: { nativeName: 'Русский' },
+    fr: { nativeName: 'Français' },
+    ar: { nativeName: 'العربية', rtl: true },
   };
 
+  // Map browser language codes to our locale codes
+  const browserLangMap: Record<string, string> = {
+    en: 'en',
+    es: 'es',
+    zh: 'zh-Hans', // Default Chinese to Simplified
+    'zh-cn': 'zh-Hans',
+    'zh-sg': 'zh-Hans',
+    'zh-hans': 'zh-Hans',
+    'zh-tw': 'zh-Hant',
+    'zh-hk': 'zh-Hant',
+    'zh-mo': 'zh-Hant',
+    'zh-hant': 'zh-Hant',
+    vi: 'vi',
+    fil: 'fil',
+    tl: 'fil', // Tagalog -> Filipino
+    ko: 'ko',
+    ru: 'ru',
+    fr: 'fr',
+    ar: 'ar',
+  };
+
+  /**
+   * Detect locale from browser settings
+   */
+  function detectBrowserLocale(): string | null {
+    const languages = navigator.languages || [navigator.language];
+
+    for (const lang of languages) {
+      const normalized = lang.toLowerCase();
+
+      // Try exact match first
+      if (browserLangMap[normalized]) {
+        return browserLangMap[normalized];
+      }
+
+      // Try base language (e.g., 'en-US' -> 'en')
+      const baseLang = normalized.split('-')[0];
+      if (browserLangMap[baseLang]) {
+        return browserLangMap[baseLang];
+      }
+    }
+
+    return null;
+  }
+
+  /**
+   * Get current locale from storage, browser, or default
+   */
   function getLocale(): string {
+    // 1. Check localStorage first (user preference)
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored && stored in localeNames) {
+      if (stored && stored in localeInfo) {
         return stored;
       }
     } catch {
       // localStorage not available
     }
 
-    // Check browser language
-    const browserLang = navigator.language?.split('-')[0];
-    if (browserLang && browserLang in localeNames) {
-      return browserLang;
+    // 2. Auto-detect from browser settings
+    const detected = detectBrowserLocale();
+    if (detected) {
+      // Save detected locale so user sees consistent experience
+      try {
+        localStorage.setItem(STORAGE_KEY, detected);
+      } catch {
+        // Ignore
+      }
+      return detected;
     }
 
+    // 3. Default to English
     return 'en';
   }
 
+  /**
+   * Set locale and apply translations
+   */
   function setLocale(locale: string): void {
-    if (!(locale in localeNames)) return;
+    if (!(locale in localeInfo)) return;
+
+    const prevLocale = localStorage.getItem(STORAGE_KEY) || 'en';
 
     try {
       localStorage.setItem(STORAGE_KEY, locale);
@@ -118,25 +198,34 @@
     // Update HTML lang attribute
     document.documentElement.lang = locale;
 
+    // Handle RTL languages
+    const info = localeInfo[locale];
+    if (info?.rtl) {
+      document.documentElement.dir = 'rtl';
+    } else {
+      document.documentElement.dir = 'ltr';
+    }
+
     // Dispatch event for other components
     window.dispatchEvent(new CustomEvent('locale-changed', { detail: { locale } }));
 
     // Update UI
     updateUI(locale);
 
-    // Reload page to apply translations (static site)
-    // Only reload if locale actually changed
-    const prevLocale = document.documentElement.lang;
+    // Reload page to apply translations if locale changed
     if (prevLocale !== locale) {
       window.location.reload();
     }
   }
 
+  /**
+   * Update selector UI to reflect current locale
+   */
   function updateUI(locale: string): void {
     // Update current language display
     const currentLangEl = document.getElementById('current-language');
     if (currentLangEl) {
-      currentLangEl.textContent = localeNames[locale] || 'English';
+      currentLangEl.textContent = localeInfo[locale]?.nativeName || 'English';
     }
 
     // Update checkmarks
@@ -153,6 +242,9 @@
     });
   }
 
+  /**
+   * Initialize the language selector
+   */
   function setupLanguageSelector(): void {
     const btn = document.getElementById('language-selector-btn');
     const dropdown = document.getElementById('language-dropdown');
@@ -164,6 +256,12 @@
     const currentLocale = getLocale();
     updateUI(currentLocale);
     document.documentElement.lang = currentLocale;
+
+    // Set RTL if needed
+    const info = localeInfo[currentLocale];
+    if (info?.rtl) {
+      document.documentElement.dir = 'rtl';
+    }
 
     // Toggle dropdown
     btn.addEventListener('click', (e) => {
