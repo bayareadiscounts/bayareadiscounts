@@ -20,6 +20,8 @@ const NON_PROGRAM_FILES = [
   'site-config.yml',
   'bay-area-jurisdictions.yml',
   'city-profiles.yml',
+  'transit-agencies.yml',
+  'county-supervisors.yml',
 ];
 const files = fs
   .readdirSync(dataDir)
@@ -38,7 +40,7 @@ const stats = {
   totalPrograms: totalPrograms,
   semanticElements: 6, // html, header, nav, main, footer, section
   ariaAttributes: 12, // Various ARIA attributes used
-  supportedLanguages: 1, // Currently English
+  supportedLanguages: 6, // English, Spanish, Chinese, Vietnamese, Tagalog, Korean
   lastAuditDate: '2026-01',
 };
 ---

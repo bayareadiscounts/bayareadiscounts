@@ -6,9 +6,18 @@ Thank you for your interest in contributing to Bay Navigator! This guide will he
 
 ### Prerequisites
 
+**Web App:**
+
 - Node.js 18+
 - npm 9+
 - Git
+
+**Flutter App (optional):**
+
+- Flutter 3.x
+- Dart 3.x
+- Xcode (for iOS)
+- Android Studio (for Android)
 
 ### Installation
 
@@ -26,6 +35,14 @@ npm run dev
 
 The site will be available at `http://localhost:4321`.
 
+### Flutter App Setup
+
+```bash
+cd apps
+flutter pub get
+flutter run
+```
+
 ## Project Structure
 
 ```
@@ -39,23 +56,24 @@ baynavigator/
 ├── public/            # Static assets
 ├── scripts/           # Build and data sync scripts
 ├── azure-functions/   # Serverless API functions
-├── apps/              # Flutter mobile app
+├── apps/              # Flutter cross-platform app (iOS, Android, macOS, Windows, Linux)
 └── tests/             # Test files
 ```
 
 ## Available Scripts
 
-| Command                | Description               |
-| ---------------------- | ------------------------- |
-| `npm run dev`          | Start development server  |
-| `npm run build`        | Build for production      |
-| `npm run preview`      | Preview production build  |
-| `npm run lint`         | Run ESLint                |
-| `npm run lint:fix`     | Fix ESLint errors         |
-| `npm run format`       | Format code with Prettier |
-| `npm run format:check` | Check formatting          |
-| `npm run test:unit`    | Run unit tests            |
-| `npm run test:a11y`    | Run accessibility tests   |
+| Command                 | Description               |
+| ----------------------- | ------------------------- |
+| `npm run dev`           | Start development server  |
+| `npm run build`         | Build for production      |
+| `npm run preview`       | Preview production build  |
+| `npm run lint`          | Run ESLint                |
+| `npm run lint:fix`      | Fix ESLint errors         |
+| `npm run format`        | Format code with Prettier |
+| `npm run format:check`  | Check formatting          |
+| `npm run test:unit`     | Run unit tests            |
+| `npm run test:a11y`     | Run accessibility tests   |
+| `npm run validate:data` | Validate YAML data files  |
 
 ## Code Style
 
@@ -111,7 +129,7 @@ npm run test:unit
 npm run test:a11y
 ```
 
-We maintain WCAG 2.1 AA compliance. All new components must pass accessibility tests.
+We maintain WCAG 2.2 AAA compliance. All new components must pass accessibility tests.
 
 ## Pull Request Process
 
