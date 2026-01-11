@@ -280,5 +280,33 @@
     "description": "A community resource by Bay Tides. Connecting Bay Area residents with free and low-cost programs for food, housing, healthcare, utilities, and more.",
     "resources": "Resources",
     "legalAndMore": "Legal & More"
+  },
+  "map": {
+    "loading": "Loading map...",
+    "torNotAvailable": "Map Not Available via Tor",
+    "torNotAvailableDesc": "The interactive map requires external resources that cannot be loaded through the Tor network for privacy and security reasons.",
+    "browseDirectory": "Browse Programs in Directory",
+    "openMainSite": "Open Map on Main Site",
+    "nonTor": "(non-Tor)",
+    "layers": "Layers",
+    "categories": "Categories",
+    "all": "All",
+    "none": "None",
+    "clear": "Clear",
+    "transit": "Transit",
+    "rail": "Rail",
+    "ferry": "Ferry",
+    "bus": "Bus",
+    "traffic": "Traffic",
+    "trafficFlow": "Traffic Flow",
+    "incidents": "Incidents",
+    "laneClosures": "Lane Closures",
+    "cameras": "Cameras",
+    "vistaPoints": "Vista Points",
+    "settings": "Settings",
+    "countyBoundaries": "County boundaries",
+    "showTravelTime": "Show travel time from here",
+    "directionsFromHere": "Directions from here",
+    "findProgramsNearHere": "Find programs near here"
   }
 }
