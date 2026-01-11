@@ -3275,6 +3275,9 @@ const azureMapsKey = import.meta.env.PUBLIC_AZURE_MAPS_KEY || '';
       // Initialize traffic on first open
       if (!trafficLayersAdded) {
         await addTrafficLayers();
+        // Sync layer visibility with checkbox states
+        updateTrafficLayers();
+        updateTrafficFlowLayer();
       }
     });
 
