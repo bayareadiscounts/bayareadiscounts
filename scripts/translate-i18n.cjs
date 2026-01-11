@@ -355,7 +355,9 @@ async function batchTranslate(items, targetLang, apiKey, region) {
         if (error.message.includes('429') && retries < maxRetries - 1) {
           retries++;
           const waitTime = RATE_LIMIT_DELAY_MS * Math.pow(2, retries); // Exponential backoff
-          console.log(`      Rate limited, waiting ${waitTime}ms (retry ${retries}/${maxRetries})...`);
+          console.log(
+            `      Rate limited, waiting ${waitTime}ms (retry ${retries}/${maxRetries})...`
+          );
           await sleep(waitTime);
         } else {
           throw error;
@@ -488,9 +490,7 @@ export default { ui, programs };
  * Generate types file
  */
 function generateTypesFile(uiKeys) {
-  const uiStructure = unflattenObject(
-    Object.fromEntries(uiKeys.map((k) => [k, 'string']))
-  );
+  const uiStructure = unflattenObject(Object.fromEntries(uiKeys.map((k) => [k, 'string'])));
 
   // Generate type from structure
   function generateTypeFromStructure(obj, indent = 2) {
@@ -836,7 +836,12 @@ async function main() {
       }
 
       // Generate TypeScript file
-      const tsContent = generateTypeScriptFile(lang.code, lang.name, uiTranslations, programTranslations);
+      const tsContent = generateTypeScriptFile(
+        lang.code,
+        lang.name,
+        uiTranslations,
+        programTranslations
+      );
       fs.writeFileSync(path.join(I18N_DIR, `${lang.file}.ts`), tsContent);
       console.log(`   ✓ ${lang.file}.ts (${Object.keys(newTranslations).length} strings)`);
 
