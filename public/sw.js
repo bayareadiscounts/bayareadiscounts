@@ -32,10 +32,6 @@ const STATIC_ASSETS = [
   '/assets/images/favicons/favicon-192.webp',
   '/assets/images/favicons/favicon-512.webp',
   '/offline.html',
-  // i18n translation files
-  '/i18n/en.json',
-  '/i18n/es.json',
-  '/js/i18n-client.js',
 ];
 
 // API endpoints to cache
